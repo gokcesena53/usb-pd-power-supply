@@ -1,4 +1,4 @@
-Set-Location "C:\Users\Slayer\Documents\masaüstü güç kaynağı"
+Set-Location $PSScriptRoot
 
 $changes = git status --porcelain
 
