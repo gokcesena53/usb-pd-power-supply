@@ -1,0 +1,48 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "587ceb7c-633c-4777-a80f-ea67e0feec16")
+	(paper "A4")
+	(lib_symbols)
+	(text_box "MCU TAMAMLAMA LİSTESİ\n\nTODO-MCU-01: Kullanılmayan ESP32 pinlerine No Connect eklenecek.\nTODO-MCU-02: ESP32-C6-WROOM-1 footprint ve anten keepout kontrol edilecek.\nTODO-MCU-03: MCU_3V3 kaynağının gerilim ve akım kapasitesi doğrulanacak.\nTODO-MCU-04: USB D+/D- hatlarına ESD koruması seçilecek.\nTODO-MCU-05: USB diferansiyel hat yönlendirme şartları belirlenecek.\nTODO-MCU-06: BOOT ve RESET devreleri güncel datasheet ile doğrulanacak.\nTODO-MCU-07: Programlama ve debug bağlantısı belirlenecek.\nTODO-MCU-08: Gerekli test noktaları eklenecek.\nTODO-MCU-09: Direnç ve kondansatörlerin MPN/footprintleri seçilecek.\nTODO-MCU-10: ERC ve sembol-footprint pin eşleşmesi kontrol edilecek."
+		(exclude_from_sim no)
+		(at 29.21 27.94 0)
+		(size 92.71 27.94)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "051d70e1-44c3-4325-ac38-98bbad3c0889")
+	)
+	(text_box "AP33772S'nin VCC beslemesi 3.3-31 V aralığındadır ve entegre VCC'den dahili yaklaşık 5 V'luk V5V rail'i üretir. AP33772S'nin SDA/SCL dijital arayüzü datasheet'te 5 V operation olarak tanımlanırken ESP32-C6 modülü 3.0-3.6 V besleme aralığında çalışır. Bu nedenle iki cihazın GND referansı ortak tutulurken 5 V ve 3.3 V besleme rail'leri doğrudan birleştirilmez; arayüzde gerekli gerilim seviyesi uyumluluğu sağlanır."
+		(exclude_from_sim no)
+		(at 29.21 58.42 0)
+		(size 92.71 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "eada212b-809a-4029-8ab7-793c6a434a7a")
+	)
+)

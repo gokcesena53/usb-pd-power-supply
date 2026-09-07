@@ -1,0 +1,8 @@
+﻿.history/
+_restore_backup_*/
+*-backups/
+*.lck
+*.lck~
+*.tmp
+*.kicad_prl
+*.zip
