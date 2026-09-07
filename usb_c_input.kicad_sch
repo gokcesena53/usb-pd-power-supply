@@ -1068,6 +1068,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Shield gnd ye bağlanacak.\n"
+		(exclude_from_sim no)
+		(at 120.65 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 6 1)
+			)
+		)
+		(uuid "dc3de9c3-c14d-4096-9400-3b654f5df6a6")
+	)
 	(no_connect
 		(at 157.48 96.52)
 		(uuid "21e65847-464a-400f-a1a2-fc26995adc6a")

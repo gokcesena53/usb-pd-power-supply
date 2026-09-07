@@ -649,6 +649,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -661,7 +669,7 @@
         "uuid": "a43081a6-9aa2-4898-9347-bbcb5849dafd"
       }
     ],
-    "used_designators": "U1-5,R1-10,J1-2,C1-7,#PWR1-12,Q1-2,SW1",
+    "used_designators": "U1-6,R1-10,R14-25,R27-28,J1-2,C1-7,C9-12,D1-3,#PWR1-13,#PWR16-34,Q1-2,Q5,SW1,TP1-8,BT1",
     "variants": []
   },
   "sheets": [
@@ -696,6 +704,18 @@
     [
       "cea3687f-2157-4ccd-8163-e41c467db054",
       "POWER OUTPUT"
+    ],
+    [
+      "9c13d49c-38df-4498-9025-1a22a64208fe",
+      "CALC_USB_PD_CONTROLLER"
+    ],
+    [
+      "cb7aca88-c6e1-407f-b817-e8113c1e1c8c",
+      "CALC_USB_C_INPUT"
+    ],
+    [
+      "ea62dea9-1904-4ff7-9a40-9460fd13dc22",
+      "CALC_MCU"
     ]
   ],
   "text_variables": {},
