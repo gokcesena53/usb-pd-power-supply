@@ -1,0 +1,78 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2ef18b19-c171-49ce-a977-bccec108d471")
+	(paper "A4")
+	(lib_symbols)
+	(text "USER INTERFACE\n────────────────────────\n\nINPUT  TFT_SCLK    ──► TFT\nINPUT  TFT_MOSI    ──► TFT\nINPUT  TFT_CS      ──► TFT\nINPUT  TFT_DC      ──► TFT\nINPUT  TFT_RST     ──► TFT\nINPUT  TFT_BL_PWM  ──► Backlight driver\n\nEncoder ──► OUTPUT ENCODER_SW\nEncoder ──► OUTPUT ENCODER_A\nEncoder ──► OUTPUT ENCODER_B"
+		(exclude_from_sim no)
+		(at 34.29 78.105 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7e241710-34c4-43f8-8837-cb459dc71291")
+	)
+	(text_box "Incremental rotary encoder olacak; yani mutlak konum değil, sağa/sola çevrilme bilgisini verecek.\nQuadrature A/B çıkışı olacak; MCU dönüş yönünü ve adım sayısını okuyabilecek.\nPush switch olacak; üzerine bastığında ayrı bir dijital buton sinyali verecek.\nDetent'li olacak; çevirirken fiziksel \"tık\" hissi olacak. Menü ve voltaj/akım ayarı için daha kontrollü olur.\nPCB mount / panel kullanımına uygun olacak; ön panelden mil ve knob ile kullanılabilecek.\n3.3 V MCU ile okunabilir pasif kontak yapısı tercih ederiz; yani A/B ve SW hatlarını ESP32 GPIO'larına pull-up ile okuyabilelim.\nMekanik olarak yeterli ömrü olmalı; özellikle rotational life ve push-switch life değerlerine bakacağız.\nMil çapı/uzunluğu seçilecek knob ile uyumlu olmalı.\nFootprint'i PCB yerleşimine uygun olmalı; çünkü ön panel konumu bizim için önemli.\nDetent/pulse sayısı çok düşük olmamalı; kullanıcı ayar yaparken kaba hissettirmemeli. Ama aşırı yüksek çözünürlük de şart değil; gerçek adım büyüklüğünü yazılım belirleyecek."
+		(exclude_from_sim no)
+		(at 14.605 15.875 0)
+		(size 121.92 29.845)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d52fd3ae-19df-41fe-b027-c73136971741")
+	)
+	(text_box "Rotary encoder, kullanıcı arayüzünde gerilim ve akım parametrelerinin seçilmesi ve ayarlanması amacıyla kullanılacaktır. Encoder, A/B quadrature çıkışlı incremental yapıda, entegre momentary push switch'e ve mekanik detent özelliğine sahip olacaktır. Döndürme işlemi menü seçimi ve değer artırma/azaltma, push switch ise seçim ve onay işlemleri için kullanılacaktır."
+		(exclude_from_sim no)
+		(at 14.605 48.26 0)
+		(size 121.92 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ee60e85c-0acb-4586-a76e-7b8a6f247039")
+	)
+	(text_box "Q6 için bizim gerçek seçim isterimiz\nParametre	Bizim ihtiyaç\nMOSFET tipi	N-channel\nKullanım	Low-side backlight switch\nGate drive	3.3 V ESP32 GPIO\nBacklight maksimum akımı	yaklaşık 200 mA\nTavsiye edilen ID kapasitesi	≥ 0.5 A\nVDS rating	tercihen 20-30 V veya üzeri\nRDS(on)	2.5-3.3 V gate'te belirtilmiş olmalı\nGate current	DC'de ihmal edilebilir\nPackage	PCB'ye uygun küçük SMD\nAnahtarlama	PWM uyumlu"
+		(exclude_from_sim no)
+		(at 63.5 64.135 0)
+		(size 54.61 28.575)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f12176f0-b5b0-47f9-9037-0253a2d0254f")
+	)
+)

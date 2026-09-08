@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(text_box "MCU TAMAMLAMA LİSTESİ\n\nTODO-MCU-01: Kullanılmayan ESP32 pinlerine No Connect eklenecek.\nTODO-MCU-02: ESP32-C6-WROOM-1 footprint ve anten keepout kontrol edilecek.\nTODO-MCU-03: MCU_3V3 kaynağının gerilim ve akım kapasitesi doğrulanacak.\nTODO-MCU-04: USB D+/D- hatlarına ESD koruması seçilecek.\nTODO-MCU-05: USB diferansiyel hat yönlendirme şartları belirlenecek.\nTODO-MCU-06: BOOT ve RESET devreleri güncel datasheet ile doğrulanacak.\nTODO-MCU-07: Programlama ve debug bağlantısı belirlenecek.\nTODO-MCU-08: Gerekli test noktaları eklenecek.\nTODO-MCU-09: Direnç ve kondansatörlerin MPN/footprintleri seçilecek.\nTODO-MCU-10: ERC ve sembol-footprint pin eşleşmesi kontrol edilecek."
 		(exclude_from_sim no)
-		(at 29.21 27.94 0)
+		(at 13.97 15.24 0)
 		(size 92.71 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -25,9 +25,29 @@
 		)
 		(uuid "051d70e1-44c3-4325-ac38-98bbad3c0889")
 	)
+	(text_box "ESP32-C6 Programlama ve UART Arayüzü\n\nESP32-C6-WROOM-1 mikrodenetleyici modülünün yazılım yükleme ve hata ayıklama işlemleri için hem USB hem de UART tabanlı erişim imkânı tasarımda dikkate alınmıştır. ESP32-C6'nın USB haberleşmesi için kullanılan GPIO12 (USB_D−) ve GPIO13 (USB_D+) pinleri, kartın temel USB programlama ve haberleşme arayüzünü oluşturmak üzere ayrılmıştır.\n\nBuna ek olarak, geliştirme ve hata ayıklama aşamalarında alternatif bir erişim yolu sağlamak amacıyla UART0 arayüzü de kullanılabilir durumda bırakılmıştır. ESP32-C6-WROOM-1 pin tanımlarına göre GPIO16 pini U0TXD, GPIO17 pini ise U0RXD fonksiyonunu desteklemektedir. Bu nedenle tasarımda GPIO16 UART_TX, GPIO17 ise UART_RX olarak atanmıştır.\n\nUART bağlantısı kart üzerinde bir programlama/debug konnektörüne veya test noktalarına çıkarılabilir. Harici bir 3.3 V USB-UART dönüştürücü kullanıldığında bağlantı çapraz olarak gerçekleştirilir:\n\nESP32 GPIO16 / UART_TX → USB-UART RX\nESP32 GPIO17 / UART_RX ← USB-UART TX\nESP32 GND              ↔ USB-UART GND\n\nUART sinyallerinin ESP32-C6'nın 3.3 V lojik seviyesine uygun olması gerekmektedir. Bu nedenle GPIO hatlarına doğrudan 5 V seviyeli UART sinyali uygulanmamalıdır.\n\nBu mimaride native USB ana programlama ve haberleşme yolu, UART0 ise yedek programlama, servis ve hata ayıklama arayüzü olarak değerlendirilmektedir. Böylece USB üzerinden erişimin mümkün olmadığı geliştirme veya arıza durumlarında mikrodenetleyiciye alternatif bir fiziksel erişim yolu korunmuş olur.\n\nTasarımda kullanılan pinler\nFonksiyon	ESP32-C6 pini	Tasarımdaki net\nUSB Data−	GPIO12	USB_D-\nUSB Data+	GPIO13	USB_D+\nUART0 TX	GPIO16	UART_TX\nUART0 RX	GPIO17	UART_RX\nBoot kontrolü GPIO9	BOOT\nReset/Enable	EN	EN/RESET\n\nTasarım kararı: UART0 pinlerinin başka çevre birimlerine tahsis edilmemesi ve kart üzerinde erişilebilir tutulması, prototip geliştirme, firmware yükleme, seri debug mesajlarının izlenmesi ve olası yazılım sorunlarında karta yeniden erişilebilmesi açısından tercih edilmiştir."
+		(exclude_from_sim no)
+		(at 29.21 75.565 0)
+		(size 93.345 89.8227)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ba1410c6-bb14-4d2b-81d6-ad5c9a8fa696")
+	)
 	(text_box "AP33772S'nin VCC beslemesi 3.3-31 V aralığındadır ve entegre VCC'den dahili yaklaşık 5 V'luk V5V rail'i üretir. AP33772S'nin SDA/SCL dijital arayüzü datasheet'te 5 V operation olarak tanımlanırken ESP32-C6 modülü 3.0-3.6 V besleme aralığında çalışır. Bu nedenle iki cihazın GND referansı ortak tutulurken 5 V ve 3.3 V besleme rail'leri doğrudan birleştirilmez; arayüzde gerekli gerilim seviyesi uyumluluğu sağlanır."
 		(exclude_from_sim no)
-		(at 29.21 58.42 0)
+		(at 13.97 45.085 0)
 		(size 92.71 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke

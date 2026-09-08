@@ -669,7 +669,7 @@
         "uuid": "a43081a6-9aa2-4898-9347-bbcb5849dafd"
       }
     ],
-    "used_designators": "U1-6,R1-10,R14-25,R27-28,J1-2,C1-7,C9-12,D1-3,#PWR1-13,#PWR16-34,Q1-2,Q5,SW1,TP1-8,BT1",
+    "used_designators": "U1-6,R1-10,R14-25,R27-33,J1-3,C1-7,C9-12,D1-3,#PWR1-13,#PWR16-53,Q1-2,Q5-6,SW1,TP1-10,BT1",
     "variants": []
   },
   "sheets": [
@@ -716,6 +716,10 @@
     [
       "ea62dea9-1904-4ff7-9a40-9460fd13dc22",
       "CALC_MCU"
+    ],
+    [
+      "2a78504e-c69c-4bcf-8319-c338f9001871",
+      "USER"
     ]
   ],
   "text_variables": {},
