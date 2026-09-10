@@ -2892,7 +2892,16 @@
 		)
 		(uuid "b5f4e22a-28c9-4eef-a221-4161dd94f095")
 	)
-	(junction (at 153.67 106.045) (diameter 0) (color 0 0 0 0) (uuid "92d8a629-9e8f-40da-a0ca-b0a04d426885"))
+	(wire
+		(pts
+			(xy 143.51 106.045) (xy 154.305 106.045)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf061823-1181-4206-82c8-6d958daef934")
+	)
 	(wire
 		(pts
 			(xy 194.31 118.745) (xy 194.31 121.285)
@@ -3133,7 +3142,16 @@
 		)
 		(uuid "ff4b8f3d-b866-4b69-8f1a-b54fc8558444")
 	)
-	(label "RTC_SCL" (at 255.905 111.125 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "309aadb8-0b9f-4264-b758-f9bde3dead93"))
+	(label "RTC_SCL"
+		(at 247.65 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "309aadb8-0b9f-4264-b758-f9bde3dead93")
+	)
 	(label "UART_TX"
 		(at 226.695 143.51 0)
 		(effects
@@ -3224,7 +3242,16 @@
 		)
 		(uuid "e20e488c-eb49-4d4f-a54c-0d513c526fff")
 	)
-	(wire (pts (xy 143.51 106.045) (xy 153.67 106.045)) (stroke (width 0) (type default)) (uuid "26f6c77a-b6ad-4319-b0dc-846ebf4ad9ca"))
+	(label ""
+		(at 75.565 98.425 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f85fb710-4677-4ab7-ab69-a550da9400bf")
+	)
 	(global_label "TFT_SCLK"
 		(shape output)
 		(at 78.74 106.045 180)
@@ -4786,7 +4813,189 @@
 			)
 		)
 	)
-	(symbol (lib_id "DS1021-1X3SF11-B:DS1021-1X3SF11-B") (at 247.65 146.05 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "66d7dd97-8f03-4636-9e01-5874c8d1d850") (property "Reference" "J2" (at 255.27 144.7799 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "DS1021-1X3SF11-B" (at 255.27 147.3199 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "CONNFLY_DS1021-1X3SF11-B:CONNFLY_DS1021-1X3SF11-B" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "Datasheet" "" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "3 position 2.54mm single row vertical pin header through hole" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "MF" "Connfly" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "Package" "None" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "Price" "None" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "Check_prices" "https://www.snapeda.com/parts/DS1021-1X3SF11-B/Connfly/view-part/?ref=eda" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "SnapEDA_Link" "https://www.snapeda.com/parts/DS1021-1X3SF11-B/Connfly/view-part/?ref=snap" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "MP" "DS1021-1X3SF11-B" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "Availability" "Not in stock" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (property "MANUFACTURER" "CONNFLY" (at 247.65 146.05 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify bottom))) (pin "3" (uuid "92469cca-ac89-4405-8808-9ded71434af1")) (pin "1" (uuid "e6bacd07-639b-4498-bf68-10bd73dd29f7")) (pin "2" (uuid "e6e3d916-e3c5-4684-bae5-5f4971cf793d")) (instances (project "masaüstü güç kaynağı" (path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283" (reference "J2") (unit 1)))))
+	(symbol
+		(lib_id "DS1021-1X3SF11-B:DS1021-1X3SF11-B")
+		(at 247.65 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66d7dd97-8f03-4636-9e01-5874c8d1d850")
+		(property "Reference" "J1"
+			(at 255.27 144.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DS1021-1X3SF11-B"
+			(at 255.27 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DS1021-1X3SF11-B:CONNFLY_DS1021-1X3SF11-B"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3 position 2.54mm single row vertical pin header through hole"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Connfly"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "None"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/DS1021-1X3SF11-B/Connfly/view-part/?ref=eda"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/DS1021-1X3SF11-B/Connfly/view-part/?ref=snap"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "DS1021-1X3SF11-B"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "CONNFLY"
+			(at 247.65 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "3"
+			(uuid "92469cca-ac89-4405-8808-9ded71434af1")
+		)
+		(pin "1"
+			(uuid "e6bacd07-639b-4498-bf68-10bd73dd29f7")
+		)
+		(pin "2"
+			(uuid "e6e3d916-e3c5-4684-bae5-5f4971cf793d")
+		)
+		(instances
+			(project "masaüstü güç kaynağı"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 158.115 106.045 90)
@@ -6481,7 +6690,87 @@
 			)
 		)
 	)
-	(symbol (lib_id "Device:C") (at 121.92 66.04 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "da372976-4b84-410b-97f2-f03c79857d95") (property "Reference" "C5" (at 123.19 63.5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "22uF" (at 123.19 68.58 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 122.8852 69.85 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 121.92 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Unpolarized capacitor" (at 121.92 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "c87a708d-da48-4b4d-b90d-1b50c3529473")) (pin "2" (uuid "45baaeb5-a2ca-4652-8e16-d45e770e6c8c")) (instances (project "masaüstü güç kaynağı" (path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283" (reference "C5") (unit 1)))))
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "da372976-4b84-410b-97f2-f03c79857d95")
+		(property "Reference" "C5"
+			(at 123.19 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 123.19 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric"
+			(at 122.8852 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 121.92 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c87a708d-da48-4b4d-b90d-1b50c3529473")
+		)
+		(pin "2"
+			(uuid "45baaeb5-a2ca-4652-8e16-d45e770e6c8c")
+		)
+		(instances
+			(project "masaüstü güç kaynağı"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "PCM_Espressif:ESP32-C6-WROOM-1")
 		(at 115.57 113.665 0)
@@ -7252,10 +7541,4 @@
 			)
 		)
 	)
-
-(symbol (lib_id "Device:R") (at 153.67 98.425 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "756fed8f-2fb5-4464-abd1-488c828bcd18") (property "Reference" "R37" (at 156.21 97.1549 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10kR" (at 156.21 99.6949 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 151.89200000000002 98.425 90) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 153.67 98.425 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Resistor" (at 153.67 98.425 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "2" (uuid "b20b2154-4797-42c1-b071-3c40901efba2")) (pin "1" (uuid "75c84b68-f864-455f-98f7-bf4c5d4195eb")) (instances (project "masaüstü güç kaynağı" (path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283" (reference "R37") (unit 1)))))
-(wire (pts (xy 153.67 102.235) (xy 153.67 106.045)) (stroke (width 0) (type default)) (uuid "f60d22c4-e52d-4ba3-9a72-fac15b8ba2a9"))
-(wire (pts (xy 153.67 106.045) (xy 154.305 106.045)) (stroke (width 0) (type default)) (uuid "c3cf9f9f-b9d1-4024-beab-1394f27b8546"))
-(symbol (lib_id "power:+3.3V") (at 153.67 90.805 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "6212177b-0093-49d3-9a00-5a6fb20143ee") (property "Reference" "#PWR048" (at 153.67 94.615 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3V" (at 153.67 85.725 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 153.67 90.805 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 153.67 90.805 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 153.67 90.805 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "9640ca56-44f6-4811-bbfa-e77a525334b9")) (instances (project "masaüstü güç kaynağı" (path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283" (reference "#PWR048") (unit 1)))))
-(wire (pts (xy 153.67 90.805) (xy 153.67 94.615)) (stroke (width 0) (type default)) (uuid "4a3dc297-d4a3-4eb0-97f8-9690a894fbd6"))
 )

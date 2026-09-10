@@ -546,7 +546,83 @@
 			)
 		)
 	)
-	(sheet (at 83.82 40.64) (size 36.83 38.1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (stroke (width 0.1524) (type solid) (color 228 64 255 1)) (fill (color 227 90 255 1)) (uuid "ef9b8359-2233-4750-a469-a0efa9e391b0") (property "Sheetname" "USB_PD_CONTROLLER" (at 83.82 39.9284 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left bottom))) (property "Sheetfile" "usb_pd_controller.kicad_sch" (at 83.82 79.3246 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left top))) (instances (project "masaüstü güç kaynağı" (path "/a43081a6-9aa2-4898-9347-bbcb5849dafd" (page "2")))))
+	(sheet
+		(at 83.82 40.64)
+		(size 36.83 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 228 64 255 1)
+		)
+		(fill
+			(color 227 90 255 1)
+		)
+		(uuid "ef9b8359-2233-4750-a469-a0efa9e391b0")
+		(property "Sheetname" "USB_PD_CONTROLLER"
+			(at 83.82 39.9284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_pd_controller.kicad_sch"
+			(at 83.82 79.3246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_CC1" input
+			(at 120.65 49.53 0)
+			(uuid "f06a13de-6a49-4783-9487-c365036b0ba4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_CC2" input
+			(at 120.65 53.34 0)
+			(uuid "7eabdfab-4169-4db2-992d-480401a7c79d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_VBUS" input
+			(at 120.65 44.45 0)
+			(uuid "3d025b35-0b72-4099-850b-bd3830cdee36")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "masaüstü güç kaynağı"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet
 		(at 219.71 39.37)
 		(size 39.37 40.64)
