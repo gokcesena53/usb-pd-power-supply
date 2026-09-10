@@ -1,0 +1,4 @@
+DATASHEET VALUE: AOZ1284PI Rev1.1 March2025; VFB=0.8V; ISS=2.5uA; Cbst=100nF. RF table 100k=500kHz; formula gives476.19kHz.
+CALCULATED VALUE: D(5V)=0.66; D(28V)=0.11786; L22uH ripple0.1071/0.2779A at476.19kHz. L-20% peak1.1737A. Diode VRRM>28V, average max0.882A, peak1.174A. Cin effective10uF worst ripple52.5mV. Cout effective44uF capacitive ripple2.07mV at L-20%; ESR adds ripple. FB10k/3.2k yields3.3V. Css10nF gives3.2ms (2.67..4ms).
+COMP: fc10kHz, Co44uF, RL3.3ohm, GEA200uA/V, GCS4.5 -> Rc12.67k; Cc=1.5*Co*RL/Rc=17.2nF. Choose12.7k/18nF. At GEA170uA/V fc8.52kHz. These are analytical estimates, not measured stability.
+ENGINEERING CHOICE: 22uH Isat>=2A Irms>=1.5A; Schottky60V/2A; Cin2x10uF50V+100nF50V; Cout2x47uF10V. Effective C requires actual part bias curves. EN TL431BIDBZR2.495V shunt with1k2W feed and100k pulldown: feed2.505..25.505mA, max0.651W resistor loss. No external UVLO implied. Package fits SO8EP, pad9VIN. Main5A load bypasses buck.

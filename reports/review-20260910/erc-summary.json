@@ -1,0 +1,27 @@
+{
+  "before": {
+    "errors": 15,
+    "warnings": 278,
+    "types": {
+      "label_dangling": 1,
+      "endpoint_off_grid": 262,
+      "unconnected_wire_endpoint": 13,
+      "isolated_pin_label": 2,
+      "lib_symbol_mismatch": 1,
+      "power_pin_not_driven": 5,
+      "pin_not_connected": 9
+    }
+  },
+  "after": {
+    "errors": 7,
+    "warnings": 275,
+    "types": {
+      "endpoint_off_grid": 267,
+      "unconnected_wire_endpoint": 6,
+      "isolated_pin_label": 1,
+      "lib_symbol_mismatch": 1,
+      "power_pin_not_driven": 5,
+      "pin_not_connected": 2
+    }
+  }
+}

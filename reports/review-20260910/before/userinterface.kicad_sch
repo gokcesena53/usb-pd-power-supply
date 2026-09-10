@@ -5,488 +5,6 @@
 	(uuid "eaf96981-c9aa-4a8b-9939-0c0473ab334a")
 	(paper "A4")
 	(lib_symbols
-		(symbol "AO3400A:AO3400A"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at -8.89 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "AO3400A"
-				(at -8.89 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "AO3400A:SOT95P280X125-3N"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MF" "UMW"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "PACKAGE" "SOT-23 Alpha &amp; Omega Semiconductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "PRICE" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/UMW/view-part/?ref=eda"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/UMW/view-part/?ref=snap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MP" "AO3400A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "AVAILABILITY" "In Stock"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "AO3400A_0_0"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.175) (xy 0.762 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.54) (xy 0.762 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.762) (xy 0.762 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.905) (xy 0.762 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -2.54) (xy 0.762 -3.175)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.762) (xy 2.032 -0.762) (xy 1.016 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.762 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 2.54) (xy 3.81 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.508) (xy 3.302 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.508) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.508) (xy 3.302 -0.254) (xy 4.318 -0.254) (xy 3.81 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.318 0.508) (xy 3.81 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 -2.54 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x40"
 			(pin_names
 				(offset 1.016)
@@ -2090,6 +1608,307 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:Q_NMOS_GSD"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NMOS_GSD"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2363,10 +2182,10 @@
 		(uuid "5e6c2965-74d7-453d-bf30-1f240b61be36")
 	)
 	(junction
-		(at 45.72 164.338)
+		(at 45.085 161.925)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b1980d76-5a69-4333-bc60-52a6f63a0722")
+		(uuid "af893b5d-630f-400e-b839-16fc07925db1")
 	)
 	(junction
 		(at 70.485 156.845)
@@ -2478,13 +2297,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 156.845) (xy 70.485 156.845)
+			(xy 52.705 167.005) (xy 52.705 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0aa6902f-863a-43ad-941a-8e00265f6022")
+		(uuid "1b004c01-4d40-4807-b1cb-24fb989e0e4b")
 	)
 	(wire
 		(pts
@@ -2508,23 +2327,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 164.338) (xy 33.02 164.338)
+			(xy 28.575 161.925) (xy 32.385 161.925)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2fad1eed-9df5-4d1d-90c1-188c1f98231a")
-	)
-	(wire
-		(pts
-			(xy 52.324 166.878) (xy 52.324 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30cbb345-414c-44f9-ab6c-13fbe8c66a53")
 	)
 	(wire
 		(pts
@@ -2565,16 +2374,6 @@
 			(type default)
 		)
 		(uuid "4318d99e-8cff-4105-8004-5b2233eb4611")
-	)
-	(wire
-		(pts
-			(xy 45.72 164.338) (xy 47.244 164.338)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43ade1c0-a70c-4215-922a-369576b9853f")
 	)
 	(wire
 		(pts
@@ -2638,16 +2437,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.324 156.718) (xy 57.404 156.718)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58a97472-2212-4a88-8191-910c265d205b")
-	)
-	(wire
-		(pts
 			(xy 133.985 164.465) (xy 137.795 164.465)
 		)
 		(stroke
@@ -2698,6 +2487,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 156.845) (xy 70.485 156.845)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75c60e42-a268-493d-879c-08158bd9b644")
+	)
+	(wire
+		(pts
 			(xy 84.455 159.385) (xy 137.795 159.385)
 		)
 		(stroke
@@ -2728,6 +2527,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.705 156.845) (xy 57.15 156.845)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3431f65-5d92-41de-a211-eca07f60fb4c")
+	)
+	(wire
+		(pts
 			(xy 70.485 159.385) (xy 76.835 159.385)
 		)
 		(stroke
@@ -2748,7 +2557,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 164.338) (xy 45.72 164.338)
+			(xy 40.005 161.925) (xy 45.085 161.925)
 		)
 		(stroke
 			(width 0)
@@ -2808,7 +2617,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 164.338) (xy 45.72 166.878)
+			(xy 45.085 161.925) (xy 45.085 164.465)
 		)
 		(stroke
 			(width 0)
@@ -2818,7 +2627,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 174.498) (xy 45.72 178.943)
+			(xy 45.085 172.085) (xy 45.085 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2908,7 +2717,7 @@
 	)
 	(global_label "TFT_BL_PWM"
 		(shape input)
-		(at 29.21 164.338 180)
+		(at 28.575 161.925 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2918,7 +2727,7 @@
 		)
 		(uuid "13e97e2b-1576-4d38-a173-8268b4506109")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.7949 164.338 0)
+			(at 14.1599 161.925 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3299,6 +3108,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 52.705 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08ccf5e6-e3e5-4d8f-b990-fd31b9c7a440")
+		(property "Reference" "#PWR037"
+			(at 52.705 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.705 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.705 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.705 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.705 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f1f61cf-f3db-44a0-97b7-8e17ec574dd3")
+		)
+		(instances
+			(project "masaüstü güç kaynağı"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 113.665 149.225 0)
 		(unit 1)
@@ -3377,7 +3264,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 45.72 170.688 0)
+		(at 45.085 168.275 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3387,7 +3274,7 @@
 		(dnp no)
 		(uuid "14bf08f7-19fa-43fc-942b-a040a8dee269")
 		(property "Reference" "R29"
-			(at 40.64 170.688 0)
+			(at 40.005 168.275 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3398,7 +3285,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 39.37 173.228 0)
+			(at 38.735 170.815 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3409,7 +3296,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 43.942 170.688 90)
+			(at 43.307 168.275 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3420,7 +3307,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 170.688 0)
+			(at 45.085 168.275 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3431,7 +3318,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 45.72 170.688 0)
+			(at 45.085 168.275 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3457,86 +3344,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 52.324 180.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15253463-f02b-40de-bcf4-da2b311f75a8")
-		(property "Reference" "#PWR017"
-			(at 52.324 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 52.324 185.166 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.324 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.324 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.324 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b7cad32-360b-4f36-9261-2529746aa10e")
-		)
-		(instances
-			(project "masaüstü güç kaynağı"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 36.83 164.338 90)
+		(at 36.195 161.925 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3546,7 +3355,7 @@
 		(dnp no)
 		(uuid "1858ab0d-e36b-4769-9ac8-3c7e63aa5ef6")
 		(property "Reference" "R28"
-			(at 36.83 168.148 90)
+			(at 36.195 165.735 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3556,7 +3365,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 36.83 170.688 90)
+			(at 36.195 168.275 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3566,7 +3375,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 36.83 166.116 90)
+			(at 36.195 163.703 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3577,7 +3386,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 164.338 0)
+			(at 36.195 161.925 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3588,7 +3397,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 36.83 164.338 0)
+			(at 36.195 161.925 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3931,7 +3740,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 178.943 0)
+		(at 45.085 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3942,7 +3751,7 @@
 		(fields_autoplaced yes)
 		(uuid "46df79c3-f5b0-4204-8d1e-065e3df18297")
 		(property "Reference" "#PWR036"
-			(at 45.72 185.293 0)
+			(at 45.085 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3953,7 +3762,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 184.023 0)
+			(at 45.085 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3963,7 +3772,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 178.943 0)
+			(at 45.085 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3974,7 +3783,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 178.943 0)
+			(at 45.085 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3985,7 +3794,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 178.943 0)
+			(at 45.085 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4475,213 +4284,6 @@
 			(project "masaüstü güç kaynağı"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AO3400A:AO3400A")
-		(at 49.784 161.798 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9d2f8e8-ceba-4ff6-b3e5-a8697608c988")
-		(property "Reference" "Q5"
-			(at 55.626 160.5279 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400A"
-			(at 55.626 163.0679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "UMW"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PACKAGE" "SOT-23 Alpha &amp; Omega Semiconductor"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PRICE" "None"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/UMW/view-part/?ref=eda"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/UMW/view-part/?ref=snap"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "AO3400A"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "AVAILABILITY" "In Stock"
-			(at 49.784 161.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "1"
-			(uuid "c9d56251-597a-441b-aa72-4cf23dac35f3")
-		)
-		(pin "2"
-			(uuid "0748dc06-3621-4aa8-a01b-6e64e3addda2")
-		)
-		(pin "3"
-			(uuid "8b3ddce0-60b4-41df-8b3f-4d175139c963")
-		)
-		(instances
-			(project "masaüstü güç kaynağı"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
-					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -5203,6 +4805,91 @@
 			(project "masaüstü güç kaynağı"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
+		(at 50.165 161.925 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef0e11d4-ebd6-4019-aac8-5d6d16991ae8")
+		(property "Reference" "Q6"
+			(at 56.515 160.6549 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS_GSD"
+			(at 56.515 163.1949 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.245 159.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.165 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 50.165 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "f8e985cf-6fb7-4330-9d1a-6093e15e6d20")
+		)
+		(pin "1"
+			(uuid "0e85022f-b40b-4d8e-b9b1-32268b81b563")
+		)
+		(pin "2"
+			(uuid "87b33c9d-bb5f-4716-b5c4-05f40ba9f599")
+		)
+		(instances
+			(project "masaüstü güç kaynağı"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
+					(reference "Q6")
 					(unit 1)
 				)
 			)

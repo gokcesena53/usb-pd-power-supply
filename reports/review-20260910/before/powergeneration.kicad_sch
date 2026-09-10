@@ -644,191 +644,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Reference_Voltage:TL431DBZ"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TL431DBZ"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 -4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-				(at 1.778 -9.144 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" "Shunt Regulator, SOT-23"
-				(at 0 -7.112 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode device shunt regulator"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TL431DBZ_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.762) (xy -0.762 0.762) (xy 0.762 0) (xy -0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.762) (xy 0.762 -0.762) (xy 0.762 0.762) (xy 0.762 0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TL431DBZ_1_1"
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.54)
-					(name "REF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_Switching:AOZ1284PI"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1344,7 +1159,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VIN = EXPOSED PAD 9: PD_VOUT, NOT GND.\nEN: 2.495V shunt bias; R43 dissipation 0.65W at 28V.\nCOMP: Rc=12.7k, Cc=18nF; fc about 8.5..10kHz at Cout_eff=44uF.\nRF=100k: table 500kHz; equation 476.19kHz. Verify on prototype."
+	(text "VIN = EXPOSED PAD 9: PD_VOUT, NOT GND.\nEN requires independent 1.2..5V bias. DO NOT connect to PD_VOUT.\nCOMP values UNRESOLVED: datasheet GEA / Cc equations conflict.\nRF=100k: table 500kHz; equation 476.19kHz. Actual range UNRESOLVED."
 		(exclude_from_sim no)
 		(at 38.1 172.72 0)
 		(effects
@@ -1366,7 +1181,7 @@
 		)
 		(uuid "a5e852ff-7f0c-4d37-bc4f-ff6d2ae756b9")
 	)
-	(text "L/D exact MPN and footprints require selection.\nL: Isat >=2A normal load, Irms >=1.5A.\nCout effective >=44uF; check DC-bias curves."
+	(text "L/D MPN + footprints: UNRESOLVED\nIsat >=2A normal load; fault capability unverified\nCout effective >=44uF; DC bias must be checked"
 		(exclude_from_sim no)
 		(at 165.1 157.48 0)
 		(effects
@@ -1424,12 +1239,6 @@
 		(uuid "6ccd2dc9-0d6c-4a82-98f0-8a71d3f0d380")
 	)
 	(junction
-		(at 243.84 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7acc4249-6eef-4913-899d-320ba69375f9")
-	)
-	(junction
 		(at 78.74 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1456,16 +1265,6 @@
 			(type default)
 		)
 		(uuid "03793b17-7c16-4fc3-8c62-2e44ba03894a")
-	)
-	(wire
-		(pts
-			(xy 243.84 135.89) (xy 233.68 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0489277d-a02d-4bc2-9d8f-7ecf1dc41bbb")
 	)
 	(wire
 		(pts
@@ -1526,16 +1325,6 @@
 			(type default)
 		)
 		(uuid "22aff559-4624-4d8a-9e3e-99bda281f745")
-	)
-	(wire
-		(pts
-			(xy 243.84 148.59) (xy 243.84 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22b5b880-0d4f-44e5-8eb4-51b546fd08b5")
 	)
 	(wire
 		(pts
@@ -1669,16 +1458,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 135.89) (xy 243.84 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "837b9db0-57c7-4642-8404-e8e69e3c4384")
-	)
-	(wire
-		(pts
 			(xy 195.58 92.71) (xy 195.58 99.06)
 		)
 		(stroke
@@ -1686,16 +1465,6 @@
 			(type default)
 		)
 		(uuid "848bf66a-f424-4669-925c-bed1fc83db07")
-	)
-	(wire
-		(pts
-			(xy 233.68 135.89) (xy 233.68 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86a4c281-2f8c-4375-bc0f-fe38708c98b6")
 	)
 	(wire
 		(pts
@@ -1849,16 +1618,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 146.05) (xy 241.3 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c56e7588-b5b4-478a-b1e6-63c62942c015")
-	)
-	(wire
-		(pts
 			(xy 137.16 76.2) (xy 158.75 76.2)
 		)
 		(stroke
@@ -1939,16 +1698,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 124.46) (xy 243.84 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8418020-31db-454c-96a2-f3f9dc985db5")
-	)
-	(wire
-		(pts
 			(xy 175.26 76.2) (xy 195.58 76.2)
 		)
 		(stroke
@@ -1966,16 +1715,6 @@
 			(type default)
 		)
 		(uuid "fb473f33-1e3b-4636-849d-e3afc772ed98")
-	)
-	(wire
-		(pts
-			(xy 243.84 110.49) (xy 243.84 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb97cbfd-a55f-4c8b-beaa-cc709a4b2f14")
 	)
 	(wire
 		(pts
@@ -2028,7 +1767,7 @@
 		(uuid "351228f3-63f7-49d2-9c48-a2c9fa0e8051")
 	)
 	(label "LX_SW"
-		(at 137.795 76.2 0)
+		(at 153.67 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2056,16 +1795,6 @@
 			(justify left bottom)
 		)
 		(uuid "7e7b401d-5c53-43ce-b7e7-478dac94a5fd")
-	)
-	(label "EN_CTRL"
-		(at 233.68 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a841dd31-04c1-4bf3-8ae4-e10f348e927a")
 	)
 	(label "COMP_NODE"
 		(at 104.14 81.28 0)
@@ -2096,30 +1825,6 @@
 			(justify left bottom)
 		)
 		(uuid "d8875c94-0046-4cd8-9141-23cc48187d5f")
-	)
-	(global_label "PD_VOUT"
-		(shape input)
-		(at 243.84 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e2b123e-f84f-43b6-86d6-73654583cce9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.05 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
 	(global_label "PD_VOUT"
 		(shape output)
@@ -2430,95 +2135,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 243.84 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1742483f-07d1-49e3-a3bb-b6b2349bf77c")
-		(property "Reference" "#PWR0101"
-			(at 247.65 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 243.84 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" ""
-			(at 243.84 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "827d8c95-fdd7-4bf1-8ab6-99364b11f4e4")
-		)
-		(instances
-			(project "masaüstü güç kaynağı"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/5dec5942-8798-43d7-9ae8-350e99f1540a"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 78.74 60.96 0)
 		(unit 1)
@@ -2643,7 +2259,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12.7kR 1%"
+		(property "Value" "UNRESOLVED"
 			(at 42.545 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3432,99 +3048,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Reference_Voltage:TL431DBZ")
-		(at 243.84 146.05 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "776a41ef-785e-419e-a2a2-efcdc3299d2c")
-		(property "Reference" "U6"
-			(at 252.73 142.875 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL431BIDBZR"
-			(at 252.73 146.685 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 243.84 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" "TI TL431 DBZ: K1 REF2 A3. REF tied K. No added capacitive load."
-			(at 243.84 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "3"
-			(uuid "9053aea2-0d24-4944-bb14-f578df55ae83")
-		)
-		(pin "2"
-			(uuid "3d90f1cc-ae7e-43e9-805e-4d7ad3cf7327")
-		)
-		(pin "1"
-			(uuid "e4883409-56d6-4594-b35d-b1874d42b79e")
-		)
-		(instances
-			(project "masaüstü güç kaynağı"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/5dec5942-8798-43d7-9ae8-350e99f1540a"
-					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 111.76 120.65 0)
 		(unit 1)
@@ -3784,7 +3307,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "X7R; bank effective Cout >=44uF at 3.3V. Confirm exact MPN bias/ESR before manufacture."
+		(property "DesignNote" "X7R; bank effective Cout >=44uF at 3.3V; actual C/ESR UNRESOLVED"
 			(at 195.58 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -3976,7 +3499,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "X7R; bank effective Cout >=44uF at 3.3V. Confirm exact MPN bias/ESR before manufacture."
+		(property "DesignNote" "X7R; bank effective Cout >=44uF at 3.3V; actual C/ESR UNRESOLVED"
 			(at 218.44 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4026,7 +3549,7 @@
 		(dnp no)
 		(uuid "9fadab47-89d2-4000-aaeb-f2e96da18757")
 		(property "Reference" "C17"
-			(at 147.32 62.738 90)
+			(at 154.305 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4037,7 +3560,7 @@
 			)
 		)
 		(property "Value" "100nF / 16V"
-			(at 154.94 66.548 90)
+			(at 161.925 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4331,7 +3854,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "18nF / 16V"
+		(property "Value" "UNRESOLVED"
 			(at 74.93 151.765 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4761,98 +4284,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 243.84 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c4244a0e-2e9b-445d-943a-d81f463b4194")
-		(property "Reference" "R43"
-			(at 247.65 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1kR / 2W"
-			(at 247.65 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 243.84 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" "Shunt feed: 0.651W at 28V. Select actual 2W-rated part; footprint alone is not a rating."
-			(at 243.84 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "9d8bed98-f495-45a0-85ab-92954a34b792")
-		)
-		(pin "2"
-			(uuid "739bc3db-f29e-4dd8-8e94-f2df8abc09f6")
-		)
-		(instances
-			(project "masaüstü güç kaynağı"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/5dec5942-8798-43d7-9ae8-350e99f1540a"
-					(reference "R43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Switching:AOZ1284PI")
 		(at 127 76.2 0)
 		(unit 1)
@@ -4965,7 +4396,7 @@
 		(dnp no)
 		(uuid "e06ee64e-8099-480c-b206-b86c24b682fc")
 		(property "Reference" "L1"
-			(at 173.355 71.12 90)
+			(at 171.45 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4976,7 +4407,7 @@
 			)
 		)
 		(property "Value" "22uH"
-			(at 173.355 73.66 90)
+			(at 171.45 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
