@@ -1,0 +1,34 @@
+ERC report (2026-09-11T10:32:10, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+
+***** Sheet /USB_PD_CONTROLLER/
+
+***** Sheet /USB_C_INPUT/
+
+***** Sheet /MCU/
+
+***** Sheet /USER INTERFACE/
+
+***** Sheet /POWER GENERATION/
+
+***** Sheet /POWER SENSING/
+
+***** Sheet /POWER OUTPUT/
+
+***** Sheet /USB_PD_CONTROLLER/CALC_USB_PD_CONTROLLER/
+
+***** Sheet /USB_C_INPUT/CALC_USB_C_INPUT/
+
+***** Sheet /MCU/CALC_MCU/
+
+***** Sheet /USER INTERFACE/USER/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

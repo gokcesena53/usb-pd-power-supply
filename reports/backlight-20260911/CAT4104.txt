@@ -1,0 +1,1173 @@
+DATA SHEET
+www.onsemi.com
+© Semiconductor Components Industries, LLC, 2010
+January, 2023 − Rev. 3
+1
+Publication Order Number:
+CAT4104/D
+700 mA Quad Channel
+Constant Current LED Driver
+CAT4104
+Description
+The CAT4104 provides four matched low dropout current sinks to
+drive high−brightness LED strings up to 175 mA per channel. The
+LED channel current is set by an external resistor connected to the
+RSET pin. The LED pins are compatible with high voltage up to 25 V
+supporting applications with long strings of LEDs.
+The EN/PWM logic input supports the device enable and high
+frequency external Pulse Width Modulation (PWM) dimming control.
+Thermal shutdown protection is incorporated in the device to
+disable the LED outputs whenever the die temperature exceeds 150°C.
+The device is available in the 8−pad TDFN 2 mm x 3 mm package
+and the SOIC 8−Lead 150 mil wide package.
+Features
+• 4 Matched LED Current Sinks up to 175 mA
+• Up to 25 V Operation on LED Pins
+• Low Dropout Current Source (0.4 V at 175 mA)
+• LED Current Set by External Resistor
+• High Frequency PWM Dimming via EN/PWM
+• “Zero” Current Shutdown Mode
+• Thermal Shutdown Protection
+• TDFN 8−pad 2 x 3 mm and SOIC 8−lead Packages
+• These Devices are Pb−Free, Halogen Free/BFR Free and are RoHS
+Compliant
+Applications
+• Automotive Lighting
+• General and Architectural Lighting
+• LCD Backlight
+Figure 1. Typical Application Circuit
+VIN
+CAT4104
+VCC
+LEDs
+R1
+768 
+3 V to 25 V
+VIN
+5 V
+EN/PWM
+RSET
+LED1
+LED2
+LED3
+LED4
+GND
+ON
+OFF
+175 mA
+SOIC−8
+V SUFFIX
+CASE 751BD
+PIN CONNECTIONS
+MARKING DIAGRAMS
+CAT4104V = CAT4104V
+HC = CAT4104VP2
+SOIC 8−lead
+(Top View)
+Device
+Package
+Shipping
+ORDERING INFORMATION
+CAT4104V−GT3
+(Note 1)
+SOIC−8
+(Pb−Free)
+3,000/
+Tape & Reel
+1. Lead Finish is NiPdAu
+CAT4104V
+TDFN−8
+VP SUFFIX
+CASE 511AK
+CAT4104VP2−GT3
+(Note 1)
+TDFN−8
+(Pb−Free)
+3,000/
+Tape & Reel
+GND
+VIN
+RSET
+LED4
+LED3
+LED2
+LED1
+1
+EN/PWM
+GND
+VIN
+RSET
+LED4
+LED3
+LED2
+LED1
+EN/PWM
+TDFN 8−pad
+(Top View)
+HC
+1
+
+CAT4104
+www.onsemi.com
+2
+Table 1. ABSOLUTE MAXIMUM RATINGS
+Parameter
+Rating
+Unit
+VIN, RSET, EN/PWM Voltages
+−0.3 to 6
+V
+LED1, LED2, LED3, LED4 Voltages
+−0.3 to 25
+V
+Storage Temperature Range
+−65 to +160
+C
+Junction Temperature Range
+−40 to +150
+C
+Lead Temperature
+300
+C
+Stresses exceeding those listed in the Maximum Ratings table may damage the device. If any of these limits are exceeded, device functionality
+should not be assumed, damage may occur and reliability may be affected.
+Table 2. RECOMMENDED OPERATING CONDITIONS
+Parameter
+Rating
+Unit
+VIN
+3.0 to 5.5
+V
+Voltage applied to LED1 to LED4, outputs off
+up to 25
+V
+Voltage applied to LED1 to LED4, outputs on
+up to 6 (Note 2)
+V
+Ambient Temperature Range
+−40 to +85
+C
+ILED per LED pin
+10 to 175
+mA
+2. Keeping LEDx pin voltage below 6 V in operation is recommended to minimize thermal dissipation in the package.
+NOTE:
+Typical application circuit with external components is shown on page 1.
+Table 3. ELECTRICAL OPERATING CHARACTERISTICS (Min and Max values are over the recommended operating conditions
+unless specified otherwise. Typical values are at VIN = 5.0 V, TAMB = 25°C.)
+Symbol
+Name
+Conditions
+Min
+Typ
+Max
+Units
+ILED−ACC
+LED Current Accuracy
+ILEDNOM  ILED
+ILEDNOM
+±2
+%
+ILED−DEV
+LED Channel Matching
+ILED  ILEDAVG
+ILEDAVG
+(Note 3)
+−5
+±1
++5
+%
+VDOUT
+Dropout Voltage
+ILED = 175 mA
+400
+mV
+VRSET
+RSET Pin Voltage
+1.17
+1.2
+1.23
+V
+IQ
+Quiescent Current
+No LED, RSET = Float
+No LED, RSET = 770 
+0.6
+6
+mA
+IQSHDN
+Shutdown Current
+VEN = 0 V
+1
+A
+REN/PWM
+VHI
+VLO
+EN/PWM Pin
+− Internal pull−down resistance
+− Logic High Level
+− Logic Low Level
+1.3
+200
+0.4
+k
+V
+V
+TSD
+Thermal Shutdown
+150
+°C
+THYS
+Thermal Hysteresis
+20
+°C
+ILED/IRSET
+RSET to LED Current gain ratio
+25 mA LED current
+100
+VUVLO
+Undervoltage lockout (UVLO) threshold
+2.0
+V
+3. Min and Max values are tested for ILED = 50 mA, VIN = 3.5 V, VLEDx = 0.4 V, TAMB = 25°C.
+
+CAT4104
+www.onsemi.com
+3
+Table 4. RECOMMENDED EN/PWM TIMING (Min and Max values are over the recommended operating conditions unless
+specified otherwise. Typical values are at VIN = 5.0 V, TAMB = 25°C.)
+Symbol
+Name
+Conditions
+Min
+Typ
+Max
+Units
+TPS
+Turn−On time, EN/PWM rising to ILED from
+shutdown
+ILED = 175 mA
+ILED = 80 mA
+1.5
+1.3
+s
+TP1
+Turn−On time, EN/PWM rising to ILED
+ILED = 175 mA
+600
+ns
+TP2
+Turn−Off time, EN/PWM falling to ILED
+ILED = 175 mA
+ILED = 80 mA
+400
+300
+ns
+TR
+LED rise time
+ILED = 175 mA
+ILED = 80 mA
+700
+440
+ns
+TF
+LED fall time
+ILED = 175 mA
+ILED = 80 mA
+360
+320
+ns
+TLO
+EN/PWM low time
+1
+s
+THI
+EN/PWM high time
+5
+s
+TPWRDWN
+EN/PWM low time to shutdown delay
+4
+8
+ms
+Figure 2. CAT4104 EN/PWM Timing
+EN/PWM
+SHUTDOWN
+POWERDOWN
+SHUTDOWN 0 mA
+SHUTDOWN 0 mA
+0 mA
+SHUTDOWN 0 mA
+SHUTDOWN 0 mA
+LED CURRENT
+QUIESCENT CURRENT
+50%
+50%
+90%
+10%
+TPS
+TP2
+THI
+TLO
+TP1 TR
+TF
+TPWRDWN
+ILED  1.2 V
+RSET
+ 100
+EN/PWM OPERATION
+The EN/PWM pin has two primary functions. One
+function enables and disables the device. The other function
+turns the LED channels on and off for PWM dimming
+control. The device has a very fast turn−on time (from
+EN/PWM rising to LED on) and allows “instant on” when
+dimming LED using a PWM signal.
+Accurate linear dimming is compatible with PWM
+frequencies from 100 Hz to 5 kHz for PWM duty cycle
+down to 1%. PWM frequencies up to 50 kHz can be
+supported for duty cycles greater than 10%.
+When performing a combination of low frequencies and
+small duty cycles, the device may enter shutdown mode.
+This has no effect on the dimming accuracy, because the
+turn−on time TPS is very short, in the range of 1 s.
+To ensure that PWM pulses are recognized, pulse width
+low time TLO should be longer than 1 s. The CAT4104
+enters a “zero current” shutdown mode after a 4 ms delay
+(typical) when EN/PWM is held low.
+
+CAT4104
+www.onsemi.com
+4
+TYPICAL PERFORMANCE CHARACTERISTICS
+(VIN = 5 V, VCC = 5 V, LED FORWARD VOLTAGE = 3.5 V, CIN = 1 F, TAMB = 25°C UNLESS OTHERWISE SPECIFIED.)
+Figure 3. Quiescent Current vs. Input Voltage
+(RSET Open)
+Figure 4. Quiescent Current vs. RSET Current
+INPUT VOLTAGE (V)
+RSET CURRENT (mA)
+5.5
+5.0
+4.5
+4.0
+3.5
+3.0
+0.4
+0.6
+0.8
+1.0
+1.2
+2.0
+1.5
+1.0
+0.5
+0
+0
+2
+4
+6
+8
+Figure 5. Quiescent Current vs. Input Voltage
+(Full Load)
+Figure 6. LED Dropout vs. LED Pin Voltage
+INPUT VOLTAGE (V)
+LED PIN VOLTAGE (V)
+5.5
+5.0
+4.5
+4.0
+3.5
+3.0
+5.0
+5.5
+6.0
+6.5
+7.0
+1.0
+0.8
+0.6
+0.4
+0.2
+0
+0
+40
+80
+120
+160
+200
+Figure 7. LED Line Regulation
+Figure 8. LED Current Change vs.
+Temperature
+VIN (V)
+TEMPERATURE (°C)
+5.5
+5.0
+4.5
+4.0
+3.5
+3.0
+0
+40
+80
+120
+160
+200
+120
+80
+40
+0
+−40
+0
+40
+80
+120
+160
+200
+QUIESCENT CURRENT (mA)
+QUIESCENT CURRENT (mA)
+QUIESCENT CURRENT (mA)
+LED CURRENT (mA)
+LED CURRENT (mA)
+LED CURRENT (mA)
+No Load
+Full Load
+
+CAT4104
+www.onsemi.com
+5
+TYPICAL PERFORMANCE CHARACTERISTICS
+(VIN = 5 V, VCC = 5 V, LED FORWARD VOLTAGE = 3.5 V, CIN = 1 F, TAMB = 25°C UNLESS OTHERWISE SPECIFIED.)
+Figure 9. LED Current vs. RSET Resistor
+Figure 10. LED Current vs. LED Pin Voltage
+RSET (k)
+LED PIN VOLTAGE (V)
+10
+1
+0.1
+10
+100
+1000
+6
+5
+4
+3
+2
+1
+0
+0
+40
+80
+120
+160
+200
+Figure 11. RSET Pin Voltage vs. Input Voltage
+Figure 12. RSET Pin Voltage vs. Temperature
+INPUT VOLTAGE (V)
+TEMPERATURE (°C)
+5.5
+5.0
+4.5
+4.0
+3.5
+3.0
+1.10
+1.15
+1.20
+1.25
+1.30
+120
+80
+40
+0
+−40
+1.10
+1.15
+1.20
+1.25
+1.30
+Figure 13. LED Off Current vs. LED Pin
+Voltage
+LED PIN VOLTAGE (V)
+30
+25
+20
+15
+10
+5
+0
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+LED CURRENT (mA)
+LED CURRENT (mA)
+RSET VOLTAGE (V)
+RSET VOLTAGE (V)
+LED OFF CURRENT (A)
+125°C
+25°C
+−40°C
+
+CAT4104
+www.onsemi.com
+6
+TYPICAL PERFORMANCE CHARACTERISTICS
+(VIN = 5 V, VCC = 5 V, LED FORWARD VOLTAGE = 3.5 V, CIN = 1 F, TAMB = 25°C UNLESS OTHERWISE SPECIFIED.)
+Figure 14. EN/PWM Pull−down Current vs.
+VEN/PWM
+Figure 15. EN/PWM Threshold vs. VIN
+ENABLE VOLTAGE (V)
+INPUT VOLTAGE (V)
+5
+4
+3
+2
+1
+0
+0
+5
+10
+15
+20
+25
+5.5
+5.0
+4.5
+4.0
+3.5
+3.0
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+Figure 16. Power Up from Shutdown
+Figure 17. Power Down
+Figure 18. PWM 200 Hz, 1% Duty Cycle
+ENABLE CURRENT (A)
+ENABLE THRESHOLD (V)
+85°C
+25°C
+−40°C
+
+CAT4104
+www.onsemi.com
+7
+Table 5. PIN DESCRIPTIONS
+Name
+Pin
+SOIC 8−Lead
+Pin
+TDFN 8−Lead
+Function
+LED1
+1
+1
+LED1 cathode terminal
+LED2
+2
+2
+LED2 cathode terminal
+LED3
+3
+3
+LED3 cathode terminal
+LED4
+4
+4
+LED4 cathode terminal
+GND
+5
+5 and TAB
+Ground reference
+EN/PWM
+6
+6
+Device enable input and PWM control
+VIN
+7
+7
+Device supply pin
+RSET
+8
+8
+LED current set pin for the LED channels
+PIN FUNCTION
+VIN is the supply pin for the device. A small 0.1 F ceramic
+bypass capacitor is optional for noisy environments.
+Whenever the input supply falls below the under−voltage
+threshold, all LED channels are automatically disabled.
+EN/PWM is the enable and one wire dimming input for all
+LED channels. Guaranteed levels of logic high and logic low
+are set at 1.3 V and 0.4 V respectively. When EN/PWM is
+initially taken high, the device becomes enabled and all LED
+currents are set at a gain of 100 times the current in RSET.
+To place the device into zero current shutdown mode, the
+EN/PWM pin must be held low for 4 ms typical.
+LED1 to LED4 provide individual regulated currents for
+each of the LED cathodes. There pins enter a high
+impedance zero current state whenver the device is placed
+in shutdown mode.
+RSET pin is connected to an external resistor to set the LED
+channel current. The ground side of the external resistor
+should be star connected to the GND of the PCB. The pin
+source current mirrors the current to the LED sinks. The
+voltage at this pin is regulated to 1.2 V.
+GND is the ground reference for the device. The pin must be
+connected to the ground plane on the PCB.
+TAB (TDFN 8−Lead Only) is the exposed pad underneath
+the package. For best thermal performance, the tab should be
+soldered to the PCB and connected to the ground plane.
+
+CAT4104
+www.onsemi.com
+8
+BLOCK DIAGRAM
+Figure 19. CAT4104 Functional Block Diagram
+1.2 V Reference
+Current Setting
+4 Current Sink
+Regulators
+VIN
+GND
+EN/PWM
+VIN
+RSET
+LED1
+LED2
+LED3
+LED4
+BASIC OPERATION
+The CAT4104 has four tightly matched current sinks to
+regulate LED current in each channel. The LED current in
+the four channels is mirrored from the current flowing
+through the RSET pin according to the following formula:
+R(K)  117  I (mA)0.978  0.05
+Table 6 shows standard resistor values for RSET and the
+corresponding LED current.
+Table 6. RSET RESISTOR SETTINGS
+LED Current [mA]
+RSET [k]
+20
+6.34
+60
+2.10
+100
+1.27
+175
+0.768
+Tight current regulation for all channels is possible over
+a wide range of input voltages and LED voltages due to
+independent current sensing circuitry on each channel.
+Each LED channel needs a minimum of 400 mV
+headroom to sink constant regulated current up to 175 mA.
+If the input supply falls below 2 V, the under−voltage
+lockout circuit disables all LED channels. Any unused LED
+channels should be left open.
+For applications requiring more than 175 mA current,
+LED channels can be tied together to sink up to a total of
+700 mA from the one device.
+The LED channels can withstand voltages up to 25 V. This
+makes the device ideal for driving long strings of high power
+LEDs from a high voltage source.
+
+CAT4104
+www.onsemi.com
+9
+APPLICATION INFORMATION
+Single 12 V Supply
+The circuit shown in Figure 20 shows how to power the
+LEDs from a single 12 V supply using the CAT4104. Three
+external components are needed to create a lower voltage
+necessary for the VIN pin (below 5.5 V). The resistor R2 and
+zener diode Z provide a regulated voltage while the
+quiescent current runs through the N−Channel transistor M.
+The recommended parts are ON Semiconductor MM3Z6V2
+zener diode (in SOD−323 package), and 2N7002L
+N−Channel transistor (in SOT23).
+Figure 20. Single Supply Driving 12 LEDs
+VIN
+R2
+5 k
+Z
+6.2 V
+M
+CAT4104
+12 V
+R1
+C1
+0.1 F
+EN/PWM
+RSET
+LED1
+LED2
+LED3
+LED4
+GND
+C2
+1 F
+Daylight Detection
+The circuit in Figure 21 shows how to use CAT4104 in an
+automatic light sensor application. The light sensor allows
+the CAT4104 to be enabled during the day and disabled
+during the night. Two external components are required to
+configure the part for ambient light detection and conserve
+power. Resistor R1 sets the bias for the light sensor. The
+recommended part is Microsemi LX1972 light sensor. For
+best performance, the LED light should not interfere with
+the light sensor.
+Figure 21. Daylight Detection
+VIN
+VDD
+VSS
+Light
+Sensor
+R1
+100 k
+CAT4104
+5 V
+R1
+C1
+0.1 F
+EN/PWM
+RSET
+LED1
+LED2
+LED3
+LED4
+GND
+ON
+OFF
+C2
+1 F
+Nightlight Detection
+The circuit shown in Figure 22 illustrates how to use the
+CAT4104 in an automatic night light application. The light
+sensor allows the CAT4104 to be disabled during the day and
+enabled during the night. Five external components are
+needed to properly configure the part for night detection.
+Resistor R3 limits the quiescent current through the
+N−Channel transistor M. Resistors R1 and R2 act as a
+voltage divider to create the required voltage to turn on
+transistor M, which disables the CAT4104. The
+recommended parts are ON Semiconductor 2N7002L
+N−Channel transistor (in SOT23) and the Microsemi
+LX1972 light sensor. For best performance, the LED light
+should not interfere with the light sensor.
+Figure 22. Nightlight Detection
+VIN
+VDD
+VSS
+Light
+Sensor
+R1
+CAT4104
+5 V
+R4
+M
+C1
+EN/PWM
+RSET
+LED1
+GND
+ON
+OFF
+C2
+R2
+R3
+1 F
+1 M
+LED2
+LED3
+LED4
+100 k
+100 k
+0.1 F
+LED Current Derating
+The circuit shown in Figure 23 provides LED temperature
+derating to avoid over−driving the LED under high ambient
+temperatures, by reducing the LED current to protect the
+LED from over−heating. The positive thermo coefficient
+(PTC) thermistor RPTC is used for temperature sensing and
+should be located near the LED. As the temperature of
+RPTC increases, the gate voltage of the MOSFET M1
+decreases. This causes the transistor M1 on−resistance to
+increase which results in a reduction of the LED current. The
+circuit is powered from a single VCC voltage of 5 V. The
+recommended 
+parts 
+are 
+Vishay 
+70°C 
+thermistor
+PTCSS12T071DTE and ON Semiconductor 2N7002L
+N−Channel transistor (in SOT23).
+The PCB and heatsink for the LED should be designed
+such that the LED current is constant within the normal
+temperature range. But as soon as the ambient temperature
+exceeds a max threshold, the LED current drops to protect
+the LEDs from overheating.
+
+CAT4104
+www.onsemi.com
+10
+VIN
+CAT4104
+5 V
+VCC
+R1
+1436 
+M1
+C1
+0.1 F
+EN/PWM
+RSET
+LED1
+LED2
+LED3
+LED4
+GND
+350 mA
+C2
+1 F
+R2
+5 k
+RPTC
+Figure 23. LED Current Derating
+Power Dissipation
+The power dissipation (PD) of the CAT4104 can be
+calculated as follows:
+PD  (VIN  IIN)  (VLEDN  ILEDN)
+where VLEDN is the voltage at the LED pin, and ILEDN is the
+LED current. Combinations of high VLEDN voltage and high
+ambient temperature can cause the CAT4104 to enter
+thermal shutdown. In applications where VLEDN is high, a
+resistor can be inserted in series with the LED string to lower
+the power dissipation PD.
+Thermal dissipation of the junction heat consists
+primarily of two paths in series. The first path is the junction
+to the case (JC) thermal resistance which is defined by the
+package style, and the second path is the case to ambient
+(CA) thermal resistance, which is dependent on board
+layout. The overall junction to ambient (JA) thermal
+resistance is equal to:
+JA  JC  CA
+For a given package style and board layout, the operating
+junction temperature TJ is a function of the power
+dissipation PD, and the ambient temperature, resulting in the
+following equation:
+TJ  TAMB  PD(JC  CA)  TAMB  PD JA
+When mounted on a double−sided printed circuit board
+with two square inches of copper allocated for “heat
+spreading”, the resulting JA is about 90°C/W for the
+TDFN−8 package, and 160°C/W for the SOIC−8 package.
+For example, at 60°C ambient temperature, the maximum
+power dissipation for the TDFN−8 is calculated as follow:
+PDmax 
+TJmax  TAMB
+JA
+ 150  60
+90
+ 1 W
+Recommended Layout
+A small ceramic capacitor should be placed as close as
+possible to the driver VIN pin. The RSET resistor should
+have a Kelvin connection to the GND pin of the CAT4104.
+The board layout should provide good thermal dissipation
+through the PCB. In the case of the CAT4104VP2 in the
+TDFN package, a via can be used to connect the center tab
+to a large ground plane underneath as shown on Figure 24.
+Figure 24. CAT4104 Recommended Layout
+
+CAT4104
+www.onsemi.com
+11
+EXAMPLE OF ORDERING INFORMATION (NOTE 6)
+Prefix
+Device #
+Suffix
+Company ID
+CAT
+4104
+Product Number
+4104
+T3
+T:  Tape & Reel
+3:  3,000 / Reel
+Tape & Reel (Note 8)
+(Optional)
+V
+Package
+− G
+G:  NiPdAu
+Lead Finish
+V:  SOIC
+VP2:  TDFN
+4. All packages are RoHS−compliant (Lead−free, Halogen−free).
+5. The standard plated finish is NiPdAu.
+6. The device used in the above example is a CAT4104V−GT3 (SOIC, NiPdAu, Tape & Reel, 3,000/Reel).
+7. For additional temperature options, please contact your nearest ON Semiconductor Sales office.
+8. For information on tape and reel specifications, including part orientation and tape sizes, please refer to our Tape and Reel Packaging
+Specifications Brochure, BRD8011/D.
+
+TDFN8, 2x3, 0.5P
+CASE 511AK
+ISSUE B
+DATE 18 MAR 2015
+SCALE 2:1
+NOTES:
+1. DIMENSIONING AND TOLERANCING PER
+ASME Y14.5M, 1994.
+2. CONTROLLING DIMENSION: MILLIMETERS.
+3. DIMENSION b APPLIES TO PLATED
+TERMINAL AND IS MEASURED BETWEEN
+0.15 AND 0.25MM FROM THE TERMINAL TIP.
+4. COPLANARITY APPLIES TO THE EXPOSED
+PAD AS WELL AS THE TERMINALS.
+ÇÇ
+ÇÇ
+ÇÇ
+A
+D
+E
+B
+C
+0.10
+PIN ONE
+REFERENCE
+TOP VIEW
+SIDE VIEW
+BOTTOM VIEW
+L
+D2
+E2
+C
+C
+0.10
+C
+0.08
+A1
+SEATING
+PLANE
+NOTE 3
+b
+8X
+0.10
+C
+0.05
+C
+A B
+DIM
+MIN
+MAX
+MILLIMETERS
+A
+0.70
+0.80
+A1
+0.00
+0.05
+b
+0.20
+0.30
+D
+2.00 BSC
+D2
+1.30
+1.50
+E
+3.00 BSC
+E2
+1.20
+1.40
+e
+0.50 BSC
+L
+0.20
+0.40
+1
+4
+8
+*For additional information on our Pb−Free strategy and soldering
+details, please download the onsemi Soldering and Mounting
+Techniques Reference Manual, SOLDERRM/D.
+SOLDERING FOOTPRINT*
+0.50
+PITCH
+1.45 3.40
+1
+DIMENSIONS: MILLIMETERS
+1
+NOTE 4
+0.30
+8X
+DETAIL A
+A3
+0.20 REF
+A3
+A
+DETAIL B
+L1
+DETAIL A
+L
+ALTERNATE
+CONSTRUCTIONS
+L
+ÇÇ
+ÇÇ
+ÉÉ
+DETAIL B
+MOLD CMPD
+EXPOSED Cu
+ALTERNATE
+CONSTRUCTION
+L1
+−−−
+0.15
+e
+RECOMMENDED
+5
+1.56
+GENERIC
+MARKING DIAGRAM*
+XXXXX = Specific Device Code
+A
+= Assembly Location
+WL
+= Wafer Lot
+Y
+= Year
+W
+= Work Week
+
+= Pb−Free Package
+*This information is generic. Please refer to
+device data sheet for actual part marking.
+Pb−Free indicator, “G” or microdot “ ”,
+may or may not be present.
+XXXXX
+AWLYW
+1
+M
+M
+0.68
+C
+0.10
+8X
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+onsemi and                     are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+98AON34336E
+DOCUMENT NUMBER:
+DESCRIPTION:
+Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+Printed  versions are uncontrolled  except when stamped  “CONTROLLED COPY” in red.
+PAGE 1 OF 1
+TDFN8, 2X3, 0.5P
+© Semiconductor Components Industries, LLC, 2011
+www.onsemi.com
+
+SOIC−8, 150 mils
+CASE 751BD
+ISSUE O
+DATE 19 DEC 2008
+E1
+E
+A
+A1
+h
+θ
+L
+c
+e
+b
+D
+PIN # 1
+IDENTIFICATION
+TOP VIEW
+SIDE VIEW
+END VIEW
+Notes:
+(1) All dimensions are in millimeters. Angles in degrees.
+(2) Complies with JEDEC MS-012.
+SYMBOL
+MIN
+NOM
+MAX
+θ
+A
+A1
+b
+c
+D
+E
+E1
+e
+h
+0º
+8º
+0.10
+0.33
+0.19
+0.25
+4.80
+5.80
+3.80
+1.27 BSC
+1.75
+0.25
+0.51
+0.25
+0.50
+5.00
+6.20
+4.00
+L
+0.40
+1.27
+1.35
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+98AON34272E
+DOCUMENT NUMBER:
+DESCRIPTION:
+Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+Printed  versions are uncontrolled  except when stamped  “CONTROLLED COPY” in red.
+PAGE 1 OF 1
+SOIC−8, 150 MILS
+onsemi and                     are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+© Semiconductor Components Industries, LLC, 2008
+www.onsemi.com
+
+onsemi, 
+ , and other names, marks, and brands are registered and/or common law trademarks of Semiconductor Components Industries, LLC dba “onsemi” or its affiliates
+and/or subsidiaries in the United States and/or other countries. onsemi owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property.
+A listing of onsemi’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. onsemi reserves the right to make changes at any time to any
+products or information herein, without notice. The information herein is provided “as−is” and onsemi makes no warranty, representation or guarantee regarding the accuracy of the
+information, product features, availability, functionality, or suitability of its products for any particular purpose, nor does onsemi assume any liability arising out of the application or use
+of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products
+and applications using onsemi products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information
+provided by onsemi. “Typical” parameters which may be provided in onsemi data sheets and/or specifications can and do vary in different applications and actual performance may
+vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. onsemi does not convey any license
+under any of its intellectual property rights nor the rights of others. onsemi products are not designed, intended, or authorized for use as a critical component in life support systems
+or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should
+Buyer purchase or use onsemi products for any such unintended or unauthorized application, Buyer shall indemnify and hold onsemi and its officers, employees, subsidiaries, affiliates,
+and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death
+associated with such unintended or unauthorized use, even if such claim alleges that onsemi was negligent regarding the design or manufacture of the part. onsemi is an Equal
+Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+ADDITIONAL INFORMATION
+TECHNICAL PUBLICATIONS:
+Technical Library: www.onsemi.com/design/resources/technical−documentation
+onsemi Website: www.onsemi.com
+ONLINE SUPPORT: www.onsemi.com/support
+For additional information, please contact your local Sales Representative at
+www.onsemi.com/support/sales
+

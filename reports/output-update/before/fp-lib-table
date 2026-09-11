@@ -1,0 +1,7 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Molex_541324062") (type "KiCad") (uri "C:/Users/Slayer/Downloads/541324062/Molex_541324062.pretty") (options "") (descr ""))
+	(lib (name "CONNFLY_DS1021-1X3SF11-B") (type "KiCad") (uri "${KIPRJMOD}/CONNFLY_DS1021-1X3SF11-B.pretty") (options "") (descr ""))
+	(lib (name "L-KLS4-EC12-012424-W") (type "KiCad") (uri "${KIPRJMOD}/L-KLS4-EC12-012424-W.pretty") (options "") (descr ""))
+	(lib (name "DG142R-5.08-02P-14-00AH") (type "KiCad") (uri "${KIPRJMOD}/DG142R-5.08-02P-14-00AH.pretty") (options "") (descr "DG142R-5.08-02P-14-00AH project-local footprint"))
+)

@@ -1,0 +1,13 @@
+{
+  "component_count": 102,
+  "pin_count": 361,
+  "net_count": 102,
+  "critical_pin_checks": 89,
+  "critical_failures": [],
+  "pins_without_net": [],
+  "nonintentional_single_node_nets": [],
+  "intentional_unconnected_pin_count": 32,
+  "missing_footprints": [],
+  "global_label_instances_checked": 72,
+  "rshunt_footprint": "Resistor_SMD:R_2512_6332Metric"
+}

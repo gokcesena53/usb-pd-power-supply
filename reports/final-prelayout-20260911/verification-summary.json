@@ -1,0 +1,83 @@
+{
+  "erc": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "connectivity": {
+    "components": 102,
+    "pins": 361,
+    "nets": 102,
+    "critical_checks_passed": "89/89",
+    "pins_without_net": 0,
+    "nonintentional_single_node_nets": 0
+  },
+  "footprints": {
+    "missing": 0,
+    "j1_symbol_pad_match": "25/25",
+    "unexpected_non_0402_R_C": [],
+    "approved_engineering_exceptions": [
+      {
+        "ref": "C3",
+        "value": "1uF / 50V",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric"
+      },
+      {
+        "ref": "C8",
+        "value": "10uF / 50V",
+        "footprint": "Capacitor_SMD:C_1210_3225Metric"
+      },
+      {
+        "ref": "R11",
+        "value": "5mR / 1W",
+        "footprint": "Resistor_SMD:R_2512_6332Metric"
+      },
+      {
+        "ref": "C5",
+        "value": "22uF",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric"
+      },
+      {
+        "ref": "C20",
+        "value": "22uF",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric"
+      },
+      {
+        "ref": "C21",
+        "value": "22uF",
+        "footprint": "Capacitor_SMD:C_1206_3216Metric"
+      },
+      {
+        "ref": "C12",
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_1210_3225Metric"
+      },
+      {
+        "ref": "C13",
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_1210_3225Metric"
+      },
+      {
+        "ref": "C15",
+        "value": "47uF",
+        "footprint": "Capacitor_SMD:C_1210_3225Metric"
+      },
+      {
+        "ref": "C16",
+        "value": "47uF",
+        "footprint": "Capacitor_SMD:C_1210_3225Metric"
+      },
+      {
+        "ref": "R43",
+        "value": "1kR / 2W",
+        "footprint": "Resistor_SMD:R_2512_6332Metric"
+      },
+      {
+        "ref": "RShunt",
+        "value": "5mR / 1W",
+        "footprint": "Resistor_SMD:R_2512_6332Metric"
+      }
+    ]
+  },
+  "schematic_layout_gate": "electrically_ready_for_placement",
+  "production_bom_gate": "exact MPN and derating closure still required for yellow BOM rows"
+}

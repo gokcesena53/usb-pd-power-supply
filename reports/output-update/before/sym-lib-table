@@ -1,0 +1,7 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Power_Supply_Custom") (type "KiCad") (uri "${KIPRJMOD}/Power_Supply_Custom.kicad_sym") (options "") (descr ""))
+	(lib (name "DS1021-1X3SF11-B") (type "KiCad") (uri "C:/Users/Slayer/Downloads/DS1021-1X3SF11-B/DS1021-1X3SF11-B.kicad_sym") (options "") (descr ""))
+	(lib (name "DG142R-5.08-02P-14-00AH") (type "KiCad") (uri "${KIPRJMOD}/DG142R-5.08-02P-14-00AH.kicad_sym") (options "") (descr "DG142R-5.08-02P-14-00AH project-local symbol"))
+	(lib (name "AO3400A") (type "KiCad") (uri "${KIPRJMOD}/AO3400A/AO3400A.kicad_sym") (options "") (descr ""))
+)

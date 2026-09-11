@@ -1,0 +1,76 @@
+﻿Qty,References,Value,Footprint,Manufacturer,MPN,Status,Sheets,Notes,Datasheet
+1,BT1,CR2032 holder,Power_Output_Custom:KLS_CR2032_05,KLS Electronic,L-KLS5-CR2032-05-R1,SEÇİLDİ,/MCU/,,https://img.klsele.com/admin/product_upload/20250408144415L-KLS5-CR2032-05.pdf
+2,"C1, C2",100 nF,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+2,"C12, C13",10uF,Capacitor_SMD:C_1210_3225Metric,,,MPN GEREKLİ,/POWER GENERATION/,X7R; C12+C13 effective capacitance >=10uF at 28V; verify actual MPN,
+1,C14,100nF,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,X7R; C12+C13 effective capacitance >=10uF at 28V; verify actual MPN,
+2,"C15, C16",47uF,Capacitor_SMD:C_1210_3225Metric,,,MPN GEREKLİ,/POWER GENERATION/,X7R; bank effective Cout >=44uF at 3.3V. Confirm exact MPN bias/ESR before manufacture.,
+1,C17,100nF / 16V,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+1,C18,10nF,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+1,C19,18nF / 16V,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+2,"C20, C21",22uF,Capacitor_SMD:C_1206_3216Metric,,,MPN GEREKLİ,/USER INTERFACE/,X7R; C12+C13 effective capacitance >=10uF at 28V; verify actual MPN,
+1,C22,100nF / 16V,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/USER INTERFACE/,X7R; C12+C13 effective capacitance >=10uF at 28V; verify actual MPN,
+1,C3,1uF / 50V,Capacitor_SMD:C_0805_2012Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,C4,1uF / 10V,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,C5,22uF,Capacitor_SMD:C_0805_2012Metric,,,MPN GEREKLİ,/MCU/,,
+4,"C6, C9, C10, C11",100nF,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,"/MCU/, /POWER SENSING/",,
+1,C7,1uF,Capacitor_SMD:C_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,C8,10uF / 50V,Capacitor_SMD:C_1210_3225Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,D1,LED,LED_SMD:LED_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,D2,SS2060FL_R1_00001,Diode_SMD:D_SOD-123F,PANJIT,SS2060FL_R1_00001,SEÇİLDİ,/POWER GENERATION/,"PANJIT 60V 2A Schottky, SOD-123FL; cathode LX, anode GND; Ozdisan stocked selection; 60 V / 2 A Schottky; Özdisan stoklu",https://www.ozdisan.com/p/schottky-diyotlar-385/panjit-ss2060fl-r1-00001-574723
+1,D3,AQ3130E-01ETG (bidirectional),Diode_SMD:D_SOD-882,Littelfuse,AQ3130E-01ETG,SEÇİLDİ,/USB_C_INPUT/,Connect directly from USB_VBUS to GND at J1; shortest low-inductance return,https://www.littelfuse.com/assetdocs/littelfuse-tvs-diode-array-aq3130e-01etg-datasheet?assetguid=f74c18ee-03bb-4555-9ff2-5486f45a66ee
+1,D4,AQ3130E-01ETG (bidirectional),Diode_SMD:D_SOD-882,Littelfuse,AQ3130E-01ETG,SEÇİLDİ,/USB_C_INPUT/,Connect directly from USB_CC1 to GND at J1; shortest low-inductance return,https://www.littelfuse.com/assetdocs/littelfuse-tvs-diode-array-aq3130e-01etg-datasheet?assetguid=f74c18ee-03bb-4555-9ff2-5486f45a66ee
+1,D5,AQ3130E-01ETG (bidirectional),Diode_SMD:D_SOD-882,Littelfuse,AQ3130E-01ETG,SEÇİLDİ,/USB_C_INPUT/,Connect directly from USB_CC2 to GND at J1; shortest low-inductance return,https://www.littelfuse.com/assetdocs/littelfuse-tvs-diode-array-aq3130e-01etg-datasheet?assetguid=f74c18ee-03bb-4555-9ff2-5486f45a66ee
+1,J1,DX07B024JJ1R1500,USB_Connector_Custom:JAE_DX07B024JJ1R1500,JAE,DX07B024JJ1R1500,SEÇİLDİ,/USB_C_INPUT/,Üretici çizimine göre doğrulanmış proje-yerel mid-mount footprint,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+1,J2,DS1021-1X3SF11-B,CONNFLY_DS1021-1X3SF11-B:CONNFLY_DS1021-1X3SF11-B,CONNFLY,DS1021-1X3SF11-B,SEÇİLDİ,/MCU/,,
+1,J3,NHD-2.4-240320AF-CSXP,Molex_541324062:CON_541324062_MOL,Molex,54132-4062,SEÇİLDİ,/USER INTERFACE/,TFT modülü ile kart üzerindeki Molex 54132-4062 konektörü BOM'da iki ayrı satın alma kalemi olarak ele alınmalı,
+1,J4,DG142R-5.08-02P-14-00AH,DG142R-5.08-02P-14-00AH:DG142R-5.08-02P-14-00AH,Degson,DG142R-5.08-02P-14-00AH,SEÇİLDİ,/POWER OUTPUT/,2 kutuplu 5.08 mm klemens,
+1,J5,108-0902-001,Power_Output_Custom:Cinch_108-0902-001_Panel,Cinch Johnson,108-0902-001,SEÇİLDİ,/POWER OUTPUT/,PANEL MOUNT; wire to J4; mechanical footprint only,
+1,J6,108-0903-001,Power_Output_Custom:Cinch_108-0903-001_Panel,Cinch Johnson,108-0903-001,SEÇİLDİ,/POWER OUTPUT/,PANEL MOUNT; wire to J4; mechanical footprint only,
+1,L1,SRI0704-220M,Inductor_SMD:L_7.3x7.3_H4.5,Core Master,SRI0704-220M,SEÇİLDİ,/POWER GENERATION/,"CORE MASTER 22uH, 1.95A rated, 0.11ohm max; 18.2uH at 1.95A and 16.4uH at 2.14A; Ozdisan stocked; 22 uH / 1.95 A; Özdisan stoklu; 7.3×7.3×4.5 mm",https://store.comet.bg/download-file.php?id=16477
+1,L2,2.2uH,Inductor_SMD:L_Wuerth_MAPI-4030,Wurth Elektronik,74438357022,SEÇİLDİ,/USER INTERFACE/,Isat >=2A and Irms >=1.5A at max temperature; fault current capability UNRESOLVED,https://www.we-online.com/components/products/datasheet/74438357022.pdf
+2,"Q1, Q2",BSS138,Package_TO_SOT_SMD:SOT-23,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+2,"Q3, Q4",IRF7855TRPBF,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Infineon,IRF7855TRPBF,DOĞRULAMA GEREKLİ,/USB_PD_CONTROLLER/,Prototip seçimi; AP33772S gate seviyesiyle kayıp/SOA açık,
+1,R1,10 kΩ,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+5,"R10, R23, R34, R35, R36",10k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,"/MCU/, /USER INTERFACE/",,
+2,"R11, RShunt",5mR / 1W,Resistor_SMD:R_2512_6332Metric,,,MPN GEREKLİ,"/POWER SENSING/, /USB_PD_CONTROLLER/",,
+1,R12,6.2k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+2,"R13, R28",100R,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,"/USB_PD_CONTROLLER/, /USER INTERFACE/",,
+1,R14,2.2k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,R15,22 R,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,R16,22R,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+2,"R2, R3",22Ω,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,R21,100K,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,R22,1K,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,R24,"4,7k",Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,R26,4.7K,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,R27,10K,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/POWER SENSING/,,
+2,"R29, R42",100kR,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,"/POWER GENERATION/, /USER INTERFACE/",,
+1,R37,10kR,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/MCU/,,
+1,R38,100kR 1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+1,R39,10kR 0.1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+1,R4,4.7 kΩ,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,R40,3.20kR 0.1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+1,R41,12.7kR 1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/POWER GENERATION/,,
+1,R43,1kR / 2W,Resistor_SMD:R_2512_6332Metric,,,MPN GEREKLİ,/POWER GENERATION/,Shunt feed: 0.651W at 28V. Select actual 2W-rated part; footprint alone is not a rating.,
+1,R44,604kR 0.1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USER INTERFACE/,,
+1,R45,100kR 0.1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USER INTERFACE/,,
+1,R46,3.24kR 0.1%,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USER INTERFACE/,,
+1,R5,4.7kΩ,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,R6,4.7 k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+2,"R7, R25",4.7k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,"/MCU/, /USB_PD_CONTROLLER/",,
+1,R8,12k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,R9,20k,Resistor_SMD:R_0402_1005Metric,,,MPN GEREKLİ,/USB_PD_CONTROLLER/,,
+1,SW1,BOOT / PTS810,Button_Switch_SMD:SW_SPST_PTS810,C&K / Littelfuse,PTS810 SJS 250 SMTR LFS,SEÇİLDİ,/MCU/,BOOT butonu; 4.2×3.2 mm SMD; Özdisan stoklu,
+1,SW2,RESET / PTS810,Button_Switch_SMD:SW_SPST_PTS810,C&K / Littelfuse,PTS810 SJS 250 SMTR LFS,SEÇİLDİ,/MCU/,RESET butonu; 4.2×3.2 mm SMD; Özdisan stoklu,
+1,SW3,L-KLS4-EC12-012424-W,L-KLS4-EC12-012424-W:L-KLS4-EC12-012424-W,KLS Electronic,L-KLS4-EC12-012424-W,SEÇİLDİ,/USER INTERFACE/,Encoder,
+1,TH1,TSM0B103F3381RZ / 10k NTC,Resistor_SMD:R_0402_1005Metric,Thinking Electronic,TSM0B103F3381RZ,SEÇİLDİ,/USB_PD_CONTROLLER/,"10 kΩ, B25/50=3380 K, 0402; Özdisan stoklu",
+10,"TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10",TestPoint,TestPoint:TestPoint_Pad_D1.0mm,,,PCB PAD,"/MCU/, /USB_PD_CONTROLLER/",1.0 mm SMD test pad; satın alınan parça değildir,
+1,U1,AP33772SDKZ-13-FA02,Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,Diodes Incorporated,AP33772SDKZ-13-FA02,SEÇİLDİ,/USB_PD_CONTROLLER/,Kesin parça; gate sürüşü Q3/Q4 ile doğrulanmalı,https://www.diodes.com/datasheet/download/AP33772S.pdf
+1,U2,ESP32-C6-WROOM-1,PCM_Espressif:ESP32-C6-WROOM-1,Espressif,ESP32-C6-WROOM-1,SEÇİLDİ,/MCU/,Modül varyantı/flash kapasitesi satın almadan önce sabitlenmeli,https://www.espressif.com/sites/default/files/documentation/esp32-c6-wroom-1_wroom-1u_datasheet_en.pdf
+1,U3,INA228,Package_SO:TSSOP-10_3x3mm_P0.5mm,Texas Instruments,INA228,SEÇİLDİ,/POWER SENSING/,Sipariş suffix'i ve sıcaklık sınıfı seçilmeli,https://www.ti.com/lit/ds/symlink/ina228.pdf
+1,U4,RV-3028-C7,Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm,Micro Crystal,RV-3028-C7,SEÇİLDİ,/MCU/,Trickle charge kapalı kullanılacak,https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf
+1,U5,AOZ1284PI,Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.71x3.7mm,Alpha & Omega Semiconductor,AOZ1284PI,SEÇİLDİ,/POWER GENERATION/,Özdisan stoklu,https://www.aosmd.com/res/datasheets/AOZ1284PI.pdf
+1,U6,TL431BIDBZR,Package_TO_SOT_SMD:SOT-23,Texas Instruments,TL431BIDBZR,SEÇİLDİ,/POWER GENERATION/,TI TL431 DBZ: K1 REF2 A3. REF tied K. No added capacitive load.; Kesin,
+1,U7,TPS61023DRLR,Package_TO_SOT_SMD:SOT-563,Texas Instruments,TPS61023DRLR,SEÇİLDİ,/USER INTERFACE/,,https://www.ti.com/lit/ds/symlink/tps61023.pdf
+1,U8,CAT4104V-GT3,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,onsemi,CAT4104V-GT3,SEÇİLDİ,/USER INTERFACE/,,https://www.onsemi.com/download/data-sheet/pdf/cat4104-d.pdf
+1,U9,TPD4E05U06QDQARQ1,USB_ESD:antmicro_tpd4e05u06qdqarq1,Texas Instruments,TPD4E05U06QDQARQ1,SEÇİLDİ,/USB_C_INPUT/,,https://www.ti.com/lit/ds/symlink/tpd4e05u06-q1.pdf

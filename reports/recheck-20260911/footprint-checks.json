@@ -1,0 +1,56 @@
+[
+  {
+    "file": "Power_Output_Custom.pretty\\Cinch_108-0902-001_Panel.kicad_mod",
+    "pads": []
+  },
+  {
+    "file": "Power_Output_Custom.pretty\\Cinch_108-0903-001_Panel.kicad_mod",
+    "pads": []
+  },
+  {
+    "file": "Power_Output_Custom.pretty\\KLS_CR2032_05.kicad_mod",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -14.55,
+        "y_mm": 0.0,
+        "drill_mm": 0.0
+      },
+      {
+        "number": "2",
+        "x_mm": 14.55,
+        "y_mm": 0.0,
+        "drill_mm": 0.0
+      }
+    ]
+  },
+  {
+    "file": "DG142R-5.08-02P-14-00AH.pretty\\DG142R-5.08-02P-14-00AH.kicad_mod",
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "drill_mm": 1.35
+      },
+      {
+        "number": "1",
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "drill_mm": 1.35
+      },
+      {
+        "number": "2",
+        "x_mm": 5.08,
+        "y_mm": 0.0,
+        "drill_mm": 1.35
+      },
+      {
+        "number": "2",
+        "x_mm": 5.08,
+        "y_mm": 7.62,
+        "drill_mm": 1.35
+      }
+    ]
+  }
+]

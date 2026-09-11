@@ -1,0 +1,742 @@
+(kicad_pcb
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(footprint "KLS_CR2032_05"
+		(layer "F.Cu")
+		(uuid "209b346c-6ec3-4cd1-bd7b-af8a252773c4")
+		(at 35 40)
+		(descr "KLS L-KLS5-CR2032-05 family; pad1 positive left, pad2 negative right; 3.6x4.5 pads, 32.7 outer span; verify purchased R1 variant against drawing")
+		(property "Reference" "FP1"
+			(at 0 -10 0)
+			(layer "F.SilkS")
+			(uuid "0698d61a-5c1c-4bf3-ad49-0d8b6497d679")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "KLS_CR2032_05"
+			(at 0 11 0)
+			(layer "F.Fab")
+			(uuid "dae385e8-f67a-4616-9f38-2aace8df51b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bec1c935-dffd-4ffa-ab21-f6105e79bbc4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f152c93-2baa-41e9-87b9-a33c51235349")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -14.25 -8.12)
+			(end 14.25 -8.12)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d1a50bfa-5c98-488b-a11e-e0a5ca60e02e")
+		)
+		(fp_line
+			(start -14.25 8.12)
+			(end 14.25 8.12)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a2f322ca-45f2-46fb-8696-c72090c5a8cb")
+		)
+		(fp_rect
+			(start -16.6 -8.25)
+			(end 16.6 8.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5671e8df-e4a8-4ccf-9969-32b5f13c5290")
+		)
+		(fp_rect
+			(start -14.25 -8)
+			(end 14.25 8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "ec354a06-b583-4fac-b3a7-3b570dfd6198")
+		)
+		(fp_text user "+"
+			(at -11 -6 0)
+			(layer "F.SilkS")
+			(uuid "3d71760e-8183-46b5-8d79-1e930aaef2ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "-"
+			(at 11 -6 0)
+			(layer "F.SilkS")
+			(uuid "26286db4-ceb4-4862-a3e4-badd81a1c897")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -14.55 0)
+			(size 3.6 4.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(uuid "f291aa62-d5da-4a20-92e5-f686f5ad67c4")
+		)
+		(pad "2" smd rect
+			(at 14.55 0)
+			(size 3.6 4.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(uuid "0eb6f6f5-5b74-473b-8831-0ef420c22750")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/Power_Output_Custom.3dshapes/KLS_CR2032_05.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Cinch_108-0902-001_Panel"
+		(layer "F.Cu")
+		(uuid "a565cb21-15db-4fd1-9657-f92f113a9601")
+		(at 125 40)
+		(descr "OFF-BOARD panel mount; double-D panel opening 8.33 diameter / 6.35 across flats. No electrical PCB pad. Wire solder lug to J4.")
+		(property "Reference" "FP3"
+			(at 0 -10 0)
+			(layer "F.SilkS")
+			(uuid "1b010c66-5f8b-45a9-bb50-f761c1116443")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Cinch_108-0902-001_Panel"
+			(at 0 11 0)
+			(layer "F.Fab")
+			(uuid "d9040df5-8416-4e97-8919-3032426b0179")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97953649-d0d2-4dd2-8dd7-a45242ed2362")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9d5a970-8480-46fd-bfb1-ad4469ea5b72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.695663 -3.175)
+			(end 2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "64320a0e-22be-43d8-8f46-24af41e4f9e8")
+		)
+		(fp_line
+			(start -2.695663 3.175)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "6acb7a57-3516-4386-a90f-fa5203e9f149")
+		)
+		(fp_arc
+			(start -2.695663 3.175)
+			(mid -4.165 0)
+			(end -2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "dacd0c79-8363-4fda-bbad-c8b4b7bf387c")
+		)
+		(fp_arc
+			(start 2.695663 -3.175)
+			(mid 4.165 0)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "94d6a4b3-d741-4410-aa2c-42ea88651ff7")
+		)
+		(fp_rect
+			(start -6 -6)
+			(end 6 6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "acabb70a-9e0e-4cac-a990-f4abaad558b1")
+		)
+		(fp_line
+			(start -2.695663 -3.175)
+			(end 2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eb69ddde-4a61-4d96-8d42-f05f36c9e14e")
+		)
+		(fp_line
+			(start -2.695663 3.175)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8d90c2b7-a401-45ce-976e-6fd4f0877d9a")
+		)
+		(fp_arc
+			(start -2.695663 3.175)
+			(mid -4.165 0)
+			(end -2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0ff6d880-b305-4ff2-b0be-ad621dd7b6e6")
+		)
+		(fp_arc
+			(start 2.695663 -3.175)
+			(mid 4.165 0)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "33a681d4-5304-4a2f-a38b-20c06ec9aee4")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 5.565 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b49f0665-ecf9-4663-8208-74a7ae5ca7a5")
+		)
+		(fp_text user "PANEL ONLY - NO PCB PAD"
+			(at 0 7.5 0)
+			(layer "Dwgs.User")
+			(uuid "22011ae8-49d7-4240-bb4b-a43002ddaffd")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/Power_Output_Custom.3dshapes/Cinch_108-0902-001_Panel.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "DG142R-5.08-02P-14-00AH"
+		(layer "F.Cu")
+		(uuid "bbb18cec-9b37-48d9-ac16-9a92b565496d")
+		(at 80 40)
+		(descr "Degson DG142R 2P: pitch5.08, rows7.62, drill1.35, body12.70x14.10, height13.4; pad diameter2.35 engineering choice")
+		(property "Reference" "FP2"
+			(at 0 -10 0)
+			(layer "F.SilkS")
+			(uuid "b9e9d7c5-7d8e-4f9d-9a5a-bc9a2ca7ac50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "DG142R-5.08-02P-14-00AH"
+			(at 0 11 0)
+			(layer "F.Fab")
+			(uuid "7740ad70-c429-4bf8-b177-8e13350dca2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c542cad0-7fc5-4266-abc4-67b08917e927")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac1523c7-35a4-4ffe-a31e-148895912d2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -2.66 -1.87)
+			(end 10.28 12.47)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "adeebd60-a27f-4edf-b01a-c91072709a68")
+		)
+		(fp_rect
+			(start -3.04 -2.25)
+			(end 10.66 12.85)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6bac9542-16c1-4a9c-945e-d21f203b3b96")
+		)
+		(fp_rect
+			(start -2.54 -1.75)
+			(end 10.16 12.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "646c65f3-80f9-4a2e-ad17-beddbd041cf0")
+		)
+		(fp_text user "1 +"
+			(at 0 -3.4 0)
+			(layer "F.SilkS")
+			(uuid "581d7cdf-66f2-4758-9bef-ee4668131798")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "2 -"
+			(at 5.08 -3.4 0)
+			(layer "F.SilkS")
+			(uuid "6a49a387-06b6-4f2b-acf4-0d5d98c7cba7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0)
+			(size 2.35 2.35)
+			(drill 1.35)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "885c0709-a52a-4fee-9bb9-a8c41a89b67f")
+		)
+		(pad "1" thru_hole circle
+			(at 0 7.62)
+			(size 2.35 2.35)
+			(drill 1.35)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "7c74ddf7-0c6a-42a8-9ba2-33b15bed641e")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 2.35 2.35)
+			(drill 1.35)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "e496433f-e261-45f6-aa0f-23e72573c337")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 7.62)
+			(size 2.35 2.35)
+			(drill 1.35)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "a5efb977-af14-4324-9de7-9d5daad01790")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/Power_Output_Custom.3dshapes/DG142R-5.08-02P-14-00AH.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Cinch_108-0903-001_Panel"
+		(layer "F.Cu")
+		(uuid "de06170f-116a-4c51-8b9d-d0e61f7e4ec4")
+		(at 170 40)
+		(descr "OFF-BOARD panel mount; double-D panel opening 8.33 diameter / 6.35 across flats. No electrical PCB pad. Wire solder lug to J4.")
+		(property "Reference" "FP4"
+			(at 0 -10 0)
+			(layer "F.SilkS")
+			(uuid "2e2d351e-33f8-4a59-84e9-c5135965e9df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Cinch_108-0903-001_Panel"
+			(at 0 11 0)
+			(layer "F.Fab")
+			(uuid "2599ddc5-2247-4393-afed-e5cb00ba0b9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9c7a87e-4b92-42bb-9d3a-0bba436378f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e839f45-8d72-4426-9ad9-a8617a5d5b27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.695663 -3.175)
+			(end 2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "966dbdd9-acf4-492b-9eea-e02a69df742a")
+		)
+		(fp_line
+			(start -2.695663 3.175)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "917276a3-de15-4557-97be-d773e015652a")
+		)
+		(fp_arc
+			(start -2.695663 3.175)
+			(mid -4.165 0)
+			(end -2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "c7d2f224-754e-47db-b9fc-fae79a219101")
+		)
+		(fp_arc
+			(start 2.695663 -3.175)
+			(mid 4.165 0)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "009746db-393a-4c16-b9d3-4edb574dabed")
+		)
+		(fp_rect
+			(start -6 -6)
+			(end 6 6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "90e9f150-2720-4b82-99f3-a11e0a7e3653")
+		)
+		(fp_line
+			(start -2.695663 -3.175)
+			(end 2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2ff28b07-7920-4d83-9475-56047e7567f4")
+		)
+		(fp_line
+			(start -2.695663 3.175)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3c4b5a9d-340c-4ea2-a31b-ee3194ee87fb")
+		)
+		(fp_arc
+			(start -2.695663 3.175)
+			(mid -4.165 0)
+			(end -2.695663 -3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "32211269-9ed7-4b8e-9230-d26d3dab92bb")
+		)
+		(fp_arc
+			(start 2.695663 -3.175)
+			(mid 4.165 0)
+			(end 2.695663 3.175)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "64a6107c-5160-4d97-a9f5-8dfe007c5aef")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 5.565 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "15193135-e3e7-49fc-af7f-67896103b03d")
+		)
+		(fp_text user "PANEL ONLY - NO PCB PAD"
+			(at 0 7.5 0)
+			(layer "Dwgs.User")
+			(uuid "c9752549-df95-4934-b17a-0078428ae335")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/Power_Output_Custom.3dshapes/Cinch_108-0903-001_Panel.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

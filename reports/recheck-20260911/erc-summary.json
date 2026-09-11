@@ -1,0 +1,11 @@
+{
+  "errors": 5,
+  "warnings": 331,
+  "categories": {
+    "endpoint_off_grid": 323,
+    "unconnected_wire_endpoint": 6,
+    "isolated_pin_label": 1,
+    "lib_symbol_mismatch": 1,
+    "power_pin_not_driven": 5
+  }
+}
