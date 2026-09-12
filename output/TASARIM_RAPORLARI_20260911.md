@@ -16,6 +16,9 @@
 - [Güncel BOM — Excel](C:/Users/Slayer/Desktop/masaüstü%20güç%20kaynağı/output/BOM_PRELIMINARY_20260911.xlsx)
 - [Güncel BOM — CSV](C:/Users/Slayer/Desktop/masaüstü%20güç%20kaynağı/output/BOM_PRELIMINARY_20260911.csv)
 - [PCB katman kararı, küçültme planı ve BOM durumu](C:/Users/Slayer/Desktop/masaüstü%20güç%20kaynağı/output/LAYOUT_VE_BOM_DURUMU_20260911.md)
+- [PCB yerleşim revizyonu 1](C:/Users/Slayer/Desktop/masaüstü%20güç%20kaynağı/output/PCB_YERLESIM_REV1_20260912.md)
+- [PCB layout uygulama yol haritası](C:/Users/Slayer/Desktop/masaüstü%20güç%20kaynağı/output/PCB_LAYOUT_YOL_HARITASI_20260912.md)
+- [KiCad 10 layout adım adım uygulama rehberi](C:/Users/Slayer/Desktop/masaüstü%20güç%20kaynağı/output/KICAD10_LAYOUT_ADIM_ADIM_20260912.md)
 
 ## Açık tasarım konuları
 

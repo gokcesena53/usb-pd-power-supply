@@ -1,0 +1,1 @@
+AOZ1284PI buck power-stage placement and routing; USB-C to dual-output 5 A path; R11 and INA228 Kelvin sense routing; zones refilled; DRC 0 violations.
