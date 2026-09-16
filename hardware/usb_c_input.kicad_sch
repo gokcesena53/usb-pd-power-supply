@@ -718,19 +718,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMAJ30A"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
+		(symbol "Power_Path_Custom:SMBJ30A"
 			(property "Reference" "D"
 				(at 0 2.54 0)
 				(show_name no)
@@ -741,7 +729,7 @@
 					)
 				)
 			)
-			(property "Value" "SMAJ30A"
+			(property "Value" "SMBJ30A"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -751,7 +739,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SMA"
+			(property "Footprint" "Diode_SMD:D_SMB"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -773,7 +761,7 @@
 					)
 				)
 			)
-			(property "Description" "400W unidirectional Transient Voltage Suppressor, 30.0Vr, SMA(DO-214AC)"
+			(property "Description" "600W unidirectional TVS, VRWM 30V, DO-214AA (SMB). REV_C: D3 icin SMAJ30A yerine."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -795,7 +783,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SMA*"
+			(property "ki_fp_filters" "D*SMB*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -806,71 +794,71 @@
 					)
 				)
 			)
-			(symbol "SMAJ30A_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMAJ30A_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
 			(embedded_fonts no)
+			(symbol "SMBJ30A_0_1"
+						(polyline
+							(pts
+								(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+							)
+							(stroke
+								(width 0.254)
+								(type default)
+							)
+							(fill
+								(type none)
+							)
+						)
+						(polyline
+							(pts
+								(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+							)
+							(stroke
+								(width 0.254)
+								(type default)
+							)
+							(fill
+								(type none)
+							)
+						)
+					)
+			(symbol "SMBJ30A_1_1"
+						(pin passive line
+							(at -3.81 0 0)
+							(length 2.54)
+							(name "A1"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+							(number "1"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+						)
+						(pin passive line
+							(at 3.81 0 180)
+							(length 2.54)
+							(name "A2"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+							(number "2"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+						)
+					)
 		)
 		(symbol "Power_Protection:TPD4EUSB30"
 			(pin_names
@@ -2747,7 +2735,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SMAJ30A")
+		(lib_id "Power_Path_Custom:SMBJ30A")
 		(at 210.82 118.11 270)
 		(unit 1)
 		(body_style 1)
@@ -2769,7 +2757,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SMAJ30A"
+		(property "Value" "SMBJ30A"
 			(at 213.36 119.3799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2780,7 +2768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 205.74 118.11 0)
 			(hide yes)
 			(show_name no)
