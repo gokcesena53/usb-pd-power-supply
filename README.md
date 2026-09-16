@@ -21,6 +21,28 @@ Depo yapısı [Open Hardware Template](https://github.com/mfhepp/open_hardware_t
 | `3d_design/` | Kutu/mekanik tasarım dosyaları |
 | `software/` | Firmware ve yardımcı betikler |
 | `docs/` | GitHub Pages proje sayfası |
+| `.claude/skills/` | KiCad şema üretimi için Claude Code skill'i ve araçları |
+
+## Şema araçları
+
+`.claude/skills/kicad-schematic/` altında şema üretimi ve temizliği için
+bir Claude Code skill'i ve iki bağımsız betik bulunur:
+
+```bash
+SK=.claude/skills/kicad-schematic/scripts
+cd hardware
+python3 ../$SK/render.py gopo.kicad_sch --list
+python3 ../$SK/render.py gopo.kicad_sch --page 10 --crop 255 26 410 128 -o /tmp/r
+python3 ../$SK/verify.py gopo.kicad_sch --show PD_VOUT V_PRE
+```
+
+`render.py` şemayı PNG'ye çevirir ve mm cinsinden bir bölgeye yakınlaşır;
+`verify.py` ERC çalıştırıp netlist'i bir referansla karşılaştırır.
+Gereksinimler: `kicad-cli`, `poppler-utils` (pdftoppm, pdftotext), Python 3.
+
+Yöntem [American-Embedded/kistack](https://github.com/American-Embedded/kistack)
+schematic skill'ine dayanır (MIT); kopyası ve lisansı skill'in `references/`
+klasöründedir.
 
 ## Revizyonlar
 

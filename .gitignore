@@ -45,5 +45,9 @@ _autosave-*
 # *.xml
 # *.csv
 
+# Python
+__pycache__/
+*.pyc
+
 # Yerel klasör
 local/
