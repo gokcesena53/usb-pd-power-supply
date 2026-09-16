@@ -1,1 +1,0 @@
-STEP models are simplified clearance envelopes, not manufacturer detailed models. Terminal height 13.4 reference. Banana nut and solder lug omitted where complete dimensions are unavailable. Panel jack models must not be placed as electrically soldered PCB components. Battery cavity is illustrative; fit checks use dimensioned footprint and actual part.

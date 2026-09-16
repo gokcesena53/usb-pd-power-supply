@@ -1,0 +1,6 @@
+Bu dosya, üretilen ürünler hakkında bilgi alabilmek için iletişim noktası
+bilgisini içermelidir; bkz. CERN OHL lisansının 4.2. bölümü.
+
+İletişim: <ad soyad / kurum>
+E-posta:  <e-posta adresi>
+Proje:    <proje URL'si>

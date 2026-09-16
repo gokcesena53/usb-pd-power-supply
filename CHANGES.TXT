@@ -1,0 +1,12 @@
+Bu dosya, Lisans Alan tarafından yapılan değişikliklerin açıklanması içindir;
+bkz. CERN OHL lisansının 3.4.b bölümü.
+
+REV_B (2026-09-14)
+------------------
+- Yeni PCB yerleşim çalışma alanı: 60,00 x 40,00 mm, 4 bakır katman.
+- Enkoder revizyonu: SW3 -> L-KLS4-EC1121S-E5A-F12.5.
+- Ayrıntılar: design_decisions/README_REV_B.md
+
+REV_A (üretim kartı)
+--------------------
+- İlk üretim revizyonu. Yalnızca git geçmişinde saklanmaktadır.

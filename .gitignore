@@ -1,8 +1,49 @@
-﻿.history/
+# KiCad donanım + yazılım içeren açık donanım projesi
+# Yapı: https://github.com/mfhepp/open_hardware_template
+
+# Projeye özel
+.history/
 _restore_backup_*/
 *-backups/
 *.lck
 *.lck~
+*.zip
+
+# Veri sayfaları
+# Şablon, veri sayfalarını yeniden dağıtmamak için bu klasörü hariç tutar.
+# Bu projede veri sayfaları bilerek depoda tutulmaktadır; gerekirse aşağıyı açın.
+# hardware/datasheets/
+# !hardware/datasheets/.gitkeep
+
+# Yazılım
+# TBD, projeye özel
+
+# KiCad ile tasarlanan PCB'ler için: http://www.kicad-pcb.org/
+# kaynak: https://github.com/github/gitignore/blob/master/KiCad.gitignore
+
+# Geçici dosyalar
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*~
+_autosave-*
 *.tmp
 *.kicad_prl
-*.zip
+.DS_Store
+
+# Netlist dosyaları (Eeschema'dan dışa aktarılan)
+*.net
+
+# Autorouter dosyaları (Pcbnew'den dışa aktarılan)
+*.dsn
+*.ses
+
+# Dışa aktarılan BOM dosyaları
+# Bu projede rapor klasörlerindeki XML/CSV çıktıları izlenmektedir;
+# gerekirse aşağıyı açın.
+# *.xml
+# *.csv
+
+# Yerel klasör
+local/
