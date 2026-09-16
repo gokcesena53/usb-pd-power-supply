@@ -139,15 +139,17 @@
 				(name "PGND" (effects (font (size 1.27 1.27))))
 				(number "12" (effects (font (size 1.27 1.27))))
 			)
-			(pin power_in line
+			(pin passive line
 				(at -2.54 -17.78 90)
 				(length 2.54)
+				(hide yes)
 				(name "PGND" (effects (font (size 1.27 1.27))))
 				(number "13" (effects (font (size 1.27 1.27))))
 			)
-			(pin power_in line
+			(pin passive line
 				(at -2.54 -17.78 90)
 				(length 2.54)
+				(hide yes)
 				(name "PGND" (effects (font (size 1.27 1.27))))
 				(number "14" (effects (font (size 1.27 1.27))))
 			)
@@ -276,6 +278,13 @@
 		(embedded_fonts no)
 	)
 	(symbol "SMBJ30A"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
 		(property "Reference" "D"
 			(at 0 2.54 0)
 			(show_name no)

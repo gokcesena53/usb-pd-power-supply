@@ -719,6 +719,13 @@
 			(embedded_fonts no)
 		)
 		(symbol "Power_Path_Custom:SMBJ30A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(property "Reference" "D"
 				(at 0 2.54 0)
 				(show_name no)
