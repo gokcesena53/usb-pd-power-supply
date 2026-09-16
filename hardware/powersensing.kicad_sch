@@ -1185,7 +1185,7 @@
 			)
 		)
 	)
-	(global_label "PD_VOUT"
+	(global_label "SW_OUT"
 		(shape passive)
 		(at 71.12 118.11 180)
 		(fields_autoplaced yes)
