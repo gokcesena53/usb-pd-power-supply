@@ -33,9 +33,9 @@ REV_C — TBD PARÇA SEÇİMİ (LCSC)
 
 REV_C — ŞEMA / KÜTÜPHANE
 ------------------------
-- [ ] Blok A ve Blok B yerleşimini KiCad'de düzenle.
-      Bileşenler ızgaraya dizili, bağlantı etiket eşleşmesiyle kurulu.
-      Elektriksel olarak doğrulandı, görsel düzen bekliyor.
+- [x] Blok A ve Blok B yerleşimini KiCad'de düzenle.
+      9c3d219: iki satırlı/planar yerleşim, netlist değişmedi. KiCad'de
+      kontrol edildi (2026-09-17).
 - [ ] SMBJ30A sembolünün polaritesini yerleşimde doğrula.
       Sembol KiCad'in SMAJ30A'sından türetildi, pin adları A1/A2 -> polarite
       işaretlenmiyor. Parça tek yönlü; katot VBUS/OUT_POS tarafına bakmalı.
