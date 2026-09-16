@@ -5420,7 +5420,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF / 50V"
+		(property "Value" "2.2uF / 50V X7R"
 			(at 86.36 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
