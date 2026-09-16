@@ -5,36 +5,53 @@ Gorsel yineleme dongusunun ayagidir: uret -> render -> BAK -> duzelt -> tekrar.
 
 Kullanim:
     # tum sayfalari listele
-    python3 render.py sema.kicad_sch --list
+    python render.py sema.kicad_sch --list
 
     # 10. sayfayi tam render et
-    python3 render.py sema.kicad_sch --page 10 -o /tmp/out
+    python render.py sema.kicad_sch --page 10 -o out
 
     # 10. sayfada (255,28)-(410,128) mm bolgesine yakinlas
-    python3 render.py sema.kicad_sch --page 10 --crop 255 28 410 128 -o /tmp/out
+    python render.py sema.kicad_sch --page 10 --crop 255 28 410 128 -o out
 
-Gereksinimler: kicad-cli, pdftoppm (poppler-utils)
+    # ayni PDF'ten baska bolge: --reuse ile yeniden export etme (hizli)
+    python render.py sema.kicad_sch --page 12 --crop 170 34 358 122 -o out --reuse
+
+Gereksinimler: kicad-cli; rasterlestirme icin PyMuPDF (tercih) veya pdftoppm.
 """
 import argparse
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kicadtools import kicad_cli, keep_file, project_file  # noqa: E402
+
+try:
+    import fitz  # PyMuPDF
+except ImportError:  # pragma: no cover
+    fitz = None
+
+MM = 72 / 25.4
+
 
 def export_pdf(sch, out_pdf):
-    subprocess.run(['kicad-cli', 'sch', 'export', 'pdf', '-o', out_pdf, sch],
-                   check=True, capture_output=True)
+    with keep_file(project_file(sch)):
+        subprocess.run([kicad_cli(), 'sch', 'export', 'pdf', '-o', out_pdf, sch],
+                       check=True, capture_output=True)
     return out_pdf
 
 
 def list_pages(pdf):
-    txt = subprocess.run(['pdftotext', '-layout', pdf, '-'],
-                         check=True, capture_output=True, text=True).stdout
-    pages = txt.split('\f')
+    if fitz:
+        texts = [p.get_text() for p in fitz.open(pdf)]
+    else:
+        texts = subprocess.run(['pdftotext', '-layout', pdf, '-'], check=True,
+                               capture_output=True, text=True).stdout.split('\f')
     out = []
-    for i, p in enumerate(pages, 1):
+    for i, p in enumerate(texts, 1):
         m = re.search(r'Sheet:\s*(\S.*?)\s*$', p, re.M)
         if m:
             out.append((i, m.group(1)))
@@ -42,6 +59,14 @@ def list_pages(pdf):
 
 
 def render(pdf, page, out_prefix, dpi=200, crop=None):
+    if fitz:
+        pg = fitz.open(pdf)[page - 1]
+        clip = fitz.Rect(*(v * MM for v in crop)) if crop else None
+        path = f'{out_prefix}.png'
+        pg.get_pixmap(dpi=dpi, clip=clip).save(path)
+        return [path]
+    if not shutil.which('pdftoppm'):
+        raise FileNotFoundError('PyMuPDF (pip install pymupdf) veya pdftoppm gerekli')
     cmd = ['pdftoppm', '-f', str(page), '-l', str(page), '-r', str(dpi), '-png']
     if crop:
         x0, y0, x1, y1 = crop
@@ -64,13 +89,18 @@ def main():
     ap.add_argument('--list', action='store_true', help='sayfalari listele')
     ap.add_argument('--crop', nargs=4, type=float, metavar=('X0', 'Y0', 'X1', 'Y1'),
                     help='mm cinsinden kirpma bolgesi')
-    ap.add_argument('--dpi', type=int, default=200)
+    ap.add_argument('--dpi', type=int, default=None,
+                    help='varsayilan: kirpmada 200, tam sayfada 110')
+    ap.add_argument('--reuse', action='store_true',
+                    help='cikti dizinindeki sch.pdf varsa yeniden export etme')
     ap.add_argument('-o', '--out', default=None, help='cikti dizini')
     a = ap.parse_args()
 
     out = a.out or tempfile.mkdtemp(prefix='kisch-render-')
     os.makedirs(out, exist_ok=True)
-    pdf = export_pdf(a.schematic, os.path.join(out, 'sch.pdf'))
+    pdf = os.path.join(out, 'sch.pdf')
+    if not (a.reuse and os.path.exists(pdf)):
+        export_pdf(a.schematic, pdf)
 
     if a.list or not a.page:
         for n, name in list_pages(pdf):
@@ -78,8 +108,9 @@ def main():
         if not a.page:
             return 0
 
-    files = render(pdf, a.page, os.path.join(out, f'p{a.page}'), a.dpi, a.crop)
-    for p in files:
+    dpi = a.dpi or (200 if a.crop else 110)
+    tag = f'p{a.page}' + ('_' + '_'.join(str(int(v)) for v in a.crop) if a.crop else '')
+    for p in render(pdf, a.page, os.path.join(out, tag), dpi, a.crop):
         print(p)
     return 0
 

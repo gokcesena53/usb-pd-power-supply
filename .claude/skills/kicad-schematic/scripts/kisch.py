@@ -15,8 +15,8 @@ import re
 import uuid
 
 __all__ = ['block_at', 'f', 'uid', 'lib_pins', 'xf', 'sym', 'power', 'wire',
-           'label', 'junction', 'rect', 'text', 'insert', 'ensure_lib_symbol',
-           'next_power_ref', 'sheet_path']
+           'wires', 'no_connect', 'label', 'junction', 'rect', 'text', 'insert',
+           'ensure_lib_symbol', 'next_power_ref', 'sheet_path', 'text_width']
 
 
 # ---------------------------------------------------------------- temel
@@ -56,6 +56,12 @@ def uid():
     return str(uuid.uuid4())
 
 
+def text_width(s, size=1.27):
+    """Metnin yaklasik genisligi (mm). 1.27 mm fontta ~1.11 mm/karakter
+    (render'dan olculdu). Yerlesimden once carpismayi hesaplamak icin."""
+    return len(s) * 0.875 * size
+
+
 # ------------------------------------------------------- sembol geometrisi
 
 def lib_pins(sheet, lib_id):
@@ -69,23 +75,34 @@ def lib_pins(sheet, lib_id):
     return out
 
 
-def xf(inst, ang, p):
+def xf(inst, ang, p, mirror=None):
     """Kutuphane pin koordinatini sema koordinatina cevirir.
 
     KiCad'de kutuphane Y ekseni terstir. Donusumler bu projede U6 (TL431,
     aci 90) ve D2 (D_Schottky, aci 270) uzerinden ampirik dogrulanmistir.
+
+    mirror: KiCad'in (mirror x|y) alani. Ayna DONMEDEN SONRA, sema ekseninde
+    uygulanir: 'y' -> yatay cevirme (dx = -dx), 'x' -> dikey cevirme (dy = -dy).
+    Q_NMOS_GSD aci 90 + mirror y ile ampirik dogrulandi (REV_C Blok B, Q6).
+    Kutuphane koordinatinda cevirip sonra dondurmek 90/270'te YANLIS sonuc verir.
     """
     x, y = inst
     px, py = p
     if ang == 0:
-        return (x + px, y - py)
-    if ang == 90:
-        return (x - py, y - px)
-    if ang == 180:
-        return (x - px, y + py)
-    if ang == 270:
-        return (x + py, y + px)
-    raise ValueError(f'gecersiz aci: {ang}')
+        dx, dy = px, -py
+    elif ang == 90:
+        dx, dy = -py, -px
+    elif ang == 180:
+        dx, dy = -px, py
+    elif ang == 270:
+        dx, dy = py, px
+    else:
+        raise ValueError(f'gecersiz aci: {ang}')
+    if mirror == 'y':
+        dx = -dx
+    elif mirror == 'x':
+        dy = -dy
+    return (round(x + dx, 4), round(y + dy, 4))
 
 
 # ------------------------------------------------------------- ogeler
@@ -150,13 +167,21 @@ def wire(p1, p2, rgb=None):
             f'\t\t(uuid "{uid()}")\n\t)\n')
 
 
-def label(txt, x, y, rot=0, glob=False, just='left'):
+def label(txt, x, y, rot=0, glob=False, just=None, shape='passive'):
     """Etiket. DIKKAT: tam olarak bir telin uzerinde olmali, yaninda degil.
 
     0.64 mm kayma bile ERC'de label_dangling verir.
+
+    Global etiket yonu: baglanti noktasi (x, y)'dir ve govde oradan uzar.
+      rot=0   -> govde SAGA uzar: telin SAG ucunda kullan (ray sonu, SW_OUT)
+      rot=180 -> govde SOLA uzar: telin SOL ucunda kullan (ray basi, PD_VOUT)
+    Yanlis yon secilirse tel etiketin govdesinin altindan gecer (ERC temiz,
+    cizim bozuk).
     """
+    if just is None:
+        just = 'right' if rot == 180 else 'left'
     if glob:
-        return (f'\t(global_label "{txt}"\n\t\t(shape passive)\n'
+        return (f'\t(global_label "{txt}"\n\t\t(shape {shape})\n'
                 f'\t\t(at {f(x)} {f(y)} {rot})\n\t\t(fields_autoplaced yes)\n'
                 f'\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n'
                 f'\t\t\t(justify {just})\n\t\t)\n\t\t(uuid "{uid()}")\n'
@@ -168,6 +193,16 @@ def label(txt, x, y, rot=0, glob=False, just='left'):
     return (f'\t(label "{txt}"\n\t\t(at {f(x)} {f(y)} {rot})\n'
             f'\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n'
             f'\t\t\t(justify {just} bottom)\n\t\t)\n\t\t(uuid "{uid()}")\n\t)\n')
+
+
+def wires(pts, rgb=None):
+    """Kirik cizgi: ardisik noktalar arasina tel. [(x0,y0), (x1,y0), (x1,y1)]"""
+    return ''.join(wire(pts[i], pts[i + 1], rgb) for i in range(len(pts) - 1))
+
+
+def no_connect(x, y):
+    """Bos pin isareti (x). Pinin tam ucuna konur."""
+    return f'\t(no_connect\n\t\t(at {f(x)} {f(y)})\n\t\t(uuid "{uid()}")\n\t)\n'
 
 
 def junction(x, y):
@@ -225,11 +260,12 @@ def ensure_lib_symbol(sheet, lib_path, sym_name, lib_nick):
 
 
 def next_power_ref(sheet_glob='*.kicad_sch'):
-    """Kullanilmayan ilk #PWR numarasi. Tekrarli referans annotation hatasi verir."""
+    """Kullanilmayan ilk #PWR/#FLG numarasi (ikisi ayni sayaci paylasir).
+    Tekrarli referans annotation hatasi verir."""
     import glob
     used = set()
     for path in glob.glob(sheet_glob):
-        used.update(int(x) for x in re.findall(r'"#PWR(\d+)"',
+        used.update(int(x) for x in re.findall(r'"#(?:PWR|FLG)(\d+)"',
                                                open(path, encoding='utf-8').read()))
     return max(used, default=0) + 1
 

@@ -6,26 +6,34 @@ baglantilar dogru mu, bunu netlist soyler.
 
 Kullanim:
     # ERC sayilari + netlist'i kaydet
-    python3 verify.py sema.kicad_sch --save /tmp/base.net
+    python verify.py sema.kicad_sch --save /tmp/base.net
 
     # degisiklikten sonra: ERC + hangi netler degisti
-    python3 verify.py sema.kicad_sch --against /tmp/base.net
+    python verify.py sema.kicad_sch --against /tmp/base.net
 
     # belirli netleri yazdir
-    python3 verify.py sema.kicad_sch --show PD_VOUT V_PRE GND
+    python verify.py sema.kicad_sch --show PD_VOUT V_PRE GND
+
+Hedef: yerlesim/cizim duzenlemesinde "netlist farki: YOK" ve ERC sayisi degismemeli.
+kicad-cli .kicad_pro'yu yeniden yazar; bu betik dosyayi bayt bayt geri koyar.
 """
 import argparse
 import re
 import subprocess
 import sys
 import tempfile
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kicadtools import kicad_cli, keep_file, project_file  # noqa: E402
 
 
 def erc(sch):
     with tempfile.NamedTemporaryFile(suffix='.rpt', delete=False) as fh:
         rpt = fh.name
-    subprocess.run(['kicad-cli', 'sch', 'erc', '--severity-all', '-o', rpt, sch],
-                   capture_output=True)
+    with keep_file(project_file(sch)):
+        subprocess.run([kicad_cli(), 'sch', 'erc', '--severity-all', '-o', rpt, sch],
+                       capture_output=True)
     body = open(rpt, encoding='utf-8').read()
     m = re.search(r'\*\* ERC messages: (\d+)\s+Errors (\d+)\s+Warnings (\d+)', body)
     kinds = re.findall(r'^\[(\w+)\]', body, re.M)
@@ -34,8 +42,9 @@ def erc(sch):
 
 def netlist(sch, out=None):
     path = out or tempfile.mktemp(suffix='.net')
-    subprocess.run(['kicad-cli', 'sch', 'export', 'netlist', '-o', path, sch],
-                   check=True, capture_output=True)
+    with keep_file(project_file(sch)):
+        subprocess.run([kicad_cli(), 'sch', 'export', 'netlist', '-o', path, sch],
+                       check=True, capture_output=True)
     return path
 
 
