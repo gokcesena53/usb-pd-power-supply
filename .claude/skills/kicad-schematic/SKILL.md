@@ -86,11 +86,28 @@ pinlerini istiflenmiş ve gizli yaparsan KiCad onları `PGND` adlı ayrı bir ne
 bağlar, GND'ye değil. ERC `multiple_net_names` ile yakalar. Güç pinlerini asla
 gizleme; `passive` pinleri gizleyebilirsin.
 
-**Etiket telin tam üstünde olmalı.** 0.64 mm kayma `label_dangling` verir.
-Etiketi hep bir tel segmentinin koordinatına koy.
+**Etiket telin tam üstünde olmalı.** 0.64 mm kayma `label_dangling` verir, ve
+etiket bir pini besliyorsa o pin `pin_not_connected` olur. Etiketi hep bir tel
+segmentinin *içine* koy — segmentin dışında, uzantısı üzerinde olması yetmez.
+Blok B'de `GATE_DRV` etiketini telin başlangıcından 2.54 mm solda bırakmıştım;
+U12'nin GATE pini ayrı bir nette kaldı ve netlist bunu sessizce kabul etti.
+Yalnızca `verify.py --show` ile yakalanabildi.
 
-**Döndürülmüş sembolde metin de döner.** `prop_rot` ile geri al: 270 derece
-döndürülmüş sembolde metni yatay tutmak için `prop_rot=90`.
+**Telin serbest ucu bir yere bağlanmalı.** Hiçbir pine, etikete veya başka tele
+değmeyen uç `unconnected_wire_endpoint` verir. Rayları son bağlantı noktasında
+bitir, "biraz uzun olsun" diye uzatma.
+
+**Döndürülmüş sembolde metin de döner.** `prop_rot` ile geri al:
+`ang=270` -> `prop_rot=90`, `ang=90` -> `prop_rot=270`. Unutursan değer metni
+dikey basılır ve komşusunun üstüne biner.
+
+**Her koordinat 1.27'nin katı olmalı.** Yarım adım (0.635) kaymalar el ile
+koordinat yazarken kolayca sızar ve `endpoint_off_grid` uyarısı verir. Şüphe
+duyduğunda kontrol et:
+
+```python
+assert abs(v / 1.27 - round(v / 1.27)) < 1e-6, f'{v} ızgara dışı'
+```
 
 **Pin dönüşümü** (bu depoda U6/D2 üzerinden ampirik doğrulandı):
 
@@ -100,6 +117,11 @@ döndürülmüş sembolde metni yatay tutmak için `prop_rot=90`.
 | 90 | `(x-py, y-px)` |
 | 180 | `(x-px, y+py)` |
 | 270 | `(x+py, y+px)` |
+
+**Back-to-back FET yönelimi.** `Transistor_FET:Q_NMOS_GSD` ile ortak-source
+çifti yatay bir hatta dizmek için: `ang=90` drain'i sola / source'u sağa,
+`ang=270` source'u sola / drain'i sağa koyar. Gate'ler ters yönlere bakar;
+ikisini de `GATE_DRV` etiketiyle bağla, tel çekmeye çalışma.
 
 **Güç rayının adı `+3.3V`**, `+3V3` değil. Yanlış yazarsan beslenmeyen ayrı bir
 net oluşur ve `power_pin_not_driven` hatası alırsın.
@@ -118,6 +140,29 @@ sembolü `SM6T6V8A`'dan türüyor; parent olmadan kütüphane yüklenmez.
 Kutu genişletmek güvenlidir, pin adı değiştirmek değil.
 
 **Blok A4'e sığmıyorsa sayfayı A3 yap** — sıkıştırmaya çalışma.
+
+## İş akışı tuzağı
+
+**Bir sayfayı yeniden üretmek için eski haline döndürdüysen, `git add -A` ile
+commit'leme.** Blok A'nın yerleşimini yeniden çizerken `poweroutput.kicad_sch`'i
+de sıfırlamıştım; `git add -A` onu da commit'e aldı ve Blok B sessizce geri
+alındı. Commit mesajında bundan söz edilmiyordu, iki tur sonra fark edildi.
+
+Yeniden üretim yaparken:
+
+```bash
+git status --short          # commit'lemeden ÖNCE bak
+git add hardware/<yalnizca-calistigin-sayfa>.kicad_sch
+git diff --cached --stat    # ne gireceğini doğrula
+```
+
+**Her blok için önce referans netlist al.** Değişikliğin neyi etkilediğini
+ancak böyle görürsün:
+
+```bash
+python3 $SK/verify.py gopo.kicad_sch --save /tmp/base.net   # önce
+python3 $SK/verify.py gopo.kicad_sch --against /tmp/base.net # sonra
+```
 
 ## Parça seçimi
 
