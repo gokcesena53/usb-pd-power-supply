@@ -3,5 +3,6 @@
 	(lib (name "Power_Supply_Custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/Power_Supply_Custom.kicad_sym") (options "") (descr ""))
 	(lib (name "DG142R-5.08-02P-14-00AH") (type "KiCad") (uri "${KIPRJMOD}/libraries/DG142R-5.08-02P-14-00AH.kicad_sym") (options "") (descr "DG142R-5.08-02P-14-00AH project-local symbol"))
 	(lib (name "Encoder_Custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/Encoder_Custom.kicad_sym") (options "") (descr "KLS rotary encoder symbols"))
+	(lib (name "Power_Path_Custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/Power_Path_Custom.kicad_sym") (options "") (descr "REV_C guc yolu: TPS55340 boost, AP74502Q ideal diyot kontrolcusu"))
 	(lib (name "PCM_Espressif") (type "KiCad") (uri "${KIPRJMOD}/libraries/PCM_Espressif.kicad_sym") (options "") (descr "ESP32-C6-WROOM-1 yerel kopya (Espressif PCM)"))
 )
