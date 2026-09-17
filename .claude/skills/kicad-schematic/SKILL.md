@@ -40,8 +40,14 @@ Görüntüye bakmadan "tamam" deme. Tek turda olmaz; 3-5 tur normaldir.
 Yerleşim/çizim düzenlemesinde hedef: **`netlist farki: YOK`**, ERC sayısı
 değişmemiş, `lint()` boş (bilinçli kesişmeler hariç).
 
-Sayfa numaraları: 10 = POWER GENERATION (Blok A), 12 = POWER OUTPUT (Blok B).
-`--list` ile doğrula; sayfa eklenirse kayar.
+Sayfa numaraları: 1 kök (blok diyagramı), 2 USB_PD_CONTROLLER, 4 USB_C_INPUT,
+6 MCU, 8 USER INTERFACE, 10 POWER GENERATION (Blok A), 11 POWER SENSING,
+12 POWER OUTPUT (Blok B); 3/5/7/9 boş CALC_* alt sayfaları. `--list` ile doğrula;
+sayfa eklenirse kayar.
+
+Bilinçli devre düzeltmesinde (kullanıcı onaylı) hedef: netlist farkı **yalnızca**
+beklenen netler. Referans netlist'i oturum başında bir kez al, sayfalar arasında
+yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 
 ### Ortam (Windows)
 
@@ -55,13 +61,15 @@ Sayfa numaraları: 10 = POWER GENERATION (Blok A), 12 = POWER OUTPUT (Blok B).
   çağrında `kicadtools.keep_file` kullan veya `git checkout -- gopo.kicad_pro`.
 - Şema ve kütüphane dosyaları **CRLF**. `open().read()` + `newline='\n'` yazarsan
   tüm dosya LF olur. `kicadtools.read_sheet` / `write_sheet` satır sonunu korur.
+- Değerlerde `Ω` geçen sayfalarda (usb_pd_controller, mcu) konsola yazdırmak
+  `UnicodeEncodeError: 'charmap'` verir: `PYTHONIOENCODING=utf-8` ile çalıştır.
 
 ## Modüller
 
 | dosya | iş |
 |---|---|
-| `kisch.py` | yeni öğe üretimi: `sym`, `power`, `wire`, `wires`, `label`, `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `text_width` |
-| `kisch_edit.py` | mevcut sayfada düzenleme: `dump`, `strip_region`, `place`, `sym_pin`, `translate_region`, `Pool`, `lint`, `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
+| `kisch.py` | yeni öğe üretimi: `sym`, `power`, `wire`, `wires`, `label` (global etikette `shape`), `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `text_width` |
+| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts`, `Pool`; denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
 | `kicadtools.py` | `kicad_cli()`, `read_sheet`/`write_sheet` (CRLF), `keep_file` |
 | `render.py` | PDF export + kırpılmış PNG |
 | `verify.py` | ERC sayıları + netlist farkı |
@@ -85,16 +93,22 @@ write_sheet('powergeneration.kicad_sch', t, crlf)
 Sembolleri **silip yeniden oluşturma**; taşı. uuid, footprint, MPN ve instance
 korunur, diff okunur kalır. Akış (tam örnek `kisch_edit.py` başındaki docstring'de):
 
-1. `verify.py --save` ile referans netlist'i al. `E.dump(t, kutu)` ile envanter çıkar
-   (sembol, açı, ayna, tel, etiket). Mevcut netleri `--show` ile yaz.
+1. `verify.py --save` ile referans netlist'i al. Temizlemeden önce:
+   `print(E.inventory(t, V.parse(net)))` (her pinin adı, konumu ve **neti**),
+   `E.power_symbol_nets(t, net)` (PWR_FLAG netlist'te yok; hangi nette olduğunu
+   buradan öğren), `shape = E.label_shapes(t)` (global etiket yönleri).
+   Envanterdeki `unconnected-(...)` pinlerine bak: eski ERC hatası gerçek bir
+   bağlantı hatası olabilir (bkz. tuzaklar).
 2. **Önce kâğıt üstünde koordinat planı yap**: her kolonun x'i, her satırın y'si,
    metinlerin kapladığı alan (`K.text_width`). Planı yapmadan betiği yazma.
 3. `E.strip_region(t, kutu)` → tel/etiket/junction/no_connect/metin/çerçeve ve
    güç sembolleri gider; `E.Pool(freed, K.next_power_ref())` ile `#PWR`'leri
-   geri kullan. `no_connect` işaretleri de silinir, **yeniden ekle**.
-4. `E.place(...)` ile sembolleri taşı, `E.sym_pin(...)` ile pin konumunu oku ve
-   `assert` ile planla karşılaştır (ayna/açı hatası anında yakalanır).
-5. Telleri, etiketleri, güç sembollerini `K.*` ile üret, `K.insert`.
+   geri kullan. `no_connect` işaretleri de silinir, **yeniden ekle**. Tasarım
+   notlarını korumak için `kinds`'tan `'text'` çıkar, notları `E.move_text` ile
+   taşı ve kendi başlıklarını her çalıştırmada `E.remove_texts` ile sil.
+4. `E.place(...)` ile sembolleri taşı; her kullandığın pini `E.pin_at(t, ref, n,
+   planlanan)` ile doğrula (ayna/açı/asimetrik pin hatası anında yakalanır).
+5. Telleri, etiketleri (`shape=shape[ad]`), güç sembollerini `K.*` ile üret, `K.insert`.
 6. `verify.py --against`, `E.lint(t, kutu)`, render, bak. Betiği tekrar
    çalıştırılabilir yaz: strip yeni çizimi de siler, place mutlak konum yazar.
 
@@ -137,9 +151,11 @@ Kontrol telleri renksiz. Bir bloktaki her teli aynı renge boyamak işe yaramaz.
 
 ## Yerleşim kuralları (ölçülü)
 
-Bu değerler REV_C Blok A/B düzenlemesinde render'dan ölçüldü.
+Bu değerler REV_C Blok A/B ve usb_pd_controller/mcu düzenlemelerinde render'dan ölçüldü.
 
-**Metin genişliği** 1.27 mm fontta ~1.11 mm/karakter (`K.text_width`). Pasif
+**Metin genişliği** 1.27 mm fontta küçük harfli değerlerde ~1.11 mm/karakter,
+büyük harf/rakamda ~1.34 mm/karakter (`ESP32-C6-WROOM-1` = 21.4 mm).
+`K.text_width` ikisini ayırır. Pasif
 metni sembol merkezinden +2.54 mm başlar, kondansatör plakası ±2.03 mm.
 → Yan yana dikey kondansatörler, değer `10uF 50V` ise **15.24 mm** aralık,
 en az 13.97 mm. 12.7 mm'de metin komşu sembole değer.
@@ -156,10 +172,26 @@ etiketi → giriş kondansatörleri → bobin/anahtar → çıkış kondansatör
 etiketi), alt satır IC ve kontrol ağı. IC'nin VIN/SW pinleri doğrudan yukarı,
 raya çıkar. Sayfada boş dikey alan varsa kullan.
 
-**Aynı kenardaki pinler iç içe L ile çıkar.** Sol kenarda yukarıdan aşağı
-EN, SYNC, FREQ, SS varsa: alttaki pin daha dışa (daha sola) gider, üstteki
-içte kalır → hiçbir tel kesişmez. Sağ kenarda yukarı çıkan hatlar için tersi:
-en alttaki pin en dıştan yükselir (VCAP içte, GATE ortada, SRC en dışta).
+**Aynı kenardaki pinler iç içe L ile çıkar.** Kural telin döndüğü yöne bağlı:
+- **Aşağı inen** hatlarda **üstteki** pin daha dışa gider. Blok A: FREQ (üstte)
+  R47'ye x=307 ile dıştan, SS (altta) C23'e x=315 ile içten iner.
+- **Yukarı çıkan** hatlarda **alttaki** pin daha dışa gider. Blok B: VCAP içte,
+  GATE ortada, SRC en dışta yükselir. powersensing: şönte inen Vin+ (üstte)
+  dıştan, Vin− içten → Kelvin çifti kesişmez.
+
+**2.54 mm aralıklı pin sıraları (MCU, konnektör) için:**
+- Yatay seri direncin metni satır arasına sığmaz. Komşu satırlardaki dirençleri
+  x'te kaydır ve metni sırayla **üste / alta** yaz (mcu: R2 üstte, R3 altta).
+- Yukarı bağlanan eleman (pull-up, +3.3V) ancak üstündeki bütün satırlardan
+  **daha uzağa** uzanan satırda konabilir. Pull-up'ı satır sonuna yatay koy, güç
+  sembolünü direncin ucuna yerleştir. Uzanamayan satırı IC'nin yanından aşağı
+  indir (mcu GPIO9: x=171 ile etiket satırlarının dışından iner, BOOT ağı altta).
+- Yerel etiket metni telin **üstüne** basılır ve bir üst satırın global etiket
+  gövdesine biner. Yerel etiketleri global etiketlerin bittiği x'in dışına al.
+- Test noktası daireyi telin üstüne çizer. Satır ortasına konan TP üst satırla
+  çakışır. Yer yoksa test noktalarını ayrı bir "TEST NOKTALARI" bloğunda
+  etiketle topla; global/yerel etiket adları aynı kaldığı için netlist değişmez.
+  TestPoint'in "TestPoint" değerini `hide_val=True` ile gizle.
 
 **Kesişmeyi planarlıkla çöz.** Yerleştirmeden önce sor: bu tel hangi kapalı
 döngünün içinden geçmek zorunda? Örnek (Blok B):
@@ -200,10 +232,21 @@ koordinat yazarken kolayca sızar ve `endpoint_off_grid` uyarısı verir.
 `E.lint` ızgara dışı tel uçlarını raporlar; tek değer için
 `assert abs(v / 1.27 - round(v / 1.27)) < 1e-6`.
 
-**Döndürülmüş sembolde metin de döner.** `prop_rot` ile geri al: 90 ve 270
-derecede `prop_rot=90` veya `270` metni yatay tutar (KiCad 180°'yi 0° gibi
-okunur basar). `E.place` varsayılan olarak 90 kullanır. Unutursan değer metni
-dikey basılır ve komşusunun üstüne biner.
+**Döndürülmüş/aynalı sembolde metin açısı ve hizalama** (KiCad 10, render ile
+doğrulandı: usb_pd_controller D1, R4, Q1–Q4, TH1):
+
+| sembol | alan açısı | left/right |
+|---|---|---|
+| ang 0 | 0 | olduğu gibi |
+| ang 90 | **270** | olduğu gibi |
+| ang 270 | **90** | olduğu gibi |
+| ang 180 | **0** (180 verirsen metin TERS basılır) | **ters** |
+| `mirror y` (herhangi açı) | yukarıdaki | **ters** (180 ile birlikteyse tekrar düz) |
+
+Belirtiler: ang 90'da alan açısı 90 verilirse `'right'` sağa uzar, uzun değer
+IC'nin üstüne biner (TH1). ang 180'de alan açısı 180 ise "LED D1" ayna yazı gibi basılır.
+`E.place` bu tabloyu uygular; `just` her zaman **görüntüdeki** hizalamadır.
+`prop_rot` elle verilirse telafi yapılmaz.
 
 **Pin dönüşümü** (U6/D2 ve Q5/Q6 üzerinden ampirik doğrulandı):
 
@@ -234,6 +277,31 @@ bitsin. `E.lint` üç durumu da raporlar.
 
 **`no_connect` işaretleri bölge temizliğinde silinir.** Yeniden eklemezsen ERC
 `pin_not_connected` sayısı artar.
+
+**Pinler sembol merkezine simetrik değildir.** `Device:Battery_Cell`'de + pini
+merkezin −5.08, − pini +2.54 mm uzağında. GND'yi simetri varsayarak koyunca
+netlist'te `unconnected-(BT1---Pad2)` çıktı. Kullandığın **her** pini
+`E.pin_at` ile doğrula, yalnız birini değil.
+
+**Koordinat karşılaştırmasını `==` ile yapma.** `53.34 - 7.62` sonucu
+`45.720000000000006` çıkar ve doğru yerleşim `AssertionError` verir. `E.pin_at`
+yuvarlayarak karşılaştırır.
+
+**Metinleri silmeyen betik tekrar çalışınca başlıklar üst üste biner.** Aynı
+koordinattaki kopya görünmez, kaydırılmış olan çift basılır ("RTC RV-3028"
+başlığı böyle bulundu). `E.remove_texts(t, {başlıklar})` ile önce sil.
+
+**Eski ERC hataları gerçek devre hatası olabilir.** `todo.txt`'de yıllanmış
+"R6 pin 2 bağlı değil / Q2 pin 3 bağlı değil / PD_I2C_SDA_5V dangling" üçlüsü
+aslında SDA seviye dönüştürücüsünün kopukluğuydu (SCL tarafı R5/Q1 doğruydu).
+Envanterde `unconnected-(...)` gördüğünde simetrik/eş devreyle karşılaştır;
+düzeltme netlist'i değiştirdiği için **kullanıcıya sor**, onaylanırsa beklenen
+fark listesini commit mesajına yaz.
+
+**Tek sayfada kullanılan global etiketi kaldırma.** `PD_INT_5V` gibi yalnız bir
+yerde geçen global etiket silinirse net adı `Net-(U1-INT)` olur ve netlist farkı
+çıkar. Kaldırmadan önce `grep -l 'label "AD"' *.kicad_sch` ile bak; kalacaksa
+telin kısa bir dalına koy.
 
 **Kütüphane sembolünü değiştirdiğinde onu kullanan her sayfanın `lib_symbols`
 önbelleğini de aynı şekilde değiştir.** Yoksa ERC `lib_symbol_mismatch`.

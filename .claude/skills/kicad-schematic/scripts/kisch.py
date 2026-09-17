@@ -57,9 +57,21 @@ def uid():
 
 
 def text_width(s, size=1.27):
-    """Metnin yaklasik genisligi (mm). 1.27 mm fontta ~1.11 mm/karakter
-    (render'dan olculdu). Yerlesimden once carpismayi hesaplamak icin."""
-    return len(s) * 0.875 * size
+    """Metnin yaklasik genisligi (mm), carpisma hesabi icin (hafif fazla tahmin).
+
+    Render'dan olculdu (1.27 mm font): "ESP32-C6-WROOM-1" 21.4 mm (~1.34/karakter),
+    "47uF 50V" 8.9 mm. Buyuk harf/rakam kucuk harften belirgin genis; tek bir
+    karakter basi deger (1.11) buyuk harfli etiketlerde ~%20 eksik kalir.
+    """
+    w = 0.0
+    for c in s:
+        if c.isupper() or c.isdigit():
+            w += 1.1
+        elif c == ' ':
+            w += 0.6
+        else:
+            w += 0.8
+    return w * size
 
 
 # ------------------------------------------------------- sembol geometrisi

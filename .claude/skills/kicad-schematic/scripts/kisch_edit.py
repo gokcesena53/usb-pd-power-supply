@@ -1,12 +1,15 @@
 """Mevcut bir sayfadaki blogu yeniden yerlestirme yardimcilari (kisch.py uzerine).
 
-Is akisi "temizle -> tasi -> yeniden tel ciz":
+Is akisi "envanter -> temizle -> tasi -> yeniden tel ciz -> denetle":
+  0. inventory / power_symbol_nets / label_shapes : pin->net tablosu, PWR_FLAG
+                     netleri, global etiket sekilleri. Temizlemeden ONCE al.
   1. strip_region  : bolgedeki tel/etiket/junction/no_connect/metin/cerceve ve
                      GUC sembollerini siler; #PWR/#FLG referanslarini geri verir.
-                     Normal semboller (R, C, U...) SILINMEZ.
+                     Normal semboller (R, C, U...) SILINMEZ. Notlari korumak icin
+                     kinds'tan 'text' cikar; kendi basliklarini remove_texts ile sil.
   2. place         : mevcut sembolu tasir. uuid, footprint, MPN, instance korunur;
                      sembolu silip yeniden olusturmaktan her zaman iyidir.
-  3. sym_pin       : tasinmis sembolun pin konumunu okur (ayna destekli).
+  3. pin_at        : tasinmis sembolun pinini planla karsilastirir (ayna destekli).
   4. kisch.wire/label/power ile yeniden ciz, Pool ile #PWR'leri geri kullan.
   5. lint          : kesisen teller, eksik junction, cakisan teller.
 
@@ -107,11 +110,19 @@ def dump(t, box):
 
 # ------------------------------------------------------------- degistirme
 
-def strip_region(t, box):
+STRIP_DEFAULT = ('symbol', 'wire', 'label', 'global_label', 'junction',
+                 'no_connect', 'text', 'rectangle')
+
+
+def strip_region(t, box, kinds=STRIP_DEFAULT):
     """Bolgedeki cizimi ve guc sembollerini siler.
+    kinds: silinecek turler. Tasarim notlarini korumak icin 'text' cikar ve
+    notlari move_text ile tasi.
     Donus: (yeni metin, serbest kalan #PWR/#FLG referanslari)."""
     freed, cut = [], []
     for a, b, kind, blk in items(t):
+        if kind not in kinds:
+            continue
         if not any(inside(p, box) for p in pos(kind, blk)):
             continue
         if kind == 'symbol':
@@ -143,6 +154,35 @@ def translate_region(t, box, dx, dy=0):
     return t
 
 
+def label_shapes(t):
+    """Global etiket adi -> shape (input/output/bidirectional/passive...).
+    Etiketleri silip yeniden uretmeden once al; sekil yon bilgisi tasir."""
+    return {m.group(1): m.group(2) for m in
+            re.finditer(r'\(global_label "([^"]+)"\s*\(shape (\w+)\)', t)}
+
+
+def remove_texts(t, contents):
+    """Icerigi tam eslesen serbest metinleri siler. strip_region'dan 'text'
+    cikarildiginda (notlar korunurken) betigin urettigi baslik/notlari her
+    calistirmada temizlemek icin; yoksa tekrar calistirma ust uste baslik birakir."""
+    cut = [(a, b) for a, b, kind, blk in items(t)
+           if kind == 'text' and re.match(r'\(text "([^"]*)"', blk).group(1) in contents]
+    for a, b in sorted(cut, reverse=True):
+        a2 = t.rindex('\n', 0, a)
+        t = t[:a2] + t[b:]
+    return t
+
+
+def move_text(t, startswith, x, y):
+    """Serbest metni (tasarim notu) icerigin basina gore bulup tasir."""
+    for a, b, kind, blk in items(t):
+        if kind == 'text' and re.match(r'\(text "' + re.escape(startswith), blk):
+            nb = re.sub(r'\(at [-\d.]+ [-\d.]+ ([-\d.]+)\)',
+                        lambda m: f'(at {f(x)} {f(y)} {m.group(1)})', blk, count=1)
+            return t[:a] + nb + t[b:]
+    raise KeyError(startswith)
+
+
 def _sym_span(t, ref):
     for a, b, kind, blk in items(t):
         if kind == 'symbol' and ref_of(blk) == ref:
@@ -171,7 +211,11 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
 
     ref_at / val_at : sembol merkezine gore (dx, dy) veya (dx, dy, justify).
                       justify None -> ortali (sembolun ustune ortali yazi).
-    prop_rot        : verilmezse 90/270'te 90 (metin yatay kalir).
+    just            : GORUNTUDEKI hizalama. ang 180 ve mirror y'nin KiCad'de
+                      yaptigi left/right tersine cevirmesi burada telafi edilir.
+    prop_rot        : verilmezse ang 90 -> 270, 270 -> 90, 0/180 -> 0 (metin yatay
+                      ve okunur). Elle verirsen telafi hesabi senin sorumlulugunda.
+    hide_val        : Deger alanini gizle (or. TestPoint'in "TestPoint" degeri).
     Gizli alanlar (Footprint, Datasheet...) sembolle birlikte tasinir.
     """
     a, b, blk = _sym_span(t, ref)
@@ -179,11 +223,20 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
     blk = re.sub(r'\n\t\t\(mirror \w\)', '', blk)
     if mirror:
         blk = blk.replace('\n\t\t(unit ', f'\n\t\t(mirror {mirror})\n\t\t(unit ', 1)
-    pr = prop_rot if prop_rot is not None else (90 if ang in (90, 270) else 0)
+    # Ampirik (KiCad 10, render ile dogrulandi, REV_C usb_pd_controller):
+    #  - alan acisi: ang 90 -> 270, ang 270 -> 90, ang 0/180 -> 0 metni yatay
+    #    ve okunur basar (ang 180'de 180 verirsen metin TERS basilir).
+    #  - ang 180 veya (mirror y) left/right hizalamasini tersine cevirir;
+    #    burada telafi edilir, cagiran her zaman goruntudeki hizalamayi yazar.
+    pr = prop_rot if prop_rot is not None else {90: 270, 270: 90}.get(ang, 0)
+    flip = (ang == 180) != (mirror == 'y')
+    swap = {'left': 'right', 'right': 'left'}
     for name, o in (('Reference', ref_at), ('Value', val_at)):
         if o is None:
             continue
         j = o[2] if len(o) > 2 else just
+        if flip and j in swap:
+            j = swap[j]
         blk = _set_prop(blk, name, x + o[0], y + o[1], pr, j,
                         hide=(hide_val and name == 'Value'))
     for m in list(re.finditer(r'\(property "([^"]+)"', blk))[::-1]:
@@ -203,6 +256,105 @@ def sym_pin(t, ref, num):
     x, y, ang = map(float, re.search(r'\(at ([-\d.]+) ([-\d.]+) ([-\d.]+)\)', blk).groups())
     m = re.search(r'\(mirror (\w)\)', blk)
     return K.xf((x, y), int(ang), K.lib_pins(t, lib)[num], m.group(1) if m else None)
+
+
+def pin_at(t, ref, num, expected):
+    """sym_pin'i plandaki konumla karsilastirir; uyusmazsa AssertionError.
+
+    Duz `sym_pin(...) == (x, y - 7.62)` yazma: 53.34 - 7.62 = 45.720000000000006
+    olur ve dogru yerlesim yanlis diye reddedilir. Donus: expected (tel ucunda
+    dogrudan kullanmak icin)."""
+    p = sym_pin(t, ref, num)
+    e = (round(expected[0], 4), round(expected[1], 4))
+    assert (round(p[0], 4), round(p[1], 4)) == e, f'{ref}.{num}: {p} != {e}'
+    return e
+
+
+def _lib_pin_meta(t, lib):
+    a, b = K.block_at(t, t.index(f'(symbol "{lib}"'))
+    meta = {}
+    for m in re.finditer(r'\(pin (\w+) \w+\s*\(at [^)]*\)[\s\S]*?\(name "([^"]*)"'
+                         r'[\s\S]*?\(number "([^"]+)"', t[a:b]):
+        meta[m.group(3)] = (m.group(2), m.group(1))
+    return meta
+
+
+def inventory(t, net):
+    """Sayfanin tam envanteri: her sembol icin pin no, ad, tip, mutlak konum ve
+    BAGLI OLDUGU NET; ayrica etiketler, metinler, no_connect'ler, etiket sekilleri.
+
+    net: verify.parse(netlist) sozlugu. Yerlesim planini bununla yap: hangi pin
+    nereye gidiyor, hangi pin 'unconnected-(...)' (eski ERC hatalari cogu zaman
+    gercek baglanti hatasidir; SDA seviye donusturucusu boyle bulundu)."""
+    p2n = {p: n for n, ps in net.items() for p in ps}
+    out = [f'shapes {label_shapes(t)}']
+    for _, _, kind, blk in items(t):
+        if kind == 'symbol':
+            ref = ref_of(blk)
+            lib = re.search(r'lib_id "([^"]+)"', blk).group(1)
+            val = re.search(r'property "Value" "([^"]*)"', blk).group(1)
+            at = re.search(r'\(at ([-\d.]+) ([-\d.]+) ([-\d.]+)', blk).groups()
+            mir = re.search(r'\(mirror (\w)\)', blk)
+            if ref.startswith('#'):
+                out.append(f'  PWR {ref} {val} {at[:2]}')
+                continue
+            out.append(f'SYM {ref} {lib} "{val}" at={at}'
+                       + (f' mirror={mir.group(1)}' if mir else ''))
+            meta = _lib_pin_meta(t, lib)
+            for num in sorted(K.lib_pins(t, lib), key=lambda n: (len(n), n)):
+                nm, ty = meta.get(num, ('?', '?'))
+                out.append(f'    {num:>3} {nm:<22} {ty:<14} {sym_pin(t, ref, num)} '
+                           f'-> {p2n.get(f"{ref}.{num}", "-")}')
+        elif kind in ('label', 'global_label', 'text'):
+            s = re.match(r'\(\w+ "([^"]*)"', blk).group(1)
+            out.append(f'{kind.upper()} {s[:70]} {pos(kind, blk)[0]}')
+        elif kind == 'no_connect':
+            out.append(f'NC {pos(kind, blk)[0]}')
+    return '\n'.join(out)
+
+
+def power_symbol_nets(t, net):
+    """#PWR/#FLG sembollerinin bagli oldugu net (tel baglantisindan cozulur).
+
+    PWR_FLAG netlist'te gorunmez; silip yeniden koyarken hangi nette oldugunu
+    bilmek icin bunu kullan (usb_pd_controller'da bir PWR_FLAG'in GND'de oldugu
+    boyle anlasildi). Donus: {ref: (deger, konum, {net adlari})}."""
+    par = {}
+
+    def fnd(a):
+        par.setdefault(a, a)
+        while par[a] != a:
+            par[a] = par[par[a]]
+            a = par[a]
+        return a
+
+    R = lambda p: (round(p[0], 2), round(p[1], 2))  # noqa: E731
+    segs = []
+    for _, _, kind, blk in items(t):
+        if kind == 'wire':
+            p = [R(q) for q in pos(kind, blk)]
+            segs.append(p)
+            par[fnd(p[0])] = fnd(p[1])
+    ends = {q for s in segs for q in s}
+    for (x0, y0), (x1, y1) in segs:
+        for q in ends:
+            if (x0 == x1 == q[0] and min(y0, y1) < q[1] < max(y0, y1)) or \
+               (y0 == y1 == q[1] and min(x0, x1) < q[0] < max(x0, x1)):
+                par[fnd(q)] = fnd((x0, y0))
+    p2n = {p: n for n, ps in net.items() for p in ps}
+    node, pw = {}, []
+    for _, _, kind, blk in items(t):
+        if kind != 'symbol':
+            continue
+        ref = ref_of(blk)
+        if ref.startswith('#'):
+            pw.append((ref, re.search(r'property "Value" "([^"]*)"', blk).group(1),
+                       R(pos(kind, blk)[0])))
+            continue
+        lib = re.search(r'lib_id "([^"]+)"', blk).group(1)
+        for num in K.lib_pins(t, lib):
+            node.setdefault(fnd(R(sym_pin(t, ref, num))), set()).add(p2n.get(f'{ref}.{num}'))
+    return {ref: (val, q, node.get(fnd(q), set())) for ref, val, q in pw}
 
 
 class Pool:
