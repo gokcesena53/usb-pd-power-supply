@@ -1,0 +1,17 @@
+Bu dosya, Lisans Alan tarafından yapılan değişikliklerin açıklanması içindir;
+bkz. CERN OHL lisansının 3.4.b bölümü.
+
+REV_B (2026-09-14)
+------------------
+- Yeni PCB yerleşim çalışma alanı: 60,00 x 40,00 mm, 4 bakır katman.
+- Enkoder revizyonu: SW3 -> L-KLS4-EC1121S-E5A-F12.5.
+- J2 (DS1021-1X3SF11-B, 3 pinli UART başlığı) kaldırıldı; yerine TP11
+  (UART_TX), TP12 (UART_RX) ve TP13 (GND) test noktaları konuldu.
+- ESP32-C6-WROOM-1 sembolü ve footprint'i depoya yerel kopya olarak
+  alındı (hardware/libraries/PCM_Espressif.*), böylece proje harici
+  KiCad PCM eklentisi olmadan açılır.
+- Ayrıntılar: design_decisions/README_REV_B.md
+
+REV_A (üretim kartı)
+--------------------
+- İlk üretim revizyonu. Yalnızca git geçmişinde saklanmaktadır.

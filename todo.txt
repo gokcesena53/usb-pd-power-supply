@@ -1,0 +1,9 @@
+TODO
+====
+Projeye özel dahili yapılacaklar listesi.
+
+- [ ] LICENSE dosyasındaki <TELİF HAKKI SAHİBİ> alanını doldur.
+- [ ] PRODUCT.TXT içindeki iletişim bilgilerini doldur.
+- [ ] PCB ipek baskısına ve şematiğe "Licensed under CERN OHL v.1.2" metnini ekle.
+- [ ] Tasarım kurallarını (hardware/gopo.kicad_dru) üretici gereksinimlerine göre doğrula.
+- [ ] Gerber çıktılarını hardware/gerber/ altına üret.
