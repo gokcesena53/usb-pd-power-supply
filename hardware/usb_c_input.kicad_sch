@@ -2912,57 +2912,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 17.78 184.15)
-		(size 12.7 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 61 254 1)
-		)
-		(uuid "cb7aca88-c6e1-407f-b817-e8113c1e1c8c")
-		(property "Sheetname" "CALC_USB_C_INPUT"
-			(at 17.78 183.4384 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "CALC_USB_C_INPUT.kicad_sch"
-			(at 17.78 189.8146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/b1c77f87-da4f-471e-9ed3-42007402a7f4"
-					(page "10")
-				)
-			)
-			(project "usb_c_input"
-				(path "/0ea5422e-f571-4c4e-a341-b9d41b5fb49d"
-					(page "2")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
