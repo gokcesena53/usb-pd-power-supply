@@ -84,9 +84,11 @@ FIRMWARE (handoff Bölüm 4)
 
 MEVCUT ERC İHLALLERİ (REV_C öncesinden)
 ---------------------------------------
-- [ ] PD_I2C_SDA_5V global etiketi bağlı değil (label_dangling, hata)
-- [ ] R6 pin 2 bağlı değil (hata)
-- [ ] Q2 pin 3 bağlı değil (hata)
+- [x] PD_I2C_SDA_5V global etiketi bağlı değil (label_dangling, hata)
+- [x] R6 pin 2 bağlı değil (hata)
+- [x] Q2 pin 3 bağlı değil (hata)
+      Üçü tek hataydı: SDA seviye dönüştürücüsü kopuktu. R6.2 ve Q2.D
+      PD_I2C_SDA_5V'ye bağlandı (SCL tarafı R5/Q1 ile simetrik), 2026-09-17.
 - [ ] TL431DBZ sembolü kütüphanedeki kopyasıyla uyuşmuyor (uyarı)
 
 
