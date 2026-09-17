@@ -1,7 +1,7 @@
 TODO
 ====
 Projeye özel dahili yapılacaklar listesi.
-Son güncelleme: 2026-09-16 (REV_C şema çalışması)
+Son güncelleme: 2026-09-17 (REV_C şema çalışması)
 
 
 REV_C — KARAR BEKLEYEN (bloke edici)
@@ -45,8 +45,15 @@ REV_C — ŞEMA / KÜTÜPHANE
       tuttu) ama Diodes datasheet'i indirilemedi (403/404).
 - [ ] C3 footprint'i gözden geçir: 0805 2.2 uF/50 V X7R, DC bias altında
       1 uF hedefinin altına düşebilir. 1206 değerlendirilmeli.
-- [ ] powergeneration ve poweroutput sayfaları A4 -> A3 oldu; diğer
-      sayfalarla tutarlılık istenirse gözden geçir.
+- [ ] powergeneration sayfası A4 -> A3 oldu; diğer sayfalarla tutarlılık
+      istenirse gözden geçir. (poweroutput yeniden A4'e döndü.)
+- [x] VBUS dağıtımı tek sayfada toplandı (usb_pd_controller, A2):
+      AP33772S bloğu ile VBUS şönt/çıkış anahtarı birleştirildi; AP74502Q
+      çıkış anahtarı poweroutput'tan, INA228 ölçümü powersensing'ten taşındı.
+      PD_VBUS_SENSED ve SW_OUT artık sayfa içi yerel etiket.
+- [ ] powersensing.kicad_sch boşaldı; poweroutput'ta yalnızca panel
+      konnektörleri kaldı. Gözden geçirme sonrası boş sayfayı ve kök
+      şemadaki alt sayfa sembolünü kaldır.
 
 
 REV_C — PROTOTİP DOĞRULAMA (handoff Bölüm 10)
