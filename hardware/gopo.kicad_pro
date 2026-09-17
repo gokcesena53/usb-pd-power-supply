@@ -897,12 +897,24 @@
       "gopo"
     ],
     [
+      "b1c77f87-da4f-471e-9ed3-42007402a7f4",
+      "USB_C_INPUT"
+    ],
+    [
       "ef9b8359-2233-4750-a469-a0efa9e391b0",
       "USB_PD_CONTROLLER"
     ],
     [
-      "b1c77f87-da4f-471e-9ed3-42007402a7f4",
-      "USB_C_INPUT"
+      "247d4e2b-8f80-4d06-8cbf-88db51fa1151",
+      "POWER SENSING"
+    ],
+    [
+      "5dec5942-8798-43d7-9ae8-350e99f1540a",
+      "POWER GENERATION"
+    ],
+    [
+      "cea3687f-2157-4ccd-8163-e41c467db054",
+      "POWER OUTPUT"
     ],
     [
       "d73c21d5-7478-4a02-ac94-6607c580f283",
@@ -911,18 +923,6 @@
     [
       "f0e4530d-2b12-46bf-98ff-bd44498f317b",
       "USER INTERFACE"
-    ],
-    [
-      "5dec5942-8798-43d7-9ae8-350e99f1540a",
-      "POWER GENERATION"
-    ],
-    [
-      "247d4e2b-8f80-4d06-8cbf-88db51fa1151",
-      "POWER SENSING"
-    ],
-    [
-      "cea3687f-2157-4ccd-8163-e41c467db054",
-      "POWER OUTPUT"
     ],
     [
       "9c13d49c-38df-4498-9025-1a22a64208fe",
