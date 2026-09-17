@@ -3,7 +3,7 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "DG142R-5.08-02P-14-00AH"
-		(pin_names (offset 1.016))
+		(pin_names (offset 1.016) hide)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)

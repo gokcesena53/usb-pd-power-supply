@@ -1,6 +1,29 @@
 Bu dosya, Lisans Alan tarafından yapılan değişikliklerin açıklanması içindir;
 bkz. CERN OHL lisansının 3.4.b bölümü.
 
+REV_C (2026-09-16) - devam ediyor
+---------------------------------
+Yeni güç mimarisi: kullanıcı akımı artık Q3/Q4 üzerinden değil, AP33772S
+şöntünün arkasındaki dallanmadan M1/M2 back-to-back FET çifti üzerinden
+akıyor. Dahili rail bir pre-boost arkasına alındı.
+
+- usb_c_input: D3 SMAJ30A -> SMBJ30A (VBUS TVS, 400 W -> 600 W).
+- usb_pd_controller: C3 1 uF -> 2.2 uF/50 V X7R (cSnkBulk marjı).
+- powergeneration: TPS55340 pre-boost eklendi (U11 + 17 pasif/diyot).
+  Yeni ray V_PRE ~5.02 V; PD_VOUT 5 V altına indiğinde dahili rail'i
+  ayakta tutuyor, üstünde pass-through. FB clamp (D5/R50/R51) zorunlu.
+- powergeneration: AOZ1284 VIN ve TL431 EN bias PD_VOUT -> V_PRE.
+- powergeneration: C16 footprint 0402 -> 1210 (47 uF 0402'de üretilmiyor).
+- poweroutput: AP74502Q ideal diyot kontrolcüsü ve M1/M2 çıkış anahtarı
+  eklendi (U12 + 13 bileşen). OVLO eşiği 232k/10k ile ~30.25 V.
+- powersensing: INA228 ve şönt PD_VOUT'tan ayrılıp M2 drain'ine (SW_OUT)
+  bağlandı.
+- hardware/libraries/Power_Path_Custom.kicad_sym eklendi: TPS55340PWPR,
+  AP74502Q, SMBJ30A.
+
+Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
+GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.
+
 REV_B (2026-09-14)
 ------------------
 - Yeni PCB yerleşim çalışma alanı: 60,00 x 40,00 mm, 4 bakır katman.

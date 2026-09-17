@@ -1,9 +1,104 @@
 TODO
 ====
 Projeye özel dahili yapılacaklar listesi.
+Son güncelleme: 2026-09-16 (REV_C şema çalışması)
 
+
+REV_C — KARAR BEKLEYEN (bloke edici)
+------------------------------------
+- [ ] OUT_EN için ESP32 GPIO seç.
+      ESP32-C6-WROOM-1'in 29 pininin tamamı kullanımda, boş GPIO yok.
+      Yeniden atanabilecek adaylar: U2.24/25 (UART_TX/RX, artık yalnızca
+      TP11/TP12'ye gidiyor), U2.8 (GPIO0 -> R16), U2.9 (GPIO1 -> TFT_BL_PWM).
+      GPIO8/9/15 strapping, kullanılmamalı.
+      Seçilene kadar OUT_EN bağlı değil (ERC isolated_pin_label uyarısı).
+- [ ] AQ3130E-01ETG (ESD TVS) eklenecek mi?
+      Handoff 3.1 #2 D3'ü bu parça sanıyordu; gerçekte D3 zaten TVS idi ve
+      SMBJ30A'ya yükseltildi. ESD elemanı ayrı: U10 = TPD4EUSB30.
+      Parça hiçbir kütüphanede yok, paketi doğrulanmalı.
+- [ ] Maksimum çıkış akımı kesinleştir (varsayım 5 A).
+      Değişirse şönt, M1/M2 ve SOA hesapları yeniden yapılmalı.
+
+
+REV_C — TBD PARÇA SEÇİMİ (LCSC)
+-------------------------------
+- [ ] L3   boost bobini: 6.8-10 uH, Isat >=3 A, düşük DCR
+- [ ] D4   boost Schottky: 40-60 V, 3 A, düşük VF (SS34/SS36 sınıfı)
+- [ ] C29  sönümleme bulk: 47 uF, 35-50 V, ESR 50-100 mOhm (seramik olmaz)
+- [ ] Q5/Q6 (M1/M2): 60 V, <=4 mOhm @10 V, 5x6 DFN, Vgs +-20 V,
+           28 V x ~1-5 A x ~10 ms SOA
+- [ ] Q3/Q4 küçültme: IRF7855 -> dual NMOS 40-60 V, >=2 A (handoff 3.2 #2,
+           henüz uygulanmadı)
+
+
+REV_C — ŞEMA / KÜTÜPHANE
+------------------------
+- [x] Blok A ve Blok B yerleşimini KiCad'de düzenle.
+      9c3d219: iki satırlı/planar yerleşim, netlist değişmedi. KiCad'de
+      kontrol edildi (2026-09-17).
+- [ ] SMBJ30A sembolünün polaritesini yerleşimde doğrula.
+      Sembol KiCad'in SMAJ30A'sından türetildi, pin adları A1/A2 -> polarite
+      işaretlenmiyor. Parça tek yönlü; katot VBUS/OUT_POS tarafına bakmalı.
+      D3 ve D7 için geçerli.
+- [ ] AP74502Q sembolünü Diodes'un kendi datasheet'iyle karşılaştır.
+      Pinout TI LM74502'den alındı (handoff "pin uyumlu" diyor, beş pin
+      tuttu) ama Diodes datasheet'i indirilemedi (403/404).
+- [ ] C3 footprint'i gözden geçir: 0805 2.2 uF/50 V X7R, DC bias altında
+      1 uF hedefinin altına düşebilir. 1206 değerlendirilmeli.
+- [ ] powergeneration ve poweroutput sayfaları A4 -> A3 oldu; diğer
+      sayfalarla tutarlılık istenirse gözden geçir.
+
+
+REV_C — PROTOTİP DOĞRULAMA (handoff Bölüm 10)
+---------------------------------------------
+- [ ] 5 V profilde tam yükte AOZ1284 + TPS55340 kararlılığı; attach anında
+      USB_VBUS efektif kapasite <=10 uF
+- [ ] 3.3 V PPS'te tam dahili yükte V_PRE regülasyonu (5.02 V) ve boost
+      döngü kararlılığı
+- [ ] 5.5-28 V pass-through'da TPS55340 SW pininde anahtarlama olmadığı ve
+      FB < 3 V (hesapta 28 V'ta ~2.43 V)
+- [ ] 28 V EPR, 5 A yükte çıkış anahtarı açılışında USB_VBUS / PD_VOUT
+      tepe < 34 V
+- [ ] AP74502Q açılışı: 1000 uF kapasitif yük (inrush) ve 5 A rezistif yük
+      (SOA); 3.3 V çıkışta gate voltajı ve zener clamp
+- [ ] INA228 ALERT -> EN kapanma gecikmesi (kısa devre testi)
+- [ ] 5->12, 5->28, 28->5, 5->3.3 V geçişlerinde ESP32 3.3 V rail'i ve
+      AP33772S UVP davranışı (birden fazla adaptörle)
+- [ ] Hard Reset ve kablo çekme sırasında çıkış kapasitelerinin VBUS'ı
+      beslemediği
+
+
+FIRMWARE (handoff Bölüm 4)
+--------------------------
+- [ ] Açılışta OUT_EN low; VSELMIN boot sonrası <=3.2 V yapılmalı
+- [ ] 5 V altı yalnızca PPS; istek APDO minimumunun altındaysa gönderilmez
+- [ ] Çıkış açma: OUT_EN high -> >=25 ms bekle -> INA228 ile doğrula
+- [ ] Voltaj değiştirme sırası: OUT_EN low -> PDO/APDO -> PS_RDY -> doğrula
+      -> kullanıcı onayı -> OUT_EN high
+- [ ] Fixed PDO geçişlerinde Accept-PS_RDY arası tüketim <=2.5 W
+- [ ] Hard Reset / detach interrupt -> OUT_EN hemen low
+- [ ] INA228: ALATCH=1, CNVR=0, SOVL ~6 A, SUVL ~-0.3 A, BOVL dinamik
+- [ ] AP33772S FAULT izleme; UVP'de yeniden pazarlık, PPS 20 mV adımlarıyla
+      kablo düşümü kompanzasyonu
+
+
+MEVCUT ERC İHLALLERİ (REV_C öncesinden)
+---------------------------------------
+- [x] PD_I2C_SDA_5V global etiketi bağlı değil (label_dangling, hata)
+- [x] R6 pin 2 bağlı değil (hata)
+- [x] Q2 pin 3 bağlı değil (hata)
+      Üçü tek hataydı: SDA seviye dönüştürücüsü kopuktu. R6.2 ve Q2.D
+      PD_I2C_SDA_5V'ye bağlandı (SCL tarafı R5/Q1 ile simetrik), 2026-09-17.
+- [ ] TL431DBZ sembolü kütüphanedeki kopyasıyla uyuşmuyor (uyarı)
+
+
+DEPO / LİSANS
+-------------
 - [ ] LICENSE dosyasındaki <TELİF HAKKI SAHİBİ> alanını doldur.
 - [ ] PRODUCT.TXT içindeki iletişim bilgilerini doldur.
-- [ ] PCB ipek baskısına ve şematiğe "Licensed under CERN OHL v.1.2" metnini ekle.
-- [ ] Tasarım kurallarını (hardware/gopo.kicad_dru) üretici gereksinimlerine göre doğrula.
+- [ ] PCB ipek baskısına ve şematiğe "Licensed under CERN OHL v.1.2" ekle.
+- [ ] Tasarım kurallarını (hardware/gopo.kicad_dru) üretici gereksinimlerine
+      göre doğrula.
 - [ ] Gerber çıktılarını hardware/gerber/ altına üret.
+- [ ] sym-lib-table'daki DS1021 kaydı temizlendi; benzer harici mutlak yol
+      kalmadı (kontrol edildi 2026-09-16).
