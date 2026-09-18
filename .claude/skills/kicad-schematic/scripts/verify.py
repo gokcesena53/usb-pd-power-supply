@@ -11,6 +11,10 @@ Kullanim:
     # degisiklikten sonra: ERC + hangi netler degisti
     python verify.py sema.kicad_sch --against /tmp/base.net
 
+Yeniden yapilandirmada (blok baska sayfaya tasindi, global etiket yerel oldu)
+net ADLARI degisir ama BAGLANTI ayni kalmalidir; --against ikisini ayri raporlar:
+"baglanti farki: YOK; 9 net yeniden adlandi" kabul edilebilir sonuctur.
+
     # belirli netleri yazdir
     python verify.py sema.kicad_sch --show PD_VOUT V_PRE GND
 
@@ -61,6 +65,16 @@ def parse(path):
     return d
 
 
+def signature(d):
+    """Net adindan bagimsiz imza: {pin kumesi -> net adi}.
+
+    Blok baska sayfaya tasindiginda net adi degisir (/POWER GENERATION/LX_SW ->
+    /USB_PD_CONTROLLER/LX_SW) ama pin kumesi ayni kalir; boylece gercek baglanti
+    kaybi ile yeniden adlandirma ayirt edilir.
+    """
+    return {frozenset(p): n for n, p in d.items()}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -82,15 +96,22 @@ def main():
 
     if a.against:
         old = parse(a.against)
-        changed = [k for k in set(old) | set(d) if old.get(k) != d.get(k)]
-        if not changed:
+        if all(old.get(k) == d.get(k) for k in set(old) | set(d)):
             print('netlist farki: YOK')
         else:
-            print(f'netlist farki: {len(changed)} net')
-            for k in sorted(changed):
-                print(f'\n  {k}')
-                print(f'    once : {old.get(k, "(yok)")}')
-                print(f'    sonra: {d.get(k, "(yok)")}')
+            so, sn = signature(old), signature(d)
+            lost = sorted((so[k], sorted(k)) for k in so if k not in sn)
+            gain = sorted((sn[k], sorted(k)) for k in sn if k not in so)
+            ren = sorted((so[k], sn[k]) for k in so if k in sn and so[k] != sn[k])
+            head = 'YOK' if not (lost or gain) else f'{len(lost)} kayip, {len(gain)} yeni'
+            print(f'baglanti farki: {head}'
+                  + (f'; {len(ren)} net yeniden adlandi' if ren else ''))
+            for n, p in lost:
+                print(f'  KAYIP {n}\n    {p}')
+            for n, p in gain:
+                print(f'  YENI  {n}\n    {p}')
+            for x, y in ren:
+                print(f'  AD    {x} -> {y}')
     if a.show:
         for k in a.show:
             hit = [x for x in d if x == k or x.endswith('/' + k)]

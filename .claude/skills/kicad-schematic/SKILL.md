@@ -1,6 +1,6 @@
 ---
 name: kicad-schematic
-description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken veya bir handoff dokümanındaki tasarım kararlarını uygularken kullan.
+description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken veya bir handoff dokümanındaki tasarım kararlarını uygularken kullan.
 ---
 
 # KiCad şema çalışması — gopo deposu
@@ -40,19 +40,26 @@ Görüntüye bakmadan "tamam" deme. Tek turda olmaz; 3-5 tur normaldir.
 Yerleşim/çizim düzenlemesinde hedef: **`netlist farki: YOK`**, ERC sayısı
 değişmemiş, `lint()` boş (bilinçli kesişmeler hariç).
 
-Sayfa numaraları: 1 kök (blok diyagramı), 2 USB_PD_CONTROLLER, 4 USB_C_INPUT,
-6 MCU, 8 USER INTERFACE, 10 POWER GENERATION (Blok A), 11 POWER SENSING,
-12 POWER OUTPUT (Blok B); 3/5/7/9 boş CALC_* alt sayfaları. `--list` ile doğrula;
-sayfa eklenirse kayar.
+Blok başka sayfaya taşındığında net **adları** değişir (`/POWER GENERATION/LX_SW`
+-> `/USB_PD_CONTROLLER/LX_SW`); o zaman hedef **`baglanti farki: YOK; N net
+yeniden adlandi`**. `KAYIP`/`YENI` satırı çıkarsa bağlantı gerçekten koptu.
+
+Sayfa numaraları **her oturumda `--list` ile doğrulanır**; sayfa eklenince,
+silinince veya proje KiCad'de bir kez kaydedilince kayar. REV_C birleştirmesinden
+sonra: 1 kök (blok diyagramı), 2 USB_C_INPUT, 3 USB_PD_CONTROLLER (tüm güç
+zinciri, A3), 4 MCU, 5 USER INTERFACE, 6 USER (yalnız tasarım notları).
 
 Bilinçli devre düzeltmesinde (kullanıcı onaylı) hedef: netlist farkı **yalnızca**
 beklenen netler. Referans netlist'i oturum başında bir kez al, sayfalar arasında
 yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 
-### Ortam (Windows)
+### Ortam
 
-- `kicad-cli` PATH'te değil; `kicadtools.kicad_cli()` `%LOCALAPPDATA%\Programs\KiCad\*\bin`
-  altında bulur. Başka yerdeyse `KICAD_CLI` ortam değişkenini ayarla.
+- Linux'ta `kicad-cli` PATH'tedir; PyMuPDF yoksa `render.py` `pdftoppm`'e düşer
+  (`--crop`/`--dpi` aynı çalışır, çıktı adı `<ad>-<sayfa>.png` olur).
+- Windows'ta `kicad-cli` PATH'te değil; `kicadtools.kicad_cli()`
+  `%LOCALAPPDATA%\Programs\KiCad\*\bin` altında bulur. Başka yerdeyse
+  `KICAD_CLI` ortam değişkenini ayarla.
 - **KiCad'in `bin` dizinini PATH'in önüne ekleme**: KiCad'le gelen python öne
   geçer, PyMuPDF bulunamaz. Betikleri `python` (C:\Python314) ile çağır.
 - `pdftoppm` yok; `render.py` PyMuPDF (`fitz`) ile rasterleştirir.
@@ -69,10 +76,11 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 | dosya | iş |
 |---|---|
 | `kisch.py` | yeni öğe üretimi: `sym`, `power`, `wire`, `wires`, `label` (global etikette `shape`), `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `text_width` |
-| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts`, `Pool`; denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
+| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts`, `Pool`; silme: `remove_items` (koşula göre öğe); denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
+| `kisch_sheet.py` | sayfalar arası: `move_block` (blok + instance yolu + lib_symbols), `remove_sheet` (boş sayfa + sayfa sembolü + .kicad_pro kaydı), `set_paper`, `is_empty` |
 | `kicadtools.py` | `kicad_cli()`, `read_sheet`/`write_sheet` (CRLF), `keep_file` |
 | `render.py` | PDF export + kırpılmış PNG |
-| `verify.py` | ERC sayıları + netlist farkı |
+| `verify.py` | ERC sayıları + netlist farkı; `--against` net adı değişimini gerçek bağlantı kaybından ayırır (`signature`) |
 
 ### Yeni blok üretmek
 
@@ -80,12 +88,12 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 import sys; sys.path.insert(0, '../.claude/skills/kicad-schematic/scripts')
 import kisch as K
 from kicadtools import read_sheet, write_sheet
-t, crlf = read_sheet('powergeneration.kicad_sch')
+t, crlf = read_sheet('usb_pd_controller.kicad_sch')
 t = K.ensure_lib_symbol(t, 'libraries/Power_Path_Custom.kicad_sym', 'TPS55340PWPR', 'Power_Path_Custom')
 pins = K.lib_pins(t, 'Power_Path_Custom:TPS55340PWPR')
 vin  = K.xf((320.04, 76.2), 0, pins['3'])     # VIN pininin mutlak konumu
 t = K.insert(t, K.wire(vin, (vin[0], 48.26)))
-write_sheet('powergeneration.kicad_sch', t, crlf)
+write_sheet('usb_pd_controller.kicad_sch', t, crlf)
 ```
 
 ### Mevcut bloğu yeniden yerleştirmek
@@ -113,6 +121,41 @@ korunur, diff okunur kalır. Akış (tam örnek `kisch_edit.py` başındaki docs
    çalıştırılabilir yaz: strip yeni çizimi de siler, place mutlak konum yazar.
 
 Betiği scratchpad'de tut; depoya yalnız sonuç şema girer.
+
+### Blokları başka sayfaya taşımak / sayfaları birleştirmek
+
+```python
+import kisch_sheet as S
+S.move_block('kaynak.kicad_sch', 'usb_pd_controller.kicad_sch',
+             (17, 33, 166, 122), dx=0, dy=190.5)     # kutu = kaynak sayfadaki çerçeve
+S.set_paper('usb_pd_controller.kicad_sch', 'A3')
+S.remove_sheet('kaynak.kicad_sch', 'gopo.kicad_sch', 'gopo.kicad_pro')
+```
+
+Sıra: **taşı → doğrula → yerine çiz → artıkları temizle → boş sayfayı kaldır.**
+
+1. `move_block` tüm bloğu (sembol + tel + etiket + çerçeve) taşır, sembolün
+   `instances/path`'ini hedef sayfanınkiyle değiştirir ve eksik `lib_symbols`'ı
+   kopyalar. Hemen `verify.py --against` çalıştır: sonuç
+   `baglanti farki: YOK; N net yeniden adlandi` olmalı.
+2. Taşınan blok yeniden çizilecekse **hem eski hem yeni bölgeyi** `strip_region`
+   ile temizle; yoksa eski konumdaki teller öksüz kalır (ERC
+   `unconnected_wire_endpoint` + `endpoint_off_grid` yağar).
+3. Bloklar arası eski teller kaynak sayfada değil hedef sayfada kalır ve
+   parça parça kayar. `lint` bunları `ust uste yatay tel` / `T baglanti junction
+   yok` olarak raporlar; `E.remove_items` ile konumlarını vererek sil.
+4. Alt sayfa sembolleri (`sheet`) `items()` kapsamında değildir: taşınmaz,
+   silinmez. Taşınan bloğun içinde kalırlarsa ayrıca ele al.
+5. Tek sayfada kalan global etiketleri (ör. `PD_VBUS_SENSED`, `SW_OUT`) yerel
+   etikete indir; ad aynı kalırsa yalnız kapsam değişir, bağlantı değişmez.
+6. Boş kalan sayfayı `remove_sheet` ile kaldır: dosya + üst sayfadaki sembol +
+   `.kicad_pro` kaydı birlikte gider (fonksiyon JSON'u doğrular). Sayfa boş
+   değilse hata verir.
+
+**Çok adımlı yeniden yapılandırmayı tek "yeniden üretim" betiğinde topla**:
+taşımalar, blok çizimleri, temizlik ve sayfa silme sırayla o betikte olsun,
+commit edilmiş durumdan çalıştırılabilsin. Ara adımda bir şey bozulursa
+`git checkout -- hardware/` + betiği baştan çalıştır yeterli olur.
 
 ## Bu depoda geçerli kurallar
 
@@ -176,8 +219,17 @@ raya çıkar. Sayfada boş dikey alan varsa kullan.
 - **Aşağı inen** hatlarda **üstteki** pin daha dışa gider. Blok A: FREQ (üstte)
   R47'ye x=307 ile dıştan, SS (altta) C23'e x=315 ile içten iner.
 - **Yukarı çıkan** hatlarda **alttaki** pin daha dışa gider. Blok B: VCAP içte,
-  GATE ortada, SRC en dışta yükselir. powersensing: şönte inen Vin+ (üstte)
+  GATE ortada, SRC en dışta yükselir. INA228 bloğu: şönte inen Vin+ (üstte)
   dıştan, Vin− içten → Kelvin çifti kesişmez.
+
+**Dikey pasif sütunları 12.7 mm aralıkla.** Değer metni ("100kR 1%", "12.7kR 1%")
+sütunlar arasına taşar: 7.62 mm'de metinleri sırayla sağa/sola yazsan bile komşu
+sembole değer (AOZ1284 buck yeniden çiziminde render'dan ölçüldü). Yer yoksa
+metni sembolün **altına** al (`ref_at=(0, 5.08, None)`), sütunu daraltma.
+
+**Global etiket gövdesi** ≈ `K.text_width(ad) + 3 mm` (ok ucu). Bloğun sağ
+kenarına etiket koyarken bunu hesaba kat: "PD_VOUT" ≈ 12.5 mm, "PD_VBUS_SENSED"
+≈ 22 mm.
 
 **2.54 mm aralıklı pin sıraları (MCU, konnektör) için:**
 - Yatay seri direncin metni satır arasına sığmaz. Komşu satırlardaki dirençleri
@@ -306,7 +358,7 @@ telin kısa bir dalına koy.
 **Kütüphane sembolünü değiştirdiğinde onu kullanan her sayfanın `lib_symbols`
 önbelleğini de aynı şekilde değiştir.** Yoksa ERC `lib_symbol_mismatch`.
 `E.edit_lib_symbol(fn, lib, [sayfalar], ad, nick)` hepsine birden uygular.
-Örn. SMBJ30A iki sayfada kullanılıyor (D3 `usb_c_input`, D7 `poweroutput`).
+Örn. SMBJ30A iki sayfada kullanılıyor (D3 `usb_c_input`, D7 `usb_pd_controller`).
 
 **İki pinli özel sembollerde pin adı/numarası gövdeye biner** (SMBJ30A'da A1/A2
 triyotun içine yazılıyordu). `E.hide_pin_texts` ile ikisini de gizle.
@@ -333,7 +385,34 @@ tuhaf görünüyorsa (C31: VCAP–V_PRE) topolojiyi kopyalamadan önce datasheet
 bak. LM74502: CVCAP, VCAP ile VS arasına bağlanır; VS = V_PRE → doğruydu.
 Yanlışsa çizimi düzeltmeden önce kullanıcıya sor.
 
-**`git add -A` kullanma.** Blok A yeniden çizilirken `poweroutput.kicad_sch` de
+**Çalışan dosyada `git checkout` yapma.** Bir betiği "temiz durumdan başlat"
+diye `git checkout -- <sayfa>` ile geri almak, o oturumda yapılmış ama commit
+edilmemiş tüm düzeni siler (bu depoda bir turluk sayfa düzeni böyle kayboldu).
+Geri alma yalnız bilinçli reset içindir; yeniden üretim betiği varsa zaten
+`git checkout -- hardware/` + betik güvenli yoldur.
+
+**Geçici "park" ötelemesi de 1.27'nin katı olmalı.** Blokları taşırken ara
+konuma atmak için 200/300 mm ötelersen tüm blok ızgara dışına kayar; nihai
+öteleme farkı katı olsa bile ara adımda ERC `endpoint_off_grid` (61 uyarı)
+verir ve KiCad'de sürükleyince oynar. `move_block` bunu assert ile yakalar.
+
+**Etiketi yalnız ada göre seçme.** "İlk eşleşen `PD_5V` etiketini taşı" diyen
+döngü, başka bloktaki pull-up etiketini taşıdı; o net koptu ve `verify.py`
+`unconnected-(R6-Pad1)` gösterdi. Etiket seçiminde ad **ve** konum kullan
+(`E.remove_items` docstring'indeki örnek).
+
+**Teli uzatırken başka netin teline değme.** Etiketi rahat yerleştirmek için
+rayı 5 mm uzattığımda uç, kapı hattının dikey teline denk geldi: ERC
+`multiple_net_names`, iki net birleşti. Uzatmadan önce hedef noktada ne
+olduğuna bak; `verify.py --against` bunu anında gösterir.
+
+**KiCad projeyi kapanırken yeniden kaydeder.** Tüm sayfalar normalize olur,
+sayfa sırası/numaraları değişir, diff dev olur ama bağlantı aynıdır. Bunu
+`--against` ile doğrula ve **ayrı bir commit** olarak al; kendi değişikliğinle
+karıştırma. Proje KiCad'de açıkken dosyayı düzenlersen, KiCad'in kaydı seninkini
+ezer (`hardware/~gopo.kicad_sch.lck` varsa açıktır).
+
+**`git add -A` kullanma.** Blok A yeniden çizilirken o zamanki `poweroutput.kicad_sch` de
 sıfırlanmıştı; `git add -A` onu commit'e aldı ve Blok B sessizce geri alındı
 (daeca6d, iki tur sonra dca3fd1 ile telafi). Commit öncesi:
 
@@ -347,7 +426,14 @@ git diff --cached --stat    # ne gireceğini doğrula
 güncelleniyor; `git fetch` + gerekirse rebase ve içerik birleştirme yap,
 force-push yapma.
 
-**Blok A4'e sığmıyorsa sayfayı A3 yap** — sıkıştırmaya çalışma.
+**Blok A4'e sığmıyorsa sayfayı A3 yap** — sıkıştırmaya çalışma. Birden çok blok
+tek sayfaya toplanacaksa önce **alan bütçesi** çıkar: A3'ün çizim alanı ~400x280
+= 112.000 mm²; bloklar toplamı bunun %60'ını geçiyorsa blokları yeniden çizmeden
+sığmaz. Ölçülen blok boyutları (REV_C): PD kontrolcü + VBUS anahtarı 142x118,
+AP74502Q çıkış anahtarı 121x80, INA228 + panel 115x122, TPS55340 ön-boost 145x84,
+AOZ1284 buck 156x110, I2C seviye dönüştürücü 84x56. Sığmıyorsa A2'ye çıkmak yerine
+önce blokları dar/uzun biçimde yeniden çizmeyi değerlendir; kullanıcı kağıt
+boyutunu sınırlıyorsa bu zorunludur.
 
 ## Parça seçimi
 

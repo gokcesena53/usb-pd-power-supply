@@ -161,16 +161,28 @@ def label_shapes(t):
             re.finditer(r'\(global_label "([^"]+)"\s*\(shape (\w+)\)', t)}
 
 
+def remove_items(t, pred):
+    """pred(kind, blok) -> True olan ust seviye ogeleri siler.
+
+    Artik oge temizligi icin (tasinan blogun eski cercevesi, kopmus tel parcasi,
+    yanlis yere dusmus etiket). Etiketi yalniz ADA gore secmek yetmez - ayni ad
+    baska blokta da olabilir; konumu da kontrol et:
+        t = E.remove_items(t, lambda k, b: k == 'global_label'
+                           and b.startswith('(global_label "SW_OUT"')
+                           and E.pos(k, b)[0] == (355.6, 40.64))
+    """
+    cut = [(a, b) for a, b, kind, blk in items(t) if pred(kind, blk)]
+    for a, b in sorted(cut, reverse=True):
+        t = t[:t.rindex('\n', 0, a)] + t[b:]
+    return t
+
+
 def remove_texts(t, contents):
     """Icerigi tam eslesen serbest metinleri siler. strip_region'dan 'text'
     cikarildiginda (notlar korunurken) betigin urettigi baslik/notlari her
     calistirmada temizlemek icin; yoksa tekrar calistirma ust uste baslik birakir."""
-    cut = [(a, b) for a, b, kind, blk in items(t)
-           if kind == 'text' and re.match(r'\(text "([^"]*)"', blk).group(1) in contents]
-    for a, b in sorted(cut, reverse=True):
-        a2 = t.rindex('\n', 0, a)
-        t = t[:a2] + t[b:]
-    return t
+    return remove_items(t, lambda kind, blk: kind == 'text'
+                        and re.match(r'\(text "([^"]*)"', blk).group(1) in contents)
 
 
 def move_text(t, startswith, x, y):
