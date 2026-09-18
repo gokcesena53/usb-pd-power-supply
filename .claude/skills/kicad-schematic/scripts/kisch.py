@@ -14,9 +14,10 @@ Kullanim:
 import re
 import uuid
 
-__all__ = ['block_at', 'f', 'uid', 'lib_pins', 'xf', 'sym', 'power', 'wire',
-           'wires', 'no_connect', 'label', 'junction', 'rect', 'text', 'insert',
-           'ensure_lib_symbol', 'next_power_ref', 'sheet_path', 'text_width']
+__all__ = ['block_at', 'f', 'uid', 'lib_pins', 'lib_body', 'xf', 'sym', 'power',
+           'wire', 'wires', 'no_connect', 'label', 'junction', 'rect', 'text',
+           'insert', 'ensure_lib_symbol', 'next_power_ref', 'sheet_path',
+           'text_width', 'text_box']
 
 
 # ---------------------------------------------------------------- temel
@@ -74,6 +75,37 @@ def text_width(s, size=1.27):
     return w * size
 
 
+def text_box(s, x, y, rot=0, just='left', size=1.27, extra=0.0):
+    """Metnin kapladigi kutu: (x0, y0, x1, y1) mm. Cakisma denetimi icin.
+
+    rot EKRANDAKI aci olmali (sembol alanlarinda bkz. kisch_edit.field_boxes;
+    property acisi sembole GORELIDIR). KiCad 180'i okunur yone cevirir ama
+    metin yine cipadan ters yone uzar, bu yuzden 180 ayri ele alinir.
+
+    just: ekrandaki hizalama. 'left' cipadan saga, 'right' cipadan sola,
+    digerleri (None/'center') ortali.
+    extra: govdeli ogelerde (global etiket ok ucu) eklenecek pay, ~3 mm.
+    """
+    w = text_width(s, size) + extra
+    h = size * 1.1
+    lo, hi = (0.0, w) if just == 'left' else (-w, 0.0) if just == 'right' else (-w / 2, w / 2)
+    if rot == 0:
+        return (x + lo, y - h / 2, x + hi, y + h / 2)
+    if rot == 180:
+        return (x - hi, y - h / 2, x - lo, y + h / 2)
+    if rot == 90:                      # yazi yukari dogru uzar
+        return (x - h / 2, y - hi, x + h / 2, y - lo)
+    if rot == 270:
+        return (x - h / 2, y + lo, x + h / 2, y + hi)
+    raise ValueError(f'gecersiz aci: {rot}')
+
+
+def boxes_overlap(a, b, pad=0.2):
+    """Iki kutu gorsel olarak bindiriyor mu. pad kadar temas sorun sayilmaz."""
+    return (a[0] < b[2] - pad and b[0] < a[2] - pad and
+            a[1] < b[3] - pad and b[1] < a[3] - pad)
+
+
 # ------------------------------------------------------- sembol geometrisi
 
 def lib_pins(sheet, lib_id):
@@ -85,6 +117,31 @@ def lib_pins(sheet, lib_id):
     for m in re.finditer(pat, sheet[a:b]):
         out[m.group(4)] = (float(m.group(1)), float(m.group(2)))
     return out
+
+
+def lib_body(sheet, lib_id):
+    """Sembolun CIZIM ogelerinin kutuphane koordinatindaki kutusu (pinler haric).
+
+    Metnin bir sembolun govdesine binip binmedigini anlamak icin. Donus
+    (x0, y0, x1, y1) veya sembolde cizim yoksa None. Kutuphane Y ekseni ters
+    oldugu icin sema koordinatina cevirirken xf kullanilir (bkz. kisch_edit.sym_body).
+    """
+    try:
+        a, b = block_at(sheet, sheet.index(f'(symbol "{lib_id}"'))
+    except ValueError:
+        return None
+    src = sheet[a:b]
+    xs, ys = [], []
+    for m in re.finditer(r'\((?:start|end|mid|xy) (-?[\d.]+) (-?[\d.]+)\)', src):
+        xs.append(float(m.group(1)))
+        ys.append(float(m.group(2)))
+    for m in re.finditer(r'\(center (-?[\d.]+) (-?[\d.]+)\)\s*\n\s*\(radius ([\d.]+)\)', src):
+        cx, cy, r = float(m.group(1)), float(m.group(2)), float(m.group(3))
+        xs += [cx - r, cx + r]
+        ys += [cy - r, cy + r]
+    if not xs:
+        return None
+    return (min(xs), min(ys), max(xs), max(ys))
 
 
 def xf(inst, ang, p, mirror=None):

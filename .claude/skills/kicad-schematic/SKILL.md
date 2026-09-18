@@ -1,6 +1,6 @@
 ---
 name: kicad-schematic
-description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken veya bir handoff dokümanındaki tasarım kararlarını uygularken kullan.
+description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken, bir handoff dokümanındaki tasarım kararlarını uygularken, komponent alanlarını (property/BOM üstverisi) bir standarda göre düzenleyip görünürlüğünü ayarlarken veya şemanın okunabilirliğini (üst üste binen metin, tel üstüne basan değer) denetlerken kullan.
 ---
 
 # KiCad şema çalışması — gopo deposu
@@ -34,7 +34,14 @@ python $SK/render.py gopo.kicad_sch --page 12 --crop 170 34 358 122 -o <scratch>
 python $SK/verify.py gopo.kicad_sch --save <scratch>/base.net
 python $SK/verify.py gopo.kicad_sch --against <scratch>/base.net
 python $SK/verify.py gopo.kicad_sch --show PD_VOUT V_PRE GND
+
+# üst üste binen metin / tel üstüne basan değer (render'a bakmadan önce)
+python $SK/readability.py usb_pd_controller.kicad_sch mcu.kicad_sch
 ```
+
+`readability.py` bulgu **vermiyorsa** metin yerleşimi temizdir; bulgu **veriyorsa**
+önce o bölgeyi render et, sonra oynat — denetçi kaba gövde kutuları kullandığı için
+sahte pozitif üretebilir (bkz. tuzaklar).
 
 Görüntüye bakmadan "tamam" deme. Tek turda olmaz; 3-5 tur normaldir.
 Yerleşim/çizim düzenlemesinde hedef: **`netlist farki: YOK`**, ERC sayısı
@@ -75,12 +82,13 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 
 | dosya | iş |
 |---|---|
-| `kisch.py` | yeni öğe üretimi: `sym`, `power`, `wire`, `wires`, `label` (global etikette `shape`), `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `text_width` |
-| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts`, `Pool`; silme: `remove_items` (koşula göre öğe); denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
+| `kisch.py` | yeni öğe üretimi: `sym`, `power`, `wire`, `wires`, `label` (global etikette `shape`), `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `lib_body`, `text_width`, `text_box`, `boxes_overlap` |
+| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts`, `Pool`; **alanlar**: `sym_props`, `set_sym_props`, `field_geometry`, `field_boxes`, `sym_body`, `prop_escape`; silme: `remove_items` (koşula göre öğe); denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
 | `kisch_sheet.py` | sayfalar arası: `move_block` (blok + instance yolu + lib_symbols), `remove_sheet` (boş sayfa + sayfa sembolü + .kicad_pro kaydı), `set_paper`, `is_empty` |
 | `kicadtools.py` | `kicad_cli()`, `read_sheet`/`write_sheet` (CRLF), `keep_file` |
 | `render.py` | PDF export + kırpılmış PNG |
 | `verify.py` | ERC sayıları + netlist farkı; `--against` net adı değişimini gerçek bağlantı kaybından ayırır (`signature`) |
+| `readability.py` | üst üste binen metin, tel/gövde üstüne basan sembol alanı, gövdesinden tel geçen global etiket; CLI çıkış kodu = bulgu sayısı |
 
 ### Yeni blok üretmek
 
@@ -121,6 +129,50 @@ korunur, diff okunur kalır. Akış (tam örnek `kisch_edit.py` başındaki docs
    çalıştırılabilir yaz: strip yeni çizimi de siler, place mutlak konum yazar.
 
 Betiği scratchpad'de tut; depoya yalnız sonuç şema girer.
+
+### Komponent alanlarını (property) düzenlemek
+
+Alan standardı `design_decisions/standards/komponent-field-standardi.csv`; çekirdek
+katman `design_decisions/standards/kicad-field-templates.py` ile `.kicad_pro`'nun
+Field Name Templates listesine yazılır (yeni sembollerde hazır gelsin diye).
+
+```python
+props = E.sym_props(blk)                 # [(ad, deger, gizli_mi, blok_metni)]
+want  = [('Reference', ref), ('Value', val), ('Footprint', fp), ('Datasheet', ds),
+         ('Description', desc)] + [(f, vals.get(f, 'TBD')) for f in grup_alanlari]
+blk   = E.set_sym_props(blk, want, visible=('Reference', 'Value'))
+```
+
+`set_sym_props` mevcut alanın **bloğunu korur** (konum, hizalama, font, açı) ve
+yalnız ad/değer/gizliliği değiştirir; yeni alanı sembol konumunda gizli üretir.
+Bu yüzden elle ayarlanmış Reference/Value yerleşimi bozulmaz.
+
+Kurallar:
+- **Görünürlük tek kural**: yalnız `Reference` + `Value`. Depoda `Description`
+  119 sembolde açıktı ve sayfaları dolduruyordu.
+- Güç sembolleri ayrı: Reference daima gizli, `GND`/`PWR_FLAG` değeri gizli,
+  pozitif raylar (`+3.3V`) görünür. TestPoint'in `"TestPoint"` değeri gizli.
+- **Value parametrik değerdir**, MPN değil: `L1` = `22u` (MPN alanına
+  `SRI0704-220M`), `D2` = `SS2060FL` (MPN'e tam sipariş kodu). Value'dan çıkan
+  gerilim/güç/tolerans kendi alanına gider (`10uF 50V` -> `10u` + `VoltageRating`).
+- Eski/eş anlamlı alanları standarda birleştir: `Manufacturer Part Number`/
+  `DisplayMPN` -> `MPN`, `Voltage` -> `VoltageRating`. `Sim.*` alanları KiCad'in
+  simülasyon alanlarıdır, korunur.
+- Bilinmeyen zorunlu alana `TBD` yaz — KiCad'in Symbol Fields Table'ında
+  filtrelenir ve eksik sayılabilir. **MPN veya datasheet parametresi uydurma**;
+  yalnız depodan (footprint, lib_id, BOM, tasarım notu) doğrulanabileni doldur.
+- Betiği **yeniden çalıştırılabilir** yaz: `set_sym_props` idempotenttir, tüm
+  alan listesini her seferinde baştan verir.
+
+Doğrulama, çizim işlerinden farklı: hedef **`netlist farki: YOK`** *ve*
+`E.field_geometry()` farkının **boş** olması. İkincisi "hiçbir sembol veya metin
+oynamadı"ı kanıtlar; alan işi asla yerleşimi değiştirmemelidir.
+
+```python
+before = E.field_geometry(t)      # islemden ONCE
+...                               # alanlari duzenle
+assert E.field_geometry(t2) == before
+```
 
 ### Blokları başka sayfaya taşımak / sayfaları birleştirmek
 
@@ -169,8 +221,16 @@ sayfa içinde iki noktayı etiket eşleşmesiyle bağlamak zayıf çizimdir.
 
 **Direnç sembolü** `Device:R_Small_US`. Kondansatör ve bobin standart.
 
-**Değerlerde birim var**: `100kR`, `78.7kR`, `9.76kR`, `47nF`, `10uF 50V`, `6.8uH`.
-Ohm için `R`, omega işareti değil. Depodaki mevcut stil budur.
+**Value, IEC 60062 kodudur** (`komponent-field-standardi.csv`, satır 3):
+`4k7`, `78k7`, `9k76`, `100k`, `22R`, `5m0`, `100n`, `2u2`, `10u`, `6u8`.
+Çarpan harfi ondalık noktanın yerine geçer; omega işareti kullanılmaz (`Ω`
+geçen sayfalarda konsola yazdırmak `UnicodeEncodeError` veriyordu).
+Gerilim/güç/tolerans/dielektrik Value'ya YAZILMAZ, kendi alanına gider.
+IC, diyot, konnektör ve modülde Value ürün adıdır (`AP33772SDKZ-13-FA02`),
+tam sipariş kodu `MPN` alanındadır.
+
+REV_C'de tüm sayfalar bu biçime çevrildi (`10 kΩ`/`4,7k`/`100K`/`10kR` karışıktı).
+Eski `100kR` stili artık kullanılmaz.
 
 **Güç sembolleri**: GND daima aşağı, pozitif raylar daima yukarı bakar.
 Referansı (`#PWR###`) **gizle**, değeri **göster**. Tersini yaparsan sayfa
@@ -268,6 +328,39 @@ bağlar, GND'ye değil. ERC `multiple_net_names` ile yakalar. İstiflenmiş
 pinlerin numaraları üst üste biniyorsa `E.hide_stacked_pins(blok, {'13','14'})`:
 fazlalıklar `passive` + gizli olur, bir tanesi `power_in` ve görünür kalır.
 
+**Property açısı sembole GÖRELİ saklanır.** Ekrandaki açı `(sembol_ang +
+prop_rot) % 360`'tır; KiCad 180'i okunur yöne çevirir. `R13` ang=90, Reference
+rot=270 -> yatay basılır. Mutlak sanarsan metin kutusu 90 derece döner ve
+çarpışma denetimi sahte bulgularla dolar (ilk taramada 34 bulgunun çoğu sahteydi,
+düzeltince 9'a indi). `E.field_boxes` bu telafiyi yapar; elle hesaplama.
+
+**Etikette rot ile justify aynı yönü iki kez kodlar.** Global etiket `rot=180`
+ise KiCad `(justify right)` yazar; gövde yönünü **yalnız rot'tan** hesapla.
+İkisini birden uygularsan kutu ters döner: `PD_5V` (rot 180) raporda Q1/Q2 ile
+çakışıyor göründü, render'da 8 mm uzaktaydılar. `readability.label_boxes` bunu
+doğru yapar.
+
+**Yerel etiketin metni telin ÜSTÜNE kaydırılarak çizilir**, gövdesi yoktur:
+tel üzerinde olması doğrudur, bulgu sayma. Global/hiyerarşik etiketin gövdesi
+çıpaya oturur; tel çıpada durmayıp gövde yönünde devam ederse yazıyı çizer
+(`PD_VOUT` böyle bulundu, render ile doğrulandı). Denetimi yalnız gövdeli
+etiketlere uygula — yerel etiketleri de tararsan 16 bulgunun 14'ü sahte çıkar.
+
+**Property bloklarını elle birleştirirken girinti kaybolur.** Bloklar dosyada
+`\n\t\t` girintisiyle durur ama `K.block_at` yalnız `(` ile başlayan gövdeyi
+verir; `'\n'.join(parts)` ile birleştirirsen ikinci property **sütun 0**'da
+başlar. KiCad dosyayı yine okur (ERC ve netlist etkilenmez, render çalışır) ama
+`\n\t\t\(property` arayan her araç — `items()`, `sym_props()` — artık yalnız
+ilk alanı görür ve betik idempotent olmaktan çıkar; ikinci çalıştırma sembolü
+bozar. Ayırıcı `'\n\t\t'` olmalı. Belirti: `grep -c '^(property' *.kicad_sch`
+sıfırdan büyük. `E.set_sym_props` kullan, elle birleştirme.
+
+**Otomatik metin kaydırma sembol gövdesini bilmiyorsa gerileme üretir.**
+"Çakışmayı azaltan ilk aday" kuralıyla Q1/Q2'nin değeri transistörün üstüne
+taşındı: rapor iyileşti, render'da `BSS138` sembolün içine bindi. Aday konumu
+kabul etmeden önce `E.sym_body` ile gövde kutularını da denetle **ve her
+otomatik yerleşimi render ile doğrula** — denetçi puanı düşmesi yetmez.
+
 **Etiket telin tam üstünde olmalı.** 0.64 mm kayma `label_dangling` verir, ve
 etiket bir pini besliyorsa o pin `pin_not_connected` olur. Etiketi hep bir tel
 segmentinin *içine* koy — segmentin dışında, uzantısı üzerinde olması yetmez.
@@ -326,6 +419,13 @@ teliyle U12 GATE'e bağlanır (REV_C Blok B, 9c3d219).
 KiCad bağlar; junction koy. İki tel birbirinin *içinden geçiyorsa* ve orada
 junction varsa da bağlanır, ama okunmaz. Teli o noktada böl ki uçlar orada
 bitsin. `E.lint` üç durumu da raporlar.
+
+**`E.place` gizli alanı görünür yapardı.** `_set_prop` `(hide yes)`'i siliyor ve
+yalnız `hide_val` ile Value'ya geri koyuyordu; güç sembolüne `ref_at` verince
+`#PWR###` şemada beliriyordu. Artık `hide=None` (varsayılan) **mevcut gizliliği
+korur**: Reference'ın gizliliği her zaman korunur, `hide_val` de `None`
+verilirse dokunulmaz. Bir alanı bilerek göstermek/gizlemek için `True`/`False`
+geç.
 
 **`no_connect` işaretleri bölge temizliğinde silinir.** Yeniden eklemezsen ERC
 `pin_not_connected` sayısı artar.
@@ -411,6 +511,21 @@ sayfa sırası/numaraları değişir, diff dev olur ama bağlantı aynıdır. Bu
 `--against` ile doğrula ve **ayrı bir commit** olarak al; kendi değişikliğinle
 karıştırma. Proje KiCad'de açıkken dosyayı düzenlersen, KiCad'in kaydı seninkini
 ezer (`hardware/~gopo.kicad_sch.lck` varsa açıktır).
+
+KiCad 10'un kaydında ölçülen iki somut etki (REV_C alan çalışmasında yakalandı):
+- `Description` alanı olmayan sembollere **`(hide yes)` olmadan** boş bir
+  `Description` eklenir. Değer boş olduğu için render'da görünmez ama
+  "yalnız Reference + Value görünür" değişmezini bozar: alan işini bitirdikten
+  sonra betiği bir kez daha çalıştır (idempotenttir) ve gizlemeyi geri koy.
+- Güç sembollerinden `(fields_autoplaced no)` düşer (30 sembol). Zararsızdır,
+  ama HEAD ile birebir karşılaştırma yapan testte fark olarak görünür.
+
+**Uzun oturumda dosyaların hâlâ senin bıraktığın halde olduğunu varsayma.**
+Doğrulamadan önce `ls -la --time-style=full-iso hardware/*.kicad_sch`: tüm
+sayfaların **aynı saniyede** damgalanması KiCad'in kaydettiği anlamına gelir,
+kullanıcı arada sembol taşımış olabilir. Oturum başında alınan geometri
+referansı o anda bayatlar; `--against` ve `field_geometry` karşılaştırmasını
+yenile, kullanıcının düzenlemesini kendi değişikliğin sanıp geri alma.
 
 **`git add -A` kullanma.** Blok A yeniden çizilirken o zamanki `poweroutput.kicad_sch` de
 sıfırlanmıştı; `git add -A` onu commit'e aldı ve Blok B sessizce geri alındı

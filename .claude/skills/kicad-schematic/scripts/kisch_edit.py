@@ -202,13 +202,19 @@ def _sym_span(t, ref):
     raise KeyError(ref)
 
 
-def _set_prop(blk, name, x, y, rot=0, just='left', hide=False):
+def _set_prop(blk, name, x, y, rot=0, just='left', hide=None):
+    """hide: True gizle, False goster, None MEVCUT gizliligi koru.
+
+    None varsayilandir: place() guc sembolunun gizli #PWR### referansini ya da
+    TestPoint'in gizli "TestPoint" degerini sessizce gorunur yapmasin.
+    """
     a, b = K.block_at(blk, blk.index(f'(property "{name}"'))
     p = blk[a:b]
     p = re.sub(r'\(at [-\d.]+ [-\d.]+ [-\d.]+\)', f'(at {f(x)} {f(y)} {rot})', p, count=1)
-    p = re.sub(r'\n\t\t\t\(hide yes\)', '', p)
-    if hide:
-        p = p.replace('\n\t\t\t(show_name', '\n\t\t\t(hide yes)\n\t\t\t(show_name', 1)
+    if hide is not None:
+        p = re.sub(r'\n\t\t\t\(hide yes\)', '', p)
+        if hide:
+            p = p.replace('\n\t\t\t(show_name', '\n\t\t\t(hide yes)\n\t\t\t(show_name', 1)
     p = re.sub(r'\n\t\t\t\t\(justify [^)]*\)', '', p)
     if just:
         p = re.sub(r'(\n\t\t\t\t\(font\n\t\t\t\t\t\(size [^)]*\)\n'
@@ -218,7 +224,7 @@ def _set_prop(blk, name, x, y, rot=0, just='left', hide=False):
 
 
 def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
-          just='left', prop_rot=None, hide_val=False):
+          just='left', prop_rot=None, hide_val=None):
     """Mevcut sembolu (x, y, ang, mirror) konumuna tasir.
 
     ref_at / val_at : sembol merkezine gore (dx, dy) veya (dx, dy, justify).
@@ -227,7 +233,10 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
                       yaptigi left/right tersine cevirmesi burada telafi edilir.
     prop_rot        : verilmezse ang 90 -> 270, 270 -> 90, 0/180 -> 0 (metin yatay
                       ve okunur). Elle verirsen telafi hesabi senin sorumlulugunda.
-    hide_val        : Deger alanini gizle (or. TestPoint'in "TestPoint" degeri).
+    hide_val        : True gizle / False goster / None (varsayilan) mevcut
+                      gizliligi koru. Reference'in gizliligi HER ZAMAN korunur:
+                      guc sembolunde ref_at verince #PWR### gorunur hale gelip
+                      sayfayi kalabaliklastiriyordu.
     Gizli alanlar (Footprint, Datasheet...) sembolle birlikte tasinir.
     """
     a, b, blk = _sym_span(t, ref)
@@ -250,7 +259,7 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
         if flip and j in swap:
             j = swap[j]
         blk = _set_prop(blk, name, x + o[0], y + o[1], pr, j,
-                        hide=(hide_val and name == 'Value'))
+                        hide=hide_val if name == 'Value' else None)
     for m in list(re.finditer(r'\(property "([^"]+)"', blk))[::-1]:
         if m.group(1) in ('Reference', 'Value'):
             continue
@@ -259,6 +268,166 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
                    lambda mm: f'(at {f(x)} {f(y)} {mm.group(1)})', blk[pa:pb], count=1)
         blk = blk[:pa] + p + blk[pb:]
     return t[:a] + blk + t[b:]
+
+
+# --------------------------------------------------------- sembol alanlari
+
+def prop_escape(v):
+    """KiCad string'i: ters bolu ve tirnak kacisi."""
+    return str(v).replace('\\', '\\\\').replace('"', '\\"')
+
+
+def prop_unescape(v):
+    """Dosyadaki string'i duz metne cevirir (prop_escape'in tersi)."""
+    return re.sub(r'\\(.)', r'\1', v)
+
+
+def _prop_spans(blk):
+    """[(ad, ham_deger, bas, son)] - property bloklarinin sembol icindeki yeri."""
+    out, i = [], 0
+    pat = re.compile(r'\n\t\t\(property "([^"]*)" "((?:[^"\\]|\\.)*)"')
+    while True:
+        m = pat.search(blk, i)
+        if not m:
+            break
+        a, b = K.block_at(blk, m.start() + 3)
+        out.append((m.group(1), m.group(2), a, b))
+        i = b
+    return out
+
+
+def sym_props(blk):
+    """Sembolun alanlari: [(ad, deger, gizli_mi, blok_metni)]. Deger kacissizdir."""
+    return [(n, prop_unescape(v), '(hide yes)' in blk[a:b], blk[a:b])
+            for n, v, a, b in _prop_spans(blk)]
+
+
+def _retitle(p, name, val):
+    return re.sub(r'\(property "[^"]*" "(?:[^"\\]|\\.)*"',
+                  '(property "%s" "%s"' % (name, prop_escape(val)), p, count=1)
+
+
+def _set_hide(p, hide):
+    p = re.sub(r'\n\t\t\t\(hide yes\)', '', p, count=1)
+    if hide:
+        p = re.sub(r'(\n\t\t\t\(at [^\n]*\))', r'\1\n\t\t\t(hide yes)', p, count=1)
+    return p
+
+
+def set_sym_props(blk, fields, visible=('Reference', 'Value')):
+    r"""Sembolun property bolumunu `fields` sirasina gore yeniden kurar.
+
+    fields  : [(ad, deger)] - istenen tam alan listesi, istenen sirada.
+    visible : gorunur kalacak alan adlari; kalan her alan gizlenir.
+
+    Mevcut bir alanin blogu KORUNUR (konum, hizalama, font, aci); yalniz adi,
+    degeri ve gizliligi degisir. Yeni alan sembol konumunda gizli uretilir.
+    Boylece elle ayarlanmis Reference/Value yerlesimi bozulmaz - islem sonrasi
+    field_geometry() farki bos cikmalidir.
+
+    Bir alan standarda tasinirken adi degisiyorsa (Voltage -> VoltageRating)
+    degerini fields'a yeni adla koy; listede olmayan alan dusar.
+
+    TUZAK: property bloklari dosyada '\n\t\t' girintisiyle durur, block_at ise
+    yalniz '(' ile baslayan govdeyi verir. Bloklari '\n' ile birlestirirsen
+    ikinci property SUTUN 0'da baslar. KiCad dosyayi yine okur (ERC ve netlist
+    etkilenmez) ama '\n\t\t\(property' arayan her arac - items(), sym_props() -
+    artik yalniz ilk alani gorur; betik idempotent olmaktan cikar ve ikinci
+    calistirma sembolu bozar. Ayirici bu yuzden '\n\t\t'.
+    """
+    spans = _prop_spans(blk)
+    if not spans:
+        raise ValueError('sembolde property yok')
+    old = {n: blk[a:b] for n, _, a, b in spans}
+    m = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', blk)
+    x, y = float(m.group(1)), float(m.group(2))
+    parts = []
+    for name, val in fields:
+        hide = name not in visible
+        if name in old:
+            parts.append(_set_hide(_retitle(old[name], name, val), hide))
+        else:
+            parts.append(K._prop(name, prop_escape(val), x, y,
+                                 hide=hide).rstrip('\n').lstrip('\t'))
+    return blk[:spans[0][2]] + '\n\t\t'.join(parts) + blk[spans[-1][3]:]
+
+
+def field_geometry(t):
+    """{ref: {alan: (at_metni, justify)}} ve {ref: {'sym': at_metni}}.
+
+    Yerlesimi degistirmemesi gereken bir islemin (alan ekleme, gorunurluk,
+    deger normalizasyonu) once/sonra farkini almak icin. Fark bossa hicbir
+    sembol veya metin oynamamistir; netlist farkiyla birlikte bu iki denetim
+    "cizim bozulmadi" demeye yeter.
+    """
+    out = {}
+    for _, _, kind, blk in items(t):
+        if kind != 'symbol':
+            continue
+        g = {'sym': re.search(r'\(at ([-\d.]+ [-\d.]+ \d+)\)', blk).group(1)}
+        for n, _, a, b in _prop_spans(blk):
+            p = blk[a:b]
+            at = re.search(r'\(at ([-\d.]+ [-\d.]+ \d+)\)', p)
+            ju = re.search(r'\(justify ([^)]*)\)', p)
+            g[n] = (at.group(1) if at else '', ju.group(1) if ju else '')
+        out[ref_of(blk)] = g
+    return out
+
+
+def sym_body(t, ref):
+    """Sembolun sema koordinatindaki govde kutusu (aci + ayna uygulanmis).
+
+    Metnin baska bir sembolun (veya kendi govdesinin) uzerine basip basmadigini
+    anlamak icin; yalniz tel carpismasina bakan bir denetim bunu kacirir ve
+    otomatik metin kaydirma degeri sembolun ICINE tasiyabilir.
+    """
+    _, _, blk = _sym_span(t, ref)
+    lib = re.search(r'lib_id "([^"]+)"', blk).group(1)
+    lb = K.lib_body(t, lib)
+    if not lb:
+        return None
+    m = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', blk)
+    x, y, ang = float(m.group(1)), float(m.group(2)), int(m.group(3))
+    mm = re.search(r'\(mirror (\w)\)', blk)
+    mir = mm.group(1) if mm else None
+    pts = [K.xf((x, y), ang, (lb[i], lb[j]), mir) for i in (0, 2) for j in (1, 3)]
+    return (min(p[0] for p in pts), min(p[1] for p in pts),
+            max(p[0] for p in pts), max(p[1] for p in pts))
+
+
+def field_boxes(t):
+    """Gorunur sembol alanlarinin ekran kutulari: [('REF.Alan', metin, kutu)].
+
+    Property acisi sembole GORELI saklanir: ekrandaki aci (sembol_ang +
+    prop_rot) % 360'tir (R13 ang=90 + rot=270 -> yatay basilir). Ayrica ang 180
+    ve (mirror y) left/right hizalamasini ters cevirir; place() yazarken telafi
+    eder, burada okurken geri alinir. Bu iki telafiyi atlarsan kutular 90 derece
+    doner ve carpisma raporu sahte bulgularla dolar.
+    """
+    out = []
+    for _, _, kind, blk in items(t):
+        if kind != 'symbol':
+            continue
+        ref = ref_of(blk)
+        m = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', blk)
+        sang = int(m.group(3))
+        flip = (sang == 180) != ('(mirror y)' in blk)
+        for n, v, a, b in _prop_spans(blk):
+            p = blk[a:b]
+            if '(hide yes)' in p or n not in ('Reference', 'Value'):
+                continue
+            at = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', p)
+            ju = re.search(r'\(justify ([^)]*)\)', p)
+            jt = ju.group(1).split()[0] if ju else 'center'
+            if flip:
+                jt = {'left': 'right', 'right': 'left'}.get(jt, jt)
+            sz = re.search(r'\(size ([\d.]+)', p)
+            txt = prop_unescape(v)
+            out.append(('%s.%s' % (ref, n), txt,
+                        K.text_box(txt, float(at.group(1)), float(at.group(2)),
+                                   (sang + int(at.group(3))) % 360, jt,
+                                   float(sz.group(1)) if sz else 1.27)))
+    return out
 
 
 def sym_pin(t, ref, num):
