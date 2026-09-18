@@ -1,7 +1,7 @@
 TODO
 ====
 Projeye özel dahili yapılacaklar listesi.
-Son güncelleme: 2026-09-16 (REV_C şema çalışması)
+Son güncelleme: 2026-09-17 (REV_C layout çalışması)
 
 
 REV_C — KARAR BEKLEYEN (bloke edici)
@@ -33,6 +33,13 @@ REV_C — TBD PARÇA SEÇİMİ (LCSC)
 
 REV_C — ŞEMA / KÜTÜPHANE
 ------------------------
+- [ ] Q5/Q6 şematik Footprint alanları boş (layout ön kontrolü, 2026-09-17).
+      REV_C netlist'inde iki sembol var, ancak PCB'ye aktarılacak doğrulanmış
+      5×6 DFN land pattern ve pad eşlemesi seçilmemiş. MPN/footprint seçimi
+      kesinleşince şematikte işlenmeli; mevcut oturumda şematik değiştirilmedi.
+      Örnek aday TI CSD18532Q5B'nin gerçek pinleri D=1–4, G=5, S=6–8;
+      şemadaki jenerik 3 pinli Q_NMOS_GSD ile doğrudan pad numarası eşleşmez.
+      Üretici pinout'u ve SOA doğrulanmadan PCB'de bu adayla bağlantı çizme.
 - [x] Blok A ve Blok B yerleşimini KiCad'de düzenle.
       9c3d219: iki satırlı/planar yerleşim, netlist değişmedi. KiCad'de
       kontrol edildi (2026-09-17).
@@ -47,6 +54,56 @@ REV_C — ŞEMA / KÜTÜPHANE
       1 uF hedefinin altına düşebilir. 1206 değerlendirilmeli.
 - [ ] powergeneration ve poweroutput sayfaları A4 -> A3 oldu; diğer
       sayfalarla tutarlılık istenirse gözden geçir.
+
+
+LAYOUT — USB-C / PD YERLEŞİMİ (2026-09-17)
+----------------------------------------
+- [ ] J7 GCT USB4105: sol alt kenar, B.Cu, X=28.179 / Y=120.278667 /
+      90 derece. Footprint PCB Edge referansı X=24.504 ile eşleşiyor;
+      ağız sola bakıyor. Kasa açıklığını gerçek kablo overmould'u, duvar
+      kalınlığı ve seçilen shell-stake uzunluğuyla doğrula.
+      U2/J7 üst–ara–alt footprint zarf boşlukları yaklaşık 3.408 mm.
+      Son istekte “J7 ve U7” yazıldı; U7 arka ışık güç entegresi olduğundan
+      aralık J7 ve aynı isteğin tarif ettiği komşu U2 için uygulandı.
+      Ayrıntılar: hardware/docs/LCD_J3_placement.md.
+- [ ] CC1/CC2 fanout'unu U10 koruma alanından U1'e çiz; USB_VBUS için
+      iki VBUS pad grubundan kısa/geniş B.Cu yol ve sürekli GND referansı
+      oluştur. Güncel J7-U1 CC pad düz hat mesafeleri ~30/28 mm, J7-R11
+      VBUS ~23.4 mm; AP33772S, şönt ve MOSFET güç yolu J7'ye yaklaşacak
+      şekilde yeniden gruplanmalı. Henüz iz, via veya GND dolgu yok.
+- [ ] Güç routing'inden önce R11 PCB=0402 / şema=2512 (5 mOhm / 1 W)
+      ve C3 PCB=0402 / şema=0805 uyuşmazlıklarını çöz. Şematikler ve bu
+      mevcut paket seçimleri USB-C taşımasında değiştirilmedi.
+
+
+LAYOUT — LCD / J3 KONTROLÜ (2026-09-17)
+--------------------------------------
+- [ ] Güncel J3: X=63.454754, Y=108.714499, F.Cu, 90 derece.
+      LCD gövdesi x=29.9597545..89.8697545, y=87.314499..130.114499;
+      aktif alan merkezi PCB merkeziyle eşleşir. U2 anten keepout'u
+      x=23.459754..29.459754; LCD ile 0.500 mm yatay boşluğu var.
+      LCD arka yüzeyi PCB önünden 3.00 mm, J3 üstünden 1.00 mm yukarıda.
+      Flex sağ taraftan alta katlanır; 0.8 mm azami çıkıntısı sağ kart
+      kenarını yaklaşık 0.254 mm aşabilir. Gerçek LCD/FPC ile tam takma,
+      büküm gerilimi, kasa payı ve 1 mm Z
+      açıklığını doğrula: hardware/docs/LCD_J3_placement.md.
+- [ ] ESP32-C6 anteni sol PCB kenarından 1.044 mm dışarı taşar;
+      LCD gövdesiyle 0.500 mm nominal boşluk var. Espressif kasa içinde
+      her yönde en az 15 mm
+      öneriyor; mevcut 66 x 41 mm kartta bu öneri karşılanmıyor.
+      Kasa metalini ve kabloları anten bölgesinden uzak tut; prototipte
+      kablosuz iletişim menzilini/throughput'u ve anten detuning etkisini
+      test et. Gerekiyorsa U2 anten çözümü ya da kasa yerleşimini değiştir.
+- [ ] J3 STEP modeli mevcut dosya yolunda yok; gerçek modelle konnektör,
+      flex elektroniği, LCD arka yüzeyi ve mandal erişimini kontrol et.
+- [ ] J4 çıkış terminaline erişim (80,101) ve BT1 pil çıkarma hacmi
+      (51.197,119.926) yeni sol kenar yerleşiminden sonra kasa üzerinde
+      doğrulanmalı. 3D görüntüde bazı özel STEP modelleri bulunmuyor.
+- [ ] Güncel PCB–şema footprint uyuşmazlıklarını çöz: C3 PCB=0402,
+      şema=0805; C12/C13/C16 PCB=0402, şema=1210; R11/R43 PCB=0402,
+      şema=2512. J3 taşıması öncesinde de mevcut (2026-09-17 DRC).
+      Şematikler değiştirilmedi; mevcut PCB seçimleri bu adımda korundu.
+      Q5/Q6 eksik footprint konusu yukarıdaki şema/kütüphane maddesinde.
 
 
 REV_C — PROTOTİP DOĞRULAMA (handoff Bölüm 10)

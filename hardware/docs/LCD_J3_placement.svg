@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1512" height="1170" viewBox="17 80 84 65">
+<rect x="17" y="80" width="84" height="65" fill="#fafcfe"/>
+<g font-family="Arial,DejaVu Sans,sans-serif" fill="#15263a">
+<text x="19" y="83.2" font-size="1.45" font-weight="bold">SOL KENAR USB-C / ESP32 / LCD YERLESIMI</text>
+<text x="19" y="85.3" font-size=".78">PCB 65.91 x 40.63 mm | ustten gorunum | koordinatlar mm | 2026-09-17</text>
+<rect x="24.504" y="88.397" width="65.911509" height="40.634999" rx="1.7" fill="#eaf2ec" stroke="#263e36" stroke-width=".2"/>
+<rect x="34.572" y="111.65" width="33.25" height="16.55" fill="#e2e0d7" stroke="#70695d" stroke-dasharray=".5 .3" stroke-width=".15"/>
+<text x="51" y="126" text-anchor="middle" font-size=".9">BT1 (B.Cu)</text>
+<rect x="69.31" y="97.79" width="13.76" height="16.09" fill="#f6e4c4" stroke="#9c6522" stroke-width=".16"/>
+<text x="76.19" y="113" text-anchor="middle" font-size=".85">J4</text>
+<rect x="23.10" y="91.805" width="26.72" height="19.72" fill="#dbe7d7" fill-opacity=".48" stroke="#5a815b" stroke-width=".2"/>
+<rect x="23.459754" y="92.665333" width="6" height="18" fill="#ffce85" stroke="#b4540e" stroke-width=".22"/>
+<text x="26.4" y="102" text-anchor="middle" font-size=".8" fill="#9e420b" transform="rotate(-90 26.4 102)">U2 ANTEN</text>
+<rect x="22.834" y="114.934" width="10.69" height="10.69" fill="#e2dcf5" stroke="#6548a5" stroke-width=".2"/>
+<path d="M24.504 116v8" stroke="#6340a2" stroke-width=".23"/>
+<text x="28.2" y="121" text-anchor="middle" font-size=".85" fill="#53338b">J7 USB-C</text>
+<path d="M23.3 120.279h-3" stroke="#6439a2" stroke-width=".3" marker-end="url(#arrow)"/>
+<rect x="29.9597545" y="87.314499" width="59.91" height="42.8" fill="#b8dcf8" fill-opacity=".25" stroke="#0e69a7" stroke-width=".28"/>
+<rect x="32.9797545" y="90.354499" width="48.96" height="36.72" fill="#d8efff" fill-opacity=".15" stroke="#298dc6" stroke-width=".13"/>
+<text x="66" y="89.7" text-anchor="middle" font-size=".92" fill="#125b91">LCD GOVDE 59.91 x 42.80</text>
+<rect x="58.17" y="95.10" width="9.09" height="26.99" fill="#b0e5d4" fill-opacity=".5" stroke="#06745f" stroke-width=".15"/>
+<text x="63.455" y="119" text-anchor="middle" font-size=".88" fill="#086451" transform="rotate(-90 63.455 119)">J3 F.Cu</text>
+<path d="M89.87 108.714h-26.415" fill="none" stroke="#0d71ae" stroke-dasharray=".7 .4" stroke-width=".17"/>
+<text x="76" y="107.5" font-size=".82" fill="#125b91">FPC LCD altina katlanir</text>
+<path d="M57.4597545 106.8v3.8 M55.5597545 108.7145h3.8" stroke="#075b9a" stroke-width=".14"/>
+<text x="59" y="110.6" font-size=".7" fill="#075b9a">aktif = PCB merkez</text>
+<path d="M29.459754 106h.5 M29.459754 105.5v1 M29.959754 105.5v1" stroke="#c35d12" stroke-width=".10"/>
+<text x="30.3" y="104.7" font-size=".73" fill="#a9470a">0.50 mm</text>
+<path d="M19 132.4h79" stroke="#d1d9e3" stroke-width=".13"/>
+<text x="19" y="134.2" font-size=".89" font-weight="bold">U2 anteni sol kenardan 1.044 mm disari tasar; LCD ile planar bosluk 0.500 mm.</text>
+<text x="19" y="136.1" font-size=".82">J7 agzi sol disari bakar. U2 - J7 ust/ara/alt footprint zarf bosluklari: 3.408 / 3.408 / 3.408 mm.</text>
+<text x="19" y="138" font-size=".82">LCD aktif merkez = PCB merkez (57.4597545, 108.7144995). J3: (63.4547545, 108.714499).</text>
+<text x="19" y="139.9" font-size=".82">J3 ustu Z=2.00; LCD arkasi Z=3.00; 1.00 mm bosluk. LCD sag kenari PCB icinde 0.546 mm.</text>
+<text x="19" y="141.8" font-size=".79" fill="#aa480c">15 mm kasa ici RF acikligi saglanmiyor; ekran arka plakasi/kasa ve FPC numunede kontrol edilmeli.</text>
+</g>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0L0 5L10 10" fill="#6439a2"/></marker></defs>
+</svg>
