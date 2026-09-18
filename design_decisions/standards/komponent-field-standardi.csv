@@ -1,0 +1,246 @@
+﻿GroupCode,GroupName,Category,Subcategory,Field,Layer,Format,Example,GroupBy,Note
+ALL,Tüm komponentler,-,-,Reference,Çekirdek (yerleşik),Harf ön eki + numara,R12,Hayır,KiCad/Altium yerleşik alanı
+ALL,Tüm komponentler,-,-,Value,Çekirdek (yerleşik),IEC 60062 kodu (R/C/L); IC'de ürün adı,4k7 / 100n / 4u7 / AP33772S,Evet,Ayrı Resistance/Capacitance/Inductance alanı AÇILMAZ; parametrik değer Value'dur
+ALL,Tüm komponentler,-,-,Description,Çekirdek (yerleşik),"Tek satır, üretici tanımı",RES SMD 4k7 1% 1/10W 0402,Hayır,"KiCad 8+ yerleşik alan, template'e eklenemez"
+ALL,Tüm komponentler,-,-,Footprint,Çekirdek (yerleşik),kütüphane:ayak,Resistor_SMD:R_0402_1005Metric,Evet,Yerleşik
+ALL,Tüm komponentler,-,-,Datasheet,Çekirdek (yerleşik),URL,https://...,Hayır,Yerleşik
+ALL,Tüm komponentler,-,-,Category,Çekirdek,DigiKey üst kategori,Resistors,Hayır,Filtrenin ilk seviyesi
+ALL,Tüm komponentler,-,-,Subcategory,Çekirdek,DigiKey aile adı,Chip Resistor - Surface Mount,Hayır,Parametrik alan setini bu alan belirler
+ALL,Tüm komponentler,-,-,Manufacturer,Çekirdek,"Tam ad, kısaltma yok",Yageo,Evet,MANUFACTURER/MF alanları buraya birleşir
+ALL,Tüm komponentler,-,-,MPN,Çekirdek,Tam sipariş kodu,RC0402FR-074K7L,Evet,MP/DisplayMPN alanları buraya birleşir
+ALL,Tüm komponentler,-,-,Package,Çekirdek,Uretici kılıf adı,0402 (1005 Metric),Evet,Footprint'ten farklı: üretici gözüyle kılıf
+ALL,Tüm komponentler,-,-,MountingType,Çekirdek,Surface Mount / Through Hole / Mechanical,Surface Mount,Hayır,PCBA ayrımı için zorunlu
+ALL,Tüm komponentler,-,-,Lifecycle,Ortak,Active / NRND / Obsolete,Active,Hayır,Revizyon öncesi toplu kontrol için
+ALL,Tüm komponentler,-,-,RoHS,Ortak,Yes / No,Yes,Hayır,
+ALL,Tüm komponentler,-,-,OperatingTemp,Ortak,"min~max, C",-55~155C,Hayır,
+ALL,Tüm komponentler,-,-,Height,Ortak,mm,0.45mm,Hayır,Kutu/3D boşluğu kontrolü için
+ALL,Tüm komponentler,-,-,DesignNote,Ortak,Serbest metin,"Çıkış UV/OV istenmedi, koruma bilinçli olarak yok",Hayır,Seçim gerekçesi
+ALL,Tüm komponentler,-,-,SelectionNote,Ortak,Serbest metin,"Alternatif: XXXX, aynı ayak",Hayır,
+ALL,Tüm komponentler,-,-,AssemblyNote,Ortak,Serbest metin,Pin1 işareti soldadır,Hayır,PCBA için montaj notu
+R,Direnç,Resistors,Chip Resistor - Surface Mount,Tolerance,Gruba özel,+/-x%,+/-1%,Evet,
+R,Direnç,Resistors,Chip Resistor - Surface Mount,PowerRating,Gruba özel,W,0.1W,Evet,
+R,Direnç,Resistors,Chip Resistor - Surface Mount,VoltageRating,Gruba özel,V,50V,Hayır,Voltage alanı buraya birleşir
+R,Direnç,Resistors,Chip Resistor - Surface Mount,TempCoefficient,Gruba özel,+/-x ppm/C,+/-100ppm/C,Hayır,
+R,Direnç,Resistors,Chip Resistor - Surface Mount,Composition,Gruba özel,Thick Film / Thin Film,Thick Film,Hayır,
+RS,Akım ölçüm şöntü,Resistors,Current Sense Resistors,Tolerance,Gruba özel,+/-x%,+/-0.5%,Evet,Ölçüm hata bütçesini belirler
+RS,Akım ölçüm şöntü,Resistors,Current Sense Resistors,PowerRating,Gruba özel,W,2W,Evet,
+RS,Akım ölçüm şöntü,Resistors,Current Sense Resistors,TempCoefficient,Gruba özel,+/-x ppm/C,+/-50ppm/C,Evet,Şöntte en kritik parametre
+RS,Akım ölçüm şöntü,Resistors,Current Sense Resistors,TerminationStyle,Gruba özel,2-Terminal / 4-Terminal (Kelvin),4-Terminal (Kelvin),Evet,
+RS,Akım ölçüm şöntü,Resistors,Current Sense Resistors,Composition,Gruba özel,Metal Element / Metal Foil,Metal Element,Hayır,
+C,Seramik kapasitör,Capacitors,Ceramic Capacitors,Tolerance,Gruba özel,+/-x%,+/-10%,Evet,
+C,Seramik kapasitör,Capacitors,Ceramic Capacitors,VoltageRating,Gruba özel,V,25V,Evet,
+C,Seramik kapasitör,Capacitors,Ceramic Capacitors,Dielectric,Gruba özel,C0G / X5R / X7R / X7S,X7R,Evet,Mevcut projede alan zaten var
+C,Seramik kapasitör,Capacitors,Ceramic Capacitors,EffectiveCapacitance,Gruba özel,değer @ DC bias,4u2 @12V,Hayır,Mevcut projede alan zaten var
+CP,Polimer / elektrolitik / tantal,Capacitors,Aluminum Polymer / Tantalum,CapacitorType,Gruba özel,Aluminum Polymer / Aluminum Electrolytic / Tantalum,Aluminum Polymer,Evet,
+CP,Polimer / elektrolitik / tantal,Capacitors,Aluminum Polymer / Tantalum,VoltageRating,Gruba özel,V,25V,Evet,
+CP,Polimer / elektrolitik / tantal,Capacitors,Aluminum Polymer / Tantalum,Tolerance,Gruba özel,+/-x%,+/-20%,Hayır,
+CP,Polimer / elektrolitik / tantal,Capacitors,Aluminum Polymer / Tantalum,ESR,Gruba özel,değer @ frekans,18mOhm @100kHz,Evet,
+CP,Polimer / elektrolitik / tantal,Capacitors,Aluminum Polymer / Tantalum,RippleCurrent,Gruba özel,değer @ frekans,3A @100kHz,Evet,
+CP,Polimer / elektrolitik / tantal,Capacitors,Aluminum Polymer / Tantalum,Lifetime,Gruba özel,saat @ sıcaklık,2000h @105C,Hayır,
+L,Güç bobini,"Inductors, Coils, Chokes",Fixed Inductors,Tolerance,Gruba özel,+/-x%,+/-20%,Hayır,
+L,Güç bobini,"Inductors, Coils, Chokes",Fixed Inductors,CurrentSaturation,Gruba özel,A (kriter ile),6.5A (Isat -30%),Evet,Kriteri yazmadan karşılaştırılamaz
+L,Güç bobini,"Inductors, Coils, Chokes",Fixed Inductors,CurrentRMS,Gruba özel,A (sıcaklık artışı ile),5.2A (dT 40C),Evet,
+L,Güç bobini,"Inductors, Coils, Chokes",Fixed Inductors,DCR,Gruba özel,mOhm,18mOhm,Evet,
+L,Güç bobini,"Inductors, Coils, Chokes",Fixed Inductors,Shielding,Gruba özel,Shielded / Unshielded / Semi-shielded,Shielded,Hayır,
+L,Güç bobini,"Inductors, Coils, Chokes",Fixed Inductors,SRF,Gruba özel,MHz,35MHz,Hayır,
+FB,Ferrit bead,Filters,Ferrite Beads and Chips,Impedance,Gruba özel,Ohm @ frekans,600Ohm @100MHz,Evet,Value alanı da bu formatta: 600R@100M
+FB,Ferrit bead,Filters,Ferrite Beads and Chips,CurrentRating,Gruba özel,A,2A,Evet,
+FB,Ferrit bead,Filters,Ferrite Beads and Chips,DCR,Gruba özel,mOhm,35mOhm,Evet,
+FB,Ferrit bead,Filters,Ferrite Beads and Chips,FilterType,Gruba özel,Signal Line / Power Line,Power Line,Hayır,
+Y,Kristal / osilatör,"Crystals, Oscillators, Resonators",Crystals,Frequency,Gruba özel,Hz,32.768kHz,Evet,
+Y,Kristal / osilatör,"Crystals, Oscillators, Resonators",Crystals,LoadCapacitance,Gruba özel,pF,12.5pF,Evet,Yük kapasitesi yanlışsa saat kayar
+Y,Kristal / osilatör,"Crystals, Oscillators, Resonators",Crystals,FrequencyTolerance,Gruba özel,+/-x ppm @25C,+/-20ppm @25C,Evet,
+Y,Kristal / osilatör,"Crystals, Oscillators, Resonators",Crystals,FrequencyStability,Gruba özel,+/-x ppm (sıcaklık araligi),+/-50ppm (-40~85C),Hayır,
+Y,Kristal / osilatör,"Crystals, Oscillators, Resonators",Crystals,ESR,Gruba özel,Ohm,70kOhm,Hayır,
+Y,Kristal / osilatör,"Crystals, Oscillators, Resonators",Crystals,OscillatorType,Gruba özel,Crystal / TCXO / MEMS,Crystal,Evet,
+D,Diyot,Discrete Semiconductor Products,Diodes,DiodeType,Gruba özel,Schottky / Rectifier / Zener / Switching,Schottky,Evet,
+D,Diyot,Discrete Semiconductor Products,Diodes,ReverseVoltage,Gruba özel,V,40V,Evet,
+D,Diyot,Discrete Semiconductor Products,Diodes,ForwardCurrent,Gruba özel,A,3A,Evet,
+D,Diyot,Discrete Semiconductor Products,Diodes,ForwardVoltage,Gruba özel,V @ akim,0.45V @3A,Evet,
+D,Diyot,Discrete Semiconductor Products,Diodes,ReverseCurrent,Gruba özel,A @ gerilim,100uA @40V,Hayır,
+D,Diyot,Discrete Semiconductor Products,Diodes,ReverseRecoveryTime,Gruba özel,ns,35ns,Hayır,Schottky'de boş bırakılır
+D,Diyot,Discrete Semiconductor Products,Diodes,ZenerVoltage,Gruba özel,V,5.1V,Evet,Sadece Zener
+D,Diyot,Discrete Semiconductor Products,Diodes,ZenerTolerance,Gruba özel,+/-x%,+/-2%,Evet,Sadece Zener
+D,Diyot,Discrete Semiconductor Products,Diodes,PowerDissipation,Gruba özel,W,0.5W,Hayır,Sadece Zener
+D,Diyot,Discrete Semiconductor Products,Diodes,TestCurrent,Gruba özel,mA,5mA,Hayır,Sadece Zener
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,StandoffVoltage,Gruba özel,V (Vrwm),24V,Evet,Çalışma geriliminden büyük olmalı
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,BreakdownVoltage,Gruba özel,V (min),26.7V,Evet,
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,ClampingVoltage,Gruba özel,V @ akim,38.9V @10A,Evet,
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,PeakPulseCurrent,Gruba özel,A (dalga formu),10A (8/20us),Evet,
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,Capacitance,Gruba özel,pF @ frekans,0.5pF @1MHz,Evet,USB veri hattında belirleyici
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,ChannelCount,Gruba özel,adet,2,Evet,
+TVS,TVS / ESD koruması,Circuit Protection,TVS Diodes,Polarity,Gruba özel,Unidirectional / Bidirectional,Bidirectional,Evet,
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,ProtectionType,Gruba özel,PPTC / Fast Blow / Slow Blow,PPTC,Evet,
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,HoldCurrent,Gruba özel,A,1.1A,Evet,
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,TripCurrent,Gruba özel,A,2.2A,Evet,
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,VoltageMax,Gruba özel,V,24V,Evet,
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,InterruptCurrent,Gruba özel,A,40A,Hayır,
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,ResistanceInitial,Gruba özel,mOhm,60mOhm,Evet,Güç yolunda kayıp yaratır
+F,Sigorta / PPTC,Circuit Protection,PTC Resettable Fuses,TimeToTrip,Gruba özel,s @ akim,1.5s @8A,Hayır,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",ChannelType,Gruba özel,N-Channel / P-Channel,N-Channel,Evet,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",VoltageDS,Gruba özel,V,60V,Evet,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",CurrentID,Gruba özel,A @ sıcaklık,12A @25C,Evet,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",RdsOn,Gruba özel,mOhm @ Vgs,22mOhm @Vgs=10V,Evet,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",VgsThreshold,Gruba özel,V (max),1.8V max,Evet,Logic-level seçimi burada belli olur
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",GateCharge,Gruba özel,nC @ Vgs,9nC @Vgs=10V,Hayır,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",PowerDissipation,Gruba özel,W,2.5W,Hayır,
+Q,MOSFET,Discrete Semiconductor Products,"FETs, MOSFETs - Single",ThermalResistance,Gruba özel,C/W (RthJA),50C/W,Hayır,
+LED,LED,Optoelectronics,LED Indication - Discrete,Color,Gruba özel,Renk adı,Green,Evet,
+LED,LED,Optoelectronics,LED Indication - Discrete,Wavelength,Gruba özel,nm veya K,525nm,Evet,
+LED,LED,Optoelectronics,LED Indication - Discrete,ForwardVoltage,Gruba özel,V @ akim,2.1V @20mA,Evet,Seri direnç hesabı bu alandan
+LED,LED,Optoelectronics,LED Indication - Discrete,ForwardCurrent,Gruba özel,mA,20mA,Evet,
+LED,LED,Optoelectronics,LED Indication - Discrete,LuminousIntensity,Gruba özel,mcd @ akim,180mcd @20mA,Hayır,
+LED,LED,Optoelectronics,LED Indication - Discrete,ViewingAngle,Gruba özel,derece,120,Hayır,
+LED,LED,Optoelectronics,LED Indication - Discrete,LensType,Gruba özel,Water Clear / Diffused,Water Clear,Hayır,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,PinCount,IC ortak,adet,14,Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,Topology,Gruba özel,Buck / Boost / Buck-Boost / Flyback,Boost,Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,InputVoltage,Gruba özel,min~max V,2.9~32V,Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,OutputVoltage,Gruba özel,V (fixed/adjustable),5V (adjustable),Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,OutputCurrent,Gruba özel,A (switch veya load),5A (switch),Evet,Switch akımı mi çıkış akımı mi olduğu yazılır
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,SwitchingFrequency,Gruba özel,min~max Hz,100kHz~1.2MHz,Evet,
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,IntegratedSwitch,Gruba özel,Yes / No,Yes,Evet,Controller mi converter mi ayrımı
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,Synchronous,Gruba özel,Yes / No,No,Evet,Harici diyot gerekip gerekmediği
+U-SMPS,Anahtarlamalı regülatör,Integrated Circuits,PMIC - Voltage Regulators - DC DC Switching,ControlMode,Gruba özel,Current Mode / Voltage Mode / COT,Current Mode,Hayır,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,PinCount,IC ortak,adet,14,Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,OutputVoltage,Gruba özel,V (fixed/adjustable),3.3V (fixed),Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,OutputCurrent,Gruba özel,A,500mA,Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,InputVoltage,Gruba özel,min~max V,2.5~6V,Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,DropoutVoltage,Gruba özel,mV @ akim,200mV @500mA,Evet,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,QuiescentCurrent,Gruba özel,uA,50uA,Hayır,
+U-LDO,Lineer regülatör,Integrated Circuits,PMIC - Voltage Regulators - Linear,PSRR,Gruba özel,dB @ frekans,70dB @1kHz,Hayır,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",PinCount,IC ortak,adet,14,Evet,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",InputVoltage,Gruba özel,min~max V,1.2~28V,Evet,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",ContinuousCurrent,Gruba özel,A,6A,Evet,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",RdsOn,Gruba özel,mOhm,24mOhm,Evet,Çıkıştaki kaybı belirler
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",ProtectionFeatures,Gruba özel,OCP / OVP / UVLO / Reverse / OTP,"OCP, Reverse Blocking",Evet,Olmayan koruma DesignNote'ta gerekçelendirilir
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",SlewRateControl,Gruba özel,Fixed / Adjustable,Adjustable (Cdv/dt),Hayır,Inrush kontrolü
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",ChannelCount,Gruba özel,adet,1,Evet,
+U-SW,Yük anahtarı,Integrated Circuits,"PMIC - Power Distribution Switches, Load Drivers",ControlLogic,Gruba özel,Active High / Active Low,Active High,Hayır,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),PinCount,IC ortak,adet,14,Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),Protocol,Gruba özel,USB PD sürümü,USB PD 3.1 (EPR),Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),PortRole,Gruba özel,Sink / Source / DRP,Sink,Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),HostInterface,Gruba özel,I2C / SPI / Standalone,I2C,Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),IntegratedFET,Gruba özel,Yes / No,Yes,Evet,Harici switch gerekip gerekmediği
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),MaxVoltage,Gruba özel,V,28V,Evet,
+U-PD,PD / arayüz denetleyici,Integrated Circuits,Interface - Specialized (USB PD),MaxCurrent,Gruba özel,A,5A,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,PinCount,IC ortak,adet,14,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,CoreArchitecture,Gruba özel,çekirdek adı,Xtensa LX6 dual-core,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,ClockFrequency,Gruba özel,MHz,240MHz,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,FlashSize,Gruba özel,MB / kB,4MB,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,RAMSize,Gruba özel,kB,520kB,Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,IOCount,Gruba özel,adet,34,Hayır,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,PeripheralInterfaces,Gruba özel,virgülle liste,"SPI, I2C, UART, ADC",Hayır,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,WirelessProtocol,Gruba özel,protokol listesi,"WiFi 802.11n, BLE 5.0",Evet,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,AntennaType,Gruba özel,PCB Trace / IPEX / Chip,PCB Trace,Evet,Keepout alanını belirler
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,Certification,Gruba özel,CE / FCC / TELEC,"CE, FCC",Hayır,
+U-MCU,MCU / kablosuz modül,Integrated Circuits,Embedded - Microcontrollers / RF Modules,ModuleDimensions,Gruba özel,mm,18x25.5x3.1mm,Hayır,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,PinCount,IC ortak,adet,14,Evet,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,ChannelCount,Gruba özel,adet,1,Evet,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,GainBandwidth,Gruba özel,Hz,1MHz,Evet,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,InputOffsetVoltage,Gruba özel,uV (max),25uV,Evet,Ölçüm doğruluğunda belirleyici
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,SupplyCurrent,Gruba özel,uA,300uA,Hayır,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,RailToRail,Gruba özel,Input / Output / Input-Output / None,Input-Output,Hayır,
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,Resolution,Gruba özel,bit,16-bit,Evet,Sadece ADC/DAC
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,SampleRate,Gruba özel,SPS,1kSPS,Evet,Sadece ADC/DAC
+U-ANA,Analog (opamp / akim amfisi / ADC),Integrated Circuits,Linear - Amplifiers / Data Acquisition,ReferenceType,Gruba özel,Internal / External,Internal,Hayır,Sadece ADC/DAC
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,SupplyVoltage,IC ortak,min~max V,2.9~32V,Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,PinCount,IC ortak,adet,14,Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,ThermalPad,IC ortak,Yes / No,Yes,Hayır,PCBA stencil ve termal via kararını etkiler
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,InterfaceType,IC ortak,I2C / SPI / UART / None,None,Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,Function,Gruba özel,işlev tanımı,"Level Shifter, 4-bit bidirectional",Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,LogicFamily,Gruba özel,LVC / AHC / HC / AUP,LVC,Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,ChannelCount,Gruba özel,adet,4,Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,OutputType,Gruba özel,Push-Pull / Open Drain,Open Drain,Evet,
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,MemorySize,Gruba özel,bit / byte,32kbit,Evet,Sadece bellek
+U-DIG,Lojik / seviye çevirici / RTC / bellek,Integrated Circuits,Logic / Memory / Clock-Timing,TimekeepingAccuracy,Gruba özel,+/-x ppm,+/-2ppm,Evet,Sadece RTC
+J,Konnektör (genel),"Connectors, Interconnects",-,ConnectorType,Gruba özel,Receptacle / Header / Plug / Terminal Block,Receptacle,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,PositionCount,Gruba özel,adet,24,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,Pitch,Gruba özel,mm,0.5mm,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,RowCount,Gruba özel,adet,2,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,Orientation,Gruba özel,Vertical / Right Angle,Right Angle,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,CurrentRating,Gruba özel,A (kontak başına),5A per contact,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,VoltageRating,Gruba özel,V,20V,Evet,
+J,Konnektör (genel),"Connectors, Interconnects",-,MatingCycles,Gruba özel,adet,10000,Hayır,
+J,Konnektör (genel),"Connectors, Interconnects",-,ContactPlating,Gruba özel,Gold / Tin,Gold,Hayır,
+J,Konnektör (genel),"Connectors, Interconnects",-,Shielding,Gruba özel,Shielded / Unshielded,Shielded,Hayır,
+J,Konnektör (genel),"Connectors, Interconnects",-,Series,Gruba özel,üretici seri adı,-,Hayır,Eşleşen muadili bulmak için
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",ConnectorType,Gruba özel,Receptacle / Header / Plug / Terminal Block,Receptacle,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",PositionCount,Gruba özel,adet,24,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",Pitch,Gruba özel,mm,0.5mm,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",RowCount,Gruba özel,adet,2,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",Orientation,Gruba özel,Vertical / Right Angle,Right Angle,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",CurrentRating,Gruba özel,A (kontak başına),5A per contact,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",VoltageRating,Gruba özel,V,20V,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",MatingCycles,Gruba özel,adet,10000,Hayır,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",ContactPlating,Gruba özel,Gold / Tin,Gold,Hayır,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",Shielding,Gruba özel,Shielded / Unshielded,Shielded,Hayır,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",Series,Gruba özel,üretici seri adı,-,Hayır,Eşleşen muadili bulmak için
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",USBVersion,Gruba özel,USB sürümü + tip,USB 2.0 Type-C,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",PowerRating,Gruba özel,A/V,5A/20V,Evet,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",CCPinsPresent,Gruba özel,Yes / No,Yes,Evet,PD için zorunlu
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",SBUPins,Gruba özel,Yes / No,Yes,Hayır,
+J-USB,USB-C konnektörü,"Connectors, Interconnects","USB, DVI, HDMI Connectors",ShellType,Gruba özel,Top Mount / Mid Mount / Through Hole,Mid Mount,Evet,Kutu yüksekliğini etkiler
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,ConnectorType,Gruba özel,Receptacle / Header / Plug / Terminal Block,Receptacle,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,PositionCount,Gruba özel,adet,24,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,Pitch,Gruba özel,mm,0.5mm,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,RowCount,Gruba özel,adet,2,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,Orientation,Gruba özel,Vertical / Right Angle,Right Angle,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,CurrentRating,Gruba özel,A (kontak başına),5A per contact,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,VoltageRating,Gruba özel,V,20V,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,MatingCycles,Gruba özel,adet,10000,Hayır,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,ContactPlating,Gruba özel,Gold / Tin,Gold,Hayır,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,Shielding,Gruba özel,Shielded / Unshielded,Shielded,Hayır,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,Series,Gruba özel,üretici seri adı,-,Hayır,Eşleşen muadili bulmak için
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,WireGauge,Gruba özel,AWG araligi,12~22AWG,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,WireTermination,Gruba özel,Screw / Spring / Push-in,Screw,Evet,
+J-PWR,Çıkış terminali / klemens,"Connectors, Interconnects",Terminal Blocks,TorqueRating,Gruba özel,Nm,0.4Nm,Hayır,
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,Function,Gruba özel,işlev tanımı,Rotary Encoder with Switch,Evet,
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,Detents,Gruba özel,adet,20,Evet,
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,PulsesPerRevolution,Gruba özel,adet,20,Evet,
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,ShaftType,Gruba özel,Knurled / D-Shaft / Slotted,"Knurled, D-Shaft",Evet,Düğme uyumu
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,ShaftLength,Gruba özel,mm,12.5mm,Evet,Panel/kutu yüksekliğiyle birlikte kontrol edilir
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,SwitchContactRating,Gruba özel,A @ V,10mA @5V,Hayır,
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,ActuationForce,Gruba özel,N,2.5N,Hayır,
+SW,Anahtar / enkoder,Switches,Rotary Encoders / Tactile Switches,RotationalLife,Gruba özel,çevrim,30000 cycles,Hayır,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",DisplayType,Gruba özel,TFT LCD / IPS / OLED,TFT LCD,Evet,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",DiagonalSize,Gruba özel,inch,2.8in,Evet,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",Resolution,Gruba özel,WxH,320x240,Evet,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",DriverIC,Gruba özel,sürücü adı,ILI9341,Evet,Firmware kütüphanesini belirler
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",InterfaceType,Gruba özel,SPI / Parallel / RGB,SPI 4-wire,Evet,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",BacklightType,Gruba özel,LED / EL,LED,Hayır,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",BacklightVoltage,Gruba özel,V @ akim,4.2V @60mA,Evet,Ayrı besleme rayları için
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",TouchType,Gruba özel,None / Resistive / Capacitive,None,Evet,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",ViewingDirection,Gruba özel,saat yönü,12 o'clock,Hayır,
+DS,Ekran modülü,Optoelectronics,"Display Modules - LCD, OLED",FPCPinCount,Gruba özel,adet,40,Evet,Konnektör eşleşmesi
+BT,Pil ve pil yuvası,Battery Products,Batteries / Battery Holders,Chemistry,Gruba özel,kimya,Lithium Manganese Dioxide,Evet,
+BT,Pil ve pil yuvası,Battery Products,Batteries / Battery Holders,CellSize,Gruba özel,hücre adı,CR2032,Evet,
+BT,Pil ve pil yuvası,Battery Products,Batteries / Battery Holders,NominalVoltage,Gruba özel,V,3V,Evet,
+BT,Pil ve pil yuvası,Battery Products,Batteries / Battery Holders,Capacity,Gruba özel,mAh,225mAh,Hayır,
+BT,Pil ve pil yuvası,Battery Products,Batteries / Battery Holders,HolderMounting,Gruba özel,Surface Mount / Through Hole,Surface Mount,Evet,Sadece yuva
+BT,Pil ve pil yuvası,Battery Products,Batteries / Battery Holders,BatteryType,Gruba özel,kabul ettiği hücre,CR2032,Evet,Sadece yuva
+MP,Mekanik / donanım,"Hardware, Fasteners, Accessories",-,HardwareType,Gruba özel,Standoff / Screw / Nut / Washer,Standoff,Evet,
+MP,Mekanik / donanım,"Hardware, Fasteners, Accessories",-,Material,Gruba özel,malzeme + kaplama,"Brass, Nickel Plated",Evet,
+MP,Mekanik / donanım,"Hardware, Fasteners, Accessories",-,ThreadSize,Gruba özel,metrik,M3,Evet,
+MP,Mekanik / donanım,"Hardware, Fasteners, Accessories",-,Length,Gruba özel,mm,6mm,Evet,
+MP,Mekanik / donanım,"Hardware, Fasteners, Accessories",-,Finish,Gruba özel,kaplama,Nickel,Hayır,
+TP,Test noktası,Test and Measurement,Test Points,HardwareType,Gruba özel,Test Point,Test Point,Evet,
+TP,Test noktası,Test and Measurement,Test Points,PadDiameter,Gruba özel,mm,1.5mm,Evet,
+TP,Test noktası,Test and Measurement,Test Points,Color,Gruba özel,renk,Red,Hayır,THT test noktaları için
