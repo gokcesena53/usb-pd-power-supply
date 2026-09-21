@@ -48,6 +48,18 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   R40 3k20 -> 3k24 ve R39 10k -> 10k2 (VOUT 3,3185 V); U6 TL431AIDBZR;
   D4 SX36. Stokta olmayan parçalarda MPN korunup bilgi SelectionNote'a
   yazıldı. Netlist yalnız RTC netlerinde değişti; PCB güncellenmedi.
+- userinterface: ekran NHD-2.4-240320AF-CSXP -> Xiamen Precise TFT032B018
+  (3,2" IPS 240x320, ST7789V2, 4 telli SPI). J3 40p Molex -> KLS
+  L-KLS1-242I-2.0-30-R (30p 0,5 mm ZIF; yeni footprint
+  Connector_FPC_Custom:KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal).
+  Backlight sadeleşti: TPS61023 boost (U7, L2, C20, C21, R44, R45) ve
+  CAT4104 (U8, C22, R46) kalktı; +3.3V -> R60 5R6 -> BL_A, BL_K -> Q7
+  IRLML6344 (R28/R29 ile TFT_BL_PWM). C34 1u0 VCI/IOVCC dekuplajı eklendi.
+  SPI net adları (TFT_CS/DC/SCLK/MOSI/RST, TFT_BL_PWM) ve MCU tarafı değişmedi.
+  BACKLIGHT_4V2, BL_BOOST_*, BL_K1..4 netleri kalktı; BL_A, BL_K eklendi.
+- mcu, userinterface: kullanılmayan lib_symbols önbellek tanımları silindi
+  (Device:Battery_Cell - BT1 kalkınca kalmıştı; AO3400A:AO3400A). Netlist
+  ve ERC değişmedi.
 - hardware/libraries/Power_Path_Custom.kicad_sym eklendi: TPS55340PWPR,
   AP74502Q, SMBJ30A.
 

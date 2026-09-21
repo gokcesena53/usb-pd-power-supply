@@ -19072,7 +19072,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan 623573; stok 5005 (21.09.2026); Uygun. C4 (PD_5V) için ≥10V şartını karşılar. C9: BQ32000 VCC dekuplajı, datasheet ≥1 µF istiyor (100n → 1u0)."
+		(property "SelectionNote" "Özdisan 623573; stok 5005 (21.09.2026); Uygun. C4 (PD_5V) için ≥10V şartını karşılar. C9: BQ32000 VCC dekuplajı, datasheet ≥1 µF istiyor (100n → 1u0). C34: TFT032B018 VCI/IOVCC dekuplajı (J3 yanında)."
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)

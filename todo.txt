@@ -1,23 +1,31 @@
 TODO
 ====
 Projeye özel dahili yapılacaklar listesi.
-Son güncelleme: 2026-09-21 (U3 INA226; Q3/Q5 SQJB60EP; RTC BQ32000; Özdisan BOM)
+Son güncelleme: 2026-09-22 (U3 INA226; Q3/Q5 SQJB60EP; RTC BQ32000; Özdisan BOM; TFT032B018; Imax 3 A)
+Tamamlanan şema maddeleri: design_decisions/output/SEMA_TAMAMLANAN_TODO_REV_C_20260922.md
+Maksimum çıkış akımı 3 A: design_decisions/output/CIKIS_AKIMI_3A_KARARI_20260922.md
 
 
 REV_C — KARAR BEKLEYEN (bloke edici)
 ------------------------------------
-- [ ] PCB'yi şemadan güncelle (Özdisan / RTC değişiklikleri).
-      Yeni: Y1 (ABS25), C33 (Korchip DCL H-tipi); kalkan: BT1, R22, R23, C10.
-      Footprint değişen: U4 SOIC-8, C5/C20/C21 0805, C8 1210, C15/C29
-      CP_Elec_6.3x5.8, C31 0603, R59 0805.
+- [ ] PCB'yi şemadan güncelle (Özdisan / RTC / TFT032B018 değişiklikleri).
+      Yeni: Y1 (ABS25), C33 (Korchip DCL H-tipi), Q7, R60, C34;
+      kalkan: BT1, R22, R23, C10, U7, U8, L2, C20, C21, C22, R44, R45, R46.
+      Footprint değişen: U4 SOIC-8, J3 KLS 30p FPC, C5 0805, C8 1210,
+      C15/C29 CP_Elec_6.3x5.8, C31 0603, R59 0805.
+- [ ] TFT032B018: J3 pin 1 yönünü ve FPC temas yüzünü numune ile doğrula;
+      KLS footprint'ini (Connector_FPC_Custom) numuneye göre kontrol et.
+      Ön panel/kutu ölçüleri 3,2" modüle (77,7 x 55,04 mm) göre güncellenmeli.
+- [ ] TFT032B018 stok 5 (MPQ 10): seri üretim temin süresini Özdisan'a sor.
+- [ ] Backlight akımını numunede ölç (hedef ~60-80 mA, max 100 mA); gerekirse R60'ı
+      değiştir. Firmware: ST7789V2 240x320, TFT_BL_PWM aktif-yüksek PWM.
 - [ ] C33 footprint'ini (Korchip_DCL_H-Type) numune ile doğrula; kaçak akımı
       ölç ve yedek süresini (hedef ~3 hafta) prototipte teyit et.
 - [ ] Firmware: BQ32000 I2C 0x68, trickle charge TCHE=0x5/TCH2=1/TCFE=1;
       her tam güç kaybından sonra VCC >=1 ms (datasheet 8.2.2.3).
 - [ ] C15 hibrit (ESR 60 mOhm) ile AOZ1284 kompanzasyonunu (R41/C19) kontrol et.
 - [ ] Özdisan'da stokta olmayanlar için tedarik/muadil kararı: U1 AP33772S,
-      U2 ESP32-C6, U7 TPS61023 (öneri RT4812GJ8F), U8 CAT4104, U10
-      TPD4EUSB30, U12 AP74502Q, L1 SRI0704-220M, L2 74438357022, C19 18n
+      U2 ESP32-C6, U10 TPD4EUSB30, U12 AP74502Q, L1 SRI0704-220M, C19 18n
       (öneri 10n || 8n2), L3 1210 bobin akımı yetersiz. Ayrıntı:
       hardware/docs/output/BOM_OZDISAN_REV_C_20260921.xlsx
 - [ ] OUT_EN için ESP32 GPIO seç.
@@ -30,11 +38,6 @@ REV_C — KARAR BEKLEYEN (bloke edici)
       Handoff 3.1 #2 D3'ü bu parça sanıyordu; gerçekte D3 zaten TVS idi ve
       SMBJ30A'ya yükseltildi. ESD elemanı ayrı: U10 = TPD4EUSB30.
       Parça hiçbir kütüphanede yok, paketi doğrulanmalı.
-- [ ] Maksimum çıkış akımı kesinleştir (varsayım 5 A).
-      Değişirse şönt, M1/M2 ve SOA hesapları yeniden yapılmalı.
-      INA226 ile RShunt1'i 10 mOhm'a çıkarma seçeneği de bu kararla
-      birlikte değerlendirilmeli (akım LSB 500 uA -> 250 uA, kayıp
-      125 mW -> 250 mW).
 - [ ] AP74502Q'nun ters akım korumasını datasheet'ten doğrula.
       INA226'nın tek alert limiti SOL'a (aşırı akım) ayrıldığı için
       handoff §4.9'daki SUVL (~-0.3 A) donanım katmanı düştü; ters akımı
@@ -54,12 +57,6 @@ REV_C — KARAR BEKLEYEN (bloke edici)
       gopo.kicad_pcb hâlâ Q3+Q4'ü ayrı SOIC-8 / IRF7855TRPBF olarak
       taşıyor; Q5/Q6 hiç yerleştirilmemişti. Kart erken aşamada
       (7 segment, 0 via, 0 zone), maliyeti düşük.
-- [ ] 3.3 V tam yükte adaptör başlığını doğrula.
-      USB_VBUS -> OUT_POS toplam seri direnç 34 mOhm (R11 5m + Q5 24m +
-      RShunt1 5m) -> 5 A'de 170 mV, 125 C'de 241 mV. 3.3 V / 5 A için
-      adaptör 3.47-3.54 V + kablo düşümü vermeli. Adaptörün APDO
-      minimumu 3.3 V ise bu nokta tam akımda ulaşılamaz. <=4 mOhm FET
-      ile toplam 90 mV olurdu.
 - [ ] Çıkış gerilimi tavanının 28 V olduğunu kayıt altına al.
       INA226'nın VBUS çalışma sınırı 36 V, abs max 40 V. Tavan
       yükseltilirse (EPR spesifikasyonu 48 V'a izin verir) U3 elenir.
@@ -67,45 +64,22 @@ REV_C — KARAR BEKLEYEN (bloke edici)
 
 REV_C — TBD PARÇA SEÇİMİ (LCSC)
 -------------------------------
-- [ ] L3   boost bobini: 6.8-10 uH, Isat >=3 A, düşük DCR
-- [ ] D4   boost Schottky: 40-60 V, 3 A, düşük VF (SS34/SS36 sınıfı)
-- [ ] C29  sönümleme bulk: 47 uF, 35-50 V, ESR 50-100 mOhm (seramik olmaz)
-- [x] Q5/Q6 (M1/M2) ve Q3/Q4 -> SQJB60EP-T1_GE3 (2026-09-21).
-      Parça dual; her sırt sırta çift tek pakete indi. Q3 = dahili kol
-      (unit A/B), Q5 = çıkış kolu (unit A/B). Q4/Q6 referansları kalktı.
-      Dahili kol handoff 3.2 #2'yi tam karşılıyor. ÇIKIŞ KOLUNDA SAPMA:
-      RDS(on) 12 mOhm, onaylanan <=4 mOhm'un 3 katı (bkz. aşağıdaki
-      madde ve design_decisions/reports/sqjb60ep-20260921/result.md).
+- [ ] L3   boost bobini: 6.8-10 uH, Isat >=3 A, düşük DCR.
+      Şemadaki B82422H1682K000 (1210 çip) Isat şartını karşılamıyor; Özdisan
+      stoğunda 1210 ayağa uyan uygun parça yok (footprint değişikliği gerekebilir).
 
 
 REV_C — ŞEMA / KÜTÜPHANE
 ------------------------
-- [x] Blok A ve Blok B yerleşimini KiCad'de düzenle.
-      9c3d219: iki satırlı/planar yerleşim, netlist değişmedi. KiCad'de
-      kontrol edildi (2026-09-17).
-- [ ] SMBJ30A sembolünün polaritesini yerleşimde doğrula.
-      Sembol KiCad'in SMAJ30A'sından türetildi, pin adları A1/A2 -> polarite
-      işaretlenmiyor. Parça tek yönlü; katot VBUS/OUT_POS tarafına bakmalı.
-      D3 ve D7 için geçerli.
-- [ ] AP74502Q sembolünü Diodes'un kendi datasheet'iyle karşılaştır.
-      Pinout TI LM74502'den alındı (handoff "pin uyumlu" diyor, beş pin
-      tuttu) ama Diodes datasheet'i indirilemedi (403/404).
-- [ ] C3 footprint'i gözden geçir: 0805 2.2 uF/50 V X7R, DC bias altında
-      1 uF hedefinin altına düşebilir. 1206 değerlendirilmeli.
-- [x] Tüm güç zinciri tek A3 sayfasında (usb_pd_controller): PD kontrolcü +
-      VBUS şönt/anahtar, AP74502Q çıkış anahtarı, INA228 ölçüm + panel çıkışı,
-      TPS55340 ön-boost, AOZ1284 buck ve I2C seviye dönüştürücü.
-      Boş kalan sayfalar (powergeneration, poweroutput, powersensing,
-      CALC_MCU, CALC_USB_C_INPUT, calc_usb_pd_controller) kaldırıldı.
-- [x] VBUS dağıtımı tek sayfada toplandı (usb_pd_controller, A2):
-      AP33772S bloğu ile VBUS şönt/çıkış anahtarı birleştirildi; AP74502Q
-      çıkış anahtarı poweroutput'tan, INA228 ölçümü powersensing'ten taşındı.
-      PD_VBUS_SENSED ve SW_OUT artık sayfa içi yerel etiket.
-- [x] U3 INA228AIDGSR -> INA226AIDGSR (2026-09-21).
-      Pin ve paket birebir aynı; lib_symbols önbelleği, U3 alanları, blok
-      başlığı ve PCB'deki Value/MPN güncellendi. netlist farkı YOK, ERC
-      değişmedi. Gerekçe ve ölçüm/koruma karşılaştırması:
-      design_decisions/reports/ina226-20260921/result.md
+- [ ] SMBJ30A polaritesini PCB yerleşiminde doğrula.
+      Sembol KiCad'in SMAJ30A'sından türetildi, pin adları A1/A2 -> şemada
+      polarite işaretlenmiyor. Şema/footprint tarafı 22.09'da kontrol edildi:
+      pin 1 (D_SMB katot pedi) D3'te USB_VBUS, D7'de OUT_POS'ta. Kalan: PCB'de
+      katot bandının VBUS/OUT_POS tarafında olduğunu görmek.
+- [ ] U12 AP74502Q paketini doğrula: Diodes datasheet paketi "SOT28" (TA8)
+      diye veriyor, şemadaki footprint TSOT-23-8_HandSoldering. Diodes paket
+      çizimiyle ölçüleri karşılaştır (handoff: LM74502DDF ile ortak footprint).
+      Datasheet: hardware/datasheets/AP74502Q_AP74502HQ.pdf
 - [ ] BOM'u şemadan yeniden üret.
       hardware/docs/output/BOM_REV_C_20260918.xlsx hâlâ INA228AIDGSR
       yazıyor.
@@ -121,9 +95,9 @@ REV_C — PROTOTİP DOĞRULAMA (handoff Bölüm 10)
       döngü kararlılığı
 - [ ] 5.5-28 V pass-through'da TPS55340 SW pininde anahtarlama olmadığı ve
       FB < 3 V (hesapta 28 V'ta ~2.43 V)
-- [ ] 28 V EPR, 5 A yükte çıkış anahtarı açılışında USB_VBUS / PD_VOUT
+- [ ] 28 V EPR, 3 A yükte çıkış anahtarı açılışında USB_VBUS / PD_VOUT
       tepe < 34 V
-- [ ] AP74502Q açılışı: 1000 uF kapasitif yük (inrush) ve 5 A rezistif yük
+- [ ] AP74502Q açılışı: 1000 uF kapasitif yük (inrush) ve 3 A rezistif yük
       (SOA); 3.3 V çıkışta gate voltajı ve zener clamp.
       SQJB60EP ile hesap: ~2.7 V/ms yumuşak açılış -> 2.7 A, 10.4 ms,
       t=0'da 75 W (die başına ~37 W). Datasheet SOA'sı 10 ms / 14 V'ta
@@ -146,13 +120,16 @@ FIRMWARE (handoff Bölüm 4)
 - [ ] Voltaj değiştirme sırası: OUT_EN low -> PDO/APDO -> PS_RDY -> doğrula
       -> kullanıcı onayı -> OUT_EN high
 - [ ] Fixed PDO geçişlerinde Accept-PS_RDY arası tüketim <=2.5 W
+- [ ] PDO/APDO isteklerinde çalışma akımı <=3 A (maksimum çıkış akımı 3 A,
+      2026-09-22 kararı); AP33772S OCP eşiği buna göre ayarlanmalı.
 - [ ] Hard Reset / detach interrupt -> OUT_EN hemen low
 - [ ] INA226 sürücüsü yeniden yazılmalı; register haritası INA228'den
       tamamen farklı (00h Config, 01h Shunt, 02h Bus, 03h Power,
       04h Current, 05h Calibration, 06h Mask/Enable, 07h Alert Limit).
-      5 mOhm şönt için hesaplanan ayar: Current_LSB 250 uA,
-      05h = 0x1000 (CAL 4096), Power_LSB 6.25 mW,
-      07h = 0x2EE0 (SOL 6 A), 06h = 0x8001 (SOL + LEN, APOL=0, CNVR=0).
+      5 mOhm şönt, 3 A maksimum için ayar: Current_LSB 125 uA,
+      05h = 0x2000 (CAL 8192), Power_LSB 3.125 mW,
+      07h = 0x1B58 (SOL 3.5 A), 06h = 0x8001 (SOL + LEN, APOL=0, CNVR=0).
+      Hesap: design_decisions/output/CIKIS_AKIMI_3A_KARARI_20260922.md
 - [ ] Enerji/şarj sayacı (mAh, Wh) firmware'de integralle tutulmalı;
       INA226'da donanım biriktirici ve die sıcaklık sensörü yok.
 - [ ] Ters akım ve bus aşırı gerilim izleme firmware'e devredildi
@@ -164,11 +141,6 @@ FIRMWARE (handoff Bölüm 4)
 
 MEVCUT ERC İHLALLERİ (REV_C öncesinden)
 ---------------------------------------
-- [x] PD_I2C_SDA_5V global etiketi bağlı değil (label_dangling, hata)
-- [x] R6 pin 2 bağlı değil (hata)
-- [x] Q2 pin 3 bağlı değil (hata)
-      Üçü tek hataydı: SDA seviye dönüştürücüsü kopuktu. R6.2 ve Q2.D
-      PD_I2C_SDA_5V'ye bağlandı (SCL tarafı R5/Q1 ile simetrik), 2026-09-17.
 - [ ] TL431DBZ sembolü kütüphanedeki kopyasıyla uyuşmuyor (uyarı)
 
 
@@ -180,5 +152,3 @@ DEPO / LİSANS
 - [ ] Tasarım kurallarını (hardware/gopo.kicad_dru) üretici gereksinimlerine
       göre doğrula.
 - [ ] Gerber çıktılarını hardware/gerber/ altına üret.
-- [ ] sym-lib-table'daki DS1021 kaydı temizlendi; benzer harici mutlak yol
-      kalmadı (kontrol edildi 2026-09-16).
