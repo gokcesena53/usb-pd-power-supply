@@ -177,12 +177,24 @@ def remove_items(t, pred):
     return t
 
 
-def remove_texts(t, contents):
-    """Icerigi tam eslesen serbest metinleri siler. strip_region'dan 'text'
-    cikarildiginda (notlar korunurken) betigin urettigi baslik/notlari her
-    calistirmada temizlemek icin; yoksa tekrar calistirma ust uste baslik birakir."""
-    return remove_items(t, lambda kind, blk: kind == 'text'
-                        and re.match(r'\(text "([^"]*)"', blk).group(1) in contents)
+def remove_texts(t, contents=(), prefixes=()):
+    """Serbest metinleri siler: icerigi `contents`'ten biriyle TAM eslesen veya
+    `prefixes`'ten biriyle baslayanlar.
+
+    strip_region'dan 'text' cikarildiginda (notlar korunurken) betigin urettigi
+    baslik/notlari her calistirmada temizlemek icin; yoksa tekrar calistirma
+    ust uste baslik birakir. Icerik DOSYADAKI haliyle karsilastirilir: satir
+    sonu iki karakterlik '\\\\n' (Python'da '\\\\n' yaz, '\\n' degil).
+    Notun metnini betikte degistirdiysen eski surum tam eslesmez ve sayfada
+    kalir (RTC ve J3 notlari boyle ikilendi) - degisebilecek notlari
+    prefixes ile sil.
+    """
+    def hit(kind, blk):
+        if kind != 'text':
+            return False
+        s = re.match(r'\(text "((?:[^"\\]|\\.)*)"', blk).group(1)
+        return s in contents or any(s.startswith(p) for p in prefixes)
+    return remove_items(t, hit)
 
 
 def move_text(t, startswith, x, y):
@@ -319,6 +331,12 @@ def set_sym_props(blk, fields, visible=('Reference', 'Value')):
 
     fields  : [(ad, deger)] - istenen tam alan listesi, istenen sirada.
     visible : gorunur kalacak alan adlari; kalan her alan gizlenir.
+              None -> MEVCUT gorunurluk korunur, yeni alanlar gizli uretilir.
+              Veri aktarimi (MPN, SelectionNote...) gibi gorunurluge dokunmamasi
+              gereken islerde None kullan: varsayilan ('Reference', 'Value')
+              TestPoint'lerin ve J7'nin bilincli gizlenmis Value'sunu gorunur
+              yapti (Ozdisan aktariminda 14 sembol; field_visibility() ile
+              yakalandi).
 
     Mevcut bir alanin blogu KORUNUR (konum, hizalama, font, aci); yalniz adi,
     degeri ve gizliligi degisir. Yeni alan sembol konumunda gizli uretilir.
@@ -343,7 +361,10 @@ def set_sym_props(blk, fields, visible=('Reference', 'Value')):
     x, y = float(m.group(1)), float(m.group(2))
     parts = []
     for name, val in fields:
-        hide = name not in visible
+        if visible is None:
+            hide = name not in old or '(hide yes)' in old[name]
+        else:
+            hide = name not in visible
         if name in old:
             parts.append(_set_hide(_retitle(old[name], name, val), hide))
         else:
@@ -371,6 +392,23 @@ def field_geometry(t):
             ju = re.search(r'\(justify ([^)]*)\)', p)
             g[n] = (at.group(1) if at else '', ju.group(1) if ju else '')
         out[ref_of(blk)] = g
+    return out
+
+
+def field_visibility(t):
+    """{(ref, alan): gizli_mi} - alan gorunurlugu.
+
+    field_geometry konum/hizalamayi, bu gorunurlugu kilitler. Veri aktarimi
+    (MPN, parametrik alanlar) yapan betikten ONCE ve SONRA al, esit olmali:
+        before = E.field_visibility(t); ...; assert E.field_visibility(t2) == before
+    Yalniz sonradan eklenen alanlar farkli olabilir; onlar gizli olmali.
+    """
+    out = {}
+    for _, _, kind, blk in items(t):
+        if kind == 'symbol':
+            r = ref_of(blk)
+            for n, _, a, b in _prop_spans(blk):
+                out[(r, n)] = '(hide yes)' in blk[a:b]
     return out
 
 
@@ -580,6 +618,68 @@ def edit_lib_symbol(fn, lib_path, sheet_paths, sym_name, lib_nick):
             write_sheet(path, t[:a] + nb + t[b:], crlf)
             changed.append(path)
     return changed
+
+
+def prune_lib_symbols(t):
+    """lib_symbols onbelleginden hicbir sembolun lib_id'si ile kullanilmayan
+    tanimlari siler. Donus: (yeni metin, silinen adlar).
+
+    Sembol kaldirildiginda (BT1 Battery_Cell, U7 TPS61023...) veya swap_lib ile
+    degistirildiginde eski tanim onbellekte kalir; zararsizdir ama diff'i ve
+    dosyayi sisirir, eski parcayi 'hala tasarimda' gibi gosterir.
+    """
+    i = t.index('(lib_symbols')
+    la, lb = K.block_at(t, i)
+    used = set(re.findall(r'\(lib_id "([^"]+)"\)', t))
+    cut, names = [], []
+    j = t.index('\n', la)
+    while True:
+        m = re.compile(r'\n\t\t\(symbol "([^"]+)"').search(t, j, lb)
+        if not m:
+            break
+        a, b = K.block_at(t, m.start() + 3)
+        if m.group(1) not in used:
+            cut.append((a, b))
+            names.append(m.group(1))
+        j = b
+    for a, b in sorted(cut, reverse=True):
+        t = t[:t.rindex('\n', 0, a)] + t[b:]
+    return t, names
+
+
+def swap_lib(t, ref, lib_id, lib_path=None):
+    """Yerlestirilmis sembolun kutuphane sembolunu degistirir (ayni referans,
+    ayni uuid/instance/alanlar): RV-3028-C7 -> BQ32000, Conn_01x40 -> Conn_01x30.
+
+    Sembolu silip yeniden olusturma - alanlar, uuid ve PCB baglantisi kaybolur.
+    Yapilanlar:
+      * lib_id degisir, yeni tanim onbellege kopyalanir (lib_path verilmezse
+        KiCad'in sistem kutuphanesi `<nick>.kicad_sym` kicad_symbol_lib ile bulunur);
+      * sembol ornegindeki (pin "N") uuid kayitlari yeni sembolun pin
+        numaralarina esitlenir: fazlalar silinir (40 -> 30 pinde 31..40),
+        eksikler yeni uuid ile eklenir;
+      * kullanilmayan eski tanim prune_lib_symbols ile silinir.
+    Pin KONUMLARI degisir: ardindan place() + pin_at() ile yeniden yerlestir ve
+    telleri yeniden ciz. Alanlari (Value, Footprint, MPN...) set_sym_props ile yaz.
+    """
+    from kicadtools import kicad_symbol_lib
+    nick, name = lib_id.split(':', 1)
+    t = K.ensure_lib_symbol(t, lib_path or kicad_symbol_lib(nick), name, nick)
+    a, b, blk = _sym_span(t, ref)
+    blk = re.sub(r'\(lib_id "[^"]+"\)', f'(lib_id "{lib_id}")', blk, count=1)
+    want = set(K.lib_pins(t, lib_id))
+    have = re.findall(r'\n\t\t\(pin "([^"]+)"\n\t\t\t\(uuid "[^"]+"\)\n\t\t\)', blk)
+    for n in have:
+        if n not in want:
+            blk = re.sub(r'\n\t\t\(pin "%s"\n\t\t\t\(uuid "[^"]+"\)\n\t\t\)' % re.escape(n),
+                         '', blk, count=1)
+    add = ''.join(f'\n\t\t(pin "{n}"\n\t\t\t(uuid "{K.uid()}")\n\t\t)'
+                  for n in sorted(want - set(have), key=lambda s: (len(s), s)))
+    if add:
+        k = blk.index('\n\t\t(instances')
+        blk = blk[:k] + add + blk[k:]
+    t = t[:a] + blk + t[b:]
+    return prune_lib_symbols(t)[0]
 
 
 def _indent_after(blk):

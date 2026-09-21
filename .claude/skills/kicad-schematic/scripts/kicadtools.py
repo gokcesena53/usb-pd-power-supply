@@ -8,6 +8,7 @@ one cikarir (PyMuPDF yok) - araclari PATH'i degistirmeden, tam yoluyla cagir.
 """
 import glob
 import os
+import re
 import shutil
 
 
@@ -30,6 +31,28 @@ def kicad_cli():
         if hits:
             return hits[-1]          # en yeni surum
     raise FileNotFoundError('kicad-cli bulunamadi; KICAD_CLI ortam degiskenini ayarla')
+
+
+def kicad_symbol_lib(nick):
+    """KiCad'in kendi sembol kutuphanesinin (.kicad_sym) tam yolu.
+
+    Yeni sembol (Timer_RTC:BQ32000, Device:Crystal_GND23, Transistor_FET:
+    Q_NMOS_GSD...) eklerken ensure_lib_symbol/swap_lib bu dosyadan kopyalar.
+    KICAD*_SYMBOL_DIR ortam degiskeni oncelikli; sonra Linux/Windows/macOS
+    varsayilan kurulum dizinleri. Bulamazsa acik hata verir.
+    """
+    dirs = [v for k, v in sorted(os.environ.items(), reverse=True)
+            if re.fullmatch(r'KICAD\d*_SYMBOL_DIR', k)]
+    dirs += ['/usr/share/kicad/symbols', '/usr/local/share/kicad/symbols',
+             '/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols']
+    dirs += sorted(glob.glob(os.path.expandvars(
+        r'%LOCALAPPDATA%\Programs\KiCad\*\share\kicad\symbols')), reverse=True)
+    dirs += sorted(glob.glob(r'C:\Program Files\KiCad\*\share\kicad\symbols'), reverse=True)
+    for d in dirs:
+        p = os.path.join(d, nick + '.kicad_sym')
+        if os.path.exists(p):
+            return p
+    raise FileNotFoundError(f'{nick}.kicad_sym bulunamadi; KICAD10_SYMBOL_DIR ayarla')
 
 
 def read_sheet(path):

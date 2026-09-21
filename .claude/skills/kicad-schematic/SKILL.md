@@ -1,6 +1,6 @@
 ---
 name: kicad-schematic
-description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken, bir handoff dokümanındaki tasarım kararlarını uygularken, komponent alanlarını (property/BOM üstverisi) bir standarda göre düzenleyip görünürlüğünü ayarlarken veya şemanın okunabilirliğini (üst üste binen metin, tel üstüne basan değer) denetlerken kullan.
+description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, bir sembolü başka bir parçayla değiştirirken (ör. RTC veya ekran konnektörü değişimi), blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken, bir handoff dokümanındaki tasarım kararlarını uygularken, komponent alanlarını (property/BOM üstverisi, tedarikçi BOM'undan MPN/SelectionNote aktarımı) düzenleyip görünürlüğünü ayarlarken, proje footprint'i çizip önizlerken veya şemanın okunabilirliğini (üst üste binen metin, tel üstüne basan değer, çerçeveden taşan etiket/not, üst üste binen sembol gövdesi) denetlerken kullan.
 ---
 
 # KiCad şema çalışması — gopo deposu
@@ -35,8 +35,12 @@ python $SK/verify.py gopo.kicad_sch --save <scratch>/base.net
 python $SK/verify.py gopo.kicad_sch --against <scratch>/base.net
 python $SK/verify.py gopo.kicad_sch --show PD_VOUT V_PRE GND
 
-# üst üste binen metin / tel üstüne basan değer (render'a bakmadan önce)
+# üst üste binen metin / tel üstüne basan değer / çerçeve taşması /
+# gövde-gövde çakışması (render'a bakmadan önce)
 python $SK/readability.py usb_pd_controller.kicad_sch mcu.kicad_sch
+
+# yeni/değişen proje footprint'ini önizle (ped, silk, fab, courtyard)
+python $SK/render.py --footprint libraries/Connector_FPC_Custom.pretty <AD> -o <scratch>/fp
 ```
 
 `readability.py` bulgu **vermiyorsa** metin yerleşimi temizdir; bulgu **veriyorsa**
@@ -62,8 +66,14 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 
 ### Ortam
 
-- Linux'ta `kicad-cli` PATH'tedir; PyMuPDF yoksa `render.py` `pdftoppm`'e düşer
-  (`--crop`/`--dpi` aynı çalışır, çıktı adı `<ad>-<sayfa>.png` olur).
+- Linux'ta `kicad-cli` PATH'tedir; `python` yok, **`python3`** kullan (bu
+  dosyadaki örneklerde `python` = Windows). PyMuPDF yoksa `render.py`
+  `pdftoppm`'e düşer (`--crop`/`--dpi` aynı çalışır, çıktı adı
+  `<ad>-<sayfa>.png` olur). `--footprint` PNG için PyMuPDF veya `cairosvg`
+  ister; ikisi de yoksa yalnız SVG üretir (`pip install cairosvg` bir venv'de).
+- KiCad'in kendi sembol kütüphaneleri (`Timer_RTC`, `Device`, `Transistor_FET`,
+  `Connector_Generic`...) Linux'ta `/usr/share/kicad/symbols`;
+  `kicadtools.kicad_symbol_lib(nick)` bulur, `KICAD10_SYMBOL_DIR` önceliklidir.
 - Windows'ta `kicad-cli` PATH'te değil; `kicadtools.kicad_cli()`
   `%LOCALAPPDATA%\Programs\KiCad\*\bin` altında bulur. Başka yerdeyse
   `KICAD_CLI` ortam değişkenini ayarla.
@@ -73,8 +83,12 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 - `kicad-cli` her çalıştığında `gopo.kicad_pro`'yu (yalnız satır sonları) yeniden
   yazar. `render.py`/`verify.py` dosyayı bayt bayt geri koyar; kendi `kicad-cli`
   çağrında `kicadtools.keep_file` kullan veya `git checkout -- gopo.kicad_pro`.
-- Şema ve kütüphane dosyaları **CRLF**. `open().read()` + `newline='\n'` yazarsan
-  tüm dosya LF olur. `kicadtools.read_sheet` / `write_sheet` satır sonunu korur.
+- Satır sonu dosyaya göre değişir: şema sayfaları ve `.kicad_sym`'lerin çoğu
+  **LF** (KiCad Linux'ta kaydetti), Windows'ta çizilmiş footprint'ler
+  (`Molex_541324062`, `Power_Output_Custom/*`, `TPS61023_DRL0006A`) **CRLF**.
+  Varsayma, dosyanın kendisine uy: `kicadtools.read_sheet` / `write_sheet`
+  mevcut satır sonunu korur; yeni footprint'i aynı kütüphanedeki komşusunun
+  satır sonuyla yaz.
 - Değerlerde `Ω` geçen sayfalarda (usb_pd_controller, mcu) konsola yazdırmak
   `UnicodeEncodeError: 'charmap'` verir: `PYTHONIOENCODING=utf-8` ile çalıştır.
 
@@ -83,12 +97,12 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 | dosya | iş |
 |---|---|
 | `kisch.py` | yeni öğe üretimi: `sym`, `power`, `wire`, `wires`, `label` (global etikette `shape`), `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `lib_body`, `text_width`, `text_box`, `boxes_overlap` |
-| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts`, `Pool`; **alanlar**: `sym_props`, `set_sym_props`, `field_geometry`, `field_boxes`, `sym_body`, `prop_escape`; silme: `remove_items` (koşula göre öğe); denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
+| `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place`, `translate_region`, `move_text`, `remove_texts` (`prefixes=`), `Pool`; **alanlar**: `sym_props`, `set_sym_props` (`visible=None`), `field_geometry`, `field_visibility`, `field_boxes`, `sym_body`, `prop_escape`; silme: `remove_items` (koşula göre öğe); denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: **`swap_lib`** (sembolü başka kütüphane sembolüyle değiştir), **`prune_lib_symbols`**, `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
 | `kisch_sheet.py` | sayfalar arası: `move_block` (blok + instance yolu + lib_symbols), `remove_sheet` (boş sayfa + sayfa sembolü + .kicad_pro kaydı), `set_paper`, `is_empty` |
-| `kicadtools.py` | `kicad_cli()`, `read_sheet`/`write_sheet` (CRLF), `keep_file` |
-| `render.py` | PDF export + kırpılmış PNG |
+| `kicadtools.py` | `kicad_cli()`, `kicad_symbol_lib(nick)`, `read_sheet`/`write_sheet` (satır sonu korunur), `keep_file` |
+| `render.py` | PDF export + kırpılmış PNG; `--footprint PRETTY AD` footprint önizlemesi (`render_footprint`) |
 | `verify.py` | ERC sayıları + netlist farkı; `--against` net adı değişimini gerçek bağlantı kaybından ayırır (`signature`) |
-| `readability.py` | üst üste binen metin, tel/gövde üstüne basan sembol alanı, gövdesinden tel geçen global etiket; CLI çıkış kodu = bulgu sayısı |
+| `readability.py` | üst üste binen metin, tel/gövde üstüne basan sembol alanı, gövdesinden tel geçen global etiket, **çerçeveden taşan** etiket/not/alan (`frame_overflow`), **üst üste binen sembol gövdeleri** (`body_overlaps`, güç sembolü dahil); CLI çıkış kodu = bulgu sayısı |
 
 ### Yeni blok üretmek
 
@@ -130,6 +144,42 @@ korunur, diff okunur kalır. Akış (tam örnek `kisch_edit.py` başındaki docs
 
 Betiği scratchpad'de tut; depoya yalnız sonuç şema girer.
 
+### Bir sembolü başka parçayla değiştirmek
+
+RV-3028-C7 → BQ32000, `Conn_01x40` → `Conn_01x30` (NHD-2.4 → TFT032B018) gibi
+parça değişimlerinde de sembolü silme; **`E.swap_lib`** ile değiştir. Referans,
+uuid, instance ve alanlar korunur (PCB'de footprint eşleşmesi kopmaz).
+
+```python
+t = E.swap_lib(t, 'U4', 'Timer_RTC:BQ32000')      # KiCad sistem kutuphanesinden
+t = E.swap_lib(t, 'J3', 'Connector_Generic:Conn_01x30')
+t = E.swap_lib(t, 'U9', 'Power_Path_Custom:X', lib_path='libraries/Power_Path_Custom.kicad_sym')
+```
+
+`swap_lib` lib_id'yi değiştirir, yeni tanımı önbelleğe kopyalar, `(pin "N")`
+uuid kayıtlarını yeni sembolün pinlerine eşitler (40→30'da 31..40 silinir) ve
+kullanılmayan eski tanımı `prune_lib_symbols` ile atar. Sonrası normal akış:
+pin konumları değiştiği için bölgeyi strip et, `place` + `pin_at`, yeniden çiz,
+alanları `set_sym_props` ile yaz (Value, Footprint, Datasheet, Description,
+grup alanları). Beklenen netlist farkını önceden listele; `--against` yalnız o
+netleri göstermeli (RTC: `RTC_*` pin numaraları, `Net-(U4-OSCI/OSCO/VBACK)`).
+
+- Kalkan parçaları `E.remove_items(t, lambda k, b: k == 'symbol' and
+  E.ref_of(b) in {...})` ile sil, ardından **`E.prune_lib_symbols(t)`**: BT1
+  silindiğinde `Device:Battery_Cell` önbellekte kalmıştı, userinterface'te
+  kullanılmayan `AO3400A` tanımı vardı (ikisi de prune testiyle bulundu).
+- `Device:C` → `Device:C_Polarized` gibi polarite kazanan değişimde önce
+  netlist'ten **pin 1'in pozitif rayda** olduğunu doğrula (C15.1 `+3.3V`,
+  C29.1 `PD_VOUT`); değilse sembolü çevir.
+- Yeni parça için kütüphanede birebir sembol yoksa genel sembol yeterli:
+  SOT-23 G-S-D MOSFET'ler (BSS138, IRLML6344) → `Transistor_FET:Q_NMOS_GSD`;
+  4 pedli kristal (ABS25: 1–4 kristal, 2–3 NC) → `Device:Crystal_GND23`
+  (2 ve 3 gizli istifli GND; `Crystal_GND24` 1–3 kristaldir, uymaz).
+  Pin eşlemesini footprint ve datasheet ile karşılaştır.
+- Yeni proje footprint'i çizince `render.py --footprint` ile bak: ilk KLS/Korchip
+  denemelerinde silk pedlerin üstünden geçiyordu (yay ile böl) ve courtyard
+  pedi kapsamıyordu (pedleri de içine alan dikdörtgen).
+
 ### Komponent alanlarını (property) düzenlemek
 
 Alan standardı `design_decisions/standards/komponent-field-standardi.csv`; çekirdek
@@ -163,15 +213,25 @@ Kurallar:
   yalnız depodan (footprint, lib_id, BOM, tasarım notu) doğrulanabileni doldur.
 - Betiği **yeniden çalıştırılabilir** yaz: `set_sym_props` idempotenttir, tüm
   alan listesini her seferinde baştan verir.
+- **Veri aktarımında görünürlüğe dokunma: `visible=None`.** Varsayılan
+  `visible=('Reference', 'Value')` görünürlüğü standarda *zorlar*; tedarikçi
+  BOM'undan MPN/SelectionNote aktarırken bu, bilinçli gizlenmiş Value'ları
+  açtı (13 TestPoint + J7). `visible=None` mevcut görünürlüğü korur, yeni
+  alanları gizli üretir.
+- Tedarikçi BOM'u aktarımı: MPN/Manufacturer yalnız stoktan **seçilmiş** parçaya
+  yazılır; stokta yoksa tasarım MPN'i kalır, durum/öneri `SelectionNote`'a
+  (`Özdisan <kod>; stok N (tarih); durum. not`). Parametrik alanları yalnız
+  tedarikçi kaydından/datasheet'ten doldur, doğrulanmayanı `TBD` bırak.
 
 Doğrulama, çizim işlerinden farklı: hedef **`netlist farki: YOK`** *ve*
 `E.field_geometry()` farkının **boş** olması. İkincisi "hiçbir sembol veya metin
 oynamadı"ı kanıtlar; alan işi asla yerleşimi değiştirmemelidir.
 
 ```python
-before = E.field_geometry(t)      # islemden ONCE
-...                               # alanlari duzenle
+before, vis = E.field_geometry(t), E.field_visibility(t)   # islemden ONCE
+...                                                          # alanlari duzenle
 assert E.field_geometry(t2) == before
+assert all(E.field_visibility(t2)[k] == v for k, v in vis.items())  # yeni alanlar haric
 ```
 
 ### Blokları başka sayfaya taşımak / sayfaları birleştirmek
@@ -287,9 +347,29 @@ sütunlar arasına taşar: 7.62 mm'de metinleri sırayla sağa/sola yazsan bile 
 sembole değer (AOZ1284 buck yeniden çiziminde render'dan ölçüldü). Yer yoksa
 metni sembolün **altına** al (`ref_at=(0, 5.08, None)`), sütunu daraltma.
 
-**Global etiket gövdesi** ≈ `K.text_width(ad) + 3 mm` (ok ucu). Bloğun sağ
-kenarına etiket koyarken bunu hesaba kat: "PD_VOUT" ≈ 12.5 mm, "PD_VBUS_SENSED"
-≈ 22 mm.
+**Global etiket gövdesi** ≈ `K.text_width(ad)` + şekil payı: oklu şekiller
+(`input`/`output`/`bidirectional`) **+3 mm**, `passive` dikdörtgen **+1 mm**
+(render'dan: V_PRE 6.6 mm). Bloğun kenarına etiket koyarken bunu hesaba kat:
+"PD_VOUT" ≈ 12.5 mm, "PD_VBUS_SENSED" ≈ 22 mm. Sol kenardaki `rot=180` etiket
+için çıpa x ≥ çerçeve x + gövde + 2.54: TFT_BL_PWM çerçeveden 10.16 mm içeride
+başlatıldığında 6 mm taştı. `readability.py` artık bunu `tasma` olarak raporlar.
+
+**Not metinleri çerçeveye sığmalı.** 1.27 mm fontta satır ≈ karakter × 1.1 mm;
+~60 karakteri geçen satırı böl (RTC notu 72 karakterle çerçeveden 4.3 mm taştı).
+Notu çizmeden önce `K.text_width(satır)` ile ölç.
+
+**Güç sembolünü IC gövdesinin köşesine koyma.** Kondansatörün GND'si IC gövdesinin
+hemen yanına düşüyorsa kondansatörü bir kolon (2.54 mm) kaydır: C33'ün GND'si
+U4'ün sağ üst köşesine oturmuştu; alan denetimi yakalamadı, `body_overlaps`
+yakalar.
+
+**Konnektörde çok sayıda GND / besleme pini** (TFT J3, 30 pin, render ile
+doğrulandı): ardışık GND pinlerini pinlerin 5.08 mm solunda tek dikey baraya
+topla, GND sembolünü baradan **satırlar arasına** (ör. y=49.53) çıkan kısa kolun
+ucuna koy — bara ucuna koyarsan sembol alttaki sinyal satırının teline biner.
+Besleme pinlerinin hemen üstünde sinyal satırı varsa `+3.3V` yukarı bakamaz:
+barayı son pinin altına kadar indir, sola dön, `+3.3V`'u ve dekuplajı orada
+konumla. Boş (NC) pinlerin arasından bara geçebilir, NC pinin teli yoktur.
 
 **2.54 mm aralıklı pin sıraları (MCU, konnektör) için:**
 - Yatay seri direncin metni satır arasına sığmaz. Komşu satırlardaki dirençleri
@@ -442,6 +522,9 @@ yuvarlayarak karşılaştırır.
 **Metinleri silmeyen betik tekrar çalışınca başlıklar üst üste biner.** Aynı
 koordinattaki kopya görünmez, kaydırılmış olan çift basılır ("RTC RV-3028"
 başlığı böyle bulundu). `E.remove_texts(t, {başlıklar})` ile önce sil.
+İçerik **dosyadaki** haliyle eşleşir: çok satırlı notta satır sonu `\\n` (iki
+karakter). Notun metnini betikte değiştirdiysen eski hali tam eşleşmez ve
+sayfada kalır (RTC ve J3 notları ikilendi): `E.remove_texts(t, prefixes=('TFT032B018',))`.
 
 **Eski ERC hataları gerçek devre hatası olabilir.** `todo.txt`'de yıllanmış
 "R6 pin 2 bağlı değil / Q2 pin 3 bağlı değil / PD_I2C_SDA_5V dangling" üçlüsü
@@ -510,7 +593,9 @@ olduğuna bak; `verify.py --against` bunu anında gösterir.
 sayfa sırası/numaraları değişir, diff dev olur ama bağlantı aynıdır. Bunu
 `--against` ile doğrula ve **ayrı bir commit** olarak al; kendi değişikliğinle
 karıştırma. Proje KiCad'de açıkken dosyayı düzenlersen, KiCad'in kaydı seninkini
-ezer (`hardware/~gopo.kicad_sch.lck` varsa açıktır).
+ezer (`hardware/~gopo.kicad_sch.lck` varsa açıktır; `pgrep -af kicad` ile de
+bak). Açıksa düzenlemeye başlama, kullanıcıdan kaydedip kapatmasını iste;
+beklerken yalnız okuma/parça seçimi yap.
 
 KiCad 10'un kaydında ölçülen iki somut etki (REV_C alan çalışmasında yakalandı):
 - `Description` alanı olmayan sembollere **`(hide yes)` olmadan** boş bir
@@ -557,7 +642,12 @@ sembolle yerleştir ve değerine `TBD` yaz; gereksinimleri `todo.txt` dosyasına
 kaydet. MPN uydurma.
 
 Datasheet gerekiyorsa indir. TI (`ti.com/lit/ds/symlink/<parça>.pdf`) erişilebilir
-(`curl -sL -A "Mozilla/5.0"`); Diodes ve Mouser bot korumasıyla 403/404 verir.
-Diodes parçası TI'la pin uyumluysa TI datasheet'i geçici kaynak olarak kullan ve
-bunu `todo.txt`'ye not et. Pinout'u `pdftotext -layout` ile "Pin Functions"
+(`curl -sL -A "Mozilla/5.0"`). Diodes eskiden 403/404 veriyordu; 2026-09'da
+`diodes.com/datasheet/download/<PARÇA>.pdf` curl ile indi (AP74502Q, pin tablosu
+sembolle karşılaştırıldı). Mouser hâlâ bot korumalı. Datasheet inmezse ve parça
+TI'la pin uyumluysa TI datasheet'i geçici kaynak olarak kullan ve bunu
+`todo.txt`'ye not et. Tedarikçi indeksinin (Özdisan MCP) verdiği datasheet
+bağlantıları (`cdn.ozdisan.com/public/product/assets/...`) da doğrudan iner;
+tek sayfalık çizim-datasheet'lerde (Çin panelleri, KLS) metin çıkmaz, sayfayı
+`pdftoppm -r 300` ile render edip tabloyu kırparak oku. Pinout'u `pdftotext -layout` ile "Pin Functions"
 tablosundan çıkar, PDF'teki referans devre şekillerine görüntü olarak bak.
