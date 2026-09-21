@@ -2509,7 +2509,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. Stokta yok. Stoktaki TPD4E1U06DBVR / TPD4E001DBVR SOT-23-6 kılıflı; kullanmak footprint değişikliği gerektirir."
 			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3003,7 +3003,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 955183; stok 93 (21.09.2026); Uygun. 21.09 üçüncü tur: USB konnektör kategorisi indekslendi; tasarımdaki parçanın kendisi stokta (93). Muadil gerekirse: GCT USB4110-GF-A (223 stok, farklı footprint), KLS L-KLS1-5409-L2-01-R 16P (425 stok) — 5A akım değeri ve footprint doğrulanmalı."
 			(at 102.87 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -3356,7 +3356,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Vishay"
 			(at 210.82 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3367,7 +3367,7 @@
 				)
 			)
 		)
-		(property "MPN" "SMBJ30A"
+		(property "MPN" "SMBJ30A-E3/52"
 			(at 210.82 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3455,7 +3455,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 507320; stok 15956 (21.09.2026); Uygun. Şema açıklaması '400W / SMA' diyor ama footprint SMB; SMB/600W parça footprint'e uyar."
 			(at 210.82 118.11 0)
 			(hide yes)
 			(show_name no)

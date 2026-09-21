@@ -1446,248 +1446,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Timer_RTC:RV-3028-C7"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -8.89 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "RV-3028-C7"
-				(at 7.62 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm"
-				(at 25.4 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Realtime Clock/Calendar I2C Interface, Extreme Low Power, 1.1 V to 5.5 V, MicroCrystal C7"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Low-power RTC I2C"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MicroCrystal*C7*1.5x3.2mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "RV-3028-C7_0_1"
-				(rectangle
-					(start -10.16 7.62)
-					(end 10.16 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "RV-3028-C7_1_1"
-				(pin output line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "CLKOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "~{INT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VBACKUP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 10.16 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "EVI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2057,6 +1815,709 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Timer_RTC:BQ32000"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -8.89 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BQ32000"
+				(at 1.27 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/bq32000.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Serial, I2C Real-time clock, Trickle charger, 3V to 3.6V VCC, -40°C to +85°C, SOIC-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RTC, I2C Timekeeping Chip"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm?P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BQ32000_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BQ32000_1_1"
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "OSCI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "OSCO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VBACK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "~{IRQ}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Crystal_GND23"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND23"
+				(at 3.175 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 3"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Crystal_GND23_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND23_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(hide yes)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 201.93 27.94)
@@ -2131,19 +2592,6 @@
 		)
 		(uuid "0d11cf39-ab76-4c64-9995-5663f703a84e")
 	)
-	(text "RTC RV-3028-C7 + CR2032"
-		(exclude_from_sim no)
-		(at 203.2 33.02 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-				(color 72 120 180 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "30e36b9b-0a5c-44eb-b643-2c8feda39f22")
-	)
 	(text "Boşta kalan pinlere 22R sonrası bir test point koyarak daha sonra kullanılabilir halde tasarım yapalım."
 		(exclude_from_sim no)
 		(at 86.995 229.235 0)
@@ -2153,16 +2601,6 @@
 			)
 		)
 		(uuid "5755416b-77d0-4803-8422-5535dcf1033f")
-	)
-	(text "RTC pil konusu netleştirilecek."
-		(exclude_from_sim no)
-		(at 117.475 231.775 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "57743d9f-a8db-4a43-8fd9-384f312ae28c")
 	)
 	(text "TEST NOKTALARI"
 		(exclude_from_sim no)
@@ -2187,17 +2625,6 @@
 		)
 		(uuid "78c2d6bd-8109-4cee-a501-22a6ecd492d7")
 	)
-	(text "BT1: L-KLS5-CR2032-05-R1 holder.\nCR2032 primary cell: disable RTC trickle charge.\nPad 1 positive, pad 2 GND."
-		(exclude_from_sim no)
-		(at 203.2 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "a0e2045f-e517-4cb3-92d8-706029c81704")
-	)
 	(text "ESP32'yi nasıl programlayacağız? Uart pinlerini bağlamamız gerekiyor mu?"
 		(exclude_from_sim no)
 		(at 99.695 221.615 0)
@@ -2221,40 +2648,16 @@
 		(uuid "e40a99c4-fbab-4bb0-93ed-ed2cc6dd89e2")
 	)
 	(junction
-		(at 259.08 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e3f130f-6aec-4d1d-b014-beee6ffc5116")
-	)
-	(junction
 		(at 124.46 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "110df7c3-90ee-4247-b867-5071d1e896f0")
 	)
 	(junction
-		(at 259.08 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c0d2dcc-7514-43ec-888f-54337709bf62")
-	)
-	(junction
-		(at 243.84 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f349084-e80c-4622-b078-b77bb79e3b31")
-	)
-	(junction
 		(at 176.53 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32cfed24-30f8-44a5-b016-582f1c02f626")
-	)
-	(junction
-		(at 233.68 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3fd139f0-d086-4415-b039-ffb80643be72")
 	)
 	(junction
 		(at 76.2 78.74)
@@ -2275,36 +2678,10 @@
 		(uuid "749ebcbf-20a6-4207-a379-4e5d8c9d761c")
 	)
 	(junction
-		(at 246.38 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ac6f5ac4-baf8-49ca-b8d1-f470577f8357")
-	)
-	(junction
 		(at 115.57 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5a23906-cacf-4d43-b199-b952739051f3")
-	)
-	(junction
-		(at 238.76 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0b85e23-0745-491f-9c43-de43f90259fd")
-	)
-	(no_connect
-		(at 264.16 55.88)
-		(uuid "442d59c9-46e2-4964-9337-1046a27c0110")
-	)
-	(wire
-		(pts
-			(xy 259.08 99.06) (xy 228.6 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "026cfede-1e39-430c-bfc1-f1f4c5228775")
 	)
 	(wire
 		(pts
@@ -2335,16 +2712,6 @@
 			(type default)
 		)
 		(uuid "0f2e8e24-e105-4a77-8bd3-484c159ac4b0")
-	)
-	(wire
-		(pts
-			(xy 226.06 68.58) (xy 220.98 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "106bbce1-55f3-4ce5-99d3-b3718fc2ca09")
 	)
 	(wire
 		(pts
@@ -2388,26 +2755,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 68.58) (xy 238.76 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2253d53f-dbfd-431b-b337-2462fcdbb7f7")
-	)
-	(wire
-		(pts
-			(xy 259.08 99.06) (xy 260.35 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2503a2cd-00d5-4c51-a019-59c19f68f236")
-	)
-	(wire
-		(pts
 			(xy 176.53 106.68) (xy 179.07 106.68)
 		)
 		(stroke
@@ -2415,26 +2762,6 @@
 			(type default)
 		)
 		(uuid "2747720a-c55c-4821-a2af-1cee416ce24b")
-	)
-	(wire
-		(pts
-			(xy 251.46 68.58) (xy 243.84 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3099e418-c2cf-43e9-886c-59403d873af1")
-	)
-	(wire
-		(pts
-			(xy 233.68 93.98) (xy 228.6 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35288948-1cd5-47b4-ac30-3e06ea7e71b8")
 	)
 	(wire
 		(pts
@@ -2468,16 +2795,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 99.06) (xy 270.51 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37b33a27-9d1e-4384-b5b6-ae709c40850c")
-	)
-	(wire
-		(pts
 			(xy 181.61 139.7) (xy 184.15 139.7)
 		)
 		(stroke
@@ -2485,16 +2802,6 @@
 			(type default)
 		)
 		(uuid "381623ac-4bca-4b5b-b5e9-2d15676180c2")
-	)
-	(wire
-		(pts
-			(xy 256.54 93.98) (xy 233.68 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a400e7f-b2a7-4cfa-8cc8-6ea94351171d")
 	)
 	(wire
 		(pts
@@ -2558,16 +2865,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 48.26) (xy 259.08 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4af2da29-be17-43ea-803e-02420f642d4b")
-	)
-	(wire
-		(pts
 			(xy 87.63 96.52) (xy 69.85 96.52)
 		)
 		(stroke
@@ -2575,16 +2872,6 @@
 			(type default)
 		)
 		(uuid "4e21e913-a1e0-4031-a03a-3d480be78b55")
-	)
-	(wire
-		(pts
-			(xy 238.76 68.58) (xy 233.68 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51c36697-9dea-4e28-96dc-70e4c364a9c2")
 	)
 	(wire
 		(pts
@@ -2608,16 +2895,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 71.12) (xy 246.38 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6afa8689-7a4c-490b-ae3e-bf57803d076a")
-	)
-	(wire
-		(pts
 			(xy 143.51 127) (xy 146.05 127)
 		)
 		(stroke
@@ -2625,16 +2902,6 @@
 			(type default)
 		)
 		(uuid "6e2a473f-d63c-42db-bbd5-9a823c4ad7cc")
-	)
-	(wire
-		(pts
-			(xy 251.46 71.12) (xy 246.38 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71f2eb9b-d947-4dfa-a165-b7afcea14152")
 	)
 	(wire
 		(pts
@@ -2768,16 +3035,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 81.28) (xy 241.3 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7164319-7d53-48b6-8776-80a8af631ced")
-	)
-	(wire
-		(pts
 			(xy 87.63 99.06) (xy 85.09 99.06)
 		)
 		(stroke
@@ -2785,16 +3042,6 @@
 			(type default)
 		)
 		(uuid "af8e0219-8174-4583-887d-bdc28216b542")
-	)
-	(wire
-		(pts
-			(xy 256.54 81.28) (xy 256.54 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3d800ac-a125-474b-abdd-5d67c8abab76")
 	)
 	(wire
 		(pts
@@ -2828,16 +3075,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 81.28) (xy 259.08 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c549f986-7916-4557-a179-a93c8f439113")
-	)
-	(wire
-		(pts
 			(xy 220.98 132.08) (xy 228.6 132.08)
 		)
 		(stroke
@@ -2868,16 +3105,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 48.26) (xy 251.46 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d81e77f0-3b54-4eb5-84d5-2122520e3d62")
-	)
-	(wire
-		(pts
 			(xy 171.45 139.7) (xy 173.99 139.7)
 		)
 		(stroke
@@ -2885,16 +3112,6 @@
 			(type default)
 		)
 		(uuid "d99665ce-dbd4-4f62-b9fd-c34e337d2faf")
-	)
-	(wire
-		(pts
-			(xy 271.78 68.58) (xy 274.32 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd8cdd0b-40fe-4038-b3db-34223d1bca75")
 	)
 	(wire
 		(pts
@@ -2928,16 +3145,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 55.88) (xy 259.08 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e65d50c2-20c3-411b-9403-c00263ede3c6")
-	)
-	(wire
-		(pts
 			(xy 250.19 124.46) (xy 256.54 124.46)
 		)
 		(stroke
@@ -2965,26 +3172,6 @@
 			(type default)
 		)
 		(uuid "f84f4b16-b6aa-47f3-85e3-ceaf32c15659")
-	)
-	(wire
-		(pts
-			(xy 264.16 81.28) (xy 264.16 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcde6c34-8f22-4a46-9750-379e967f44f7")
-	)
-	(label "RTC_SCL"
-		(at 228.6 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "26528afa-016c-4afb-a91d-8adcb014d0ae")
 	)
 	(label "UART_TX"
 		(at 146.05 86.36 0)
@@ -3036,16 +3223,6 @@
 		)
 		(uuid "b9e1eead-8335-4e93-b70e-910018b1d428")
 	)
-	(label "RTC_INT"
-		(at 251.46 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c089f816-86aa-45e0-b4ca-04ef6c1077e3")
-	)
 	(label "UART_RX"
 		(at 146.05 88.9 0)
 		(effects
@@ -3055,16 +3232,6 @@
 			(justify left bottom)
 		)
 		(uuid "c88f53b9-ba81-48d2-a54a-59a334281224")
-	)
-	(label "RTC_SDA"
-		(at 228.6 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d23916b7-a6d4-422f-bd43-62b4aac84585")
 	)
 	(label "RTC_SDA"
 		(at 69.85 111.76 180)
@@ -3697,7 +3864,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 176.53 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3942,7 +4109,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 256.54 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4186,7 +4353,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 228.6 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4323,365 +4490,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 270.51 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1d2f187b-a051-4d2e-89b5-20a442d288fa")
-		(property "Reference" "#PWR043"
-			(at 273.05 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 272.29 97.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 270.51 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 270.51 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0e56cf64-9269-4496-b768-cee64ac95d37")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 229.87 68.58 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2db1060d-5933-4152-8f06-912382b033ef")
-		(property "Reference" "R22"
-			(at 229.87 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k0"
-			(at 229.87 66.675 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 229.87 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0402 (1005 Metric)"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MountingType" "Surface Mount"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Lifecycle" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "RoHS" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OperatingTemp" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SelectionNote" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AssemblyNote" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PowerRating" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VoltageRating" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "TempCoefficient" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Composition" "TBD"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7ec671cb-ebb0-4e49-8ede-58d579eba60c")
-		)
-		(pin "1"
-			(uuid "6bd7c807-c0ea-42da-932e-703469826cdb")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 264.16 99.06 90)
+		(at 218.44 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4691,27 +4501,29 @@
 		(dnp no)
 		(uuid "2fd818fe-a84e-47c4-82da-34ea350696e9")
 		(property "Reference" "R26"
-			(at 264.16 101.6 270)
+			(at 220.98 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "4k7"
-			(at 264.16 103.505 270)
+			(at 220.98 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 264.16 99.06 90)
+			(at 218.44 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4722,7 +4534,7 @@
 			)
 		)
 		(property "Datasheet" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4733,7 +4545,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4744,7 +4556,7 @@
 			)
 		)
 		(property "Category" "Resistors"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4755,7 +4567,7 @@
 			)
 		)
 		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,8 +4577,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
-			(at 264.16 99.06 0)
+		(property "Manufacturer" "Royalohm"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4776,8 +4588,8 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
-			(at 264.16 99.06 0)
+		(property "MPN" "HP02WAF4701TCE"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4788,7 +4600,7 @@
 			)
 		)
 		(property "Package" "0402 (1005 Metric)"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4799,7 +4611,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4810,7 +4622,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4821,7 +4633,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4832,7 +4644,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4843,7 +4655,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4854,7 +4666,7 @@
 			)
 		)
 		(property "DesignNote" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4864,8 +4676,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
-			(at 264.16 99.06 0)
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4876,7 +4688,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 264.16 99.06 0)
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4886,8 +4698,8 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
-			(at 264.16 99.06 0)
+		(property "Tolerance" "+/-1%"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4897,8 +4709,8 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
-			(at 264.16 99.06 0)
+		(property "PowerRating" "0.1W"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4908,8 +4720,8 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
-			(at 264.16 99.06 0)
+		(property "VoltageRating" "50V"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4919,8 +4731,8 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
-			(at 264.16 99.06 0)
+		(property "TempCoefficient" "+/-100ppm/C"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4930,8 +4742,8 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
-			(at 264.16 99.06 0)
+		(property "Composition" "High Power Thick Film"
+			(at 218.44 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4951,275 +4763,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 238.76 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35a75947-a6ef-4f7b-8eda-f5ea33b3b317")
-		(property "Reference" "C10"
-			(at 236.22 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 236.22 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Capacitors"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Subcategory" "Ceramic Capacitors"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0402 (1005 Metric)"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MountingType" "Surface Mount"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Lifecycle" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "RoHS" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OperatingTemp" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SelectionNote" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AssemblyNote" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VoltageRating" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Dielectric" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "EffectiveCapacitance" "TBD"
-			(at 238.76 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a9c77c14-f233-4264-a13c-c4cfee6edb07")
-		)
-		(pin "2"
-			(uuid "29a499bd-ca7f-41da-9e1a-d93a81618cd5")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5313,7 +4856,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "C&K"
+		(property "Manufacturer" "C&K (Littelfuse)"
 			(at 171.45 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -5412,7 +4955,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 994927; stok 315791 (21.09.2026); Uygun."
 			(at 171.45 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -5538,8 +5081,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Timer_RTC:RV-3028-C7")
-		(at 261.62 68.58 90)
+		(lib_id "Timer_RTC:BQ32000")
+		(at 245.11 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5550,29 +5093,29 @@
 		(fields_autoplaced yes)
 		(uuid "53679729-731d-475b-a69e-10811e6986a6")
 		(property "Reference" "U4"
-			(at 251.46 59.055 270)
+			(at 257.81 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "RV-3028-C7"
-			(at 251.46 60.96 270)
+		(property "Value" "BQ32000"
+			(at 257.81 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm"
-			(at 261.62 68.58 0)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5582,8 +5125,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf"
-			(at 261.62 68.58 0)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq32000.pdf"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5593,8 +5136,8 @@
 				)
 			)
 		)
-		(property "Description" "Realtime Clock/Calendar I2C Interface, Extreme Low Power, 1.1 V to 5.5 V, MicroCrystal C7"
-			(at 261.62 68.58 0)
+		(property "Description" "Serial I2C real-time clock with trickle charger, 3V to 3.6V VCC, SOIC-8"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5605,7 +5148,7 @@
 			)
 		)
 		(property "Category" "Integrated Circuits"
-			(at 261.62 68.58 0)
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5616,7 +5159,7 @@
 			)
 		)
 		(property "Subcategory" "Logic / Memory / Clock-Timing"
-			(at 261.62 68.58 0)
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5626,8 +5169,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Micro Crystal"
-			(at 261.62 68.58 90)
+		(property "Manufacturer" "Texas Instruments"
+			(at 245.11 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5637,8 +5180,8 @@
 				)
 			)
 		)
-		(property "MPN" "RV-3028-C7"
-			(at 261.62 68.58 90)
+		(property "MPN" "BQ32000DR"
+			(at 245.11 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5648,8 +5191,8 @@
 				)
 			)
 		)
-		(property "Package" "C7 SON-8 (1.5x3.2mm)"
-			(at 261.62 68.58 0)
+		(property "Package" "SOIC-8"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5660,7 +5203,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 261.62 68.58 0)
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5671,7 +5214,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 261.62 68.58 0)
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5681,8 +5224,8 @@
 				)
 			)
 		)
-		(property "RoHS" "TBD"
-			(at 261.62 68.58 0)
+		(property "RoHS" "Yes"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5692,8 +5235,8 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
-			(at 261.62 68.58 0)
+		(property "OperatingTemp" "-40C to 85C"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5704,7 +5247,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 261.62 68.58 0)
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5714,8 +5257,8 @@
 				)
 			)
 		)
-		(property "DesignNote" "Trickle charge kapali kullanilacak."
-			(at 261.62 68.58 0)
+		(property "DesignNote" "BQ32000: VCC 3.0-3.6V, I2C 0x68, IRQ open-drain (R24 pull-up VCC). Firmware: TCHE=0x5, TCH2=1, TCFE=1 ile super kapasitor sarji."
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5725,8 +5268,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
-			(at 261.62 68.58 0)
+		(property "SelectionNote" "Özdisan 467622; stok 8985 (21.09.2026); Uygun. 21.09 RTC revizyonu: RV-3028-C7 yerine BQ32000DR (kullanıcı kararı). VCC 3,0–3,6V, I2C 0x68, open-drain IRQ, VBACK otomatik geçiş ve süper kapasitör için dahili trickle charger. Datasheet: 1 µF VCC dekuplajı (C9), 32,768 kHz kristal CL 12 pF (Y1), harici yük C yok. Firmware: TCHE=0x5, TCH2=1, TCFE=1."
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5737,7 +5280,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 261.62 68.58 0)
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5747,8 +5290,8 @@
 				)
 			)
 		)
-		(property "SupplyVoltage" "TBD"
-			(at 261.62 68.58 0)
+		(property "SupplyVoltage" "3V to 3.6V"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5758,8 +5301,8 @@
 				)
 			)
 		)
-		(property "PinCount" "TBD"
-			(at 261.62 68.58 0)
+		(property "PinCount" "8"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5769,8 +5312,8 @@
 				)
 			)
 		)
-		(property "ThermalPad" "TBD"
-			(at 261.62 68.58 0)
+		(property "ThermalPad" "No"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5780,8 +5323,8 @@
 				)
 			)
 		)
-		(property "InterfaceType" "I2C"
-			(at 261.62 68.58 0)
+		(property "InterfaceType" "I2C (0x68)"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5791,8 +5334,8 @@
 				)
 			)
 		)
-		(property "Function" "RTC, I2C"
-			(at 261.62 68.58 0)
+		(property "Function" "RTC, backup switchover, trickle charger"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5802,8 +5345,8 @@
 				)
 			)
 		)
-		(property "LogicFamily" "TBD"
-			(at 261.62 68.58 0)
+		(property "LogicFamily" "N/A"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5813,8 +5356,8 @@
 				)
 			)
 		)
-		(property "ChannelCount" "TBD"
-			(at 261.62 68.58 0)
+		(property "ChannelCount" "1"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5824,8 +5367,8 @@
 				)
 			)
 		)
-		(property "OutputType" "TBD"
-			(at 261.62 68.58 0)
+		(property "OutputType" "Open-drain IRQ"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5835,8 +5378,8 @@
 				)
 			)
 		)
-		(property "TimekeepingAccuracy" "TBD"
-			(at 261.62 68.58 0)
+		(property "TimekeepingAccuracy" "+/-35ppm pre-calibration @25C"
+			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5967,7 +5510,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 137.16 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5978,7 +5521,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 137.16 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6066,7 +5609,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 137.16 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6088,7 +5631,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 137.16 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6099,7 +5642,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 137.16 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6110,7 +5653,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 137.16 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6149,7 +5692,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 233.68 90.17 0)
+		(at 218.44 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6160,29 +5703,29 @@
 		(fields_autoplaced yes)
 		(uuid "568538f9-41fb-44cb-b471-60c64a980b8b")
 		(property "Reference" "R25"
-			(at 231.14 88.9 0)
+			(at 220.98 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "4k7"
-			(at 231.14 91.44 0)
+			(at 220.98 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 233.68 90.17 90)
+			(at 218.44 44.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6193,7 +5736,7 @@
 			)
 		)
 		(property "Datasheet" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6204,7 +5747,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6215,7 +5758,7 @@
 			)
 		)
 		(property "Category" "Resistors"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6226,7 +5769,7 @@
 			)
 		)
 		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6236,8 +5779,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
-			(at 233.68 90.17 0)
+		(property "Manufacturer" "Royalohm"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6247,8 +5790,8 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
-			(at 233.68 90.17 0)
+		(property "MPN" "HP02WAF4701TCE"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6259,7 +5802,7 @@
 			)
 		)
 		(property "Package" "0402 (1005 Metric)"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6270,7 +5813,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6281,7 +5824,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6292,7 +5835,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6303,7 +5846,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6314,7 +5857,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6325,7 +5868,7 @@
 			)
 		)
 		(property "DesignNote" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6335,8 +5878,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
-			(at 233.68 90.17 0)
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +5890,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 233.68 90.17 0)
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6357,8 +5900,8 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
-			(at 233.68 90.17 0)
+		(property "Tolerance" "+/-1%"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6368,8 +5911,8 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
-			(at 233.68 90.17 0)
+		(property "PowerRating" "0.1W"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6379,8 +5922,8 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
-			(at 233.68 90.17 0)
+		(property "VoltageRating" "50V"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6390,8 +5933,8 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
-			(at 233.68 90.17 0)
+		(property "TempCoefficient" "+/-100ppm/C"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6401,8 +5944,8 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
-			(at 233.68 90.17 0)
+		(property "Composition" "High Power Thick Film"
+			(at 218.44 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6615,7 +6158,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 64.77 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6839,7 +6382,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6850,7 +6393,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RC0402FR-0722RP"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6938,7 +6481,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 839397; stok 4562 (21.09.2026); Uygun."
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6960,7 +6503,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6971,7 +6514,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6982,7 +6525,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6993,7 +6536,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7004,7 +6547,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7104,85 +6647,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 259.08 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "722bbb6a-1f94-4cea-b5e8-aa5c6ef2de8e")
-		(property "Reference" "#PWR025"
-			(at 261.62 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 260.86 36.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 259.08 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fd7de862-b91e-4475-9884-7e02570c2bb4")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7377,7 +6841,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 256.54 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7519,7 +6983,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7530,7 +6994,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7618,7 +7082,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7640,7 +7104,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7651,7 +7115,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7662,7 +7126,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7673,7 +7137,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7684,7 +7148,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7799,7 +7263,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7810,7 +7274,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7898,7 +7362,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7920,7 +7384,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7931,7 +7395,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7942,7 +7406,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7953,7 +7417,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7964,7 +7428,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7985,85 +7449,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 233.68 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "789cbf03-0bb0-4cd7-8722-bb73667eda3e")
-		(property "Reference" "#PWR042"
-			(at 236.22 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 235.46 84.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 233.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 233.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e66f307b-6e1c-47d3-99c7-6c4b50222dd2")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -8258,7 +7643,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 256.54 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -8309,410 +7694,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "TP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 220.98 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7a928556-0ffe-4506-86e8-0cf3fed98d8b")
-		(property "Reference" "#PWR033"
-			(at 223.52 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 222.76 74.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "619e9d69-b29f-4190-8dc1-0dd09de059bf")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 220.98 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ce10496-6feb-4e08-9089-da61083dc7db")
-		(property "Reference" "BT1"
-			(at 218.44 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "CR2032 holder"
-			(at 218.44 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Power_Output_Custom:KLS_CR2032_05"
-			(at 220.98 73.66 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://img.klsele.com/admin/product_upload/20250408144415L-KLS5-CR2032-05.pdf"
-			(at 220.98 73.66 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Battery Products"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Subcategory" "Batteries / Battery Holders"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "KLS Electronic"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "L-KLS5-CR2032-05-R1"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "CR2032 Holder SMD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MountingType" "Surface Mount"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Lifecycle" "TBD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "RoHS" "TBD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OperatingTemp" "TBD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "TBD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" "CR2032 3V primary; hucre ayri satin alinir. RTC trickle charge KAPALI olmalidir."
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SelectionNote" "Tedarik: Ozdisan 497433"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AssemblyNote" "TBD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Chemistry" "Lithium Manganese Dioxide"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CellSize" "CR2032"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "NominalVoltage" "3V"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Capacity" "TBD"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "HolderMounting" "Surface Mount"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "BatteryType" "CR2032"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 220.98 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "26356aab-10d6-4a15-b753-0ec94457d19c")
-		)
-		(pin "1"
-			(uuid "6b6eefdf-f6a9-4f51-a838-0278b8793b65")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -8886,7 +7867,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 55.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8897,7 +7878,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "EMK105BJ105KVHF"
 			(at 55.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8985,7 +7966,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 623573; stok 5005 (21.09.2026); Uygun. C4 (PD_5V) için ≥10V şartını karşılar. C9: BQ32000 VCC dekuplajı, datasheet ≥1 µF istiyor (100n → 1u0)."
 			(at 55.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9007,7 +7988,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 55.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9018,7 +7999,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "16V"
 			(at 55.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9029,7 +8010,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X5R"
 			(at 55.88 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9308,366 +8289,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 238.76 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "96540f3d-3560-4015-9562-feacd6133d2b")
-		(property "Reference" "#PWR032"
-			(at 241.3 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 240.54 74.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 238.76 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "df26dd6f-2336-4a16-bbf0-f65315b6cbcd")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 264.16 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9bfcc4d7-7cf2-4489-9ab3-5542b8b381e6")
-		(property "Reference" "R23"
-			(at 266.7 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 266.7 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 264.16 87.63 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0402 (1005 Metric)"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MountingType" "Surface Mount"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Lifecycle" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "RoHS" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OperatingTemp" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DesignNote" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SelectionNote" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AssemblyNote" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PowerRating" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VoltageRating" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "TempCoefficient" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Composition" "TBD"
-			(at 264.16 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f5e0b823-0af9-48c5-8fb2-daf5d86d994b")
-		)
-		(pin "1"
-			(uuid "7faf7c14-e6d9-437c-b5c4-e63ca76b2df0")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 256.54 142.24 0)
 		(unit 1)
 		(body_style 1)
@@ -9741,86 +8362,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 264.16 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a9be0b91-d0e1-423e-950f-9d1efc670846")
-		(property "Reference" "#PWR041"
-			(at 266.7 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 265.94 89.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 264.16 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 264.16 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0741fbf-8b42-4a2e-8638-3b76eda0579e")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -10014,7 +8555,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 228.6 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -10065,165 +8606,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 241.3 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b4010941-46a1-40f5-9efb-e0fc90b45d81")
-		(property "Reference" "#PWR034"
-			(at 243.84 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 243.08 79.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e951c52-72db-4526-93cc-67e5b1c909be")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 246.38 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bcd6b19f-9a92-46a5-a109-fbaec389e272")
-		(property "Reference" "#PWR040"
-			(at 248.92 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 248.16 87.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 246.38 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e22513a0-91ac-4926-969f-b30bfa212bce")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -10417,7 +8799,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 228.6 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -10474,88 +8856,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 274.32 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c1f4df5f-083f-4cee-80b1-2f22117f8823")
-		(property "Reference" "#PWR026"
-			(at 276.86 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 276.1 66.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 274.32 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 274.32 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 274.32 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95154d3c-ec2a-438d-ad9a-f4142c0010aa")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 259.08 41.91 0)
+		(at 267.97 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10566,7 +8868,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2477692-d859-4bd9-8127-6324f101286e")
 		(property "Reference" "R24"
-			(at 261.62 40.64 0)
+			(at 270.51 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10577,7 +8879,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 261.62 43.18 0)
+			(at 270.51 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10588,7 +8890,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 259.08 41.91 90)
+			(at 267.97 64.77 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10599,7 +8901,7 @@
 			)
 		)
 		(property "Datasheet" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10610,7 +8912,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10621,7 +8923,7 @@
 			)
 		)
 		(property "Category" "Resistors"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10632,7 +8934,7 @@
 			)
 		)
 		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10642,8 +8944,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
-			(at 259.08 41.91 0)
+		(property "Manufacturer" "Royalohm"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10653,8 +8955,8 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
-			(at 259.08 41.91 0)
+		(property "MPN" "HP02WAF4701TCE"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10665,7 +8967,7 @@
 			)
 		)
 		(property "Package" "0402 (1005 Metric)"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10676,7 +8978,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10687,7 +8989,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10698,7 +9000,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10709,7 +9011,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10720,7 +9022,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10731,7 +9033,7 @@
 			)
 		)
 		(property "DesignNote" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10741,8 +9043,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
-			(at 259.08 41.91 0)
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10753,7 +9055,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 259.08 41.91 0)
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10763,8 +9065,8 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
-			(at 259.08 41.91 0)
+		(property "Tolerance" "+/-1%"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10774,8 +9076,8 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
-			(at 259.08 41.91 0)
+		(property "PowerRating" "0.1W"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10785,8 +9087,8 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
-			(at 259.08 41.91 0)
+		(property "VoltageRating" "50V"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10796,8 +9098,8 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
-			(at 259.08 41.91 0)
+		(property "TempCoefficient" "+/-100ppm/C"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10807,8 +9109,8 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
-			(at 259.08 41.91 0)
+		(property "Composition" "High Power Thick Film"
+			(at 267.97 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10919,7 +9221,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -10930,7 +9232,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RC0402FR-0722RP"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11018,7 +9320,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 839397; stok 4562 (21.09.2026); Uygun."
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11040,7 +9342,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11051,7 +9353,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11062,7 +9364,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11073,7 +9375,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11084,7 +9386,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11196,7 +9498,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11207,7 +9509,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RC0402FR-0722RP"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11295,7 +9597,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 839397; stok 4562 (21.09.2026); Uygun."
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11317,7 +9619,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11328,7 +9630,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11339,7 +9641,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11350,7 +9652,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11361,7 +9663,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11389,7 +9691,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 246.38 85.09 0)
+		(at 234.95 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11400,7 +9702,7 @@
 		(fields_autoplaced yes)
 		(uuid "ccf39fe8-2f73-4b5b-a3b0-42c68724a732")
 		(property "Reference" "C9"
-			(at 248.92 83.82 0)
+			(at 237.49 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11410,8 +9712,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 248.92 86.36 0)
+		(property "Value" "1u0"
+			(at 237.49 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11422,7 +9724,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11433,7 +9735,7 @@
 			)
 		)
 		(property "Datasheet" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11444,7 +9746,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11455,7 +9757,7 @@
 			)
 		)
 		(property "Category" "Capacitors"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11466,7 +9768,7 @@
 			)
 		)
 		(property "Subcategory" "Ceramic Capacitors"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11476,8 +9778,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
-			(at 246.38 85.09 0)
+		(property "Manufacturer" "Taiyo Yuden"
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11487,8 +9789,8 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
-			(at 246.38 85.09 0)
+		(property "MPN" "EMK105BJ105KVHF"
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11499,7 +9801,7 @@
 			)
 		)
 		(property "Package" "0402 (1005 Metric)"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11510,7 +9812,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11521,7 +9823,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11532,7 +9834,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11543,7 +9845,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11554,7 +9856,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11564,8 +9866,8 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
-			(at 246.38 85.09 0)
+		(property "DesignNote" "BQ32000 VCC dekuplaji; datasheet >=1uF seramik, VCC/GND pinine yakin."
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11575,8 +9877,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
-			(at 246.38 85.09 0)
+		(property "SelectionNote" "Özdisan 623573; stok 5005 (21.09.2026); Uygun. C4 (PD_5V) için ≥10V şartını karşılar. C9: BQ32000 VCC dekuplajı, datasheet ≥1 µF istiyor (100n → 1u0)."
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11587,7 +9889,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11597,8 +9899,8 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
-			(at 246.38 85.09 0)
+		(property "Tolerance" "+/-10%"
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11608,8 +9910,8 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
-			(at 246.38 85.09 0)
+		(property "VoltageRating" "16V"
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11619,8 +9921,8 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
-			(at 246.38 85.09 0)
+		(property "Dielectric" "X5R"
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11631,7 +9933,7 @@
 			)
 		)
 		(property "EffectiveCapacitance" "TBD"
-			(at 246.38 85.09 0)
+			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11651,86 +9953,6 @@
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 243.84 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cdfe1b1f-cde3-4cc5-816e-03c700d37714")
-		(property "Reference" "#FLG05"
-			(at 246.38 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 245.62 66.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "996b441a-c7a4-479e-bca3-2b785232769e")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -11822,7 +10044,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11833,7 +10055,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11921,7 +10143,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11943,7 +10165,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11954,7 +10176,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11965,7 +10187,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11976,7 +10198,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11987,7 +10209,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12204,7 +10426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12259,7 +10481,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Murata"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12270,7 +10492,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "GRT21BC81A226ME13K"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12281,7 +10503,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "0805 (2012 Metric)"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12358,7 +10580,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 810882; stok 709 (21.09.2026); Uygun. 21.09 üçüncü tur: Footprint 0402 → 0805. 10V X6S (+105°C), 3.3V/4.2V raylarında 6.3V parçalardan daha az DC-bias kaybı; TPS61023/RT4812 çıkış efektif ≥4 µF şartını rahat karşılar. Ucuz alternatif: CL21A226MQQNNNE 6,3V X5R (47890 stok, 2,18 TL)."
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12380,7 +10602,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-20%"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12391,7 +10613,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "10V"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12402,7 +10624,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X6S"
 			(at 124.46 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12706,7 +10928,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. 21.09 üçüncü tur: ESP32-C6 modülü Özdisan'da yok; özellikleri karşılayan muadil de yok. Tasarım native USB (GPIO12/13) ve ~22 GPIO kullanıyor. Stoktaki ESP32-C3-MINI-1-N4 (445 stok) native USB'ye sahip ama GPIO sayısı yetmez ve 802.15.4/Wi-Fi 6 yok. ESP32-WROOM-32E-N4 (466 stok) aynı 18x25,5 mm gövdede ama pin dizilişi farklı ve native USB yok (USB-UART köprüsü gerekir). İkisi de şema/footprint/firmware değişikliği ister."
 			(at 115.57 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -13064,7 +11286,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13075,7 +11297,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RC0402FR-0722RP"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13163,7 +11385,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 839397; stok 4562 (21.09.2026); Uygun."
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13185,7 +11407,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13196,7 +11418,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13207,7 +11429,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13218,7 +11440,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13229,7 +11451,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 71.12 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13343,7 +11565,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "C&K"
+		(property "Manufacturer" "C&K (Littelfuse)"
 			(at 45.72 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -13442,7 +11664,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 994927; stok 315791 (21.09.2026); Uygun."
 			(at 45.72 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -13566,5 +11788,1494 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND23")
+		(at 222.25 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "6cd474ee-3ef8-4833-b669-60105c1ea6a7")
+		(property "Reference" "Y1"
+			(at 215.9 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "32.768kHz"
+			(at 215.9 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Description" "32.768kHz crystal, 12.5pF load, +/-20ppm, 4-SMD 8.0x3.8mm"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://abracon.com/Resonators/abs25.pdf"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Crystals, Oscillators, Resonators"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Subcategory" "Crystals"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Abracon"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ABS25-32.768KHZ-T"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "4-SMD 8.0x3.8mm (ABS25)"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MountingType" "Surface Mount"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifecycle" "TBD"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RoHS" "Yes"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OperatingTemp" "-40C to 85C"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "2.5mm"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DesignNote" "CL 12.5pF: BQ32000 dahili yuk kapasitesi, harici kondansator YOK. Pin 2/3 NC (GND). OSCI/OSCO'ya yakin yerlestir."
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SelectionNote" "Özdisan 489027; stok 1534 (21.09.2026); Uygun. 21.09 RTC revizyonu: BQ32000 kristali: CL 12,5 pF (datasheet 10,8–13,2 pF), ESR 50 kΩ (max 70 kΩ), ±20 ppm. Pin 1–4 kristal, 2–3 bağlantısız (şemada GND). 3215 alternatifleri (RT3215, ABS07) ESR 70 kΩ ile sınırda."
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AssemblyNote" "TBD"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Frequency" "32.768kHz"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LoadCapacitance" "12.5pF"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FrequencyTolerance" "+/-20ppm"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FrequencyStability" "TBD"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ESR" "50kOhm max"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OscillatorType" "Tuning fork crystal"
+			(at 222.25 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89e5226b-6ef5-4824-9871-7c77eeae8a35")
+		)
+		(pin "2"
+			(uuid "0af39a87-414d-4f80-8f76-4716d3c64ff1")
+		)
+		(pin "3"
+			(uuid "e6088efc-2a77-496b-afd6-49824c61dc70")
+		)
+		(pin "4"
+			(uuid "0b429b0c-a9be-4de7-852b-2d60cb6d189c")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 257.81 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "4eb57391-24d5-4e2f-b058-117276bab29c")
+		(property "Reference" "C33"
+			(at 260.35 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1F5"
+			(at 260.35 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Supercapacitor (EDLC) 1.5F 5.5V, horizontal coin H-type"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Power_Output_Custom:Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.ozdisan.com/public/product/assets/EDLC_Coin_DCL.pdf"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Subcategory" "Electric Double Layer Capacitors (EDLC), Supercapacitors"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Korchip"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DCL5R5155HF"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "Coin H-Type D19.0mm P20.0mm"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MountingType" "Through Hole"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifecycle" "TBD"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RoHS" "Yes"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OperatingTemp" "-25C to 70C"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "6.5mm"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DesignNote" "VBACK super kapasitoru; BQ32000 trickle charge ile sarj. Yedek ~22 gun (1.5F, 3.3V->1.4V, 1.5uA); kacak akim olculmeli. Reflow yapilmaz, elle lehim."
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SelectionNote" "Özdisan 954330; stok 289 (21.09.2026); Uygun. 21.09 RTC revizyonu: BT1 (CR2032) yerine süper kapasitör. 5,5V anma, ESR ≤30 Ω, −25…70°C. Yedek süre ≈ C·(3,3−1,4)/1,5 µA ≈ 22 gün (TCFE=1); kaçak akım bu süreyi kısaltır, prototipte ölçülmeli. Proje footprint'i: Power_Output_Custom:Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal (datasheet çiziminden; numune ile doğrulanmalı). Reflow'a girmez, elle lehim."
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AssemblyNote" "TBD"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CapacitorType" "EDLC (Supercapacitor)"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VoltageRating" "5.5V"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "-20%/+80%"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ESR" "30Ohm max @1kHz"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RippleCurrent" "N/A"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifetime" "1000h @70C"
+			(at 257.81 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68c23131-3f6c-44ad-85db-f1c5d0cd1f70")
+		)
+		(pin "2"
+			(uuid "e10c629a-4a7e-47be-9b56-1c4bd38a2b11")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 232.41 67.31) (xy 228.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dfc8bd5-8065-4d2e-baa7-b7f6736db9aa")
+	)
+	(wire
+		(pts
+			(xy 228.6 67.31) (xy 228.6 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b962e71d-471f-422c-bc48-f20fde358e78")
+	)
+	(wire
+		(pts
+			(xy 228.6 48.26) (xy 218.44 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "477da834-e889-4092-8144-c254cb9d4bd4")
+	)
+	(wire
+		(pts
+			(xy 218.44 48.26) (xy 205.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f0c52b-b8b6-4cef-adfa-a3565a2d4ca8")
+	)
+	(junction
+		(at 218.44 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3e70f85-3bc6-4137-958c-a0a1ba47a789")
+	)
+	(label "RTC_SCL"
+		(at 205.74 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "427abe73-6e7f-4156-b11f-a84453b530ec")
+	)
+	(wire
+		(pts
+			(xy 232.41 69.85) (xy 218.44 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32edb07e-8757-44e6-b648-497d53e7017f")
+	)
+	(wire
+		(pts
+			(xy 218.44 69.85) (xy 205.74 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "132ef9d8-457a-463d-8616-cce42c16f5bf")
+	)
+	(junction
+		(at 218.44 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b74b2e08-7b21-4df4-8d1b-efab7f5938ff")
+	)
+	(label "RTC_SDA"
+		(at 205.74 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26a28e1d-e9d9-4124-be81-2f1a1299668c")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 218.44 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "00203175-5d68-4154-b57f-29a6fc8f8a5c")
+		(property "Reference" "#PWR025"
+			(at 220.98 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 220.22 38.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "640bd7c3-f6da-4a88-b567-9b3c3b3ddc74")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 218.44 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "4ae49ad7-b4c0-4305-9eb2-b17ba6c53c16")
+		(property "Reference" "#PWR026"
+			(at 220.98 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 220.22 60.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c4b26b8-429a-4776-8963-ae0e8c687c2c")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 242.57 62.23) (xy 242.57 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6f60373-bc88-48ae-b815-1450a8884175")
+	)
+	(wire
+		(pts
+			(xy 242.57 53.34) (xy 242.57 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4806be1-ae45-417c-ae40-5019fdc9e183")
+	)
+	(junction
+		(at 242.57 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80a36ced-855c-4c0b-a5b4-69576c0f8566")
+	)
+	(wire
+		(pts
+			(xy 242.57 53.34) (xy 234.95 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d089b358-c142-4c6b-b8e2-dcd75fed708b")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 242.57 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "bf901fa2-1da1-4270-9cf0-24cbc8338a5a")
+		(property "Reference" "#PWR032"
+			(at 245.11 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 244.35 47.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87ef8395-6ecc-41e6-815e-9f407490b611")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 234.95 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "2218e102-ba70-4e1c-abb9-540997fe9e22")
+		(property "Reference" "#PWR033"
+			(at 237.49 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.73 59.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "926b455f-1a98-486e-8df3-7524e74ee24e")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 245.11 62.23) (xy 245.11 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64d68b4e-b0c2-4db5-9c28-ced1e8aad0c2")
+	)
+	(wire
+		(pts
+			(xy 245.11 57.15) (xy 250.19 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7341b16a-3c8e-4a2a-8ad2-99472a2550de")
+	)
+	(wire
+		(pts
+			(xy 250.19 57.15) (xy 257.81 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "712fa8ee-e92d-423f-9be1-ebc6d9ae2ccb")
+	)
+	(junction
+		(at 250.19 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "903750e8-7c61-4275-b0a2-cccfefa6669e")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 250.19 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b9c05b1f-50e1-4ba7-91bf-afe5cdc7b088")
+		(property "Reference" "#FLG05"
+			(at 252.73 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 251.97 55.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7fa75e81-6129-4d0c-a48e-965365d77c73")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 257.81 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "c221d401-d52b-48b2-a04d-51bd63e4045f")
+		(property "Reference" "#PWR034"
+			(at 260.35 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.59 63.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 257.81 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aadb5d60-8b75-4555-83e9-ddbd96624044")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.11 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "a0f455f7-f6cb-4cdb-bd89-d4f4e97a7ff8")
+		(property "Reference" "#PWR040"
+			(at 247.65 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.89 80.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245.11 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f6f737f-33d0-4d68-a28f-6babf36bd704")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 257.81 72.39) (xy 267.97 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c3adc84-e59f-4cc5-9ea1-24651f76e557")
+	)
+	(wire
+		(pts
+			(xy 267.97 72.39) (xy 270.51 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d96f6d-74a6-4595-9ceb-05bc7ea38d08")
+	)
+	(wire
+		(pts
+			(xy 267.97 68.58) (xy 267.97 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adf86363-6db9-4256-a5d3-8dd96c517777")
+	)
+	(junction
+		(at 267.97 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d08604fc-b875-497a-8d74-be64b74a68ac")
+	)
+	(label "RTC_INT"
+		(at 270.51 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45142ba6-30e5-4ae8-921d-1d1b873f1fa2")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 267.97 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "f08328ca-c504-4849-8509-9e1fcfbdb889")
+		(property "Reference" "#PWR041"
+			(at 270.51 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 269.75 59.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe83d10a-7b42-4d23-b26e-ec55cffb70f9")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 232.41 74.93) (xy 218.44 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d41510f7-c1db-411b-a33b-34dc56d9dca7")
+	)
+	(wire
+		(pts
+			(xy 218.44 74.93) (xy 218.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d6984b-487f-420d-86bd-517a28d3f8d6")
+	)
+	(wire
+		(pts
+			(xy 232.41 77.47) (xy 226.06 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f19d48-865a-4968-af5e-62311efaf23a")
+	)
+	(wire
+		(pts
+			(xy 226.06 77.47) (xy 226.06 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db54b342-85b4-4b48-902d-01ad3f7b6d23")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "fcbe51d6-e1ea-49ee-96b3-a66bb0e65f14")
+		(property "Reference" "#PWR042"
+			(at 224.79 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.03 87.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "137a511e-815d-44b1-b0f0-d9f2b58c9ce4")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "RTC BQ32000 + 1F5 süper kapasitör"
+		(exclude_from_sim no)
+		(at 203.2 33.02 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "69df3c2a-d0fc-462b-89f9-2488a0bebc08")
+	)
+	(text "C33 Korchip DCL5R5155HF 1.5F/5.5V: BQ32000 trickle charge ile şarj.\nFW: TCHE=0x5, TCH2=1, TCFE=1 -> VBACK ~3.3V, ~3 hafta yedek.\nY1 ABS25 CL=12.5pF: dahili yük kapasitesi, harici C YOK."
+		(exclude_from_sim no)
+		(at 203.2 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b156305a-b4d1-4046-aba3-087d7ad97fe6")
 	)
 )

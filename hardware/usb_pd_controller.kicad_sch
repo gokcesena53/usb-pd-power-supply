@@ -3130,402 +3130,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power_Supply_Custom:IRF7855_SO8"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_GSD"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, gate/source/drain"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "IRF7855_SO8_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "IRF7855_SO8_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Reference_Voltage:TL431DBZ"
 			(pin_numbers
 				(hide yes)
@@ -3971,7 +3575,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Energy:INA228"
+		(symbol "Sensor_Energy:INA226"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3987,7 +3591,7 @@
 					)
 				)
 			)
-			(property "Value" "INA228"
+			(property "Value" "INA226"
 				(at 3.81 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4008,7 +3612,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina228.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
 				(at 8.89 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4019,7 +3623,7 @@
 					)
 				)
 			)
-			(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-85V) with I2C, SMBus-, and PMBus-Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4030,7 +3634,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "ADC I2C 20-Bit Oversampling Current Shunt"
+			(property "ki_keywords" "ADC I2C 16-Bit Oversampling Current Shunt"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4052,7 +3656,7 @@
 					)
 				)
 			)
-			(symbol "INA228_0_1"
+			(symbol "INA226_0_1"
 				(rectangle
 					(start 7.62 10.16)
 					(end -7.62 -10.16)
@@ -4065,7 +3669,7 @@
 					)
 				)
 			)
-			(symbol "INA228_1_1"
+			(symbol "INA226_1_1"
 				(pin input line
 					(at 10.16 7.62 180)
 					(length 2.54)
@@ -4564,307 +4168,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Q_NMOS_GSD"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_GSD"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, gate/source/drain"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_GSD_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_GSD_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -5234,6 +4537,184 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Power_Supply_Custom:SQJB60EP" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "Q" (at 5.08 1.905 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SQJB60EP" (at 5.08 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 5.08 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.vishay.com/docs/77774/sqjb60ep.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "Dual N-channel MOSFET, 60 V, 12 mOhm, PowerPAK SO-8L Dual" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "ki_keywords" "transistor NMOS N-MOS N-MOSFET dual" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "SQJB60EP_0_1" (polyline (pts (xy 0.254 1.905) (xy 0.254 -1.905)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.254 0) (xy -2.54 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.762 2.286) (xy 0.762 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.762 0.508) (xy 0.762 -0.508)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.762 -1.27) (xy 0.762 -2.286)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 1.651 0) (radius 2.794) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 2.54 2.54) (xy 2.54 1.778)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.54 1.778) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 2.54 -1.778) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.921 0.381) (xy 3.683 0.381)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "SQJB60EP_1_1" (pin input line (at -5.08 0 0) (length 2.54) (name "G" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))) hide)) (symbol "SQJB60EP_2_1" (pin input line (at -5.08 0 0) (length 2.54) (name "G" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))) hide)) (embedded_fonts no))
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 322.58 139.7)
@@ -5411,7 +4892,7 @@
 		)
 		(uuid "badac4e0-6379-48f1-94ca-d2786e9507bf")
 	)
-	(text "INA228 OLCUM + PANEL CIKISI"
+	(text "INA226 OLCUM + PANEL CIKISI"
 		(exclude_from_sim no)
 		(at 293.37 21.59 0)
 		(effects
@@ -9151,7 +8632,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 35.56 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -9208,7 +8689,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
+		(lib_id "Power_Supply_Custom:SQJB60EP")
 		(at 236.22 34.29 90)
 		(unit 1)
 		(body_style 1)
@@ -9229,7 +8710,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60V 4mR TBD"
+		(property "Value" "SQJB60EP"
 			(at 231.14 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9251,7 +8732,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/77774/sqjb60ep.pdf"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9262,7 +8743,7 @@
 				)
 			)
 		)
-		(property "Description" "TBD"
+		(property "Description" "Dual N-channel MOSFET, 60 V, 12 mOhm, PowerPAK SO-8L Dual"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9284,7 +8765,7 @@
 				)
 			)
 		)
-		(property "Subcategory" "FETs, MOSFETs - Single"
+		(property "Subcategory" "FETs, MOSFETs - Arrays"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9295,7 +8776,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Vishay Siliconix"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9306,7 +8787,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "SQJB60EP-T1_GE3"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9317,7 +8798,7 @@
 				)
 			)
 		)
-		(property "Package" "TBD"
+		(property "Package" "PowerPAK SO-8L Dual"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9328,7 +8809,7 @@
 				)
 			)
 		)
-		(property "MountingType" "TBD"
+		(property "MountingType" "Surface Mount"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9361,7 +8842,7 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
+		(property "OperatingTemp" "-55C...+175C"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9372,7 +8853,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "1.14mm max"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9383,7 +8864,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "Parca secilmedi; 60V / 4mOhm hedefi ile aranacak."
+		(property "DesignNote" "Footprint dogrulanmadi: PowerPAK SO-8L DUAL land pattern KiCad'de yok (Package_SO:PowerPAK_SO-8_Dual L-disi varyant ve drain pinlerini 5/6 numaralandirir, uymaz). Vishay doc 63817 ile cizilecek."
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9394,7 +8875,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 700940; stok 107664 (21.09.2026); Uygun. Seçim raporu: design_decisions/reports/sqjb60ep-20260921. Footprint henüz atanmamış."
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9405,7 +8886,7 @@
 				)
 			)
 		)
-		(property "AssemblyNote" "TBD"
+		(property "AssemblyNote" "Leadless paket; elle lehimleme onerilmiyor (datasheet not e)."
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9438,7 +8919,7 @@
 				)
 			)
 		)
-		(property "CurrentID" "TBD"
+		(property "CurrentID" "30A"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9449,7 +8930,7 @@
 				)
 			)
 		)
-		(property "RdsOn" "4mOhm"
+		(property "RdsOn" "12mOhm"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9460,7 +8941,7 @@
 				)
 			)
 		)
-		(property "VgsThreshold" "TBD"
+		(property "VgsThreshold" "1.5-2.5V"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9471,7 +8952,7 @@
 				)
 			)
 		)
-		(property "GateCharge" "TBD"
+		(property "GateCharge" "18nC"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9482,7 +8963,7 @@
 				)
 			)
 		)
-		(property "ThermalResistance" "TBD"
+		(property "ThermalResistance" "RthJA 85C/W, RthJC 3.1C/W"
 			(at 236.22 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9494,13 +8975,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "a5940d8a-3ef3-4685-a1e8-77f771cc3cc5")
+			(uuid "e469db8f-eb51-5777-8a53-99094e3ba7eb")
 		)
 		(pin "2"
-			(uuid "5fc9051a-07ca-45cc-86e8-5e4284d55d1f")
+			(uuid "a33c7f4e-a4e3-5313-a8b9-bdaef787161f")
 		)
-		(pin "3"
-			(uuid "1ed62f61-74ac-4ed0-b94d-c4319dfa2a0b")
+		(pin "7"
+			(uuid "3ba3f88e-2357-5121-a918-829860222ebc")
+		)
+		(pin "8"
+			(uuid "54636f14-8870-50f8-ad32-ce641171974e")
 		)
 		(instances
 			(project "gopo"
@@ -9533,7 +9017,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k2"
 			(at 294.64 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9600,7 +9084,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9611,7 +9095,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RC1005F1022CS"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9688,7 +9172,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "AOZ1284 FB ust direnci. R40=3k24 ile VOUT=0.8*(1+10.2/3.24)=3.3185V (+%0.56, VFB toleransi +/-%1.5 icinde)."
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9700,7 +9184,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 695131; stok 5865 (21.09.2026); Muadil. 21.09 üçüncü tur: R40 3,24k ile birlikte AOZ1284 çıkışını 3,3185V'ta tutmak için 10k → 10,2k (bkz. R40)."
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9722,7 +9206,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "+/-0.1%"
+		(property "Tolerance" "+/-1%"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9733,7 +9217,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9744,7 +9228,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9755,7 +9239,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9766,7 +9250,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 297.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -10040,7 +9524,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10051,7 +9535,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RC0402JR-07820RL"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10139,7 +9623,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 423409; stok 92000 (21.09.2026); Uygun. 0402 820R yalnız %5 stokta."
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10161,7 +9645,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-5%"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10172,7 +9656,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10183,7 +9667,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10194,7 +9678,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10205,7 +9689,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10400,7 +9884,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 210.82 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10411,7 +9895,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 210.82 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10500,7 +9984,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 210.82 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10522,7 +10006,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 210.82 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10669,7 +10153,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10680,7 +10164,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "HP02WAF4701TCE"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10768,7 +10252,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10790,7 +10274,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10801,7 +10285,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10812,7 +10296,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10823,7 +10307,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10834,7 +10318,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "High Power Thick Film"
 			(at 350.52 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10962,7 +10446,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 200.66 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11029,7 +10513,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 198.12 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -11040,7 +10524,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32B475KBJNNNE"
 			(at 198.12 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -11117,7 +10601,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "X7R; C12+C13 efektif kapasite 28V'ta >=10uF olmali, MPN dogrulanacak."
+		(property "DesignNote" "Ortak secim 4u7 50V X7R 1210 (1210 10u 50V stokta yok). V_PRE: 4 adet ~11uF efektif @28V; boost dongusu olcumle dogrulanmali."
 			(at 198.12 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -11129,7 +10613,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1206577; stok 37121 (21.09.2026); Muadil. 21.09 üçüncü tur: Ortak seçim: 1210 4,7 µF / 50V X7R (1210'da 10 µF 50V stokta yok; 2220 10 µF 100V C5750X7S2A106M230KB var ama tanesi 122,6 TL). C8 footprint'i 0402 → 1210. V_PRE'de 4 adet (C12,C13,C27,C28) = 18,8 µF nominal, 28V'ta ~11 µF efektif → 'C12+C13 ≥10 µF' hedefinin karşılığı dört parçayla sağlanır; 5,02V boost modunda ~18 µF efektif (eski 2×10 µF ile eşdeğer), TPS55340 döngüsü ölçümle doğrulanmalı. PD_VOUT'ta C8+C25 = 9,4 µF + C29; toplam cSnkBulkPd ≤100 µF içinde."
 			(at 198.12 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -11151,7 +10635,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 198.12 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -11243,7 +10727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11298,7 +10782,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11309,7 +10793,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL10B224KA8NNNC"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11320,7 +10804,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "0603 (1608 Metric)"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11386,7 +10870,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "AP74502Q VCAP-VIN arasi; VCAP-VSRC max 13.9V, VCAP-VIN abs max 15V -> 25V."
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11397,7 +10881,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 15507; stok 664332 (21.09.2026); Uygun. 21.09 üçüncü tur: Gerilim kontrolü (AP74502Q datasheet DS47093): kondansatör VCAP–VIN arasında; VCAP−VSRC şarj pompası en fazla 13,9V, VCAP–VIN mutlak maksimum 15V. 25V parça ~1,7x pay verir. 0402'de 220 nF en fazla 10V → 0603'e çıkıldı. 14V'ta DC-bias ile ~150 nF kalır, datasheet minimumu 0,1 µF."
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11419,7 +10903,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11441,7 +10925,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11647,7 +11131,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11658,7 +11142,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF1272TCE"
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11747,7 +11231,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 506317; stok 18380 (21.09.2026); Uygun."
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11780,7 +11264,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11791,7 +11275,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11802,7 +11286,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11813,7 +11297,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 227.33 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11940,7 +11424,7 @@
 				)
 			)
 		)
-		(property "Value" "SS34 TBD"
+		(property "Value" "SX36"
 			(at 115.57 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12005,7 +11489,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "PANJIT"
 			(at 115.57 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12016,7 +11500,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "SX36_R1_00001"
 			(at 115.57 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12104,7 +11588,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 574842; stok 437 (21.09.2026); Uygun. SS34 Özdisan'da yalnız SMC kılıfta var. SMA'da 3A/60V seçildi (V_PRE ~28V için pay). Alternatifler: MBRA340T3G 40V (191 stok), BX310 100V (19411 stok)."
 			(at 115.57 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12197,10 +11681,10 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
+		(lib_id "Power_Supply_Custom:SQJB60EP")
 		(at 264.16 34.29 270)
 		(mirror x)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12208,7 +11692,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1aed7b58-e41b-4f1a-ab31-a6cbeea8ee65")
-		(property "Reference" "Q6"
+		(property "Reference" "Q5"
 			(at 259.08 24.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12219,7 +11703,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60V 4mR TBD"
+		(property "Value" "SQJB60EP"
 			(at 259.08 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12241,7 +11725,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/77774/sqjb60ep.pdf"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12252,7 +11736,7 @@
 				)
 			)
 		)
-		(property "Description" "TBD"
+		(property "Description" "Dual N-channel MOSFET, 60 V, 12 mOhm, PowerPAK SO-8L Dual"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12274,7 +11758,7 @@
 				)
 			)
 		)
-		(property "Subcategory" "FETs, MOSFETs - Single"
+		(property "Subcategory" "FETs, MOSFETs - Arrays"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12285,7 +11769,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Vishay Siliconix"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12296,7 +11780,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "SQJB60EP-T1_GE3"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12307,7 +11791,7 @@
 				)
 			)
 		)
-		(property "Package" "TBD"
+		(property "Package" "PowerPAK SO-8L Dual"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12318,7 +11802,7 @@
 				)
 			)
 		)
-		(property "MountingType" "TBD"
+		(property "MountingType" "Surface Mount"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12351,7 +11835,7 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
+		(property "OperatingTemp" "-55C...+175C"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12362,7 +11846,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "1.14mm max"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12373,7 +11857,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "Parca secilmedi; 60V / 4mOhm hedefi ile aranacak."
+		(property "DesignNote" "Footprint dogrulanmadi: PowerPAK SO-8L DUAL land pattern KiCad'de yok (Package_SO:PowerPAK_SO-8_Dual L-disi varyant ve drain pinlerini 5/6 numaralandirir, uymaz). Vishay doc 63817 ile cizilecek."
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12384,7 +11868,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 700940; stok 107664 (21.09.2026); Uygun. Seçim raporu: design_decisions/reports/sqjb60ep-20260921. Footprint henüz atanmamış."
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12395,7 +11879,7 @@
 				)
 			)
 		)
-		(property "AssemblyNote" "TBD"
+		(property "AssemblyNote" "Leadless paket; elle lehimleme onerilmiyor (datasheet not e)."
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12428,7 +11912,7 @@
 				)
 			)
 		)
-		(property "CurrentID" "TBD"
+		(property "CurrentID" "30A"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12439,7 +11923,7 @@
 				)
 			)
 		)
-		(property "RdsOn" "4mOhm"
+		(property "RdsOn" "12mOhm"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12450,7 +11934,7 @@
 				)
 			)
 		)
-		(property "VgsThreshold" "TBD"
+		(property "VgsThreshold" "1.5-2.5V"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12461,7 +11945,7 @@
 				)
 			)
 		)
-		(property "GateCharge" "TBD"
+		(property "GateCharge" "18nC"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12472,7 +11956,7 @@
 				)
 			)
 		)
-		(property "ThermalResistance" "TBD"
+		(property "ThermalResistance" "RthJA 85C/W, RthJC 3.1C/W"
 			(at 264.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12482,21 +11966,24 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "9a5586d5-4e83-4067-bab4-0c493eee434d")
-		)
-		(pin "2"
-			(uuid "a54c19b1-6e46-414b-8ca4-53d023881d89")
 		)
 		(pin "3"
-			(uuid "a395bfaa-bb73-4eff-b489-891bb875c653")
+			(uuid "e3bb4d3a-332a-5ed5-b307-2ead67bbc84e")
+		)
+		(pin "4"
+			(uuid "e8b81a3d-2430-55b1-a93a-61c5b5227ba6")
+		)
+		(pin "5"
+			(uuid "0e3f15f1-e584-5746-abad-a5a5ee57f968")
+		)
+		(pin "6"
+			(uuid "e67963ce-1266-51dd-9a00-e256c4d08b25")
 		)
 		(instances
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0"
-					(reference "Q6")
-					(unit 1)
+					(reference "Q5")
+					(unit 2)
 				)
 			)
 		)
@@ -12669,7 +12156,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 72.39 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12680,7 +12167,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL05B473KO5NNNC"
 			(at 72.39 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12768,7 +12255,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 443226; stok 48227 (21.09.2026); Uygun."
 			(at 72.39 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12790,7 +12277,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 72.39 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12801,7 +12288,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "16V"
 			(at 72.39 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12812,7 +12299,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 72.39 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12937,7 +12424,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -12948,7 +12435,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RT0402BRD071KL"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13036,7 +12523,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1212342; stok 37995 (21.09.2026); Uygun. 0402 1k %1 stokta yok; %0,1 ince film seçildi."
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13058,7 +12545,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13069,7 +12556,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13080,7 +12567,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13091,7 +12578,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-25ppm/C"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13102,7 +12589,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 147.32 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13316,7 +12803,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): İndekste yok. 21.09 ikinci kontrol: binding post / banana kategorisi hâlâ indekslenmemiş; '108-09' araması sonuç vermedi."
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -13639,7 +13126,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13650,7 +13137,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13738,7 +13225,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13760,7 +13247,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13771,7 +13258,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13782,7 +13269,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13793,7 +13280,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13804,7 +13291,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 166.37 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -14078,7 +13565,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14089,7 +13576,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14177,7 +13664,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14199,7 +13686,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14210,7 +13697,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14221,7 +13708,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14232,7 +13719,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14243,7 +13730,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 367.03 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14291,7 +13778,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 133.35 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14357,7 +13844,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 130.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -14368,7 +13855,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32B475KBJNNNE"
 			(at 130.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -14445,7 +13932,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "Ortak secim 4u7 50V X7R 1210 (1210 10u 50V stokta yok). V_PRE: 4 adet ~11uF efektif @28V; boost dongusu olcumle dogrulanmali."
 			(at 130.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -14456,7 +13943,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1206577; stok 37121 (21.09.2026); Muadil. 21.09 üçüncü tur: Ortak seçim: 1210 4,7 µF / 50V X7R (1210'da 10 µF 50V stokta yok; 2220 10 µF 100V C5750X7S2A106M230KB var ama tanesi 122,6 TL). C8 footprint'i 0402 → 1210. V_PRE'de 4 adet (C12,C13,C27,C28) = 18,8 µF nominal, 28V'ta ~11 µF efektif → 'C12+C13 ≥10 µF' hedefinin karşılığı dört parçayla sağlanır; 5,02V boost modunda ~18 µF efektif (eski 2×10 µF ile eşdeğer), TPS55340 döngüsü ölçümle doğrulanmalı. PD_VOUT'ta C8+C25 = 9,4 µF + C29; toplam cSnkBulkPd ≤100 µF içinde."
 			(at 130.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -14478,7 +13965,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 130.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -14500,7 +13987,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 130.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -15123,7 +14610,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. İdeal diyot kategorisi indekste; parça yok. Stokta yalnız LM74610/LM74801/TPS2115 var (farklı kılıf/işlev)."
 			(at 208.28 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -15321,7 +14808,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3k20"
+		(property "Value" "3k24"
 			(at 294.64 203.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15388,7 +14875,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Panasonic"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15399,7 +14886,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "ERJ2RKF3241X"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15476,7 +14963,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "AOZ1284 FB alt direnci. %1 serisinde 3k20 yok; R39=10k2 ile VOUT=3.3185V."
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15488,7 +14975,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 494659; stok 76745 (21.09.2026); Muadil. 21.09 üçüncü tur: AOZ1284 FB bölücüsü (R39 üst, R40 alt, VFB 0,8V). %1'de 3,2k yok → R40 = 3,24k; çıkışı korumak için R39 10k → 10,2k. VOUT = 0,8×(1+10,2/3,24) = 3,3185V (eski 3,300V; +%0,56, AOZ1284 VFB toleransı ±%1,5 içinde). R46 ile aynı MPN."
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15510,7 +14997,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "+/-0.1%"
+		(property "Tolerance" "+/-1%"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15521,7 +15008,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15532,7 +15019,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15543,7 +15030,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15554,7 +15041,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Precision Thick Film"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -15768,7 +15255,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 104.14 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15910,7 +15397,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Vishay"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -15921,7 +15408,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CRCW040212K0FKED"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16009,7 +15496,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 519356; stok 6761 (21.09.2026); Uygun."
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16031,7 +15518,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16042,7 +15529,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16053,7 +15540,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16064,7 +15551,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16075,7 +15562,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -16449,7 +15936,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 58.42 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -16674,7 +16161,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16685,7 +16172,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16773,7 +16260,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16795,7 +16282,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16806,7 +16293,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16817,7 +16304,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -16941,7 +16428,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -16952,7 +16439,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CQ02WGF1003TCE"
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -17041,7 +16528,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 587906; stok 99900 (21.09.2026); Uygun."
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -17074,7 +16561,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -17085,7 +16572,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -17096,7 +16583,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -17107,7 +16594,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 214.63 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -17480,7 +16967,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 645605; stok 449 (21.09.2026); Uygun."
 			(at 92.71 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -18088,7 +17575,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Supply_Custom:IRF7855_SO8")
+		(lib_id "Power_Supply_Custom:SQJB60EP")
 		(at 93.98 54.61 90)
 		(unit 1)
 		(body_style 1)
@@ -18099,7 +17586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "539b7675-891a-4a94-969c-041950d30268")
-		(property "Reference" "Q4"
+		(property "Reference" "Q3"
 			(at 93.98 41.91 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18109,7 +17596,7 @@
 				)
 			)
 		)
-		(property "Value" "IRF7855TRPBF"
+		(property "Value" "SQJB60EP"
 			(at 93.98 44.45 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18119,7 +17606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" ""
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18130,7 +17617,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
+		(property "Datasheet" "https://www.vishay.com/docs/77774/sqjb60ep.pdf"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18141,7 +17628,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
+		(property "Description" "Dual N-channel MOSFET, 60 V, 12 mOhm, PowerPAK SO-8L Dual"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18163,7 +17650,7 @@
 				)
 			)
 		)
-		(property "Subcategory" "FETs, MOSFETs - Single"
+		(property "Subcategory" "FETs, MOSFETs - Arrays"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18174,7 +17661,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Infineon Technologies"
+		(property "Manufacturer" "Vishay Siliconix"
 			(at 93.98 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -18185,7 +17672,7 @@
 				)
 			)
 		)
-		(property "MPN" "IRF7855TRPBF"
+		(property "MPN" "SQJB60EP-T1_GE3"
 			(at 93.98 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -18196,7 +17683,7 @@
 				)
 			)
 		)
-		(property "Package" "SOIC-8"
+		(property "Package" "PowerPAK SO-8L Dual"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18240,7 +17727,7 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
+		(property "OperatingTemp" "-55C...+175C"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18251,7 +17738,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "1.14mm max"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18262,7 +17749,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "Prototip secimi; AP33772S kapi seviyesiyle kayip/SOA acik."
+		(property "DesignNote" "Footprint dogrulanmadi: PowerPAK SO-8L DUAL land pattern KiCad'de yok (Package_SO:PowerPAK_SO-8_Dual L-disi varyant ve drain pinlerini 5/6 numaralandirir, uymaz). Vishay doc 63817 ile cizilecek."
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18273,7 +17760,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 700940; stok 107664 (21.09.2026); Uygun. Seçim raporu: design_decisions/reports/sqjb60ep-20260921. Footprint henüz atanmamış."
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18284,7 +17771,7 @@
 				)
 			)
 		)
-		(property "AssemblyNote" "TBD"
+		(property "AssemblyNote" "Leadless paket; elle lehimleme onerilmiyor (datasheet not e)."
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18306,7 +17793,7 @@
 				)
 			)
 		)
-		(property "VoltageDS" "TBD"
+		(property "VoltageDS" "60V"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18317,7 +17804,7 @@
 				)
 			)
 		)
-		(property "CurrentID" "TBD"
+		(property "CurrentID" "30A"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18328,7 +17815,7 @@
 				)
 			)
 		)
-		(property "RdsOn" "TBD"
+		(property "RdsOn" "12mOhm"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18339,7 +17826,7 @@
 				)
 			)
 		)
-		(property "VgsThreshold" "TBD"
+		(property "VgsThreshold" "1.5-2.5V"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18350,7 +17837,7 @@
 				)
 			)
 		)
-		(property "GateCharge" "TBD"
+		(property "GateCharge" "18nC"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18361,7 +17848,7 @@
 				)
 			)
 		)
-		(property "ThermalResistance" "TBD"
+		(property "ThermalResistance" "RthJA 85C/W, RthJC 3.1C/W"
 			(at 93.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18371,35 +17858,23 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "7"
-			(uuid "91651182-5433-40c7-a438-919dc2ae5b0e")
-		)
-		(pin "4"
-			(uuid "9eb96577-25d4-4e51-b288-030cdc85c8c8")
 		)
 		(pin "1"
-			(uuid "776c792c-47e0-47a4-a616-6a28aa667554")
+			(uuid "849d7092-5657-5f37-8fcd-88f0d69d21f9")
 		)
 		(pin "2"
-			(uuid "b416df46-b028-4053-ab94-e3942766eb90")
+			(uuid "3a2fc307-89b7-561b-b1f8-391b3cb169fe")
 		)
-		(pin "5"
-			(uuid "8de34fe2-a79a-47ac-90a0-5f97aacd4444")
-		)
-		(pin "3"
-			(uuid "556e57a8-0d98-42cb-9541-ce3bc8ca4d75")
+		(pin "7"
+			(uuid "9c65dc0b-7346-5951-bc39-9947424c5898")
 		)
 		(pin "8"
-			(uuid "5459542c-1246-4449-a822-9c2ba779789c")
-		)
-		(pin "6"
-			(uuid "7d4d4b22-3935-4723-b3a3-cfb1d73cff6e")
+			(uuid "4b650aba-a61b-503c-9ff6-fc4385bbb2c7")
 		)
 		(instances
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0"
-					(reference "Q4")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -18494,7 +17969,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18505,7 +17980,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B2002TCC"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18593,7 +18068,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 570296; stok 3225 (21.09.2026); Uygun. 0402 20k %1 stokta yok; %0,1 seçildi (%5 alternatif RC0402JR-0720KL)."
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18615,7 +18090,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18626,7 +18101,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18637,7 +18112,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18648,7 +18123,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18659,7 +18134,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 125.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18771,7 +18246,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "TDK (EPCOS)"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18782,7 +18257,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "B82422H1682K000"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18870,7 +18345,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 489001; stok 10 (21.09.2026); Uyarı. Footprint'e uyan tek parça. TPS55340 boost bobini için 1210 çip bobinin akımı (yüzlerce mA) yetersiz; tasarımda bobin/footprint kontrolü gerekli. Stok 10."
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -19139,7 +18614,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Panasonic"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19150,7 +18625,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "ERJ2RKF2201X"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19238,7 +18713,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 494655; stok 67988 (21.09.2026); Uygun."
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19260,7 +18735,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19271,7 +18746,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19282,7 +18757,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19293,7 +18768,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19304,7 +18779,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Precision Thick Film"
 			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -19498,7 +18973,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19509,7 +18984,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "EMK105BJ105KVHF"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19597,7 +19072,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 623573; stok 5005 (21.09.2026); Uygun. C4 (PD_5V) için ≥10V şartını karşılar. C9: BQ32000 VCC dekuplajı, datasheet ≥1 µF istiyor (100n → 1u0)."
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19619,7 +19094,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19630,7 +19105,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "10V"
+		(property "VoltageRating" "16V"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19641,7 +19116,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X5R"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19766,7 +19241,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 73.66 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -19777,7 +19252,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL21A225KB9LNNC"
 			(at 73.66 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -19865,7 +19340,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 522705; stok 52721 (21.09.2026); Uygun. 21.09 üçüncü tur: Değer değiştirerek X7R'ye geçmek mümkün değil: 0805 50V X7R'de yalnız 1 µF var ve %10 toleransla 0,9 µF'a iner, cSnkBulk ≥1 µF alt sınırını ihlal eder. 2,2 µF X5R vSafe5V'ta ~2 µF efektif kalır (1–10 µF aralığında); X7R şartının amacı olan DC-bias altında ≥1 µF garantisi sağlanıyor. Bu yüzden değer korunarak mevcut parça bırakıldı. Daha fazla pay istenirse 4,7 µF 50V X5R CL21A475KBQNNNE (421250 stok) de cSnkBulk içinde kalır."
 			(at 73.66 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -19887,7 +19362,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 73.66 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -19909,7 +19384,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X5R"
 			(at 73.66 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -20133,7 +19608,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. Özdisan indeksinde (stoksuz dahil) bulunamadı. Başka tedarikçiden alınmalı."
 			(at 81.28 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -20515,7 +19990,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20526,7 +20001,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF6201TCE"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20614,7 +20089,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 359873; stok 19300 (21.09.2026); Uygun."
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20636,7 +20111,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20647,7 +20122,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20658,7 +20133,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20669,7 +20144,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20680,7 +20155,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 101.6 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20794,7 +20269,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 330.2 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -20805,7 +20280,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 330.2 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -20893,7 +20368,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 330.2 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -20915,7 +20390,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 330.2 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -20926,7 +20401,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 330.2 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -20937,7 +20412,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 330.2 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -21060,7 +20535,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "PANJIT"
 			(at 247.65 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -21071,7 +20546,7 @@
 				)
 			)
 		)
-		(property "MPN" "BZT52C12"
+		(property "MPN" "BZT52-C12_R1_00001"
 			(at 247.65 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -21159,7 +20634,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 560765; stok 4720 (21.09.2026); Uygun."
 			(at 247.65 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -21307,7 +20782,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Energy:INA228")
+		(lib_id "Sensor_Energy:INA226")
 		(at 322.58 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -21328,7 +20803,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "INA228"
+		(property "Value" "INA226"
 			(at 318.77 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21350,7 +20825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina228.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina226.pdf"
 			(at 322.58 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -21361,7 +20836,7 @@
 				)
 			)
 		)
-		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-85V) with I2C, SMBus-, and PMBus-Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
 			(at 322.58 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -21405,7 +20880,7 @@
 				)
 			)
 		)
-		(property "MPN" "INA228AIDGSR"
+		(property "MPN" "INA226AIDGSR"
 			(at 322.58 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -21493,7 +20968,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 640350; stok 9865 (21.09.2026); Uygun. Seçim raporu: design_decisions/reports/ina226-20260921."
 			(at 322.58 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -21774,7 +21249,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Panasonic"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21785,7 +21260,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "ERJ2RKF2001X"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21873,7 +21348,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 518487; stok 34590 (21.09.2026); Uygun."
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21895,7 +21370,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21906,7 +21381,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21917,7 +21392,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21928,7 +21403,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21939,7 +21414,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Precision Thick Film"
 			(at 115.57 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -22051,7 +21526,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Isabellenhütte"
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22062,7 +21537,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "BVT-I-R005-1.0"
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22150,7 +21625,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 536256; stok 774 (21.09.2026); Uygun. 21.09 dördüncü tur: 'Hassas ve Şönt Dirençler' kategorisi indekslendi; stok 774 (+25 yolda) doğrulandı. Datasheet (BVT 2512): 6,35×3,05 mm, 5 mΩ ±%1, TCR 0±50 ppm/K, 2,5 W @70°C / 1,5 W @100°C terminal; 5 A'de kayıp 0,125 W. Footprint notu: KiCad R_2512_6332Metric mekanik olarak uyar; üretici ped önerisi farklı (toplam 7 mm, genişlik 3,4 mm, iç aralık 1,8 mm), ısı ve Kelvin ölçüm noktası için özel footprint önerilir. Alternatif: VMS-R005-1.0-U (Isabellenhütte, 2512, 3 W, TCR ±20 ppm/K, 1473 stok, 54,08 TL) — ped düzeni VMS datasheet'ine göre kontrol edilmeli."
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22172,7 +21647,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22183,7 +21658,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "1W"
+		(property "PowerRating" "2.5W @70C / 1.5W @100C"
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22194,7 +21669,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "0+/-50ppm/C"
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22216,7 +21691,18 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Metal Element (Isaohm)"
+			(at 48.26 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VoltageRating" "N/A"
 			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22410,7 +21896,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22421,7 +21907,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "HP02WAF4701TCE"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22509,7 +21995,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22531,7 +22017,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22542,7 +22028,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22553,7 +22039,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22564,7 +22050,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22575,7 +22061,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "High Power Thick Film"
 			(at 350.52 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -22769,7 +22255,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22780,7 +22266,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF2323TCE"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22868,7 +22354,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 506426; stok 6600 (21.09.2026); Uygun."
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22890,7 +22376,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22901,7 +22387,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22912,7 +22398,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22923,7 +22409,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -22934,7 +22420,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 166.37 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -23062,7 +22548,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TL431BIDBZR"
+		(property "Value" "TL431AIDBZR"
 			(at 179.07 227.33 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23140,7 +22626,7 @@
 				)
 			)
 		)
-		(property "MPN" "TL431BIDBZR"
+		(property "MPN" "TL431AIDBZR"
 			(at 185.42 215.9 90)
 			(hide yes)
 			(show_name no)
@@ -23229,7 +22715,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 341981; stok 2428 (21.09.2026); Muadil. B sınıfı (%0,5) stokta yok. Aynı TI DBZ pin dizilişli A sınıfı (%1) seçildi; V_CL kenetleme toleransı %1'e çıkar. %0,5 gerekiyorsa TL431LIBQDBZRQ1 (2647 stok, 32,74 TL) var, pin dizilişi doğrulanmalı."
 			(at 185.42 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -23697,7 +23183,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23708,7 +23194,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CQ02WGF1003TCE"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23796,7 +23282,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 587906; stok 99900 (21.09.2026); Satın alınmaz. DNP; dizilmez."
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23818,7 +23304,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23829,7 +23315,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23840,7 +23326,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23851,7 +23337,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23862,7 +23348,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -23976,7 +23462,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -23987,7 +23473,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF3012TCE"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24075,7 +23561,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 506349; stok 10680 (21.09.2026); Uygun."
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24097,7 +23583,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24108,7 +23594,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24119,7 +23605,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24130,7 +23616,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24141,7 +23627,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -24255,7 +23741,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 115.57 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -24266,7 +23752,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 115.57 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -24354,7 +23840,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 115.57 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -24376,7 +23862,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 115.57 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -24387,7 +23873,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 115.57 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -24398,7 +23884,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 115.57 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -24524,7 +24010,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24535,7 +24021,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CQ02WGF1003TCE"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24624,7 +24110,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 587906; stok 99900 (21.09.2026); Uygun."
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24646,7 +24132,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24657,7 +24143,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24668,7 +24154,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24679,7 +24165,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24690,7 +24176,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 165.1 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -24805,7 +24291,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 201.93 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -24816,7 +24302,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL05B103KA5NNNC"
 			(at 201.93 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -24905,7 +24391,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 446224; stok 43984 (21.09.2026); Uygun."
 			(at 201.93 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -24927,7 +24413,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 201.93 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -24938,7 +24424,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "10V"
+		(property "VoltageRating" "25V"
 			(at 201.93 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -24949,7 +24435,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 201.93 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -24987,7 +24473,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Polarized")
 		(at 302.26 195.58 0)
 		(unit 1)
 		(body_style 1)
@@ -25019,7 +24505,18 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Description" "Polarized capacitor, hybrid polymer aluminum electrolytic"
+			(at 302.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25042,17 +24539,6 @@
 				)
 			)
 		)
-		(property "Description" "TBD"
-			(at 302.26 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Category" "Capacitors"
 			(at 302.26 195.58 0)
 			(hide yes)
@@ -25064,7 +24550,7 @@
 				)
 			)
 		)
-		(property "Subcategory" "Ceramic Capacitors"
+		(property "Subcategory" "Aluminum - Polymer Capacitors"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25075,7 +24561,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Panasonic"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25086,7 +24572,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "EEHZA1V470P"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25097,7 +24583,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "6.3x5.8mm SMD Can"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25141,7 +24627,7 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
+		(property "OperatingTemp" "-55C to 105C"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25152,7 +24638,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "5.8mm"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25163,7 +24649,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "X7R; banka efektif Cout 3.3V'ta >=44uF olmali, MPN dogrulanacak."
+		(property "DesignNote" "47uF 35V hibrit; AOZ1284 cikisinda ~56kHz ESR sifiri, R41/C19 kompanzasyonu yeniden kontrol edilmeli."
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25175,7 +24661,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1098034; stok 840 (21.09.2026); Uygun. 21.09 üçüncü tur: Ortak seçim: 47 µF / 35V hibrit polimer, ESR 60 mΩ @100 kHz, 1,3 A ripple. C29 için handoff'taki C_DAMP şartına (47 µF, 35–50V, ESR 50–100 mΩ, seramik değil) birebir uyar. C15 (+3.3V) için gerilim/ripple yeterli; ancak 60 mΩ ESR, AOZ1284 çıkışında ~56 kHz'de ESR sıfırı ekler → R41/C19 kompanzasyonu yeniden kontrol edilmeli. C15 için yalnız seramik istenirse C16 ile aynı parça (CL32A476KOJNNNE) kullanılabilir. Polarite işaretli footprint gerekir."
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25197,7 +24683,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "CapacitorType" "Hybrid Polymer Aluminum"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25208,7 +24694,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "10V"
+		(property "VoltageRating" "35V"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25219,7 +24705,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Tolerance" "+/-20%"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25230,7 +24716,29 @@
 				)
 			)
 		)
-		(property "EffectiveCapacitance" "TBD"
+		(property "ESR" "60mOhm @100kHz"
+			(at 302.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RippleCurrent" "1.3A @100kHz"
+			(at 302.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifetime" "10000h @105C"
 			(at 302.26 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -25343,7 +24851,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Isabellenhütte"
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25354,7 +24862,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "BVT-I-R005-1.0"
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25442,7 +24950,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 536256; stok 774 (21.09.2026); Uygun. 21.09 dördüncü tur: 'Hassas ve Şönt Dirençler' kategorisi indekslendi; stok 774 (+25 yolda) doğrulandı. Datasheet (BVT 2512): 6,35×3,05 mm, 5 mΩ ±%1, TCR 0±50 ppm/K, 2,5 W @70°C / 1,5 W @100°C terminal; 5 A'de kayıp 0,125 W. Footprint notu: KiCad R_2512_6332Metric mekanik olarak uyar; üretici ped önerisi farklı (toplam 7 mm, genişlik 3,4 mm, iç aralık 1,8 mm), ısı ve Kelvin ölçüm noktası için özel footprint önerilir. Alternatif: VMS-R005-1.0-U (Isabellenhütte, 2512, 3 W, TCR ±20 ppm/K, 1473 stok, 54,08 TL) — ped düzeni VMS datasheet'ine göre kontrol edilmeli."
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25464,7 +24972,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25475,7 +24983,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "1W"
+		(property "PowerRating" "2.5W @70C / 1.5W @100C"
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25486,7 +24994,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "0+/-50ppm/C"
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25508,7 +25016,18 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Metal Element (Isaohm)"
+			(at 298.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VoltageRating" "N/A"
 			(at 298.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -25622,7 +25141,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25633,7 +25152,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF7872TCE"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25721,7 +25240,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 506387; stok 7070 (21.09.2026); Uygun."
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25743,7 +25262,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25754,7 +25273,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25765,7 +25284,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25776,7 +25295,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -25787,7 +25306,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 64.77 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -26062,7 +25581,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 312.42 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26073,7 +25592,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32A476KOJNNNE"
 			(at 312.42 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26162,7 +25681,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 423179; stok 53829 (21.09.2026); Uygun. +3.3V; 16V parça DC-bias'ta 6.3V/10V parçalardan daha fazla kapasite korur. X7R şartı varsa GRT32EC81A476ME13L (10V X6S) veya GCM32ER70J476KE19L (6.3V X7R)."
 			(at 312.42 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26184,7 +25703,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 312.42 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26195,7 +25714,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "10V"
+		(property "VoltageRating" "16V"
 			(at 312.42 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26206,7 +25725,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X5R"
 			(at 312.42 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26330,7 +25849,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 260.35 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -26341,7 +25860,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 260.35 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -26430,7 +25949,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 260.35 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -26452,7 +25971,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 260.35 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -26463,7 +25982,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "16V"
+		(property "VoltageRating" "50V"
 			(at 260.35 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -26474,7 +25993,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 260.35 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -26679,7 +26198,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Vishay"
 			(at 327.66 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -26690,7 +26209,7 @@
 				)
 			)
 		)
-		(property "MPN" "SMBJ30A"
+		(property "MPN" "SMBJ30A-E3/52"
 			(at 327.66 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -26778,7 +26297,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 507320; stok 15956 (21.09.2026); Uygun. Şema açıklaması '400W / SMA' diyor ama footprint SMB; SMB/600W parça footprint'e uyar."
 			(at 327.66 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -26980,7 +26499,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -26991,7 +26510,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CQ02WGF1003TCE"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27079,7 +26598,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 587906; stok 99900 (21.09.2026); Uygun."
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27101,7 +26620,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27112,7 +26631,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27123,7 +26642,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27134,7 +26653,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27145,7 +26664,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -27263,7 +26782,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Nexperia"
 			(at 363.22 160.02 90)
 			(hide yes)
 			(show_name no)
@@ -27274,7 +26793,7 @@
 				)
 			)
 		)
-		(property "MPN" "BSS138"
+		(property "MPN" "BSS138P,215"
 			(at 363.22 160.02 90)
 			(hide yes)
 			(show_name no)
@@ -27362,7 +26881,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 737689; stok 73553 (21.09.2026); Uygun. Jenerik BSS138 karşılığı; 60V / 360mA, SOT-23 G-S-D."
 			(at 363.22 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -27567,7 +27086,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27578,7 +27097,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27666,7 +27185,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27688,7 +27207,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27699,7 +27218,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27710,7 +27229,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27721,7 +27240,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27732,7 +27251,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -28083,7 +27602,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28094,7 +27613,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1000TCC"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28182,7 +27701,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569711; stok 7445 (21.09.2026); Uygun."
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28204,7 +27723,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28215,7 +27734,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28226,7 +27745,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28237,7 +27756,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28248,7 +27767,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 106.68 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28362,7 +27881,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28373,7 +27892,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "HP02WAF4701TCE"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28461,7 +27980,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28483,7 +28002,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28494,7 +28013,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28505,7 +28024,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28516,7 +28035,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28527,7 +28046,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "High Power Thick Film"
 			(at 375.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -28575,7 +28094,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 187.96 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28642,7 +28161,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 185.42 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -28653,7 +28172,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32B475KBJNNNE"
 			(at 185.42 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -28730,7 +28249,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "X7R; C12+C13 efektif kapasite 28V'ta >=10uF olmali, MPN dogrulanacak."
+		(property "DesignNote" "Ortak secim 4u7 50V X7R 1210 (1210 10u 50V stokta yok). V_PRE: 4 adet ~11uF efektif @28V; boost dongusu olcumle dogrulanmali."
 			(at 185.42 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -28742,7 +28261,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1206577; stok 37121 (21.09.2026); Muadil. 21.09 üçüncü tur: Ortak seçim: 1210 4,7 µF / 50V X7R (1210'da 10 µF 50V stokta yok; 2220 10 µF 100V C5750X7S2A106M230KB var ama tanesi 122,6 TL). C8 footprint'i 0402 → 1210. V_PRE'de 4 adet (C12,C13,C27,C28) = 18,8 µF nominal, 28V'ta ~11 µF efektif → 'C12+C13 ≥10 µF' hedefinin karşılığı dört parçayla sağlanır; 5,02V boost modunda ~18 µF efektif (eski 2×10 µF ile eşdeğer), TPS55340 döngüsü ölçümle doğrulanmalı. PD_VOUT'ta C8+C25 = 9,4 µF + C29; toplam cSnkBulkPd ≤100 µF içinde."
 			(at 185.42 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -28764,7 +28283,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 185.42 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -29092,7 +28611,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 446224 / 521982; stok 43984 (21.09.2026); Muadil. 21.09 üçüncü tur: 18 nF Özdisan'da hiçbir kılıfta (0402…1206, film dahil) yok; footprint büyütmek çözmüyor. Değeri korumak için 10 nF ∥ 8,2 nF = 18,2 nF (+%1) önerildi; bu, şemaya C19 yanına ikinci bir 0402 footprint eklemeyi gerektirir. Sipariş: 10n ×25 (MOQ) + 8.2n ×20 (MOQ)."
 			(at 227.33 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -29206,7 +28725,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29261,7 +28780,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29272,7 +28791,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "HP05W3F1002T5E"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29283,7 +28802,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "0805 (2012 Metric)"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29349,7 +28868,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "OUT_POS bleed. 30V OVLO esiginde 90mW; %50 azaltma ile >=0.18W, handoff >=0.25W -> 1/3W 0805."
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29360,7 +28879,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 604238; stok 710 (21.09.2026); Uygun. 21.09 üçüncü tur: Watt kontrolü: R59 OUT_POS–GND bleed. Sürekli en kötü durum OVLO eşiği ~30V → P = 30²/10k = 90 mW (28V'ta 78 mW). %50 azaltma ile ≥0,18 W; handoff ≥0,25 W istiyor. 1/3 W 0805 ikisini de karşılar, çalışma gerilimi 150V (SMBJ30A kenetleme 48V geçişlerine de pay). Footprint 0402 → 0805. Footprint korunacaksa ERJPA2J103X (0402, 1/5 W) ≥0,18 W'ı karşılar ama stok yalnız 18."
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29382,7 +28901,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29393,7 +28912,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "0.25W"
+		(property "PowerRating" "0.333W"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29404,7 +28923,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "150V"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29415,7 +28934,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29426,7 +28945,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "High Power Thick Film"
 			(at 342.9 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -29879,7 +29398,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 574723; stok 51111 (21.09.2026); Uygun."
 			(at 271.78 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -30059,7 +29578,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 200.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -30070,7 +29589,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 200.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -30158,7 +29677,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 200.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -30180,7 +29699,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 200.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -30202,7 +29721,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 200.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -30487,7 +30006,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30498,7 +30017,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "RT0402BRD071KL"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30586,7 +30105,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1212342; stok 37995 (21.09.2026); Uygun. 0402 1k %1 stokta yok; %0,1 ince film seçildi."
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30608,7 +30127,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30619,7 +30138,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30630,7 +30149,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30641,7 +30160,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-25ppm/C"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30652,7 +30171,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 259.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -30766,7 +30285,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 259.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -30777,7 +30296,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB223"
 			(at 259.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -30865,7 +30384,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 746989; stok 413880 (21.09.2026); Uygun."
 			(at 259.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -30887,7 +30406,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 259.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -30909,7 +30428,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 259.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -31115,7 +30634,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31126,7 +30645,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "PS122WF1001T4E"
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31215,7 +30734,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 746122; stok 93571 (21.09.2026); Uygun. 2W şartı (28V'ta 0.651W)."
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31237,7 +30756,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31259,7 +30778,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "500V"
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31270,7 +30789,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31281,7 +30800,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Anti-Surge Thick Film"
 			(at 165.1 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -31329,7 +30848,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 147.32 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31395,7 +30914,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 144.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -31406,7 +30925,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32B475KBJNNNE"
 			(at 144.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -31483,7 +31002,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "Ortak secim 4u7 50V X7R 1210 (1210 10u 50V stokta yok). V_PRE: 4 adet ~11uF efektif @28V; boost dongusu olcumle dogrulanmali."
 			(at 144.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -31494,7 +31013,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1206577; stok 37121 (21.09.2026); Muadil. 21.09 üçüncü tur: Ortak seçim: 1210 4,7 µF / 50V X7R (1210'da 10 µF 50V stokta yok; 2220 10 µF 100V C5750X7S2A106M230KB var ama tanesi 122,6 TL). C8 footprint'i 0402 → 1210. V_PRE'de 4 adet (C12,C13,C27,C28) = 18,8 µF nominal, 28V'ta ~11 µF efektif → 'C12+C13 ≥10 µF' hedefinin karşılığı dört parçayla sağlanır; 5,02V boost modunda ~18 µF efektif (eski 2×10 µF ile eşdeğer), TPS55340 döngüsü ölçümle doğrulanmalı. PD_VOUT'ta C8+C25 = 9,4 µF + C29; toplam cSnkBulkPd ≤100 µF içinde."
 			(at 144.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -31516,7 +31035,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 144.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -31538,7 +31057,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 144.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -31663,7 +31182,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31674,7 +31193,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF9761TCE"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31762,7 +31281,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 506310; stok 17170 (21.09.2026); Uygun."
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31784,7 +31303,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31795,7 +31314,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31806,7 +31325,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31817,7 +31336,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -31828,7 +31347,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 125.73 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -32022,7 +31541,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 101.6 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -32033,7 +31552,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 101.6 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -32121,7 +31640,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 101.6 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -32143,7 +31662,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 101.6 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -32154,7 +31673,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 101.6 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -32165,7 +31684,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 101.6 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -32224,7 +31743,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 121.92 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32235,7 +31754,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32290,7 +31809,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32301,7 +31820,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32B475KBJNNNE"
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32312,7 +31831,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "1210 (3225 Metric)"
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32378,7 +31897,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "Ortak secim 4u7 50V X7R 1210 (1210 10u 50V stokta yok). V_PRE: 4 adet ~11uF efektif @28V; boost dongusu olcumle dogrulanmali."
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32389,7 +31908,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1206577; stok 37121 (21.09.2026); Muadil. 21.09 üçüncü tur: Ortak seçim: 1210 4,7 µF / 50V X7R (1210'da 10 µF 50V stokta yok; 2220 10 µF 100V C5750X7S2A106M230KB var ama tanesi 122,6 TL). C8 footprint'i 0402 → 1210. V_PRE'de 4 adet (C12,C13,C27,C28) = 18,8 µF nominal, 28V'ta ~11 µF efektif → 'C12+C13 ≥10 µF' hedefinin karşılığı dört parçayla sağlanır; 5,02V boost modunda ~18 µF efektif (eski 2×10 µF ile eşdeğer), TPS55340 döngüsü ölçümle doğrulanmalı. PD_VOUT'ta C8+C25 = 9,4 µF + C29; toplam cSnkBulkPd ≤100 µF içinde."
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32411,7 +31930,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32433,7 +31952,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 124.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -32556,7 +32075,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Kingbright"
 			(at 113.03 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -32567,7 +32086,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "APHHS1005SURCK"
 			(at 113.03 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -32655,7 +32174,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 708179; stok 272 (21.09.2026); Uygun. 21.09 ikinci kontrolde LED kategorisi indekslendi. Renk tasarımda tanımsız; R14 2k2 ile akım ~0,6 mA olduğundan yüksek verimli kırmızı seçildi. Alternatifler: APHHS1005CGCK yeşil (190 stok, 10,63 TL), 16-213SURC/S530-A3/TR8 kırmızı (150 stok, 1,94 TL, MOQ 10, daha sönük)."
 			(at 113.03 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -32781,7 +32300,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Polarized")
 		(at 33.02 162.56 0)
 		(unit 1)
 		(body_style 1)
@@ -32813,7 +32332,18 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Description" "Polarized capacitor, hybrid polymer aluminum electrolytic"
+			(at 33.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32835,17 +32365,6 @@
 				)
 			)
 		)
-		(property "Description" "TBD"
-			(at 33.02 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Category" "Capacitors"
 			(at 33.02 162.56 0)
 			(hide yes)
@@ -32857,7 +32376,7 @@
 				)
 			)
 		)
-		(property "Subcategory" "Ceramic Capacitors"
+		(property "Subcategory" "Aluminum - Polymer Capacitors"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32868,7 +32387,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Panasonic"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32879,7 +32398,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "EEHZA1V470P"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32890,7 +32409,7 @@
 				)
 			)
 		)
-		(property "Package" "1210 (3225 Metric)"
+		(property "Package" "6.3x5.8mm SMD Can"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32934,7 +32453,7 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
+		(property "OperatingTemp" "-55C to 105C"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32945,7 +32464,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "5.8mm"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32956,7 +32475,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "PD_VOUT sonumleme (C_DAMP): 47uF, 35-50V, ESR 50-100mOhm; seramik bu isi gormez."
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32967,7 +32486,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1098034; stok 840 (21.09.2026); Uygun. 21.09 üçüncü tur: Ortak seçim: 47 µF / 35V hibrit polimer, ESR 60 mΩ @100 kHz, 1,3 A ripple. C29 için handoff'taki C_DAMP şartına (47 µF, 35–50V, ESR 50–100 mΩ, seramik değil) birebir uyar. C15 (+3.3V) için gerilim/ripple yeterli; ancak 60 mΩ ESR, AOZ1284 çıkışında ~56 kHz'de ESR sıfırı ekler → R41/C19 kompanzasyonu yeniden kontrol edilmeli. C15 için yalnız seramik istenirse C16 ile aynı parça (CL32A476KOJNNNE) kullanılabilir. Polarite işaretli footprint gerekir."
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -32989,7 +32508,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "CapacitorType" "Hybrid Polymer Aluminum"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33000,7 +32519,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "50V"
+		(property "VoltageRating" "35V"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33011,7 +32530,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Tolerance" "+/-20%"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33022,7 +32541,29 @@
 				)
 			)
 		)
-		(property "EffectiveCapacitance" "TBD"
+		(property "ESR" "60mOhm @100kHz"
+			(at 33.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RippleCurrent" "1.3A @100kHz"
+			(at 33.02 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifetime" "10000h @105C"
 			(at 33.02 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33070,7 +32611,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "4u7"
 			(at 50.8 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33136,7 +32677,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33147,7 +32688,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CL32B475KBJNNNE"
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33224,7 +32765,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "Ortak secim 4u7 50V X7R 1210 (1210 10u 50V stokta yok). V_PRE: 4 adet ~11uF efektif @28V; boost dongusu olcumle dogrulanmali."
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33235,7 +32776,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1206577; stok 37121 (21.09.2026); Muadil. 21.09 üçüncü tur: Ortak seçim: 1210 4,7 µF / 50V X7R (1210'da 10 µF 50V stokta yok; 2220 10 µF 100V C5750X7S2A106M230KB var ama tanesi 122,6 TL). C8 footprint'i 0402 → 1210. V_PRE'de 4 adet (C12,C13,C27,C28) = 18,8 µF nominal, 28V'ta ~11 µF efektif → 'C12+C13 ≥10 µF' hedefinin karşılığı dört parçayla sağlanır; 5,02V boost modunda ~18 µF efektif (eski 2×10 µF ile eşdeğer), TPS55340 döngüsü ölçümle doğrulanmalı. PD_VOUT'ta C8+C25 = 9,4 µF + C29; toplam cSnkBulkPd ≤100 µF içinde."
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33257,7 +32798,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33279,7 +32820,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33484,7 +33025,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 63.5 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33495,7 +33036,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 63.5 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33583,7 +33124,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 63.5 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33605,7 +33146,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 63.5 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33627,7 +33168,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "TBD"
+		(property "Dielectric" "X7R"
 			(at 63.5 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -33665,10 +33206,10 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Supply_Custom:IRF7855_SO8")
+		(lib_id "Power_Supply_Custom:SQJB60EP")
 		(at 114.3 54.61 270)
 		(mirror x)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33688,7 +33229,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRF7855TRPBF"
+		(property "Value" "SQJB60EP"
 			(at 121.92 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33699,7 +33240,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" ""
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33710,7 +33251,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
+		(property "Datasheet" "https://www.vishay.com/docs/77774/sqjb60ep.pdf"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33721,7 +33262,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
+		(property "Description" "Dual N-channel MOSFET, 60 V, 12 mOhm, PowerPAK SO-8L Dual"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33743,7 +33284,7 @@
 				)
 			)
 		)
-		(property "Subcategory" "FETs, MOSFETs - Single"
+		(property "Subcategory" "FETs, MOSFETs - Arrays"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33754,7 +33295,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Infineon Technologies"
+		(property "Manufacturer" "Vishay Siliconix"
 			(at 114.3 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -33765,7 +33306,7 @@
 				)
 			)
 		)
-		(property "MPN" "IRF7855TRPBF"
+		(property "MPN" "SQJB60EP-T1_GE3"
 			(at 114.3 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -33776,7 +33317,7 @@
 				)
 			)
 		)
-		(property "Package" "SOIC-8"
+		(property "Package" "PowerPAK SO-8L Dual"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33820,7 +33361,7 @@
 				)
 			)
 		)
-		(property "OperatingTemp" "TBD"
+		(property "OperatingTemp" "-55C...+175C"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33831,7 +33372,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "1.14mm max"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33842,7 +33383,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "Prototip secimi; AP33772S kapi seviyesiyle kayip/SOA acik."
+		(property "DesignNote" "Footprint dogrulanmadi: PowerPAK SO-8L DUAL land pattern KiCad'de yok (Package_SO:PowerPAK_SO-8_Dual L-disi varyant ve drain pinlerini 5/6 numaralandirir, uymaz). Vishay doc 63817 ile cizilecek."
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33853,7 +33394,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 700940; stok 107664 (21.09.2026); Uygun. Seçim raporu: design_decisions/reports/sqjb60ep-20260921. Footprint henüz atanmamış."
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33864,7 +33405,7 @@
 				)
 			)
 		)
-		(property "AssemblyNote" "TBD"
+		(property "AssemblyNote" "Leadless paket; elle lehimleme onerilmiyor (datasheet not e)."
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33886,7 +33427,7 @@
 				)
 			)
 		)
-		(property "VoltageDS" "TBD"
+		(property "VoltageDS" "60V"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33897,7 +33438,7 @@
 				)
 			)
 		)
-		(property "CurrentID" "TBD"
+		(property "CurrentID" "30A"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33908,7 +33449,7 @@
 				)
 			)
 		)
-		(property "RdsOn" "TBD"
+		(property "RdsOn" "12mOhm"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33919,7 +33460,7 @@
 				)
 			)
 		)
-		(property "VgsThreshold" "TBD"
+		(property "VgsThreshold" "1.5-2.5V"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33930,7 +33471,7 @@
 				)
 			)
 		)
-		(property "GateCharge" "TBD"
+		(property "GateCharge" "18nC"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33941,7 +33482,7 @@
 				)
 			)
 		)
-		(property "ThermalResistance" "TBD"
+		(property "ThermalResistance" "RthJA 85C/W, RthJC 3.1C/W"
 			(at 114.3 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -33951,36 +33492,24 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "5"
-			(uuid "f8d5625f-de67-4abc-a6b2-8c1449551429")
-		)
-		(pin "7"
-			(uuid "08470d1e-6878-4746-97cc-029126b8f102")
-		)
-		(pin "2"
-			(uuid "aeaa3798-2a85-44c7-ba00-1a9ec4b611f0")
-		)
-		(pin "1"
-			(uuid "fd5f2937-1825-449a-8cea-b4467b3a1272")
 		)
 		(pin "3"
-			(uuid "bd68ea5b-9687-405f-9e5c-6c2e4662ad9b")
+			(uuid "6bff9f33-9b75-5052-bf04-be0b3fa6b245")
 		)
 		(pin "4"
-			(uuid "0c2fb920-f5ae-4966-b9d5-6e59eda52b7b")
+			(uuid "84eaeb06-7684-5a46-83c0-b856a115fc71")
+		)
+		(pin "5"
+			(uuid "06a5c1ea-5780-55d6-9a68-6ac671c9b0da")
 		)
 		(pin "6"
-			(uuid "87dab26e-974d-4bcd-bfb9-364b9930196c")
-		)
-		(pin "8"
-			(uuid "afc07ac9-a53f-4c9a-ad25-ea8c7bba5945")
+			(uuid "97c92340-9450-5cd8-9b16-c0f91d503979")
 		)
 		(instances
 			(project "gopo"
 				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0"
 					(reference "Q3")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -34077,7 +33606,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Nexperia"
 			(at 363.22 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -34088,7 +33617,7 @@
 				)
 			)
 		)
-		(property "MPN" "BSS138"
+		(property "MPN" "BSS138P,215"
 			(at 363.22 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -34176,7 +33705,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 737689; stok 73553 (21.09.2026); Uygun. Jenerik BSS138 karşılığı; 60V / 360mA, SOT-23 G-S-D."
 			(at 363.22 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -34481,7 +34010,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 594873; stok 6659 (21.09.2026); Uygun. Şemada 'Tedarik: Ozdisan' notu var."
 			(at 243.84 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -34759,7 +34288,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34770,7 +34299,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CQ02WGF1003TCE"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34858,7 +34387,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 587906; stok 99900 (21.09.2026); Uygun."
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34880,7 +34409,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34891,7 +34420,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34902,7 +34431,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34913,7 +34442,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -34924,7 +34453,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 72.39 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -35137,7 +34666,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. 11.09 raporunda Özdisan stoklu seçilmişti; bugün indekste yok (aynı serinin başka değerleri stokta). Aynı ayağa uyan 22µH stokta yok. En yakını ETQP5M220YFM (22µH 3.7A, 7.5x7 mm, 434 stok); farklı footprint."
 			(at 281.94 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -35428,7 +34957,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 695538; stok 1624 (21.09.2026); Uygun. 21.09 ikinci kontrolde indekste bulundu."
 			(at 317.5 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -36125,7 +35654,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): İndekste yok. 21.09 ikinci kontrol: binding post / banana kategorisi hâlâ indekslenmemiş; '108-09' araması sonuç vermedi."
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -36446,7 +35975,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "onsemi"
 			(at 138.43 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -36457,7 +35986,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54"
+		(property "MPN" "BAT54T1G"
 			(at 138.43 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -36545,7 +36074,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 614028; stok 595 (21.09.2026); Uygun. Otomatik MPN eşleşmesi BAT54A (çift, SOT-23) getirdi; footprint'e uyan tekli SOD-123 seçildi."
 			(at 138.43 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -36825,7 +36354,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 134.62 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -36969,7 +36498,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -36980,7 +36509,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "HP02WAF4701TCE"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37068,7 +36597,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 603918; stok 9400 (21.09.2026); Uygun."
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37090,7 +36619,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37101,7 +36630,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37112,7 +36641,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37123,7 +36652,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37134,7 +36663,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "High Power Thick Film"
 			(at 375.92 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -37428,7 +36957,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Satın alınmaz. Kart üzerindeki pad; satın alınmaz."
 			(at 85.09 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -37892,7 +37421,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "THINKING"
+		(property "Manufacturer" "Thinking Electronic"
 			(at 48.26 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -37991,7 +37520,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 509291; stok 8430 (21.09.2026); Uygun."
 			(at 48.26 115.57 0)
 			(hide yes)
 			(show_name no)

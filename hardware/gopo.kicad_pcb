@@ -18361,7 +18361,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "INA228"
+		(property "Value" "INA226"
 			(at 0 -2.45 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -18425,7 +18425,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "INA228AIDGSR"
+		(property "MPN" "INA226AIDGSR"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")

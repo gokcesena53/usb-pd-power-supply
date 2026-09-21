@@ -4926,7 +4926,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -4937,7 +4937,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CQ02WGF1003TCE"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5025,7 +5025,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 587906; stok 99900 (21.09.2026); Uygun."
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5047,7 +5047,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-1%"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5058,7 +5058,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5069,7 +5069,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5080,7 +5080,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5091,7 +5091,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 50.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5445,7 +5445,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5456,7 +5456,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5544,7 +5544,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5566,7 +5566,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5577,7 +5577,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5588,7 +5588,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5599,7 +5599,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5610,7 +5610,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5669,7 +5669,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5725,7 +5725,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Murata"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5736,7 +5736,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "GRT21BC81A226ME13K"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5747,7 +5747,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "0805 (2012 Metric)"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5825,7 +5825,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "Verify DC-bias curve for final capacitor MPN"
+		(property "SelectionNote" "Özdisan 810882; stok 709 (21.09.2026); Uygun. 21.09 üçüncü tur: Footprint 0402 → 0805. 10V X6S (+105°C), 3.3V/4.2V raylarında 6.3V parçalardan daha az DC-bias kaybı; TPS61023/RT4812 çıkış efektif ≥4 µF şartını rahat karşılar. Ucuz alternatif: CL21A226MQQNNNE 6,3V X5R (47890 stok, 2,18 TL)."
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5847,7 +5847,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-20%"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5858,7 +5858,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "50V"
+		(property "VoltageRating" "10V"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5869,7 +5869,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X6S"
 			(at 17.78 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5994,7 +5994,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Panasonic"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6005,7 +6005,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "ERJ2RKF3241X"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6093,7 +6093,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 494659; stok 76745 (21.09.2026); Uygun. 21.09 üçüncü tur: %1 kabul edildi. CAT4104 RSET → kanal başı ~39,8 mA, direnç toleransı ±%1 akıma yaklaşık ±%1 yansır. R40 ile aynı MPN."
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6115,7 +6115,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "+/-0.1%"
+		(property "Tolerance" "+/-1%"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6126,7 +6126,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.1W"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6137,7 +6137,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6148,7 +6148,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6159,7 +6159,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Precision Thick Film"
 			(at 58.42 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6849,7 +6849,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. Özdisan'da bulunamadı. MAPI-4030 ayağına uyan 2.2µH / Isat≥2A stokta yok."
 			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7297,7 +7297,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. Özdisan indeksinde bulunamadı."
 			(at 76.2 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -7462,7 +7462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7518,7 +7518,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Murata"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7529,7 +7529,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "GRT21BC81A226ME13K"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7540,7 +7540,7 @@
 				)
 			)
 		)
-		(property "Package" "0402 (1005 Metric)"
+		(property "Package" "0805 (2012 Metric)"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7618,7 +7618,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "Verify DC-bias curve for final capacitor MPN"
+		(property "SelectionNote" "Özdisan 810882; stok 709 (21.09.2026); Uygun. 21.09 üçüncü tur: Footprint 0402 → 0805. 10V X6S (+105°C), 3.3V/4.2V raylarında 6.3V parçalardan daha az DC-bias kaybı; TPS61023/RT4812 çıkış efektif ≥4 µF şartını rahat karşılar. Ucuz alternatif: CL21A226MQQNNNE 6,3V X5R (47890 stok, 2,18 TL)."
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7640,7 +7640,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-20%"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7651,7 +7651,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "50V"
+		(property "VoltageRating" "10V"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7662,7 +7662,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X6S"
 			(at 78.74 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7787,7 +7787,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7798,7 +7798,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "0402WGF6043TCE"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7886,7 +7886,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 506466; stok 42500 (21.09.2026); Uygun. 21.09 üçüncü tur: %1 kabul edildi. BACKLIGHT_4V2 bölücü toleransı ~±%1,2'ye çıkar (VFB toleransı hariç); CAT4104 payına etkisi ihmal edilebilir."
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7908,7 +7908,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "+/-0.1%"
+		(property "Tolerance" "+/-1%"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7919,7 +7919,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7930,7 +7930,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "50V"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7941,7 +7941,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-100ppm/C"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7952,7 +7952,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thick Film"
 			(at 60.96 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -8306,7 +8306,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Yageo"
 			(at 50.8 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8317,7 +8317,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "CC0402KRX7R9BB104"
 			(at 50.8 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8406,7 +8406,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 609906; stok 117450 (21.09.2026); Uygun. Tek MPN: C14/C26/C32 28V raylarında olduğu için 50V. Yalnız 3.3V hatları için 16V CL05B104KO5NNNC (0,17 TL) de kullanılabilir."
 			(at 50.8 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8428,7 +8428,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-10%"
 			(at 50.8 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8439,7 +8439,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "16V"
+		(property "VoltageRating" "50V"
 			(at 50.8 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8655,7 +8655,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8666,7 +8666,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8754,7 +8754,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8776,7 +8776,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8787,7 +8787,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8798,7 +8798,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8809,7 +8809,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8820,7 +8820,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 215.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -9034,7 +9034,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 1325143; stok 13297 (21.09.2026); Uygun. 21.09 ikinci kontrolde indekste bulundu (Özdisan MPN'i tiresiz: 541324062)."
 			(at 157.48 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9552,7 +9552,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9563,7 +9563,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1000TCC"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9651,7 +9651,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569711; stok 7445 (21.09.2026); Uygun."
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9673,7 +9673,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9684,7 +9684,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9695,7 +9695,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9706,7 +9706,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9717,7 +9717,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9831,7 +9831,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Texas Instruments"
+		(property "Manufacturer" "RICHTEK"
 			(at 43.18 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9842,7 +9842,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS61023DRLR"
+		(property "MPN" "RT4812GJ8F"
 			(at 43.18 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9930,7 +9930,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 614996; stok 308 (21.09.2026); Muadil. 21.09 üçüncü tur: TPS61023 stokta yok. RT4812 özellik muadili: senkron boost, VIN 1,8–5,5V, VOUT 1,8–5,5V, ortalama çıkış akım sınırı 1A/2,1A (ILIM pini), gerçek yük ayırma, VFB 0,5V, fsw ~0,5 MHz. Backlight yükü (≤200 mA, 4,19V) için yeterli. Değişmesi gerekenler: footprint (TSOT-23-8), FB bölücü 0,5V referansa göre (ör. R44=732k / R45=100k → 4,16V; CAT4104 payı korunur), bobin RT4812 datasheet'ine göre (1,5–2,2 µH), ILIM pini L'ye bağlanır. Alternatif: TPS63020DSJR buck-boost (103 stok, VSON-14)."
 			(at 43.18 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -10299,7 +10299,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "BOM_PRELIMINARY_20260911 bu referans icin L-KLS4-EC12-012424-W yaziyor; sema sembolu/ayagi EC1121S. Satin alma oncesi tek parcada birlestirilecek."
+		(property "SelectionNote" "Özdisan 533942; stok 1013 (21.09.2026); Uygun. Şema sembolü/ayağı ile uyumlu olan seçildi. Ön BOM'daki L-KLS4-EC12-012424-W de stokta (93) ama footprint'e uymaz."
 			(at 236.22 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10681,7 +10681,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10692,7 +10692,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1002TCC"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10780,7 +10780,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10802,7 +10802,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "TBD"
+		(property "Tolerance" "+/-0.1%"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10813,7 +10813,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10824,7 +10824,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10835,7 +10835,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10846,7 +10846,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -10960,7 +10960,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Royalohm"
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -10971,7 +10971,7 @@
 				)
 			)
 		)
-		(property "MPN" "TBD"
+		(property "MPN" "TC0250B1003TCC"
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11059,7 +11059,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "TBD"
+		(property "SelectionNote" "Özdisan 569693; stok 368 (21.09.2026); Uygun. %0,1 şartı (BL_BOOST_FB bölücüsü)."
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11092,7 +11092,7 @@
 				)
 			)
 		)
-		(property "PowerRating" "TBD"
+		(property "PowerRating" "0.0625W"
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11103,7 +11103,7 @@
 				)
 			)
 		)
-		(property "VoltageRating" "TBD"
+		(property "VoltageRating" "25V"
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11114,7 +11114,7 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "TBD"
+		(property "TempCoefficient" "+/-50ppm/C"
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11125,7 +11125,7 @@
 				)
 			)
 		)
-		(property "Composition" "TBD"
+		(property "Composition" "Thin Film"
 			(at 60.96 71.12 0)
 			(hide yes)
 			(show_name no)

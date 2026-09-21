@@ -18,6 +18,36 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   eklendi (U12 + 13 bileşen). OVLO eşiği 232k/10k ile ~30.25 V.
 - powersensing: INA228 ve şönt PD_VOUT'tan ayrılıp M2 drain'ine (SW_OUT)
   bağlandı.
+- usb_pd_controller: Q3/Q4 ve Q5/Q6 -> SQJB60EP-T1_GE3 (Vishay). Parca
+  dual oldugu icin her sirt sirta cift tek pakete indi: Q3 (unit A/B) =
+  dahili kol, Q5 (unit A/B) = cikis kolu. Q4 ve Q6 referanslari kalkti,
+  dort paket ikiye indi. Netlist baglantilari korundu (yalniz pin
+  numaralari degisti). Dahili kolda handoff 3.2 #2 tam karsilandi; cikis
+  kolunda RDS(on) 12 mOhm, onaylanan <=4 mOhm'un 3 kati - 5 A'de kol
+  dusumu 40 mV yerine 120 mV (125 C'de 191 mV). Gerekce ve hesaplar
+  design_decisions/reports/sqjb60ep-20260921/result.md dosyasinda.
+  PowerPAK SO-8L Dual footprint'i henuz yok; sema Footprint alani bos.
+- usb_pd_controller: U3 INA228AIDGSR -> INA226AIDGSR. Pin ve paket birebir
+  aynı (DGS/VSSOP-10), netlist ve PCB yerleşimi değişmedi. Karşılığında
+  VBUS dayanımı 85 V -> 36 V (abs max 40 V), akım LSB'si 15.6 uA -> 500 uA
+  ve ALERT dört ayrı limit yerine tek limit oluyor; gerekçe ve firmware
+  etkisi design_decisions/reports/ina226-20260921/result.md dosyasında.
+- mcu: RTC RV-3028-C7 + CR2032 -> BQ32000DR + 1,5 F süper kapasitör.
+  U4 BQ32000 (SOIC-8, I2C 0x68, open-drain IRQ, dahili trickle charger),
+  Y1 ABS25-32.768KHZ-T (CL 12,5 pF, harici yük C yok), C33 Korchip
+  DCL5R5155HF (1,5 F/5,5 V, H-tipi yatay coin, ~22 gün yedek). BT1, R22,
+  R23 ve C10 kaldırıldı; C9 100n -> 1u0 (datasheet >=1 uF). Firmware:
+  TCHE=0x5, TCH2=1, TCFE=1. C33 footprint'i yeni:
+  Power_Output_Custom:Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal.
+- tüm sayfalar: Özdisan BOM seçimleri (BOM_OZDISAN_REV_C_20260921.xlsx)
+  sembol alanlarına aktarıldı: MPN, Manufacturer, parametrik alanlar ve
+  SelectionNote (Özdisan kodu, stok, durum). Onaylı değişiklikler: C5/C20/C21
+  0402 -> 0805 (22u 10V X6S); C8/C12/C13/C25/C27/C28 10u -> 4u7 50V X7R
+  1210 (C8 0402 -> 1210); C15/C29 -> 47u 35V hibrit (CP_Elec_6.3x5.8,
+  Device:C_Polarized); C31 0402 -> 0603 25V; R59 0402 -> 0805 1/3W;
+  R40 3k20 -> 3k24 ve R39 10k -> 10k2 (VOUT 3,3185 V); U6 TL431AIDBZR;
+  D4 SX36. Stokta olmayan parçalarda MPN korunup bilgi SelectionNote'a
+  yazıldı. Netlist yalnız RTC netlerinde değişti; PCB güncellenmedi.
 - hardware/libraries/Power_Path_Custom.kicad_sym eklendi: TPS55340PWPR,
   AP74502Q, SMBJ30A.
 
