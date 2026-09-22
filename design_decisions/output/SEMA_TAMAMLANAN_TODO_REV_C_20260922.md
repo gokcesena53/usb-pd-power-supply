@@ -2,6 +2,8 @@
 
 `todo.txt` içindeki şema ile ilgili maddeler 22.09.2026'da şema dosyaları, netlist ve git geçmişi üzerinden yeniden kontrol edildi. Tamamlandığı doğrulanan maddeler buraya taşındı ve `todo.txt`'den çıkarıldı. Her maddede kontrolün neye dayandığı yazılıdır.
 
+> **Arşiv.** Bu dosya `todo.txt` döneminden kalmadır ve artık güncellenmez. 22.09.2026 sonrası tamamlanan işler `backlog/` altındaki Done görevlerinde tutulur.
+
 Kontrol anındaki durum: ERC 0 hata / 2 uyarı (`isolated_pin_label` OUT_EN, `lib_symbol_mismatch` U6 TL431DBZ); ikisi de `todo.txt`'de açık madde olarak duruyor.
 
 ## Parça seçimi (todo: "REV_C — TBD PARÇA SEÇİMİ")

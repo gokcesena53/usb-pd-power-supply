@@ -587,7 +587,7 @@ başlığı böyle bulundu). `E.remove_texts(t, {başlıklar})` ile önce sil.
 karakter). Notun metnini betikte değiştirdiysen eski hali tam eşleşmez ve
 sayfada kalır (RTC ve J3 notları ikilendi): `E.remove_texts(t, prefixes=('TFT032B018',))`.
 
-**Eski ERC hataları gerçek devre hatası olabilir.** `todo.txt`'de yıllanmış
+**Eski ERC hataları gerçek devre hatası olabilir.** todo listesinde yıllanmış
 "R6 pin 2 bağlı değil / Q2 pin 3 bağlı değil / PD_I2C_SDA_5V dangling" üçlüsü
 aslında SDA seviye dönüştürücüsünün kopukluğuydu (SCL tarafı R5/Q1 doğruydu).
 Envanterde `unconnected-(...)` gördüğünde simetrik/eş devreyle karşılaştır;
@@ -725,7 +725,7 @@ boyutunu sınırlıyorsa bu zorunludur.
 ## Parça seçimi
 
 Bu skill parça *seçmez*. Değeri veya MPN'i belirsiz olan parçayı jenerik
-sembolle yerleştir ve değerine `TBD` yaz; gereksinimleri `todo.txt` dosyasına
+sembolle yerleştir ve değerine `TBD` yaz; gereksinimleri backlog'a görev olarak
 kaydet. MPN uydurma.
 
 Datasheet gerekiyorsa indir. TI (`ti.com/lit/ds/symlink/<parça>.pdf`) erişilebilir
@@ -733,7 +733,7 @@ Datasheet gerekiyorsa indir. TI (`ti.com/lit/ds/symlink/<parça>.pdf`) erişileb
 `diodes.com/datasheet/download/<PARÇA>.pdf` curl ile indi (AP74502Q, pin tablosu
 sembolle karşılaştırıldı). Mouser hâlâ bot korumalı. Datasheet inmezse ve parça
 TI'la pin uyumluysa TI datasheet'i geçici kaynak olarak kullan ve bunu
-`todo.txt`'ye not et. Tedarikçi indeksinin (Özdisan MCP) verdiği datasheet
+ilgili backlog görevine not et. Tedarikçi indeksinin (Özdisan MCP) verdiği datasheet
 bağlantıları (`cdn.ozdisan.com/public/product/assets/...`) da doğrudan iner;
 tek sayfalık çizim-datasheet'lerde (Çin panelleri, KLS) metin çıkmaz, sayfayı
 `pdftoppm -r 300` ile render edip tabloyu kırparak oku. Pinout'u `pdftotext -layout` ile "Pin Functions"

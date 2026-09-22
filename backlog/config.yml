@@ -1,0 +1,18 @@
+project_name: "gopo"
+default_status: "To Do"
+statuses: ["To Do", "In Progress", "Blocked", "Done"]
+labels: ["schematic", "layout", "procurement", "sample-eval", "fabrication", "bring-up", "firmware", "docs"]
+types: ["task", "bug", "spike", "chore", "docs"]
+definition_of_done: ["Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı", "Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi"]
+date_format: yyyy-mm-dd
+max_column_width: 20
+auto_open_browser: false
+default_port: 6420
+remote_operations: true
+auto_commit: false
+filesystem_only: false
+zero_padded_ids: 3
+bypass_git_hooks: false
+check_active_branches: true
+active_branch_days: 30
+task_prefix: "task"
