@@ -292,7 +292,8 @@ oynamadı"ı kanıtlar; alan işi asla yerleşimi değiştirmemelidir.
 before, vis = E.field_geometry(t), E.field_visibility(t)   # islemden ONCE
 ...                                                          # alanlari duzenle
 assert E.field_geometry(t2) == before
-assert all(E.field_visibility(t2)[k] == v for k, v in vis.items())  # yeni alanlar haric
+vis2 = E.field_visibility(t2)          # bir kez; dongu icinde cagirma
+assert all(vis2[k] == v for k, v in vis.items())            # yeni alanlar haric
 ```
 
 ### Blokları başka sayfaya taşımak / sayfaları birleştirmek

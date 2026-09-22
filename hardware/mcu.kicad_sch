@@ -10105,7 +10105,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. 21.09 üçüncü tur: ESP32-C6 modülü Özdisan'da yok; özellikleri karşılayan muadil de yok. Tasarım native USB (GPIO12/13) ve ~22 GPIO kullanıyor. Stoktaki ESP32-C3-MINI-1-N4 (445 stok) native USB'ye sahip ama GPIO sayısı yetmez ve 802.15.4/Wi-Fi 6 yok. ESP32-WROOM-32E-N4 (466 stok) aynı 18x25,5 mm gövdede ama pin dizilişi farklı ve native USB yok (USB-UART köprüsü gerekir). İkisi de şema/footprint/firmware değişikliği ister."
+		(property "SelectionNote" "Özdisan (21.09.2026): stokta yok; 22.09.2026 WiFi modulleri kategorisinde ESP32-C6 yok. Stoktaki ESP32-C3-MINI-1-N4 (GPIO sayisi yetmez) ve ESP32-WROOM-32E-N4 (native USB yok) uymuyor. Karar: Mouser/DigiKey katalogundan alinacak (modul varyanti/flash satin alma oncesi sabitlenecek)."
 			(at 115.57 114.3 0)
 			(hide yes)
 			(show_name no)

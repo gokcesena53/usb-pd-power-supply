@@ -19532,7 +19532,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. Özdisan indeksinde (stoksuz dahil) bulunamadı. Başka tedarikçiden alınmalı."
+		(property "SelectionNote" "Özdisan (21.09.2026): stokta yok; 22.09.2026 indeksinde (stoksuz dahil) AP33772 hic gecmiyor. Karar: Mouser/DigiKey katalogundan alinacak (stok/fiyat satin alma oncesi dogrulanacak)."
 			(at 81.28 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -34155,7 +34155,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_7.3x7.3_H4.5"
+		(property "Footprint" "Inductor_Custom:L_CoreMaster_FPI0705_7.8x7.0mm_H5.0"
 			(at 281.94 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -34211,7 +34211,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "CORE MASTER"
+		(property "Manufacturer" "Core Master"
 			(at 281.94 191.77 90)
 			(hide yes)
 			(show_name no)
@@ -34222,7 +34222,7 @@
 				)
 			)
 		)
-		(property "MPN" "SRI0704-220M"
+		(property "MPN" "FPI0705-220K"
 			(at 281.94 191.77 90)
 			(hide yes)
 			(show_name no)
@@ -34233,7 +34233,7 @@
 				)
 			)
 		)
-		(property "Package" "7.3x7.3x4.5mm"
+		(property "Package" "7.8x7.0x5.0mm"
 			(at 281.94 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -34299,7 +34299,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "22uH, 1.95A, 0.11ohm max; 1.95A'de 18.2uH (L -17%)."
+		(property "DesignNote" "22uH +-10%, RDC 0.11 ohm max, IDC 2.3 A max (spec DWG MY0212071). Tepe akim ~0.83 A (0.7 A yuk + dalga/2) -> 2.8x marj."
 			(at 281.94 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -34311,7 +34311,7 @@
 				(justify left)
 			)
 		)
-		(property "SelectionNote" "Özdisan (21.09.2026): Stokta yok. 11.09 raporunda Özdisan stoklu seçilmişti; bugün indekste yok (aynı serinin başka değerleri stokta). Aynı ayağa uyan 22µH stokta yok. En yakını ETQP5M220YFM (22µH 3.7A, 7.5x7 mm, 434 stok); farklı footprint."
+		(property "SelectionNote" "Özdisan 507505; stok 3467 (22.09.2026); Uygun. SRI0704-220M stokta yok. Ayni ayaktaki SRI0704-330M (33uH) 0.25 ohm / 1.2 A ile DCR ve marji kotulestiriyordu; TPY0705-220M mevcut footprinte uyuyor ama 0.35 ohm. FPI0705-220K DCR-yi (0.11 ohm) korur, akimi 1.95 -> 2.3 A yukseltir, en ucuz (8.28 TL). Alternatif: FPI1005-220M (0.07 ohm / 3.4 A, 10x9 mm)."
 			(at 281.94 191.77 0)
 			(hide yes)
 			(show_name no)

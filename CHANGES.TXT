@@ -62,6 +62,13 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   ve ERC değişmedi.
 - hardware/libraries/Power_Path_Custom.kicad_sym eklendi: TPS55340PWPR,
   AP74502Q, SMBJ30A.
+- usb_pd_controller: L1 SRI0704-220M -> FPI0705-220K (Core Master).
+  Özdisan'da 22 uH SRI0704 stokta yok. Yeni parca ayni DCR'i korur
+  (0.11 ohm max), IDC'yi 1.95 -> 2.3 A yukseltir; govde 7.3x7.3x4.5 ->
+  7.8x7.0x5.0 mm, land 7.5x3.25 mm iki ped (yeni footprint
+  Inductor_Custom:L_CoreMaster_FPI0705_7.8x7.0mm_H5.0). Netlist degismedi.
+- U1 (AP33772S) ve U2 (ESP32-C6-WROOM-1): Özdisan'da yok ve karsilayan
+  muadil yok; Mouser/DigiKey katalogundan alinacak (SelectionNote).
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

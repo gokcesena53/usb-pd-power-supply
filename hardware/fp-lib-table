@@ -8,4 +8,5 @@
   (lib (name "PCM_Espressif") (type "KiCad") (uri "${KIPRJMOD}/libraries/PCM_Espressif.pretty") (options "") (descr "ESP32-C6-WROOM-1 yerel kopya (espressif/kicad-libraries)"))
   (lib (name "Connector_FPC_Custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/Connector_FPC_Custom.pretty") (options "") (descr "KLS FPC connectors (TFT032B018)"))
   (lib (name "Package_SO_Custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/Package_SO_Custom.pretty") (options "") (descr "Vishay PowerPAK SO-8L Dual (SQJB60EP), doc 63817"))
+  (lib (name "Inductor_Custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/Inductor_Custom.pretty") (options "") (descr "Core Master FPI0705 guc bobini land pattern"))
 )
