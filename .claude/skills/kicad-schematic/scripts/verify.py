@@ -90,6 +90,17 @@ def main():
     for k, c in Counter(kinds).most_common():
         print(f'   {c:3}  {k}')
 
+    # onbellekte olmayan lib_id: ERC hata vermez ama pin ayri nete duser
+    import glob
+    import kisch_edit as E
+    from kicadtools import read_sheet
+    for sh in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(a.schematic)),
+                                            '*.kicad_sch'))):
+        miss = E.missing_lib_symbols(read_sheet(sh)[0])
+        if miss:
+            print(f'UYARI {os.path.basename(sh)}: lib_symbols onbelleginde yok: {miss} '
+                  f'-> E.ensure_used_lib_symbols')
+
     cur = netlist(a.schematic, a.save)
     d = parse(cur)
     print(f'netlist: {len(d)} net')

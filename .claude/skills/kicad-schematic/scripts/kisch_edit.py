@@ -138,17 +138,29 @@ def strip_region(t, box, kinds=STRIP_DEFAULT):
     return t, freed
 
 
-def translate_region(t, box, dx, dy=0):
+def translate_region(t, box, dx, dy=0, stretch=False):
     """Bolgedeki TUM ogeleri (semboller ve alanlari dahil) oteler.
-    Blok cercevesine tasan komsu gruplari kenara cekmek icin."""
+    Blok cercevesine tasan komsu gruplari kenara cekmek icin.
+
+    stretch=False (varsayilan): bir ucu kutuda olan tel BUTUNUYLE tasinir;
+    kutunun disindaki ucu da kayar ve baglantisi kopar (D3'u VBUS hattinda
+    saga tasirken 118 mm'lik ray boyle kopacakti).
+    stretch=True: telin yalniz kutu icindeki ucu tasinir (lastik bant);
+    dy=0 iken yatay teller yatay kalir. dy != 0 ise capraz tel olusabilir,
+    lint 'capraz tel' raporlar."""
     edits = []
+
+    def sh(m):
+        return f'{m.group(1)}{f(float(m.group(2)) + dx)} {f(float(m.group(3)) + dy)}'
+
+    def sh_in(m):
+        p = (float(m.group(2)), float(m.group(3)))
+        return sh(m) if inside(p, box) else m.group(0)
     for a, b, kind, blk in items(t):
         if not any(inside(p, box) for p in pos(kind, blk)):
             continue
-
-        def sh(m):
-            return f'{m.group(1)}{f(float(m.group(2)) + dx)} {f(float(m.group(3)) + dy)}'
-        edits.append((a, b, re.sub(r'(\((?:at|xy|start|end) )([-\d.]+) ([-\d.]+)', sh, blk)))
+        fn = sh_in if (stretch and kind == 'wire') else sh
+        edits.append((a, b, re.sub(r'(\((?:at|xy|start|end) )([-\d.]+) ([-\d.]+)', fn, blk)))
     for a, b, nb in sorted(edits, reverse=True):
         t = t[:a] + nb + t[b:]
     return t
@@ -250,8 +262,14 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
                       guc sembolunde ref_at verince #PWR### gorunur hale gelip
                       sayfayi kalabaliklastiriyordu.
     Gizli alanlar (Footprint, Datasheet...) sembolle birlikte tasinir.
+    ref_at / val_at VERILMEZSE Reference/Value sembolle ayni farkla (dx, dy)
+    otelenir, goreli konumu korunur. (Eskiden yerinde kaliyordu: D3 35 mm
+    saga tasininca "D3 SMBJ30A" yazisi eski konumda kaldi.) Aci degisiyorsa
+    ref_at/val_at ver; fark otelemesi yazi yonunu duzeltmez.
     """
     a, b, blk = _sym_span(t, ref)
+    m0 = re.search(r'\(at ([-\d.]+) ([-\d.]+) [-\d.]+\)', blk)
+    ddx, ddy = x - float(m0.group(1)), y - float(m0.group(2))
     blk = re.sub(r'\(at [-\d.]+ [-\d.]+ [-\d.]+\)', f'(at {f(x)} {f(y)} {ang})', blk, count=1)
     blk = re.sub(r'\n\t\t\(mirror \w\)', '', blk)
     if mirror:
@@ -266,6 +284,13 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
     swap = {'left': 'right', 'right': 'left'}
     for name, o in (('Reference', ref_at), ('Value', val_at)):
         if o is None:
+            if (ddx or ddy) and f'(property "{name}"' in blk:
+                pa, pb = K.block_at(blk, blk.index(f'(property "{name}"'))
+                p = re.sub(r'\(at ([-\d.]+) ([-\d.]+) ([-\d.]+)\)',
+                           lambda mm: f'(at {f(float(mm.group(1)) + ddx)} '
+                                      f'{f(float(mm.group(2)) + ddy)} {mm.group(3)})',
+                           blk[pa:pb], count=1)
+                blk = blk[:pa] + p + blk[pb:]
             continue
         j = o[2] if len(o) > 2 else just
         if flip and j in swap:
@@ -371,6 +396,40 @@ def set_sym_props(blk, fields, visible=('Reference', 'Value')):
             parts.append(K._prop(name, prop_escape(val), x, y,
                                  hide=hide).rstrip('\n').lstrip('\t'))
     return blk[:spans[0][2]] + '\n\t\t'.join(parts) + blk[spans[-1][3]:]
+
+
+def sym_blocks(t, ref):
+    """Referansin TUM sembol bloklari (cok birimli semboller: Q3/Q5 SQJB60EP
+    iki birim, iki blok): [(bas, son)]. Bulunamazsa KeyError."""
+    out = [(a, b) for a, b, kind, blk in items(t) if kind == 'symbol' and ref_of(blk) == ref]
+    if not out:
+        raise KeyError(ref)
+    return out
+
+
+def update_fields(t, ref, upd, visible=None):
+    """Referansin alanlarini gunceller: upd {ad: deger}; listede olmayan alan
+    aynen kalir, olmayan alan sona GIZLI eklenir. Cok birimli sembolde tum
+    birimlere uygulanir. visible set_sym_props'taki gibi (None = mevcut
+    gorunurluk). Oturumda dort kez elle yazilan "blok bul + alan listesi kur +
+    set_sym_props" dongusunun yerine:
+        t = E.update_fields(t, 'R55', {'Value': '237k', 'MPN': '0402WGF2373TCE'})
+    """
+    for a, b in sorted(sym_blocks(t, ref), reverse=True):
+        blk = t[a:b]
+        flds = [(n, upd.get(n, v)) for n, v, _, _ in sym_props(blk)]
+        have = {n for n, _ in flds}
+        flds += [(n, v) for n, v in upd.items() if n not in have]
+        t = t[:a] + set_sym_props(blk, flds, visible=visible) + t[b:]
+    return t
+
+
+def set_dnp(t, ref, dnp=True):
+    """(dnp yes|no): montajsiz opsiyon (D8/D9 SMF30A). Render'da kirmizi carpi."""
+    for a, b in sorted(sym_blocks(t, ref), reverse=True):
+        blk = re.sub(r'\(dnp (?:yes|no)\)', f'(dnp {"yes" if dnp else "no"})', t[a:b], count=1)
+        t = t[:a] + blk + t[b:]
+    return t
 
 
 def field_geometry(t):
@@ -647,6 +706,49 @@ def prune_lib_symbols(t):
     return t, names
 
 
+def missing_lib_symbols(t):
+    """Orneklerin kullandigi ama lib_symbols onbelleginde OLMAYAN lib_id'ler.
+
+    K.sym()/K.power() onbellege eklemez. Eksik tanim ERC'de hata VERMEZ:
+    power:+3.3V eksikken U10 VBUS pini netlist'te 'Net-(U10-VBUS)' adli ayri
+    bir nete dustu, ERC yalniz pin_to_pin "Pin 1 [???]" uyarisi verdi.
+    K.lib_pins de ValueError('substring not found') ile patlar."""
+    i = t.index('(lib_symbols')
+    la, lb = K.block_at(t, i)
+    cached = set(re.findall(r'\n\t\t\(symbol "([^"]+)"', t[la:lb]))
+    used = set(re.findall(r'\(lib_id "([^"]+)"\)', t[lb:]))
+    return sorted(used - cached)
+
+
+def ensure_used_lib_symbols(t, table='sym-lib-table'):
+    """missing_lib_symbols'taki her tanimi kutuphanesinden onbellege kopyalar
+    (proje kutuphanesi sym-lib-table'dan, yoksa KiCad sistem kutuphanesi).
+    Yeni sembol/guc sembolu ekleyen her betigin sonunda cagir."""
+    from kicadtools import project_symbol_lib
+    for lid in missing_lib_symbols(t):
+        nick, name = lid.split(':', 1)
+        t = K.ensure_lib_symbol(t, project_symbol_lib(nick, table), name, nick)
+    return t
+
+
+def refresh_lib_symbol(t, lib_id, lib_path=None, allow_pin_move=False):
+    """Onbellekteki tanimi kutuphanedeki guncel haliyle degistirir (ERC
+    lib_symbol_mismatch). KiCad surum yukseltmesinde kutuphane sembolu yalniz
+    cizimde degisebilir: KiCad 10 TL431DBZ'de pin uzunlugu 2.54 -> 1.27 mm,
+    pin uclari (at) ayni. Pin uc konumu degisirse baglanti kopar; bu yuzden
+    allow_pin_move=False iken pinler karsilastirilir, fark varsa ValueError."""
+    from kicadtools import project_symbol_lib
+    nick, name = lib_id.split(':', 1)
+    old = K.lib_pins(t, lib_id)
+    a, b = K.block_at(t, t.index(f'(symbol "{lib_id}"'))
+    t2 = K.ensure_lib_symbol(t[:t.rindex('\n', 0, a)] + t[b:],
+                             lib_path or project_symbol_lib(nick), name, nick)
+    new = K.lib_pins(t2, lib_id)
+    if not allow_pin_move and old != new:
+        raise ValueError(f'{lib_id} pin konumlari degisti: {old} -> {new}')
+    return t2
+
+
 def swap_lib(t, ref, lib_id, lib_path=None):
     """Yerlestirilmis sembolun kutuphane sembolunu degistirir (ayni referans,
     ayni uuid/instance/alanlar): RV-3028-C7 -> BQ32000, Conn_01x40 -> Conn_01x30.
@@ -654,7 +756,8 @@ def swap_lib(t, ref, lib_id, lib_path=None):
     Sembolu silip yeniden olusturma - alanlar, uuid ve PCB baglantisi kaybolur.
     Yapilanlar:
       * lib_id degisir, yeni tanim onbellege kopyalanir (lib_path verilmezse
-        KiCad'in sistem kutuphanesi `<nick>.kicad_sym` kicad_symbol_lib ile bulunur);
+        sym-lib-table'daki proje kutuphanesi, yoksa KiCad sistem kutuphanesi;
+        `extends` ile turetilmis semboller bagimsizlastirilir);
       * sembol ornegindeki (pin "N") uuid kayitlari yeni sembolun pin
         numaralarina esitlenir: fazlalar silinir (40 -> 30 pinde 31..40),
         eksikler yeni uuid ile eklenir;
@@ -662,9 +765,9 @@ def swap_lib(t, ref, lib_id, lib_path=None):
     Pin KONUMLARI degisir: ardindan place() + pin_at() ile yeniden yerlestir ve
     telleri yeniden ciz. Alanlari (Value, Footprint, MPN...) set_sym_props ile yaz.
     """
-    from kicadtools import kicad_symbol_lib
+    from kicadtools import project_symbol_lib
     nick, name = lib_id.split(':', 1)
-    t = K.ensure_lib_symbol(t, lib_path or kicad_symbol_lib(nick), name, nick)
+    t = K.ensure_lib_symbol(t, lib_path or project_symbol_lib(nick), name, nick)
     a, b, blk = _sym_span(t, ref)
     blk = re.sub(r'\(lib_id "[^"]+"\)', f'(lib_id "{lib_id}")', blk, count=1)
     want = set(K.lib_pins(t, lib_id))
