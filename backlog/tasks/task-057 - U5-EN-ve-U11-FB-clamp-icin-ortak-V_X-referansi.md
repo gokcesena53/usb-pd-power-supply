@@ -4,7 +4,7 @@ title: U5 EN ve U11 FB clamp için ortak V_X referansı
 status: Done
 assignee: []
 created_date: '2026-09-23 12:53'
-updated_date: '2026-09-23 12:53'
+updated_date: '2026-09-23 13:21'
 labels:
   - schematic
   - procurement
@@ -61,11 +61,11 @@ readability: 5 bulgu, değişiklik öncesiyle aynı (R21/R38/TH1/PD_VOUT, bu blo
 
 Worst-case analizinin tamamı design_decisions/output/FB_CLAMP_EN_REFERANSI_20260923.md dosyasında.
 
-Commit henüz yapılmadı.
+Commit: aa5a188. Ethernet commit'inin (13fc964) üzerine alındı; ERC yine 0/0, 120 net.
 <!-- SECTION:NOTES:END -->
 
 ## Final Summary
 
 <!-- SECTION:FINAL_SUMMARY:BEGIN -->
-verify.py --against (değişiklik öncesi netlist): ERC 0 ihlal (0 hata, 0 uyarı), 111 net. Fark yalnızca beklenen netlerde: EN_CTRL = D5.1, R43.2, R50.1, U5.8, U6.2; yeni Net-(U6-REF) = R50.2, R51.1, U6.1; V_CL kalktı; +3.3V'tan R50.1, GND'den R42.2 çıktı. readability bulgusu değişmedi (5, hepsi önceden vardı), bölgede lint boş, render kontrol edildi. Parçalar Özdisan'da (23.09.2026): TLV431BQDBZT 1587549 (stok 1134), BAS16HT1G 344295 (stok 6290), CQ121WF4701T4E 605074, 0402WGF2871TCE 506262, 0402WGF9761TCE 506310. Değişiklik henüz commit edilmedi.
+verify.py --against (değişiklik öncesi netlist): ERC 0 ihlal (0 hata, 0 uyarı), 111 net. Fark yalnızca beklenen netlerde: EN_CTRL = D5.1, R43.2, R50.1, U5.8, U6.2; yeni Net-(U6-REF) = R50.2, R51.1, U6.1; V_CL kalktı; +3.3V'tan R50.1, GND'den R42.2 çıktı. readability bulgusu değişmedi (5, hepsi önceden vardı), bölgede lint boş, render kontrol edildi. Parçalar Özdisan'da (23.09.2026): TLV431BQDBZT 1587549 (stok 1134), BAS16HT1G 344295 (stok 6290), CQ121WF4701T4E 605074, 0402WGF2871TCE 506262, 0402WGF9761TCE 506310. Commit: aa5a188.
 <!-- SECTION:FINAL_SUMMARY:END -->
