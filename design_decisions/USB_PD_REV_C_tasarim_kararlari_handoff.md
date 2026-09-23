@@ -85,7 +85,7 @@ J1 (USB-C) ── D3 (AQ3130E, ESD) + SMBJ30A (surge) ── USB_VBUS ── C3 
 | 3 | EKLE | D_BOOST | Schottky 40–60 V, 3 A, düşük VF (SS34/SS36 sınıfı). **TBD** |
 | 4 | EKLE | R_FREQ | **78.7 kΩ** (≈600 kHz). f_sw 350 kHz altına düşürülmemeli (foldback recovery). |
 | 5 | EKLE | FB bölücü | R_TOP **30.1 kΩ** (V_PRE→FB), R_BOT **9.76 kΩ** (FB→AGND) → V_PRE ≈ 5.02 V |
-| 6 | EKLE | **FB clamp (ZORUNLU)** | FB abs max 3 V; pass-through'da FB ≈ 6.8 V'a çıkar. **BAT54**: anot FB, katot `V_CL`. `V_CL`: 3V3 → **820 Ω** → V_CL → **1.0 kΩ** → GND (≈1.81 V). 28 V'ta FB ≈ 2.44 V. |
+| 6 | EKLE | **FB clamp (ZORUNLU)** | FB abs max 3 V; pass-through'da FB ≈ 6.8 V'a çıkar. ~~BAT54 + 3V3 bölücü (V_CL ≈ 1.81 V)~~ → **23.09.2026: BAS16H**, anot FB, katot `EN_CTRL` (V_X = 1.605 V, U6 TLV431; #14 ile ortak). 34 V / 0 °C worst-case FB 2.40 V. Ayrıntı: `design_decisions/output/FB_CLAMP_EN_REFERANSI_20260923.md`. |
 | 7 | EKLE | C_SS | 47 nF |
 | 8 | EKLE | Kompanzasyon | R3 = 2 kΩ, C4 = 100 nF (başlangıç değeri, en düşük VIN'de ölçümle optimize edilecek). C5 opsiyonel/DNP. |
 | 9 | EKLE | C_IN_BOOST | 10 µF/50 V X7R + VIN pinine yakın 100 nF |
@@ -93,7 +93,7 @@ J1 (USB-C) ── D3 (AQ3130E, ESD) + SMBJ30A (surge) ── USB_VBUS ── C3 
 | 11 | BAĞLA | EN | EN → VIN'e 100 kΩ ile (her zaman aktif). SYNC → AGND, NC → AGND, PowerPAD → AGND. |
 | 12 | EKLE | C_DAMP | `PD_VOUT`'a **47 µF, 35–50 V, ESR ~50–100 mΩ** (hybrid polymer veya düşük ESR elektrolitik). Seramik bu işi görmez. PD_VOUT toplam kapasitesi **≤100 µF** (cSnkBulkPd). **TBD MPN** |
 | 13 | TAŞI | AOZ1284 girişi | AOZ1284 VIN: `PD_VOUT` → **`V_PRE`**. C12/C13 `V_PRE` netine taşınır. |
-| 14 | TAŞI | R43 / TL431 (EN bias) | Beslemesi `V_PRE`'den alınır. R43 ≈ 1 kΩ, 28 V'ta ~0.65 W → güç rating'ini kontrol edin (≥1 W, tercihen 2 W). |
+| 14 | TAŞI | R43 / TL431 (EN bias) | Beslemesi `V_PRE`'den alınır. ~~R43 ≈ 1 kΩ, TL431 2.495 V~~ → **23.09.2026: R43 4k7, U6 TLV431BQ, R50 2k87 / R51 9k76 REF bölücü → V_X 1.605 V; R42 kaldırıldı.** R43 28 V'ta 0.15 W. |
 | 15 | DÜZELT | C16 | **47 µF footprint `C_0402_1005Metric` hatalı** (47 µF 0402'de üretilmiyor). 1206/1210'a çevirin; Cout efektif ≥44 µF hedefi için gerekirse 2 × 22 µF paralel. |
 | 16 | KALDIR | — | Buck giriş koluna önerilmiş olan ferrite bead + sönümleme düzeni **iptal** (topoloji değişti). |
 
@@ -166,10 +166,10 @@ J1 (USB-C) ── D3 (AQ3130E, ESD) + SMBJ30A (surge) ── USB_VBUS ── C3 
 
 | Durum | Parça |
 |---|---|
-| Yeni | TPS55340PWPR, AP74502QTA8-7 (alt: LM74502DDFR), SMBJ30A ×2, BZT52C12, BAT54, L_BOOST (TBD), D_BOOST (TBD), M1/M2 (TBD), C_DAMP 47 µF (TBD), pasifler |
+| Yeni | TPS55340PWPR, AP74502QTA8-7 (alt: LM74502DDFR), SMBJ30A ×2, BZT52C12, BAS16H (eski BAT54), L_BOOST (TBD), D_BOOST (TBD), M1/M2 (TBD), C_DAMP 47 µF (TBD), pasifler |
 | Değişen | C3 → 2.2 µF/50 V; Q3/Q4 → küçük dual NMOS (TBD); C16 footprint → 1206/1210; R43 güç rating kontrolü |
 | Kaldırılan | IRF7855 (Q3/Q4 olarak); 5 A yolundaki ferrite bead planı |
-| Aynen kalan | AP33772S, AOZ1284, D3 (AQ3130E), INA228, TL431 EN bias (besleme V_PRE'ye taşındı) |
+| Aynen kalan | AP33772S, AOZ1284, D3 (AQ3130E), INA228, EN bias (besleme V_PRE'ye taşındı; 23.09.2026 TL431 → TLV431, FB clamp ile ortak) |
 
 ---
 

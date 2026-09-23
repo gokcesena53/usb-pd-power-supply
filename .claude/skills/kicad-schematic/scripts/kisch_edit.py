@@ -138,17 +138,29 @@ def strip_region(t, box, kinds=STRIP_DEFAULT):
     return t, freed
 
 
-def translate_region(t, box, dx, dy=0):
+def translate_region(t, box, dx, dy=0, stretch=False):
     """Bolgedeki TUM ogeleri (semboller ve alanlari dahil) oteler.
-    Blok cercevesine tasan komsu gruplari kenara cekmek icin."""
+    Blok cercevesine tasan komsu gruplari kenara cekmek icin.
+
+    stretch=False (varsayilan): bir ucu kutuda olan tel BUTUNUYLE tasinir;
+    kutunun disindaki ucu da kayar ve baglantisi kopar (D3'u VBUS hattinda
+    saga tasirken 118 mm'lik ray boyle kopacakti).
+    stretch=True: telin yalniz kutu icindeki ucu tasinir (lastik bant);
+    dy=0 iken yatay teller yatay kalir. dy != 0 ise capraz tel olusabilir,
+    lint 'capraz tel' raporlar."""
     edits = []
+
+    def sh(m):
+        return f'{m.group(1)}{f(float(m.group(2)) + dx)} {f(float(m.group(3)) + dy)}'
+
+    def sh_in(m):
+        p = (float(m.group(2)), float(m.group(3)))
+        return sh(m) if inside(p, box) else m.group(0)
     for a, b, kind, blk in items(t):
         if not any(inside(p, box) for p in pos(kind, blk)):
             continue
-
-        def sh(m):
-            return f'{m.group(1)}{f(float(m.group(2)) + dx)} {f(float(m.group(3)) + dy)}'
-        edits.append((a, b, re.sub(r'(\((?:at|xy|start|end) )([-\d.]+) ([-\d.]+)', sh, blk)))
+        fn = sh_in if (stretch and kind == 'wire') else sh
+        edits.append((a, b, re.sub(r'(\((?:at|xy|start|end) )([-\d.]+) ([-\d.]+)', fn, blk)))
     for a, b, nb in sorted(edits, reverse=True):
         t = t[:a] + nb + t[b:]
     return t
@@ -161,16 +173,40 @@ def label_shapes(t):
             re.finditer(r'\(global_label "([^"]+)"\s*\(shape (\w+)\)', t)}
 
 
-def remove_texts(t, contents):
-    """Icerigi tam eslesen serbest metinleri siler. strip_region'dan 'text'
-    cikarildiginda (notlar korunurken) betigin urettigi baslik/notlari her
-    calistirmada temizlemek icin; yoksa tekrar calistirma ust uste baslik birakir."""
-    cut = [(a, b) for a, b, kind, blk in items(t)
-           if kind == 'text' and re.match(r'\(text "([^"]*)"', blk).group(1) in contents]
+def remove_items(t, pred):
+    """pred(kind, blok) -> True olan ust seviye ogeleri siler.
+
+    Artik oge temizligi icin (tasinan blogun eski cercevesi, kopmus tel parcasi,
+    yanlis yere dusmus etiket). Etiketi yalniz ADA gore secmek yetmez - ayni ad
+    baska blokta da olabilir; konumu da kontrol et:
+        t = E.remove_items(t, lambda k, b: k == 'global_label'
+                           and b.startswith('(global_label "SW_OUT"')
+                           and E.pos(k, b)[0] == (355.6, 40.64))
+    """
+    cut = [(a, b) for a, b, kind, blk in items(t) if pred(kind, blk)]
     for a, b in sorted(cut, reverse=True):
-        a2 = t.rindex('\n', 0, a)
-        t = t[:a2] + t[b:]
+        t = t[:t.rindex('\n', 0, a)] + t[b:]
     return t
+
+
+def remove_texts(t, contents=(), prefixes=()):
+    """Serbest metinleri siler: icerigi `contents`'ten biriyle TAM eslesen veya
+    `prefixes`'ten biriyle baslayanlar.
+
+    strip_region'dan 'text' cikarildiginda (notlar korunurken) betigin urettigi
+    baslik/notlari her calistirmada temizlemek icin; yoksa tekrar calistirma
+    ust uste baslik birakir. Icerik DOSYADAKI haliyle karsilastirilir: satir
+    sonu iki karakterlik '\\\\n' (Python'da '\\\\n' yaz, '\\n' degil).
+    Notun metnini betikte degistirdiysen eski surum tam eslesmez ve sayfada
+    kalir (RTC ve J3 notlari boyle ikilendi) - degisebilecek notlari
+    prefixes ile sil.
+    """
+    def hit(kind, blk):
+        if kind != 'text':
+            return False
+        s = re.match(r'\(text "((?:[^"\\]|\\.)*)"', blk).group(1)
+        return s in contents or any(s.startswith(p) for p in prefixes)
+    return remove_items(t, hit)
 
 
 def move_text(t, startswith, x, y):
@@ -190,13 +226,19 @@ def _sym_span(t, ref):
     raise KeyError(ref)
 
 
-def _set_prop(blk, name, x, y, rot=0, just='left', hide=False):
+def _set_prop(blk, name, x, y, rot=0, just='left', hide=None):
+    """hide: True gizle, False goster, None MEVCUT gizliligi koru.
+
+    None varsayilandir: place() guc sembolunun gizli #PWR### referansini ya da
+    TestPoint'in gizli "TestPoint" degerini sessizce gorunur yapmasin.
+    """
     a, b = K.block_at(blk, blk.index(f'(property "{name}"'))
     p = blk[a:b]
     p = re.sub(r'\(at [-\d.]+ [-\d.]+ [-\d.]+\)', f'(at {f(x)} {f(y)} {rot})', p, count=1)
-    p = re.sub(r'\n\t\t\t\(hide yes\)', '', p)
-    if hide:
-        p = p.replace('\n\t\t\t(show_name', '\n\t\t\t(hide yes)\n\t\t\t(show_name', 1)
+    if hide is not None:
+        p = re.sub(r'\n\t\t\t\(hide yes\)', '', p)
+        if hide:
+            p = p.replace('\n\t\t\t(show_name', '\n\t\t\t(hide yes)\n\t\t\t(show_name', 1)
     p = re.sub(r'\n\t\t\t\t\(justify [^)]*\)', '', p)
     if just:
         p = re.sub(r'(\n\t\t\t\t\(font\n\t\t\t\t\t\(size [^)]*\)\n'
@@ -206,7 +248,7 @@ def _set_prop(blk, name, x, y, rot=0, just='left', hide=False):
 
 
 def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
-          just='left', prop_rot=None, hide_val=False):
+          just='left', prop_rot=None, hide_val=None):
     """Mevcut sembolu (x, y, ang, mirror) konumuna tasir.
 
     ref_at / val_at : sembol merkezine gore (dx, dy) veya (dx, dy, justify).
@@ -215,10 +257,19 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
                       yaptigi left/right tersine cevirmesi burada telafi edilir.
     prop_rot        : verilmezse ang 90 -> 270, 270 -> 90, 0/180 -> 0 (metin yatay
                       ve okunur). Elle verirsen telafi hesabi senin sorumlulugunda.
-    hide_val        : Deger alanini gizle (or. TestPoint'in "TestPoint" degeri).
+    hide_val        : True gizle / False goster / None (varsayilan) mevcut
+                      gizliligi koru. Reference'in gizliligi HER ZAMAN korunur:
+                      guc sembolunde ref_at verince #PWR### gorunur hale gelip
+                      sayfayi kalabaliklastiriyordu.
     Gizli alanlar (Footprint, Datasheet...) sembolle birlikte tasinir.
+    ref_at / val_at VERILMEZSE Reference/Value sembolle ayni farkla (dx, dy)
+    otelenir, goreli konumu korunur. (Eskiden yerinde kaliyordu: D3 35 mm
+    saga tasininca "D3 SMBJ30A" yazisi eski konumda kaldi.) Aci degisiyorsa
+    ref_at/val_at ver; fark otelemesi yazi yonunu duzeltmez.
     """
     a, b, blk = _sym_span(t, ref)
+    m0 = re.search(r'\(at ([-\d.]+) ([-\d.]+) [-\d.]+\)', blk)
+    ddx, ddy = x - float(m0.group(1)), y - float(m0.group(2))
     blk = re.sub(r'\(at [-\d.]+ [-\d.]+ [-\d.]+\)', f'(at {f(x)} {f(y)} {ang})', blk, count=1)
     blk = re.sub(r'\n\t\t\(mirror \w\)', '', blk)
     if mirror:
@@ -233,12 +284,19 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
     swap = {'left': 'right', 'right': 'left'}
     for name, o in (('Reference', ref_at), ('Value', val_at)):
         if o is None:
+            if (ddx or ddy) and f'(property "{name}"' in blk:
+                pa, pb = K.block_at(blk, blk.index(f'(property "{name}"'))
+                p = re.sub(r'\(at ([-\d.]+) ([-\d.]+) ([-\d.]+)\)',
+                           lambda mm: f'(at {f(float(mm.group(1)) + ddx)} '
+                                      f'{f(float(mm.group(2)) + ddy)} {mm.group(3)})',
+                           blk[pa:pb], count=1)
+                blk = blk[:pa] + p + blk[pb:]
             continue
         j = o[2] if len(o) > 2 else just
         if flip and j in swap:
             j = swap[j]
         blk = _set_prop(blk, name, x + o[0], y + o[1], pr, j,
-                        hide=(hide_val and name == 'Value'))
+                        hide=hide_val if name == 'Value' else None)
     for m in list(re.finditer(r'\(property "([^"]+)"', blk))[::-1]:
         if m.group(1) in ('Reference', 'Value'):
             continue
@@ -247,6 +305,226 @@ def place(t, ref, x, y, ang=0, mirror=None, ref_at=None, val_at=None,
                    lambda mm: f'(at {f(x)} {f(y)} {mm.group(1)})', blk[pa:pb], count=1)
         blk = blk[:pa] + p + blk[pb:]
     return t[:a] + blk + t[b:]
+
+
+# --------------------------------------------------------- sembol alanlari
+
+def prop_escape(v):
+    """KiCad string'i: ters bolu ve tirnak kacisi."""
+    return str(v).replace('\\', '\\\\').replace('"', '\\"')
+
+
+def prop_unescape(v):
+    """Dosyadaki string'i duz metne cevirir (prop_escape'in tersi)."""
+    return re.sub(r'\\(.)', r'\1', v)
+
+
+def _prop_spans(blk):
+    """[(ad, ham_deger, bas, son)] - property bloklarinin sembol icindeki yeri."""
+    out, i = [], 0
+    pat = re.compile(r'\n\t\t\(property "([^"]*)" "((?:[^"\\]|\\.)*)"')
+    while True:
+        m = pat.search(blk, i)
+        if not m:
+            break
+        a, b = K.block_at(blk, m.start() + 3)
+        out.append((m.group(1), m.group(2), a, b))
+        i = b
+    return out
+
+
+def sym_props(blk):
+    """Sembolun alanlari: [(ad, deger, gizli_mi, blok_metni)]. Deger kacissizdir."""
+    return [(n, prop_unescape(v), '(hide yes)' in blk[a:b], blk[a:b])
+            for n, v, a, b in _prop_spans(blk)]
+
+
+def _retitle(p, name, val):
+    return re.sub(r'\(property "[^"]*" "(?:[^"\\]|\\.)*"',
+                  '(property "%s" "%s"' % (name, prop_escape(val)), p, count=1)
+
+
+def _set_hide(p, hide):
+    p = re.sub(r'\n\t\t\t\(hide yes\)', '', p, count=1)
+    if hide:
+        p = re.sub(r'(\n\t\t\t\(at [^\n]*\))', r'\1\n\t\t\t(hide yes)', p, count=1)
+    return p
+
+
+def set_sym_props(blk, fields, visible=('Reference', 'Value')):
+    r"""Sembolun property bolumunu `fields` sirasina gore yeniden kurar.
+
+    fields  : [(ad, deger)] - istenen tam alan listesi, istenen sirada.
+    visible : gorunur kalacak alan adlari; kalan her alan gizlenir.
+              None -> MEVCUT gorunurluk korunur, yeni alanlar gizli uretilir.
+              Veri aktarimi (MPN, SelectionNote...) gibi gorunurluge dokunmamasi
+              gereken islerde None kullan: varsayilan ('Reference', 'Value')
+              TestPoint'lerin ve J7'nin bilincli gizlenmis Value'sunu gorunur
+              yapti (Ozdisan aktariminda 14 sembol; field_visibility() ile
+              yakalandi).
+
+    Mevcut bir alanin blogu KORUNUR (konum, hizalama, font, aci); yalniz adi,
+    degeri ve gizliligi degisir. Yeni alan sembol konumunda gizli uretilir.
+    Boylece elle ayarlanmis Reference/Value yerlesimi bozulmaz - islem sonrasi
+    field_geometry() farki bos cikmalidir.
+
+    Bir alan standarda tasinirken adi degisiyorsa (Voltage -> VoltageRating)
+    degerini fields'a yeni adla koy; listede olmayan alan dusar.
+
+    TUZAK: property bloklari dosyada '\n\t\t' girintisiyle durur, block_at ise
+    yalniz '(' ile baslayan govdeyi verir. Bloklari '\n' ile birlestirirsen
+    ikinci property SUTUN 0'da baslar. KiCad dosyayi yine okur (ERC ve netlist
+    etkilenmez) ama '\n\t\t\(property' arayan her arac - items(), sym_props() -
+    artik yalniz ilk alani gorur; betik idempotent olmaktan cikar ve ikinci
+    calistirma sembolu bozar. Ayirici bu yuzden '\n\t\t'.
+    """
+    spans = _prop_spans(blk)
+    if not spans:
+        raise ValueError('sembolde property yok')
+    old = {n: blk[a:b] for n, _, a, b in spans}
+    m = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', blk)
+    x, y = float(m.group(1)), float(m.group(2))
+    parts = []
+    for name, val in fields:
+        if visible is None:
+            hide = name not in old or '(hide yes)' in old[name]
+        else:
+            hide = name not in visible
+        if name in old:
+            parts.append(_set_hide(_retitle(old[name], name, val), hide))
+        else:
+            parts.append(K._prop(name, prop_escape(val), x, y,
+                                 hide=hide).rstrip('\n').lstrip('\t'))
+    return blk[:spans[0][2]] + '\n\t\t'.join(parts) + blk[spans[-1][3]:]
+
+
+def sym_blocks(t, ref):
+    """Referansin TUM sembol bloklari (cok birimli semboller: Q3/Q5 SQJB60EP
+    iki birim, iki blok): [(bas, son)]. Bulunamazsa KeyError."""
+    out = [(a, b) for a, b, kind, blk in items(t) if kind == 'symbol' and ref_of(blk) == ref]
+    if not out:
+        raise KeyError(ref)
+    return out
+
+
+def update_fields(t, ref, upd, visible=None):
+    """Referansin alanlarini gunceller: upd {ad: deger}; listede olmayan alan
+    aynen kalir, olmayan alan sona GIZLI eklenir. Cok birimli sembolde tum
+    birimlere uygulanir. visible set_sym_props'taki gibi (None = mevcut
+    gorunurluk). Oturumda dort kez elle yazilan "blok bul + alan listesi kur +
+    set_sym_props" dongusunun yerine:
+        t = E.update_fields(t, 'R55', {'Value': '237k', 'MPN': '0402WGF2373TCE'})
+    """
+    for a, b in sorted(sym_blocks(t, ref), reverse=True):
+        blk = t[a:b]
+        flds = [(n, upd.get(n, v)) for n, v, _, _ in sym_props(blk)]
+        have = {n for n, _ in flds}
+        flds += [(n, v) for n, v in upd.items() if n not in have]
+        t = t[:a] + set_sym_props(blk, flds, visible=visible) + t[b:]
+    return t
+
+
+def set_dnp(t, ref, dnp=True):
+    """(dnp yes|no): montajsiz opsiyon (D8/D9 SMF30A). Render'da kirmizi carpi."""
+    for a, b in sorted(sym_blocks(t, ref), reverse=True):
+        blk = re.sub(r'\(dnp (?:yes|no)\)', f'(dnp {"yes" if dnp else "no"})', t[a:b], count=1)
+        t = t[:a] + blk + t[b:]
+    return t
+
+
+def field_geometry(t):
+    """{ref: {alan: (at_metni, justify)}} ve {ref: {'sym': at_metni}}.
+
+    Yerlesimi degistirmemesi gereken bir islemin (alan ekleme, gorunurluk,
+    deger normalizasyonu) once/sonra farkini almak icin. Fark bossa hicbir
+    sembol veya metin oynamamistir; netlist farkiyla birlikte bu iki denetim
+    "cizim bozulmadi" demeye yeter.
+    """
+    out = {}
+    for _, _, kind, blk in items(t):
+        if kind != 'symbol':
+            continue
+        g = {'sym': re.search(r'\(at ([-\d.]+ [-\d.]+ \d+)\)', blk).group(1)}
+        for n, _, a, b in _prop_spans(blk):
+            p = blk[a:b]
+            at = re.search(r'\(at ([-\d.]+ [-\d.]+ \d+)\)', p)
+            ju = re.search(r'\(justify ([^)]*)\)', p)
+            g[n] = (at.group(1) if at else '', ju.group(1) if ju else '')
+        out[ref_of(blk)] = g
+    return out
+
+
+def field_visibility(t):
+    """{(ref, alan): gizli_mi} - alan gorunurlugu.
+
+    field_geometry konum/hizalamayi, bu gorunurlugu kilitler. Veri aktarimi
+    (MPN, parametrik alanlar) yapan betikten ONCE ve SONRA al, esit olmali:
+        before = E.field_visibility(t); ...; assert E.field_visibility(t2) == before
+    Yalniz sonradan eklenen alanlar farkli olabilir; onlar gizli olmali.
+    """
+    out = {}
+    for _, _, kind, blk in items(t):
+        if kind == 'symbol':
+            r = ref_of(blk)
+            for n, _, a, b in _prop_spans(blk):
+                out[(r, n)] = '(hide yes)' in blk[a:b]
+    return out
+
+
+def sym_body(t, ref):
+    """Sembolun sema koordinatindaki govde kutusu (aci + ayna uygulanmis).
+
+    Metnin baska bir sembolun (veya kendi govdesinin) uzerine basip basmadigini
+    anlamak icin; yalniz tel carpismasina bakan bir denetim bunu kacirir ve
+    otomatik metin kaydirma degeri sembolun ICINE tasiyabilir.
+    """
+    _, _, blk = _sym_span(t, ref)
+    lib = re.search(r'lib_id "([^"]+)"', blk).group(1)
+    lb = K.lib_body(t, lib)
+    if not lb:
+        return None
+    m = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', blk)
+    x, y, ang = float(m.group(1)), float(m.group(2)), int(m.group(3))
+    mm = re.search(r'\(mirror (\w)\)', blk)
+    mir = mm.group(1) if mm else None
+    pts = [K.xf((x, y), ang, (lb[i], lb[j]), mir) for i in (0, 2) for j in (1, 3)]
+    return (min(p[0] for p in pts), min(p[1] for p in pts),
+            max(p[0] for p in pts), max(p[1] for p in pts))
+
+
+def field_boxes(t):
+    """Gorunur sembol alanlarinin ekran kutulari: [('REF.Alan', metin, kutu)].
+
+    Property acisi sembole GORELI saklanir: ekrandaki aci (sembol_ang +
+    prop_rot) % 360'tir (R13 ang=90 + rot=270 -> yatay basilir). Ayrica ang 180
+    ve (mirror y) left/right hizalamasini ters cevirir; place() yazarken telafi
+    eder, burada okurken geri alinir. Bu iki telafiyi atlarsan kutular 90 derece
+    doner ve carpisma raporu sahte bulgularla dolar.
+    """
+    out = []
+    for _, _, kind, blk in items(t):
+        if kind != 'symbol':
+            continue
+        ref = ref_of(blk)
+        m = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', blk)
+        sang = int(m.group(3))
+        flip = (sang == 180) != ('(mirror y)' in blk)
+        for n, v, a, b in _prop_spans(blk):
+            p = blk[a:b]
+            if '(hide yes)' in p or n not in ('Reference', 'Value'):
+                continue
+            at = re.search(r'\(at ([-\d.]+) ([-\d.]+) (\d+)\)', p)
+            ju = re.search(r'\(justify ([^)]*)\)', p)
+            jt = ju.group(1).split()[0] if ju else 'center'
+            if flip:
+                jt = {'left': 'right', 'right': 'left'}.get(jt, jt)
+            sz = re.search(r'\(size ([\d.]+)', p)
+            txt = prop_unescape(v)
+            out.append(('%s.%s' % (ref, n), txt,
+                        K.text_box(txt, float(at.group(1)), float(at.group(2)),
+                                   (sang + int(at.group(3))) % 360, jt,
+                                   float(sz.group(1)) if sz else 1.27)))
+    return out
 
 
 def sym_pin(t, ref, num):
@@ -399,6 +677,112 @@ def edit_lib_symbol(fn, lib_path, sheet_paths, sym_name, lib_nick):
             write_sheet(path, t[:a] + nb + t[b:], crlf)
             changed.append(path)
     return changed
+
+
+def prune_lib_symbols(t):
+    """lib_symbols onbelleginden hicbir sembolun lib_id'si ile kullanilmayan
+    tanimlari siler. Donus: (yeni metin, silinen adlar).
+
+    Sembol kaldirildiginda (BT1 Battery_Cell, U7 TPS61023...) veya swap_lib ile
+    degistirildiginde eski tanim onbellekte kalir; zararsizdir ama diff'i ve
+    dosyayi sisirir, eski parcayi 'hala tasarimda' gibi gosterir.
+    """
+    i = t.index('(lib_symbols')
+    la, lb = K.block_at(t, i)
+    used = set(re.findall(r'\(lib_id "([^"]+)"\)', t))
+    cut, names = [], []
+    j = t.index('\n', la)
+    while True:
+        m = re.compile(r'\n\t\t\(symbol "([^"]+)"').search(t, j, lb)
+        if not m:
+            break
+        a, b = K.block_at(t, m.start() + 3)
+        if m.group(1) not in used:
+            cut.append((a, b))
+            names.append(m.group(1))
+        j = b
+    for a, b in sorted(cut, reverse=True):
+        t = t[:t.rindex('\n', 0, a)] + t[b:]
+    return t, names
+
+
+def missing_lib_symbols(t):
+    """Orneklerin kullandigi ama lib_symbols onbelleginde OLMAYAN lib_id'ler.
+
+    K.sym()/K.power() onbellege eklemez. Eksik tanim ERC'de hata VERMEZ:
+    power:+3.3V eksikken U10 VBUS pini netlist'te 'Net-(U10-VBUS)' adli ayri
+    bir nete dustu, ERC yalniz pin_to_pin "Pin 1 [???]" uyarisi verdi.
+    K.lib_pins de ValueError('substring not found') ile patlar."""
+    i = t.index('(lib_symbols')
+    la, lb = K.block_at(t, i)
+    cached = set(re.findall(r'\n\t\t\(symbol "([^"]+)"', t[la:lb]))
+    used = set(re.findall(r'\(lib_id "([^"]+)"\)', t[lb:]))
+    return sorted(used - cached)
+
+
+def ensure_used_lib_symbols(t, table='sym-lib-table'):
+    """missing_lib_symbols'taki her tanimi kutuphanesinden onbellege kopyalar
+    (proje kutuphanesi sym-lib-table'dan, yoksa KiCad sistem kutuphanesi).
+    Yeni sembol/guc sembolu ekleyen her betigin sonunda cagir."""
+    from kicadtools import project_symbol_lib
+    for lid in missing_lib_symbols(t):
+        nick, name = lid.split(':', 1)
+        t = K.ensure_lib_symbol(t, project_symbol_lib(nick, table), name, nick)
+    return t
+
+
+def refresh_lib_symbol(t, lib_id, lib_path=None, allow_pin_move=False):
+    """Onbellekteki tanimi kutuphanedeki guncel haliyle degistirir (ERC
+    lib_symbol_mismatch). KiCad surum yukseltmesinde kutuphane sembolu yalniz
+    cizimde degisebilir: KiCad 10 TL431DBZ'de pin uzunlugu 2.54 -> 1.27 mm,
+    pin uclari (at) ayni. Pin uc konumu degisirse baglanti kopar; bu yuzden
+    allow_pin_move=False iken pinler karsilastirilir, fark varsa ValueError."""
+    from kicadtools import project_symbol_lib
+    nick, name = lib_id.split(':', 1)
+    old = K.lib_pins(t, lib_id)
+    a, b = K.block_at(t, t.index(f'(symbol "{lib_id}"'))
+    t2 = K.ensure_lib_symbol(t[:t.rindex('\n', 0, a)] + t[b:],
+                             lib_path or project_symbol_lib(nick), name, nick)
+    new = K.lib_pins(t2, lib_id)
+    if not allow_pin_move and old != new:
+        raise ValueError(f'{lib_id} pin konumlari degisti: {old} -> {new}')
+    return t2
+
+
+def swap_lib(t, ref, lib_id, lib_path=None):
+    """Yerlestirilmis sembolun kutuphane sembolunu degistirir (ayni referans,
+    ayni uuid/instance/alanlar): RV-3028-C7 -> BQ32000, Conn_01x40 -> Conn_01x30.
+
+    Sembolu silip yeniden olusturma - alanlar, uuid ve PCB baglantisi kaybolur.
+    Yapilanlar:
+      * lib_id degisir, yeni tanim onbellege kopyalanir (lib_path verilmezse
+        sym-lib-table'daki proje kutuphanesi, yoksa KiCad sistem kutuphanesi;
+        `extends` ile turetilmis semboller bagimsizlastirilir);
+      * sembol ornegindeki (pin "N") uuid kayitlari yeni sembolun pin
+        numaralarina esitlenir: fazlalar silinir (40 -> 30 pinde 31..40),
+        eksikler yeni uuid ile eklenir;
+      * kullanilmayan eski tanim prune_lib_symbols ile silinir.
+    Pin KONUMLARI degisir: ardindan place() + pin_at() ile yeniden yerlestir ve
+    telleri yeniden ciz. Alanlari (Value, Footprint, MPN...) set_sym_props ile yaz.
+    """
+    from kicadtools import project_symbol_lib
+    nick, name = lib_id.split(':', 1)
+    t = K.ensure_lib_symbol(t, lib_path or project_symbol_lib(nick), name, nick)
+    a, b, blk = _sym_span(t, ref)
+    blk = re.sub(r'\(lib_id "[^"]+"\)', f'(lib_id "{lib_id}")', blk, count=1)
+    want = set(K.lib_pins(t, lib_id))
+    have = re.findall(r'\n\t\t\(pin "([^"]+)"\n\t\t\t\(uuid "[^"]+"\)\n\t\t\)', blk)
+    for n in have:
+        if n not in want:
+            blk = re.sub(r'\n\t\t\(pin "%s"\n\t\t\t\(uuid "[^"]+"\)\n\t\t\)' % re.escape(n),
+                         '', blk, count=1)
+    add = ''.join(f'\n\t\t(pin "{n}"\n\t\t\t(uuid "{K.uid()}")\n\t\t)'
+                  for n in sorted(want - set(have), key=lambda s: (len(s), s)))
+    if add:
+        k = blk.index('\n\t\t(instances')
+        blk = blk[:k] + add + blk[k:]
+    t = t[:a] + blk + t[b:]
+    return prune_lib_symbols(t)[0]
 
 
 def _indent_after(blk):

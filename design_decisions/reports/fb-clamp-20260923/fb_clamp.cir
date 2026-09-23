@@ -1,0 +1,68 @@
+* TPS55340 (U11) FB clamp - clamp referansi karsilastirmasi
+* gopo REV_C, usb_pd_controller sayfasi, 2026-09-23
+*
+* CFG=0 : mevcut devre   +3.3V -> R50 820R -> V_CL -> R51 1k0 -> GND
+* CFG=1 : D5 katodu dogrudan EN_CTRL (U6 TL431, 2.495 V)
+* CFG=2 : EN_CTRL -> R50 910R -> V_CL -> R51 2k4 -> GND
+*
+* V_PRE 0..30 V taranir. Boost anahtarlamasi modellenmedi: pass-through'da
+* V_PRE ~ PD_VOUT kabul edilir. FB pini yuksek empedansli sayilir.
+* Grafik: V(fb), V(en_ctrl), V(v_cl), I(D5), I(VIU6)
+* FB mutlak maksimum: 3.0 V.
+
+.param CFG=1
+.param V33=3.3       ; +3.3V rayi (0 yaparak 3V3 kaybi senaryosu)
+.param VREF=2.495    ; TL431A: min 2.470, max 2.520
+.param IMIN=1m       ; TL431A Imin max (tipik ~0.4m)
+
+* --- Kaynaklar
+VPRE  v_pre 0 5.02
+V3V3  p3v3  0 {V33}
+
+* --- Boost FB bolucu
+R48 v_pre fb 30.1k
+R49 fb    0  9.76k
+
+* --- Clamp
+D5 fb v_cl BAT54
+R50a p3v3    v_cl {if(CFG==0, 820, 1T)}
+R50b en_ctrl v_cl {if(CFG==1, 1m, if(CFG==2, 910, 1T))}
+R51  v_cl    0    {if(CFG==0, 1k, if(CFG==2, 2.4k, 1T))}
+
+* --- EN bias: R43 + U6 (TL431, K=REF) + R42, U5 EN girisi ihmal
+R43 v_pre   en_ctrl 1k
+VIU6 en_ctrl u6k 0           ; U6 katot akimi olcumu
+XU6 u6k 0 u6k TL431X
+R42 en_ctrl 0 100k
+
+* --- BAT54: datasheet MAKSIMUM Vf egrisine uydurulmus (kotumser)
+*     DS max: 240 mV @0.1 mA, 320 mV @1 mA, 400 mV @10 mA (25 C)
+*     model:  259 mV,          321 mV,        403 mV
+.model BAT54 D(Is=4.5n N=1.0 Rs=2.5 Cjo=10p Vj=0.35 M=0.5 BV=30 Ibv=2u Eg=0.69 Xti=2)
+
+* --- TL431 davranissal model (K A REF)
+*     IMIN kadar ic bias akimi + ~1 Ohm dinamik empedansli sont
+.subckt TL431X K A R
+B1 K A I = {IMIN}*limit(V(K,A),0,1) + limit(1.0*(V(R,A)-{VREF}), 0, 0.1)
+C1 K A 10p
+Rleak K A 100Meg
+.ends TL431X
+
+* --- Analiz
+.dc VPRE 0 30 0.02
+.step param CFG list 0 1 2
+.step temp list -40 25 85
+
+* --- Olcumler
+.meas DC fb_28      FIND V(fb)       AT 28
+.meas DC fb_30      FIND V(fb)       AT 30
+.meas DC en_4v3     FIND V(en_ctrl)  AT 4.3
+.meas DC en_5v02    FIND V(en_ctrl)  AT 5.02
+.meas DC vcl_5v02   FIND V(v_cl)     AT 5.02
+.meas DC id5_5v02   FIND I(D5)       AT 5.02
+.meas DC id5_28     FIND I(D5)       AT 28
+.meas DC iu6_28     FIND I(VIU6)   AT 28
+.meas DC vpre_fb3   WHEN V(fb)=3.0   CROSS=1
+
+.options plotwinsize=0
+.end

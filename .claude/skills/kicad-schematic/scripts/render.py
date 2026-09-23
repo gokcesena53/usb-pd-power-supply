@@ -16,6 +16,9 @@ Kullanim:
     # ayni PDF'ten baska bolge: --reuse ile yeniden export etme (hizli)
     python render.py sema.kicad_sch --page 12 --crop 170 34 358 122 -o out --reuse
 
+    # proje footprint'ini onizle (ped/silk/fab/courtyard) - yeni footprint cizince
+    python render.py --footprint libraries/Connector_FPC_Custom.pretty KLS_..._Horizontal -o out
+
 Gereksinimler: kicad-cli; rasterlestirme icin PyMuPDF (tercih) veya pdftoppm.
 """
 import argparse
@@ -81,10 +84,44 @@ def render(pdf, page, out_prefix, dpi=200, crop=None):
                   if x.startswith(base) and x.endswith('.png'))
 
 
+FP_LAYERS = 'F.Cu,F.SilkS,F.Fab,F.CrtYd'
+
+
+def render_footprint(pretty, name, out, layers=FP_LAYERS, width=1000):
+    """Footprint'i SVG'ye, varsa PNG'ye cevirir; olusan dosya yollarini dondurur.
+
+    kicad-cli fp export svg cikti dizini YOKSA 'Error creating svg file' der
+    ve cikis kodu 0 doner; dizin burada olusturulur. --layers verilmezse bos
+    goruntu cikabilir. PNG icin PyMuPDF (SVG acabilir) veya cairosvg; ikisi de
+    yoksa yalniz SVG doner. Silk'in pedin ustunden gectigi (DRC uyarisi) ve
+    courtyard'in pedleri kapsamadigi durumlar bu goruntude hemen gorunur.
+    """
+    os.makedirs(out, exist_ok=True)
+    subprocess.run([kicad_cli(), 'fp', 'export', 'svg', '--footprint', name,
+                    '--layers', layers, '-o', out, pretty], check=True, capture_output=True)
+    svg = os.path.join(out, name + '.svg')
+    if not os.path.exists(svg):
+        raise FileNotFoundError(f'SVG uretilemedi: {svg} (footprint adi / .pretty yolu?)')
+    png = os.path.join(out, name + '.png')
+    if fitz:
+        doc = fitz.open(svg)
+        pg = doc[0]
+        pg.get_pixmap(dpi=int(72 * width / max(pg.rect.width, 1))).save(png)
+        return [svg, png]
+    try:
+        import cairosvg
+        cairosvg.svg2png(url=svg, write_to=png, output_width=width, background_color='white')
+        return [svg, png]
+    except ImportError:
+        return [svg]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('schematic', help='kok .kicad_sch dosyasi')
+    ap.add_argument('schematic', nargs='?', help='kok .kicad_sch dosyasi')
+    ap.add_argument('--footprint', nargs=2, metavar=('PRETTY', 'NAME'),
+                    help='sema yerine footprint onizle')
     ap.add_argument('--page', type=int, help='PDF sayfa numarasi')
     ap.add_argument('--list', action='store_true', help='sayfalari listele')
     ap.add_argument('--crop', nargs=4, type=float, metavar=('X0', 'Y0', 'X1', 'Y1'),
@@ -98,6 +135,12 @@ def main():
 
     out = a.out or tempfile.mkdtemp(prefix='kisch-render-')
     os.makedirs(out, exist_ok=True)
+    if a.footprint:
+        for p in render_footprint(a.footprint[0], a.footprint[1], out):
+            print(p)
+        return 0
+    if not a.schematic:
+        ap.error('schematic veya --footprint gerekli')
     pdf = os.path.join(out, 'sch.pdf')
     if not (a.reuse and os.path.exists(pdf)):
         export_pdf(a.schematic, pdf)

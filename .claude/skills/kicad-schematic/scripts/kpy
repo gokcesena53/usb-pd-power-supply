@@ -1,0 +1,19 @@
+#!/bin/sh
+# Capraz platform python baslatici (Linux sh / Windows Git Bash).
+#   sh .claude/skills/kicad-schematic/scripts/kpy betik.py [arg...]
+# Calisan ilk yorumlayiciyi secer: KPY_PYTHON > python3 > python.
+# Windows'ta `python3` Microsoft Store kisayoluna duser (cikis 9009, "Python
+# was not found"), Linux'ta `python` olmayabilir; ikisini de "-c ''" ile dener.
+# PYTHONIOENCODING=utf-8: Windows konsolunda Omega/Turkce karakter yazdirirken
+# UnicodeEncodeError: 'charmap' olmasin. pcbnew gereken betikler kendini
+# kicadtools.ensure_pcbnew() ile KiCad python'unda yeniden baslatir.
+export PYTHONIOENCODING=utf-8
+export PYTHONDONTWRITEBYTECODE=1
+for p in "$KPY_PYTHON" python3 python; do
+    [ -n "$p" ] || continue
+    if "$p" -c '' >/dev/null 2>&1; then
+        exec "$p" "$@"
+    fi
+done
+echo "kpy: calisan python bulunamadi (python3/python); KPY_PYTHON ayarla" >&2
+exit 127

@@ -1,0 +1,4 @@
+# Kabuk betikleri her ortamda LF kalsin: Linux'ta CRLF'li betik `python\r`
+# arar ve calismaz; Windows (core.autocrlf=true) calisma kopyasinda da LF.
+*.sh text eol=lf
+.claude/skills/*/scripts/kpy text eol=lf

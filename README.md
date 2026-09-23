@@ -19,7 +19,8 @@ Depo yapısı [Open Hardware Template](https://github.com/mfhepp/open_hardware_t
 | `hardware/pdf/` | Blok blok şematik PDF çıktıları ve inceleme belgeleri |
 | `design_decisions/` | Tasarım kararları, hesaplamalar ve inceleme notları (Markdown) |
 | `3d_design/` | Kutu/mekanik tasarım dosyaları |
-| `software/` | Firmware ve yardımcı betikler |
+| `software/` | Firmware, firmware gereksinimleri (`FIRMWARE_GEREKSINIMLERI.md`) ve yardımcı betikler |
+| `backlog/` | Yapılacaklar ([Backlog.md](https://github.com/MrLesk/Backlog.md)); `backlog board` veya `backlog browser` ile görüntülenir |
 | `docs/` | GitHub Pages proje sayfası |
 | `.claude/skills/` | KiCad şema üretimi için Claude Code skill'i ve araçları |
 
