@@ -23,8 +23,17 @@ elle düzenleme.
   "todo" bırakma.
 - Görev başlıkları Türkçe olabilir, kısa tut. **Dosya adları ASCII olmalı:**
   Backlog.md başlığı dosya adına Türkçe karakterleriyle çevirir; görev
-  oluşturduktan sonra `python software/backlog_ascii.py` çalıştır (Claude'da
-  `.claude/settings.json` hook'u bunu otomatik yapar).
+  oluşturduktan sonra `sh .claude/skills/kicad-schematic/scripts/kpy
+  software/backlog_ascii.py` çalıştır (Claude'da `.claude/settings.json` hook'u
+  bunu otomatik yapar).
+
+## Ortam: Windows + Linux
+
+Depo iki ortamda geliştirilir. Python betiklerini Bash aracından
+`sh .claude/skills/kicad-schematic/scripts/kpy <betik>` ile çalıştır; komutlara
+`python`/`python3` ya da KiCad kurulum yolu yazma (Windows'ta `python3` Store
+kısayoluna düşer). KiCad araç/dizin bulma `kicadtools.py`'dedir (bkz.
+`kicad-schematic` → Ortam).
 
 ## Nerede ne tutulur
 

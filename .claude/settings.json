@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/software/backlog_ascii.py\""
+            "command": "sh \"$CLAUDE_PROJECT_DIR/.claude/skills/kicad-schematic/scripts/kpy\" \"$CLAUDE_PROJECT_DIR/software/backlog_ascii.py\""
           }
         ]
       }
