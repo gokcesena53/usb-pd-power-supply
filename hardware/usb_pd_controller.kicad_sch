@@ -18115,7 +18115,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
+		(property "Footprint" "Inductor_SMD:L_7.3x7.3_H4.5"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18170,7 +18170,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TDK (EPCOS)"
+		(property "Manufacturer" "Core Master"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18181,7 +18181,7 @@
 				)
 			)
 		)
-		(property "MPN" "B82422H1682K000"
+		(property "MPN" "SRI0704-6R8M"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18192,7 +18192,7 @@
 				)
 			)
 		)
-		(property "Package" "1210 (3225 Metric)"
+		(property "Package" "7.3x7.3x4.5mm"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18258,7 +18258,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "TPS55340 pre-boost, 600 kHz, Vin(min) 3.3 V PPS -> V_PRE 5.02 V, Iout 0.6 A. Datasheet denk. 11-16: D 0.397, IL(avg) 1.07 A, dalga 0.32 A, tepe 1.24 A; KIND 0.3 icin Lmin 6.78 uH -> 6.8 uH. IDC 3.5 A = 2.8x tepe. TPS55340 akim limiti 5.25-7.75 A; tam muhafazakar yaklasim (Isat > limit) bu kartta 12x12 mm bobin isterdi."
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18269,7 +18269,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan 489001; stok 10 (21.09.2026); Uyarı. Footprint'e uyan tek parça. TPS55340 boost bobini için 1210 çip bobinin akımı (yüzlerce mA) yetersiz; tasarımda bobin/footprint kontrolü gerekli. Stok 10."
+		(property "SelectionNote" "Özdisan 587796; stok 657 (23.09.2026); Uygun. B82422H1682K000 (1210) yalniz 0.35 A / 570 mOhm - tepe akimin (1.24 A) altinda, ayrica stok 10. Adaylar: FPI0705-100M (10 uH, 0.058 ohm / 3.4 A, 8.28 TL, L1 ile ortak footprint) L degisimi RHP sifirini %32 asagi tasiyacagi icin elendi; FPI0504-6R8M (0.065 ohm / 2.7 A, 5.64 TL, stok 108); SRI0605B-6R8M (0.08 ohm / 2.8 A); 74437356068 (5.1 A ama stok 34, 56 TL)."
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -18324,7 +18324,7 @@
 				)
 			)
 		)
-		(property "DCR" "TBD"
+		(property "DCR" "40mOhm"
 			(at 92.71 154.94 0)
 			(hide yes)
 			(show_name no)

@@ -28,6 +28,28 @@ Reddedilenler: TPY0705-220M footprint değişikliği istemezdi ama 0,35 Ω DCR i
 
 Footprint: `hardware/libraries/Inductor_Custom.pretty/L_CoreMaster_FPI0705_7.8x7.0mm_H5.0.kicad_mod` (spec DWG MY0212071: land L 8,5 toplam, G 2,0 boşluk, H 7,5 ped genişliği → 7,5 × 3,25 mm iki ped, merkez ±2,625). Datasheet: `hardware/datasheets/FPI0705-220K.pdf`.
 
+## L3 — B82422H1682K000 → **SRI0704-6R8M** (Core Master, Özdisan 587796)
+
+TPS55340 pre-boost bobini (PD_VOUT → V_PRE 5,02 V, 600 kHz). TASK-001, 23.09.2026.
+
+Eski parça yetersizdi: B82422H1682K000 (1210 çip) 6,8 µH ama **0,35 A / 570 mΩ**; hesaplanan tepe akımın (1,24 A) çok altında. Özdisan stoğu da 10 adete inmiş.
+
+Gereksinim, TPS55340 datasheet'inin (SLVSBD4E) 11–16 numaralı denklemleriyle hesaplandı. Vin(min) 3,3 V PPS, Vout 5,02 V, VD 0,45 V, fsw 600 kHz, V_PRE yükü 0,6 A (3,3 V rayının 0,7 A'i + kontrolcü/bias), η 0,85:
+
+- D = 0,397 · IL(ort) = 1,07 A · dalgalanma 0,32 A · **tepe 1,24 A** (geçici pay ile ~1,5 A)
+- KIND 0,3 için L(min) = 6,78 µH → şemadaki **6,8 µH doğru değer**
+- TPS55340 anahtar akım limiti 5,25–7,75 A. TI'nin en muhafazakâr önerisi (Isat > limit) bu kartta 12 × 12 mm sınıfı bobin gerektirirdi; görevdeki ≥3 A şartı (tepe akımın 2,4 katı) benimsendi.
+
+| Parça | L / DCR / IDC | Gövde | Fiyat | Stok | Not |
+|---|---|---|---|---|---|
+| **SRI0704-6R8M** | 6,8 µH / 0,04 Ω / 3,5 A | 7,3 × 7,3 × 4,5 | 15,05 TL | 657 | **Seçilen**; KiCad'de hazır footprint |
+| FPI0705-100M | 10 µH / 0,058 Ω / 3,4 A | 7,8 × 7,0 × 5,0 | 8,28 TL | 735 | L1 ile ortak footprint; L değişimi RHP sıfırını %32 aşağı taşır |
+| FPI0504-6R8M | 6,8 µH / 0,065 Ω / 2,7 A | 5,2 × 5,8 × 4,5 | 5,64 TL | 108 (+3000) | En küçük ve ucuz; stok düşük |
+| SRI0605B-6R8M | 6,8 µH / 0,08 Ω / 2,8 A | 6,6 × 6,2 × 5,0 | 17,56 TL | 1.583 | DCR iki katı |
+| 74437356068 (Würth) | 6,8 µH / 0,049 Ω / 5,1 A | 8,5 × 8 × 3 | 56,15 TL | 34 | Akım limitinin üstünde ama stok yetersiz |
+
+Gerekçe: 6,8 µH korunduğu için kompanzasyon (R52/C) yeniden doğrulanmıyor; adaylar içinde DCR en düşük (0,04 Ω → 1,07 A rms'de 46 mW) ve akım en yüksek. Footprint `Inductor_SMD:L_7.3x7.3_H4.5` KiCad'de hazır, yeni çizim gerekmedi. Datasheet: `hardware/datasheets/SRI0704-6R8M.pdf`.
+
 ## U1 AP33772S — Mouser/DigiKey
 
 Özdisan indeksinde stoksuz dahil hiç geçmiyor; PD 3.1 EPR sink kontrolcüsü kategorisi Özdisan'da yok. Muadil arayışı tavanı da değiştirir (bkz. `CIKIS_GERILIMI_28V_TAVANI_20260922.md`), bu yüzden parça korunuyor ve ikinci kaynaktan alınıyor. Stok ve fiyat satın alma öncesi doğrulanacak.
