@@ -139,6 +139,13 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   yeni C21 100n yumusak kalkis. RST1 baglantisi kaldirildi (CH9121 0x02 /
   0x0e ile yazilimdan reset'lenir). Yeni sembol: Power_Supply_Custom
   TSM3443CX6 (G=3, S=4, D=1/2/5/6 istifli). ERC 0/0.
+- PCB semadan guncellendi (TASK-006): 54 footprint eklendi (yeniler kart
+  disinda dizili, yerlesim TASK-008), 15 kaldirildi (BT1, J2, L2, U7, U8,
+  U9, R42 ...), 20 footprint degisti (U2 WROOM-1 -> MINI-1, Q3 PowerPAK
+  SO-8L Dual, Q4 SOT-23, U10 SOT-23-6, J4 SolderWire-1.5sqmm ...). Eski
+  WROOM-1/BT1 pad'lerine giden 7 iz parcasi silindi. Sembol alanlari
+  footprint'lere aktarildi. J8 (Ethernet mezanin) footprint'i numuneye
+  kadar TBD, PCB'de yok. DRC schematic parity: 416 -> 1 (J8).
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

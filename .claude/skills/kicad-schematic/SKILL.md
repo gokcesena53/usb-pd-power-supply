@@ -127,6 +127,7 @@ kopyayı yeniden al ya da `_before` yedeğinden geri yükle.
 | `render.py` | PDF export + kırpılmış PNG; `--footprint PRETTY AD` footprint önizlemesi (`render_footprint`) |
 | `verify.py` | ERC sayıları + netlist farkı + **önbellekte olmayan sembol uyarısı** (tüm sayfalar); `--against` net adı değişimini gerçek bağlantı kaybından ayırır (`signature`) |
 | `readability.py` | üst üste binen metin, tel/gövde üstüne basan sembol alanı, gövdesinden tel geçen global etiket, **çerçeveden taşan** etiket/not/alan (`frame_overflow`), **üst üste binen sembol gövdeleri** (`body_overlaps`, güç sembolü dahil); CLI çıkış kodu = bulgu sayısı |
+| `update_pcb.py` | **headless "Update PCB from Schematic"** (kicad-cli'da yok): referansla eşler, footprint ekle/sil/değiştir, alan+net eşitle, eski izleri siler (`--keep-tracks`), `--dry-run`; doğrulama `kicad-cli pcb drc --schematic-parity` (hedef: parity 0, yalnız footprint'i TBD semboller) |
 
 ### Yeni blok üretmek
 
