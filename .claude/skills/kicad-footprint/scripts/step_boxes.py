@@ -49,6 +49,17 @@ class StepBoxes:
         """Kare kesitli pin (2.54 mm header pini 0.64 mm)."""
         self.box(name, color, cx - w / 2, cx + w / 2, cy - w / 2, cy + w / 2, z0, z1)
 
+    def cyl(self, name, color, cx, cy, r, z0, z1, n=6):
+        """Dik silindiri n seritle ORTER (kapsayan) sekilde yaklastir: her serit
+        genisligi merkeze yakin kenarindaki kiris. Cakisma/yukseklik kontrolu
+        icin guvenli taraf; gorunus basamakli olur."""
+        h = 2 * r / n
+        for i in range(n):
+            ya, yb = cy - r + i * h, cy - r + (i + 1) * h
+            d = min(abs(ya - cy), abs(yb - cy)) if (ya - cy) * (yb - cy) > 0 else 0.0
+            w = (r * r - d * d) ** 0.5
+            self.box(f'{name}_{i}', color, cx - w, cx + w, ya, yb, z0, z1)
+
     def text(self, stamp='2026-01-01T00:00:00'):
         lines = []
 

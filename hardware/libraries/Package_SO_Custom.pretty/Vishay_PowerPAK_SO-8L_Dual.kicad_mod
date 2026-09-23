@@ -213,4 +213,15 @@
 		(layer "F.CrtYd")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

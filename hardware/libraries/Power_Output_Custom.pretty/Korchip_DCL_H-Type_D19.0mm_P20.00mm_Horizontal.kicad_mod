@@ -140,4 +140,15 @@
 		(remove_unused_layers no)
 		(uuid "e83c283c-f0b9-4b34-959e-8d6d1eee24e9")
 	)
+	(model "${KIPRJMOD}/libraries/Power_Output_Custom.3dshapes/Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

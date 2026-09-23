@@ -304,4 +304,15 @@
 		(roundrect_rratio 0.25)
 		(uuid "6339854d-16ea-45e8-8b62-5de1ac610693")
 	)
+	(model "${KIPRJMOD}/libraries/Connector_FPC_Custom.3dshapes/KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

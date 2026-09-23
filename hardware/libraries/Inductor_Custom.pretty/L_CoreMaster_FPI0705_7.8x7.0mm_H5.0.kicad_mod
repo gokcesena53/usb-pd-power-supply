@@ -127,4 +127,15 @@
 		(layer "F.CrtYd")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/Inductor_Custom.3dshapes/L_CoreMaster_FPI0705_7.8x7.0mm_H5.0.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

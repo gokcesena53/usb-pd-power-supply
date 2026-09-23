@@ -158,6 +158,14 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   Uretici 3D model yayinlamadigi icin basitlestirilmis STEP eklendi
   (libraries/Module_Custom.3dshapes: modul PCB, RJ45, CH9121, AMS1117,
   2x8 header, mekanik pinler; olcu cizimi boyutlarinda renkli kutular).
+- PCB: 3D modeli olmayan footprint'lere basitlestirilmis STEP eklendi
+  (TASK-061; datasheet dis zarfi, renkli kutular): J3 KLS1-242I (2.0 mm),
+  L1 FPI0705 (5.0), Q3/Q5 PowerPAK SO-8L Dual (1.07), C33 Korchip DCL
+  H-type (6.5), SW3 EC11 enkoder (mil ucu 17.0). KiCad 10 kurulumunda
+  bulunmayan standart modeller icin ikame: L3, U12, U2, Y1, J4
+  (libraries/Generic_Custom.3dshapes); U5 ayni govdeli
+  SOIC-8-1EP EP2.41x3.81 modeline yonlendirildi. Ped/netlist degismedi,
+  DRC schematic parity 0.
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

@@ -126,6 +126,20 @@ geçiyor (yayla böl / dışarı al) ve courtyard pedleri kapsamıyor.
 - Model yolu `${KIPRJMOD}` ile başlar; test kartı başka dizinde olduğu için
   `fp_check` `.3dshapes`'i yanına kopyalar. Model bulunamazsa KiCad **sessizce**
   modelsiz render eder.
+- **Silindir** (coin süperkap, enkoder mili): `StepBoxes.cyl(...)` kapsayan
+  şeritlerle yaklaşır; yükseklik/çakışma kontrolü için güvenli taraf.
+- **Kartın tamamını tara:** `model_scan.py hardware/gopo.kicad_pcb` modelsiz
+  footprint'i ve dosyası olmayan model yolunu listeler (çıkış kodu 1).
+- **KiCad 10 standart footprint'lerinin bir kısmı kurulumda olmayan modele
+  işaret eder** (L_7.3x7.3_H4.5, WSON-12 3x3, ESP32-C6-MINI-1, ABS25,
+  SolderWire, SOIC-8-1EP EP2.71x3.7). İkame STEP
+  `libraries/Generic_Custom.3dshapes/`'e, PCB'deki yol metin olarak
+  değiştirilir (`examples/gopo_basic_models.py --pcb`); gövdesi aynı KiCad
+  modeli varsa ona yönlendir. Standart footprint `--refresh` edilirse yol
+  geri döner, taramayı tekrarla.
+- Mevcut (elle yazılmış) footprint'e model eklerken dosyayı yeniden üretme,
+  yalnız `(model ...)` bloğunu son `)`'den önce ekle, satır sonunu koru
+  (`gopo_basic_models.add_model`).
 
 ## Tuzaklar
 
@@ -150,9 +164,11 @@ geçiyor (yayla böl / dışarı al) ve courtyard pedleri kapsamıyor.
 | dosya | iş |
 |---|---|
 | `scripts/kifp.py` | `Footprint`: `pad_tht` (`MP`), `pad_smd`, `line`, `rect`, `poly`, `text`, `keepout`, `model`, `prop_ref/value`, `write(crlf=)`; deterministik uuid (uuid5) |
-| `scripts/step_boxes.py` | `StepBoxes`: `box`, `pin`, `write(stamp=)`; renkler `BLUE SILVER BLACK GOLD GREEN WHITE` |
-| `scripts/fp_check.py` | KiCad ayrıştırma + sayılar + model yolu; 2D PNG; `--3d` render + STEP |
+| `scripts/step_boxes.py` | `StepBoxes`: `box`, `pin`, `cyl`, `write(stamp=)`; renkler `BLUE SILVER BLACK GOLD GREEN WHITE` |
+| `scripts/fp_check.py` | KiCad ayrıştırma + sayılar + model yolu; 2D PNG; `--3d` render + STEP (KIPRJMOD = `.pretty`'nin üst dizini: test kütüphanesinde `.3dshapes`'i `<üst>/libraries/` altına koy) |
+| `scripts/model_scan.py` | PCB genelinde modelsiz / kırık model yolu taraması |
 | `examples/waveshare_2ch_uart_to_eth.py` | J8 footprint + STEP'in tam kaynağı; ölçü çözümü docstring'de |
+| `examples/gopo_basic_models.py` | J3, L1, Q3/Q5, C33, SW3 STEP'leri + standart footprint ikameleri (L3, U12, U2, Y1, J4); `--pcb` kırık yolları düzeltir |
 | `../kicad-schematic/scripts/view.py` | PDF metni/arama/bölge render, görüntü kırp-büyüt |
 | `../kicad-schematic/scripts/update_pcb.py` | şemadan PCB (`--refresh`, `--keep-tracks`, `--dry-run`) |
 
@@ -163,3 +179,8 @@ geçiyor (yayla böl / dışarı al) ve courtyard pedleri kapsamıyor.
   taşar, 2x8 header dış sütun kenardan 1.85, sıra kenardan 2.11, ara parça 2.5,
   pin ara parçadan 6.0 iner (ana kart altından ~4.4 çıkar), mekanik pinler
   RJ45 tarafında kenardan 4.00 / 1.35 (± 0.3, numuneyle doğrulanacak: TASK-053).
+- **Gövde yükseklikleri (kart üstünden, nominal / maks):** J3 KLS1-242I-2.0
+  2.00 ± 0.15 (flip kapak açıkken 3.1), L1 FPI0705 5.0 ± 0.3, L3 SRI0704
+  4.5 maks, Q3/Q5 PowerPAK SO-8L 1.07 / 1.14, U12 WSON 0.8 maks, U2
+  ESP32-C6-MINI-1 2.4, Y1 ABS25 2.5, C33 Korchip DCL H 6.5 ± 0.5, SW3 gövde
+  4.5 / bushing üstü 9.5 / mil ucu 17.0 (E bushing D=5, F mil L=12.5).
