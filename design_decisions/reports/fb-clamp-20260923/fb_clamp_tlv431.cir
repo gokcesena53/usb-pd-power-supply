@@ -1,0 +1,58 @@
+* U5 EN + U11 FB ortak referans onerisi (TLV431, V_X ~1.60 V)
+* gopo REV_C, usb_pd_controller sayfasi, 2026-09-23
+*
+* V_PRE -> R43 4k7 -> V_X ; U6 TLV431B (K=V_X, REF=R50/R51 orta noktasi)
+* R50 2k87 (V_X -> REF), R51 9k76 (REF -> GND)  => V_X = 1.24*(1+2.87/9.76)
+* V_X -> U5 EN dogrudan ; D5 BAS16: anot FB, katot V_X ; R42 kaldirildi
+*
+* Sinirlar: U11 FB abs max 3.0 V, VREF 1.204..1.254 V
+*           U5 EN on >=1.2 V, off <=0.4 V, onerilen 1.2..5 V, abs max 6 V
+*           TLV431 Ika 0.1 mA (Imin max) .. 15 mA
+* Grafik: V(fb), V(v_x), I(D5), I(VIU6), V(v_pre,v_x)*I(R43)
+
+.param VREF=1.24     ; TLV431B: 1.234..1.246 (25 C)
+.param IMIN=100u     ; TLV431 Imin max (tipik 55u)
+.param R43V=4.7k
+
+VPRE  v_pre 0 5.02
+
+* --- Boost FB bolucu
+R48 v_pre fb 30.1k
+R49 fb    0  9.76k
+
+* --- Ortak referans
+R43  v_pre v_x {R43V}
+VIU6 v_x   u6k 0            ; U6 katot akimi olcumu
+XU6  u6k 0 ref TLV431X
+R50  v_x ref 2.87k
+R51  ref 0   9.76k
+RENU5 v_x 0 10Meg           ; U5 EN girisi (datasheet akim vermiyor, ihmal)
+
+* --- Clamp diyotu
+D5 fb v_x BAS16
+
+* --- BAS16: DS max 715 mV @1 mA, 855 mV @10 mA (25 C)
+*     model:  710 mV @1 mA, 834 mV @10 mA
+.model BAS16 D(Is=150p N=1.75 Rs=2 Cjo=1.5p Vj=0.6 M=0.33 BV=100 Ibv=1u Eg=1.11 Xti=3)
+
+* --- TLV431 davranissal model (K A REF)
+.subckt TLV431X K A R
+B1 K A I = {IMIN}*limit(V(K,A)/0.5,0,1) + limit(4.0*(V(R,A)-{VREF}), 0, 0.1)
+C1 K A 10p
+Rleak K A 100Meg
+.ends TLV431X
+
+.dc VPRE 0 34 0.02
+.step temp list -40 25 85
+
+.meas DC vx_4v3    FIND V(v_x)    AT 4.3
+.meas DC vx_5v02   FIND V(v_x)    AT 5.02
+.meas DC iu6_4v3   FIND I(VIU6)   AT 4.3
+.meas DC id5_5v02  FIND I(D5)     AT 5.02
+.meas DC fb_28     FIND V(fb)     AT 28
+.meas DC fb_34     FIND V(fb)     AT 34
+.meas DC iu6_34    FIND I(VIU6)   AT 34
+.meas DC en_on     WHEN V(v_x)=1.2 RISE=1
+
+.options plotwinsize=0
+.end

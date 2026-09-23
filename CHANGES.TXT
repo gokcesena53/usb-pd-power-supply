@@ -112,6 +112,15 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   R59 10k 0805 -> 100k 0603 (pasif yedek). Yeni net DISCH_G. Q1/Q2 sembol
   alanlari BSS138P,215 datasheet'ine gore duzeltildi (Value BSS138P).
   Ayrinti: design_decisions/output/CIKIS_DESARJI_20260923.md.
+- usb_pd_controller: U5 EN ve U11 FB clamp tek referansta birlesti
+  (EN_CTRL = V_X 1.605 V). U6 TL431AIDBZR -> TLV431BQDBZT (yeni proje
+  sembolu Power_Path_Custom:TLV431xDBZ, DBZ pinout 1=REF 2=K 3=A),
+  R50 2k87 / R51 9k76 artik U6 REF boluculeri. D5 BAT54 (SOD-123) ->
+  BAS16HT1G (SOD-323), katot V_CL yerine EN_CTRL'de; +3.3V bagimliligi
+  kalkti. R43 1k0 2W -> 4k7 1W, R42 kaldirildi, V_CL neti kalkti.
+  Worst-case (0-60 C, V_PRE 34 V) FB 2.40 V < 3 V. Ayrinti:
+  design_decisions/output/FB_CLAMP_EN_REFERANSI_20260923.md.
+
 - mcu: "ETHERNET MEZANIN (CH9121)" blogu eklendi. Waveshare 2-CH UART TO
   ETH modulu J8 (7 pin) uzerinden mezanin olarak baglanir: UART0
   (GPIO16/17) kanal 1'e, ETH_CFG0 GPIO8'e (R15 uzerinden; R37 10k boot'ta
