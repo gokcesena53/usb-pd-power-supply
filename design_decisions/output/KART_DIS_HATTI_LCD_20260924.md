@@ -63,31 +63,31 @@ Kart ölçüsüne katılmadı.
 | AA | −32,40 … +32,40 | −24,30 … +24,30 |
 | LCD modül | −36,28 … +41,42 | −27,52 … +27,52 |
 | Ön panel penceresi (AA + 0,4) | −32,80 … +32,80 | −24,70 … +24,70 |
-| **Kart (Edge.Cuts)** | **−44,50 … +62,50** | **−30,50 … +30,50** |
+| **Kart (Edge.Cuts)** | **−49,70 … +49,70** | **−30,52 … +30,52** |
 
-**Kart ölçüsü 107,0 × 61,0 mm, köşe yarıçapı 3 mm.** Kart her kenarda hem
-AA'yı hem LCD modülünü kapsıyor. Kenar payları ve gerekçeleri:
+**Kart ölçüsü 99,40 × 61,04 mm, köşe yarıçapı 3 mm.** Kart AA'ya göre iki
+eksende de simetrik; hem AA'yı hem LCD modülünü her kenarda kapsıyor.
 
-- **Üst ve alt kenar: 2,98 mm.** Modül ±0,2 mm toleransla bile tamamen
-  kartın üstünde kalıyor. Bu kenarlarda konnektör ya da delik yok; payı
-  büyütmek yalnızca kutuyu büyütürdü.
-- **Sol kenar: 8,22 mm.** Bu şerit H1/H3 M3 deliklerini LCD izdüşümünün
-  dışında tutuyor (aşağıda). USB-C (J7) ve RJ45 (J8) bu kenara, alt (B)
-  yüze gelecek (TASK-063). Alt yüzde oldukları için LCD'nin sol kısmıyla
-  çakışmıyorlar.
-- **Sağ kenar: 21,08 mm.** ESP32-C6-MINI-1 anteni için ayrıldı.
-  Espressif, anten alanının ve çevresindeki 15 mm'nin metalden boş
-  kalmasını istiyor. KiCad footprint'inin anten keepout'u da anten alanı
-  + 15 mm. U2 alt yüzde, AA ekseninde (y = 0). Modül ucu x = +62,0'da
-  (kenardan 0,5 mm içeride, silkscreen kenar açıklığı için). Anten alanı
-  x = +56,6'da başlıyor, yani LCD modül kenarından **15,18 mm**, FPC
-  kıvrımından yaklaşık 14,2 mm uzakta. Kıvrımın konumu 1,00 mm'lik çizim
-  ölçüsüne göre. U2 gövdesi (x = +45,4 … +62,0) LCD izdüşümünün dışında.
-  Kart 106 mm olsaydı bu mesafe 14,2 mm olurdu; 1 mm fazla genişlik bu
-  yüzden seçildi.
+- **Sağ ve sol kenar: AA kenarından 17,30 mm** (kullanıcı kararı, 24.09:
+  sağ ve sol pay eşit). LCD modülü AA'ya göre FPC tarafına kaymış olduğu
+  için modül kenarına göre paylar farklı: sağ (FPC) 8,28 mm, sol 13,42 mm.
+  17,30 mm, sağ deliklerin LCD izdüşümü dışında kalmasını sağlayan en
+  küçük değer (yuvarlatılmış): 9,02 (AA → modül) + 1,08 (M3 başı ile
+  modül arası boşluk) + 3,2 (M3 baş yarıçapı) + 4,0 (delik → kart kenarı).
+- **Üst ve alt kenar: LCD modülünden 3,00 mm** (kullanıcı kararı, 24.09).
+  AA kenarından 6,22 mm. Modül ±0,2 mm toleransla da tamamen kartın
+  üstünde kalıyor.
 - **Köşe yarıçapı: 3 mm.** Deliklerin kenar mesafesinden (4 mm) küçük;
-  köşe yayı ile delik arasında 1 mm'den fazla et kalıyor. Kutu iç
-  köşesine uyuyor.
+  köşe yayı ile delik arasında 1 mm'den fazla et kalıyor.
+- **ESP32 anteni kart ölçüsünü belirlemiyor.** U2'nin konumu henüz
+  sabit değil (TASK-063/054). Sağ şerit modülden yalnızca 8,28 mm dışarı
+  taşıyor. MINI-1'in PCB anteni için Espressif, anten alanı ve çevresinde
+  15 mm metal boşluk istiyor; bu şerit tek başına buna yetmez. Anten
+  kararında seçenekler: modül ucunu kart kenarından dışarı taşırmak,
+  anteni LCD izdüşümü dışında kalan bir kenara/köşeye almak veya harici
+  antenli MINI-1U'ya geçmek.
+- USB-C (J7) ve RJ45 (J8) sol kenara, alt (B) yüze gelecek (TASK-063).
+  Sol şerit 13,42 mm; alt yüzde oldukları için LCD ile çakışmıyorlar.
 
 ## Montaj delikleri
 
@@ -96,13 +96,19 @@ board-only (şemada yok), kilitli.
 
 | Ref | x | y | Not |
 | --- | --- | --- | --- |
-| H1 | −40,5 | −26,5 | LCD sol kenarına merkezden 4,22 mm; M3 baş dairesi (r 3,2) ile 1,02 mm, courtyard (r 3,45) ile 0,77 mm boşluk |
-| H2 | +58,5 | −26,5 | LCD kenarından 17,08 mm; anten alanından (y ±6,6) 16,7 mm |
-| H3 | −40,5 | +26,5 | H1 gibi |
-| H4 | +58,5 | +26,5 | H2 gibi |
+| H1 | −45,70 | −26,52 | LCD sol kenarına merkezden 9,42 mm (M3 başı ile 6,22 mm boşluk) |
+| H2 | +45,70 | −26,52 | LCD sağ kenarına merkezden 4,28 mm: M3 baş dairesi (r 3,2) ile 1,08 mm, courtyard (r 3,45) ile 0,83 mm boşluk |
+| H3 | −45,70 | +26,52 | H1 gibi |
+| H4 | +45,70 | +26,52 | H2 gibi |
 
-- Her delik kart kenarlarından 4 mm içeride. Delikler 99,0 × 53,0 mm
+- Her delik kart kenarlarından 4 mm içeride. Delikler 91,40 × 53,04 mm
   dikdörtgen oluşturuyor; kutu boss'ları bu ölçüye göre yapılır.
+- H2/H4 ile FPC: FPC kıvrımı modül kenarından 1,00 mm dışarıda
+  (x = +42,42) ve M3 başının iç kenarı x = +42,50'de. Ama FPC bandı
+  deliklerin y aralığına girmiyor. Bant, modülün alt kenarından 10,47 mm
+  yukarıda başlıyor (y = +17,05). Üst sınırı çizimden ölçekle yaklaşık
+  y = −21,4 (38,5 mm genişlik; ölçü yazılmamış). M3 başları |y| ≥ 23,32'de,
+  bandın dışında. Bant genişliği numunede doğrulanacak (TASK-064/012).
 - **NPTH (GND'ye bağlı değil):** Çıkış 28 V'a kadar yüzüyor ve RJ45
   kabuğu GND'ye bağlı (TASK-054). Metal vida ya da boss üzerinden şasiye
   ikinci bir toprak yolu açılmasın diye delikler bakırsız. Kutu plastik
@@ -115,13 +121,12 @@ board-only (şemada yok), kilitli.
 - Edge.Cuts: 4 çizgi + 4 yay, tek kapalı kontur. Eski dış hattın
   (8 segment) `invalid_outline` hatası giderildi.
 - Dwgs.User (User.Drawings) katmanında: AA, LCD modül dış hattı, ön panel
-  penceresi (AA + 0,4), AA merkez artısı, "FPC çıkışı" işareti ve
-  "LCD + 15 mm" anten sınırı çizgisi.
+  penceresi (AA + 0,4), AA merkez artısı ve "FPC çıkışı" işareti.
 - Başlangıç yerleşimi (iz ve zone yok) göreli dizilim korunarak
-  (+61, −3) mm kaydırıldı ve yeni kartın içine alındı. U2 yukarıdaki
-  konuma taşındı. Kenara değen C23, C33, D10, J8 ve R55, kartın büyük
-  ölçüde dışında oldukları için 1,06 mm sağa, kartın tamamen dışına
-  itildi. Yerleşimleri TASK-063/065'te yapılacak.
+  (+55, −9) mm kaydırıldı. Bu kaydırmada her parça ya tamamen kartın
+  içinde ya tamamen dışında kalıyor; itilen parça yok. U2'nin kenarı aşan
+  kısmı yalnızca anten keepout alanı. SW3 geçici olarak sol üst köşede.
+  Yerleşim TASK-063/065'te yapılacak.
 
 DRC (`kicad-cli pcb drc --schematic-parity`):
 
@@ -136,3 +141,9 @@ DRC (`kicad-cli pcb drc --schematic-parity`):
 Kalan hole_clearance (4) J7 footprint'inin kendi GND pedi ile NPTH
 pimi arasında; kenarla ilgisi yok. Diğer ihlaller yerleşimden kaynaklanıyor
 (courtyard, silk).
+
+## Revizyon
+
+- 24.09 (ilk): 107,0 × 61,0 mm. Sağda U2 anteni için 21,08 mm şerit
+  vardı (anten LCD'den 15,18 mm). Kullanıcı itirazıyla geri alındı: U2
+  konumu sabit değildi. Yerine sağ/sol eşit pay ve üst/alt 3 mm geldi.

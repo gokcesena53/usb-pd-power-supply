@@ -1,16 +1,16 @@
 # PCB layout yol haritası
 
-Mevcut durum: Şematik tamamlandı, ERC temiz, footprintler atandı. Kart dış hattı 107 × 61 mm olarak TFT032B018'e göre sabitlendi (24.09.2026, TASK-062). Routing henüz başlamadı.
+Mevcut durum: Şematik tamamlandı, ERC temiz, footprintler atandı. Kart dış hattı 99,40 × 61,04 mm olarak TFT032B018'e göre sabitlendi (24.09.2026, TASK-062). Routing henüz başlamadı.
 
 ## Aşama 1 — Mekanik yapıyı kilitle
 
 KiCad'de önce `Edge.Cuts` ve mekanik bileşenleri kontrol et. Ölçüler ve gerekçeler: `KART_DIS_HATTI_LCD_20260924.md`.
 
-- Kart: 107,0 × 61,0 mm, r 3 mm; orijin (aux/grid) LCD görünür alan merkezi
+- Kart: 99,40 × 61,04 mm, r 3 mm; AA kenarından sağ/sol 17,30 mm, LCD modülünden üst/alt 3 mm; orijin (aux/grid) LCD görünür alan merkezi
 - LCD (TFT032B018): üst yüzde yatay, FPC sağ kenardan arkaya bükülür; AA ve modül dış hattı Dwgs.User'da
-- Montaj delikleri: 4 × M3 NPTH, kenarlardan 4 mm (99 × 53 mm dikdörtgen), LCD izdüşümü dışında
+- Montaj delikleri: 4 × M3 NPTH, kenarlardan 4 mm (91,40 × 53,04 mm dikdörtgen), LCD izdüşümü dışında
 - USB-C (J7) ve RJ45 (J8): sol kart kenarı, alt yüz (TASK-063)
-- ESP32 anteni: sağ kart kenarı, alt yüz; anten alanı LCD kenarından ≥ 15 mm
+- ESP32 anteni: konumu açık (TASK-063/054); sağ şerit LCD modülünden yalnız 8,28 mm taşar, 15 mm anten boşluğu için modül taşırma veya MINI-1U değerlendirilecek
 - TFT FPC konektörü (J3): LCD altında, FPC büküm geometrisine göre (TASK-064)
 - Encoder: karta monte edilmez; panele sabitlenir, kabloyla karta bağlanır
 - J4 çıkış lehim pedleri: banana jack'lere kabloyla bağlı
