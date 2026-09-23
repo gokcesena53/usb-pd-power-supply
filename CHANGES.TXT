@@ -89,6 +89,20 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   pre-boost'un tepe bobin akimi 1.24 A. Yeni parca 6.8 uH / 0.04 ohm /
   3.5 A, footprint 1210 -> Inductor_SMD:L_7.3x7.3_H4.5. Deger degismedi,
   kompanzasyon aynen gecerli. Netlist degismedi.
+- usb_pd_controller, mcu: tum direnc sembolleri Device:R -> Device:R_Small_US
+  (21 sembol). Kisalan pinler 1.27 mm telle eski uca uzatildi; netlist
+  degismedi.
+- usb_pd_controller: PD_INT 5V->3V3 bolucusu R8 12k / R9 20k -> R8 10k +
+  R64 2k0 / R9 10k + R65 10k (seri). Oran 0.625 korundu; BOM'dan 12k ve
+  20k kalemleri kalkti. Ilk oneri 10k / 2x10k en kotu durumda ESP32
+  VIH maks'ini (VDD+0.3) 36 mV asiyordu. Hesap:
+  design_decisions/output/PD_INT_BOLUCU_20260923.md.
+- usb_pd_controller: J4 DG142R klemens -> 2 pozisyonlu kablo lehim pedi
+  (Connector_Wire:SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm). J5/J6
+  Cinch 108-0902/0903-001 -> Motorobit 4 mm metal disi banana (kirmizi
+  KOM.KNN.06.000021, siyah KOM.KNN.06.000022), panele sabitlenip J4'e
+  kabloyla baglaniyor. Netlist degismedi. Ayrinti:
+  design_decisions/output/CIKIS_KONNEKTORU_20260923.md.
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

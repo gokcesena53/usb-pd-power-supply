@@ -4,7 +4,7 @@ title: PCB'yi şemadan güncelle
 status: To Do
 assignee: []
 created_date: '2026-09-22 18:46'
-updated_date: '2026-09-23 05:07'
+updated_date: '2026-09-23 05:56'
 labels:
   - layout
 milestone: m-1
@@ -34,6 +34,7 @@ Yer değişen (şemada): R10, R15, R37, TP9, SW1 U2'nin soluna alındı (MINI-1'
 - [ ] #2 Kalkan bileşenler PCB'den silindi
 - [ ] #3 Footprint değişiklikleri uygulandı; U12 EP GND'ye bağlı değil
 - [ ] #4 PCB ile şema netlist'i uyumlu (Update PCB değişiklik önermiyor)
+- [ ] #5 J4 SolderWire-1.5sqmm footprint'i ve yeni R64/R65 PCB'ye geldi; R8/R9 değerleri güncellendi (TASK-043/044)
 <!-- AC:END -->
 
 ## Definition of Done

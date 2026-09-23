@@ -257,144 +257,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "DG142R-5.08-02P-14-00AH:DG142R-5.08-02P-14-00AH"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "DG142R-5.08-02P-14-00AH"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "DG142R-5.08-02P-14-00AH:DG142R-5.08-02P-14-00AH"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "DG142R right-angle 2-position terminal block, 5.08 mm pitch"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "DG142R-5.08-02P-14-00AH_0_1"
-				(rectangle
-					(start -2.54 3.81)
-					(end 2.54 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 0 1.27)
-					(radius 0.76)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -1.27)
-					(radius 0.76)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DG142R-5.08-02P-14-00AH_1_1"
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 5.08)
-					(name "OUT_POS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1244,146 +1106,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4850,6 +4572,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 322.58 139.7)
@@ -5486,16 +5366,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 95.25) (xy 125.73 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0455ee52-82f5-472e-b6b2-5d165d255976")
-	)
-	(wire
-		(pts
 			(xy 90.17 215.9) (xy 95.25 215.9)
 		)
 		(stroke
@@ -5809,16 +5679,6 @@
 			(type default)
 		)
 		(uuid "2af3d9c1-1901-45d6-b057-fb90be07b0b0")
-	)
-	(wire
-		(pts
-			(xy 120.65 95.25) (xy 125.73 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c0cf05e-79de-4886-bbd0-0d94802f97e3")
 	)
 	(wire
 		(pts
@@ -8229,86 +8089,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 125.73 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "011588cc-254b-4ffd-8fd0-cdc9392c113e")
-		(property "Reference" "#PWR04"
-			(at 128.27 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 127.51 102.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 125.73 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f78311f-9b0f-4947-9ee8-519fe7e0eed8")
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 35.56 31.75 0)
 		(unit 1)
@@ -9930,7 +9710,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 350.52 158.75 0)
 		(unit 1)
 		(body_style 1)
@@ -12502,7 +12282,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "108-0902-001"
+		(property "Value" "Banana_4mm_Red"
 			(at 370.84 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12524,7 +12304,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
+		(property "Datasheet" "https://www.motorobit.com/4mm-metal-disi-banana-konnektor-kirmizi"
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12535,7 +12315,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "4 mm metal disi banana jak, kirmizi, panel montaj; OUT_POS. Kablo J4 lehim pedine lehimlenir (PCB pedi yok)"
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12568,7 +12348,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Cinch Johnson"
+		(property "Manufacturer" "Motorobit"
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12579,7 +12359,7 @@
 				)
 			)
 		)
-		(property "MPN" "108-0902-001"
+		(property "MPN" "KOM.KNN.06.000021"
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12656,7 +12436,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "PANEL MOUNT; J4'e kablo ile gider, kart uzerinde yalniz mekanik ayak."
+		(property "DesignNote" "Footprint yalniz panel kesimi (Cinch 108-090x double-D); Motorobit jak numunesi olculunce guncellenecek (TASK-046)."
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12667,7 +12447,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan (21.09.2026): İndekste yok. 21.09 ikinci kontrol: binding post / banana kategorisi hâlâ indekslenmemiş; '108-09' araması sonuç vermedi."
+		(property "SelectionNote" "Motorobit KOM.KNN.06.000021; stok 100+ (23.09.2026). Akim/gerilim anma degeri ve panel deligi saticida yok, numune ile olculecek."
 			(at 368.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -13341,7 +13121,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 367.03 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -15191,8 +14971,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 116.84 95.25 90)
+		(lib_id "Device:R_Small_US")
+		(at 115.57 95.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15202,7 +14982,7 @@
 		(dnp no)
 		(uuid "43cf50d0-352c-4d80-a4dd-e4518e963afe")
 		(property "Reference" "R8"
-			(at 116.84 100.33 270)
+			(at 115.57 99.06 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15211,8 +14991,8 @@
 				)
 			)
 		)
-		(property "Value" "12k"
-			(at 116.84 102.87 270)
+		(property "Value" "10k"
+			(at 115.57 101.6 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15222,7 +15002,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 116.84 95.25 90)
+			(at 115.57 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15232,8 +15012,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
-			(at 116.84 95.25 0)
+		(property "Datasheet" "~"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15243,8 +15023,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 116.84 95.25 0)
+		(property "Description" "TBD"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15255,7 +15035,7 @@
 			)
 		)
 		(property "Category" "Resistors"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15266,7 +15046,7 @@
 			)
 		)
 		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15276,8 +15056,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay"
-			(at 116.84 95.25 0)
+		(property "Manufacturer" "Royalohm"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15287,8 +15067,8 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040212K0FKED"
-			(at 116.84 95.25 0)
+		(property "MPN" "TC0250B1002TCC"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15299,7 +15079,7 @@
 			)
 		)
 		(property "Package" "0402 (1005 Metric)"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15310,7 +15090,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15321,7 +15101,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15332,7 +15112,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15343,7 +15123,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15354,7 +15134,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15364,8 +15144,8 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
-			(at 116.84 95.25 0)
+		(property "DesignNote" "PD_INT 5V->3V3 bolucu: R8+R64 = 10k+2k0 (12k), R9+R65 = 2x10k (20k). Oran 0.625; en kotu 2.73..3.34 V (design_decisions/output/PD_INT_BOLUCU_20260923.md). TASK-043"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15375,8 +15155,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan 519356; stok 6761 (21.09.2026); Uygun."
-			(at 116.84 95.25 0)
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15387,7 +15167,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15397,8 +15177,8 @@
 				)
 			)
 		)
-		(property "Tolerance" "+/-1%"
-			(at 116.84 95.25 0)
+		(property "Tolerance" "+/-0.1%"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15409,7 +15189,7 @@
 			)
 		)
 		(property "PowerRating" "0.0625W"
-			(at 116.84 95.25 0)
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15419,8 +15199,8 @@
 				)
 			)
 		)
-		(property "VoltageRating" "50V"
-			(at 116.84 95.25 0)
+		(property "VoltageRating" "25V"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15430,8 +15210,8 @@
 				)
 			)
 		)
-		(property "TempCoefficient" "+/-100ppm/C"
-			(at 116.84 95.25 0)
+		(property "TempCoefficient" "+/-50ppm/C"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15441,8 +15221,8 @@
 				)
 			)
 		)
-		(property "Composition" "Thick Film"
-			(at 116.84 95.25 0)
+		(property "Composition" "Thin Film"
+			(at 115.57 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17760,8 +17540,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 125.73 100.33 0)
+		(lib_id "Device:R_Small_US")
+		(at 125.73 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17772,7 +17552,7 @@
 		(fields_autoplaced yes)
 		(uuid "5612f981-25c6-4102-b7ef-5de4068feead")
 		(property "Reference" "R9"
-			(at 128.27 99.06 0)
+			(at 128.27 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17782,8 +17562,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20k"
-			(at 128.27 101.6 0)
+		(property "Value" "10k"
+			(at 128.27 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17794,7 +17574,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.73 100.33 90)
+			(at 125.73 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17804,8 +17584,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
-			(at 125.73 100.33 0)
+		(property "Datasheet" "~"
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17815,8 +17595,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 125.73 100.33 0)
+		(property "Description" "TBD"
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17827,7 +17607,7 @@
 			)
 		)
 		(property "Category" "Resistors"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17838,7 +17618,7 @@
 			)
 		)
 		(property "Subcategory" "Chip Resistor - Surface Mount"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17849,7 +17629,7 @@
 			)
 		)
 		(property "Manufacturer" "Royalohm"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17859,8 +17639,8 @@
 				)
 			)
 		)
-		(property "MPN" "TC0250B2002TCC"
-			(at 125.73 100.33 0)
+		(property "MPN" "TC0250B1002TCC"
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17871,7 +17651,7 @@
 			)
 		)
 		(property "Package" "0402 (1005 Metric)"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17882,7 +17662,7 @@
 			)
 		)
 		(property "MountingType" "Surface Mount"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17893,7 +17673,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17904,7 +17684,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17915,7 +17695,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17926,7 +17706,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17936,8 +17716,8 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
-			(at 125.73 100.33 0)
+		(property "DesignNote" "PD_INT 5V->3V3 bolucu: R8+R64 = 10k+2k0 (12k), R9+R65 = 2x10k (20k). Oran 0.625; en kotu 2.73..3.34 V (design_decisions/output/PD_INT_BOLUCU_20260923.md). TASK-043"
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17947,8 +17727,8 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan 570296; stok 3225 (21.09.2026); Uygun. 0402 20k %1 stokta yok; %0,1 seçildi (%5 alternatif RC0402JR-0720KL)."
-			(at 125.73 100.33 0)
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17959,7 +17739,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17970,7 +17750,7 @@
 			)
 		)
 		(property "Tolerance" "+/-0.1%"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17981,7 +17761,7 @@
 			)
 		)
 		(property "PowerRating" "0.0625W"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17992,7 +17772,7 @@
 			)
 		)
 		(property "VoltageRating" "25V"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18003,7 +17783,7 @@
 			)
 		)
 		(property "TempCoefficient" "+/-50ppm/C"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18014,7 +17794,7 @@
 			)
 		)
 		(property "Composition" "Thin Film"
-			(at 125.73 100.33 0)
+			(at 125.73 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18408,7 +18188,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 101.6 105.41 90)
 		(unit 1)
 		(body_style 1)
@@ -19784,7 +19564,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 101.6 77.47 90)
 		(unit 1)
 		(body_style 1)
@@ -21320,7 +21100,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 48.26 31.75 90)
 		(unit 1)
 		(body_style 1)
@@ -21688,7 +21468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 350.52 181.61 0)
 		(unit 1)
 		(body_style 1)
@@ -22974,7 +22754,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 35.56 110.49 180)
 		(unit 1)
 		(body_style 1)
@@ -24644,7 +24424,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 298.45 81.28 90)
 		(unit 1)
 		(body_style 1)
@@ -27117,7 +26897,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 106.68 82.55 90)
 		(unit 1)
 		(body_style 1)
@@ -27394,7 +27174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 375.92 181.61 180)
 		(unit 1)
 		(body_style 1)
@@ -34370,8 +34150,8 @@
 		)
 	)
 	(symbol
-		(lib_id "DG142R-5.08-02P-14-00AH:DG142R-5.08-02P-14-00AH")
-		(at 317.5 111.76 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 320.04 109.22 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -34382,7 +34162,7 @@
 		(dnp no)
 		(uuid "e10a6689-5ffe-493a-8dd1-aa1d48b675dd")
 		(property "Reference" "J4"
-			(at 314.96 119.38 0)
+			(at 317.5 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34392,8 +34172,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DG142R-5.08-02P-14-00AH"
-			(at 314.96 121.92 0)
+		(property "Value" "SolderWire-1.5sqmm"
+			(at 317.5 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34403,8 +34183,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "DG142R-5.08-02P-14-00AH:DG142R-5.08-02P-14-00AH"
-			(at 317.5 111.76 0)
+		(property "Footprint" "Connector_Wire:SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm"
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34414,8 +34194,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
-			(at 317.5 111.76 0)
+		(property "Datasheet" "~"
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34425,8 +34205,8 @@
 				)
 			)
 		)
-		(property "Description" "DG142R right-angle 2-position terminal block, 5.08 mm pitch"
-			(at 317.5 111.76 0)
+		(property "Description" "Kablo lehim pedi, 2 poz., 1.5 mm2 (AWG16), delik 1.7 mm, P7.8 mm. 1 = OUT_POS -> J5 (kirmizi), 2 = GND -> J6 (siyah)"
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34437,7 +34217,7 @@
 			)
 		)
 		(property "Category" "Connectors, Interconnects"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34448,7 +34228,7 @@
 			)
 		)
 		(property "Subcategory" "Terminal Blocks"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34458,8 +34238,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "DEGSON"
-			(at 317.5 111.76 0)
+		(property "Manufacturer" "N/A"
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34469,8 +34249,8 @@
 				)
 			)
 		)
-		(property "MPN" "DG142R-5.08-02P-14-00AH"
-			(at 317.5 111.76 0)
+		(property "MPN" "N/A (PCB pedi)"
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34481,7 +34261,7 @@
 			)
 		)
 		(property "Package" "5.08mm 2-pos THT"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34492,7 +34272,7 @@
 			)
 		)
 		(property "MountingType" "Through Hole"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34503,7 +34283,7 @@
 			)
 		)
 		(property "Lifecycle" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34514,7 +34294,7 @@
 			)
 		)
 		(property "RoHS" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34525,7 +34305,7 @@
 			)
 		)
 		(property "OperatingTemp" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34536,7 +34316,7 @@
 			)
 		)
 		(property "Height" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34546,8 +34326,8 @@
 				)
 			)
 		)
-		(property "DesignNote" "2 kutuplu 5.08 mm klemens; cikis terminali."
-			(at 317.5 111.76 0)
+		(property "DesignNote" "Maks. cikis 3 A (CIKIS_AKIMI_3A_KARARI_20260922). Kablo 1.5 mm2 (AWG16) silikon, J5/J6 panel jaklarina lehimlenir; ped ve kablo 5 A icin de yeterli. TASK-044"
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34558,7 +34338,7 @@
 			)
 		)
 		(property "SelectionNote" "Özdisan 695538; stok 1624 (21.09.2026); Uygun. 21.09 ikinci kontrolde indekste bulundu."
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34569,7 +34349,7 @@
 			)
 		)
 		(property "AssemblyNote" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34580,7 +34360,7 @@
 			)
 		)
 		(property "ConnectorType" "Terminal Block"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34591,7 +34371,7 @@
 			)
 		)
 		(property "PositionCount" "2"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34602,7 +34382,7 @@
 			)
 		)
 		(property "Pitch" "5.08mm"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34613,7 +34393,7 @@
 			)
 		)
 		(property "RowCount" "1"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34624,7 +34404,7 @@
 			)
 		)
 		(property "Orientation" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34635,7 +34415,7 @@
 			)
 		)
 		(property "CurrentRating" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34646,7 +34426,7 @@
 			)
 		)
 		(property "VoltageRating" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34657,7 +34437,7 @@
 			)
 		)
 		(property "MatingCycles" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34668,7 +34448,7 @@
 			)
 		)
 		(property "ContactPlating" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34679,7 +34459,7 @@
 			)
 		)
 		(property "Shielding" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34690,7 +34470,7 @@
 			)
 		)
 		(property "Series" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34701,7 +34481,7 @@
 			)
 		)
 		(property "WireGauge" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34712,7 +34492,7 @@
 			)
 		)
 		(property "WireTermination" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34723,7 +34503,7 @@
 			)
 		)
 		(property "TorqueRating" "TBD"
-			(at 317.5 111.76 0)
+			(at 320.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35089,7 +34869,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "108-0903-001"
+		(property "Value" "Banana_4mm_Black"
 			(at 370.84 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35111,7 +34891,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TBD"
+		(property "Datasheet" "https://www.motorobit.com/4mm-metal-disi-banana-konnektor-siyah"
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -35122,7 +34902,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "4 mm metal disi banana jak, siyah, panel montaj; GND. Kablo J4 lehim pedine lehimlenir (PCB pedi yok)"
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -35155,7 +34935,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Cinch Johnson"
+		(property "Manufacturer" "Motorobit"
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -35166,7 +34946,7 @@
 				)
 			)
 		)
-		(property "MPN" "108-0903-001"
+		(property "MPN" "KOM.KNN.06.000022"
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -35243,7 +35023,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "PANEL MOUNT; J4'e kablo ile gider, kart uzerinde yalniz mekanik ayak."
+		(property "DesignNote" "Footprint yalniz panel kesimi (Cinch 108-090x double-D); Motorobit jak numunesi olculunce guncellenecek (TASK-046)."
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -35254,7 +35034,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Özdisan (21.09.2026): İndekste yok. 21.09 ikinci kontrol: binding post / banana kategorisi hâlâ indekslenmemiş; '108-09' araması sonuç vermedi."
+		(property "SelectionNote" "Motorobit KOM.KNN.06.000022; stok 100+ (23.09.2026). Akim/gerilim anma degeri ve panel deligi saticida yok, numune ile olculecek."
 			(at 368.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -36011,7 +35791,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Small_US")
 		(at 375.92 158.75 0)
 		(unit 1)
 		(body_style 1)
@@ -38783,5 +38563,827 @@
 			(justify left bottom)
 		)
 		(uuid "0b43c793-3a56-499f-99c5-8fc82803f508")
+	)
+	(wire
+		(pts
+			(xy 350.52 156.21) (xy 350.52 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4481a5e-e083-4f19-915b-b849dee660f0")
+	)
+	(wire
+		(pts
+			(xy 350.52 161.29) (xy 350.52 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1119654f-9908-4c38-bc27-07163dd88172")
+	)
+	(wire
+		(pts
+			(xy 367.03 55.88) (xy 367.03 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ed2c40-3582-4d19-a040-523c4c220a93")
+	)
+	(wire
+		(pts
+			(xy 367.03 60.96) (xy 367.03 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14fe8c37-9666-488f-b362-5c5f47ef6031")
+	)
+	(wire
+		(pts
+			(xy 99.06 105.41) (xy 97.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba3957e3-0b12-4cca-8478-0a93afb9bba8")
+	)
+	(wire
+		(pts
+			(xy 104.14 105.41) (xy 105.41 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cccb7aa-dba3-4aa2-ad83-5d85ca7a7b97")
+	)
+	(wire
+		(pts
+			(xy 99.06 77.47) (xy 97.79 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf2db9c-d34f-4a3a-af3e-87b0d2f8f06c")
+	)
+	(wire
+		(pts
+			(xy 104.14 77.47) (xy 105.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efa21215-6496-499b-8718-6e23b1f2c7a8")
+	)
+	(wire
+		(pts
+			(xy 45.72 31.75) (xy 44.45 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c30bbf8-ac72-490b-be8d-a6bc5985f6a8")
+	)
+	(wire
+		(pts
+			(xy 50.8 31.75) (xy 52.07 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c141868-1ec0-4c11-97fd-dc22d80c6327")
+	)
+	(wire
+		(pts
+			(xy 350.52 179.07) (xy 350.52 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f5a4722-8530-4f2e-8f06-fd1c1efa63c1")
+	)
+	(wire
+		(pts
+			(xy 350.52 184.15) (xy 350.52 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "319e875e-7dc3-4fde-86f7-0885ae5e3dc7")
+	)
+	(wire
+		(pts
+			(xy 35.56 113.03) (xy 35.56 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99187ef-8dbe-4b02-a791-498dcbb56594")
+	)
+	(wire
+		(pts
+			(xy 35.56 107.95) (xy 35.56 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7f09606-01be-4f62-b2dd-198cc7ccdc85")
+	)
+	(wire
+		(pts
+			(xy 295.91 81.28) (xy 294.64 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21512964-dd0e-48b7-b78d-c9fa5af8730a")
+	)
+	(wire
+		(pts
+			(xy 300.99 81.28) (xy 302.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06265d03-302a-440a-ae78-c9f0a67ef9ae")
+	)
+	(wire
+		(pts
+			(xy 104.14 82.55) (xy 102.87 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa6ca41e-d84b-4325-bf7b-d93cf65a6fe5")
+	)
+	(wire
+		(pts
+			(xy 109.22 82.55) (xy 110.49 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b8db2d-4e87-42ee-ac15-c166ded04301")
+	)
+	(wire
+		(pts
+			(xy 375.92 184.15) (xy 375.92 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc2f10a1-9f4d-4ef4-9b28-a58d592eaea5")
+	)
+	(wire
+		(pts
+			(xy 375.92 179.07) (xy 375.92 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b66ec5-069d-44cf-8977-e02ac42d047d")
+	)
+	(wire
+		(pts
+			(xy 375.92 156.21) (xy 375.92 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83e88e43-4599-4e22-a671-5da71ea4aab5")
+	)
+	(wire
+		(pts
+			(xy 375.92 161.29) (xy 375.92 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5ccc74e-d9e8-4e58-898d-58da2b50afab")
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 120.65 95.25 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4aaaf395-39a8-4f92-bee0-5a4362f6b17a")
+		(property "Reference" "R64"
+			(at 120.65 99.06 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k0"
+			(at 120.65 101.6 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TBD"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Subcategory" "Chip Resistor - Surface Mount"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ2RKF2001X"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0402 (1005 Metric)"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MountingType" "Surface Mount"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifecycle" "TBD"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RoHS" "TBD"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OperatingTemp" "TBD"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "TBD"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DesignNote" "PD_INT 5V->3V3 bolucu: R8+R64 = 10k+2k0 (12k), R9+R65 = 2x10k (20k). Oran 0.625; en kotu 2.73..3.34 V (design_decisions/output/PD_INT_BOLUCU_20260923.md). TASK-043"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SelectionNote" "Özdisan 518487; stok 34590 (21.09.2026); Uygun."
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AssemblyNote" "TBD"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "+/-1%"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PowerRating" "0.1W"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VoltageRating" "50V"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TempCoefficient" "+/-100ppm/C"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Composition" "Precision Thick Film"
+			(at 120.65 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08fbce35-3ee2-4ecc-bb3d-2fb37b24f2a7")
+		)
+		(pin "2"
+			(uuid "052b5a8f-3337-41f7-b731-3f7b8dfd1a68")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0"
+					(reference "R64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 125.73 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "05f6bf49-1cb3-4549-95e2-e2a563201582")
+		(property "Reference" "R65"
+			(at 128.27 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 128.27 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TBD"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Subcategory" "Chip Resistor - Surface Mount"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Royalohm"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TC0250B1002TCC"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0402 (1005 Metric)"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MountingType" "Surface Mount"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Lifecycle" "TBD"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RoHS" "TBD"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OperatingTemp" "TBD"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "TBD"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DesignNote" "PD_INT 5V->3V3 bolucu: R8+R64 = 10k+2k0 (12k), R9+R65 = 2x10k (20k). Oran 0.625; en kotu 2.73..3.34 V (design_decisions/output/PD_INT_BOLUCU_20260923.md). TASK-043"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SelectionNote" "Özdisan 569744; stok 4220 (21.09.2026); Uygun. Özdisan'da 0402 10k yalnız 2 çeşit (%0,1 ince film). R39 bu gruptan çıkarıldı (10,2k)."
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AssemblyNote" "TBD"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "+/-0.1%"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PowerRating" "0.0625W"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VoltageRating" "25V"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TempCoefficient" "+/-50ppm/C"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Composition" "Thin Film"
+			(at 125.73 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29ec2050-d2e6-46bc-8c0f-694d840dcfd6")
+		)
+		(pin "2"
+			(uuid "d8ec0b64-c050-4c76-b61d-0fb3b4c32dbe")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 123.19 95.25) (xy 125.73 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f309b105-86a8-4722-9136-090606bc3bc5")
+	)
+	(wire
+		(pts
+			(xy 125.73 95.25) (xy 125.73 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e0e9137-35e2-45de-b429-bf5429cd54df")
+	)
+	(wire
+		(pts
+			(xy 125.73 106.68) (xy 125.73 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08702e6-f2f7-47d4-bb08-d506ab1e8166")
+	)
+	(junction
+		(at 125.73 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85e24630-72b2-4148-aa36-5832e06c16c0")
+	)
+	(wire
+		(pts
+			(xy 325.12 111.76) (xy 325.12 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866baf51-1c0c-4be9-837d-ad85095b0680")
 	)
 )
