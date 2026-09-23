@@ -12,7 +12,7 @@ Sırayı bozma: mekanik → kurallar → 5 A yolu → Kelvin → buck → backli
 3. Sağdaki `Appearance` panelinden `Ratsnest` ve `Board Shape` görünürlüğünü aç.
 4. Grid'i **0.25 mm** yap.
 5. `Edge.Cuts` katmanını seç; `Inspect → Measure Tool` ile kartı ölç.
-6. USB-C'nin sol kenarda, ESP32 anteninin sağ kenarda, TFT'nin altta, encoder'ın sağ altta, J4'ün üstte olduğunu doğrula.
+6. USB-C ve RJ45'in sol kenarda, ESP32 anteninin sağ kenarda olduğunu doğrula. LCD yerleşimi ve kart ölçüsü için bkz. `KART_DIS_HATTI_LCD_20260924.md`; encoder panele monte edilir.
 7. ESP32 anteninin önü ve altı için boş bölge bırak.
 8. J1, J4, ESP32, TFT konektörü, encoder ve montaj deliklerini seç; `E → Locked` ile kilitle.
 9. `Inspect → Design Rules Checker → Run DRC` çalıştır ve başlangıç durumunu kaydet. Routing başlamadığı için unconnected uyarıları normaldir.

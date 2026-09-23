@@ -166,6 +166,16 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   (libraries/Generic_Custom.3dshapes); U5 ayni govdeli
   SOIC-8-1EP EP2.41x3.81 modeline yonlendirildi. Ped/netlist degismedi,
   DRC schematic parity 0.
+- PCB: kart dis hatti TFT032B018 (3.2", 77.70 x 55.04 mm) gorunur
+  alanina gore yeniden cizildi (TASK-062): 65.9 x 40.6 mm -> 107.0 x
+  61.0 mm, kose r 3 mm. LCD ust yuzde yatay, FPC sag kenardan arkaya
+  bukulur; aux/grid orijini AA merkezinde. AA, modul dis hatti ve on
+  panel penceresi (AA + 0.4 mm) Dwgs.User katmaninda. Sag kenarda 21 mm
+  anten payi: U2 anteni LCD kenarindan 15.2 mm. 4 x M3 NPTH montaj
+  deligi (H1-H4, board-only, 99 x 53 mm). Enkoder karta degil panele
+  monte edilecek. Baslangic yerlesimi yeni karta kaydirildi. DRC
+  invalid_outline 1 -> 0, copper_edge_clearance 3 -> 0. Karar:
+  design_decisions/output/KART_DIS_HATTI_LCD_20260924.md.
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.
