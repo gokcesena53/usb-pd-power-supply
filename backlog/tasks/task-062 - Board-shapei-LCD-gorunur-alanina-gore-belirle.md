@@ -4,7 +4,7 @@ title: Board shape'i LCD görünür alanına göre belirle
 status: Done
 assignee: []
 created_date: '2026-09-23 20:33'
-updated_date: '2026-09-23 21:07'
+updated_date: '2026-09-23 21:23'
 labels:
   - layout
 milestone: m-1
@@ -45,25 +45,47 @@ TFT032B018 mekanik çizimi depoda yok; önce datasheet hardware/datasheets/ alt�
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
-24.09.2026 - commit b936b74.
+24.09.2026 - ilk commit b936b74 (107 x 61 mm). Kullanıcı itirazıyla revize edildi (ESP32 konumu sabit değildi); son hâlin commit'i aşağıda.
 
-Kullanıcı kararları: LCD üst yüzde yatay, FPC sağ kenardan arkaya bükülüyor. Enkoder panele monte edilip kabloyla bağlanacak (TASK-066).
+Kullanıcı kararları:
+- LCD üst yüzde yatay; FPC sağ kenardan arkaya bükülüyor.
+- Enkoder panele monte edilip kabloyla bağlanacak (TASK-066).
+- Sağ ve sol kenarın AA'ya uzaklığı eşit; üst/alt pay LCD modülünden 3 mm.
 
-Çizim (hardware/datasheets/TFT032B018.pdf): modül 77,70 x 55,04 x 2,40 mm, AA 64,80 x 48,60 mm. AA'nın modül kenarlarına ofseti: FPC kenarı 9,02, karşı kenar 3,88, uzun kenarlar 3,22/3,22 mm. Ön panel penceresi AA + 0,4 mm = 65,60 x 49,40 mm.
+LCD çizimi (hardware/datasheets/TFT032B018.pdf):
+- Modül 77,70 x 55,04 x 2,40 mm, AA 64,80 x 48,60 mm.
+- AA'nın modül kenarlarına ofseti: FPC kenarı 9,02, karşı kenar 3,88, uzun kenarlar 3,22/3,22 mm.
+- Ön panel penceresi AA + 0,4 mm = 65,60 x 49,40 mm.
 
-Kart: Edge.Cuts 107,0 x 61,0 mm, r 3; tek kapalı kontur (4 çizgi + 4 yay). AA merkezine göre koordinatlar: x -44,5..+62,5, y ±30,5. Aux/grid orijini AA merkezinde, sayfa (100,100). LCD modülü x -36,28..+41,42, y ±27,52. Kenar payları: üst/alt 2,98, sol 8,22 (M3), sağ 21,08 (anten). Dwgs.User katmanında AA, modül, panel penceresi, merkez artısı, FPC işareti ve LCD+15 mm çizgisi var.
+Kart:
+- Edge.Cuts 99,40 x 61,04 mm, r 3. Tek kapalı kontur (4 çizgi + 4 yay).
+- AA merkezine göre koordinatlar: x ±49,70, y ±30,52. Aux/grid orijini AA merkezinde, sayfa (100,100).
+- AA → kart kenarı: sağ/sol 17,30 mm. LCD modülü → kart kenarı: sağ 8,28, sol 13,42, üst/alt 3,00 mm.
+- 17,30 mm, sağ deliklerin LCD izdüşümü dışında kalması için gereken en küçük değer.
+- Dwgs.User katmanında: AA, modül dış hattı, panel penceresi, merkez artısı ve FPC işareti.
 
-Delikler: H1-H4 M3 NPTH Ø3,2, board-only, kilitli; konumlar (±) (-40,5/+58,5, ±26,5). H1/H3'ün M3 baş dairesi ile LCD kenarı arasında 1,02 mm var. H2/H4 anten alanından 16,7 mm uzakta.
+Delikler:
+- H1-H4 M3 NPTH Ø3,2, board-only, kilitli; konumlar (±45,70, ±26,52), delik dikdörtgeni 91,40 x 53,04 mm.
+- H2/H4'te M3 başı ile LCD kenarı arasında 1,08 mm boşluk var. FPC bandı çizimden yaklaşık y -21,4..+17,05 aralığında, deliklerin dışında (numunede doğrulanacak).
 
-U2 alt yüzde, y=0'da; modül ucu x=+62,0. Anten alanı LCD kenarından 15,18 mm uzakta.
+ESP32 anteni kart ölçüsünü belirlemiyor; konumu TASK-063/054'te. Sağ şerit 8,28 mm; 15 mm anten boşluğu için modülü dışarı taşırma ya da MINI-1U değerlendirilmeli.
 
-Başlangıç yerleşimi (+61,-3) mm kaydırıldı. C23/C33/D10/J8/R55 kart dışına itildi; SW3 geçici olarak sol üstte.
+Başlangıç yerleşimi (+55,-9) mm kaydırıldı. Tüm parçalar tamamen içeride ya da tamamen dışarıda; itilen parça yok. SW3 geçici olarak sol üstte.
 
-DRC (kicad-cli pcb drc --schematic-parity), önce -> sonra: invalid_outline 1->0, copper_edge_clearance 3->0, silk_edge_clearance 0->0. H1-H4'ü içeren ihlal 0, parity 0->0. Kalan 4 hole_clearance J7 footprint'inin kendi içinde, kenarla ilgili değil.
+DRC (kicad-cli pcb drc --schematic-parity), önce -> sonra:
+- invalid_outline 1 -> 0
+- copper_edge_clearance 3 -> 0
+- silk_edge_clearance 0 -> 0
+- H1-H4 içeren ihlal 0
+- parity 0 -> 0
+
+Kalan 4 hole_clearance J7 footprint'inin kendi içinde, kenarla ilgili değil.
+
+Son hâl: commit 112fcc5.
 <!-- SECTION:NOTES:END -->
 
 ## Final Summary
 
 <!-- SECTION:FINAL_SUMMARY:BEGIN -->
-Kart dış hattı TFT032B018 görünür alanına göre 107 x 61 mm (r 3) oldu. Orijin AA merkezinde. LCD/AA referansı Dwgs.User'da, 4 x M3 NPTH delik var. U2 anteni sağ kenarda, LCD kenarından 15,2 mm uzakta. Edge.Cuts kaynaklı DRC hatası 0. Karar dosyası: KART_DIS_HATTI_LCD_20260924.md. Enkoderin panele taşınması TASK-066'da.
+Kart dış hattı TFT032B018 görünür alanına göre 99,40 x 61,04 mm (r 3) oldu. Sağ/sol kenar AA'dan eşit 17,30 mm, üst/alt kenar LCD modülünden 3 mm. Orijin AA merkezinde. LCD/AA referansı Dwgs.User'da; 4 x M3 NPTH delik LCD izdüşümü dışında. Edge.Cuts kaynaklı DRC hatası 0. ESP32 anten konumu TASK-063/054'te. Enkoderin panele taşınması TASK-066'da. Karar dosyası: KART_DIS_HATTI_LCD_20260924.md.
 <!-- SECTION:FINAL_SUMMARY:END -->
