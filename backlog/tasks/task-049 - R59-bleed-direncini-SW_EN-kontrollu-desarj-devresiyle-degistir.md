@@ -25,7 +25,7 @@ modified_files:
   - CHANGES.TXT
   - software/FIRMWARE_GEREKSINIMLERI.md
 priority: high
-ordinal: 46000
+ordinal: 106000
 ---
 
 ## Description

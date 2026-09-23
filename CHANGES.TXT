@@ -112,6 +112,24 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   R59 10k 0805 -> 100k 0603 (pasif yedek). Yeni net DISCH_G. Q1/Q2 sembol
   alanlari BSS138P,215 datasheet'ine gore duzeltildi (Value BSS138P).
   Ayrinti: design_decisions/output/CIKIS_DESARJI_20260923.md.
+- mcu: "ETHERNET MEZANIN (CH9121)" blogu eklendi. Waveshare 2-CH UART TO
+  ETH modulu J8 (7 pin) uzerinden mezanin olarak baglanir: UART0
+  (GPIO16/17) kanal 1'e, ETH_CFG0 GPIO8'e (R15 uzerinden; R37 10k boot'ta
+  high tutar = normal mod), ETH_RST1 GPIO0'a (R16 uzerinden, yeni R17 10k
+  pull-up). CH9121 RUN cikisi TP14 pedinde, GPIO'ya baglanmadi. Besleme
+  +3.3V; C10 22u + C20 100n ayirma. Net-(R15-Pad2) -> ETH_CFG0,
+  Net-(R16-Pad1) -> ETH_RST1 olarak adlandi; baska net degismedi, ERC 0/0.
+  Analiz: design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md.
+- mcu: Ethernet blogu ureticinin semasina gore revize edildi
+  (hardware/datasheets/2-CH_UART_TO_ETH_SCH.pdf). J8 Conn_01x07 -> 2x8
+  gercek pinout (P1 Header 8X2); modulun 3V3 pinleri beslenir, AMS1117
+  atlanir, 5V bos. Q8 TSM3443CX6 P-kanal yuksek-yan anahtari eklendi:
+  ETH_3V3'u keser, boylece PD Fixed PDO gecisindeki 2,5 W standby
+  butcesinden ~0,66 W dusulur. ETH_PWR_EN = GPIO0 (aktif-low), R16 22R ->
+  10k gate seri direnci, R17 10k RST1 pull-up -> 100k gate pull-up,
+  yeni C21 100n yumusak kalkis. RST1 baglantisi kaldirildi (CH9121 0x02 /
+  0x0e ile yazilimdan reset'lenir). Yeni sembol: Power_Supply_Custom
+  TSM3443CX6 (G=3, S=4, D=1/2/5/6 istifli). ERC 0/0.
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

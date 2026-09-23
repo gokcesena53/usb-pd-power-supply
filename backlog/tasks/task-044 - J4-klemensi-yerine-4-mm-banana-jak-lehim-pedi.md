@@ -19,7 +19,7 @@ references:
   - design_decisions/output/CIKIS_KONNEKTORU_20260923.md
   - CHANGES.TXT
 priority: medium
-ordinal: 85000
+ordinal: 103000
 ---
 
 ## Description

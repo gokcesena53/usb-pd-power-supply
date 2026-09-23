@@ -13,7 +13,7 @@ dependencies: []
 references:
   - hardware/docs/output/BOM_OZDISAN_REV_C_20260921.xlsx
 priority: medium
-ordinal: 36000
+ordinal: 98000
 ---
 
 ## Description

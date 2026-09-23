@@ -19,7 +19,7 @@ modified_files:
   - .claude/skills/kicad-schematic/scripts/kisch_sheet.py
   - CHANGES.TXT
 priority: medium
-ordinal: 92000
+ordinal: 105000
 ---
 
 ## Description
