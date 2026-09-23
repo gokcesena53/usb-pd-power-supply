@@ -49,7 +49,9 @@ def ensure_lib_symbol_from(dst, src, lib_id):
     a, b = K.block_at(src, src.index(f'(symbol "{lib_id}"'))
     i = dst.index('(lib_symbols')
     _, lb = K.block_at(dst, i)
-    return dst[:lb - 1] + src[a:b] + '\n\t' + dst[lb - 1:]
+    # dst[:lb - 1] "\n\t" ile biter; tanim diger onbellek girdileri gibi iki
+    # sekmeyle baslamali (missing_lib_symbols "\n\t\t(symbol" arar)
+    return dst[:lb - 1] + '\t' + src[a:b] + '\n\t' + dst[lb - 1:]
 
 
 def move_block(src_fn, dst_fn, box, dx=0.0, dy=0.0, skip_refs=()):
