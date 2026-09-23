@@ -4,12 +4,13 @@ title: Kritik yerleşim kurallarını uygula
 status: To Do
 assignee: []
 created_date: '2026-09-22 18:46'
-updated_date: '2026-09-23 05:56'
+updated_date: '2026-09-23 20:34'
 labels:
   - layout
 milestone: m-1
 dependencies:
   - TASK-006
+  - TASK-065
 references:
   - hardware/datasheets/LM7480-Q1.pdf
 priority: high

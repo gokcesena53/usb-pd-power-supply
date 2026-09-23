@@ -4,7 +4,7 @@ title: Ethernet portunu PCB yerlesimine ve kutuya isle
 status: To Do
 assignee: []
 created_date: '2026-09-23 12:09'
-updated_date: '2026-09-23 19:37'
+updated_date: '2026-09-23 20:34'
 labels:
   - layout
   - fabrication
@@ -12,6 +12,7 @@ milestone: m-1
 dependencies:
   - TASK-053
   - TASK-060
+  - TASK-063
 documentation:
   - design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md
 priority: medium
