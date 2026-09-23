@@ -16,7 +16,7 @@ dependencies:
   - TASK-012
   - TASK-013
 priority: medium
-ordinal: 55000
+ordinal: 120000
 ---
 
 ## Acceptance Criteria

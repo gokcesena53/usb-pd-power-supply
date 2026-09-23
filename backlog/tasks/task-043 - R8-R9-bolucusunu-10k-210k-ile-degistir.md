@@ -15,7 +15,7 @@ references:
   - design_decisions/output/PD_INT_BOLUCU_20260923.md
   - CHANGES.TXT
 priority: medium
-ordinal: 102000
+ordinal: 107000
 ---
 
 ## Description

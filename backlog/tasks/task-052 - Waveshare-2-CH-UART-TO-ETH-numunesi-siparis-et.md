@@ -11,7 +11,7 @@ dependencies: []
 references:
   - 'https://www.waveshare.com/2-CH-UART-TO-ETH.htm'
 priority: high
-ordinal: 102000
+ordinal: 107000
 ---
 
 ## Description

@@ -13,7 +13,7 @@ dependencies:
 references:
   - hardware/datasheets/LM7480-Q1.pdf
 priority: high
-ordinal: 49000
+ordinal: 114000
 ---
 
 ## Acceptance Criteria

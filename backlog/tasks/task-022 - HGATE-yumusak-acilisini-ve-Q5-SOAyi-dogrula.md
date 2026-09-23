@@ -13,7 +13,7 @@ dependencies:
 references:
   - hardware/datasheets/sqjb60ep.pdf
 priority: high
-ordinal: 63000
+ordinal: 128000
 ---
 
 ## Description

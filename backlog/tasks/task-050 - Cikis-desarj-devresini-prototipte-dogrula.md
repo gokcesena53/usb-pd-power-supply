@@ -14,7 +14,7 @@ dependencies:
 references:
   - hardware/usb_pd_controller.kicad_sch
 priority: high
-ordinal: 94000
+ordinal: 109000
 ---
 
 ## Description

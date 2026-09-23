@@ -12,7 +12,7 @@ dependencies:
   - TASK-014
   - TASK-002
 priority: medium
-ordinal: 56000
+ordinal: 121000
 ---
 
 ## Acceptance Criteria

@@ -24,7 +24,7 @@ modified_files:
   - hardware/libraries/Power_Path_Custom.kicad_sym
   - design_decisions/USB_PD_REV_C_tasarim_kararlari_handoff.md
   - CHANGES.TXT
-ordinal: 108000
+ordinal: 53000
 ---
 
 ## Description

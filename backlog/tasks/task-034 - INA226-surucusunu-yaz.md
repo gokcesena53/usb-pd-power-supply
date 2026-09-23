@@ -15,7 +15,7 @@ references:
 documentation:
   - software/FIRMWARE_GEREKSINIMLERI.md
 priority: high
-ordinal: 75000
+ordinal: 140000
 ---
 
 ## Acceptance Criteria

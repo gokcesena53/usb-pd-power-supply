@@ -14,7 +14,7 @@ dependencies:
 documentation:
   - software/FIRMWARE_GEREKSINIMLERI.md
 priority: high
-ordinal: 76000
+ordinal: 141000
 ---
 
 ## Acceptance Criteria
