@@ -1,6 +1,6 @@
 ---
 name: kicad-schematic
-description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, bir sembolü başka bir parçayla değiştirirken (ör. RTC veya ekran konnektörü değişimi), blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken, bir handoff dokümanındaki tasarım kararlarını uygularken, komponent alanlarını (property/BOM üstverisi, tedarikçi BOM'undan MPN/SelectionNote aktarımı) düzenleyip görünürlüğünü ayarlarken, proje footprint'i datasheet'ten ölçüp çizerken, kütüphane/önbellek sembolünü (extends, lib_symbol_mismatch, kompakt kopya, jumper_pin_groups) hazırlarken, DNP opsiyonu eklerken veya şemanın okunabilirliğini (üst üste binen metin, tel üstüne basan değer, çerçeveden taşan etiket/not, üst üste binen sembol gövdesi) denetlerken kullan.
+description: Bu depodaki KiCad şemalarını üret, değiştir ve temizle. Şemaya bileşen/blok eklerken, mevcut bir bloğun yerleşimini/çizimini düzeltirken, bir sembolü başka bir parçayla değiştirirken (ör. RTC veya ekran konnektörü değişimi), blokları sayfalar arasında taşıyıp sayfaları birleştirir/kaldırırken, bir handoff dokümanındaki tasarım kararlarını uygularken, komponent alanlarını (property/BOM üstverisi, tedarikçi BOM'undan MPN/SelectionNote aktarımı, footprint ataması) düzenleyip görünürlüğünü ayarlarken, şemadan PCB'yi güncellerken (update_pcb), datasheet PDF'ini okurken (view.py), kütüphane/önbellek sembolünü (extends, lib_symbol_mismatch, kompakt kopya, jumper_pin_groups) hazırlarken, DNP opsiyonu eklerken veya şemanın okunabilirliğini (üst üste binen metin, tel üstüne basan değer, çerçeveden taşan etiket/not, üst üste binen sembol gövdesi) denetlerken kullan.
 ---
 
 # KiCad şema çalışması — gopo deposu
@@ -23,25 +23,32 @@ SK=../.claude/skills/kicad-schematic/scripts
 cd hardware
 
 # sayfaları listele
-python $SK/render.py gopo.kicad_sch --list -o <scratch>/r
+sh $SK/kpy $SK/render.py gopo.kicad_sch --list -o <scratch>/r
 
 # bir bölgeye yakınlaş (mm), çıkan PNG'yi Read ile aç
-python $SK/render.py gopo.kicad_sch --page 10 --crop 255 26 410 128 -o <scratch>/r
+sh $SK/kpy $SK/render.py gopo.kicad_sch --page 10 --crop 255 26 410 128 -o <scratch>/r
 # aynı PDF'ten başka bölge: yeniden export etmeden
-python $SK/render.py gopo.kicad_sch --page 12 --crop 170 34 358 122 -o <scratch>/r --reuse
+sh $SK/kpy $SK/render.py gopo.kicad_sch --page 12 --crop 170 34 358 122 -o <scratch>/r --reuse
 
 # ERC + netlist; değişiklik ÖNCESİ referansı kaydet, sonra karşılaştır
-python $SK/verify.py gopo.kicad_sch --save <scratch>/base.net
-python $SK/verify.py gopo.kicad_sch --against <scratch>/base.net
-python $SK/verify.py gopo.kicad_sch --show PD_VOUT V_PRE GND
+sh $SK/kpy $SK/verify.py gopo.kicad_sch --save <scratch>/base.net
+sh $SK/kpy $SK/verify.py gopo.kicad_sch --against <scratch>/base.net
+sh $SK/kpy $SK/verify.py gopo.kicad_sch --show PD_VOUT V_PRE GND
 
 # üst üste binen metin / tel üstüne basan değer / çerçeve taşması /
 # gövde-gövde çakışması (render'a bakmadan önce)
-python $SK/readability.py usb_pd_controller.kicad_sch mcu.kicad_sch
+sh $SK/kpy $SK/readability.py usb_pd_controller.kicad_sch mcu.kicad_sch
 
-# yeni/değişen proje footprint'ini önizle (ped, silk, fab, courtyard)
-python $SK/render.py --footprint libraries/Connector_FPC_Custom.pretty <AD> -o <scratch>/fp
+# datasheet: metin / metin konumu / PDF bölgesi / fotoğraf kırp-büyüt
+sh $SK/kpy $SK/view.py datasheets/X.pdf --text --pages 3-5
+sh $SK/kpy $SK/view.py datasheets/X.pdf --page 4 --clip 30 470 160 550 --dpi 400 -o <scratch>/x.png
+
+# şemadan PCB (footprint ekle/değiştir/yenile)
+sh $SK/kpy $SK/update_pcb.py gopo.kicad_pcb --dry-run
 ```
+
+Footprint çizimi, 3D model ve footprint önizlemesi **`kicad-footprint`**
+skill'indedir (`fp_check.py`, `kifp.py`, `step_boxes.py`).
 
 `readability.py` bulgu **vermiyorsa** metin yerleşimi temizdir; bulgu **veriyorsa**
 önce o bölgeyi render et, sonra oynat — denetçi kaba gövde kutuları kullandığı için
@@ -66,37 +73,51 @@ yenileme; toplam fark her adımda aynı beklenen listeyi göstermeli.
 
 ### Ortam
 
-- Linux'ta `kicad-cli` PATH'tedir; `python` yok, **`python3`** kullan (bu
-  dosyadaki örneklerde `python` = Windows). PyMuPDF yoksa `render.py`
-  `pdftoppm`'e düşer (`--crop`/`--dpi` aynı çalışır, çıktı adı
-  `<ad>-<sayfa>.png` olur). `--footprint` PNG için PyMuPDF veya `cairosvg`
-  ister; ikisi de yoksa yalnız SVG üretir. Linux'ta `rsvg-convert`/`inkscape`/
-  `convert` da yok: `python3 -m venv <scratch>/venv && <scratch>/venv/bin/pip
-  install cairosvg`, sonra SVG'yi o python'la `cairosvg.svg2png(url=..., scale=8)`
-  ile çevir.
-- KiCad'in kendi sembol kütüphaneleri (`Timer_RTC`, `Device`, `Transistor_FET`,
-  `Connector_Generic`...) Linux'ta `/usr/share/kicad/symbols`;
-  `kicadtools.kicad_symbol_lib(nick)` bulur, `KICAD10_SYMBOL_DIR` önceliklidir.
-- Windows'ta `kicad-cli` PATH'te değil; `kicadtools.kicad_cli()`
-  `%LOCALAPPDATA%\Programs\KiCad\*\bin` altında bulur. Başka yerdeyse
-  `KICAD_CLI` ortam değişkenini ayarla.
-- **KiCad'in `bin` dizinini PATH'in önüne ekleme**: KiCad'le gelen python öne
-  geçer, PyMuPDF bulunamaz. Betikleri `python` (C:\Python314) ile çağır.
-- `pdftoppm` yok; `render.py` PyMuPDF (`fitz`) ile rasterleştirir.
+Depo hem Windows'ta hem Linux'ta geliştiriliyor. **OS farkı yalnız
+`kicadtools.py` ve `kpy`'de çözülür**; betiğe, komuta veya SKILL.md'ye
+`python`/`python3`, `/usr/share/kicad`, `%LOCALAPPDATA%` yazma.
+
+- **Betikleri Bash aracından `sh $SK/kpy betik.py ...` ile çalıştır** (Windows'ta
+  Git Bash). `kpy` çalışan ilk yorumlayıcıyı seçer (`KPY_PYTHON` > `python3` >
+  `python`): Windows'ta `python3` Microsoft Store kısayoluna düşer ("Python was
+  not found", çıkış 9009), Linux'ta `python` olmayabilir. `PYTHONIOENCODING=utf-8`
+  de ayarlar (`Ω` yazdırırken `UnicodeEncodeError: 'charmap'` olmaz).
+  Proje hook'u (`.claude/settings.json`, backlog ASCII) da `kpy` ile çalışır;
+  `python3` ile yazılmışken Windows'ta hiç çalışmıyordu.
+- **Araç ve dizin bulma** (`kicadtools`): `kicad_cli()`, `kicad_share('symbols'|
+  'footprints'|'3dmodels'|'template')`, `kicad_python()`, `run_cli(args, keep=)`.
+  Ortam değişkeniyle ezilir: `KICAD_CLI`, `KICAD_PYTHON`, `KICAD10_SYMBOL_DIR`,
+  `KICAD10_FOOTPRINT_DIR`, `KICAD10_3DMODEL_DIR`, `KICAD10_TEMPLATE_DIR`.
+- **pcbnew**: Linux'ta sistem python3'ünde, Windows'ta yalnız KiCad'in
+  `bin\python.exe`'sinde var (onda da PyMuPDF yok). pcbnew isteyen betik başta
+  `pcbnew = ensure_pcbnew()` der; bu python'da yoksa kendini KiCad python'unda
+  aynı argümanlarla yeniden başlatır (`update_pcb.py`, `fp_check.py`). KiCad'in
+  `bin` dizinini PATH'in önüne ekleme: onun python'u öne geçer, PyMuPDF bulunamaz.
+- **Rasterleştirme**: PyMuPDF varsa (`fitz`, Windows'ta kurulu) o, yoksa
+  `pdftoppm`/`pdftotext` (Linux'ta var, Windows'ta yok). `render.py` ve `view.py`
+  ikisini de dener; pdftoppm yolunda çıktı adı `<ad>-<sayfa>.png` olur.
+  `--footprint` PNG için PyMuPDF veya `cairosvg` ister; ikisi de yoksa yalnız SVG
+  (Linux: `python3 -m venv <scratch>/venv && <scratch>/venv/bin/pip install cairosvg`).
+  Read aracı Windows'ta PDF sayfası render edemez (pdftoppm yok): `view.py`.
+- **Git Bash yolları**: argüman olarak verilen `/d/GitHub/...` Windows python'una
+  çevrilir, `-c "..."` kodunun içine gömülen yol çevrilmez (`ModuleNotFoundError`).
+  Koda göreli yol ver, mutlak gerekiyorsa `$(pwd -W)`.
 - `kicad-cli` her çalıştığında `gopo.kicad_pro`'yu (yalnız satır sonları) yeniden
-  yazar. `render.py`/`verify.py` dosyayı bayt bayt geri koyar; kendi `kicad-cli`
-  çağrında `kicadtools.keep_file` kullan veya `git checkout -- gopo.kicad_pro`.
+  yazar. `render.py`/`verify.py`/`update_pcb.py` dosyayı bayt bayt geri koyar;
+  kendi çağrında `run_cli(args, keep=<girdi>)` kullan.
 - Satır sonu dosyaya göre değişir: şema sayfaları ve `.kicad_sym`'lerin çoğu
   **LF** (KiCad Linux'ta kaydetti), Windows'ta çizilmiş footprint'ler
   (`Molex_541324062`, `Power_Output_Custom/*`, `TPS61023_DRL0006A`) **CRLF**.
   Varsayma, dosyanın kendisine uy: `kicadtools.read_sheet` / `write_sheet`
   mevcut satır sonunu korur; yeni footprint'i aynı kütüphanedeki komşusunun
   satır sonuyla yaz.
-- Değerlerde `Ω` geçen sayfalarda (usb_pd_controller, mcu) konsola yazdırmak
-  `UnicodeEncodeError: 'charmap'` verir: `PYTHONIOENCODING=utf-8` ile çalıştır.
 - **Her yazmadan önce `kicadtools.kicad_open('.')`** (kilit dosyası + bu projeyi
-  açan KiCad süreci; boş liste = kapalı). Kullanıcı 22.09 oturumunda KiCad'i üç
-  kez kapatıp yeniden açtı; "kapattım" dedikten sonra da tekrar bak.
+  açan KiCad süreci; boş liste = kapalı). Kullanıcı 22.09 ve 23.09 oturumlarında
+  KiCad'i birkaç kez kapatıp yeniden açtı; "kapattım" dedikten sonra da tekrar bak,
+  betikte yalnız yazdırma, `assert` et. Yalnız `~gopo.kicad_pro.lck` varsa proje
+  yöneticisi açıktır, editörler kapalıdır: `kicad_open('.', editors_only=True)`
+  boşsa şema/PCB'ye yazmak güvenli. `~<ad>.kicad_sch.lck` / `~<ad>.kicad_pcb.lck`
+  o editörün açık olduğunu gösterir (Windows'ta `pgrep` yok, kilit tek kanıt).
 
 #### KiCad açıkken kuru çalıştırma
 
@@ -107,7 +128,8 @@ kapanınca aynısını gerçek dosyada çalıştır:
 S=<scratchpad>; rm -rf $S/proj && mkdir -p $S/proj/.claude/skills
 cp -r hardware $S/proj/ && rm -f $S/proj/hardware/~*.lck
 cp -r .claude/skills/kicad-schematic $S/proj/.claude/skills/
-cd $S/proj/hardware && python3 $S/betik.py && python3 $SK/verify.py gopo.kicad_sch --against $S/base.net
+SK=../.claude/skills/kicad-schematic/scripts
+cd $S/proj/hardware && sh $SK/kpy $S/betik.py && sh $SK/kpy $SK/verify.py gopo.kicad_sch --against $S/base.net
 ```
 
 Gerçek dosyaya uygulamadan önce `verify.py --against <referans>` → `netlist
@@ -123,11 +145,14 @@ kopyayı yeniden al ya da `_before` yedeğinden geri yükle.
 | `kisch.py` | yeni öğe üretimi: `sym` (`dnp=`), `power`, `wire`, `wires`, `label` (global etikette `shape`), `junction`, `no_connect`, `rect`, `text`, `xf`, `lib_pins`, `lib_body`, `text_width`, `text_box`, `boxes_overlap`; kütüphane: `ensure_lib_symbol`, `lib_symbol_source` (extends'i bağımsızlaştırır), `children` |
 | `kisch_edit.py` | mevcut sayfada düzenleme — envanter: `inventory`, `power_symbol_nets`, `label_shapes`, `dump`; değişiklik: `strip_region`, `place` (alanlar sembolü izler), `translate_region` (`stretch=`), `move_text`, `remove_texts` (`prefixes=`), `Pool`; **alanlar**: `sym_blocks`, **`update_fields`** (tüm birimler), `set_dnp`, `sym_props`, `set_sym_props` (`visible=None`), `field_geometry`, `field_visibility`, `field_boxes`, `sym_body`, `prop_escape`; silme: `remove_items` (koşula göre öğe); denetim: `sym_pin`, `pin_at`, `lint`; kütüphane: **`swap_lib`** (sembolü başka kütüphane sembolüyle değiştir), **`missing_lib_symbols`** / **`ensure_used_lib_symbols`** (önbellek eksiği), **`refresh_lib_symbol`** (lib_symbol_mismatch), **`prune_lib_symbols`**, `edit_lib_symbol`, `hide_pin_texts`, `hide_stacked_pins` |
 | `kisch_sheet.py` | sayfalar arası: `move_block` (blok + instance yolu + lib_symbols), `remove_sheet` (boş sayfa + sayfa sembolü + .kicad_pro kaydı), `set_paper`, `is_empty` |
-| `kicadtools.py` | `kicad_cli()`, `kicad_symbol_lib(nick)`, `project_symbol_lib(nick)` (sym-lib-table → sistem), **`kicad_open(dir)`**, `read_sheet`/`write_sheet` (satır sonu korunur), `keep_file` |
-| `render.py` | PDF export + kırpılmış PNG; `--footprint PRETTY AD` footprint önizlemesi (`render_footprint`) |
+| `kpy` | çapraz platform python başlatıcı (`sh $SK/kpy betik.py`); python3/python seçimi, UTF-8 |
+| `selftest.sh` | ortam öz-testi (yazmaz): kpy, kicadtools bulucuları, PyMuPDF/pdftoppm yedeği, render/verify, update_pcb (pcbnew), fp_check --3d, örnek yeniden üretim, hook. Yeni makinede/OS'ta ilk iş: `sh $SK/selftest.sh` (depo kökünden) |
+| `kicadtools.py` | **ortam katmanı**: `kicad_cli()`, `kicad_share(tür)`, `kicad_python()`, `ensure_pcbnew()`, `run_cli(args, keep=)`, `kicad_symbol_lib(nick)`, `project_symbol_lib(nick)` (sym-lib-table → sistem), **`kicad_open(dir, editors_only=)`**, `read_sheet`/`write_sheet` (satır sonu korunur), `keep_file`, `project_file` |
+| `view.py` | datasheet/görüntü: PDF `--text`, `--find` (sayfa + pt/mm konum), `--page --clip` render; görüntü `--crop --scale`, `--info` |
+| `render.py` | PDF export + kırpılmış PNG; `--footprint PRETTY AD` footprint önizlemesi (`render_footprint`, `kicad-footprint/fp_check.py` de kullanır) |
 | `verify.py` | ERC sayıları + netlist farkı + **önbellekte olmayan sembol uyarısı** (tüm sayfalar); `--against` net adı değişimini gerçek bağlantı kaybından ayırır (`signature`) |
 | `readability.py` | üst üste binen metin, tel/gövde üstüne basan sembol alanı, gövdesinden tel geçen global etiket, **çerçeveden taşan** etiket/not/alan (`frame_overflow`), **üst üste binen sembol gövdeleri** (`body_overlaps`, güç sembolü dahil); CLI çıkış kodu = bulgu sayısı |
-| `update_pcb.py` | **headless "Update PCB from Schematic"** (kicad-cli'da yok): referansla eşler, footprint ekle/sil/değiştir, alan+net eşitle, eski izleri siler (`--keep-tracks`), `--dry-run`; doğrulama `kicad-cli pcb drc --schematic-parity` (hedef: parity 0, yalnız footprint'i TBD semboller) |
+| `update_pcb.py` | **headless "Update PCB from Schematic"** (kicad-cli'da yok): referansla eşler, footprint ekle/sil/değiştir, aynı FPID'yi kütüphaneden yenile (`--refresh REF`), alan+net eşitle, eski izleri siler (`--keep-tracks`), `--dry-run`; PCB editörü kilidi varken yazmaz; doğrulama `kicad-cli pcb drc --schematic-parity` (hedef: parity 0, yalnız footprint'i TBD semboller) |
 
 ### Yeni blok üretmek
 
@@ -208,9 +233,9 @@ netleri göstermeli (RTC: `RTC_*` pin numaraları, `Net-(U4-OSCI/OSCO/VBACK)`).
   4 pedli kristal (ABS25: 1–4 kristal, 2–3 NC) → `Device:Crystal_GND23`
   (2 ve 3 gizli istifli GND; `Crystal_GND24` 1–3 kristaldir, uymaz).
   Pin eşlemesini footprint ve datasheet ile karşılaştır.
-- Yeni proje footprint'i çizince `render.py --footprint` ile bak: ilk KLS/Korchip
-  denemelerinde silk pedlerin üstünden geçiyordu (yay ile böl) ve courtyard
-  pedi kapsamıyordu (pedleri de içine alan dikdörtgen).
+- Yeni parçanın footprint'i yoksa **`kicad-footprint`** skill'ine geç (ölçme,
+  pin numarası, `kifp`, 3D model, `fp_check`); sembole atamayı burada
+  `E.update_fields` ile yap.
 - **Kütüphanede sembol yoksa proje sembolü yaz** (`Power_Path_Custom.kicad_sym`,
   LF): pinout'u datasheet'in "Pin Functions" tablosundan al, sembol
   Description'ına kaynağını yaz (ör. "TI SNOSD95C Table 6-1"). Açık pedi
@@ -738,22 +763,15 @@ TI'la pin uyumluysa TI datasheet'i geçici kaynak olarak kullan ve bunu
 ilgili backlog görevine not et. Tedarikçi indeksinin (Özdisan MCP) verdiği datasheet
 bağlantıları (`cdn.ozdisan.com/public/product/assets/...`) da doğrudan iner;
 tek sayfalık çizim-datasheet'lerde (Çin panelleri, KLS) metin çıkmaz, sayfayı
-`pdftoppm -r 300` ile render edip tabloyu kırparak oku. Pinout'u `pdftotext -layout` ile "Pin Functions"
-tablosundan çıkar, PDF'teki referans devre şekillerine görüntü olarak bak.
-
-**Datasheet ölçüsü "çözülemiyorsa" sayfayı ölç.** Land pattern çizimlerinde
-okları hangi kenara gittiği metinden anlaşılmaz (SQJB60EP "0.9150", "3.0750"
-todo'da çözülemedi diye duruyordu). `pdftoppm -r 300` ile render et, iki bilinen
-toplam ölçüden (6.75 ve 7.75) px/mm ölçeğini çıkar (≈78.4 px/mm @ görüntü),
-her kenarın orijine uzaklığını piksellerden hesapla ve toplamların tuttuğunu
-kontrol et (2 × 3.075 = 6.15). Sembolde eş pinli drain (5-6, 7-8) varsa ikinci
-numarayı aynı gövdenin **yalnız bakır** (`"F.Cu"`) kopyası yap: paste ikilenmez,
-PCB güncellemesinde "pad yok" hatası çıkmaz. Courtyard = datasheet keep-out.
+`view.py --page N --dpi 300 -o ...` ile render edip tabloyu `--clip` ile kırparak
+oku. Pinout'u `view.py --text` ile "Pin Functions" tablosundan çıkar, PDF'teki
+referans devre şekillerine görüntü olarak bak. Land pattern / ölçü çiziminden
+footprint çıkarmak (piksel ölçeği, eş pinli ped) `kicad-footprint` skill'inde.
 
 **Özdisan MCP.** Bir parça bulunamadıysa önce `index_status`: `instock` kapsamlı
 kategoride stoksuz parça indekste yoktur. Kategori listesi `list_categories(
 tracked_only=false)` ile görülür (MLCC 184, Logic 248, TVS 386, direnç 194);
-`search_components`'e `category=` ver. Büyük sonuç dosyaya düşer: `python3 -c
+`search_components`'e `category=` ver. Büyük sonuç dosyaya düşer: `sh $SK/kpy -c
 "json.load(...)"` ile kılıf/gerilim süz. İndeks kapasite (pF) gibi alanları
 tutmayabilir; datasheet'i `cdn.ozdisan.com` bağlantısından indirip oku.
 Aynı seriden seç (R4 HP02WAF → R62/R63 HP02WAF5101TCE), SelectionNote'a

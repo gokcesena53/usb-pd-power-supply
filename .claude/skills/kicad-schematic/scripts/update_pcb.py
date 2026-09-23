@@ -1,30 +1,36 @@
 #!/usr/bin/env python3
 """Headless "Update PCB from Schematic" (kicad-cli'da bu komut yok).
 
-    python update_pcb.py hardware/gopo.kicad_pcb [--dry-run] [--keep-tracks]
+    sh $SK/kpy $SK/update_pcb.py hardware/gopo.kicad_pcb [--dry-run] [--keep-tracks] [--refresh J8 ...]
 
 Şemadan (PCB ile aynı adlı .kicad_sch) netlist üretir, footprint'leri
 REFERANSLA eşler (sayfa taşıma UUID yolunu değiştirir), sonra:
   - şemada olmayan footprint'i siler, footprint kimliği değişeni aynı
     konum/yön/katmanda değiştirir, yenileri kart dışına ızgaraya dizer;
+  - --refresh REF: kimliği AYNI ama kütüphanede düzenlenmiş footprint'i
+    (ped, silk, keepout, 3D model) kütüphaneden yeniden alır, konumu korur;
   - Value, yol, Sheetname/Sheetfile, DNP, tüm sembol alanlarını (gizli, Fab)
     eşitler; sembolde olmayan kullanıcı alanlarını siler;
   - pad netlerini yazar, kullanılmayan netleri siler.
 Footprint'i boş sembol (TBD) atlanır ve raporlanır. İzler varsayılan olarak
 silinir (footprint değişince eski pad'lere giden izler anlamsızlaşır);
---keep-tracks ile dokunulmaz. Doğrulama:
+--keep-tracks ile dokunulmaz. pcbnew bu python'da yoksa (Windows) betik
+kendini KiCad python'unda yeniden başlatır. pcbnew kaydı tüm kartı normalize
+eder (KiCad 10: ~2500 satır `(thickness ...)`); bunu ayrı commit'e al.
+Doğrulama:
     kicad-cli pcb drc --schematic-parity --severity-all --format json ...
 """
 import argparse
 import os
 import re
-import subprocess
 import sys
 import tempfile
 
-import pcbnew
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kicadtools import ensure_pcbnew, kicad_share, run_cli  # noqa: E402
 
-FP_DIR = '/usr/share/kicad/footprints'
+pcbnew = ensure_pcbnew()
+
 SKIP_PROPS = {'Sheetname', 'Sheetfile', 'dnp', 'ki_keywords', 'ki_fp_filters',
               'exclude_from_bom', 'exclude_from_board', 'exclude_from_pos_files'}
 
@@ -72,13 +78,24 @@ def load_net(path):
 
 
 def lib_table(prj):
-    env = {'KIPRJMOD': prj, 'KICAD10_FOOTPRINT_DIR': os.environ.get('KICAD10_FOOTPRINT_DIR', FP_DIR)}
+    """Takma ad -> .pretty yolu: KiCad'in genel tablosu (template/fp-lib-table)
+    + projenin fp-lib-table'i (proje ayni adi ezer)."""
+    fp_dir = kicad_share('footprints')
+
+    def subst(m):
+        v = m.group(1)
+        if v == 'KIPRJMOD':
+            return prj
+        if re.fullmatch(r'KICAD\d*_FOOTPRINT_DIR', v):
+            return fp_dir
+        return os.environ.get(v, m.group(0))
     libs = {}
-    for tbl in (os.path.join(os.path.dirname(FP_DIR), 'template/fp-lib-table'), os.path.join(prj, 'fp-lib-table')):
+    for tbl in (os.path.join(kicad_share('template'), 'fp-lib-table'), os.path.join(prj, 'fp-lib-table')):
         if not os.path.exists(tbl):
             continue
-        for name, uri in re.findall(r'\(lib \(name "([^"]+)"\)\s*\(type "KiCad"\)\s*\(uri "([^"]+)"\)', open(tbl).read()):
-            libs[name] = re.sub(r'\$\{(\w+)\}', lambda m: env[m.group(1)], uri)
+        for name, uri in re.findall(r'\(lib \(name "([^"]+)"\)\s*\(type "KiCad"\)\s*\(uri "([^"]+)"\)',
+                                    open(tbl, encoding='utf-8').read()):
+            libs[name] = re.sub(r'\$\{(\w+)\}', subst, uri)
     return libs
 
 
@@ -91,11 +108,16 @@ def main():
     ap.add_argument('pcb')
     ap.add_argument('--dry-run', action='store_true', help='yalnız değişiklikleri listele, kaydetme')
     ap.add_argument('--keep-tracks', action='store_true')
+    ap.add_argument('--refresh', nargs='+', default=[], metavar='REF',
+                    help='kimliği değişmese de kütüphaneden yeniden al (düzenlenmiş footprint / 3D model)')
     a = ap.parse_args()
     pcb = os.path.abspath(a.pcb); prj = os.path.dirname(pcb)
+    lock = os.path.join(prj, '~' + os.path.basename(pcb) + '.lck')
+    if not a.dry_run and os.path.exists(lock):
+        sys.exit(f'PCB editörü açık ({lock}); kaydederse bu değişiklik ezilir. Kapatıp tekrar çalıştır.')
     net = os.path.join(tempfile.mkdtemp(), 'board.net')
-    subprocess.run(['kicad-cli', 'sch', 'export', 'netlist', '--format', 'kicadsexpr', '-o', net,
-                    pcb[:-len('.kicad_pcb')] + '.kicad_sch'], check=True, capture_output=True)
+    sch = pcb[:-len('.kicad_pcb')] + '.kicad_sch'
+    run_cli(['sch', 'export', 'netlist', '--format', 'kicadsexpr', '-o', net, sch], keep=sch)
     comps, nets = load_net(net)
     libs = lib_table(prj)
     io = pcbnew.PCB_IO_KICAD_SEXPR()
@@ -115,7 +137,7 @@ def main():
     # Python tarafında tut (keep), yoksa segfault riski.
     pre = {}
     for r, c in comps.items():
-        if c['fp'] and (r not in fps or fps[r].GetFPIDAsString() != c['fp']):
+        if c['fp'] and (r not in fps or fps[r].GetFPIDAsString() != c['fp'] or r in a.refresh):
             pre.setdefault(c['fp'], []).append(load_fp(c['fp']))
     keep, log = [], []
 
@@ -126,14 +148,15 @@ def main():
         c, old = comps[r], fps.get(r)
         if not c['fp']:
             log.append(f'ATLA  {r}: şemada footprint yok')
-        elif old is not None and old.GetFPIDAsString() != c['fp']:
+        elif old is not None and (old.GetFPIDAsString() != c['fp'] or r in a.refresh):
             new = pre[c['fp']].pop()
             new.SetReference(r); b.Remove(old); keep.append(old); b.Add(new); fps[r] = new
             if old.GetLayer() == pcbnew.B_Cu:  # Flip yalnız karttaki footprint'te güvenli
                 new.Flip(new.GetPosition(), pcbnew.FLIP_DIRECTION_LEFT_RIGHT)
             new.SetPosition(old.GetPosition()); new.SetOrientation(old.GetOrientation())
             new.SetLocked(old.IsLocked())
-            log.append(f'DEGIS {r}: {old.GetFPIDAsString()} -> {c["fp"]}')
+            log.append(f'DEGIS {r}: {old.GetFPIDAsString()} -> {c["fp"]}' if old.GetFPIDAsString() != c['fp']
+                       else f'YENILE {r}: {c["fp"]}')
 
     bb = b.GetBoardEdgesBoundingBox()
     x0 = bb.GetRight() + pcbnew.FromMM(10); x, y, rowh = x0, bb.GetTop(), 0
