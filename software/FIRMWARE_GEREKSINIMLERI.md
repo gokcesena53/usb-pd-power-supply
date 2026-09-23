@@ -35,6 +35,15 @@ görevlerde izlenir; bu doküman değiştiğinde ilgili görevin kabul kriterler
 - 5 V altı yalnızca PPS; istek APDO minimumunun altındaysa gönderilmez.
 - **Çıkış açma:** OUT_EN high → ≥25 ms bekle → INA226 ile doğrula.
 - **Voltaj değiştirme:** OUT_EN low → PDO/APDO isteği → PS_RDY → doğrula → kullanıcı onayı → OUT_EN high.
+- **Gerilim düşürürken deşarjı bekle:** OUT_EN low olunca Q6/R67 (1 kΩ) çıkışı donanımla boşaltır;
+  firmware kontrol etmez. OUT_EN'i yeni gerilimle açmadan önce INA226 Vbus hedef gerilimin altına
+  inmiş olmalı (LM74801 ters akımı engellediği için aksi halde çıkış eski gerilimde kalır).
+  Beklenen süre: 1000 µF yükte 28 → 5 V ~1,7 s. Vbus ~2 V altında yavaşlar (Q6 eşiği, R59 100k).
+- **Dış kaynak uyarısı:** OUT_EN low sonrası Vbus 100 ms içinde %5'ten az düşerse OUT_POS'a dış
+  kaynak bağlıdır; "harici kaynak bağlı" uyarısı göster, çıkışı açma. Deşarj kapatılamaz: R67
+  30,4 V'ta sürekli 0,92 W harcar (`design_decisions/output/CIKIS_DESARJI_20260923.md`).
+- INA226 akım okumasında çıkış açıkken R59 (100k) kaynaklı ofset: V_OUT / 100 kΩ (28 V'ta 0,28 mA);
+  isteğe bağlı olarak firmware'de çıkarılabilir.
 - Fixed PDO geçişlerinde Accept–PS_RDY arası tüketim ≤2.5 W.
 - PDO/APDO isteklerinde çalışma akımı ≤3 A (maksimum çıkış akımı 3 A,
   `design_decisions/output/CIKIS_AKIMI_3A_KARARI_20260922.md`); AP33772S OCP eşiği buna göre.

@@ -4,7 +4,7 @@ title: PCB'yi şemadan güncelle
 status: To Do
 assignee: []
 created_date: '2026-09-22 18:46'
-updated_date: '2026-09-23 05:56'
+updated_date: '2026-09-23 11:34'
 labels:
   - layout
 milestone: m-1
@@ -42,3 +42,13 @@ Yer değişen (şemada): R10, R15, R37, TP9, SW1 U2'nin soluna alındı (MINI-1'
 - [ ] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
 - [ ] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
 <!-- DOD:END -->
+
+## Comments
+
+<!-- COMMENTS:BEGIN -->
+author: claude
+created: 2026-09-23 11:34
+---
+23.09.2026 (TASK-049): yeni parçalar Q4, Q6 (BSS138P SOT-23), D10 (SOD-123), R66 (0603), R67 (2512, 2 W: dış kaynak durumunda sürekli ~0.9 W, bakır alanıyla soğutulmalı). R59 footprint 0805 -> 0603. Q1/Q2/R4-R7 şemada mcu sayfasına taşındı (TASK-048); PCB'de sheet path değişir, footprint eşleşmesi referansla korunur.
+---
+<!-- COMMENTS:END -->

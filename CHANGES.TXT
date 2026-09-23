@@ -103,6 +103,15 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   KOM.KNN.06.000021, siyah KOM.KNN.06.000022), panele sabitlenip J4'e
   kabloyla baglaniyor. Netlist degismedi. Ayrinti:
   design_decisions/output/CIKIS_KONNEKTORU_20260923.md.
+- usb_pd_controller -> mcu: "I2C SEVIYE DONUSTURUCU" blogu (Q1, Q2, R4-R7)
+  mcu sayfasina tasindi; mcu sayfasi A4 -> A3. Baglanti degismedi.
+- usb_pd_controller: OUT_POS aktif desarji eklendi. SW_EN low iken
+  (OUT_EN low, INA226 ALERT veya kart gucsuz) Q6 BSS138P OUT_POS'u R67 1k
+  2W 2512 uzerinden bosaltir; Q4 BSS138P SW_EN'i ters cevirir, gate
+  SW_OUT'tan R66 100k ile beslenir, D10 BZT52C12 ile 12 V'ta sinirlanir.
+  R59 10k 0805 -> 100k 0603 (pasif yedek). Yeni net DISCH_G. Q1/Q2 sembol
+  alanlari BSS138P,215 datasheet'ine gore duzeltildi (Value BSS138P).
+  Ayrinti: design_decisions/output/CIKIS_DESARJI_20260923.md.
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.
