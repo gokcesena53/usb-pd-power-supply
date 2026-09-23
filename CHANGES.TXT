@@ -146,6 +146,18 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   WROOM-1/BT1 pad'lerine giden 7 iz parcasi silindi. Sembol alanlari
   footprint'lere aktarildi. J8 (Ethernet mezanin) footprint'i numuneye
   kadar TBD, PCB'de yok. DRC schematic parity: 416 -> 1 (J8).
+- mcu/PCB: J8 Ethernet modulu icin proje footprint'i eklendi:
+  Module_Custom:Waveshare_2-CH_UART_TO_ETH (yeni kutuphane
+  hardware/libraries/Module_Custom.pretty). Standoff yok, modul 2x8
+  2.54 mm header ve RJ45 tarafindaki iki mekanik pinle (MP, net yok)
+  dogrudan lehimlenir; RJ45 pim alaninda F.Cu keepout. Olculer Waveshare
+  olcu cizimi ve modul semasindan; mekanik pin konumu numuneyle
+  dogrulanacak (TASK-053). J8 Value TBD -> 2-CH UART TO ETH, alanlar
+  (Manufacturer, Pitch, Height, SelectionNote: SAMM MP02965) dolduruldu.
+  PCB'ye alindi; DRC schematic parity 1 -> 0. Netlist degismedi, ERC 0/0.
+  Uretici 3D model yayinlamadigi icin basitlestirilmis STEP eklendi
+  (libraries/Module_Custom.3dshapes: modul PCB, RJ45, CH9121, AMS1117,
+  2x8 header, mekanik pinler; olcu cizimi boyutlarinda renkli kutular).
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

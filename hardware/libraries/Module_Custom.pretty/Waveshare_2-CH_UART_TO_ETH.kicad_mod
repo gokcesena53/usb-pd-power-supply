@@ -1,0 +1,542 @@
+(footprint "Waveshare_2-CH_UART_TO_ETH"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -24.65 -21.19 0)
+		(layer "F.SilkS")
+		(uuid "7e61b8ad-89a6-5a70-a0ef-18ae7e79bcec")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Waveshare_2-CH_UART_TO_ETH"
+		(at -24.65 -5.89 0)
+		(layer "F.Fab")
+		(uuid "07c72509-faa0-5646-b05d-57ada19c9664")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.waveshare.com/wiki/2-CH_UART_TO_ETH"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b0adc4f5-babc-56a1-b3c0-77507726c1db")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Waveshare 2-CH UART TO ETH (CH9121) modulu, 2x8 2.54 mm header ile dogrudan lehimli; P2/P3 mekanik pin (baglantisiz); RJ45 kart kenarindan 4.3 mm tasar"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3377026-d750-5903-b75f-c44e0b14b078")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -51.27 -20.01)
+		(end 1.97 2.23)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6667fef3-e2e3-5f81-b611-456a04ca43bc")
+	)
+	(fp_poly
+		(pts
+			(xy 2.3 0) (xy 2.9 -0.45) (xy 2.9 0.45)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "4f083e05-05ce-5caf-a957-dbc64a133dbc")
+	)
+	(fp_rect
+		(start -51.15 -19.89)
+		(end 1.85 2.11)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "96201169-83f9-5b36-aecc-05eae838c5f6")
+	)
+	(fp_rect
+		(start -55.45 -16.89)
+		(end -33.55 -0.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "95cbf652-a43e-59bd-ad80-ddf1e5a22bd2")
+	)
+	(fp_text user "RJ45"
+		(at -44.5 -8.89 0)
+		(layer "F.Fab")
+		(uuid "b74b1385-2b84-55b3-ba9d-820392d08e8c")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy -3.81 1.27) (xy 1.27 1.27) (xy 1.27 -19.05) (xy -3.81 -19.05) (xy -3.81 1.27)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f05d1412-cc60-51cf-add2-e52f69d4370c")
+	)
+	(fp_line
+		(start 0.27 1.27)
+		(end 1.27 0.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "47b8d1bc-0f9e-51b5-b832-33f600b49a7a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -24.65 -8.89 0)
+		(layer "F.Fab")
+		(uuid "45be5c30-0c61-5a60-a7fa-dfce58afbf24")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "DIR1"
+		(at 3.4 0 0)
+		(layer "F.Fab")
+		(uuid "05257844-693d-56db-b7a6-fca4a85b50d3")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "DIR2"
+		(at -5.94 0 0)
+		(layer "F.Fab")
+		(uuid "8c64aea8-f43b-50bd-b1f8-ae4dc5f39bd0")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "CFG0"
+		(at 3.4 -2.54 0)
+		(layer "F.Fab")
+		(uuid "42b27328-7f75-5efc-ae48-2a92b0e95b9f")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "RUN"
+		(at -5.94 -2.54 0)
+		(layer "F.Fab")
+		(uuid "656e1c48-3e8e-599b-99ea-bebe95f3235b")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "RXD1"
+		(at 3.4 -5.08 0)
+		(layer "F.Fab")
+		(uuid "80828353-583e-5daa-ac7e-5a7f492f84ca")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "RXD2"
+		(at -5.94 -5.08 0)
+		(layer "F.Fab")
+		(uuid "1ba20214-2836-5f64-8dfc-f01760370db3")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "TXD1"
+		(at 3.4 -7.62 0)
+		(layer "F.Fab")
+		(uuid "8c104f5f-0e97-59f4-9616-cda57d2e5c15")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "TXD2"
+		(at -5.94 -7.62 0)
+		(layer "F.Fab")
+		(uuid "981c3c42-00bc-5f32-988d-405876a18f46")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "RST1"
+		(at 3.4 -10.16 0)
+		(layer "F.Fab")
+		(uuid "02e41123-5c79-5702-926f-e0b444526a02")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "RESET"
+		(at -5.94 -10.16 0)
+		(layer "F.Fab")
+		(uuid "8f0a4dcd-db5e-5fd5-a91a-1be173936c6c")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "GND"
+		(at 3.4 -12.7 0)
+		(layer "F.Fab")
+		(uuid "32a27a84-bdac-5ada-9129-089a4ebdca72")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "GND"
+		(at -5.94 -12.7 0)
+		(layer "F.Fab")
+		(uuid "518df9c4-1b4c-5f3f-813f-0f5c7412473f")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "3V3"
+		(at 3.4 -15.24 0)
+		(layer "F.Fab")
+		(uuid "3f1bdca0-cf2f-514d-a0f1-38482a6d8834")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "3V3"
+		(at -5.94 -15.24 0)
+		(layer "F.Fab")
+		(uuid "83deb7e6-d606-500d-9244-acbbf3f53c80")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "5V"
+		(at 3.4 -17.78 0)
+		(layer "F.Fab")
+		(uuid "0cb68175-eaed-5549-ad70-0bb60213660d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "5V"
+		(at -5.94 -17.78 0)
+		(layer "F.Fab")
+		(uuid "689ce1b9-12d6-519d-a37c-444aa4875122")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "Header spacer 2.5 mm; RJ45 pim cikintisi ~2.2 mm: tarali alanda F.Cu iz/via/parca yok"
+		(at -24.65 3.71 0)
+		(layer "Cmts.User")
+		(uuid "e1087178-f278-51ab-9055-31ef51700db7")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy 2.1 -20.14) (xy 2.1 2.36) (xy -51.4 2.36) (xy -51.4 -0.64) (xy -55.7 -0.64) (xy -55.7 -17.14) (xy -51.4 -17.14) (xy -51.4 -20.14)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d1023897-d4e8-5751-9e98-b7df77f4fbdc")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0c0360a3-d6fa-58a3-8f2b-5a9c4238453c")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f3d1ab1a-b2ce-58eb-b713-dd64dcf0c640")
+	)
+	(pad "3" thru_hole circle
+		(at 0 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "724130a9-812f-56a8-8f5e-153ee34aaa5d")
+	)
+	(pad "4" thru_hole circle
+		(at -2.54 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "40f5c169-7b9f-56bc-aa3c-39840d395069")
+	)
+	(pad "5" thru_hole circle
+		(at 0 -5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0cde6eaa-e8f6-5d8f-ad6b-77a8bdd03cbc")
+	)
+	(pad "6" thru_hole circle
+		(at -2.54 -5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dcc17901-dd36-5429-ad4d-39c01ab511eb")
+	)
+	(pad "7" thru_hole circle
+		(at 0 -7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f563cb45-08fb-5045-bbfc-6501edd870bf")
+	)
+	(pad "8" thru_hole circle
+		(at -2.54 -7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fa641f1b-4563-568a-85d7-4eadd5151c2c")
+	)
+	(pad "9" thru_hole circle
+		(at 0 -10.16)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "064c9403-d5da-5b68-8c3c-6d9cc3be8312")
+	)
+	(pad "10" thru_hole circle
+		(at -2.54 -10.16)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b9123cd2-cae5-5660-87ae-665b18f75fbd")
+	)
+	(pad "11" thru_hole circle
+		(at 0 -12.7)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f384601f-838c-5f4b-b173-ae111f10881e")
+	)
+	(pad "12" thru_hole circle
+		(at -2.54 -12.7)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8e759e8f-3bf1-5c6f-8ed5-affb81127c5a")
+	)
+	(pad "13" thru_hole circle
+		(at 0 -15.24)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8cc2b154-04dc-55fc-9c13-cd0f9ac4a5a7")
+	)
+	(pad "14" thru_hole circle
+		(at -2.54 -15.24)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "238b66f6-baac-57ab-a4fa-33ab7efc0dfe")
+	)
+	(pad "15" thru_hole circle
+		(at 0 -17.78)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "15c60d17-dd99-5558-b492-2058cb3408f9")
+	)
+	(pad "16" thru_hole circle
+		(at -2.54 -17.78)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e4ee0bc7-7a0a-5720-8522-d72b86792140")
+	)
+	(pad "MP" thru_hole circle
+		(at -47.15 -18.54)
+		(size 2.2 2.2)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5065fa40-23e4-58da-ba7d-4dae672a6bb8")
+	)
+	(pad "MP" thru_hole circle
+		(at -47.15 0.76)
+		(size 2.2 2.2)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b1d3f010-57fb-5b76-ba9f-d7ef400bae31")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "c0d6a2ad-4743-5b09-876a-c608962ae2ae")
+		(name "RJ45 pim alani")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -51.15 -17.39) (xy -32.65 -17.39) (xy -32.65 -0.99) (xy -51.15 -0.99)
+			)
+		)
+	)
+	(model "${KIPRJMOD}/libraries/Module_Custom.3dshapes/Waveshare_2-CH_UART_TO_ETH.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

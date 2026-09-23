@@ -16579,7 +16579,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "2-CH UART TO ETH"
 			(at 107.95 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16590,7 +16590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Module_Custom:Waveshare_2-CH_UART_TO_ETH"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16612,7 +16612,7 @@
 				)
 			)
 		)
-		(property "Description" "Waveshare 2-CH UART TO ETH (CH9121) mezanin header 2x8"
+		(property "Description" "Waveshare 2-CH UART TO ETH (CH9121) modulu, 2x8 header ile ana karta dogrudan lehimli"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16645,7 +16645,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TBD"
+		(property "Manufacturer" "Waveshare"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16667,7 +16667,7 @@
 				)
 			)
 		)
-		(property "Package" "TBD"
+		(property "Package" "Modul 53 x 22 mm, 2x8 THT header + 2 mekanik pin"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16722,7 +16722,7 @@
 				)
 			)
 		)
-		(property "Height" "TBD"
+		(property "Height" "~17.5 mm (2.5 header ara parcasi + 15.0 RJ45)"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16744,7 +16744,7 @@
 				)
 			)
 		)
-		(property "SelectionNote" "Adim (2,54 mm varsayimi) ve footprint numune ile kesinlesecek (TASK-053)."
+		(property "SelectionNote" "SAMM Market MP02965; 634,89 TL + KDV; stok 19 (23.09.2026). Footprint Waveshare olcu cizimiyle cizildi; mekanik pin konumu numuneyle dogrulanacak (TASK-053)."
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16755,7 +16755,7 @@
 				)
 			)
 		)
-		(property "AssemblyNote" "TBD"
+		(property "AssemblyNote" "Standoff yok, dogrudan lehim. P2/P3 mekanik pinleri MP pedlerine lehimlenir (net yok). Header pinleri kart altindan ~4.4 mm cikar. RJ45 kart kenarindan 4.3 mm tasar."
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16788,7 +16788,7 @@
 				)
 			)
 		)
-		(property "Pitch" "TBD"
+		(property "Pitch" "2.54 mm"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16810,7 +16810,7 @@
 				)
 			)
 		)
-		(property "Orientation" "TBD"
+		(property "Orientation" "Vertical"
 			(at 109.22 195.58 0)
 			(hide yes)
 			(show_name no)
