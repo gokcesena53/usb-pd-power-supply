@@ -31,7 +31,9 @@ görevlerde izlenir; bu doküman değiştiğinde ilgili görevin kabul kriterler
   Açılma ~3 ms (C21 yumuşak kalkış), kapanma ~30 ms; firmware kapattıktan sonra PDO
   geçişine başlamadan önce ≥50 ms beklemeli.
 - **CH9121 RST1 pini bağlı değil.** Reset gerektiğinde ya güç kesilir ya da yapılandırma
-  modunda `0x02` (chip reset) / `0x0e` (execute + reset) komutu gönderilir.
+  modunda `0x02` (chip reset) / `0x0e` (execute + reset) komutu gönderilir. RSTI, RESET
+  (fabrika ayarı) ve CFG girişlerinde çip içi 30–55 kΩ pull-up var; bağlı olmayan pinler
+  kendiliğinden inaktif kalır (CH9121DS1 V2.5).
 - CH9121 RUN çıkışı **hiçbir GPIO'ya bağlı değil**, yalnız TP14 pedinde. Bağlantı durumu
   firmware'de keepalive/zaman aşımı ile izlenir.
 - **Modülü kapatmadan önce GPIO16 (UART_TX) ve GPIO8 (CFG0) low yapılmalı.** Bu pinler
@@ -120,6 +122,10 @@ Waveshare 2-CH UART TO ETH modülü mezanin olarak bağlıdır. **Bir IP arayüz
 - **CFG0 ile yapılandırma sabit 9600 bps'tedir.** Firmware UART0'ı yapılandırma için 9600'e
   düşürüp sonra çalışma hızına (hedef 921600) geri almalı.
 - EEPROM yazma ömürlüdür: her açılışta değil, yalnız ayar değiştiğinde `0x0d` gönderilmeli.
+- **Açılış bekleme süresi.** Modülde RSTI, çip içi pull-up ile C25 1 µF üzerinden yükselir
+  (28–51 ms), ardından çip 11–19 ms daha hazırlanır. GPIO0 low yapıldıktan sonra CFG0'ı
+  çekip komut göndermeden önce **≥100 ms** beklenmeli. `0x02`/`0x0e` yazılım reset'inden
+  sonra komut kabulü için **≥20 ms** (tRSTTEMP2 maks. 18 ms).
 - Baud 300 bps – 921,6 kbps; bant genişliği ~90 kB/s.
 - Fabrika varsayılanı: IP 192.168.1.200, baud 9600 — ilk kurulumda değiştirilecek.
 - Uygulama görevi: TASK-055. Numune doğrulaması: TASK-053.

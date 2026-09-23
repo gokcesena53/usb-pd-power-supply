@@ -35,7 +35,7 @@ noktalarına giden **IO0 ve IO8**'den alınacak.
 | --- | --- | --- | --- |
 | `UART_TX` | GPIO16 (U0TXD) | MCU → modül RXD1 | UART0 boşta; loglar USB-Serial/JTAG'de |
 | `UART_RX` | GPIO17 (U0RXD) | modül TXD1 → MCU | aynı |
-| `ETH_CFG0` | GPIO8, R15 22 Ω üzerinden | MCU → modül CFG0 | **strapping pini**, boot'ta high olmak zorunda; mevcut R37 10 k pull-up bunu sağlıyor ve CH9121'de CFG0 high = normal mod → ESP32 reset'teyken modül kendiliğinden normal modda kalıyor |
+| `ETH_CFG0` | GPIO8, R15 22 Ω üzerinden | MCU → modül CFG0 | **strapping pini**, download boot'ta (GPIO9 = 0) high olmak zorunda, SPI boot'ta okunmaz; mevcut R37 10 k pull-up bunu sağlıyor ve CH9121'de CFG0 high = normal mod → ESP32 reset'teyken modül kendiliğinden normal modda kalıyor |
 | `ETH_PWR_EN` | GPIO0, R16 10 k üzerinden | MCU → Q8 gate | **aktif-low** besleme anahtarı (aşağıdaki revizyon). RST1 bağlanmadı: `0x02`/`0x0e` yazılım reset'i var |
 | RUN | — | modül → (test pedi) | GPIO'ya bağlanmıyor |
 
@@ -49,10 +49,10 @@ Bağlanmama gerekçeleri:
   yazıp modülü reset'liyor. Yani config'i uygulamak için reset gerekiyor, RST1
   RUN'dan önceliklidir. Link durumu firmware'de keepalive/zaman aşımıyla izlenecek.
 
-Taşınan risk: CH9121'in CFG0 girişinde dahili bir pull-down varsa, R37 10 k ile
-bölücü oluşup GPIO8'in boot gerilimini VIH altına düşürebilir ve ESP32 açılmaz.
-Numuneyle ölçülecek (TASK-053); çıkarsa R37 küçültülecek veya CFG0/RST1 yer
-değiştirecek.
+~~Taşınan risk: CH9121'in CFG0 girişinde dahili bir pull-down varsa, R37 10 k ile
+bölücü oluşup GPIO8'in boot gerilimini VIH altına düşürebilir ve ESP32 açılmaz.~~
+CH9121 veri sayfasıyla kapandı: CFG girişinde **dahili pull-up** var (bkz. "Revizyon 2").
+Yerine geçen, daha küçük risk modül **kapalıyken** boot'tur; aynı bölümde.
 
 Görevler: TASK-051 (şema, **tamamlandı**), TASK-052 (numune), TASK-053 (doğrulama),
 TASK-054 (yerleşim/kutu), TASK-055 (firmware sürücüsü), TASK-056 (PDO bütçesi).
@@ -75,8 +75,8 @@ kesinleşmiştir; bölüm 1–5'teki bazı varsayımlar bununla güncellendi.
 | --- | --- |
 | Header | **P1, "Header 8X2"**, 16 pin. 1 DIR1 / 2 DIR2 / 3 CFG0 / 4 RUN / 5 RXD1 / 6 RXD2 / 7 TXD1 / 8 TXD2 / 9 RST1 / 10 RESET / 11–12 GND / 13–14 3V3 / 15–16 5V. Pin sırası artık TBD değil; yalnız **adım ve footprint** numune işi. |
 | Besleme | 5V → **AMS1117** → 3V3 → **RT9193-18** → 1V8. Header'da 5V ve 3V3 **ayrı** pinler. 3V3'ü doğrudan beslemek AMS1117'yi atlar; 5V pinleri boş bırakılır. LDO dropout sorunu yok. |
-| CFG0 | CH9121 pin 60'a **doğrudan**, hat üzerinde hiçbir eleman yok. Modül tarafında pull-up/pull-down yok → hattı belirleyen tek direnç gopo'daki **R37 10k**'dır. |
-| RST1 | CH9121 pin 36; modülde **C25 1 µF** ile GND'ye bağlı (POR gecikmesi), pull-up yok (çip içi olmalı). |
+| CFG0 | CH9121 pin 60'a **doğrudan**, hat üzerinde hiçbir eleman yok. Modül kartında harici pull yok; çip içinde 30–55 kΩ pull-up var (Revizyon 2). |
+| RST1 | CH9121 pin 36 (RSTI); modülde **C25 1 µF** ile GND'ye bağlı. Çip içi pull-up ile birlikte RC reset gecikmesi oluşturur (Revizyon 2). |
 | RJ45 | J1'de **CTTD/CTRD orta uçları var → entegre trafo**, sinyal çiftleri izole (1,5 kVrms). Sonlandırma 4 × 49,9 R + 2 × 100 nF, orta uçlar 3V3'e. |
 | RJ45 kabuğu | Pin 13/14 **doğrudan GND'ye** bağlı. Bob Smith yok, kapasitif bağ yok. |
 | LED'ler | L1 güç, L2/L3 TCPCS1/TCPCS2 (TCP oturum durumu), her biri 2 k ile. RUN ayrı bir pin. |
@@ -145,6 +145,62 @@ J8 `Conn_02x08_Odd_Even` gerçek pinout ile; Q8 + R17 100k + C21 100n besleme an
 R16 22R → 10k (gate seri direnci); R17'nin eski rolü (RST1 pull-up) kalktı; RST1/RESET/
 DIR1/DIR2/RXD2/TXD2/5V `no_connect`. Yeni proje sembolü
 `Power_Supply_Custom:TSM3443CX6` (G=3, S=4, D=1/2/5/6 istifli). ERC 0/0.
+
+**Montaj kararı (23.09.2026):** standoff yok; modül 2x8 header ve RJ45 tarafındaki iki
+mekanik pinle (modül şemasında P2/P3, bağlantısız) ana karta doğrudan lehimlenir.
+Footprint `Module_Custom:Waveshare_2-CH_UART_TO_ETH` (Waveshare ölçü çizimi): orijin
+pin 1 (DIR1, dış sütun, RJ45'ten uzak köşe), RJ45 modül kenarından 4,3 mm taşar.
+Header ara parçası modülü 2,5 mm yükseltir, RJ45 lehim çıkıntısı ~2,2 mm olduğu için
+RJ45 pim alanında F.Cu keepout var. Mekanik pin konumu ve çıkıntı TASK-053'te
+numuneyle doğrulanacak.
+
+## Revizyon 2 — CH9121 veri sayfası: dahili dirençler (23.09.2026)
+
+Kaynak: `hardware/datasheets/CH9121DS1.PDF` (WCH, V2.5). Pin tablosu CH9121A (LQFP64)
+içindir; modüldeki çip ekin harfsiz eski **CH9121**'dir ve veri sayfasına göre pinleri
+"büyük ölçüde uyumlu"dur. Pin numaraları modül şemasıyla birebir örtüşüyor
+(CFG=60, RSTI=36, RESET=59, RXD1=57, RXD2=55, RUN=31).
+
+| Pin | Tip | gopo'daki durum | Sonuç |
+| --- | --- | --- | --- |
+| 60 CFG | I, **PU** | `ETH_CFG0`, R37 10 k pull-up + GPIO8 | Modül açıkken iki pull-up paralel → hat yüksek. **Pull-down riski yok.** |
+| 36 RSTI | I, **PU** | `no_connect` | Boş bırakmak güvenli. PU ile C25 1 µF bir RC oluşturur (aşağıda). |
+| 59 RESET (fabrika ayarı) | I, **PU** | `no_connect` | Boş bırakmak güvenli; kazara fabrika ayarına dönme riski yok. |
+| 57 RXD1 | I, **PU** | `UART_TX` (GPIO16) | Modül kapalıyken GPIO16 high → PU/ESD üzerinden modül rayını besler (mevcut kural doğrulandı). |
+| 55 RXD2 | I, **PU** | `no_connect` | Güvenli. |
+| 31 RUN, 30/33 TCPCS, 51/46 DIR, 58 TXD1 | O | TP14 / `no_connect` / GPIO17 | Çıkış; pull gerekmiyor. |
+
+Dahili direnç RPU = RPD = **30 / 40 / 55 kΩ** (min/tip/maks). Giriş eşikleri VIH ≥ 2,0 V,
+VIL ≤ 0,8 V (VCCIO = 3,3 V).
+
+**Reset zamanlaması.** Güç verilince RSTI, 30–55 kΩ PU ile C25 1 µF üzerinden yükselir.
+VIH = 2,0 V'a varış t = RC·ln(3,3/1,3) ≈ 0,93·RC = **28–51 ms**. Üstüne RSTI high →
+çalışır durum tRSTTEMP1 = 11–19 ms eklenir; iç POR (tRSTTEMP3 = 25–34 ms) paralel koşar.
+Yani çip ETH_3V3 yükseldikten **~40–70 ms** sonra UART komutu kabul eder. Firmware
+GPIO0 low'dan sonra CFG0'ı çekip yapılandırmaya başlamadan önce **≥100 ms** beklemeli.
+Yazılım reset'i (`0x02`/`0x0e`) sonrası çalışır duruma dönüş tRSTTEMP2 = 10–18 ms.
+
+**Yeni risk — modül kapalıyken boot.** Q8 boot boyunca kapalıdır (R17). Bu sırada R37,
+GPIO8 hattını CFG pininin PU'su ve ESD diyotu üzerinden **beslemesiz** ETH_3V3 rayına
+bağlar: ≤0,33 mA ile ray, yükü (C25, C10, L1 güç LED'i) izin verdiği kadar yükselir ve
+GPIO8 ≈ ray + bir diyot düşümünde kalır. L1 LED'i rayı ~1,8 V civarına sabitlerse
+GPIO8 ≈ 2,0–2,4 V olur, ESP32-C6 VIH'inin (0,75 × 3,3 = 2,475 V) altında. Etkisi
+sınırlıdır: ESP32-C6'da GPIO8 **yalnız GPIO9 = 0 iken** (Joint Download Boot) okunur;
+normal SPI boot'ta "Any value". Yani ürün açılışı etkilenmez, yalnız BOOT tuşuyla
+download'a girişte GPIO8 = 0 + GPIO9 = 0 geçersiz kombinasyona düşebilir. Ayrıca ROM
+varsayılan olarak boot mesajlarını UART0'a da basar (EFUSE_UART_PRINT_CONTROL = 0);
+bu, her açılışta GPIO16'nın RXD1 üzerinden kapalı modülü kısa süre beslemesi demektir.
+Her ikisi de TASK-053'te ölçülecek.
+
+**Güç.** Veri sayfasına göre CH9121A 100BASE-TX link + trafik 76 mA, link yokken 55 mA
+(trafo dahil). Modüldeki LED'ler (RJ45 G/Y 330 Ω, L1–L3 2 kΩ) ~10 mA ekler: ≈ 0,09 A /
+0,28 W. Waveshare'in 140 mA'i ve eski CH9121'in farklı olabileceği için bölüm 3'teki
+0,20 A kötü durum varsayımı korunuyor; ölçüm TASK-053'te.
+
+**Seçenek D için not.** CH9121A/T 25 MHz kristal ister, kristal kapasitörleri ve 50 Ω
+Ethernet sonlandırması **çip içindedir** ("harici 49,9 Ω bağlamayın"). Waveshare
+modülündeki harici 4 × 49,9 Ω ve 30 MHz osilatör eski harfsiz CH9121'e aittir; D yolu
+seçilirse bu devre kopyalanmamalı.
 
 ## 1. İşlevsel uygunluk — asıl soru burada
 
@@ -261,9 +317,9 @@ Bu, Ethernet eklemenin **tek gerçek elektriksel bedeli**dir ve firmware'e yans�
   datasheet, U.FL konnektörlü varyant; footprint doğrulanmalı).
 - **Toprak ve izolasyon.** Ethernet manyetikleri (1,5 kVrms) lab ağıyla gopo
   toprağı arasında galvanik ayrım sağlar — çıkışı 28 V'a kadar yüzen bir kaynak
-  için bu istenen davranıştır. **Ancak Waveshare sayfası RJ45'in entegre trafolu
-  olup olmadığını yazmıyor.** Numune ile doğrulanmalı; trafo yoksa izolasyon yok
-  ve lab cihazlarıyla toprak döngüsü riski doğar.
+  için bu istenen davranıştır. Waveshare sayfası RJ45'in entegre trafolu olup
+  olmadığını yazmıyordu; üretici şeması J1'de CTTD/CTRD orta uçlarını gösteriyor,
+  yani **trafo var** (bkz. Revizyon, "Sonuç 3" — kabuk ise doğrudan GND'de).
 - **Kablo ekranı.** STP kablo + gövdesi modül GND'sine doğrudan bağlı RJ45, gopo
   toprağını bina toprağına bağlar. Kabuk bağlantısının kapasitif (1 nF/2 kV Bob
   Smith) olduğu doğrulanmalı, değilse UTP kullanılmalı.
@@ -279,6 +335,12 @@ alınacak. Bu bir engel değil — ESP32-C6 ve AP33772S için emsal mevcut
 (`PARCA_TEDARIK_KARARLARI_20260922.md`) — ama BOM'a ikinci bir tedarikçi ekliyor.
 
 Modül fiyatı 12,99 $ (3+ adette 11,79 $).
+
+**Karar (23.09.2026, TASK-052):** Modül **SAMM Market**'ten alınacak —
+[ürün sayfası](https://market.samm.com/2-ch-uarttan-ethernete-donusturucu-seri-port-seffaf-iletim-modulu),
+Waveshare, SAMM kodu **MP02965**, 634,89 ₺ + KDV (761,87 ₺ KDV dahil), 23.09.2026
+itibarıyla stokta 19 adet. Yurt içi kaynak olduğu için Mouser/DigiKey gümrük ve kargo
+yükü yok; ikinci tedarikçi yine de BOM'a ekleniyor (Özdisan'da karşılığı yok).
 
 ## 6. Seçenekler
 
@@ -296,10 +358,14 @@ TASK-053 numuneyi zaten kart dışında, TP9/TP10/TP11/TP12 pedlerinden sürerek
 
 ## 7. Doğrulanacaklar (numune gerektirir)
 
-1. Modül gerçekten 3,3 V'tan çalışıyor mu, yoksa üstünde 5 V isteyen bir LDO mu var?
+1. ~~Modül gerçekten 3,3 V'tan çalışıyor mu?~~ Şemadan: AMS1117 yalnız 5V pinlerinden
+   besleniyor, 3V3 pinleri (13/14) doğrudan CH9121 rayı. Numunede yalnız çalıştırma
+   testi kalıyor (TASK-053 KK#1).
 2. 3,3 V'ta çekilen akım (link yokken / link varken / TX sırasında) — bölüm 3'ün girdisi.
-3. RJ45 entegre trafolu mu? Kabuk GND'ye doğrudan mı bağlı, kapasitif mi?
-4. CFG0/RST1/RUN pinlerinin lojik seviyeleri ve CH9121'in yeniden yapılandırma süresi.
+3. ~~RJ45 entegre trafolu mu? Kabuk nasıl bağlı?~~ Şemadan: trafolu; kabuk doğrudan GND.
+4. ~~CFG0/RST1/RUN pinlerinin çip içi pull yönleri~~ Veri sayfasından: CFG, RSTI, RESET,
+   RXD1/2 dahili pull-up (Revizyon 2). Kalan: modül kapalıyken boot'ta GPIO8 gerilimi
+   ve ETH_3V3'ün ne kadar yükseldiği.
 5. Uçtan uca gecikme ve jitter (SCPI sorgu → yanıt), 921600 baud'da.
 6. Kart + RJ45 + kablo, MINI-1 anteninden kaç mm uzakta Wi-Fi menzilini bozmuyor?
 
