@@ -4,6 +4,7 @@ title: 'PCB: U6 TLV431 pad sırası ve D5 SOD-323 güncellemesi'
 status: To Do
 assignee: []
 created_date: '2026-09-23 12:54'
+updated_date: '2026-09-23 15:18'
 labels:
   - layout
 milestone: m-1
@@ -11,7 +12,7 @@ dependencies:
   - TASK-057
 references:
   - design_decisions/output/FB_CLAMP_EN_REFERANSI_20260923.md
-ordinal: 108000
+ordinal: 52500
 ---
 
 ## Description
@@ -33,3 +34,9 @@ TASK-057 şema değişikliğinin PCB'ye aktarılması. U6'nın SOT-23 kılıfı 
 - [ ] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
 - [ ] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
 <!-- DOD:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+23.09.2026: TASK-006 (commit 1792ccb) ile PCB şemadan güncellendi. AC#1 ve AC#2 pad netleri doğrulandı: U6 1=Net-(U6-REF) 2=EN_CTRL 3=GND; D5 D_SOD-323 1=EN_CTRL 2=BOOST_FB; R42 silindi. D5 yeni footprint olarak kart dışında; AC#3 (DRC 0) ve AC#4 (≤10 mm) yerleşim işi (TASK-008).
+<!-- SECTION:NOTES:END -->

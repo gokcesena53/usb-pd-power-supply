@@ -4,7 +4,7 @@ title: Ethernet portunu PCB yerlesimine ve kutuya isle
 status: To Do
 assignee: []
 created_date: '2026-09-23 12:09'
-updated_date: '2026-09-23 13:09'
+updated_date: '2026-09-23 15:18'
 labels:
   - layout
   - fabrication
@@ -15,7 +15,7 @@ dependencies:
 documentation:
   - design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md
 priority: medium
-ordinal: 104000
+ordinal: 108000
 ---
 
 ## Description
@@ -44,3 +44,9 @@ Yerlesim henuz baslamadi (PCB'de 7 segment var), bu is TASK-006 ve TASK-008 ile 
 - [ ] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
 - [ ] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
 <!-- DOD:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+23.09.2026 (TASK-006): J8'in şemada footprint'i yok (Value TBD), bu yüzden PCB'ye gelmedi; DRC schematic parity'deki tek kalan sorun bu. Footprint numuneyle (TASK-052) atanınca `python .claude/skills/kicad-schematic/scripts/update_pcb.py hardware/gopo.kicad_pcb` ile PCB'ye alınır.
+<!-- SECTION:NOTES:END -->
