@@ -69,6 +69,21 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   Inductor_Custom:L_CoreMaster_FPI0705_7.8x7.0mm_H5.0). Netlist degismedi.
 - U1 (AP33772S) ve U2 (ESP32-C6-WROOM-1): Özdisan'da yok ve karsilayan
   muadil yok; Mouser/DigiKey katalogundan alinacak (SelectionNote).
+- usb_pd_controller: AOZ1284 blok notlari secilmis parcalara gore yenilendi
+  (COMP Rc=51k/Cc=15n, fC ~20 kHz; L1 FPI0705-220K; D2 SS2060FL; Cout C15
+  hibrit + C16). mcu: cerceve disinda kalmis eski inceleme sorulari
+  (pin atamasi, programlama, encoder secimi...) kaldirildi.
+- USER_İNTERFACE.kicad_sch kaldirildi: sayfada yalnizca arayuz sinyal listesi
+  vardi, docs/arayuz-sinyalleri.md'ye guncel pin atamalariyla tasindi.
+- mcu: U2 ESP32-C6-WROOM-1 -> ESP32-C6-MINI-1-H4 (4 MB flash, -40..105 C,
+  13.2x16.6 mm). Modul IO10/IO11 vermiyor: TFT_CS GPIO10 -> GPIO14 (pin 19),
+  TFT_DC GPIO11 -> GPIO7 (pin 16). IO8/IO9 WROOM'da sag kenardaydi, MINI'de
+  solda: R37/R15/TP9 ve R10/SW1 sol alta tasindi, iki pull-up tek +3.3V
+  sembolunu paylasiyor (#PWR023 kalkti). USB seri dirençleri yerinde kaldi,
+  yalniz tasidiklari sinyal yer degistirdi (R2 -> D-, R3 -> D+). Footprint
+  PCM_Espressif:ESP32-C6-WROOM-1 -> RF_Module:ESP32-C6-MINI-1 (KiCad).
+  Netlist: her net U2 disindaki uyelerini korudu, yalniz pin numaralari
+  degisti; GND'ye modulun tum toprak pedleri katildi. ERC 0 hata / 0 uyari.
 - usb_pd_controller: L3 B82422H1682K000 -> SRI0704-6R8M (Core Master).
   Eski parca 1210 cipti ve yalniz 0.35 A / 570 mOhm veriyordu; TPS55340
   pre-boost'un tepe bobin akimi 1.24 A. Yeni parca 6.8 uH / 0.04 ohm /

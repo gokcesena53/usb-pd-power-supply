@@ -4929,17 +4929,6 @@
 		)
 		(uuid "e9a80992-9ae9-4f6a-9d9d-ff257c1c7b59")
 	)
-	(text "VIN = EXPOSED PAD 9: V_PRE, NOT GND.\nEN: 2.495V shunt bias; R43 dissipation 0.65W at 28V.\nCOMP: Rc=12.7k, Cc=18nF; fc about 8.5..10kHz at Cout_eff=44uF.\nRF=100k: table 500kHz; equation 476.19kHz. Verify on prototype."
-		(exclude_from_sim no)
-		(at 245.11 233.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "3416b544-2023-4da3-a4f9-941735c0b49a")
-	)
 	(text "V_PRE = 5.02 V  (pass-through > 5.5 V)"
 		(exclude_from_sim no)
 		(at 19.05 149.86 0)
@@ -5050,40 +5039,6 @@
 			(justify left top)
 		)
 		(uuid "c6183ee9-8409-4d8f-bd82-25b3b62df631")
-	)
-	(text "INTERNAL 3.3V BUCK — 5..28V INPUT / 1A DESIGN LOAD"
-		(exclude_from_sim no)
-		(at 165.1 149.86 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-				(color 72 120 180 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "caf78e44-3b1b-4f04-9c11-ece225f31968")
-	)
-	(text "L/D exact MPN and footprints require selection.\nL: Isat >=2A normal load, Irms >=1.5A.\nCout effective >=44uF; check DC-bias curves."
-		(exclude_from_sim no)
-		(at 165.1 241.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "ccd18fe2-be68-49ec-937c-3f8adffeab90")
-	)
-	(text "Cout: 10V X7R; effective bank >=44uF @3.3V"
-		(exclude_from_sim no)
-		(at 165.1 237.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "fdab9940-796e-4dbd-be86-a11094047b69")
 	)
 	(junction
 		(at 266.7 191.77)
@@ -38780,5 +38735,53 @@
 			(justify left bottom)
 		)
 		(uuid "67dfea61-6c04-4a38-9d05-832fb1f6d9b1")
+	)
+	(text "VIN = EXPOSED PAD 9: V_PRE, NOT GND.\nEN: 2.495V shunt bias; R43 dissipation 0.65W at 28V.\nCOMP: Rc=51k, Cc=15nF -> fC ~20 kHz (CO ~89 uF: C15 hibrit + C16).\nRF=100k: table 500kHz; equation 476.19kHz. Verify on prototype."
+		(exclude_from_sim no)
+		(at 245.11 233.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c03d783-64c6-488b-8e68-64d2acb7a7a7")
+	)
+	(text "INTERNAL 3.3V BUCK — V_PRE 5..28V INPUT / 1A DESIGN LOAD"
+		(exclude_from_sim no)
+		(at 165.1 149.86 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c447d94-8a73-45a9-abf0-c2d03bc2036c")
+	)
+	(text "Cout: efektif >=44uF @3.3V (DC bias sonrasi)."
+		(exclude_from_sim no)
+		(at 165.1 237.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b879acea-079b-49c4-a18d-cc19b71fc06d")
+	)
+	(text "L1 FPI0705-220K: 22uH, RDC 0.11 ohm, IDC 2.3 A (tepe ~0.83 A).\nD2 SS2060FL: 60 V / 2 A Schottky.\nCout: C15 47uF hibrit 35V (ESR 60 mOhm) + C16 47uF X5R 16V 1210."
+		(exclude_from_sim no)
+		(at 165.1 246.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b43c793-3a56-499f-99c5-8fc82803f508")
 	)
 )

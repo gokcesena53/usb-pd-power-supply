@@ -18,8 +18,11 @@ görevlerde izlenir; bu doküman değiştiğinde ilgili görevin kabul kriterler
   | BQ32000 | 0x68 |
 
 - INA226 ALERT → GPIO3 (yalnız okuma; EN düğümü değil).
-- Ekran: ST7789V2 240x320, 4 telli SPI; TFT_BL_PWM (GPIO1) aktif-yüksek PWM.
-- Boş pin: GPIO7 (MTDO, U2.7) yedek.
+- Ekran: ST7789V2 240x320, 4 telli SPI: SCLK GPIO4, MOSI GPIO5, **CS GPIO14**,
+  **DC GPIO7**, RST GPIO15; TFT_BL_PWM (GPIO1) aktif-yüksek PWM.
+- Modül **ESP32-C6-MINI-1-H4** (23.09.2026): IO10/IO11 dışarı verilmiyor, bu yüzden
+  CS GPIO10 -> GPIO14 ve DC GPIO11 -> GPIO7 taşındı. Kullanılan GPIO: 0-9 ve 12-23;
+  **boş GPIO kalmadı**. Strapping: GPIO4/5/8/9/15.
 
 ## 2. RTC (BQ32000)
 

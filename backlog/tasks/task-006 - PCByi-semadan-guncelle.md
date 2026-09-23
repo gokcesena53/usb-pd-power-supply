@@ -4,7 +4,7 @@ title: PCB'yi şemadan güncelle
 status: To Do
 assignee: []
 created_date: '2026-09-22 18:46'
-updated_date: '2026-09-22 19:15'
+updated_date: '2026-09-23 05:07'
 labels:
   - layout
 milestone: m-1
@@ -21,9 +21,11 @@ KiCad: Tools > Update PCB from Schematic. Kart erken aşamada (7 segment, 0 via,
 
 Yeni: Y1 (ABS25), C33 (Korchip DCL H-tipi), Q5 (SQJB60EP, hiç yerleştirilmemişti), Q7, R60, C34, U13 (SOT-23-5), R61, C35, R62, R63, D8/D9 (SOD-123F, DNP).
 
-Kalkan: BT1, R22, R23, C10, U7, U8, L2, C20, C21, C22, R44, R45, R46, R25, R26, R57; Q4 (Q3 ile tek çift kılıfa birleşti).
+Kalkan: BT1, R22, R23, C10, U7, U8, L2, C20, C21, C22, R44, R45, R46, R25, R26, R57, #PWR023; Q4 (Q3 ile tek çift kılıfa birleşti).
 
-Footprint değişen: Q3 Package_SO_Custom:Vishay_PowerPAK_SO-8L_Dual (PCB'de hâlâ SOIC-8 / IRF7855TRPBF), U12 WSON-12 3x3 (LM74801; EP boşta, GND'ye BAĞLANMAZ), U10 SOT-23-6 (USBLC6-2SC6), U4 SOIC-8, J3 KLS 30p FPC, C5 0805, C8 1210, C15/C29 CP_Elec_6.3x5.8, C31 0603, R59 0805.
+Footprint değişen: U2 RF_Module:ESP32-C6-MINI-1 (WROOM-1 18x25.5 -> MINI-1 13.2x16.6; anten keepout yeniden konumlanmalı, TFT_CS/TFT_DC pinleri değişti), Q3 Package_SO_Custom:Vishay_PowerPAK_SO-8L_Dual (PCB'de hâlâ SOIC-8 / IRF7855TRPBF), U12 WSON-12 3x3 (LM74801; EP boşta, GND'ye BAĞLANMAZ), U10 SOT-23-6 (USBLC6-2SC6), U4 SOIC-8, J3 KLS 30p FPC, L1 Inductor_Custom:L_CoreMaster_FPI0705_7.8x7.0mm_H5.0, L3 Inductor_SMD:L_7.3x7.3_H4.5 (1210'du), C5 0805, C8 1210, C15/C29 CP_Elec_6.3x5.8, C31 0603, R59 0805.
+
+Yer değişen (şemada): R10, R15, R37, TP9, SW1 U2'nin soluna alındı (MINI-1'de IO8/IO9 sol kenarda).
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria

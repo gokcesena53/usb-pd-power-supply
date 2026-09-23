@@ -54,7 +54,22 @@ Gerekçe: 6,8 µH korunduğu için kompanzasyon (R52/C) yeniden doğrulanmıyor;
 
 Özdisan indeksinde stoksuz dahil hiç geçmiyor; PD 3.1 EPR sink kontrolcüsü kategorisi Özdisan'da yok. Muadil arayışı tavanı da değiştirir (bkz. `CIKIS_GERILIMI_28V_TAVANI_20260922.md`), bu yüzden parça korunuyor ve ikinci kaynaktan alınıyor. Stok ve fiyat satın alma öncesi doğrulanacak.
 
-## U2 ESP32-C6-WROOM-1 — Mouser/DigiKey
+## U2 — ESP32-C6-MINI-1-H4 (23.09.2026, TASK-041)
+
+Modül varyantı kesinleşti: **ESP32-C6-MINI-1-H4** — 4 MB flash (Quad SPI), −40…105 °C, 13,2 × 16,6 × 2,4 mm, PCB anten. Tedarik yine Mouser/DigiKey (Özdisan'da ESP32-C6 yok).
+
+WROOM-1'den farkı: MINI-1 **IO10 ve IO11'i dışarı vermiyor** (datasheet v1.5, Tablo 3-1). Tasarım 22 GPIO kullanıyordu; yeniden atama:
+
+- TFT_CS: GPIO10 → **GPIO14** (pin 19)
+- TFT_DC: GPIO11 → **GPIO7** (pin 16)
+
+Kalan atamalar korundu. Kullanılan küme GPIO 0–9 ve 12–23 olup modülün verdiği kümeyle birebir örtüşüyor; **boşta GPIO kalmadı**. Strapping pinleri (GPIO4/5/8/9/15) tasarımdaki rolleriyle değişmedi.
+
+Şema tarafı: IO8/IO9 WROOM'da sağ kenardaydı, MINI-1'de sol kenarda. Bu yüzden strap/boot ağları (R37 pull-up + R15/TP9 test noktası, R10 pull-up + SW1) U2'nin sol altına taşındı ve iki pull-up tek bir +3.3V sembolünü paylaşan kısa bir raya bağlandı. USB seri dirençleri yerinde kaldı; yalnız taşıdıkları sinyal yer değiştirdi (R2 → D−, R3 → D+). Footprint `RF_Module:ESP32-C6-MINI-1` (KiCad standart).
+
+Kontrol: netlist'te her net U2 dışındaki üyelerini korudu (yalnız pin numaraları değişti), GND'ye modülün tüm toprak pedleri katıldı, ERC 0 hata / 0 uyarı, okunabilirlik denetiminde yeni bulgu yok. Firmware pin haritası `software/FIRMWARE_GEREKSINIMLERI.md` içinde güncellendi.
+
+## U2 ESP32-C6-WROOM-1 — Mouser/DigiKey (22.09.2026, tarihsel)
 
 Özdisan "WiFi Modülleri" kategorisinde ESP32-C6 yok (22.09.2026). Stoktakiler:
 

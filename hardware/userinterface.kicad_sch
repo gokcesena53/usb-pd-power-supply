@@ -4898,53 +4898,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 19.05 185.42)
-		(size 12.7 6.35)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-			(color 255 11 240 1)
-		)
-		(fill
-			(color 255 9 212 1)
-		)
-		(uuid "2a78504e-c69c-4bcf-8319-c338f9001871")
-		(property "Sheetname" "USER"
-			(at 19.05 184.7084 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "USER_İNTERFACE.kicad_sch"
-			(at 19.05 192.3546 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "gopo"
-				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
-					(page "12")
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 60.96 55.88 0)
