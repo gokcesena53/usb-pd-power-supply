@@ -1,0 +1,22 @@
+{
+  "hashes": {
+    "gopo.kicad_sch": "3b10ad197969bfc91ddc42a88ce9f436aaa46f4768547b827143355390452930",
+    "mcu.kicad_sch": "7b8ac43c723556a7b3c9bea7eb5794f2623875a3f7473475ff360431224ebedd",
+    "usb_c_input.kicad_sch": "f09cb089a242080f5f9ff26df8cdaeecfd345c14cbf9c9f2a3d19a7e8849eec9",
+    "usb_pd_controller.kicad_sch": "4a188d3566b68576f9e48682bb9c10ae1babcb288ac0f740e699c32e8d5974e6",
+    "userinterface.kicad_sch": "7d194221cc7bc904dd24b50c0caca841d78c52a8d8d71df5082b660dd51e0bfe",
+    "gopo.kicad_pcb": "0262db0add55122fa0ce94e7c027dcac62610067f6d189a8564ad50a55b77b5d",
+    "gopo.kicad_pro": "d280845a33156937ccddce6acb9ca666432d52d44a0388d2265cdea9bcd784d9"
+  },
+  "net_count": 120,
+  "schematic_parity": 0,
+  "drc_violations": 148,
+  "unconnected_items": 361,
+  "drc_types": {
+    "hole_clearance": 4,
+    "drill_out_of_range": 15,
+    "text_thickness": 63,
+    "text_height": 63,
+    "silk_over_copper": 3
+  }
+}

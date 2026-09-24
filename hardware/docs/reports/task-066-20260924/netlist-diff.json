@@ -1,0 +1,36 @@
+{
+  "ENCODER_A": {
+    "removed": [
+      "SW3.1"
+    ],
+    "added": [
+      "J9.1"
+    ]
+  },
+  "ENCODER_B": {
+    "removed": [
+      "SW3.3"
+    ],
+    "added": [
+      "J9.3"
+    ]
+  },
+  "ENCODER_SW": {
+    "removed": [
+      "SW3.4"
+    ],
+    "added": [
+      "J9.4"
+    ]
+  },
+  "GND": {
+    "removed": [
+      "SW3.2",
+      "SW3.5"
+    ],
+    "added": [
+      "J9.2",
+      "J9.5"
+    ]
+  }
+}

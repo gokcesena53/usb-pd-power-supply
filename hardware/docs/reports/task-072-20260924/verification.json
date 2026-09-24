@@ -1,0 +1,1083 @@
+{
+  "placements": [
+    {
+      "ref": "U11",
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "3",
+          "PD_VOUT"
+        ],
+        [
+          "4",
+          "Net-(U11-EN)"
+        ],
+        [
+          "5",
+          "Net-(U11-SS)"
+        ],
+        [
+          "6",
+          "GND"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "after_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "3",
+          "PD_VOUT"
+        ],
+        [
+          "4",
+          "Net-(U11-EN)"
+        ],
+        [
+          "5",
+          "Net-(U11-SS)"
+        ],
+        [
+          "6",
+          "GND"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "before_bbox": [
+        65.924998,
+        52.4,
+        73.774998,
+        58.115
+      ],
+      "after_bbox": [
+        65.924998,
+        52.4,
+        73.774998,
+        58.115
+      ]
+    },
+    {
+      "ref": "L3",
+      "before_xy": [
+        69.549999,
+        47.6
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        69.55,
+        42.5
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "ba1130c3-fa53-4ce1-a479-01e6ec204aa3",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ],
+      "before_bbox": [
+        65.324999,
+        43.675,
+        73.774999,
+        51.525
+      ],
+      "after_bbox": [
+        65.325,
+        38.575,
+        73.775,
+        46.425
+      ]
+    },
+    {
+      "ref": "D4",
+      "before_xy": [
+        61.359998,
+        54.34
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        74.8,
+        49.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "497e88c0-77e9-4b01-a1de-55d8e4d09fdb",
+      "before_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      ],
+      "before_bbox": [
+        57.834998,
+        52.565,
+        64.929998,
+        56.115
+      ],
+      "after_bbox": [
+        71.275,
+        47.225,
+        78.37,
+        50.775
+      ]
+    },
+    {
+      "ref": "D5",
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "before_bbox": [
+        62.349998,
+        56.625,
+        65.644998,
+        58.575
+      ],
+      "after_bbox": [
+        62.349998,
+        56.625,
+        65.644998,
+        58.575
+      ]
+    },
+    {
+      "ref": "C23",
+      "before_xy": [
+        66.939999,
+        63.93
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        72.0,
+        60.1
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "d2caa200-d283-42bf-b324-17921f210e82",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U11-SS)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U11-SS)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        66.004999,
+        63.445,
+        67.874999,
+        64.415
+      ],
+      "after_bbox": [
+        71.065,
+        59.615,
+        72.935,
+        60.585
+      ]
+    },
+    {
+      "ref": "C24",
+      "before_xy": [
+        64.029998,
+        63.93
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        63.4,
+        62.3
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "1b8c89bf-a7fe-4cac-9312-a1d4ca043143",
+      "before_pads": [
+        [
+          "1",
+          "Net-(C24-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(C24-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        63.094998,
+        63.445,
+        64.964998,
+        64.415
+      ],
+      "after_bbox": [
+        62.465,
+        61.815,
+        64.335,
+        62.785
+      ]
+    },
+    {
+      "ref": "C25",
+      "before_xy": [
+        54.469998,
+        54.19
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        59.5,
+        54.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "b3420e13-5309-4203-9e4e-456174f64687",
+      "before_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        52.144998,
+        52.565,
+        56.794998,
+        55.815
+      ],
+      "after_bbox": [
+        57.175,
+        52.375,
+        61.825,
+        55.625
+      ]
+    },
+    {
+      "ref": "C26",
+      "before_xy": [
+        61.119999,
+        63.93
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        76.0,
+        51.7
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "41dbe7f6-bf1f-4612-b5e8-8644ff67b272",
+      "before_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        60.184999,
+        63.445,
+        62.054999,
+        64.415
+      ],
+      "after_bbox": [
+        75.065,
+        51.215,
+        76.935,
+        52.185
+      ]
+    },
+    {
+      "ref": "C27",
+      "before_xy": [
+        71.449998,
+        60.78
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        75.8,
+        55.5
+      ],
+      "after_angle": -90.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "df38c967-afb5-44ed-9ada-f88599fc4ed5",
+      "before_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        69.124998,
+        59.155,
+        73.774998,
+        62.405
+      ],
+      "after_bbox": [
+        74.175,
+        53.175,
+        77.425,
+        57.825
+      ]
+    },
+    {
+      "ref": "C28",
+      "before_xy": [
+        65.759999,
+        60.78
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        82.0,
+        64.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "4ffddcd8-5423-4bcd-8c62-d59468e2c4dd",
+      "before_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        63.434999,
+        59.155,
+        68.084999,
+        62.405
+      ],
+      "after_bbox": [
+        79.675,
+        62.375,
+        84.325,
+        65.625
+      ]
+    },
+    {
+      "ref": "C29",
+      "before_xy": [
+        59.559998,
+        47.25
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        59.5,
+        46.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "89980d68-ab45-4914-9edb-26f134c0622a",
+      "before_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        54.834998,
+        43.675,
+        64.284998,
+        50.825
+      ],
+      "after_bbox": [
+        54.775,
+        42.425,
+        64.225,
+        49.575
+      ]
+    },
+    {
+      "ref": "R47",
+      "before_xy": [
+        57.149999,
+        59.65
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        63.5,
+        54.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "acb2388b-7b00-4ebb-a9fd-2431d95fb183",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        56.194999,
+        59.155,
+        58.104999,
+        60.145
+      ],
+      "after_bbox": [
+        62.545,
+        53.505,
+        64.455,
+        54.495
+      ]
+    },
+    {
+      "ref": "R48",
+      "before_xy": [
+        54.199999,
+        59.65
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        60.2,
+        59.5
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "5da794ed-9257-475d-b7b0-5d610a650f90",
+      "before_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "before_bbox": [
+        53.244999,
+        59.155,
+        55.154999,
+        60.145
+      ],
+      "after_bbox": [
+        59.245,
+        59.005,
+        61.155,
+        59.995
+      ]
+    },
+    {
+      "ref": "R49",
+      "before_xy": [
+        51.249998,
+        59.65
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        61.0,
+        62.3
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "481b4062-a1f8-4d56-8e21-76e86094322a",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        50.294998,
+        59.155,
+        52.204998,
+        60.145
+      ],
+      "after_bbox": [
+        60.045,
+        61.805,
+        61.955,
+        62.795
+      ]
+    },
+    {
+      "ref": "R52",
+      "before_xy": [
+        72.819998,
+        63.94
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        66.5,
+        62.3
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "652b7b7c-81ac-4a38-ac14-fd21c7672e1d",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "2",
+          "Net-(C24-Pad1)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "2",
+          "Net-(C24-Pad1)"
+        ]
+      ],
+      "before_bbox": [
+        71.864998,
+        63.445,
+        73.774998,
+        64.435
+      ],
+      "after_bbox": [
+        65.545,
+        61.805,
+        67.455,
+        62.795
+      ]
+    },
+    {
+      "ref": "R53",
+      "before_xy": [
+        69.869998,
+        63.94
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        75.5,
+        60.1
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "329d6b03-4493-4086-ae9d-f0be91f0a3a0",
+      "before_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "Net-(U11-EN)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "Net-(U11-EN)"
+        ]
+      ],
+      "before_bbox": [
+        68.914998,
+        63.445,
+        70.824998,
+        64.435
+      ],
+      "after_bbox": [
+        74.545,
+        59.605,
+        76.455,
+        60.595
+      ]
+    }
+  ],
+  "boost_fb": {
+    "start": [
+      65.069998,
+      57.6
+    ],
+    "end": [
+      66.987498,
+      56.64
+    ],
+    "connected": true,
+    "segment_uuids": [
+      "67174655-4b0a-418c-94ae-19de118917f4",
+      "bac123bf-3e8a-4a42-a3d9-e77dc0fb4f54",
+      "ab6f190f-2a38-4051-afdd-29de0667dd97",
+      "dc31f985-bf69-4d4a-b183-b7bf2fcb8a73"
+    ],
+    "length_mm": 2.5846067811865523,
+    "layer_names": [
+      "B.Cu"
+    ]
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "schematic_parity_before": 0,
+  "schematic_parity_after": 0
+}

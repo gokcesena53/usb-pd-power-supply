@@ -3,6 +3,251 @@ bkz. CERN OHL lisansının 3.4.b bölümü.
 
 REV_C (2026-09-16) - devam ediyor
 ---------------------------------
+24.09.2026 - Iki turlu yerlesim ve uretime gecis plani:
+- TASK-086 kaba tum-blok alan plani, TASK-087 tam routing, TASK-088
+  uretim oncesi elektriksel/mekanik kabul gorevleri eklendi.
+- TASK-089 RF ve TASK-090 eszamanli yuk besleme/termal prototip testleri
+  eklendi; sayisal test plani TASK-054/008'den TASK-088 uzerinden devredilir.
+- TASK-010/063/083/080/085/008/054/014 sorumluluklari ve bagimliliklari
+  duzenlendi. J9 son mekanik konumu TASK-063'e ait; uretim kabulunde
+  Ethernet numune olculeri zorunlu, courtyard istisnalari parca bazli.
+- Kullanici isterleri karar belgesinde gorev/kanit tablosuna baglandi.
+  Bu degisiklik task/dokuman planidir; PCB/semaya uygulama yapilmadi.
+
+24.09.2026 - Genel yerlesim task plani:
+- J7 USB-C top, J8 Ethernet bottom/USB-C alti, U2 ESP32 top/anten PCB
+  disinda ve RF kosullarini saglayan USB-C'ye yakin konum hedeflendi.
+- Buck/boost MCU'dan uzak, cikis/olcum J4 yonunde; Ethernet alti icin
+  bolgesel yukseklik haritasi, J9 kablo/slot karari ve iz koridoru
+  kontrolleri task kabul kriterlerine aktarildi.
+- TASK-008/054/063/069/080/083/085 ve TASK-065/070/077 devir notlari
+  guncellendi. Bu plan guncellemesinde PCB/semaya dokunulmadi.
+- Karar: design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md.
+
+24.09.2026 - TASK-081:
+- TFT BACKLIGHT (3.3V + PWM) grubunun 4 uyesi (Q7, R28, R29, R60) F.Cu
+  katmaninda Infineon IRLML6344TRPBF N-MOSFET, Focus LCDs TFT032B018
+  ekran spesifikasyonu ve TASK-065 LCD yukseklik kurallarina gore
+  iliskisel yerlestirildi.
+- Q7 (IRLML6344TRPBF SOT-23, rot 0°) dusuk taraf anahtari: Pad 1 (Gate)
+  ve Pad 2 (GND) batiya surus devresine; Pad 3 (Drain, BL_K katot donusu)
+  doguya ekran konnektorune yonlendirildi.
+- R28 (100R 0402) PWM seri sonumleme direnci batidan gelen MCU GPIO7 hattini
+  karsilayacak sekilde, R29 (100k 0402) gate pull-down direnci ise Gate ile
+  Source/GND arasinda dikey kopru (x=18.80 mm, dy=1.02 mm) olarak baglandi;
+  acilis parlamasi engellendi (hat mesafesi <2.35 mm).
+- R60 (5R6 0805) akim sinirlama direnci +3.3V girisi ile BL_A anot cikisi
+  arasina yerlestirildi; Q7 Pad 3 (BL_K) ile R60 Pad 2 (BL_A) ayni dogu
+  ekseninde paralel J3'e yonlendirildi.
+- R60 guc kaybi (maks 27.4 mW, nominal 11.3 mW) 0805 kılıf sinirinin (<%22)
+  cok altinda kaldi. PWM donus akimi Q7 Kaynak pini uzerinden yerel GND
+  duzlemine baglandi; INA226 olcum (>120 mm) ve RTC kristalinden (>180 mm)
+  fiziksel olarak tamamen izole edildi.
+- Tum bilesenler F.Cu'da LCD alti yukseklik sinirina (maks 1.10 mm <= 1.80 mm)
+  tam uyum sagladi.
+- DRC 145->145, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min aciklik 0.750 mm). Karar:
+  TFT_BACKLIGHT_YERLESIM_TASK081_20260924.md.
+
+24.09.2026 - TASK-069:
+- 15 PCB grubunun (137 footprint) ve 6 mekanik ankrajin (toplam 143 footprint)
+  uretici yerlesim kurallari, pin iliskileri, mekanik ankrajlari ve bloklar
+  arasi komsuluk/koridor haritasi derlendi.
+- Uretici veri sayfalari (TI, Diodes Inc, AOS, Espressif, NXP, Microchip,
+  Korchip, Taiwan Semi, Waveshare vb.) ve uygulama notlari incelenerek
+  uretici sartlari ile proje muhendislik hedefleri tek tabloda netlestirildi.
+- Mekanik sinirlar ve keepout'lar tanimlandi: J3 FPC kilitli ankraji (98.0, 109.3),
+  J9 enkoder kablo alani, U2 ESP32 anteni 15 mm keepout'u, J8 RJ45 THT lehim
+  cikintisi (~2.2 mm) altindaki anakart B.Cu MUTLAK KEEPOUT'u ve TASK-065
+  LCD alti top zarfi <= 1.80 mm kurali kayda gecirildi.
+- 15 blok arasi guc/sinyal komsuluk matrisi hazirlandi. Tarihsel yuzler ile
+  hedef yuzler (J7/U2 top, J8/buck/boost bottom) ayristirildi.
+- Baslangic envanteri ve TASK-058 D5.2-U11.9 FB izi (4 segment, 2.5846 mm)
+  dogrulandi; DRC 145/145, unconnected 360/360, parity 0 teyit edildi.
+- Karar: design_decisions/output/URETICI_YERLESIM_KURALLARI_VE_ANKRAJLARI_TASK069_20260924.md.
+
+24.09.2026 - TASK-080:
+- ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI grubunun 7 uyesi (J8, Q8,
+  R17, C21, C10, C20, TP14) B.Cu katmaninda Waveshare 2-CH UART TO ETH
+  modul semasi, CH9121DS1 veri sayfasi ve TSM3443CX6 P-MOSFET guc anahtari
+  topolojisine gore iliskisel yerlestirildi.
+- Q8 P-MOSFET yuksek taraf besleme anahtari (SOT-26, rot 90°) giris ve
+  cikis hatlari optimize edildi: Pad 4 (+3.3V) ve Pad 3 (Gate, ETH_PWR_EN)
+  batiya; Pad 1, 2, 5, 6 (Drain, ETH_3V3) doguya J8 ve dekuplaja yonlendirildi.
+- R17 (100k 0402) gate pull-up ve C21 (100n 0402) yumusak acilis kapasitesi
+  Q8'in batisinda tam paralel kurgulandi (tau_on ≈ 0.91 ms, inrush ~62 mA;
+  tau_off ≈ 10 ms; acilis droop'u ve Fixed PDO gecis standby gecikmesi saglandi).
+- C20 (100n 0402) yuksek frekans ayirma ve C10 (22uF 0805) bulk rezervuar
+  kapasiteleri Q8 Drain ile J8 Pins 11--14 arasinda ultra kisa (<4.3 mm)
+  ve dogrudan guc/GND koridoru olusturdu; dongu alani <15 mm2 sinirlandi.
+- Kuzey guc/anahtarlama koridoru (y=140.5..146.5 mm) ile guney sinyal/UART
+  koridoru (y=150.0..158.5 mm) arasinda 5.08 mm (2 header adimi; Pins 9/10 NC)
+  fiziksel izolasyon acikligi saglandi.
+- Modul alti 3D yukseklik haritasi cikarildi: Header bolgesi (Z=0 B.Cu),
+  orta bosluk (nominal Z=2.50 mm, min tolerans Z=1.90 mm), RJ45 pim lehim
+  cikintisi (~2.20 mm cikinti, nominal aciklik 0.30 mm -> MUTLAK KEEPOUT).
+  6 yardimci eleman modul govdesi disinda header batisina yerlestirilerek
+  0 courtyard cakismasi, %100 optik kontrol/rework ve TP14 prob erisimi saglandi.
+- DRC 145->145, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min discrete aciklik 1.280 mm). Karar:
+  ETHERNET_MEZANIN_YERLESIM_TASK080_20260924.md.
+
+24.09.2026 - TASK-079:
+- I2C SEVIYE DONUSTURUCU 5V <-> 3.3V grubunun 6 uyesi (Q1, Q2, R4, R5,
+  R6, R7) B.Cu'da NXP AN10441 cift yonlu seviye donusturucu topolojisine
+  gore iki paralel dikey kolon halinde iliskisel yerlestirildi.
+- SCL kanali x=209.0 mm (R4 -> Q1 -> R5) ve SDA kanali x=213.5 mm (R7 ->
+  Q2 -> R6) olarak kurgulandi. 3.3V uclari kuzeye (U4 RTC ve batiya ESP32),
+  5V uclari guneye (AP33772S) yonlendirildi; kesisimsiz yol saglandi.
+- SCL ve SDA kanallarinda kaynak-pullup (2.600 mm) ve savak-pullup
+  (2.052 mm) hatlari mikron duzeyinde tam esit simetriyle baglandi.
+  +3.3V gate barasi, +3.3V pull-up barasi ve PD_5V pull-up barasi
+  4.50 mm dogrudan yatay izlerle olusturuldu.
+- DRC 145->145, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min. 0.590 mm). Karar:
+  I2C_SEVIYE_DONUSTURUCU_YERLESIM_TASK079_20260924.md.
+
+24.09.2026 - TASK-078:
+- RTC BQ32000 + 1F5 super kapasitor grubunun 5 uyesi (U4, Y1, C9, C33,
+  R24) B.Cu'da TI BQ32000 layout kilavuzu (§8.3 & Sekil 8-4), ABS25 kristal
+  simetrisi ve C33 superkapasitor baglantisina gore iliskisel yerlestirildi.
+- U4 (SOIC-8) rot 180° konumunda (214.0, 99.0) yerlestirildi; Y1 (ABS25
+  32.768kHz) U4 Pin 1/2'nin dogusuna rot 270° ile konumlandirildi. OSCI/OSCO
+  hatlari (4.384 mm ve 4.381 mm) 0.003 mm mikron duzeyinde tam simetrik,
+  paralel ve kesisimsiz baglandi; kristal toprak pedleri doguya ayrildi.
+- C9 (1u 0402) U4 Pin 8 VCC dibine (2.12 mm), R24 (4k7 0402) Pin 7 IRQ ile
+  Pin 8 VCC arasina (2.60 mm) yerlestirildi; C33 (1.5F 5.5V H-tipi) VBACK
+  padine kisa ve dogrudan yol ile baglandi.
+- Grup R67 desarj direnci ve guc anahtarlama alanindan >19.7 mm uzakta
+  termal ve gurultu acisindan izole edildi.
+- DRC 145->145, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min. 0.540 mm). Karar:
+  RTC_BQ32000_YERLESIM_TASK078_20260924.md.
+
+24.09.2026 - TASK-077:
+- ESP32-C6-MINI-1-H4 grubunun 15 uyesi (U2, C5, C6, C7, R1, R2, R3, R10,
+  R15, R16, R37, SW1, SW2, TP9, TP10) B.Cu'da Espressif RF/anten keepout,
+  VDD dekuplaj, EN RC zamanlama, buton koridoru ve strapping kurallarina
+  gore iliskisel yerlestirildi.
+- U2 anteni doguya (kart disina) bakacak sekilde yonlendirildi; anten
+  keepout bolgesi (x: 166.22-186.62, y: 72.00-115.20 mm) tum 14 cevre
+  elemanindan ve katmanlardan %100 arindirildi.
+- C6 (100n 0402) RF bypass VDD Pin 3 dibine (3.04 mm), C5 (22u 0805) bulk
+  kapasitor arkasina (5.58 mm) yerlestirildi; C7 (1u 0402) ve R1 (10k 0402)
+  ile EN donanim reset gecikmesi (tau = 10 ms) Pin 8 hizasinda kuruldu.
+- SW2 (Reset) ve SW1 (Boot) taktil butonlar modul altindaki guvenli koridorda
+  (x=158.5 mm, antenden >8 mm uzakta) 1.25 mm aralikla dikey istiflendi.
+- Bati sinyal kolonu (R2, R3, R16, R10, R37, R15, TP9, TP10) x=152.0 mm
+  hattinda Edge.Cuts'tan >2.2 mm aciklikla hizalandi; USB diferansiyel
+  22R sonumleme direncleri (R2/R3) IO12/IO13 pinlerinin yanina alindi.
+- DRC 145->145, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min. 0.410 mm). Karar:
+  ESP32_C6_YERLESIM_TASK077_20260924.md.
+
+24.09.2026 - TASK-075:
+- INA226 OLCUM + PANEL CIKISI grubunun 10 uyesi (U3, U13, RShunt1, J4,
+  D7, C11, C35, R27, R59, R61) B.Cu'da Kelvin algilama, 3A guc akisi,
+  TVS koruma ve U13 donanim kapatma mantigina gore iliskisel yerlestirildi.
+  RShunt1 (5m0 2512) ile U3 arasinda 4.310 mm tam esit simetrik Kelvin
+  diferansiyel cifti olusturuldu; C11 U3 dibine (2.97 mm), C35 U13 dibine
+  (1.88 mm) yerlestirildi.
+- J4 (1x02 pitch 7.8 mm) 1.5 mm2 kablo lehimleme alani ayrildi; D7 SMBJ30A
+  TVS ve R59 (100k) J4 terminallerine paralel konumlandirildi; U13 (74LVC1G08)
+  ALERT ve OUT_EN uzerinden SW_EN uretimi duzenlendi.
+- DRC 145->145, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min. 0.390 mm). Karar:
+  INA226_PANEL_CIKISI_YERLESIM_TASK075_20260924.md.
+
+24.09.2026 - TASK-076:
+- CIKIS DESARJI grubunun 5 uyesi (Q4, Q6, D10, R66, R67) Q4/Q6 surme,
+  D10 kenetleme ve R67 guc yoluna gore iliskisel yerlestirildi. Q4 B.Cu'da
+  SW_EN mantik girisi (U13) yonune, Q6/D10/R66/R67 F.Cu'da R67-Q6.3
+  dogrusal eksenine (2.60 mm) yerlestirildi; D10 12V zener ve R66 pull-up
+  ile kesisimsiz koridor olusturuldu.
+- R67 (1k 2512 2W) icin 28V (0.78W) ve 30.4V (0.92W) kayip hesabi
+  yapildi; INA226 (>7 mm) ve RTC (>20 mm) bloklarindan isi yalitim alani
+  ayrildi. BSS138P datasheet'i temin edildi.
+- DRC 146->145 (D10 silk kirpilmasi duzeldi, yeni ihlal 0), unconnected
+  360->360, schematic parity 0. Karar:
+  CIKIS_DESARJI_YERLESIM_TASK076_20260924.md.
+
+24.09.2026 - TASK-074:
+- LM74801 cikis anahtari ve ideal diyot grubunun 10 uyesi (U12, Q5,
+  C30-C32, D6, R54-R56, R58) F.Cu'da ortak source topolojisi, gate surme,
+  dV/dt yumusak acilis, charge pump kapasitesi ve cikis akisina gore
+  iliskisel yerlestirildi. DGATE (3.94 mm), HGATE (9.09 mm) ve sense
+  yollari Q5 leaded bacaklarina yoneltildi; C31 charge pump kapasitesi
+  TI kuralina gore Q5 sicakligindan uzakta konumlandirildi.
+- DRC 146->146, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min. 0.350 mm). Karar:
+  LM74801_YERLESIM_TASK074_20260924.md.
+
+24.09.2026 - TASK-071:
+- AP33772S PD denetleyici grubunun 23 uyesi (U1, Q3, R11, TH1, D1,
+  C1-C4, C8, R8, R9, R12-R14, R21, R64, R65, TP1-TP5) B.Cu'da guc yolu,
+  Kelvin algilama, gate surusu, bypass kapasiteleri ve CC yonlerine
+  gore iliskisel yerlestirildi. U1 180 derece ile CC pinleri sol kenara
+  (USB-C yonune) acildi; R11.1/2 Kelvin hatlari ayrildi; TH1 NTC Q3
+  govdesine yaklastirildi.
+- DRC 146->146, unconnected 360->360, schematic parity 0; yeni courtyard
+  veya aciklik ihlali 0 (min. 0.215 mm). Karar:
+  AP33772S_YERLESIM_TASK071_20260924.md.
+
+24.09.2026 - TASK-070:
+- USB-C GIRIS grubunun 7 uyesi (J7, D3, D8, D9, R62, R63, U10) B.Cu'da
+  giris koruma ve veri akis yonlerine gore iliskisel yerlestirildi. J7
+  gecici mekanik ankraji korundu; D3 VBUS TVS, D8/D9 CC1/CC2 TVS ve U10
+  USBLC6-2 veri ESD flow-through duzeni planlandi.
+- D3-C3 net ayrimi ve CC koruma yollari AP33772S gorevine (TASK-071)
+  devredildi. DRC 146->146, unconnected 360->360, schematic parity 0.
+  Karar: USB_C_GIRIS_YERLESIM_TASK070_20260924.md.
+
+24.09.2026 - TASK-073:
+- AOZ1284 buck grubunun 19 uyesi B.Cu'da guc ve hassas sinyal
+  koridorlarina gore duzenlendi. U5-D2 LX 2.20 mm, U5-L1 LX 6.05 mm,
+  L1-C16 +3.3V 4.64 mm; U6/R50/R51 REF ve R43 V_X siniri kaydedildi.
+- D5-U11 BOOST_FB 2.584607 mm ve 4 segmenti korundu. DRC 146->146,
+  unconnected 360->360, schematic parity 0. C28 son V_PRE/GND bakiri
+  TASK-085'e devredildi. Karar: AOZ1284_YERLESIM_TASK073_20260924.md.
+
+24.09.2026 - TASK-072:
+- TPS55340 pre-boost grubunun 16 uyesi B.Cu'da guc dongusu ve hassas
+  FB/COMP koridorlarina gore iliskisel yerlestirildi; U11/D5 ankraji ve
+  2.584607 mm BOOST_FB izi korundu. TI layout kurallari ve buck siniri
+  TPS55340_YERLESIM_TASK072_20260924.md dosyasinda belgelendi.
+- DRC 146->146, unconnected 360->360, schematic parity 0. Son guc
+  routing'i, termal via ve C28-buck siniri TASK-073/085'e devredildi.
+
+24.09.2026 - TASK-065:
+- J3 kapali yuksekligi 2.00+-0.15 mm; top zarf butcesi 1.80 mm,
+  LCD montaj hedefi 2.35+-0.15 mm (min.2.20) olarak belgelendi.
+- 58 footprint ve BOOST_FB izi bottom'a alindi; buck/boost bloklari
+  B.Cu, backlight/J3 F.Cu. C33 flip sonrasi govde yuvasi korundu.
+- 143 footprint icin STEP yukseklik tablosu ve LCD izdusum denetimi;
+  J9 eksik modeline proje ici kablo zarfi. LCD ust cakisma 0.
+- D5-U11 FB 2.584607 mm, kesintisiz; net/UUID/grup/ankrajlar korundu.
+  Parity 0, DRC 148->146, yeni ihlal 0, unconnected 360 degismedi.
+- Cift tarafli SMT/agir parca proses notlari TASK-015'e; C33/J8 top
+  pinleri LCD disinda veya kesim sonrasi metal+lehim <=1.5 mm sarti.
+  Karar: LCD_YUKSEKLIK_BOTTOM_TASK065_20260924.md. Gecici kart disi
+  gruplar nihai konumlandirilinca yukseklik taramasi tekrarlanacak.
+
+24.09.2026 - TASK-042:
+- Kullanilmayan PCM_Espressif.kicad_sym ve ESP32-C6-WROOM-1.kicad_mod
+  kaldirildi; sym-lib-table/fp-lib-table kayitlari temizlendi. U2 zaten
+  RF_Module:ESP32-C6-MINI-1 kullaniyor. Netlist ve tasarim dosyalari ayni;
+  ERC 0/0, schematic parity 0; mevcut DRC bulgularina yenisi eklenmedi.
+
+24.09.2026 - TASK-066:
+- SW3 enkoderi panel parcasi yapildi: Footprint bos, PCB ve pozisyon
+  dosyalarindan haric, BOM'da korundu. PCB'deki SW3 footprint'i kaldirildi.
+- J9 besli THT kablo lehim pedi eklendi (4.2 mm aralik, 0.65 mm delik);
+  1=A, 2=C/GND, 3=B, 4=S1, 5=S2/GND. LCD izdusumunun solunda yerlesim.
+- R34-R36 10k pull-up ve MCU pinleri korundu; mevcut devrede RC/TVS yok.
+  <=150 mm ic kablo, yalitkan dugme, mekanik sabitleme ve ESD/gurultu
+  varsayimlari ENCODER_PANEL_TASK066_20260924.md'ye yazildi; prototip
+  dogrulamasi TASK-068. ERC 0/0 ve schematic parity 0 dogrulandi.
+
 Yeni güç mimarisi: kullanıcı akımı artık Q3/Q4 üzerinden değil, AP33772S
 şöntünün arkasındaki dallanmadan M1/M2 back-to-back FET çifti üzerinden
 akıyor. Dahili rail bir pre-boost arkasına alındı.
@@ -177,6 +422,18 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   panele monte edilecek. Baslangic yerlesimi yeni karta kaydirildi. DRC
   invalid_outline 1 -> 0, copper_edge_clearance 3 -> 0. Karar:
   design_decisions/output/KART_DIS_HATTI_LCD_20260924.md.
+- PCB: LCD FPC bukum yolu ve J3 konumu belirlendi (TASK-064): J3
+  (Connector_FPC_Custom:KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal)
+  PCB uzerinde (98.00; 109.30) mm, rot 90 (saga donuk) konumuna alindi
+  ve locked olarak sabitlendi. FPC modul sag kenarindan (X=141.42) cikip
+  1.00 mm disari tasarak (loop apex X=142.42) arkaya bukulur; FPC ucu
+  X=100.42'ye ulasir, J3 giris agzindan (X=102.55) ekleme derinligi
+  2.13 mm (datasheet 2.10 mm, fark +0.03 mm). Pin 1 bukum sonrasi ustte
+  (Y=102.05) kalir, J3 Pin 1 ile eslesir. Cift kontakli konnektorde FPC
+  kontaklari asagi (PCB'ye), takviye yukari bakar; schematic parity 0.
+  J3 zarfi, pin 1/30 ve bukum yolu Dwgs.User'a islendi; numune dogrulama
+  maddeleri TASK-012'ye baglandi. Karar:
+  design_decisions/output/LCD_FPC_BUKUM_VE_J3_KONUMU_20260924.md.
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

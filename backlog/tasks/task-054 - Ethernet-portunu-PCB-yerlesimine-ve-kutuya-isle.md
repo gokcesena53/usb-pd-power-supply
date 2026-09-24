@@ -4,7 +4,7 @@ title: Ethernet portunu PCB yerlesimine ve kutuya isle
 status: To Do
 assignee: []
 created_date: '2026-09-23 12:09'
-updated_date: '2026-09-23 20:34'
+updated_date: '2026-09-24 13:06'
 labels:
   - layout
   - fabrication
@@ -13,33 +13,33 @@ dependencies:
   - TASK-053
   - TASK-060
   - TASK-063
+  - TASK-008
+  - TASK-080
+references:
+  - design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md
 documentation:
   - design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md
 priority: medium
-ordinal: 108000
+ordinal: 122000
 ---
 
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
-Modul 53 x 22 mm ve RJ45 govdesi modul kenarindan 4,3 mm disa tasiyor; ana kart 65,9 x 40,6 mm. Modul standoff kullanilmadan, 2x8 header ve RJ45 tarafindaki iki mekanik pinle dogrudan ana karta lehimlenecek (footprint: Module_Custom:Waveshare_2-CH_UART_TO_ETH); RJ45 arka panelden cikacak. 3d_design/ bos oldugu icin kutu henuz kisitli degil, karar kutu tasarimindan once verilmeli.
+Güncel kart 99,40 × 61,04 mm. TASK-063'te belirlenen J7 top, J8 bottom/USB-C altı ve U2 top/anten dışarı mekanik yerleşimini son kutuya uygula. J8 53 × 22 mm modül, RJ45 nominal 4,3 mm taşma; 2x8 header ve iki mekanik pinle doğrudan montaj. Sol panel açıklıkları, fişler/mandal, kablolar, LCD/FPC ve header'ın top çıkıntıları birlikte doğrulanır. Numune ölçüleri TASK-053'ten alınır; modül altı bölgeler TASK-080 raporuna göre değerlendirilir.
 
-RF sorunu: ESP32-C6-MINI-1'in PCB anteni keep-out istiyor, metal govdeli RJ45 ve Ethernet kablosu antenin yakininda Wi-Fi menzilini dusurur. Kullanici hem Wi-Fi hem ETH istiyor, yani ya RJ45 karsi kenara alinip yeterli ayrim birakilmali ya da U2 harici antenli ESP32-C6-MINI-1U-H4'e gecirilmeli.
-
-Toprak sorunu: uretici semasindan (2-CH_UART_TO_ETH_SCH.pdf) RJ45'in kabuk pedleri (J1 pin 13/14) dogrudan modul GND'sine bagli. Sinyal ciftleri trafo ile izole ama ekranli (STP) kablo gopo toprapini bina toprapina baglar. Cikisi 28 V'a kadar yuzen bir tezgah kaynagi icin bu istenmeyen bir yol; kullanim notuna ve gerekirse montaja yansimali.
-
-Yerlesim henuz baslamadi (PCB'de 7 segment var), bu is TASK-006 ve TASK-008 ile birlikte yurutulmeli.
+ESP32 için karşı sağ kenar veya MINI-1U'ya otomatik geçiş şartı yoktur; mevcut MINI-1 anteninin dışarı taşması ve boşluğu esas alınır. Çözüm bu parça/kart zarfına sığmazsa ölçülü alternatif karar sunulur. RJ45 kabuk pedleri üretici şemasında modül GND'sine doğrudan bağlıdır; UTP kullanım veya kabuk izolasyonu kararı korunarak son montaja yansıtılır.
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 RJ45 ve Ethernet kablosunun MINI-1 anten keep-out bolgesine olan mesafesi belirlenmis; yetersizse ESP32-C6-MINI-1U-H4 gecisi karara baglanip design_decisions/ altina yazilmis
-- [ ] #2 Q8 ve ETH_3V3 yolu 0,20 A icin boyutlanmis; AOZ1284 bakir alani artan ~0,16 W kayip icin gozden gecirilmis
-- [ ] #3 RJ45 kabuk pedlerinin dogrudan GND'de oldugu gercegi karara baglanmis: UTP zorunlulugu kullanim notuna yazilmis veya kabuk montajda ayrilmis
-- [ ] #4 Kutu arka panelinde RJ45 kesiti ve modulun yuksekligi 3d_design/ tasarimina islenmis
-- [x] #5 J8'e Module_Custom:Waveshare_2-CH_UART_TO_ETH atanmis ve PCB'ye alinmis; DRC schematic parity 0
-- [ ] #6 Modul ana kart kenarina RJ45 4.3 mm disari tasacak sekilde yerlestirilmis; header pinlerinin kart altindan ~4.4 mm cikintisi (6.0 - 1.6) montaj/kutu icin degerlendirilmis
-- [ ] #7 Modul footprint'i PCB'ye yerlesmis; modulun altinda (2,5 mm ara) kalan parcalar <=2 mm ve RJ45 pim alani keepout'unda F.Cu iz/via/parca yok; RJ45 icin mekanik cakisma yok
+- [ ] #1 RJ45/USB-C, takılı kablolar, LCD ve son kutunun U2 antenine mesafeleri numune/kutu geometrisiyle ölçülmüş; TASK-063/üretici RF boşlukları sağlanmış. Son kutu RF testi için mesafe/yön/trafik matrisi ve sayısal throughput/paket kaybı/kopma hedefleri testten önce belirlenip ayrı RF prototip görevine devredilmiş.
+- [ ] #2 Q8 ve ETH_3V3 yolu 0,20 A için boyutlanmış; AOZ1284 bakır alanı artan yaklaşık 0,16 W kayıp için gözden geçirilmiş.
+- [ ] #3 RJ45 kabuk pedlerinin doğrudan GND'de olduğu gerçeği karara bağlanmış: UTP zorunluluğu kullanım notuna yazılmış veya kabuk montajda ayrılmış.
+- [ ] #4 Kutu sol panelinde üst USB-C/alt RJ45 açıklıkları, merkezleri, mandal/fiş boşlukları ve modül yüksekliği 3d_design tasarımına işlenmiş.
+- [x] #5 J8'e Module_Custom:Waveshare_2-CH_UART_TO_ETH atanmış ve PCB'ye alınmış; DRC schematic parity 0.
+- [ ] #6 J8 bottom ve nominal RJ45 4,3 mm taşma numuneyle doğrulanmış; top header pinleri LCD dışında veya metal+lehim≤1,50 mm olarak kesim/montaj şartına bağlanmış.
+- [ ] #7 Modül altındaki ref/yükseklik/toleranslar TASK-080 haritasıyla uyumlu; RJ45 pim keepout'u bottom montaj yüzüne doğru dönüşmüş, yasak bölgede parça/iz/via/dolgu yok. Genel ≤2 mm varsayımı kullanılmamış; 3D çakışma yok.
 <!-- AC:END -->
 
 ## Definition of Done
@@ -58,4 +58,8 @@ Yerlesim henuz baslamadi (PCB'de 7 segment var), bu is TASK-006 ve TASK-008 ile 
 23.09.2026: J8 Footprint = Module_Custom:Waveshare_2-CH_UART_TO_ETH, Value = 2-CH UART TO ETH (verify.py: ERC 0, netlist farki YOK; alan geometrisi degismedi). PCB update_pcb.py --keep-tracks ile guncellendi (yalniz 'EKLE J8'); kicad-cli pcb drc --schematic-parity: parity 0. J8 henuz yerlesmemis parcalarin arasinda duruyor (courtyard cakismalari yerlesimle cozulecek). update_pcb.py Windows'ta KiCad python'uyla calisacak sekilde duzeltildi (kicad-cli ve footprint dizini otomatik bulunuyor).
 
 23.09.2026: Footprint'e basitlestirilmis 3D model eklendi: libraries/Module_Custom.3dshapes/Waveshare_2-CH_UART_TO_ETH.step (Waveshare model yayinlamiyor). Olcu cizimi boyutlarinda renkli kutular: modul PCB z 2.5-4.1, RJ45 modul altindan 15.0 yuksek ve kenardan 4.3 tasar, CH9121/AMS1117, 2x8 header (ara parca 2.5, pin 6.0 asagi), iki mekanik pin. Model footprint koordinatinda, offset/rotate 0. kicad-cli pcb render (ust/izometrik/on) ve pcb export step ile dogrulandi; PCB'deki J8'e de eklendi. Kutu tasarimi (3d_design/) icin STEP dogrudan kullanilabilir; RJ45 ic geometrisi yok, yalniz dis zarf.
+
+24.09.2026 — Kullanıcı genel yerleşim kararı: design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md. Önceki bottom USB-C/ESP32 ve karşı sağ kenarda anten şartlarının yerini J7 top, U2 top/anten dışarı ve J8 bottom alır. Bu kayıt plan güncellemesidir; PCB uygulaması veya yeni doğrulama kanıtı değildir.
+
+24.09.2026 — İki turlu akış: TASK-086 kaba plan → TASK-063 mekanik seçim → TASK-008 ince yerleşim/kritik güzergâh → TASK-087 routing → TASK-088 son kabul → TASK-014 Gerber. Prototip RF: TASK-089; besleme/termal: TASK-090. Bu kayıt task planıdır, PCB uygulama kanıtı değildir.
 <!-- SECTION:NOTES:END -->

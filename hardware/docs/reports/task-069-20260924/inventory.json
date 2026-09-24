@@ -1,0 +1,8933 @@
+{
+  "metadata": {
+    "task": "TASK-069",
+    "date": "2026-09-24 16:33:52",
+    "board_file": "hardware/gopo.kicad_pcb",
+    "schematic_file": "hardware/gopo.kicad_sch"
+  },
+  "board_outline": {
+    "left": 50.275,
+    "top": 69.455,
+    "right": 149.725,
+    "bottom": 130.545,
+    "width": 99.45,
+    "height": 61.09
+  },
+  "total_footprints": 143,
+  "total_groups": 15,
+  "grouped_footprints_count": 137,
+  "ungrouped_footprints": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "J3",
+    "J9"
+  ],
+  "groups": {
+    "TEST NOKTALARI": {
+      "count": 6,
+      "members": [
+        "TP11",
+        "TP12",
+        "TP13",
+        "TP6",
+        "TP7",
+        "TP8"
+      ],
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "bbox": [
+        207.478,
+        122.481,
+        213.663,
+        125.574
+      ]
+    },
+    "CIKIS DESARJI (R59 yerine aktif)": {
+      "count": 5,
+      "members": [
+        "D10",
+        "Q4",
+        "Q6",
+        "R66",
+        "R67"
+      ],
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "bbox": [
+        184.0,
+        57.5,
+        198.5,
+        62.5
+      ]
+    },
+    "TFT BACKLIGHT (3.3V + PWM)": {
+      "count": 4,
+      "members": [
+        "Q7",
+        "R28",
+        "R29",
+        "R60"
+      ],
+      "layers": [
+        "F.Cu"
+      ],
+      "bbox": [
+        19.069,
+        96.7,
+        24.769,
+        100.71
+      ]
+    },
+    "LM74801 CIKIS ANAHTARI + IDEAL DIYOT": {
+      "count": 10,
+      "members": [
+        "C30",
+        "C31",
+        "C32",
+        "D6",
+        "Q5",
+        "R54",
+        "R55",
+        "R56",
+        "R58",
+        "U12"
+      ],
+      "layers": [
+        "F.Cu"
+      ],
+      "bbox": [
+        106.8,
+        54.0,
+        122.0,
+        64.4
+      ]
+    },
+    "TFT CONNECTOR J3": {
+      "count": 1,
+      "members": [
+        "C34"
+      ],
+      "layers": [
+        "F.Cu"
+      ],
+      "bbox": [
+        28.649,
+        108.23,
+        28.649,
+        108.23
+      ]
+    },
+    "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI": {
+      "count": 7,
+      "members": [
+        "C10",
+        "C20",
+        "C21",
+        "J8",
+        "Q8",
+        "R17",
+        "TP14"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        140.5,
+        142.99,
+        158.287,
+        158.23
+      ]
+    },
+    "ROTARY ENCODER": {
+      "count": 3,
+      "members": [
+        "R34",
+        "R35",
+        "R36"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        40.7,
+        116.21,
+        44.76,
+        116.21
+      ]
+    },
+    "USB-C GIRIS": {
+      "count": 7,
+      "members": [
+        "D3",
+        "D8",
+        "D9",
+        "J7",
+        "R62",
+        "R63",
+        "U10"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        29.0,
+        74.0,
+        41.05,
+        87.0
+      ]
+    },
+    "TPS55340 PRE-BOOST": {
+      "count": 16,
+      "members": [
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "D4",
+        "D5",
+        "L3",
+        "R47",
+        "R48",
+        "R49",
+        "R52",
+        "R53",
+        "U11"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        59.5,
+        42.5,
+        82.0,
+        64.0
+      ]
+    },
+    "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V": {
+      "count": 6,
+      "members": [
+        "Q1",
+        "Q2",
+        "R4",
+        "R5",
+        "R6",
+        "R7"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        209.0,
+        107.5,
+        213.5,
+        114.5
+      ]
+    },
+    "INA226 OLCUM + PANEL CIKISI": {
+      "count": 10,
+      "members": [
+        "C11",
+        "C35",
+        "D7",
+        "J4",
+        "R27",
+        "R59",
+        "R61",
+        "RShunt1",
+        "U13",
+        "U3"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        146.5,
+        48.85,
+        168.0,
+        62.95
+      ]
+    },
+    "ESP32-C6-MINI-1-H4": {
+      "count": 15,
+      "members": [
+        "C5",
+        "C6",
+        "C7",
+        "R1",
+        "R10",
+        "R15",
+        "R16",
+        "R2",
+        "R3",
+        "R37",
+        "SW1",
+        "SW2",
+        "TP10",
+        "TP9",
+        "U2"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        152.0,
+        84.5,
+        163.0,
+        116.5
+      ]
+    },
+    "AOZ1284 3.3V BUCK": {
+      "count": 19,
+      "members": [
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "D2",
+        "L1",
+        "R38",
+        "R39",
+        "R40",
+        "R41",
+        "R43",
+        "R50",
+        "R51",
+        "U5",
+        "U6"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        79.7,
+        47.7,
+        104.3,
+        64.0
+      ]
+    },
+    "RTC BQ32000 + 1F5 süper kapasitör": {
+      "count": 5,
+      "members": [
+        "C33",
+        "C9",
+        "R24",
+        "U4",
+        "Y1"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        207.98,
+        82.5,
+        223.5,
+        99.0
+      ]
+    },
+    "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR": {
+      "count": 23,
+      "members": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C8",
+        "D1",
+        "Q3",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R21",
+        "R64",
+        "R65",
+        "R8",
+        "R9",
+        "TH1",
+        "TP1",
+        "TP2",
+        "TP3",
+        "TP4",
+        "TP5",
+        "U1"
+      ],
+      "layers": [
+        "B.Cu"
+      ],
+      "bbox": [
+        46.5,
+        134.5,
+        69.5,
+        155.5
+      ]
+    }
+  },
+  "anchors": {
+    "D5": {
+      "ref": "D5",
+      "value": "BAS16H",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "layer": "B.Cu",
+      "xy": [
+        64.02,
+        57.6
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL",
+          [
+            62.97,
+            57.6
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB",
+          [
+            65.07,
+            57.6
+          ]
+        ]
+      ],
+      "bbox": [
+        62.35,
+        56.625,
+        65.645,
+        58.575
+      ]
+    },
+    "H1": {
+      "ref": "H1",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        54.3,
+        73.48
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            54.3,
+            73.48
+          ]
+        ]
+      ],
+      "bbox": [
+        50.825,
+        70.005,
+        57.775,
+        76.955
+      ]
+    },
+    "H2": {
+      "ref": "H2",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        145.7,
+        73.48
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            145.7,
+            73.48
+          ]
+        ]
+      ],
+      "bbox": [
+        142.225,
+        70.005,
+        149.175,
+        76.955
+      ]
+    },
+    "H3": {
+      "ref": "H3",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        54.3,
+        126.52
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            54.3,
+            126.52
+          ]
+        ]
+      ],
+      "bbox": [
+        50.825,
+        123.045,
+        57.775,
+        129.995
+      ]
+    },
+    "H4": {
+      "ref": "H4",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        145.7,
+        126.52
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            145.7,
+            126.52
+          ]
+        ]
+      ],
+      "bbox": [
+        142.225,
+        123.045,
+        149.175,
+        129.995
+      ]
+    },
+    "J3": {
+      "ref": "J3",
+      "value": "TFT032B018",
+      "footprint": "Connector_FPC_Custom:KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal",
+      "layer": "F.Cu",
+      "xy": [
+        98.0,
+        109.3
+      ],
+      "angle": 90.0,
+      "locked": true,
+      "group": null,
+      "uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J3-Pin_1-Pad1)",
+          [
+            98.0,
+            116.55
+          ]
+        ],
+        [
+          "10",
+          "GND",
+          [
+            98.0,
+            112.05
+          ]
+        ],
+        [
+          "11",
+          "GND",
+          [
+            98.0,
+            111.55
+          ]
+        ],
+        [
+          "12",
+          "GND",
+          [
+            98.0,
+            111.05
+          ]
+        ],
+        [
+          "13",
+          "GND",
+          [
+            98.0,
+            110.55
+          ]
+        ],
+        [
+          "14",
+          "GND",
+          [
+            98.0,
+            110.05
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            98.0,
+            109.55
+          ]
+        ],
+        [
+          "16",
+          "TFT_DC",
+          [
+            98.0,
+            109.05
+          ]
+        ],
+        [
+          "17",
+          "TFT_SCLK",
+          [
+            98.0,
+            108.55
+          ]
+        ],
+        [
+          "18",
+          "TFT_CS",
+          [
+            98.0,
+            108.05
+          ]
+        ],
+        [
+          "19",
+          "TFT_MOSI",
+          [
+            98.0,
+            107.55
+          ]
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A",
+          [
+            98.0,
+            116.05
+          ]
+        ],
+        [
+          "20",
+          "TFT_RST",
+          [
+            98.0,
+            107.05
+          ]
+        ],
+        [
+          "21",
+          "+3.3V",
+          [
+            98.0,
+            106.55
+          ]
+        ],
+        [
+          "22",
+          "+3.3V",
+          [
+            98.0,
+            106.05
+          ]
+        ],
+        [
+          "23",
+          "+3.3V",
+          [
+            98.0,
+            105.55
+          ]
+        ],
+        [
+          "24",
+          "unconnected-(J3-Pin_24-Pad24)",
+          [
+            98.0,
+            105.05
+          ]
+        ],
+        [
+          "25",
+          "GND",
+          [
+            98.0,
+            104.55
+          ]
+        ],
+        [
+          "26",
+          "unconnected-(J3-Pin_26-Pad26)",
+          [
+            98.0,
+            104.05
+          ]
+        ],
+        [
+          "27",
+          "unconnected-(J3-Pin_27-Pad27)",
+          [
+            98.0,
+            103.55
+          ]
+        ],
+        [
+          "28",
+          "unconnected-(J3-Pin_28-Pad28)",
+          [
+            98.0,
+            103.05
+          ]
+        ],
+        [
+          "29",
+          "unconnected-(J3-Pin_29-Pad29)",
+          [
+            98.0,
+            102.55
+          ]
+        ],
+        [
+          "3",
+          "unconnected-(J3-Pin_3-Pad3)",
+          [
+            98.0,
+            115.55
+          ]
+        ],
+        [
+          "30",
+          "GND",
+          [
+            98.0,
+            102.05
+          ]
+        ],
+        [
+          "4",
+          "/USER INTERFACE/BL_K",
+          [
+            98.0,
+            115.05
+          ]
+        ],
+        [
+          "5",
+          "GND",
+          [
+            98.0,
+            114.55
+          ]
+        ],
+        [
+          "6",
+          "unconnected-(J3-Pin_6-Pad6)",
+          [
+            98.0,
+            114.05
+          ]
+        ],
+        [
+          "7",
+          "GND",
+          [
+            98.0,
+            113.55
+          ]
+        ],
+        [
+          "8",
+          "GND",
+          [
+            98.0,
+            113.05
+          ]
+        ],
+        [
+          "9",
+          "GND",
+          [
+            98.0,
+            112.55
+          ]
+        ],
+        [
+          "MP",
+          "",
+          [
+            94.9,
+            117.82
+          ]
+        ],
+        [
+          "MP",
+          "",
+          [
+            94.9,
+            100.78
+          ]
+        ]
+      ],
+      "bbox": [
+        92.775,
+        99.505,
+        99.275,
+        119.095
+      ]
+    },
+    "J7": {
+      "ref": "J7",
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "layer": "B.Cu",
+      "xy": [
+        41.05,
+        77.32
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            38.445,
+            74.43
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            38.445,
+            80.21
+          ]
+        ],
+        [
+          "A1",
+          "GND",
+          [
+            37.37,
+            74.12
+          ]
+        ],
+        [
+          "A12",
+          "GND",
+          [
+            37.37,
+            80.52
+          ]
+        ],
+        [
+          "A4",
+          "USB_VBUS",
+          [
+            37.37,
+            74.92
+          ]
+        ],
+        [
+          "A5",
+          "USB_CC1",
+          [
+            37.37,
+            76.07
+          ]
+        ],
+        [
+          "A6",
+          "USB_DP",
+          [
+            37.37,
+            77.07
+          ]
+        ],
+        [
+          "A7",
+          "USB_DM",
+          [
+            37.37,
+            77.57
+          ]
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)",
+          [
+            37.37,
+            78.57
+          ]
+        ],
+        [
+          "A9",
+          "USB_VBUS",
+          [
+            37.37,
+            79.72
+          ]
+        ],
+        [
+          "B1",
+          "GND",
+          [
+            37.37,
+            80.52
+          ]
+        ],
+        [
+          "B12",
+          "GND",
+          [
+            37.37,
+            74.12
+          ]
+        ],
+        [
+          "B4",
+          "USB_VBUS",
+          [
+            37.37,
+            79.72
+          ]
+        ],
+        [
+          "B5",
+          "USB_CC2",
+          [
+            37.37,
+            79.07
+          ]
+        ],
+        [
+          "B6",
+          "USB_DP",
+          [
+            37.37,
+            78.07
+          ]
+        ],
+        [
+          "B7",
+          "USB_DM",
+          [
+            37.37,
+            76.57
+          ]
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)",
+          [
+            37.37,
+            75.57
+          ]
+        ],
+        [
+          "B9",
+          "USB_VBUS",
+          [
+            37.37,
+            74.92
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            42.125,
+            73.0
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            37.945,
+            73.0
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            42.125,
+            81.64
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            37.945,
+            81.64
+          ]
+        ]
+      ],
+      "bbox": [
+        36.265,
+        71.975,
+        45.255,
+        82.665
+      ]
+    },
+    "J9": {
+      "ref": "J9",
+      "value": "ENCODER CABLE",
+      "footprint": "Connector_Wire:SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm",
+      "layer": "F.Cu",
+      "xy": [
+        58.0,
+        91.6
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": null,
+      "uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "pads": [
+        [
+          "1",
+          "ENCODER_A",
+          [
+            58.0,
+            91.6
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            58.0,
+            95.8
+          ]
+        ],
+        [
+          "3",
+          "ENCODER_B",
+          [
+            58.0,
+            100.0
+          ]
+        ],
+        [
+          "4",
+          "ENCODER_SW",
+          [
+            58.0,
+            104.2
+          ]
+        ],
+        [
+          "5",
+          "GND",
+          [
+            58.0,
+            108.4
+          ]
+        ]
+      ],
+      "bbox": [
+        56.555,
+        89.975,
+        59.445,
+        110.025
+      ]
+    },
+    "U11": {
+      "ref": "U11",
+      "value": "TPS55340PWPR",
+      "footprint": "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias",
+      "layer": "B.Cu",
+      "xy": [
+        69.85,
+        55.34
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            70.64,
+            56.155
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            70.64,
+            54.525
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            69.06,
+            56.155
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            69.06,
+            54.525
+          ]
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          [
+            72.7125,
+            53.39
+          ]
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)",
+          [
+            66.9875,
+            55.99
+          ]
+        ],
+        [
+          "11",
+          "GND",
+          [
+            66.9875,
+            55.34
+          ]
+        ],
+        [
+          "12",
+          "GND",
+          [
+            66.9875,
+            54.69
+          ]
+        ],
+        [
+          "13",
+          "GND",
+          [
+            66.9875,
+            54.04
+          ]
+        ],
+        [
+          "14",
+          "GND",
+          [
+            66.9875,
+            53.39
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            57.54
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            56.44
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            54.24
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            53.14
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            57.54
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            56.44
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            54.24
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            53.14
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            57.54
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            56.44
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            54.24
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            53.14
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          [
+            72.7125,
+            54.04
+          ]
+        ],
+        [
+          "3",
+          "PD_VOUT",
+          [
+            72.7125,
+            54.69
+          ]
+        ],
+        [
+          "4",
+          "Net-(U11-EN)",
+          [
+            72.7125,
+            55.34
+          ]
+        ],
+        [
+          "5",
+          "Net-(U11-SS)",
+          [
+            72.7125,
+            55.99
+          ]
+        ],
+        [
+          "6",
+          "GND",
+          [
+            72.7125,
+            56.64
+          ]
+        ],
+        [
+          "7",
+          "GND",
+          [
+            72.7125,
+            57.29
+          ]
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)",
+          [
+            66.9875,
+            57.29
+          ]
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB",
+          [
+            66.9875,
+            56.64
+          ]
+        ]
+      ],
+      "bbox": [
+        65.925,
+        52.4,
+        73.775,
+        58.115
+      ]
+    }
+  },
+  "pre_existing_tracks": {
+    "count": 4,
+    "net": "/USB_PD_CONTROLLER/BOOST_FB",
+    "source": "TASK-058 (D5.2 to U11.9 FB trace on B.Cu)",
+    "total_length_mm": 2.584607,
+    "segments": [
+      {
+        "uuid": "67174655-4b0a-418c-94ae-19de118917f4",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "layer": "B.Cu",
+        "length_mm": 0.3,
+        "start": [
+          65.07,
+          57.6
+        ],
+        "end": [
+          65.37,
+          57.6
+        ],
+        "width_mm": 0.2
+      },
+      {
+        "uuid": "ab6f190f-2a38-4051-afdd-29de0667dd97",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "layer": "B.Cu",
+        "length_mm": 0.46,
+        "start": [
+          65.87,
+          57.1
+        ],
+        "end": [
+          65.87,
+          56.64
+        ],
+        "width_mm": 0.2
+      },
+      {
+        "uuid": "bac123bf-3e8a-4a42-a3d9-e77dc0fb4f54",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "layer": "B.Cu",
+        "length_mm": 0.707107,
+        "start": [
+          65.37,
+          57.6
+        ],
+        "end": [
+          65.87,
+          57.1
+        ],
+        "width_mm": 0.2
+      },
+      {
+        "uuid": "dc31f985-bf69-4d4a-b183-b7bf2fcb8a73",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "layer": "B.Cu",
+        "length_mm": 1.1175,
+        "start": [
+          65.87,
+          56.64
+        ],
+        "end": [
+          66.9875,
+          56.64
+        ],
+        "width_mm": 0.2
+      }
+    ]
+  },
+  "drc_baseline": {
+    "total_violations": 145,
+    "unconnected_items_count": 360,
+    "schematic_parity_issues_count": 0,
+    "violation_types": {
+      "hole_clearance": 4,
+      "drill_out_of_range": 15,
+      "text_thickness": 63,
+      "text_height": 63
+    }
+  },
+  "footprints": [
+    {
+      "ref": "C1",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        57.5,
+        155.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "6b65bc6f-8494-47c9-8036-131a101ef0c9",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-V18)",
+          [
+            57.02,
+            155.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            57.98,
+            155.5
+          ]
+        ]
+      ],
+      "bbox": [
+        56.565,
+        155.015,
+        58.435,
+        155.985
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "layer": "B.Cu",
+      "xy": [
+        154.0,
+        144.26
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "3de064d2-aff6-4dd7-856a-ecb888dd9903",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3",
+          [
+            154.0,
+            143.31
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            154.0,
+            145.21
+          ]
+        ]
+      ],
+      "bbox": [
+        152.995,
+        142.535,
+        155.005,
+        145.985
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        162.2,
+        53.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "20535293-6cf0-418f-afc7-2790484e89f2",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            161.72,
+            53.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            162.68,
+            53.0
+          ]
+        ]
+      ],
+      "bbox": [
+        161.265,
+        52.515,
+        163.135,
+        53.485
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "4u7",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        92.3,
+        55.91
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "0cb8beb9-b678-41a3-9f07-68726dc17a4a",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            92.3,
+            57.385
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            92.3,
+            54.435
+          ]
+        ]
+      ],
+      "bbox": [
+        90.675,
+        53.585,
+        93.925,
+        58.235
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "4u7",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        88.615,
+        55.91
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "80353b40-5547-41f2-9381-a3a82a4a3d3f",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            88.615,
+            57.385
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            88.615,
+            54.435
+          ]
+        ]
+      ],
+      "bbox": [
+        86.99,
+        53.585,
+        90.24,
+        58.235
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        99.4,
+        61.0
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "9405131e-ec5b-42bb-99b6-eb34945cc944",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            99.4,
+            61.48
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            99.4,
+            60.52
+          ]
+        ]
+      ],
+      "bbox": [
+        98.915,
+        60.065,
+        99.885,
+        61.935
+      ]
+    },
+    {
+      "ref": "C15",
+      "value": "47u",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+      "layer": "B.Cu",
+      "xy": [
+        84.8,
+        47.7
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "2b65e2b6-1a93-441e-8099-4f53cd5188ef",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            87.5,
+            47.7
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            82.1,
+            47.7
+          ]
+        ]
+      ],
+      "bbox": [
+        80.075,
+        44.125,
+        89.525,
+        51.275
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "47u",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        91.5,
+        48.3
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "4664c4e6-ee6b-4dbd-8824-bb6ed1347444",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            91.5,
+            46.825
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            91.5,
+            49.775
+          ]
+        ]
+      ],
+      "bbox": [
+        89.875,
+        45.975,
+        93.125,
+        50.625
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        104.0,
+        58.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "827c9e37-8095-4a7b-8c47-11ee8bbbce83",
+      "pads": [
+        [
+          "1",
+          "Net-(U5-BST)",
+          [
+            104.48,
+            58.5
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/LX_SW",
+          [
+            103.52,
+            58.5
+          ]
+        ]
+      ],
+      "bbox": [
+        103.065,
+        58.015,
+        104.935,
+        58.985
+      ]
+    },
+    {
+      "ref": "C18",
+      "value": "10n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        93.3,
+        59.3
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "b46c2f02-a252-4e26-a737-3cfa8bafc865",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SS_RAMP",
+          [
+            93.78,
+            59.3
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            92.82,
+            59.3
+          ]
+        ]
+      ],
+      "bbox": [
+        92.365,
+        58.815,
+        94.235,
+        59.785
+      ]
+    },
+    {
+      "ref": "C19",
+      "value": "15n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        92.3,
+        63.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "730d3574-f779-425c-b95c-96590c984b5d",
+      "pads": [
+        [
+          "1",
+          "Net-(C19-Pad1)",
+          [
+            92.3,
+            63.98
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            92.3,
+            63.02
+          ]
+        ]
+      ],
+      "bbox": [
+        91.815,
+        62.565,
+        92.785,
+        64.435
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        55.5,
+        151.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "11119241-4833-416d-b8b8-5aa72e727e77",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-IFB)",
+          [
+            55.02,
+            151.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            55.98,
+            151.5
+          ]
+        ]
+      ],
+      "bbox": [
+        54.565,
+        151.015,
+        56.435,
+        151.985
+      ]
+    },
+    {
+      "ref": "C20",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        150.8,
+        144.26
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "5c8fcc7f-c5f3-4b99-a533-e2288c42e9b5",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3",
+          [
+            150.8,
+            143.78
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            150.8,
+            144.74
+          ]
+        ]
+      ],
+      "bbox": [
+        150.315,
+        143.325,
+        151.285,
+        145.195
+      ]
+    },
+    {
+      "ref": "C21",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        140.5,
+        142.99
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "12d284da-3c38-4c9b-8992-44528dd00411",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            140.5,
+            142.51
+          ]
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN",
+          [
+            140.5,
+            143.47
+          ]
+        ]
+      ],
+      "bbox": [
+        140.015,
+        142.055,
+        140.985,
+        143.925
+      ]
+    },
+    {
+      "ref": "C23",
+      "value": "47n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        72.0,
+        60.1
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "d2caa200-d283-42bf-b324-17921f210e82",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-SS)",
+          [
+            72.48,
+            60.1
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            71.52,
+            60.1
+          ]
+        ]
+      ],
+      "bbox": [
+        71.065,
+        59.615,
+        72.935,
+        60.585
+      ]
+    },
+    {
+      "ref": "C24",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        63.4,
+        62.3
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "1b8c89bf-a7fe-4cac-9312-a1d4ca043143",
+      "pads": [
+        [
+          "1",
+          "Net-(C24-Pad1)",
+          [
+            63.88,
+            62.3
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            62.92,
+            62.3
+          ]
+        ]
+      ],
+      "bbox": [
+        62.465,
+        61.815,
+        64.335,
+        62.785
+      ]
+    },
+    {
+      "ref": "C25",
+      "value": "4u7",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        59.5,
+        54.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "b3420e13-5309-4203-9e4e-456174f64687",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT",
+          [
+            60.975,
+            54.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            58.025,
+            54.0
+          ]
+        ]
+      ],
+      "bbox": [
+        57.175,
+        52.375,
+        61.825,
+        55.625
+      ]
+    },
+    {
+      "ref": "C26",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        76.0,
+        51.7
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "41dbe7f6-bf1f-4612-b5e8-8644ff67b272",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT",
+          [
+            76.48,
+            51.7
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            75.52,
+            51.7
+          ]
+        ]
+      ],
+      "bbox": [
+        75.065,
+        51.215,
+        76.935,
+        52.185
+      ]
+    },
+    {
+      "ref": "C27",
+      "value": "4u7",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        75.8,
+        55.5
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "df38c967-afb5-44ed-9ada-f88599fc4ed5",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            75.8,
+            54.025
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            75.8,
+            56.975
+          ]
+        ]
+      ],
+      "bbox": [
+        74.175,
+        53.175,
+        77.425,
+        57.825
+      ]
+    },
+    {
+      "ref": "C28",
+      "value": "4u7",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        82.0,
+        64.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "4ffddcd8-5423-4bcd-8c62-d59468e2c4dd",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            83.475,
+            64.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            80.525,
+            64.0
+          ]
+        ]
+      ],
+      "bbox": [
+        79.675,
+        62.375,
+        84.325,
+        65.625
+      ]
+    },
+    {
+      "ref": "C29",
+      "value": "47u",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+      "layer": "B.Cu",
+      "xy": [
+        59.5,
+        46.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "89980d68-ab45-4914-9edb-26f134c0622a",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT",
+          [
+            62.2,
+            46.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            56.8,
+            46.0
+          ]
+        ]
+      ],
+      "bbox": [
+        54.775,
+        42.425,
+        64.225,
+        49.575
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "2u2",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "layer": "B.Cu",
+      "xy": [
+        51.5,
+        145.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "d502e238-42b8-4dd1-9a0c-d4213e66a213",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            52.45,
+            145.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            50.55,
+            145.0
+          ]
+        ]
+      ],
+      "bbox": [
+        49.775,
+        143.995,
+        53.225,
+        146.005
+      ]
+    },
+    {
+      "ref": "C30",
+      "value": "22n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        106.8,
+        64.4
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "0d0e7517-d75a-44f9-99c5-00b87d9c188a",
+      "pads": [
+        [
+          "1",
+          "Net-(C30-Pad1)",
+          [
+            106.32,
+            64.4
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            107.28,
+            64.4
+          ]
+        ]
+      ],
+      "bbox": [
+        105.865,
+        63.915,
+        107.735,
+        64.885
+      ]
+    },
+    {
+      "ref": "C31",
+      "value": "220n",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "layer": "F.Cu",
+      "xy": [
+        122.0,
+        54.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "1e427c08-9a03-4ba6-94aa-8c45bfdbc656",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            122.0,
+            55.275
+          ]
+        ],
+        [
+          "2",
+          "Net-(U12-CAP)",
+          [
+            122.0,
+            53.725
+          ]
+        ]
+      ],
+      "bbox": [
+        121.245,
+        52.995,
+        122.755,
+        56.005
+      ]
+    },
+    {
+      "ref": "C32",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        121.5,
+        58.0
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "2e49305e-6c71-4019-ac3a-b9a121b693c9",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            121.5,
+            58.48
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            121.5,
+            57.52
+          ]
+        ]
+      ],
+      "bbox": [
+        121.015,
+        57.065,
+        121.985,
+        58.935
+      ]
+    },
+    {
+      "ref": "C33",
+      "value": "1F5",
+      "footprint": "Power_Output_Custom:Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal",
+      "layer": "B.Cu",
+      "xy": [
+        207.98,
+        82.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "15bd2310-855b-49b3-bf66-c9f8589b2d1c",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-VBACK)",
+          [
+            207.98,
+            82.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            227.98,
+            82.5
+          ]
+        ]
+      ],
+      "bbox": [
+        203.72,
+        71.975,
+        229.505,
+        93.025
+      ]
+    },
+    {
+      "ref": "C34",
+      "value": "1u0",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        28.6486,
+        108.23
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TFT CONNECTOR J3",
+      "uuid": "4d9ac654-ba07-4ec7-b2e7-8b66e0f6ade2",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            28.1686,
+            108.23
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            29.1286,
+            108.23
+          ]
+        ]
+      ],
+      "bbox": [
+        27.7136,
+        107.745,
+        29.5836,
+        108.715
+      ]
+    },
+    {
+      "ref": "C35",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        153.5,
+        62.95
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "2bd2a365-3ba5-477b-a4ff-0d8a23ccd542",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            153.02,
+            62.95
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            153.98,
+            62.95
+          ]
+        ]
+      ],
+      "bbox": [
+        152.565,
+        62.465,
+        154.435,
+        63.435
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "1u0",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        56.0,
+        148.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "9a3a28e5-fdc4-4095-8b26-4a938d86cb2d",
+      "pads": [
+        [
+          "1",
+          "PD_5V",
+          [
+            55.52,
+            148.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            56.48,
+            148.5
+          ]
+        ]
+      ],
+      "bbox": [
+        55.065,
+        148.015,
+        56.935,
+        148.985
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "layer": "B.Cu",
+      "xy": [
+        163.0,
+        105.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "8a5f5455-ca3f-4a55-8be7-efe40ee361d5",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            162.05,
+            105.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            163.95,
+            105.5
+          ]
+        ]
+      ],
+      "bbox": [
+        161.275,
+        104.495,
+        164.725,
+        106.505
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        163.0,
+        102.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "5f5086a9-7c56-4b2a-84d1-0ba9873f3576",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            162.52,
+            102.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            163.48,
+            102.5
+          ]
+        ]
+      ],
+      "bbox": [
+        162.065,
+        102.015,
+        163.935,
+        102.985
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "1u0",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        159.0,
+        102.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "655bf6d9-9e2f-45ea-89ab-0e6f50e100f2",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            158.52,
+            102.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-EN)",
+          [
+            159.48,
+            102.5
+          ]
+        ]
+      ],
+      "bbox": [
+        158.065,
+        102.015,
+        159.935,
+        102.985
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "4u7",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "layer": "B.Cu",
+      "xy": [
+        65.5,
+        140.0
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "2dec3cca-ef18-4bf2-a0b1-53df450bf7d7",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT",
+          [
+            65.5,
+            138.525
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            65.5,
+            141.475
+          ]
+        ]
+      ],
+      "bbox": [
+        63.875,
+        137.675,
+        67.125,
+        142.325
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "1u0",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        211.5,
+        94.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "cafe6e1f-2580-47f1-9382-0d113d5920a9",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            211.5,
+            94.98
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            211.5,
+            94.02
+          ]
+        ]
+      ],
+      "bbox": [
+        211.015,
+        93.565,
+        211.985,
+        95.435
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "LED",
+      "footprint": "LED_SMD:LED_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        67.2,
+        150.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "009ad82d-6f53-4010-bad0-21d875813a1a",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            67.685,
+            150.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(D1-A)",
+          [
+            66.715,
+            150.5
+          ]
+        ]
+      ],
+      "bbox": [
+        66.245,
+        150.005,
+        68.39,
+        150.995
+      ]
+    },
+    {
+      "ref": "D10",
+      "value": "BZT52C12",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "layer": "F.Cu",
+      "xy": [
+        195.0,
+        57.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "12cdb498-9b5e-4ad8-b4a9-87f83132e125",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G",
+          [
+            195.0,
+            59.15
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            195.0,
+            55.85
+          ]
+        ]
+      ],
+      "bbox": [
+        193.825,
+        55.125,
+        196.175,
+        59.92
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "SS2060FL",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "layer": "B.Cu",
+      "xy": [
+        104.3,
+        54.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "d4224302-df14-491c-b4e3-99582a255209",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW",
+          [
+            102.9,
+            54.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            105.7,
+            54.5
+          ]
+        ]
+      ],
+      "bbox": [
+        102.03,
+        53.325,
+        106.525,
+        55.675
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "SMBJ30A",
+      "footprint": "Diode_SMD:D_SMB",
+      "layer": "B.Cu",
+      "xy": [
+        40.0,
+        87.0
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "a1409f9b-ccaf-414c-a550-8098051873b1",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS",
+          [
+            40.0,
+            84.85
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            40.0,
+            89.15
+          ]
+        ]
+      ],
+      "bbox": [
+        37.725,
+        83.28,
+        42.275,
+        90.675
+      ]
+    },
+    {
+      "ref": "D4",
+      "value": "SX36",
+      "footprint": "Diode_SMD:D_SMA",
+      "layer": "B.Cu",
+      "xy": [
+        74.8,
+        49.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "497e88c0-77e9-4b01-a1de-55d8e4d09fdb",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            76.8,
+            49.0
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          [
+            72.8,
+            49.0
+          ]
+        ]
+      ],
+      "bbox": [
+        71.275,
+        47.225,
+        78.37,
+        50.775
+      ]
+    },
+    {
+      "ref": "D5",
+      "value": "BAS16H",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "layer": "B.Cu",
+      "xy": [
+        64.02,
+        57.6
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL",
+          [
+            62.97,
+            57.6
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB",
+          [
+            65.07,
+            57.6
+          ]
+        ]
+      ],
+      "bbox": [
+        62.35,
+        56.625,
+        65.645,
+        58.575
+      ]
+    },
+    {
+      "ref": "D6",
+      "value": "BZT52C12",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "layer": "F.Cu",
+      "xy": [
+        106.8,
+        59.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "fe9d1d0c-0160-41c0-bfe1-04b8c5adab95",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV",
+          [
+            105.15,
+            59.5
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON",
+          [
+            108.45,
+            59.5
+          ]
+        ]
+      ],
+      "bbox": [
+        104.38,
+        58.325,
+        109.175,
+        60.675
+      ]
+    },
+    {
+      "ref": "D7",
+      "value": "SMBJ30A",
+      "footprint": "Diode_SMD:D_SMB",
+      "layer": "B.Cu",
+      "xy": [
+        167.0,
+        57.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "b199094b-a051-495a-bab1-3d1d7b640f82",
+      "pads": [
+        [
+          "1",
+          "OUT_POS",
+          [
+            164.85,
+            57.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            169.15,
+            57.5
+          ]
+        ]
+      ],
+      "bbox": [
+        163.28,
+        55.225,
+        170.675,
+        59.775
+      ]
+    },
+    {
+      "ref": "D8",
+      "value": "SMF30A",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "layer": "B.Cu",
+      "xy": [
+        33.0,
+        74.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "a9297cb6-0fd6-462b-8612-59255b445d0d",
+      "pads": [
+        [
+          "1",
+          "USB_CC1",
+          [
+            34.4,
+            74.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            31.6,
+            74.0
+          ]
+        ]
+      ],
+      "bbox": [
+        30.775,
+        72.825,
+        35.27,
+        75.175
+      ]
+    },
+    {
+      "ref": "D9",
+      "value": "SMF30A",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "layer": "B.Cu",
+      "xy": [
+        33.0,
+        80.9
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "c8ecc7a6-761f-43eb-b756-aacf0bc8b01b",
+      "pads": [
+        [
+          "1",
+          "USB_CC2",
+          [
+            34.4,
+            80.9
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            31.6,
+            80.9
+          ]
+        ]
+      ],
+      "bbox": [
+        30.775,
+        79.725,
+        35.27,
+        82.075
+      ]
+    },
+    {
+      "ref": "H1",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        54.3,
+        73.48
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            54.3,
+            73.48
+          ]
+        ]
+      ],
+      "bbox": [
+        50.825,
+        70.005,
+        57.775,
+        76.955
+      ]
+    },
+    {
+      "ref": "H2",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        145.7,
+        73.48
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            145.7,
+            73.48
+          ]
+        ]
+      ],
+      "bbox": [
+        142.225,
+        70.005,
+        149.175,
+        76.955
+      ]
+    },
+    {
+      "ref": "H3",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        54.3,
+        126.52
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            54.3,
+            126.52
+          ]
+        ]
+      ],
+      "bbox": [
+        50.825,
+        123.045,
+        57.775,
+        129.995
+      ]
+    },
+    {
+      "ref": "H4",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "layer": "F.Cu",
+      "xy": [
+        145.7,
+        126.52
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "group": null,
+      "uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            145.7,
+            126.52
+          ]
+        ]
+      ],
+      "bbox": [
+        142.225,
+        123.045,
+        149.175,
+        129.995
+      ]
+    },
+    {
+      "ref": "J3",
+      "value": "TFT032B018",
+      "footprint": "Connector_FPC_Custom:KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal",
+      "layer": "F.Cu",
+      "xy": [
+        98.0,
+        109.3
+      ],
+      "angle": 90.0,
+      "locked": true,
+      "group": null,
+      "uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J3-Pin_1-Pad1)",
+          [
+            98.0,
+            116.55
+          ]
+        ],
+        [
+          "10",
+          "GND",
+          [
+            98.0,
+            112.05
+          ]
+        ],
+        [
+          "11",
+          "GND",
+          [
+            98.0,
+            111.55
+          ]
+        ],
+        [
+          "12",
+          "GND",
+          [
+            98.0,
+            111.05
+          ]
+        ],
+        [
+          "13",
+          "GND",
+          [
+            98.0,
+            110.55
+          ]
+        ],
+        [
+          "14",
+          "GND",
+          [
+            98.0,
+            110.05
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            98.0,
+            109.55
+          ]
+        ],
+        [
+          "16",
+          "TFT_DC",
+          [
+            98.0,
+            109.05
+          ]
+        ],
+        [
+          "17",
+          "TFT_SCLK",
+          [
+            98.0,
+            108.55
+          ]
+        ],
+        [
+          "18",
+          "TFT_CS",
+          [
+            98.0,
+            108.05
+          ]
+        ],
+        [
+          "19",
+          "TFT_MOSI",
+          [
+            98.0,
+            107.55
+          ]
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A",
+          [
+            98.0,
+            116.05
+          ]
+        ],
+        [
+          "20",
+          "TFT_RST",
+          [
+            98.0,
+            107.05
+          ]
+        ],
+        [
+          "21",
+          "+3.3V",
+          [
+            98.0,
+            106.55
+          ]
+        ],
+        [
+          "22",
+          "+3.3V",
+          [
+            98.0,
+            106.05
+          ]
+        ],
+        [
+          "23",
+          "+3.3V",
+          [
+            98.0,
+            105.55
+          ]
+        ],
+        [
+          "24",
+          "unconnected-(J3-Pin_24-Pad24)",
+          [
+            98.0,
+            105.05
+          ]
+        ],
+        [
+          "25",
+          "GND",
+          [
+            98.0,
+            104.55
+          ]
+        ],
+        [
+          "26",
+          "unconnected-(J3-Pin_26-Pad26)",
+          [
+            98.0,
+            104.05
+          ]
+        ],
+        [
+          "27",
+          "unconnected-(J3-Pin_27-Pad27)",
+          [
+            98.0,
+            103.55
+          ]
+        ],
+        [
+          "28",
+          "unconnected-(J3-Pin_28-Pad28)",
+          [
+            98.0,
+            103.05
+          ]
+        ],
+        [
+          "29",
+          "unconnected-(J3-Pin_29-Pad29)",
+          [
+            98.0,
+            102.55
+          ]
+        ],
+        [
+          "3",
+          "unconnected-(J3-Pin_3-Pad3)",
+          [
+            98.0,
+            115.55
+          ]
+        ],
+        [
+          "30",
+          "GND",
+          [
+            98.0,
+            102.05
+          ]
+        ],
+        [
+          "4",
+          "/USER INTERFACE/BL_K",
+          [
+            98.0,
+            115.05
+          ]
+        ],
+        [
+          "5",
+          "GND",
+          [
+            98.0,
+            114.55
+          ]
+        ],
+        [
+          "6",
+          "unconnected-(J3-Pin_6-Pad6)",
+          [
+            98.0,
+            114.05
+          ]
+        ],
+        [
+          "7",
+          "GND",
+          [
+            98.0,
+            113.55
+          ]
+        ],
+        [
+          "8",
+          "GND",
+          [
+            98.0,
+            113.05
+          ]
+        ],
+        [
+          "9",
+          "GND",
+          [
+            98.0,
+            112.55
+          ]
+        ],
+        [
+          "MP",
+          "",
+          [
+            94.9,
+            117.82
+          ]
+        ],
+        [
+          "MP",
+          "",
+          [
+            94.9,
+            100.78
+          ]
+        ]
+      ],
+      "bbox": [
+        92.775,
+        99.505,
+        99.275,
+        119.095
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "SolderWire-1.5sqmm",
+      "footprint": "Connector_Wire:SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm",
+      "layer": "B.Cu",
+      "xy": [
+        168.0,
+        51.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "d22c07c5-82be-4e20-8fc1-15906f94bd26",
+      "pads": [
+        [
+          "1",
+          "OUT_POS",
+          [
+            168.0,
+            51.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            175.8,
+            51.5
+          ]
+        ]
+      ],
+      "bbox": [
+        165.275,
+        49.025,
+        178.525,
+        53.975
+      ]
+    },
+    {
+      "ref": "J7",
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "layer": "B.Cu",
+      "xy": [
+        41.05,
+        77.32
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            38.445,
+            74.43
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            38.445,
+            80.21
+          ]
+        ],
+        [
+          "A1",
+          "GND",
+          [
+            37.37,
+            74.12
+          ]
+        ],
+        [
+          "A12",
+          "GND",
+          [
+            37.37,
+            80.52
+          ]
+        ],
+        [
+          "A4",
+          "USB_VBUS",
+          [
+            37.37,
+            74.92
+          ]
+        ],
+        [
+          "A5",
+          "USB_CC1",
+          [
+            37.37,
+            76.07
+          ]
+        ],
+        [
+          "A6",
+          "USB_DP",
+          [
+            37.37,
+            77.07
+          ]
+        ],
+        [
+          "A7",
+          "USB_DM",
+          [
+            37.37,
+            77.57
+          ]
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)",
+          [
+            37.37,
+            78.57
+          ]
+        ],
+        [
+          "A9",
+          "USB_VBUS",
+          [
+            37.37,
+            79.72
+          ]
+        ],
+        [
+          "B1",
+          "GND",
+          [
+            37.37,
+            80.52
+          ]
+        ],
+        [
+          "B12",
+          "GND",
+          [
+            37.37,
+            74.12
+          ]
+        ],
+        [
+          "B4",
+          "USB_VBUS",
+          [
+            37.37,
+            79.72
+          ]
+        ],
+        [
+          "B5",
+          "USB_CC2",
+          [
+            37.37,
+            79.07
+          ]
+        ],
+        [
+          "B6",
+          "USB_DP",
+          [
+            37.37,
+            78.07
+          ]
+        ],
+        [
+          "B7",
+          "USB_DM",
+          [
+            37.37,
+            76.57
+          ]
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)",
+          [
+            37.37,
+            75.57
+          ]
+        ],
+        [
+          "B9",
+          "USB_VBUS",
+          [
+            37.37,
+            74.92
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            42.125,
+            73.0
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            37.945,
+            73.0
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            42.125,
+            81.64
+          ]
+        ],
+        [
+          "SH",
+          "GND",
+          [
+            37.945,
+            81.64
+          ]
+        ]
+      ],
+      "bbox": [
+        36.265,
+        71.975,
+        45.255,
+        82.665
+      ]
+    },
+    {
+      "ref": "J8",
+      "value": "2-CH UART TO ETH",
+      "footprint": "Module_Custom:Waveshare_2-CH_UART_TO_ETH",
+      "layer": "B.Cu",
+      "xy": [
+        158.287,
+        158.23
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "de4b97b7-93f3-462c-817f-d1144d13fa25",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J8-Pin_1-Pad1)",
+          [
+            158.287,
+            158.23
+          ]
+        ],
+        [
+          "10",
+          "unconnected-(J8-Pin_10-Pad10)",
+          [
+            160.827,
+            148.07
+          ]
+        ],
+        [
+          "11",
+          "GND",
+          [
+            158.287,
+            145.53
+          ]
+        ],
+        [
+          "12",
+          "GND",
+          [
+            160.827,
+            145.53
+          ]
+        ],
+        [
+          "13",
+          "/MCU/ETH_3V3",
+          [
+            158.287,
+            142.99
+          ]
+        ],
+        [
+          "14",
+          "/MCU/ETH_3V3",
+          [
+            160.827,
+            142.99
+          ]
+        ],
+        [
+          "15",
+          "unconnected-(J8-Pin_15-Pad15)",
+          [
+            158.287,
+            140.45
+          ]
+        ],
+        [
+          "16",
+          "unconnected-(J8-Pin_16-Pad16)",
+          [
+            160.827,
+            140.45
+          ]
+        ],
+        [
+          "2",
+          "unconnected-(J8-Pin_2-Pad2)",
+          [
+            160.827,
+            158.23
+          ]
+        ],
+        [
+          "3",
+          "/MCU/ETH_CFG0",
+          [
+            158.287,
+            155.69
+          ]
+        ],
+        [
+          "4",
+          "/MCU/ETH_RUN",
+          [
+            160.827,
+            155.69
+          ]
+        ],
+        [
+          "5",
+          "/MCU/UART_TX",
+          [
+            158.287,
+            153.15
+          ]
+        ],
+        [
+          "6",
+          "unconnected-(J8-Pin_6-Pad6)",
+          [
+            160.827,
+            153.15
+          ]
+        ],
+        [
+          "7",
+          "/MCU/UART_RX",
+          [
+            158.287,
+            150.61
+          ]
+        ],
+        [
+          "8",
+          "unconnected-(J8-Pin_8-Pad8)",
+          [
+            160.827,
+            150.61
+          ]
+        ],
+        [
+          "9",
+          "unconnected-(J8-Pin_9-Pad9)",
+          [
+            158.287,
+            148.07
+          ]
+        ],
+        [
+          "MP",
+          "",
+          [
+            205.437,
+            158.99
+          ]
+        ],
+        [
+          "MP",
+          "",
+          [
+            205.437,
+            139.69
+          ]
+        ]
+      ],
+      "bbox": [
+        155.327,
+        138.065,
+        214.012,
+        160.615
+      ]
+    },
+    {
+      "ref": "J9",
+      "value": "ENCODER CABLE",
+      "footprint": "Connector_Wire:SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm",
+      "layer": "F.Cu",
+      "xy": [
+        58.0,
+        91.6
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": null,
+      "uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "pads": [
+        [
+          "1",
+          "ENCODER_A",
+          [
+            58.0,
+            91.6
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            58.0,
+            95.8
+          ]
+        ],
+        [
+          "3",
+          "ENCODER_B",
+          [
+            58.0,
+            100.0
+          ]
+        ],
+        [
+          "4",
+          "ENCODER_SW",
+          [
+            58.0,
+            104.2
+          ]
+        ],
+        [
+          "5",
+          "GND",
+          [
+            58.0,
+            108.4
+          ]
+        ]
+      ],
+      "bbox": [
+        56.555,
+        89.975,
+        59.445,
+        110.025
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "22u",
+      "footprint": "Inductor_Custom:L_CoreMaster_FPI0705_7.8x7.0mm_H5.0",
+      "layer": "B.Cu",
+      "xy": [
+        98.495,
+        48.37
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "c55e734b-7d0a-4240-82d9-8c957f3e9205",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW",
+          [
+            101.12,
+            48.37
+          ]
+        ],
+        [
+          "2",
+          "+3.3V",
+          [
+            95.87,
+            48.37
+          ]
+        ]
+      ],
+      "bbox": [
+        93.97,
+        44.195,
+        103.02,
+        52.545
+      ]
+    },
+    {
+      "ref": "L3",
+      "value": "6u8",
+      "footprint": "Inductor_SMD:L_7.3x7.3_H4.5",
+      "layer": "B.Cu",
+      "xy": [
+        69.55,
+        42.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "ba1130c3-fa53-4ce1-a479-01e6ec204aa3",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          [
+            72.75,
+            42.5
+          ]
+        ],
+        [
+          "2",
+          "PD_VOUT",
+          [
+            66.35,
+            42.5
+          ]
+        ]
+      ],
+      "bbox": [
+        65.325,
+        38.575,
+        73.775,
+        46.425
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "BSS138P",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "layer": "B.Cu",
+      "xy": [
+        209.0,
+        111.0
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "uuid": "8e51f329-3f3c-4cff-a45c-d88aec61bf6a",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            208.05,
+            110.0625
+          ]
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_3V3",
+          [
+            209.95,
+            110.0625
+          ]
+        ],
+        [
+          "3",
+          "PD_I2C_SCL_5V",
+          [
+            209.0,
+            111.9375
+          ]
+        ]
+      ],
+      "bbox": [
+        207.275,
+        109.045,
+        210.725,
+        112.955
+      ]
+    },
+    {
+      "ref": "Q2",
+      "value": "BSS138P",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "layer": "B.Cu",
+      "xy": [
+        213.5,
+        111.0
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "uuid": "ad27416d-a7c6-4acd-855b-952caaba5cd0",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            212.55,
+            110.0625
+          ]
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3",
+          [
+            214.45,
+            110.0625
+          ]
+        ],
+        [
+          "3",
+          "PD_I2C_SDA_5V",
+          [
+            213.5,
+            111.9375
+          ]
+        ]
+      ],
+      "bbox": [
+        211.775,
+        109.045,
+        215.225,
+        112.955
+      ]
+    },
+    {
+      "ref": "Q3",
+      "value": "SQJB60EP",
+      "footprint": "Package_SO_Custom:Vishay_PowerPAK_SO-8L_Dual",
+      "layer": "B.Cu",
+      "xy": [
+        59.5,
+        140.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "6d9f89f7-d44b-4b70-a4be-be821dbb6efa",
+      "pads": [
+        [
+          "1",
+          "Net-(Q3A-S)",
+          [
+            57.595,
+            137.285
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE",
+          [
+            58.865,
+            137.285
+          ]
+        ],
+        [
+          "3",
+          "Net-(Q3A-S)",
+          [
+            60.135,
+            137.285
+          ]
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/PD_GATE",
+          [
+            61.405,
+            137.285
+          ]
+        ],
+        [
+          "5",
+          "PD_VOUT",
+          [
+            60.615,
+            141.08
+          ]
+        ],
+        [
+          "5",
+          "PD_VOUT",
+          [
+            61.715,
+            142.87
+          ]
+        ],
+        [
+          "5",
+          "PD_VOUT",
+          [
+            61.7725,
+            140.0
+          ]
+        ],
+        [
+          "6",
+          "PD_VOUT",
+          [
+            60.615,
+            141.08
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            57.2275,
+            140.0
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            57.285,
+            142.87
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            58.385,
+            141.08
+          ]
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            58.385,
+            141.08
+          ]
+        ]
+      ],
+      "bbox": [
+        56.1,
+        136.025,
+        62.9,
+        143.9
+      ]
+    },
+    {
+      "ref": "Q4",
+      "value": "BSS138P",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "layer": "B.Cu",
+      "xy": [
+        191.0,
+        62.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "0cf8e536-aa9e-467c-840a-ab9cd7d67bd9",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN",
+          [
+            190.0625,
+            63.45
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            190.0625,
+            61.55
+          ]
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/DISCH_G",
+          [
+            191.9375,
+            62.5
+          ]
+        ]
+      ],
+      "bbox": [
+        189.045,
+        60.775,
+        192.955,
+        64.225
+      ]
+    },
+    {
+      "ref": "Q5",
+      "value": "SQJB60EP",
+      "footprint": "Package_SO_Custom:Vishay_PowerPAK_SO-8L_Dual",
+      "layer": "F.Cu",
+      "xy": [
+        110.5,
+        54.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "0b8553e5-e95d-4913-9bf0-f9c0b796fa9f",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SRC_COMMON",
+          [
+            108.595,
+            56.715
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/GATE_DRV",
+          [
+            109.865,
+            56.715
+          ]
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/SRC_COMMON",
+          [
+            111.135,
+            56.715
+          ]
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/DGATE",
+          [
+            112.405,
+            56.715
+          ]
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            111.615,
+            52.92
+          ]
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            112.715,
+            51.13
+          ]
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            112.7725,
+            54.0
+          ]
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            111.615,
+            52.92
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            108.2275,
+            54.0
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            108.285,
+            51.13
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            109.385,
+            52.92
+          ]
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            109.385,
+            52.92
+          ]
+        ]
+      ],
+      "bbox": [
+        107.1,
+        50.1,
+        113.9,
+        57.975
+      ]
+    },
+    {
+      "ref": "Q6",
+      "value": "BSS138P",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "layer": "F.Cu",
+      "xy": [
+        190.5,
+        57.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "8c324f3c-2c96-4321-8c8e-2aebe1856d0c",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G",
+          [
+            191.4375,
+            58.45
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            191.4375,
+            56.55
+          ]
+        ],
+        [
+          "3",
+          "Net-(Q6-D)",
+          [
+            189.5625,
+            57.5
+          ]
+        ]
+      ],
+      "bbox": [
+        188.545,
+        55.775,
+        192.455,
+        59.225
+      ]
+    },
+    {
+      "ref": "Q7",
+      "value": "IRLML6344",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "layer": "F.Cu",
+      "xy": [
+        20.0686,
+        97.45
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "uuid": "21999567-8b12-45e4-b1ca-88fccf2b95bb",
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)",
+          [
+            19.1311,
+            96.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            19.1311,
+            98.4
+          ]
+        ],
+        [
+          "3",
+          "/USER INTERFACE/BL_K",
+          [
+            21.0061,
+            97.45
+          ]
+        ]
+      ],
+      "bbox": [
+        18.1136,
+        95.725,
+        22.0236,
+        99.175
+      ]
+    },
+    {
+      "ref": "Q8",
+      "value": "TSM3443CX6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "layer": "B.Cu",
+      "xy": [
+        147.0,
+        142.99
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "1e22d651-902c-4cda-af82-1834afebddcf",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3",
+          [
+            147.95,
+            144.1275
+          ]
+        ],
+        [
+          "2",
+          "/MCU/ETH_3V3",
+          [
+            147.0,
+            144.1275
+          ]
+        ],
+        [
+          "3",
+          "/MCU/ETH_PWR_EN",
+          [
+            146.05,
+            144.1275
+          ]
+        ],
+        [
+          "4",
+          "+3.3V",
+          [
+            146.05,
+            141.8525
+          ]
+        ],
+        [
+          "5",
+          "/MCU/ETH_3V3",
+          [
+            147.0,
+            141.8525
+          ]
+        ],
+        [
+          "6",
+          "/MCU/ETH_3V3",
+          [
+            147.95,
+            141.8525
+          ]
+        ]
+      ],
+      "bbox": [
+        145.275,
+        140.915,
+        148.9,
+        145.065
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        156.5,
+        102.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "0b7b4922-19c6-440d-b508-6c41d36dcd40",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            155.99,
+            102.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-EN)",
+          [
+            157.01,
+            102.5
+          ]
+        ]
+      ],
+      "bbox": [
+        155.545,
+        102.005,
+        157.455,
+        102.995
+      ]
+    },
+    {
+      "ref": "R10",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        89.6
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "e9fa27d0-6241-41dd-8e34-31f3005f0dbb",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO9)",
+          [
+            151.49,
+            89.6
+          ]
+        ],
+        [
+          "2",
+          "+3.3V",
+          [
+            152.51,
+            89.6
+          ]
+        ]
+      ],
+      "bbox": [
+        151.045,
+        89.105,
+        152.955,
+        90.095
+      ]
+    },
+    {
+      "ref": "R11",
+      "value": "5m0",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "layer": "B.Cu",
+      "xy": [
+        52.0,
+        140.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "5e4999d6-e13b-47e3-a7c0-70a27d7de6dd",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS",
+          [
+            49.0375,
+            140.0
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            54.9625,
+            140.0
+          ]
+        ]
+      ],
+      "bbox": [
+        48.145,
+        138.045,
+        55.855,
+        141.955
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "6k2",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        61.0,
+        145.2
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "305d8cb3-4908-4973-bf76-faf6e86562c0",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-PWR_EN)",
+          [
+            61.0,
+            145.71
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE",
+          [
+            61.0,
+            144.69
+          ]
+        ]
+      ],
+      "bbox": [
+        60.505,
+        144.245,
+        61.495,
+        146.155
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        65.5,
+        144.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "6a1ab6e9-f382-4db7-9843-14cfb39d91c6",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-VOUT)",
+          [
+            64.99,
+            144.5
+          ]
+        ],
+        [
+          "2",
+          "PD_VOUT",
+          [
+            66.01,
+            144.5
+          ]
+        ]
+      ],
+      "bbox": [
+        64.545,
+        144.005,
+        66.455,
+        144.995
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "2k2",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        64.2,
+        150.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "22561e98-14bc-408e-a016-535f4154cd20",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-LED)",
+          [
+            63.69,
+            150.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(D1-A)",
+          [
+            64.71,
+            150.5
+          ]
+        ]
+      ],
+      "bbox": [
+        63.245,
+        150.005,
+        65.155,
+        150.995
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "22R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        87.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "d40c52ac-e6e3-4aa1-a4c4-94d0c2bbf97d",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)",
+          [
+            151.49,
+            87.5
+          ]
+        ],
+        [
+          "2",
+          "/MCU/ETH_CFG0",
+          [
+            152.51,
+            87.5
+          ]
+        ]
+      ],
+      "bbox": [
+        151.045,
+        87.005,
+        152.955,
+        87.995
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        98.4
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "912402ba-9d83-4a4e-8bbb-96551994720d",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN",
+          [
+            151.49,
+            98.4
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-IO0)",
+          [
+            152.51,
+            98.4
+          ]
+        ]
+      ],
+      "bbox": [
+        151.045,
+        97.905,
+        152.955,
+        98.895
+      ]
+    },
+    {
+      "ref": "R17",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        143.5,
+        142.99
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "3d7bc53e-12e5-40f6-84b0-e8c51496176b",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            143.5,
+            142.48
+          ]
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN",
+          [
+            143.5,
+            143.5
+          ]
+        ]
+      ],
+      "bbox": [
+        143.005,
+        142.035,
+        143.995,
+        143.945
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "22R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        94.4
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "782102c6-35bd-46a6-b085-3f9e9e14e788",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO12)",
+          [
+            151.49,
+            94.4
+          ]
+        ],
+        [
+          "2",
+          "USB_DM",
+          [
+            152.51,
+            94.4
+          ]
+        ]
+      ],
+      "bbox": [
+        151.045,
+        93.905,
+        152.955,
+        94.895
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        59.8,
+        155.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "9272102f-0bca-409f-b47a-751f40285853",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            59.29,
+            155.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(U1-VSEL)",
+          [
+            60.31,
+            155.5
+          ]
+        ]
+      ],
+      "bbox": [
+        58.845,
+        155.005,
+        60.755,
+        155.995
+      ]
+    },
+    {
+      "ref": "R24",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        208.5,
+        97.7
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "27cb90b8-adf0-4a55-9c4d-f400fc2726c3",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            207.99,
+            97.7
+          ]
+        ],
+        [
+          "2",
+          "/MCU/RTC_INT",
+          [
+            209.01,
+            97.7
+          ]
+        ]
+      ],
+      "bbox": [
+        207.545,
+        97.205,
+        209.455,
+        98.195
+      ]
+    },
+    {
+      "ref": "R27",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.5,
+        48.85
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "a87e6f45-e848-48d8-a5f8-34db53e5fe3e",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            151.99,
+            48.85
+          ]
+        ],
+        [
+          "2",
+          "INA_ALERT",
+          [
+            153.01,
+            48.85
+          ]
+        ]
+      ],
+      "bbox": [
+        151.545,
+        48.355,
+        153.455,
+        49.345
+      ]
+    },
+    {
+      "ref": "R28",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        19.0686,
+        100.71
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "uuid": "98f48702-da20-43f2-937e-6005a70a261d",
+      "pads": [
+        [
+          "1",
+          "TFT_BL_PWM",
+          [
+            19.5786,
+            100.71
+          ]
+        ],
+        [
+          "2",
+          "Net-(Q7-G)",
+          [
+            18.5586,
+            100.71
+          ]
+        ]
+      ],
+      "bbox": [
+        18.1136,
+        100.215,
+        20.0236,
+        101.205
+      ]
+    },
+    {
+      "ref": "R29",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        22.0186,
+        100.71
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "uuid": "750f1eed-107e-411e-af01-6425e8147ed2",
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)",
+          [
+            21.5086,
+            100.71
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            22.5286,
+            100.71
+          ]
+        ]
+      ],
+      "bbox": [
+        21.0636,
+        100.215,
+        22.9736,
+        101.205
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "22R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        93.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "1a823a46-88a1-4c32-a3a3-a5b4d4df72ca",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO13)",
+          [
+            151.49,
+            93.0
+          ]
+        ],
+        [
+          "2",
+          "USB_DP",
+          [
+            152.51,
+            93.0
+          ]
+        ]
+      ],
+      "bbox": [
+        151.045,
+        92.505,
+        152.955,
+        93.495
+      ]
+    },
+    {
+      "ref": "R34",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        40.7,
+        116.21
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "ROTARY ENCODER",
+      "uuid": "c15c7b8c-1595-48da-8717-139309b6341a",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            40.7,
+            116.72
+          ]
+        ],
+        [
+          "2",
+          "ENCODER_A",
+          [
+            40.7,
+            115.7
+          ]
+        ]
+      ],
+      "bbox": [
+        40.205,
+        115.255,
+        41.195,
+        117.165
+      ]
+    },
+    {
+      "ref": "R35",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        42.73,
+        116.21
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "ROTARY ENCODER",
+      "uuid": "1b84e453-894e-4662-9183-b9f635a9dc4f",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            42.73,
+            116.72
+          ]
+        ],
+        [
+          "2",
+          "ENCODER_B",
+          [
+            42.73,
+            115.7
+          ]
+        ]
+      ],
+      "bbox": [
+        42.235,
+        115.255,
+        43.225,
+        117.165
+      ]
+    },
+    {
+      "ref": "R36",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        44.76,
+        116.21
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "ROTARY ENCODER",
+      "uuid": "49585db7-8bc7-4605-aa2d-435fbf56ead2",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            44.76,
+            115.7
+          ]
+        ],
+        [
+          "2",
+          "ENCODER_SW",
+          [
+            44.76,
+            116.72
+          ]
+        ]
+      ],
+      "bbox": [
+        44.265,
+        115.255,
+        45.255,
+        117.165
+      ]
+    },
+    {
+      "ref": "R37",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        91.2
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "7db6caee-fde6-4847-b51f-da8fab1ee379",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)",
+          [
+            151.49,
+            91.2
+          ]
+        ],
+        [
+          "2",
+          "+3.3V",
+          [
+            152.51,
+            91.2
+          ]
+        ]
+      ],
+      "bbox": [
+        151.045,
+        90.705,
+        152.955,
+        91.695
+      ]
+    },
+    {
+      "ref": "R38",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        102.5,
+        60.3
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "dea059a5-4b4d-406a-9b51-499220647458",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FSW_SET",
+          [
+            101.99,
+            60.3
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            103.01,
+            60.3
+          ]
+        ]
+      ],
+      "bbox": [
+        101.545,
+        59.805,
+        103.455,
+        60.795
+      ]
+    },
+    {
+      "ref": "R39",
+      "value": "10k2",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        91.0,
+        60.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "a1a23219-ba4e-4bab-8ce5-ef1b052ff356",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            90.49,
+            60.5
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/FB_3V3",
+          [
+            91.51,
+            60.5
+          ]
+        ]
+      ],
+      "bbox": [
+        90.045,
+        60.005,
+        91.955,
+        60.995
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        209.0,
+        107.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "uuid": "f2585f05-fb6e-4884-80bf-184d71d4ff00",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3",
+          [
+            209.51,
+            107.5
+          ]
+        ],
+        [
+          "2",
+          "+3.3V",
+          [
+            208.49,
+            107.5
+          ]
+        ]
+      ],
+      "bbox": [
+        208.045,
+        107.005,
+        209.955,
+        107.995
+      ]
+    },
+    {
+      "ref": "R40",
+      "value": "3k24",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        88.0,
+        59.1
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "6130962d-0802-4613-9fa7-39c2d5f9dd81",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FB_3V3",
+          [
+            88.51,
+            59.1
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            87.49,
+            59.1
+          ]
+        ]
+      ],
+      "bbox": [
+        87.045,
+        58.605,
+        88.955,
+        59.595
+      ]
+    },
+    {
+      "ref": "R41",
+      "value": "51k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        95.0,
+        61.2
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "26391b9c-0758-4d1c-8c57-a5648f429c09",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/COMP_NODE",
+          [
+            95.0,
+            60.69
+          ]
+        ],
+        [
+          "2",
+          "Net-(C19-Pad1)",
+          [
+            95.0,
+            61.71
+          ]
+        ]
+      ],
+      "bbox": [
+        94.505,
+        60.245,
+        95.495,
+        62.155
+      ]
+    },
+    {
+      "ref": "R43",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "layer": "B.Cu",
+      "xy": [
+        88.0,
+        64.0
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "7e6ac0b9-0449-4ae1-818a-251253f3a122",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            88.0,
+            66.9625
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL",
+          [
+            88.0,
+            61.0375
+          ]
+        ]
+      ],
+      "bbox": [
+        86.045,
+        60.145,
+        89.955,
+        67.855
+      ]
+    },
+    {
+      "ref": "R47",
+      "value": "78k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        63.5,
+        54.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "acb2388b-7b00-4ebb-a9fd-2431d95fb183",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-FREQ)",
+          [
+            64.01,
+            54.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            62.99,
+            54.0
+          ]
+        ]
+      ],
+      "bbox": [
+        62.545,
+        53.505,
+        64.455,
+        54.495
+      ]
+    },
+    {
+      "ref": "R48",
+      "value": "30k1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        60.2,
+        59.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "5da794ed-9257-475d-b7b0-5d610a650f90",
+      "pads": [
+        [
+          "1",
+          "V_PRE",
+          [
+            60.71,
+            59.5
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB",
+          [
+            59.69,
+            59.5
+          ]
+        ]
+      ],
+      "bbox": [
+        59.245,
+        59.005,
+        61.155,
+        59.995
+      ]
+    },
+    {
+      "ref": "R49",
+      "value": "9k76",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        61.0,
+        62.3
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "481b4062-a1f8-4d56-8e21-76e86094322a",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_FB",
+          [
+            61.51,
+            62.3
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            60.49,
+            62.3
+          ]
+        ]
+      ],
+      "bbox": [
+        60.045,
+        61.805,
+        61.955,
+        62.795
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        209.0,
+        114.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "uuid": "d0917bb3-ac3b-4a82-8e24-20bb3117c3b6",
+      "pads": [
+        [
+          "1",
+          "PD_5V",
+          [
+            209.0,
+            115.01
+          ]
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_5V",
+          [
+            209.0,
+            113.99
+          ]
+        ]
+      ],
+      "bbox": [
+        208.505,
+        113.545,
+        209.495,
+        115.455
+      ]
+    },
+    {
+      "ref": "R50",
+      "value": "2k87",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        82.6,
+        59.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "69c66cea-6fe1-4c1b-a119-555897c3d8fd",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL",
+          [
+            83.11,
+            59.0
+          ]
+        ],
+        [
+          "2",
+          "Net-(U6-REF)",
+          [
+            82.09,
+            59.0
+          ]
+        ]
+      ],
+      "bbox": [
+        81.645,
+        58.505,
+        83.555,
+        59.495
+      ]
+    },
+    {
+      "ref": "R51",
+      "value": "9k76",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        79.7,
+        59.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "d9d958fe-bc3b-4d14-a43e-3c5b545f4e63",
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)",
+          [
+            80.21,
+            59.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            79.19,
+            59.0
+          ]
+        ]
+      ],
+      "bbox": [
+        78.745,
+        58.505,
+        80.655,
+        59.495
+      ]
+    },
+    {
+      "ref": "R52",
+      "value": "2k0",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        66.5,
+        62.3
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "652b7b7c-81ac-4a38-ac14-fd21c7672e1d",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-COMP)",
+          [
+            67.01,
+            62.3
+          ]
+        ],
+        [
+          "2",
+          "Net-(C24-Pad1)",
+          [
+            65.99,
+            62.3
+          ]
+        ]
+      ],
+      "bbox": [
+        65.545,
+        61.805,
+        67.455,
+        62.795
+      ]
+    },
+    {
+      "ref": "R53",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        75.5,
+        60.1
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "329d6b03-4493-4086-ae9d-f0be91f0a3a0",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT",
+          [
+            76.01,
+            60.1
+          ]
+        ],
+        [
+          "2",
+          "Net-(U11-EN)",
+          [
+            74.99,
+            60.1
+          ]
+        ]
+      ],
+      "bbox": [
+        74.545,
+        59.605,
+        76.455,
+        60.595
+      ]
+    },
+    {
+      "ref": "R54",
+      "value": "1k0",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        106.8,
+        62.2
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "979fa127-6c33-480c-af4d-fb90ebd75f23",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV",
+          [
+            106.29,
+            62.2
+          ]
+        ],
+        [
+          "2",
+          "Net-(C30-Pad1)",
+          [
+            107.31,
+            62.2
+          ]
+        ]
+      ],
+      "bbox": [
+        105.845,
+        61.705,
+        107.755,
+        62.695
+      ]
+    },
+    {
+      "ref": "R55",
+      "value": "237k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        111.0,
+        62.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "75292d9e-edad-4214-8cf3-2c304a623fbe",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            111.0,
+            63.01
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/OV_SENSE",
+          [
+            111.0,
+            61.99
+          ]
+        ]
+      ],
+      "bbox": [
+        110.505,
+        61.545,
+        111.495,
+        63.455
+      ]
+    },
+    {
+      "ref": "R56",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        113.2,
+        62.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "dab12b80-c69d-4bb3-82b3-caabd00bf81d",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/OV_SENSE",
+          [
+            113.2,
+            63.01
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            113.2,
+            61.99
+          ]
+        ]
+      ],
+      "bbox": [
+        112.705,
+        61.545,
+        113.695,
+        63.455
+      ]
+    },
+    {
+      "ref": "R58",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "F.Cu",
+      "xy": [
+        115.4,
+        62.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "bfcfa918-62e6-4c68-802e-9c5115f95a5e",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN",
+          [
+            115.4,
+            63.01
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            115.4,
+            61.99
+          ]
+        ]
+      ],
+      "bbox": [
+        114.905,
+        61.545,
+        115.895,
+        63.455
+      ]
+    },
+    {
+      "ref": "R59",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "layer": "B.Cu",
+      "xy": [
+        167.0,
+        62.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "0b455597-c18b-4fd3-9dc9-2635a11184ce",
+      "pads": [
+        [
+          "1",
+          "OUT_POS",
+          [
+            166.175,
+            62.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            167.825,
+            62.5
+          ]
+        ]
+      ],
+      "bbox": [
+        165.495,
+        61.745,
+        168.505,
+        63.255
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        213.5,
+        114.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "uuid": "6bd892b8-824d-4ba2-a8b2-8292b7263d47",
+      "pads": [
+        [
+          "1",
+          "PD_5V",
+          [
+            213.5,
+            115.01
+          ]
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_5V",
+          [
+            213.5,
+            113.99
+          ]
+        ]
+      ],
+      "bbox": [
+        213.005,
+        113.545,
+        213.995,
+        115.455
+      ]
+    },
+    {
+      "ref": "R60",
+      "value": "5R6",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "layer": "F.Cu",
+      "xy": [
+        24.7686,
+        96.7
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "uuid": "a4f26e04-660d-46f6-a96d-c9092ebd2c1a",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            23.8561,
+            96.7
+          ]
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A",
+          [
+            25.6811,
+            96.7
+          ]
+        ]
+      ],
+      "bbox": [
+        23.0636,
+        95.725,
+        26.4736,
+        97.675
+      ]
+    },
+    {
+      "ref": "R61",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        146.5,
+        62.95
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "3887163f-49cb-427a-934a-e0e03a42893b",
+      "pads": [
+        [
+          "1",
+          "OUT_EN",
+          [
+            145.99,
+            62.95
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            147.01,
+            62.95
+          ]
+        ]
+      ],
+      "bbox": [
+        145.545,
+        62.455,
+        147.455,
+        63.445
+      ]
+    },
+    {
+      "ref": "R62",
+      "value": "5k1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        29.0,
+        74.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "f69829e1-1838-4d1a-9d7d-fea277078227",
+      "pads": [
+        [
+          "1",
+          "USB_CC1",
+          [
+            29.51,
+            74.0
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            28.49,
+            74.0
+          ]
+        ]
+      ],
+      "bbox": [
+        28.045,
+        73.505,
+        29.955,
+        74.495
+      ]
+    },
+    {
+      "ref": "R63",
+      "value": "5k1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        29.0,
+        80.9
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "d77541c9-4564-4a20-836c-24e577717818",
+      "pads": [
+        [
+          "1",
+          "USB_CC2",
+          [
+            29.51,
+            80.9
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            28.49,
+            80.9
+          ]
+        ]
+      ],
+      "bbox": [
+        28.045,
+        80.405,
+        29.955,
+        81.395
+      ]
+    },
+    {
+      "ref": "R64",
+      "value": "2k0",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        64.5,
+        155.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "d473336a-0401-4532-97ce-24ccf5b8c8b4",
+      "pads": [
+        [
+          "1",
+          "Net-(R64-Pad1)",
+          [
+            63.99,
+            155.5
+          ]
+        ],
+        [
+          "2",
+          "PD_INT_3V3",
+          [
+            65.01,
+            155.5
+          ]
+        ]
+      ],
+      "bbox": [
+        63.545,
+        155.005,
+        65.455,
+        155.995
+      ]
+    },
+    {
+      "ref": "R65",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        66.8,
+        155.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "5ca4c102-bdab-4af8-88ec-2411357de763",
+      "pads": [
+        [
+          "1",
+          "Net-(R65-Pad1)",
+          [
+            66.29,
+            155.5
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            67.31,
+            155.5
+          ]
+        ]
+      ],
+      "bbox": [
+        65.845,
+        155.005,
+        67.755,
+        155.995
+      ]
+    },
+    {
+      "ref": "R66",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "layer": "F.Cu",
+      "xy": [
+        198.5,
+        57.5
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "4d236090-5898-4448-b326-0b8bc3218143",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            198.5,
+            56.675
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/DISCH_G",
+          [
+            198.5,
+            58.325
+          ]
+        ]
+      ],
+      "bbox": [
+        197.745,
+        55.995,
+        199.255,
+        59.005
+      ]
+    },
+    {
+      "ref": "R67",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "layer": "F.Cu",
+      "xy": [
+        184.0,
+        57.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "ea71a38c-b847-4426-9ee7-0571573efb83",
+      "pads": [
+        [
+          "1",
+          "OUT_POS",
+          [
+            181.0375,
+            57.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(Q6-D)",
+          [
+            186.9625,
+            57.5
+          ]
+        ]
+      ],
+      "bbox": [
+        180.145,
+        55.545,
+        187.855,
+        59.455
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        213.5,
+        107.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "uuid": "fc13fb33-7bb7-409f-82ff-434b52cfe415",
+      "pads": [
+        [
+          "1",
+          "+3.3V",
+          [
+            212.99,
+            107.5
+          ]
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3",
+          [
+            214.01,
+            107.5
+          ]
+        ]
+      ],
+      "bbox": [
+        212.545,
+        107.005,
+        214.455,
+        107.995
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        62.2,
+        155.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "34917b35-e889-4913-9833-990cded2896b",
+      "pads": [
+        [
+          "1",
+          "PD_INT_5V",
+          [
+            61.69,
+            155.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(R64-Pad1)",
+          [
+            62.71,
+            155.5
+          ]
+        ]
+      ],
+      "bbox": [
+        61.245,
+        155.005,
+        63.155,
+        155.995
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        69.1,
+        155.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "8a80b680-cc2c-4dfd-a1c6-735b7d2b934f",
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3",
+          [
+            68.59,
+            155.5
+          ]
+        ],
+        [
+          "2",
+          "Net-(R65-Pad1)",
+          [
+            69.61,
+            155.5
+          ]
+        ]
+      ],
+      "bbox": [
+        68.145,
+        155.005,
+        70.055,
+        155.995
+      ]
+    },
+    {
+      "ref": "RShunt1",
+      "value": "5m0",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "layer": "B.Cu",
+      "xy": [
+        157.0,
+        56.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "2d71ff63-b8b7-4e15-ad36-18232092898e",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            154.0375,
+            56.5
+          ]
+        ],
+        [
+          "2",
+          "OUT_POS",
+          [
+            159.9625,
+            56.5
+          ]
+        ]
+      ],
+      "bbox": [
+        153.145,
+        54.545,
+        160.855,
+        58.455
+      ]
+    },
+    {
+      "ref": "SW1",
+      "value": "BOOT / PTS810",
+      "footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+      "layer": "B.Cu",
+      "xy": [
+        158.5,
+        116.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "f3f67cac-36f0-4e49-b0ee-3ca11a3c648d",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            159.575,
+            118.575
+          ]
+        ],
+        [
+          "1",
+          "GND",
+          [
+            159.575,
+            114.425
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)",
+          [
+            157.425,
+            118.575
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)",
+          [
+            157.425,
+            114.425
+          ]
+        ]
+      ],
+      "bbox": [
+        156.625,
+        113.625,
+        160.375,
+        119.375
+      ]
+    },
+    {
+      "ref": "SW2",
+      "value": "RESET / PTS810",
+      "footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+      "layer": "B.Cu",
+      "xy": [
+        158.5,
+        109.5
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "e68b89b6-49a1-4394-b8ee-7ab94c2e9d99",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            159.575,
+            111.575
+          ]
+        ],
+        [
+          "1",
+          "GND",
+          [
+            159.575,
+            107.425
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-EN)",
+          [
+            157.425,
+            111.575
+          ]
+        ],
+        [
+          "2",
+          "Net-(U2-EN)",
+          [
+            157.425,
+            107.425
+          ]
+        ]
+      ],
+      "bbox": [
+        156.625,
+        106.625,
+        160.375,
+        112.375
+      ]
+    },
+    {
+      "ref": "TH1",
+      "value": "10k NTC",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "layer": "B.Cu",
+      "xy": [
+        56.0,
+        145.2
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "525540e8-2d09-4dd6-9e85-d9f0c1f36ea0",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            56.0,
+            145.71
+          ]
+        ],
+        [
+          "2",
+          "Net-(U1-OTP)",
+          [
+            56.0,
+            144.69
+          ]
+        ]
+      ],
+      "bbox": [
+        55.505,
+        144.245,
+        56.495,
+        146.155
+      ]
+    },
+    {
+      "ref": "TP1",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        46.5,
+        140.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "b0e90fef-eb6e-4583-b9ef-baaba19ab11b",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS",
+          [
+            46.5,
+            140.0
+          ]
+        ]
+      ],
+      "bbox": [
+        45.475,
+        138.975,
+        47.525,
+        141.025
+      ]
+    },
+    {
+      "ref": "TP10",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        105.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "2f2ccc8e-f9c6-4a10-8913-f7cbd0db94db",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN",
+          [
+            152.0,
+            105.0
+          ]
+        ]
+      ],
+      "bbox": [
+        150.975,
+        103.975,
+        153.025,
+        106.025
+      ]
+    },
+    {
+      "ref": "TP11",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "F.Cu",
+      "xy": [
+        207.4777,
+        122.4813
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "d1369d44-b041-46b0-895f-84f110bda202",
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_TX",
+          [
+            207.4777,
+            122.4813
+          ]
+        ]
+      ],
+      "bbox": [
+        206.4527,
+        121.4563,
+        208.5027,
+        123.5063
+      ]
+    },
+    {
+      "ref": "TP12",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "F.Cu",
+      "xy": [
+        210.5702,
+        122.4813
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "6ec3984b-ea40-439b-9261-0c47021b381e",
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_RX",
+          [
+            210.5702,
+            122.4813
+          ]
+        ]
+      ],
+      "bbox": [
+        209.5452,
+        121.4563,
+        211.5952,
+        123.5063
+      ]
+    },
+    {
+      "ref": "TP13",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "F.Cu",
+      "xy": [
+        213.6628,
+        122.4813
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "e9b04ec4-e15d-4ae3-b51a-a732bd5be394",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            213.6628,
+            122.4813
+          ]
+        ]
+      ],
+      "bbox": [
+        212.6378,
+        121.4563,
+        214.6878,
+        123.5063
+      ]
+    },
+    {
+      "ref": "TP14",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        153.0,
+        155.69
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "uuid": "91e77a5f-c449-4697-a441-c462cec5f893",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_RUN",
+          [
+            153.0,
+            155.69
+          ]
+        ]
+      ],
+      "bbox": [
+        151.975,
+        154.665,
+        154.025,
+        156.715
+      ]
+    },
+    {
+      "ref": "TP2",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        54.5,
+        135.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "f1bff415-9fc4-4ce8-a31f-93d8da5bb681",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            54.5,
+            135.5
+          ]
+        ]
+      ],
+      "bbox": [
+        53.475,
+        134.475,
+        55.525,
+        136.525
+      ]
+    },
+    {
+      "ref": "TP3",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        69.5,
+        140.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "489806a6-4a6f-410d-8915-51d60fd14716",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT",
+          [
+            69.5,
+            140.0
+          ]
+        ]
+      ],
+      "bbox": [
+        68.475,
+        138.975,
+        70.525,
+        141.025
+      ]
+    },
+    {
+      "ref": "TP4",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        52.0,
+        149.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "f96f8872-6e73-4d7c-9831-a2257f17f968",
+      "pads": [
+        [
+          "1",
+          "PD_5V",
+          [
+            52.0,
+            149.0
+          ]
+        ]
+      ],
+      "bbox": [
+        50.975,
+        147.975,
+        53.025,
+        150.025
+      ]
+    },
+    {
+      "ref": "TP5",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        61.0,
+        134.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "cdb47d6d-93bc-414a-804d-405b3fe5d43a",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_GATE",
+          [
+            61.0,
+            134.5
+          ]
+        ]
+      ],
+      "bbox": [
+        59.975,
+        133.475,
+        62.025,
+        135.525
+      ]
+    },
+    {
+      "ref": "TP6",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        207.4777,
+        125.5738
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "8cba68c7-9305-4cf0-96b3-a587c37d21a7",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3",
+          [
+            207.4777,
+            125.5738
+          ]
+        ]
+      ],
+      "bbox": [
+        206.4527,
+        124.5488,
+        208.5027,
+        126.5988
+      ]
+    },
+    {
+      "ref": "TP7",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        210.5702,
+        125.5738
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "50b60b44-8c44-4f40-9821-7a59ac60405d",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SDA_3V3",
+          [
+            210.5702,
+            125.5738
+          ]
+        ]
+      ],
+      "bbox": [
+        209.5452,
+        124.5488,
+        211.5952,
+        126.5988
+      ]
+    },
+    {
+      "ref": "TP8",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        213.6628,
+        125.5738
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "4a2bbf56-112f-41f9-b24b-ca592d005b2c",
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3",
+          [
+            213.6628,
+            125.5738
+          ]
+        ]
+      ],
+      "bbox": [
+        212.6378,
+        124.5488,
+        214.6878,
+        126.5988
+      ]
+    },
+    {
+      "ref": "TP9",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        84.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "4e838c78-a8f7-4074-a921-175ffa74536e",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_CFG0",
+          [
+            152.0,
+            84.5
+          ]
+        ]
+      ],
+      "bbox": [
+        150.975,
+        83.475,
+        153.025,
+        85.525
+      ]
+    },
+    {
+      "ref": "U1",
+      "value": "AP33772SDKZ-13-FA02",
+      "footprint": "Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "layer": "B.Cu",
+      "xy": [
+        60.0,
+        150.5
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "5613f3cf-cf40-4885-bfe0-9fa698a659a7",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            60.675,
+            151.175
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            60.675,
+            149.825
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            59.325,
+            151.175
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            59.325,
+            149.825
+          ]
+        ],
+        [
+          "1",
+          "USB_VBUS",
+          [
+            61.9625,
+            149.25
+          ]
+        ],
+        [
+          "10",
+          "unconnected-(U1-NC-Pad10)",
+          [
+            59.75,
+            152.4625
+          ]
+        ],
+        [
+          "11",
+          "Net-(U1-VSEL)",
+          [
+            59.25,
+            152.4625
+          ]
+        ],
+        [
+          "12",
+          "Net-(U1-V18)",
+          [
+            58.75,
+            152.4625
+          ]
+        ],
+        [
+          "13",
+          "Net-(U1-OTP)",
+          [
+            58.0375,
+            151.75
+          ]
+        ],
+        [
+          "14",
+          "unconnected-(U1-NC-Pad14)",
+          [
+            58.0375,
+            151.25
+          ]
+        ],
+        [
+          "15",
+          "Net-(U1-IFB)",
+          [
+            58.0375,
+            150.75
+          ]
+        ],
+        [
+          "16",
+          "USB_CC2",
+          [
+            58.0375,
+            150.25
+          ]
+        ],
+        [
+          "17",
+          "USB_CC1",
+          [
+            58.0375,
+            149.75
+          ]
+        ],
+        [
+          "18",
+          "unconnected-(U1-DN-Pad18)",
+          [
+            58.0375,
+            149.25
+          ]
+        ],
+        [
+          "19",
+          "unconnected-(U1-DP-Pad19)",
+          [
+            58.75,
+            148.5375
+          ]
+        ],
+        [
+          "2",
+          "unconnected-(U1-NC-Pad2)",
+          [
+            61.9625,
+            149.75
+          ]
+        ],
+        [
+          "20",
+          "PD_5V",
+          [
+            59.25,
+            148.5375
+          ]
+        ],
+        [
+          "21",
+          "unconnected-(U1-NC-Pad21)",
+          [
+            59.75,
+            148.5375
+          ]
+        ],
+        [
+          "22",
+          "Net-(U1-VOUT)",
+          [
+            60.25,
+            148.5375
+          ]
+        ],
+        [
+          "23",
+          "Net-(U1-PWR_EN)",
+          [
+            60.75,
+            148.5375
+          ]
+        ],
+        [
+          "24",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          [
+            61.25,
+            148.5375
+          ]
+        ],
+        [
+          "25",
+          "GND",
+          [
+            60.0,
+            150.5
+          ]
+        ],
+        [
+          "3",
+          "GND",
+          [
+            61.9625,
+            150.25
+          ]
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_5V",
+          [
+            61.9625,
+            150.75
+          ]
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_5V",
+          [
+            61.9625,
+            151.25
+          ]
+        ],
+        [
+          "6",
+          "unconnected-(U1-FLIP-Pad6)",
+          [
+            61.9625,
+            151.75
+          ]
+        ],
+        [
+          "7",
+          "unconnected-(U1-GPIO-Pad7)",
+          [
+            61.25,
+            152.4625
+          ]
+        ],
+        [
+          "8",
+          "Net-(U1-LED)",
+          [
+            60.75,
+            152.4625
+          ]
+        ],
+        [
+          "9",
+          "PD_INT_5V",
+          [
+            60.25,
+            152.4625
+          ]
+        ]
+      ],
+      "bbox": [
+        57.345,
+        147.845,
+        63.03,
+        153.155
+      ]
+    },
+    {
+      "ref": "U10",
+      "value": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "layer": "B.Cu",
+      "xy": [
+        32.7,
+        77.3
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "dc1ecd20-3377-4f0b-900e-772d7ed8c9f9",
+      "pads": [
+        [
+          "1",
+          "USB_DM",
+          [
+            33.8375,
+            76.35
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            33.8375,
+            77.3
+          ]
+        ],
+        [
+          "3",
+          "USB_DP",
+          [
+            33.8375,
+            78.25
+          ]
+        ],
+        [
+          "4",
+          "USB_DP",
+          [
+            31.5625,
+            78.25
+          ]
+        ],
+        [
+          "5",
+          "+3.3V",
+          [
+            31.5625,
+            77.3
+          ]
+        ],
+        [
+          "6",
+          "USB_DM",
+          [
+            31.5625,
+            76.35
+          ]
+        ]
+      ],
+      "bbox": [
+        30.625,
+        75.4,
+        34.775,
+        79.025
+      ]
+    },
+    {
+      "ref": "U11",
+      "value": "TPS55340PWPR",
+      "footprint": "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias",
+      "layer": "B.Cu",
+      "xy": [
+        69.85,
+        55.34
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "TPS55340 PRE-BOOST",
+      "uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            70.64,
+            56.155
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            70.64,
+            54.525
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            69.06,
+            56.155
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            69.06,
+            54.525
+          ]
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          [
+            72.7125,
+            53.39
+          ]
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)",
+          [
+            66.9875,
+            55.99
+          ]
+        ],
+        [
+          "11",
+          "GND",
+          [
+            66.9875,
+            55.34
+          ]
+        ],
+        [
+          "12",
+          "GND",
+          [
+            66.9875,
+            54.69
+          ]
+        ],
+        [
+          "13",
+          "GND",
+          [
+            66.9875,
+            54.04
+          ]
+        ],
+        [
+          "14",
+          "GND",
+          [
+            66.9875,
+            53.39
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            57.54
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            56.44
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            54.24
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            70.95,
+            53.14
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            57.54
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            56.44
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            54.24
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            69.85,
+            53.14
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            57.54
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            56.44
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            55.34
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            54.24
+          ]
+        ],
+        [
+          "15",
+          "GND",
+          [
+            68.75,
+            53.14
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          [
+            72.7125,
+            54.04
+          ]
+        ],
+        [
+          "3",
+          "PD_VOUT",
+          [
+            72.7125,
+            54.69
+          ]
+        ],
+        [
+          "4",
+          "Net-(U11-EN)",
+          [
+            72.7125,
+            55.34
+          ]
+        ],
+        [
+          "5",
+          "Net-(U11-SS)",
+          [
+            72.7125,
+            55.99
+          ]
+        ],
+        [
+          "6",
+          "GND",
+          [
+            72.7125,
+            56.64
+          ]
+        ],
+        [
+          "7",
+          "GND",
+          [
+            72.7125,
+            57.29
+          ]
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)",
+          [
+            66.9875,
+            57.29
+          ]
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB",
+          [
+            66.9875,
+            56.64
+          ]
+        ]
+      ],
+      "bbox": [
+        65.925,
+        52.4,
+        73.775,
+        58.115
+      ]
+    },
+    {
+      "ref": "U12",
+      "value": "LM74801-Q1",
+      "footprint": "Package_SON:WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm",
+      "layer": "F.Cu",
+      "xy": [
+        117.5,
+        56.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "a88757d0-5fd6-4d33-b292-24e961c29136",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            117.125,
+            55.875
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            117.125,
+            57.125
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            117.875,
+            55.875
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            117.875,
+            57.125
+          ]
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DGATE",
+          [
+            116.0625,
+            55.25
+          ]
+        ],
+        [
+          "10",
+          "V_PRE",
+          [
+            118.9375,
+            56.25
+          ]
+        ],
+        [
+          "11",
+          "Net-(U12-CAP)",
+          [
+            118.9375,
+            55.75
+          ]
+        ],
+        [
+          "12",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            118.9375,
+            55.25
+          ]
+        ],
+        [
+          "13",
+          "unconnected-(U12-RTN-Pad13)",
+          [
+            117.5,
+            56.5
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON",
+          [
+            116.0625,
+            55.75
+          ]
+        ],
+        [
+          "3",
+          "V_PRE",
+          [
+            116.0625,
+            56.25
+          ]
+        ],
+        [
+          "4",
+          "V_PRE",
+          [
+            116.0625,
+            56.75
+          ]
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/OV_SENSE",
+          [
+            116.0625,
+            57.25
+          ]
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_EN",
+          [
+            116.0625,
+            57.75
+          ]
+        ],
+        [
+          "7",
+          "GND",
+          [
+            118.9375,
+            57.75
+          ]
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/GATE_DRV",
+          [
+            118.9375,
+            57.25
+          ]
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/SRC_COMMON",
+          [
+            118.9375,
+            56.75
+          ]
+        ]
+      ],
+      "bbox": [
+        114.97,
+        54.725,
+        119.655,
+        58.275
+      ]
+    },
+    {
+      "ref": "U13",
+      "value": "74LVC1G08",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "layer": "B.Cu",
+      "xy": [
+        150.0,
+        62.0
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "a4465aab-9a4c-47a0-8551-9ed10363d361",
+      "pads": [
+        [
+          "1",
+          "OUT_EN",
+          [
+            148.8625,
+            62.95
+          ]
+        ],
+        [
+          "2",
+          "INA_ALERT",
+          [
+            148.8625,
+            62.0
+          ]
+        ],
+        [
+          "3",
+          "GND",
+          [
+            148.8625,
+            61.05
+          ]
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/SW_EN",
+          [
+            151.1375,
+            61.05
+          ]
+        ],
+        [
+          "5",
+          "+3.3V",
+          [
+            151.1375,
+            62.95
+          ]
+        ]
+      ],
+      "bbox": [
+        147.925,
+        60.275,
+        152.075,
+        63.9
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "ESP32-C6-MINI-1-H4",
+      "footprint": "RF_Module:ESP32-C6-MINI-1",
+      "layer": "B.Cu",
+      "xy": [
+        160.62,
+        93.6
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "312836b7-5ddc-4a3c-8361-9c10e127bb46",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            164.62,
+            99.5
+          ]
+        ],
+        [
+          "10",
+          "TFT_MOSI",
+          [
+            157.42,
+            99.5
+          ]
+        ],
+        [
+          "11",
+          "GND",
+          [
+            156.62,
+            99.5
+          ]
+        ],
+        [
+          "12",
+          "Net-(U2-IO0)",
+          [
+            155.72,
+            98.4
+          ]
+        ],
+        [
+          "13",
+          "TFT_BL_PWM",
+          [
+            155.72,
+            97.6
+          ]
+        ],
+        [
+          "14",
+          "GND",
+          [
+            155.72,
+            96.8
+          ]
+        ],
+        [
+          "15",
+          "OUT_EN",
+          [
+            155.72,
+            96.0
+          ]
+        ],
+        [
+          "16",
+          "TFT_DC",
+          [
+            155.72,
+            95.2
+          ]
+        ],
+        [
+          "17",
+          "Net-(U2-IO12)",
+          [
+            155.72,
+            94.4
+          ]
+        ],
+        [
+          "18",
+          "Net-(U2-IO13)",
+          [
+            155.72,
+            93.6
+          ]
+        ],
+        [
+          "19",
+          "TFT_CS",
+          [
+            155.72,
+            92.8
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            163.82,
+            99.5
+          ]
+        ],
+        [
+          "20",
+          "TFT_RST",
+          [
+            155.72,
+            92.0
+          ]
+        ],
+        [
+          "21",
+          "unconnected-(U2-NC-Pad21)",
+          [
+            155.72,
+            91.2
+          ]
+        ],
+        [
+          "22",
+          "Net-(U2-IO8)",
+          [
+            155.72,
+            90.4
+          ]
+        ],
+        [
+          "23",
+          "Net-(U2-IO9)",
+          [
+            155.72,
+            89.6
+          ]
+        ],
+        [
+          "24",
+          "PD_I2C_SCL_3V3",
+          [
+            155.72,
+            88.8
+          ]
+        ],
+        [
+          "25",
+          "PD_I2C_SDA_3V3",
+          [
+            156.62,
+            87.7
+          ]
+        ],
+        [
+          "26",
+          "PD_INT_3V3",
+          [
+            157.42,
+            87.7
+          ]
+        ],
+        [
+          "27",
+          "ENCODER_SW",
+          [
+            158.22,
+            87.7
+          ]
+        ],
+        [
+          "28",
+          "ENCODER_A",
+          [
+            159.02,
+            87.7
+          ]
+        ],
+        [
+          "29",
+          "ENCODER_B",
+          [
+            159.82,
+            87.7
+          ]
+        ],
+        [
+          "3",
+          "+3.3V",
+          [
+            163.02,
+            99.5
+          ]
+        ],
+        [
+          "30",
+          "/MCU/UART_RX",
+          [
+            160.62,
+            87.7
+          ]
+        ],
+        [
+          "31",
+          "/MCU/UART_TX",
+          [
+            161.42,
+            87.7
+          ]
+        ],
+        [
+          "32",
+          "unconnected-(U2-NC-Pad32)",
+          [
+            162.22,
+            87.7
+          ]
+        ],
+        [
+          "33",
+          "unconnected-(U2-NC-Pad33)",
+          [
+            163.02,
+            87.7
+          ]
+        ],
+        [
+          "34",
+          "unconnected-(U2-NC-Pad34)",
+          [
+            163.82,
+            87.7
+          ]
+        ],
+        [
+          "35",
+          "unconnected-(U2-NC-Pad35)",
+          [
+            164.62,
+            87.7
+          ]
+        ],
+        [
+          "36",
+          "GND",
+          [
+            165.52,
+            88.8
+          ]
+        ],
+        [
+          "37",
+          "GND",
+          [
+            165.52,
+            89.6
+          ]
+        ],
+        [
+          "38",
+          "GND",
+          [
+            165.52,
+            90.4
+          ]
+        ],
+        [
+          "39",
+          "GND",
+          [
+            165.52,
+            91.2
+          ]
+        ],
+        [
+          "4",
+          "unconnected-(U2-NC-Pad4)",
+          [
+            162.22,
+            99.5
+          ]
+        ],
+        [
+          "40",
+          "GND",
+          [
+            165.52,
+            92.0
+          ]
+        ],
+        [
+          "41",
+          "GND",
+          [
+            165.52,
+            92.8
+          ]
+        ],
+        [
+          "42",
+          "GND",
+          [
+            165.52,
+            93.6
+          ]
+        ],
+        [
+          "43",
+          "GND",
+          [
+            165.52,
+            94.4
+          ]
+        ],
+        [
+          "44",
+          "GND",
+          [
+            165.52,
+            95.2
+          ]
+        ],
+        [
+          "45",
+          "GND",
+          [
+            165.52,
+            96.0
+          ]
+        ],
+        [
+          "46",
+          "GND",
+          [
+            165.52,
+            96.8
+          ]
+        ],
+        [
+          "47",
+          "GND",
+          [
+            165.52,
+            97.6
+          ]
+        ],
+        [
+          "48",
+          "GND",
+          [
+            165.52,
+            98.4
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            158.645,
+            95.575
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            160.62,
+            95.575
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            162.595,
+            95.575
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            158.645,
+            93.6
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            160.62,
+            93.6
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            162.595,
+            93.6
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            158.645,
+            91.625
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            160.62,
+            91.625
+          ]
+        ],
+        [
+          "49",
+          "GND",
+          [
+            162.595,
+            91.625
+          ]
+        ],
+        [
+          "5",
+          "/MCU/RTC_INT",
+          [
+            161.42,
+            99.5
+          ]
+        ],
+        [
+          "50",
+          "GND",
+          [
+            165.57,
+            87.65
+          ]
+        ],
+        [
+          "51",
+          "GND",
+          [
+            155.67,
+            87.65
+          ]
+        ],
+        [
+          "52",
+          "GND",
+          [
+            155.67,
+            99.55
+          ]
+        ],
+        [
+          "53",
+          "GND",
+          [
+            165.57,
+            99.55
+          ]
+        ],
+        [
+          "6",
+          "INA_ALERT",
+          [
+            160.62,
+            99.5
+          ]
+        ],
+        [
+          "7",
+          "unconnected-(U2-NC-Pad7)",
+          [
+            159.82,
+            99.5
+          ]
+        ],
+        [
+          "8",
+          "Net-(U2-EN)",
+          [
+            159.02,
+            99.5
+          ]
+        ],
+        [
+          "9",
+          "TFT_SCLK",
+          [
+            158.22,
+            99.5
+          ]
+        ]
+      ],
+      "bbox": [
+        154.745,
+        71.975,
+        186.645,
+        115.225
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "INA226",
+      "footprint": "Package_SO:TSSOP-10_3x3mm_P0.5mm",
+      "layer": "B.Cu",
+      "xy": [
+        157.75,
+        51.0
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "81402291-de1b-4da7-92dd-b010b70386d8",
+      "pads": [
+        [
+          "1",
+          "GND",
+          [
+            156.75,
+            48.85
+          ]
+        ],
+        [
+          "10",
+          "/USB_PD_CONTROLLER/SW_OUT",
+          [
+            156.75,
+            53.15
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            157.25,
+            48.85
+          ]
+        ],
+        [
+          "3",
+          "INA_ALERT",
+          [
+            157.75,
+            48.85
+          ]
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_3V3",
+          [
+            158.25,
+            48.85
+          ]
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_3V3",
+          [
+            158.75,
+            48.85
+          ]
+        ],
+        [
+          "6",
+          "+3.3V",
+          [
+            158.75,
+            53.15
+          ]
+        ],
+        [
+          "7",
+          "GND",
+          [
+            158.25,
+            53.15
+          ]
+        ],
+        [
+          "8",
+          "OUT_POS",
+          [
+            157.75,
+            53.15
+          ]
+        ],
+        [
+          "9",
+          "OUT_POS",
+          [
+            157.25,
+            53.15
+          ]
+        ]
+      ],
+      "bbox": [
+        155.95,
+        47.845,
+        159.525,
+        54.155
+      ]
+    },
+    {
+      "ref": "U4",
+      "value": "BQ32000",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "layer": "B.Cu",
+      "xy": [
+        214.0,
+        99.0
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "fee4aab2-2145-45e4-b657-bc15a74495c9",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)",
+          [
+            216.475,
+            97.095
+          ]
+        ],
+        [
+          "2",
+          "Net-(U4-OSCO)",
+          [
+            216.475,
+            98.365
+          ]
+        ],
+        [
+          "3",
+          "Net-(U4-VBACK)",
+          [
+            216.475,
+            99.635
+          ]
+        ],
+        [
+          "4",
+          "GND",
+          [
+            216.475,
+            100.905
+          ]
+        ],
+        [
+          "5",
+          "PD_I2C_SDA_3V3",
+          [
+            211.525,
+            100.905
+          ]
+        ],
+        [
+          "6",
+          "PD_I2C_SCL_3V3",
+          [
+            211.525,
+            99.635
+          ]
+        ],
+        [
+          "7",
+          "/MCU/RTC_INT",
+          [
+            211.525,
+            98.365
+          ]
+        ],
+        [
+          "8",
+          "+3.3V",
+          [
+            211.525,
+            97.095
+          ]
+        ]
+      ],
+      "bbox": [
+        210.275,
+        96.14,
+        217.725,
+        101.725
+      ]
+    },
+    {
+      "ref": "U5",
+      "value": "AOZ1284PI",
+      "footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.71x3.7mm",
+      "layer": "B.Cu",
+      "xy": [
+        98.2,
+        56.31
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "28f576c4-1891-45ed-a012-cdbb619ddac3",
+      "pads": [
+        [
+          "",
+          "",
+          [
+            98.88,
+            57.235
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            98.88,
+            55.385
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            97.52,
+            57.235
+          ]
+        ],
+        [
+          "",
+          "",
+          [
+            97.52,
+            55.385
+          ]
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW",
+          [
+            100.7025,
+            54.405
+          ]
+        ],
+        [
+          "2",
+          "Net-(U5-BST)",
+          [
+            100.7025,
+            55.675
+          ]
+        ],
+        [
+          "3",
+          "GND",
+          [
+            100.7025,
+            56.945
+          ]
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/FSW_SET",
+          [
+            100.7025,
+            58.215
+          ]
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/COMP_NODE",
+          [
+            95.6975,
+            58.215
+          ]
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/FB_3V3",
+          [
+            95.6975,
+            56.945
+          ]
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/SS_RAMP",
+          [
+            95.6975,
+            55.675
+          ]
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/EN_CTRL",
+          [
+            95.6975,
+            54.405
+          ]
+        ],
+        [
+          "9",
+          "V_PRE",
+          [
+            98.2,
+            56.31
+          ]
+        ]
+      ],
+      "bbox": [
+        94.475,
+        53.45,
+        101.925,
+        59.035
+      ]
+    },
+    {
+      "ref": "U6",
+      "value": "TLV431BQDBZT",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "layer": "B.Cu",
+      "xy": [
+        79.935,
+        56.0
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "AOZ1284 3.3V BUCK",
+      "uuid": "0c0a927d-76e9-447d-9380-462f5d3121ab",
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)",
+          [
+            78.985,
+            55.0625
+          ]
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL",
+          [
+            80.885,
+            55.0625
+          ]
+        ],
+        [
+          "3",
+          "GND",
+          [
+            79.935,
+            56.9375
+          ]
+        ]
+      ],
+      "bbox": [
+        78.21,
+        54.045,
+        81.66,
+        57.955
+      ]
+    },
+    {
+      "ref": "Y1",
+      "value": "32.768kHz",
+      "footprint": "Crystal:Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm",
+      "layer": "B.Cu",
+      "xy": [
+        223.5,
+        97.725
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "4df5b8b2-3508-490b-8cf7-54fb3ae3b155",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)",
+          [
+            220.75,
+            96.125
+          ]
+        ],
+        [
+          "2",
+          "GND",
+          [
+            226.25,
+            96.125
+          ]
+        ],
+        [
+          "3",
+          "GND",
+          [
+            226.25,
+            99.325
+          ]
+        ],
+        [
+          "4",
+          "Net-(U4-OSCO)",
+          [
+            220.75,
+            99.325
+          ]
+        ]
+      ],
+      "bbox": [
+        218.975,
+        94.65,
+        228.025,
+        100.8
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ documentation:
   - 'https://www.waveshare.com/wiki/2-CH_UART_TO_ETH'
   - hardware/datasheets/CH9121DS1.PDF
 priority: medium
-ordinal: 105000
+ordinal: 108000
 ---
 
 ## Description

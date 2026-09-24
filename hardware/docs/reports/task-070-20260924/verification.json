@@ -1,0 +1,883 @@
+{
+  "placements": [
+    {
+      "ref": "J7",
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_angle": -90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        36.264999,
+        71.975,
+        45.254999,
+        82.665
+      ],
+      "after_bbox": [
+        36.264999,
+        71.975,
+        45.254999,
+        82.665
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "SMBJ30A",
+      "before_xy": [
+        31.549999,
+        74.25
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        40.0,
+        87.0
+      ],
+      "after_angle": -90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "a1409f9b-ccaf-414c-a550-8098051873b1",
+      "before_pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        27.829999,
+        71.975,
+        35.224999,
+        76.525
+      ],
+      "after_bbox": [
+        37.725,
+        83.28,
+        42.275,
+        90.675
+      ]
+    },
+    {
+      "ref": "D8",
+      "value": "SMF30A",
+      "before_xy": [
+        37.839998,
+        84.88
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        33.0,
+        74.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "a9297cb6-0fd6-462b-8612-59255b445d0d",
+      "before_pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        35.614998,
+        83.705,
+        40.109998,
+        86.055
+      ],
+      "after_bbox": [
+        30.775,
+        72.825,
+        35.27,
+        75.175
+      ]
+    },
+    {
+      "ref": "D9",
+      "value": "SMF30A",
+      "before_xy": [
+        32.349999,
+        84.88
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        33.0,
+        80.9
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "c8ecc7a6-761f-43eb-b756-aacf0bc8b01b",
+      "before_pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        30.124999,
+        83.705,
+        34.619999,
+        86.055
+      ],
+      "after_bbox": [
+        30.775,
+        79.725,
+        35.27,
+        82.075
+      ]
+    },
+    {
+      "ref": "R62",
+      "value": "5k1",
+      "before_xy": [
+        28.129998,
+        84.2
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        29.0,
+        74.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "f69829e1-1838-4d1a-9d7d-fea277078227",
+      "before_pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        27.174998,
+        83.705,
+        29.084998,
+        84.695
+      ],
+      "after_bbox": [
+        28.045,
+        73.505,
+        29.955,
+        74.495
+      ]
+    },
+    {
+      "ref": "R63",
+      "value": "5k1",
+      "before_xy": [
+        44.299998,
+        88.69
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        29.0,
+        80.9
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "d77541c9-4564-4a20-836c-24e577717818",
+      "before_pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        43.344998,
+        88.195,
+        45.254998,
+        89.185
+      ],
+      "after_bbox": [
+        28.045,
+        80.405,
+        29.955,
+        81.395
+      ]
+    },
+    {
+      "ref": "U10",
+      "value": "USBLC6-2SC6",
+      "before_xy": [
+        43.179999,
+        85.43
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        32.7,
+        77.3
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "USB-C GIRIS",
+      "uuid": "dc1ecd20-3377-4f0b-900e-772d7ed8c9f9",
+      "before_pads": [
+        [
+          "1",
+          "USB_DM"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "USB_DP"
+        ],
+        [
+          "4",
+          "USB_DP"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ],
+        [
+          "6",
+          "USB_DM"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_DM"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "USB_DP"
+        ],
+        [
+          "4",
+          "USB_DP"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ],
+        [
+          "6",
+          "USB_DM"
+        ]
+      ],
+      "before_bbox": [
+        41.104999,
+        83.53,
+        45.254999,
+        87.155
+      ],
+      "after_bbox": [
+        30.625,
+        75.4,
+        34.775,
+        79.025
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "J7.B4",
+      "a_net": "USB_VBUS",
+      "a_xy": [
+        37.369999,
+        79.72
+      ],
+      "b": "D3.1",
+      "b_net": "USB_VBUS",
+      "b_xy": [
+        40.0,
+        84.85
+      ],
+      "straight_mm": 5.7649
+    },
+    {
+      "a": "J7.A5",
+      "a_net": "USB_CC1",
+      "a_xy": [
+        37.369999,
+        76.07
+      ],
+      "b": "D8.1",
+      "b_net": "USB_CC1",
+      "b_xy": [
+        34.4,
+        74.0
+      ],
+      "straight_mm": 3.6202
+    },
+    {
+      "a": "J7.B5",
+      "a_net": "USB_CC2",
+      "a_xy": [
+        37.369999,
+        79.07
+      ],
+      "b": "D9.1",
+      "b_net": "USB_CC2",
+      "b_xy": [
+        34.4,
+        80.9
+      ],
+      "straight_mm": 3.4885
+    },
+    {
+      "a": "J7.B7",
+      "a_net": "USB_DM",
+      "a_xy": [
+        37.369999,
+        76.57
+      ],
+      "b": "U10.1",
+      "b_net": "USB_DM",
+      "b_xy": [
+        33.8375,
+        76.35
+      ],
+      "straight_mm": 3.5393
+    },
+    {
+      "a": "J7.B6",
+      "a_net": "USB_DP",
+      "a_xy": [
+        37.369999,
+        78.07
+      ],
+      "b": "U10.3",
+      "b_net": "USB_DP",
+      "b_xy": [
+        33.8375,
+        78.25
+      ],
+      "straight_mm": 3.5371
+    },
+    {
+      "a": "D8.1",
+      "a_net": "USB_CC1",
+      "a_xy": [
+        34.4,
+        74.0
+      ],
+      "b": "R62.1",
+      "b_net": "USB_CC1",
+      "b_xy": [
+        29.51,
+        74.0
+      ],
+      "straight_mm": 4.89
+    },
+    {
+      "a": "D9.1",
+      "a_net": "USB_CC2",
+      "a_xy": [
+        34.4,
+        80.9
+      ],
+      "b": "R63.1",
+      "b_net": "USB_CC2",
+      "b_xy": [
+        29.51,
+        80.9
+      ],
+      "straight_mm": 4.89
+    },
+    {
+      "a": "D3.1",
+      "a_net": "USB_VBUS",
+      "a_xy": [
+        40.0,
+        84.85
+      ],
+      "b": "C3.1",
+      "b_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "b_xy": [
+        52.969999,
+        153.51
+      ],
+      "straight_mm": 69.8743
+    }
+  ],
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "u10_flow": {
+    "connector_side": {
+      "DM": {
+        "net": "USB_DM",
+        "xy": [
+          33.8375,
+          76.35
+        ]
+      },
+      "DP": {
+        "net": "USB_DP",
+        "xy": [
+          33.8375,
+          78.25
+        ]
+      }
+    },
+    "system_side": {
+      "DM": {
+        "net": "USB_DM",
+        "xy": [
+          31.5625,
+          76.35
+        ]
+      },
+      "DP": {
+        "net": "USB_DP",
+        "xy": [
+          31.5625,
+          78.25
+        ]
+      }
+    },
+    "gnd": {
+      "net": "GND",
+      "xy": [
+        33.8375,
+        77.3
+      ]
+    },
+    "rail": {
+      "net": "+3.3V",
+      "xy": [
+        31.5625,
+        77.3
+      ]
+    }
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

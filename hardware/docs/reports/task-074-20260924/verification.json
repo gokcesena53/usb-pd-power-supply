@@ -1,0 +1,1227 @@
+{
+  "placements": [
+    {
+      "ref": "U12",
+      "value": "LM74801-Q1",
+      "before_xy": [
+        117.1,
+        52.915
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        117.5,
+        56.5
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "a88757d0-5fd6-4d33-b292-24e961c29136",
+      "before_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "10",
+          "V_PRE"
+        ],
+        [
+          "11",
+          "Net-(U12-CAP)"
+        ],
+        [
+          "12",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "13",
+          "unconnected-(U12-RTN-Pad13)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "3",
+          "V_PRE"
+        ],
+        [
+          "4",
+          "V_PRE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ],
+      "after_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "10",
+          "V_PRE"
+        ],
+        [
+          "11",
+          "Net-(U12-CAP)"
+        ],
+        [
+          "12",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "13",
+          "unconnected-(U12-RTN-Pad13)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "3",
+          "V_PRE"
+        ],
+        [
+          "4",
+          "V_PRE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ],
+      "before_bbox": [
+        114.57,
+        51.14,
+        119.255,
+        54.69
+      ],
+      "after_bbox": [
+        114.97,
+        54.725,
+        119.655,
+        58.275
+      ]
+    },
+    {
+      "ref": "Q5",
+      "value": "SQJB60EP",
+      "before_xy": [
+        110.505,
+        55.04
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        110.5,
+        54.0
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "0b8553e5-e95d-4913-9bf0-f9c0b796fa9f",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "before_bbox": [
+        107.105,
+        51.14,
+        113.905,
+        59.015
+      ],
+      "after_bbox": [
+        107.1,
+        50.1,
+        113.9,
+        57.975
+      ]
+    },
+    {
+      "ref": "C30",
+      "value": "22n",
+      "before_xy": [
+        113.94,
+        63.93
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        106.8,
+        64.4
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "0d0e7517-d75a-44f9-99c5-00b87d9c188a",
+      "before_pads": [
+        [
+          "1",
+          "Net-(C30-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(C30-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        113.005,
+        63.445,
+        114.875,
+        64.415
+      ],
+      "after_bbox": [
+        105.865,
+        63.915,
+        107.735,
+        64.885
+      ]
+    },
+    {
+      "ref": "C31",
+      "value": "220n",
+      "before_xy": [
+        114.4,
+        60.809999
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        122.0,
+        54.5
+      ],
+      "after_angle": 90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "1e427c08-9a03-4ba6-94aa-8c45bfdbc656",
+      "before_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "Net-(U12-CAP)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "Net-(U12-CAP)"
+        ]
+      ],
+      "before_bbox": [
+        112.895,
+        60.054999,
+        115.905,
+        61.564999
+      ],
+      "after_bbox": [
+        121.245,
+        52.995,
+        122.755,
+        56.005
+      ]
+    },
+    {
+      "ref": "C32",
+      "value": "100n",
+      "before_xy": [
+        116.85,
+        63.93
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        121.5,
+        58.0
+      ],
+      "after_angle": 90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "2e49305e-6c71-4019-ac3a-b9a121b693c9",
+      "before_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        115.915,
+        63.445,
+        117.785,
+        64.415
+      ],
+      "after_bbox": [
+        121.015,
+        57.065,
+        121.985,
+        58.935
+      ]
+    },
+    {
+      "ref": "D6",
+      "value": "BZT52C12",
+      "before_xy": [
+        109.48,
+        61.23
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        106.8,
+        59.5
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "fe9d1d0c-0160-41c0-bfe1-04b8c5adab95",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ],
+      "before_bbox": [
+        107.06,
+        60.055,
+        111.855,
+        62.405
+      ],
+      "after_bbox": [
+        104.38,
+        58.325,
+        109.175,
+        60.675
+      ]
+    },
+    {
+      "ref": "R54",
+      "value": "1k0",
+      "before_xy": [
+        117.9,
+        60.55
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        106.8,
+        62.2
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "979fa127-6c33-480c-af4d-fb90ebd75f23",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "Net-(C30-Pad1)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "Net-(C30-Pad1)"
+        ]
+      ],
+      "before_bbox": [
+        116.945,
+        60.055,
+        118.855,
+        61.045
+      ],
+      "after_bbox": [
+        105.845,
+        61.705,
+        107.755,
+        62.695
+      ]
+    },
+    {
+      "ref": "R55",
+      "value": "237k",
+      "before_xy": [
+        120.85,
+        60.55
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        111.0,
+        62.5
+      ],
+      "after_angle": 90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "75292d9e-edad-4214-8cf3-2c304a623fbe",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ]
+      ],
+      "before_bbox": [
+        119.895,
+        60.055,
+        121.805,
+        61.045
+      ],
+      "after_bbox": [
+        110.505,
+        61.545,
+        111.495,
+        63.455
+      ]
+    },
+    {
+      "ref": "R56",
+      "value": "10k",
+      "before_xy": [
+        108.06,
+        63.94
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        113.2,
+        62.5
+      ],
+      "after_angle": 90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "dab12b80-c69d-4bb3-82b3-caabd00bf81d",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        107.105,
+        63.445,
+        109.015,
+        64.435
+      ],
+      "after_bbox": [
+        112.705,
+        61.545,
+        113.695,
+        63.455
+      ]
+    },
+    {
+      "ref": "R58",
+      "value": "100k",
+      "before_xy": [
+        111.01,
+        63.94
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        115.4,
+        62.5
+      ],
+      "after_angle": 90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "uuid": "bfcfa918-62e6-4c68-802e-9c5115f95a5e",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        110.055,
+        63.445,
+        111.965,
+        64.435
+      ],
+      "after_bbox": [
+        114.905,
+        61.545,
+        115.895,
+        63.455
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "U12.1",
+      "a_net": "/USB_PD_CONTROLLER/DGATE",
+      "a_xy": [
+        116.0625,
+        55.25
+      ],
+      "b": "Q5.4",
+      "b_net": "/USB_PD_CONTROLLER/DGATE",
+      "b_xy": [
+        112.405,
+        56.715
+      ],
+      "straight_mm": 3.94
+    },
+    {
+      "a": "U12.2",
+      "a_net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "a_xy": [
+        116.0625,
+        55.75
+      ],
+      "b": "Q5.3",
+      "b_net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "b_xy": [
+        111.135,
+        56.715
+      ],
+      "straight_mm": 5.0211
+    },
+    {
+      "a": "U12.8",
+      "a_net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "a_xy": [
+        118.9375,
+        57.25
+      ],
+      "b": "Q5.2",
+      "b_net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "b_xy": [
+        109.865,
+        56.715
+      ],
+      "straight_mm": 9.0883
+    },
+    {
+      "a": "U12.9",
+      "a_net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "a_xy": [
+        118.9375,
+        56.75
+      ],
+      "b": "Q5.1",
+      "b_net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "b_xy": [
+        108.595,
+        56.715
+      ],
+      "straight_mm": 10.3426
+    },
+    {
+      "a": "U12.12",
+      "a_net": "/USB_PD_CONTROLLER/SW_OUT",
+      "a_xy": [
+        118.9375,
+        55.25
+      ],
+      "b": "Q5.5",
+      "b_net": "/USB_PD_CONTROLLER/SW_OUT",
+      "b_xy": [
+        111.615,
+        52.92
+      ],
+      "straight_mm": 7.6843
+    },
+    {
+      "a": "U12.11",
+      "a_net": "Net-(U12-CAP)",
+      "a_xy": [
+        118.9375,
+        55.75
+      ],
+      "b": "C31.2",
+      "b_net": "Net-(U12-CAP)",
+      "b_xy": [
+        122.0,
+        53.725
+      ],
+      "straight_mm": 3.6714
+    },
+    {
+      "a": "U12.10",
+      "a_net": "V_PRE",
+      "a_xy": [
+        118.9375,
+        56.25
+      ],
+      "b": "C31.1",
+      "b_net": "V_PRE",
+      "b_xy": [
+        122.0,
+        55.275
+      ],
+      "straight_mm": 3.214
+    },
+    {
+      "a": "U12.10",
+      "a_net": "V_PRE",
+      "a_xy": [
+        118.9375,
+        56.25
+      ],
+      "b": "C32.1",
+      "b_net": "V_PRE",
+      "b_xy": [
+        121.5,
+        58.48
+      ],
+      "straight_mm": 3.397
+    },
+    {
+      "a": "U12.7",
+      "a_net": "GND",
+      "a_xy": [
+        118.9375,
+        57.75
+      ],
+      "b": "C32.2",
+      "b_net": "GND",
+      "b_xy": [
+        121.5,
+        57.52
+      ],
+      "straight_mm": 2.5728
+    },
+    {
+      "a": "D6.1",
+      "a_net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "a_xy": [
+        105.15,
+        59.5
+      ],
+      "b": "Q5.2",
+      "b_net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "b_xy": [
+        109.865,
+        56.715
+      ],
+      "straight_mm": 5.4761
+    },
+    {
+      "a": "D6.2",
+      "a_net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "a_xy": [
+        108.45,
+        59.5
+      ],
+      "b": "Q5.1",
+      "b_net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "b_xy": [
+        108.595,
+        56.715
+      ],
+      "straight_mm": 2.7888
+    },
+    {
+      "a": "R54.1",
+      "a_net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "a_xy": [
+        106.29,
+        62.2
+      ],
+      "b": "Q5.2",
+      "b_net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "b_xy": [
+        109.865,
+        56.715
+      ],
+      "straight_mm": 6.5472
+    },
+    {
+      "a": "R54.2",
+      "a_net": "Net-(C30-Pad1)",
+      "a_xy": [
+        107.31,
+        62.2
+      ],
+      "b": "C30.1",
+      "b_net": "Net-(C30-Pad1)",
+      "b_xy": [
+        106.32,
+        64.4
+      ],
+      "straight_mm": 2.4125
+    },
+    {
+      "a": "R55.2",
+      "a_net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "a_xy": [
+        111.0,
+        61.99
+      ],
+      "b": "U12.5",
+      "b_net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "b_xy": [
+        116.0625,
+        57.25
+      ],
+      "straight_mm": 6.9352
+    },
+    {
+      "a": "R56.1",
+      "a_net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "a_xy": [
+        113.2,
+        63.01
+      ],
+      "b": "U12.5",
+      "b_net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "b_xy": [
+        116.0625,
+        57.25
+      ],
+      "straight_mm": 6.4321
+    },
+    {
+      "a": "R58.1",
+      "a_net": "/USB_PD_CONTROLLER/SW_EN",
+      "a_xy": [
+        115.4,
+        63.01
+      ],
+      "b": "U12.6",
+      "b_net": "/USB_PD_CONTROLLER/SW_EN",
+      "b_xy": [
+        116.0625,
+        57.75
+      ],
+      "straight_mm": 5.3016
+    }
+  ],
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "q5_pin_map": {
+    "q5a_load_switch": {
+      "drain": {
+        "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+        "xy": [
+          108.2275,
+          54.0
+        ]
+      },
+      "gate": {
+        "net": "/USB_PD_CONTROLLER/GATE_DRV",
+        "xy": [
+          109.865,
+          56.715
+        ]
+      },
+      "source": {
+        "net": "/USB_PD_CONTROLLER/SRC_COMMON",
+        "xy": [
+          108.595,
+          56.715
+        ]
+      }
+    },
+    "q5b_ideal_diode": {
+      "source": {
+        "net": "/USB_PD_CONTROLLER/SRC_COMMON",
+        "xy": [
+          111.135,
+          56.715
+        ]
+      },
+      "gate": {
+        "net": "/USB_PD_CONTROLLER/DGATE",
+        "xy": [
+          112.405,
+          56.715
+        ]
+      },
+      "drain": {
+        "net": "/USB_PD_CONTROLLER/SW_OUT",
+        "xy": [
+          111.615,
+          52.92
+        ]
+      }
+    },
+    "common_source_net": "/USB_PD_CONTROLLER/SRC_COMMON"
+  },
+  "u12_pin_map": {
+    "dgate": {
+      "net": "/USB_PD_CONTROLLER/DGATE",
+      "xy": [
+        116.0625,
+        55.25
+      ]
+    },
+    "a_src": {
+      "net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "xy": [
+        116.0625,
+        55.75
+      ]
+    },
+    "hgate": {
+      "net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "xy": [
+        118.9375,
+        57.25
+      ]
+    },
+    "out_src": {
+      "net": "/USB_PD_CONTROLLER/SRC_COMMON",
+      "xy": [
+        118.9375,
+        56.75
+      ]
+    },
+    "c_drain": {
+      "net": "/USB_PD_CONTROLLER/SW_OUT",
+      "xy": [
+        118.9375,
+        55.25
+      ]
+    },
+    "cap": {
+      "net": "Net-(U12-CAP)",
+      "xy": [
+        118.9375,
+        55.75
+      ]
+    },
+    "vs_pre": {
+      "net": "V_PRE",
+      "xy": [
+        118.9375,
+        56.25
+      ]
+    },
+    "ov_sense": {
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "xy": [
+        116.0625,
+        57.25
+      ]
+    },
+    "sw_en": {
+      "net": "/USB_PD_CONTROLLER/SW_EN",
+      "xy": [
+        116.0625,
+        57.75
+      ]
+    }
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

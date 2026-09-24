@@ -52,8 +52,9 @@ Kart ölçüsüne katılmadı.
   firmware'de (MADCTL) bu yöne göre ayarlanır.
 - **Enkoder** (SW3) karta monte edilmiyor. Kutuya panel montajla sabitlenip
   kablolarla karta bağlanacak (kullanıcı kararı, 24.09). Kart ölçüsü
-  enkoderi hesaba katmıyor. SW3 footprint'i şema değişikliğine kadar geçici
-  olarak kartın sol üst köşesinde duruyor (ayrı görev).
+  enkoderi hesaba katmıyor. TASK-066 ile SW3 PCB'den kaldırıldı; yerine
+  LCD'nin solunda J9 beşli kablo lehim pedi kondu. Pin 1=(58,00; 91,60) mm,
+  açı −90°; ayrıntılar `ENCODER_PANEL_TASK066_20260924.md` dosyasında.
 - **Orijin:** Aux ve grid orijini AA merkezinde, sayfa koordinatında
   (100, 100) mm. Kutu (`3d_design/`) aynı referansı kullanır. Aşağıdaki
   koordinatlar AA merkezine göredir (x sağa, y aşağı, üstten görünüş).
@@ -125,7 +126,8 @@ board-only (şemada yok), kilitli.
 - Başlangıç yerleşimi (iz ve zone yok) göreli dizilim korunarak
   (+55, −9) mm kaydırıldı. Bu kaydırmada her parça ya tamamen kartın
   içinde ya tamamen dışında kalıyor; itilen parça yok. U2'nin kenarı aşan
-  kısmı yalnızca anten keepout alanı. SW3 geçici olarak sol üst köşede.
+  kısmı yalnızca anten keepout alanı. Bu başlangıç durumundaki SW3,
+  TASK-066 ile kaldırılıp panel parçasına dönüştürüldü.
   Yerleşim TASK-063/065'te yapılacak.
 
 DRC (`kicad-cli pcb drc --schematic-parity`):

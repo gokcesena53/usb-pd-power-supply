@@ -1,0 +1,587 @@
+{
+  "placements": [
+    {
+      "ref": "R67",
+      "value": "1k",
+      "before_xy": [
+        184.580005,
+        57.99
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        184.0,
+        57.5
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "ea71a38c-b847-4426-9ee7-0571573efb83",
+      "before_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "Net-(Q6-D)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "Net-(Q6-D)"
+        ]
+      ],
+      "before_bbox": [
+        180.725005,
+        56.035,
+        188.435005,
+        59.945
+      ],
+      "after_bbox": [
+        180.145,
+        55.545,
+        187.855,
+        59.455
+      ]
+    },
+    {
+      "ref": "Q6",
+      "value": "BSS138P",
+      "before_xy": [
+        182.680005,
+        62.71
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        190.5,
+        57.5
+      ],
+      "after_angle": 180.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "8c324f3c-2c96-4321-8c8e-2aebe1856d0c",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "Net-(Q6-D)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "Net-(Q6-D)"
+        ]
+      ],
+      "before_bbox": [
+        180.725005,
+        60.985,
+        184.635005,
+        64.435
+      ],
+      "after_bbox": [
+        188.545,
+        55.775,
+        192.455,
+        59.225
+      ]
+    },
+    {
+      "ref": "D10",
+      "value": "BZT52C12",
+      "before_xy": [
+        188.050005,
+        62.16
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        195.0,
+        57.5
+      ],
+      "after_angle": 90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "12cdb498-9b5e-4ad8-b4a9-87f83132e125",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        185.630005,
+        60.985,
+        190.425005,
+        63.335
+      ],
+      "after_bbox": [
+        193.825,
+        55.125,
+        196.175,
+        59.92
+      ]
+    },
+    {
+      "ref": "R66",
+      "value": "100k",
+      "before_xy": [
+        192.970005,
+        61.74
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        198.5,
+        57.5
+      ],
+      "after_angle": -90.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "4d236090-5898-4448-b326-0b8bc3218143",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ],
+      "before_bbox": [
+        191.465005,
+        60.985,
+        194.475005,
+        62.495
+      ],
+      "after_bbox": [
+        197.745,
+        55.995,
+        199.255,
+        59.005
+      ]
+    },
+    {
+      "ref": "Q4",
+      "value": "BSS138P",
+      "before_xy": [
+        191.200005,
+        57.99
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        191.0,
+        62.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "uuid": "0cf8e536-aa9e-467c-840a-ab9cd7d67bd9",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ],
+      "before_bbox": [
+        189.475005,
+        56.035,
+        192.925005,
+        59.945
+      ],
+      "after_bbox": [
+        189.045,
+        60.775,
+        192.955,
+        64.225
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "R67.2",
+      "a_net": "Net-(Q6-D)",
+      "a_xy": [
+        186.9625,
+        57.5
+      ],
+      "b": "Q6.3",
+      "b_net": "Net-(Q6-D)",
+      "b_xy": [
+        189.5625,
+        57.5
+      ],
+      "straight_mm": 2.6
+    },
+    {
+      "a": "Q6.1",
+      "a_net": "/USB_PD_CONTROLLER/DISCH_G",
+      "a_xy": [
+        191.4375,
+        58.45
+      ],
+      "b": "D10.1",
+      "b_net": "/USB_PD_CONTROLLER/DISCH_G",
+      "b_xy": [
+        195.0,
+        59.15
+      ],
+      "straight_mm": 3.6306
+    },
+    {
+      "a": "D10.1",
+      "a_net": "/USB_PD_CONTROLLER/DISCH_G",
+      "a_xy": [
+        195.0,
+        59.15
+      ],
+      "b": "R66.2",
+      "b_net": "/USB_PD_CONTROLLER/DISCH_G",
+      "b_xy": [
+        198.5,
+        58.325
+      ],
+      "straight_mm": 3.5959
+    },
+    {
+      "a": "Q4.3",
+      "a_net": "/USB_PD_CONTROLLER/DISCH_G",
+      "a_xy": [
+        191.9375,
+        62.5
+      ],
+      "b": "Q6.1",
+      "b_net": "/USB_PD_CONTROLLER/DISCH_G",
+      "b_xy": [
+        191.4375,
+        58.45
+      ],
+      "straight_mm": 4.0807
+    },
+    {
+      "a": "Q6.2",
+      "a_net": "GND",
+      "a_xy": [
+        191.4375,
+        56.55
+      ],
+      "b": "D10.2",
+      "b_net": "GND",
+      "b_xy": [
+        195.0,
+        55.85
+      ],
+      "straight_mm": 3.6306
+    },
+    {
+      "a": "Q4.2",
+      "a_net": "GND",
+      "a_xy": [
+        190.0625,
+        61.55
+      ],
+      "b": "D10.2",
+      "b_net": "GND",
+      "b_xy": [
+        195.0,
+        55.85
+      ],
+      "straight_mm": 7.5411
+    },
+    {
+      "a": "R67.1",
+      "a_net": "OUT_POS",
+      "a_xy": [
+        181.0375,
+        57.5
+      ],
+      "b": "Q6.2",
+      "b_net": "GND",
+      "b_xy": [
+        191.4375,
+        56.55
+      ],
+      "straight_mm": 10.4433
+    }
+  ],
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "circuit_summary": {
+    "topology": "Active Output Discharge (R59 passive bleed replacement)",
+    "r67_power_resistor": {
+      "ref": "R67",
+      "value": "1k",
+      "package": "2512",
+      "rating": "2W",
+      "continuous_power_28v": "0.781 W (39% rating)",
+      "continuous_power_30v4": "0.920 W (46% rating)",
+      "pad_1_net": "OUT_POS",
+      "pad_2_net": "Net-(Q6-D)"
+    },
+    "q6_discharge_switch": {
+      "ref": "Q6",
+      "value": "BSS138P",
+      "package": "SOT-23",
+      "layer": "F.Cu",
+      "gate_drive": "DISCH_G clamped to 12V max by D10"
+    },
+    "d10_gate_clamp": {
+      "ref": "D10",
+      "value": "BZT52C12",
+      "package": "SOD-123",
+      "layer": "F.Cu",
+      "vz": "12V",
+      "polarity": "Cathode on DISCH_G, Anode on GND"
+    },
+    "r66_pullup": {
+      "ref": "R66",
+      "value": "100k",
+      "package": "0603",
+      "layer": "F.Cu",
+      "input_rail": "SW_OUT"
+    },
+    "q4_inverter": {
+      "ref": "Q4",
+      "value": "BSS138P",
+      "package": "SOT-23",
+      "layer": "B.Cu",
+      "control_input": "SW_EN from U13 (B.Cu)"
+    }
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "violations_before_total": 146,
+  "violations_after_total": 145,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

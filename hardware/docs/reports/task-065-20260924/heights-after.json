@@ -1,0 +1,2826 @@
+[
+  {
+    "ref": "C1",
+    "value": "100n",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      62.53,
+      155.79,
+      63.53,
+      156.29
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C10",
+    "value": "22u",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 1.25,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      108.1321,
+      162.38,
+      109.3821,
+      164.38
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C11",
+    "value": "100n",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      162.8843,
+      61.22,
+      163.8843,
+      61.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C12",
+    "value": "4u7",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      91.655,
+      54.31,
+      94.155,
+      57.51
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C13",
+    "value": "4u7",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      87.365,
+      54.31,
+      89.865,
+      57.51
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C14",
+    "value": "100n",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      94.765,
+      60.51,
+      95.265,
+      61.51
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C15",
+    "value": "47u",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 5.8,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      79.355,
+      43.4683,
+      87.9608,
+      52.0717
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C16",
+    "value": "47u",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      83.075,
+      54.31,
+      85.575,
+      57.51
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C17",
+    "value": "100n",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      101.585,
+      63.7,
+      102.585,
+      64.2
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C18",
+    "value": "10n",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      98.675,
+      63.7,
+      99.675,
+      64.2
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C19",
+    "value": "15n",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      92.755,
+      60.51,
+      93.255,
+      61.51
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C2",
+    "value": "100n",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      57.05,
+      152.94,
+      57.55,
+      153.94
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C20",
+    "value": "100n",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      117.2797,
+      161.89,
+      118.2797,
+      162.39
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C21",
+    "value": "100n",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      120.1897,
+      161.89,
+      121.1897,
+      162.39
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C23",
+    "value": "47n",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      66.44,
+      63.68,
+      67.44,
+      64.18
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C24",
+    "value": "100n",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      63.53,
+      63.68,
+      64.53,
+      64.18
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C25",
+    "value": "4u7",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      52.87,
+      52.94,
+      56.07,
+      55.44
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C26",
+    "value": "100n",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      60.62,
+      63.68,
+      61.62,
+      64.18
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C27",
+    "value": "4u7",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      69.85,
+      59.53,
+      73.05,
+      62.03
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C28",
+    "value": "4u7",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      64.16,
+      59.53,
+      67.36,
+      62.03
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C29",
+    "value": "47u",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 5.8,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      54.8542,
+      42.9483,
+      63.46,
+      51.5517
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C3",
+    "value": "2u2",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 1.25,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      51.02,
+      152.885,
+      53.02,
+      154.135
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C30",
+    "value": "22n",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0.5,
+    "model_xy_bbox": [
+      113.44,
+      63.68,
+      114.44,
+      64.18
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C31",
+    "value": "220n",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.8,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0.8,
+    "model_xy_bbox": [
+      113.6,
+      60.41,
+      115.2,
+      61.21
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C32",
+    "value": "100n",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0.5,
+    "model_xy_bbox": [
+      116.35,
+      63.68,
+      117.35,
+      64.18
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C33",
+    "value": "1F5",
+    "group": "RTC BQ32000 + 1F5 süper kapasitör",
+    "side": "B.Cu",
+    "height_mm": 6.5,
+    "model_zmin_mm": -3.5,
+    "top_projection_mm": 1.9,
+    "model_xy_bbox": [
+      207.8751,
+      73.0,
+      228.0751,
+      92.0
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Power_Output_Custom.3dshapes/Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C34",
+    "value": "1u0",
+    "group": "TFT CONNECTOR J3",
+    "side": "F.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0.5,
+    "model_xy_bbox": [
+      28.1486,
+      107.98,
+      29.1486,
+      108.48
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C35",
+    "value": "100n",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      165.7943,
+      61.22,
+      166.7943,
+      61.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C4",
+    "value": "1u0",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      65.44,
+      155.79,
+      66.44,
+      156.29
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C5",
+    "value": "22u",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 1.25,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      155.47,
+      116.645,
+      157.47,
+      117.895
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C6",
+    "value": "100n",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      175.89,
+      116.5,
+      176.89,
+      117.0
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C7",
+    "value": "1u0",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      173.68,
+      116.7,
+      174.18,
+      117.7
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C8",
+    "value": "4u7",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      50.67,
+      147.54,
+      53.17,
+      150.74
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "C9",
+    "value": "1u0",
+    "group": "RTC BQ32000 + 1F5 süper kapasitör",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      215.2051,
+      94.5,
+      215.7051,
+      95.5
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D1",
+    "value": "LED",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.5,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      59.28,
+      152.75,
+      60.28,
+      153.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D10",
+    "value": "BZT52C12",
+    "group": "CIKIS DESARJI (R59 yerine aktif)",
+    "side": "F.Cu",
+    "height_mm": 1.26,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 1.26,
+    "model_xy_bbox": [
+      186.15,
+      61.36,
+      189.95,
+      62.96
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D2",
+    "value": "SS2060FL",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 1.1,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      99.045,
+      60.45,
+      102.545,
+      62.05
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D3",
+    "value": "SMBJ30A",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 2.15,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      28.9,
+      72.475,
+      34.2,
+      76.025
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D4",
+    "value": "SX36",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 2.22,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      58.86,
+      52.99,
+      63.86,
+      55.69
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D5",
+    "value": "BAS16H",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 1.11,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      62.77,
+      56.975,
+      65.27,
+      58.225
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D6",
+    "value": "BZT52C12",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 1.26,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 1.26,
+    "model_xy_bbox": [
+      107.58,
+      60.43,
+      111.38,
+      62.03
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D7",
+    "value": "SMBJ30A",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 2.15,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      149.2543,
+      55.895,
+      154.5543,
+      59.445
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D8",
+    "value": "SMF30A",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 1.1,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      36.09,
+      84.08,
+      39.59,
+      85.68
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "D9",
+    "value": "SMF30A",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 1.1,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      30.6,
+      84.08,
+      34.1,
+      85.68
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "H1",
+    "value": "M3",
+    "group": "",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      50.825,
+      70.005,
+      57.775,
+      76.955
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "H2",
+    "value": "M3",
+    "group": "",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      142.225,
+      70.005,
+      149.175,
+      76.955
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "H3",
+    "value": "M3",
+    "group": "",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      50.825,
+      123.045,
+      57.775,
+      129.995
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "H4",
+    "value": "M3",
+    "group": "",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      142.225,
+      123.045,
+      149.175,
+      129.995
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "J3",
+    "value": "TFT032B018",
+    "group": "",
+    "side": "F.Cu",
+    "height_mm": 2.0,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 2.0,
+    "model_xy_bbox": [
+      93.45,
+      100.03,
+      98.75,
+      118.57
+    ],
+    "lcd_overlap": true,
+    "models": [
+      "${KIPRJMOD}/libraries/Connector_FPC_Custom.3dshapes/KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "J4",
+    "value": "SolderWire-1.5sqmm",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 10.0,
+    "model_zmin_mm": -1.8,
+    "top_projection_mm": 0.2,
+    "model_xy_bbox": [
+      153.5443,
+      48.57,
+      165.2443,
+      52.47
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "J7",
+    "value": "USB_C_Receptacle_USB2.0_16P",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 3.31,
+    "model_zmin_mm": -0.95,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      36.945,
+      72.85,
+      44.725,
+      81.79
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "J8",
+    "value": "2-CH UART TO ETH",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 17.5,
+    "model_zmin_mm": -6.0,
+    "top_projection_mm": 4.4,
+    "model_xy_bbox": [
+      156.4371,
+      138.34,
+      213.8371,
+      160.34
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Module_Custom.3dshapes/Waveshare_2-CH_UART_TO_ETH.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "J9",
+    "value": "ENCODER CABLE",
+    "group": "",
+    "side": "F.Cu",
+    "height_mm": 10.0,
+    "model_zmin_mm": -1.8,
+    "top_projection_mm": 10.0,
+    "model_xy_bbox": [
+      57.15,
+      90.75,
+      58.85,
+      109.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "L1",
+    "value": "22u",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 5.0,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      94.945,
+      44.47,
+      102.045,
+      52.27
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Inductor_Custom.3dshapes/L_CoreMaster_FPI0705_7.8x7.0mm_H5.0.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "L3",
+    "value": "6u8",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 4.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      65.85,
+      43.95,
+      73.25,
+      51.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/L_7.3x7.3_H4.5.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q1",
+    "value": "BSS138P",
+    "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+    "side": "B.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      206.6751,
+      108.76,
+      209.6751,
+      111.26
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q2",
+    "value": "BSS138P",
+    "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+    "side": "B.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      211.1651,
+      108.76,
+      214.1651,
+      111.26
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q3",
+    "value": "SQJB60EP",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 1.08,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      56.07,
+      139.015,
+      62.22,
+      143.915
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q4",
+    "value": "BSS138P",
+    "group": "CIKIS DESARJI (R59 yerine aktif)",
+    "side": "B.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      189.7,
+      56.74,
+      192.7,
+      59.24
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q5",
+    "value": "SQJB60EP",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 1.08,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 1.08,
+    "model_xy_bbox": [
+      108.055,
+      51.965,
+      112.955,
+      58.115
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q6",
+    "value": "BSS138P",
+    "group": "CIKIS DESARJI (R59 yerine aktif)",
+    "side": "F.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 1.2,
+    "model_xy_bbox": [
+      181.43,
+      61.21,
+      183.93,
+      64.21
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q7",
+    "value": "IRLML6344",
+    "group": "TFT BACKLIGHT (3.3V + PWM)",
+    "side": "F.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 1.2,
+    "model_xy_bbox": [
+      18.8186,
+      95.95,
+      21.3186,
+      98.95
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Q8",
+    "value": "TSM3443CX6",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 1.55,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      103.2371,
+      161.93,
+      106.0371,
+      164.83
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R1",
+    "value": "10k",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      159.48,
+      116.72,
+      159.98,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R10",
+    "value": "10k",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      161.51,
+      116.72,
+      162.01,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R11",
+    "value": "5m0",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.6,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      50.65,
+      138.77,
+      53.85,
+      145.07
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R12",
+    "value": "6k2",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      62.23,
+      152.75,
+      63.23,
+      153.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R13",
+    "value": "100R",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      65.18,
+      152.75,
+      66.18,
+      153.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R14",
+    "value": "2k2",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      68.13,
+      152.75,
+      69.13,
+      153.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R15",
+    "value": "22R",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      163.54,
+      116.72,
+      164.04,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R16",
+    "value": "10k",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      165.57,
+      116.72,
+      166.07,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R17",
+    "value": "100k",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      114.3497,
+      161.9,
+      115.3497,
+      162.4
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R2",
+    "value": "22R",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      167.6,
+      116.72,
+      168.1,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R21",
+    "value": "100k",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      71.08,
+      152.75,
+      72.08,
+      153.25
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R24",
+    "value": "4k7",
+    "group": "RTC BQ32000 + 1F5 süper kapasitör",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      213.1851,
+      94.52,
+      213.6851,
+      95.52
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R27",
+    "value": "10k",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      153.6643,
+      61.44,
+      154.1643,
+      62.44
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R28",
+    "value": "100R",
+    "group": "TFT BACKLIGHT (3.3V + PWM)",
+    "side": "F.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.35,
+    "model_xy_bbox": [
+      18.5686,
+      100.46,
+      19.5686,
+      100.96
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R29",
+    "value": "100k",
+    "group": "TFT BACKLIGHT (3.3V + PWM)",
+    "side": "F.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.35,
+    "model_xy_bbox": [
+      21.5186,
+      100.46,
+      22.5186,
+      100.96
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R3",
+    "value": "22R",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      169.63,
+      116.72,
+      170.13,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R34",
+    "value": "10k",
+    "group": "ROTARY ENCODER",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      40.45,
+      115.71,
+      40.95,
+      116.71
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R35",
+    "value": "10k",
+    "group": "ROTARY ENCODER",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      42.48,
+      115.71,
+      42.98,
+      116.71
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R36",
+    "value": "10k",
+    "group": "ROTARY ENCODER",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      44.51,
+      115.71,
+      45.01,
+      116.71
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R37",
+    "value": "10k",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      171.66,
+      116.72,
+      172.16,
+      117.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R38",
+    "value": "100k",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      90.025,
+      60.32,
+      91.025,
+      60.82
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R39",
+    "value": "10k2",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      87.075,
+      60.32,
+      88.075,
+      60.82
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R4",
+    "value": "4k7",
+    "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      215.6751,
+      108.51,
+      216.1751,
+      109.51
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R40",
+    "value": "3k24",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      84.125,
+      60.32,
+      85.125,
+      60.82
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R41",
+    "value": "51k",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      96.785,
+      60.53,
+      97.285,
+      61.53
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R43",
+    "value": "4k7",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.6,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      89.375,
+      44.9,
+      92.575,
+      51.2
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R47",
+    "value": "78k7",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      56.65,
+      59.4,
+      57.65,
+      59.9
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R48",
+    "value": "30k1",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      53.7,
+      59.4,
+      54.7,
+      59.9
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R49",
+    "value": "9k76",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      50.75,
+      59.4,
+      51.75,
+      59.9
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R5",
+    "value": "4k7",
+    "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      206.6951,
+      113.46,
+      207.1951,
+      114.46
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R50",
+    "value": "2k87",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      81.175,
+      60.32,
+      82.175,
+      60.82
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R51",
+    "value": "9k76",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      78.225,
+      60.32,
+      79.225,
+      60.82
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R52",
+    "value": "2k0",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      72.32,
+      63.69,
+      73.32,
+      64.19
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R53",
+    "value": "100k",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      69.37,
+      63.69,
+      70.37,
+      64.19
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R54",
+    "value": "1k0",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.35,
+    "model_xy_bbox": [
+      117.4,
+      60.3,
+      118.4,
+      60.8
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R55",
+    "value": "237k",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.35,
+    "model_xy_bbox": [
+      120.35,
+      60.3,
+      121.35,
+      60.8
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R56",
+    "value": "10k",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.35,
+    "model_xy_bbox": [
+      107.56,
+      63.69,
+      108.56,
+      64.19
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R58",
+    "value": "100k",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.35,
+    "model_xy_bbox": [
+      110.51,
+      63.69,
+      111.51,
+      64.19
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R59",
+    "value": "100k",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 0.45,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      156.1543,
+      61.34,
+      157.7543,
+      62.14
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R6",
+    "value": "4k7",
+    "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      208.7251,
+      113.46,
+      209.2251,
+      114.46
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R60",
+    "value": "5R6",
+    "group": "TFT BACKLIGHT (3.3V + PWM)",
+    "side": "F.Cu",
+    "height_mm": 0.45,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.45,
+    "model_xy_bbox": [
+      23.7686,
+      96.1,
+      25.7686,
+      97.3
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R61",
+    "value": "4k7",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      159.9543,
+      61.23,
+      160.9543,
+      61.73
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R62",
+    "value": "5k1",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      27.63,
+      83.95,
+      28.63,
+      84.45
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R63",
+    "value": "5k1",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      43.8,
+      88.44,
+      44.8,
+      88.94
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R64",
+    "value": "2k0",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      50.75,
+      155.8,
+      51.75,
+      156.3
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R65",
+    "value": "10k",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      53.7,
+      155.8,
+      54.7,
+      156.3
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R66",
+    "value": "100k",
+    "group": "CIKIS DESARJI (R59 yerine aktif)",
+    "side": "F.Cu",
+    "height_mm": 0.45,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0.45,
+    "model_xy_bbox": [
+      192.17,
+      61.34,
+      193.77,
+      62.14
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R67",
+    "value": "1k",
+    "group": "CIKIS DESARJI (R59 yerine aktif)",
+    "side": "F.Cu",
+    "height_mm": 0.6,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0.6,
+    "model_xy_bbox": [
+      181.43,
+      56.39,
+      187.73,
+      59.59
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R7",
+    "value": "4k7",
+    "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      210.7551,
+      113.46,
+      211.2551,
+      114.46
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R8",
+    "value": "10k",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      56.65,
+      155.8,
+      57.65,
+      156.3
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "R9",
+    "value": "10k",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      59.6,
+      155.8,
+      60.6,
+      156.3
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "RShunt1",
+    "value": "5m0",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 0.6,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      157.3243,
+      55.75,
+      163.6243,
+      58.95
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "SW1",
+    "value": "BOOT / PTS810",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      187.96,
+      72.55,
+      191.16,
+      77.15
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS810.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "SW2",
+    "value": "RESET / PTS810",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      192.75,
+      72.55,
+      195.95,
+      77.15
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS810.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "TH1",
+    "value": "10k NTC",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.35,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      55.03,
+      152.96,
+      55.53,
+      153.96
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "TP1",
+    "value": "TestPoint",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      54.5876,
+      146.8163,
+      56.6376,
+      148.8663
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP10",
+    "value": "TestPoint",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      197.2676,
+      71.9763,
+      199.3176,
+      74.0263
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP11",
+    "value": "TestPoint",
+    "group": "TEST NOKTALARI",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      206.4527,
+      121.4563,
+      208.5027,
+      123.5063
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP12",
+    "value": "TestPoint",
+    "group": "TEST NOKTALARI",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      209.5452,
+      121.4563,
+      211.5952,
+      123.5063
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP13",
+    "value": "TestPoint",
+    "group": "TEST NOKTALARI",
+    "side": "F.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      212.6378,
+      121.4563,
+      214.6878,
+      123.5063
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP14",
+    "value": "TestPoint",
+    "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      110.8047,
+      161.6563,
+      112.8547,
+      163.7063
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP2",
+    "value": "TestPoint",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      57.6801,
+      146.8163,
+      59.7301,
+      148.8663
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP3",
+    "value": "TestPoint",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      60.7727,
+      146.8163,
+      62.8227,
+      148.8663
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP4",
+    "value": "TestPoint",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      63.8652,
+      146.8163,
+      65.9152,
+      148.8663
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP5",
+    "value": "TestPoint",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      66.9578,
+      146.8163,
+      69.0078,
+      148.8663
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP6",
+    "value": "TestPoint",
+    "group": "TEST NOKTALARI",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      206.4527,
+      124.5488,
+      208.5027,
+      126.5988
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP7",
+    "value": "TestPoint",
+    "group": "TEST NOKTALARI",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      209.5452,
+      124.5488,
+      211.5952,
+      126.5988
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP8",
+    "value": "TestPoint",
+    "group": "TEST NOKTALARI",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      212.6378,
+      124.5488,
+      214.6878,
+      126.5988
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "TP9",
+    "value": "TestPoint",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 0,
+    "model_zmin_mm": 0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      200.3601,
+      71.9763,
+      202.4101,
+      74.0263
+    ],
+    "lcd_overlap": false,
+    "models": [],
+    "model_status": "bare pad / mounting hole"
+  },
+  {
+    "ref": "U1",
+    "value": "AP33772SDKZ-13-FA02",
+    "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+    "side": "B.Cu",
+    "height_mm": 0.76,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      64.815,
+      138.72,
+      68.815,
+      142.72
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U10",
+    "value": "USBLC6-2SC6",
+    "group": "USB-C GIRIS",
+    "side": "B.Cu",
+    "height_mm": 1.55,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      41.78,
+      83.98,
+      44.58,
+      86.88
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U11",
+    "value": "TPS55340PWPR",
+    "group": "TPS55340 PRE-BOOST",
+    "side": "B.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      66.65,
+      52.84,
+      73.05,
+      57.84
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U12",
+    "value": "LM74801-Q1",
+    "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+    "side": "F.Cu",
+    "height_mm": 0.76,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0.76,
+    "model_xy_bbox": [
+      115.6,
+      51.415,
+      118.6,
+      54.415
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U13",
+    "value": "74LVC1G08",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 1.55,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      148.9043,
+      61.26,
+      151.7043,
+      64.16
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U2",
+    "value": "ESP32-C6-MINI-1-H4",
+    "group": "ESP32-C6-MINI-1-H4",
+    "side": "B.Cu",
+    "height_mm": 2.4,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      155.02,
+      87.0,
+      171.62,
+      100.2
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/ESP32-C6-MINI-1.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U3",
+    "value": "INA226",
+    "group": "INA226 OLCUM + PANEL CIKISI",
+    "side": "B.Cu",
+    "height_mm": 1.1,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      148.5043,
+      48.75,
+      151.5043,
+      53.65
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-10_3x3mm_P0.5mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U4",
+    "value": "BQ32000",
+    "group": "RTC BQ32000 + 1F5 süper kapasitör",
+    "side": "B.Cu",
+    "height_mm": 1.75,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      206.7251,
+      94.79,
+      211.6251,
+      100.79
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U5",
+    "value": "AOZ1284PI",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 1.55,
+    "model_zmin_mm": -0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      96.295,
+      53.86,
+      102.295,
+      58.76
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "U6",
+    "value": "TLV431BQDBZT",
+    "group": "AOZ1284 3.3V BUCK",
+    "side": "B.Cu",
+    "height_mm": 1.2,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      78.435,
+      54.29,
+      81.435,
+      56.79
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "model_status": "measured"
+  },
+  {
+    "ref": "Y1",
+    "value": "32.768kHz",
+    "group": "RTC BQ32000 + 1F5 süper kapasitör",
+    "side": "B.Cu",
+    "height_mm": 2.5,
+    "model_zmin_mm": 0.0,
+    "top_projection_mm": 0,
+    "model_xy_bbox": [
+      231.7151,
+      72.5,
+      235.5151,
+      80.5
+    ],
+    "lcd_overlap": false,
+    "models": [
+      "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm.step"
+    ],
+    "model_status": "measured"
+  }
+]
