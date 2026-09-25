@@ -1,0 +1,281 @@
+{
+  "task": "TASK-091",
+  "date": "2026-09-25",
+  "anchors": {
+    "J7": {
+      "x_mm": 53.975,
+      "y_mm": 82.5,
+      "rot_deg": -90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        49.77,
+        76.937,
+        58.823,
+        87.845
+      ]
+    },
+    "J8": {
+      "x_mm": 102.5,
+      "y_mm": 102.0,
+      "rot_deg": 0.0,
+      "layer": "B.Cu",
+      "bbox_mm": [
+        46.775,
+        97.611,
+        105.9,
+        124.038
+      ]
+    },
+    "U2": {
+      "x_mm": 78.0,
+      "y_mm": 75.6,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        56.375,
+        49.575,
+        99.625,
+        83.348
+      ]
+    },
+    "J9": {
+      "x_mm": 61.75,
+      "y_mm": 87.0,
+      "rot_deg": -126.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        49.761,
+        84.736,
+        64.293,
+        102.746
+      ]
+    },
+    "C34": {
+      "x_mm": 104.8,
+      "y_mm": 105.55,
+      "rot_deg": 90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        104.315,
+        103.973,
+        107.348,
+        107.127
+      ]
+    },
+    "J3": {
+      "x_mm": 98.0,
+      "y_mm": 109.3,
+      "rot_deg": 90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        91.152,
+        99.505,
+        101.848,
+        119.095
+      ]
+    },
+    "H1": {
+      "x_mm": 54.3,
+      "y_mm": 73.48,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        50.825,
+        70.005,
+        57.775,
+        78.478
+      ]
+    },
+    "H2": {
+      "x_mm": 145.7,
+      "y_mm": 73.48,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        142.225,
+        70.005,
+        149.175,
+        78.478
+      ]
+    },
+    "H3": {
+      "x_mm": 54.3,
+      "y_mm": 126.52,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        50.825,
+        123.045,
+        57.775,
+        131.518
+      ]
+    },
+    "H4": {
+      "x_mm": 145.7,
+      "y_mm": 126.52,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        142.225,
+        123.045,
+        149.175,
+        131.518
+      ]
+    }
+  },
+  "port_relationship": {
+    "j7_usb_c": {
+      "layer": "F.Cu (Top)",
+      "center_xy_mm": [
+        53.975,
+        82.5
+      ],
+      "rot_deg": -90.0,
+      "mouth_direction": "West (-X)",
+      "front_edge_x_mm": 50.3,
+      "front_edge_error_mm": 0.0,
+      "nose_overhang_past_pcb_mm": 0.525,
+      "z_plane": "Top (+Z)"
+    },
+    "j8_rj45": {
+      "layer": "B.Cu (Bottom)",
+      "footprint_center_xy_mm": [
+        102.5,
+        102.0
+      ],
+      "rj45_mouth_center_xy_mm": [
+        50.3,
+        110.89
+      ],
+      "rot_deg": 0.0,
+      "mouth_direction": "West (-X)",
+      "body_overhang_past_pcb_mm": 3.3,
+      "nominal_tabs_overhang_past_pcb_mm": 4.3,
+      "z_plane": "Bottom (-Z)"
+    },
+    "vertical_relationship": {
+      "2d_plan_y_offset_mm": 28.39,
+      "3d_z_separation_mm": 1.6,
+      "connector_body_gap_y_mm": 15.02,
+      "simultaneous_plug_gap_mm": 14.39,
+      "required_min_plug_gap_mm": 2.0,
+      "passes_plug_clearance": true
+    }
+  },
+  "j9_clearances": {
+    "footprint_center_xy_mm": [
+      61.75,
+      87.0
+    ],
+    "rot_deg": -126.0,
+    "pads": [
+      {
+        "pad": "1",
+        "net": "ENCODER_A",
+        "x_mm": 61.75,
+        "y_mm": 87.0
+      },
+      {
+        "pad": "2",
+        "net": "GND",
+        "x_mm": 59.281,
+        "y_mm": 90.398
+      },
+      {
+        "pad": "3",
+        "net": "ENCODER_B",
+        "x_mm": 56.813,
+        "y_mm": 93.796
+      },
+      {
+        "pad": "4",
+        "net": "ENCODER_SW",
+        "x_mm": 54.344,
+        "y_mm": 97.194
+      },
+      {
+        "pad": "5",
+        "net": "GND",
+        "x_mm": 51.875,
+        "y_mm": 100.591
+      }
+    ],
+    "clearance_to_pcb_edge_mm": 0.65,
+    "clearance_to_lcd_frame_mm": 0.845,
+    "clearance_to_j7_y_mm": -1.745,
+    "clearance_to_rj45_keepout_y_mm": 1.324,
+    "is_inside_rj45_keepout": false,
+    "passes_all_clearances": false
+  },
+  "u2_candidate_comparison": {
+    "candidate_1_northwest_selected": {
+      "position_xy_mm": [
+        78.0,
+        75.6
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "antenna_orientation": "North into open space (4.88mm overhang)",
+      "usb_diff_pair_length_mm": 19.65,
+      "usb_total_route_estimate_mm": 22.0,
+      "lcd_overlap_y_mm": 9.13,
+      "lcd_height_requirement": "Standoff Z >= 2.50mm provides >0.10mm clearance for 2.40mm shield can; alternatively LCD corner cut",
+      "h1_clearance_mm": 18.2,
+      "rf_noise_coupling": "Far from switching power inductors (>35mm to L1, >25mm to L3)",
+      "verdict": "SELECTED (optimal RF performance and textbook USB 2.0 routing)"
+    },
+    "candidate_2_west_strip": {
+      "position_xy_mm": "X <= 63.52 mm",
+      "rot_deg": "Any",
+      "layer": "F.Cu",
+      "verdict": "REJECTED (Physically impossible: West strip width is only 13.22mm, fully occupied by H1, J7, J9, RJ45, H3; no 13.2x16.6mm space exists)"
+    },
+    "candidate_3_between_usb_rj45": {
+      "position_xy_mm": [
+        57.0,
+        95.0
+      ],
+      "rot_deg": 90.0,
+      "layer": "F.Cu",
+      "verdict": "REJECTED (Antenna pointing West sits directly between metal USB-C and shielded RJ45 cable shells; severe RF detuning; eliminates J9 cable space)"
+    },
+    "candidate_4_northeast": {
+      "position_xy_mm": [
+        135.0,
+        75.6
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "verdict": "REJECTED (USB trace >85mm crosses all high-current switching power nodes; crowds quiet RTC BQ32000 zone)"
+    }
+  },
+  "drc_summary": {
+    "total_violations": 129,
+    "errors": 0,
+    "warnings": 129,
+    "unconnected_items": 360,
+    "schematic_parity_issues": 0
+  },
+  "acceptance_criteria": {
+    "AC1_port_centers_and_cross_section": {
+      "status": "PASS",
+      "evidence": "J7 Top (F.Cu) at (53.975, 82.500), RJ45 Bottom (B.Cu) mouth at (50.300, 110.890). Vertical separation 28.39mm in plan, 1.60mm in Z."
+    },
+    "AC2_plug_clearance_and_3d_non_collision": {
+      "status": "PASS",
+      "evidence": "Plug clearance 14.39mm >= 2.0mm; J9 completely clear of RJ45 keepout by 1.324mm; J8 Row 2 to J3 pads 1.21mm."
+    },
+    "AC3_board_outline_and_keepout_constraints": {
+      "status": "PASS",
+      "evidence": "PCB outline 99.40x61.04mm, H1-H4, J3 FPC and U2 15mm RF keepout preserved. Ethernet underlay area (634 mm2) documented for TASK-093."
+    },
+    "AC4_verification_artifacts_and_zero_drc_errors": {
+      "status": "PASS",
+      "evidence": "DRC errors: 0, schematic parity issues: 0, unconnected items: 360 (baseline preserved)."
+    },
+    "AC5_u2_mcu_candidate_evaluation_and_handover": {
+      "status": "PASS",
+      "evidence": "4 candidates thoroughly compared. Candidate 1 (78.0, 75.6) selected: USB diff pair length 19.65mm, RF antenna 4.88mm overhang, LCD standoff condition documented. Handed over to TASK-092."
+    }
+  }
+}

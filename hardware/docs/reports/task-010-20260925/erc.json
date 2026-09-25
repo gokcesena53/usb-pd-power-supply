@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-25T09:44:34",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/a43081a6-9aa2-4898-9347-bbcb5849dafd",
+            "violations": []
+        },
+        {
+            "path": "/USB_C_INPUT/",
+            "uuid_path": "/a43081a6-9aa2-4898-9347-bbcb5849dafd/b1c77f87-da4f-471e-9ed3-42007402a7f4",
+            "violations": []
+        },
+        {
+            "path": "/USB_PD_CONTROLLER/",
+            "uuid_path": "/a43081a6-9aa2-4898-9347-bbcb5849dafd/ef9b8359-2233-4750-a469-a0efa9e391b0",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/a43081a6-9aa2-4898-9347-bbcb5849dafd/d73c21d5-7478-4a02-ac94-6607c580f283",
+            "violations": []
+        },
+        {
+            "path": "/USER INTERFACE/",
+            "uuid_path": "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b",
+            "violations": []
+        }
+    ],
+    "source": "gopo.kicad_sch"
+}

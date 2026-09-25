@@ -4,7 +4,7 @@ title: Uretim oncesi elektriksel ve mekanik kabul yap
 status: To Do
 assignee: []
 created_date: '2026-09-24 13:06'
-updated_date: '2026-09-24 13:06'
+updated_date: '2026-09-25 07:43'
 labels:
   - layout
 milestone: m-1
@@ -18,6 +18,7 @@ dependencies:
   - TASK-013
 references:
   - design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md
+  - design_decisions/output/ETHERNET_ALTI_ALAN_ANALIZI_20260925.md
 priority: high
 ordinal: 170000
 ---
@@ -37,6 +38,7 @@ Gerber üretimine zorunlu giriş kontrolü. Elektriksel routing kabulünü, fizi
 - [ ] #5 Üretici DFM, çift yüz dizgi/THT sırası, ağır eleman tutunması, J8/LCD pin kesimi, lehim/temizlik/test erişimi ve mekanik destek son yerleşim için kontrol edilmiş.
 - [ ] #6 RF ve besleme/termal prototip görevlerine test noktaları, düzenek, yük/ortam matrisi ve testten önce belirlenmiş sayısal geçme/kalma sınırları devredilmiş; prototip testleri yapılmış gibi gösterilmemiş.
 - [ ] #7 Üretim için açık engel kalmamış; inceleme raporu Gerber görevine bağlı. Sonradan kart/kurallar değişirse bu kabul geçersiz sayılıp ilgili kontroller tekrarlanıyor.
+- [ ] #8 TASK-093 ile Ethernet altına yerleşen her ref, TASK-053 numune ölçüleri ve son montaj toleranslarıyla yeniden karşılaştırılmış; pozitif açıklık marjı, RJ45/header/J9 pin-lehim çakışmazlığı ve test/servis erişimi kanıtlı. Yalnız nominal 1,90 mm varsayımına dayanarak üretim kabulü verilmemiş.
 <!-- AC:END -->
 
 ## Definition of Done

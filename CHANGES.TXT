@@ -3,6 +3,74 @@ bkz. CERN OHL lisansının 3.4.b bölümü.
 
 REV_C (2026-09-16) - devam ediyor
 ---------------------------------
+25.09.2026 - TASK-093.01:
+- Ethernet besleme grubu (Q8, R17, C21, C20, C10, TP14) hazirlik alanindan kart icine, B.Cu katmanindaki J8 mezanini yanina ve modul altina tasindi.
+- C20 (100nF, 0402) J8 altinda (X=96,500, Y=93,580, 90°) Pin 14 (ETH_3V3) & Pin 12 (GND) ic kolonuna 3,6 mm mesafede yuksek frekans dekuplaji saglar; 0,50 mm yukseklikle nominal 2,00 mm (>1,40 mm en kotu senaryo) dikey aciklik marjina sahiptir. gopo.kicad_dru kuralina C20 eklendi.
+- Q8 (SOT-23-6, 107; 88,5), C10 (22uF, 0805, 107; 94) ve TP14 (D1.0mm pad, 107; 82,15) J8 disinda B.Cu'ya yerlestirildi; modul alti yukseklik/termal riski sifirlandi; TP14 modul takiliyken test probu erisimine acik birakildi.
+- R17 (100k, 111,5; 87,2) ve C21 (100nF, 111,5; 89,8) Q8 kapi-kaynak uclarina yakin paralel yerlestirildi.
+- Dogrulama: FreeCAD 3D kesisim 0,0 mm3; yeni DRC hatasi 0 (baseline 15 hata korundu), parite 0, baglantisiz oge 360 (baseline korundu).
+- Karar: design_decisions/output/ETHERNET_BESLEME_YERLESIMI_TASK093_01_20260925.md.
+- Raporlar: hardware/docs/reports/task-093-01-20260925/.
+
+25.09.2026 - TASK-091 kullanici hizalama duzeltmesi:
+- Onceki 28,39 mm Y kaymasi kaldirildi. J7 Y=88,500; J8 orijin Y=79,610,
+  RJ45 merkezi Y=88,500: sol panelde USB-C tam ustte, Ethernet tam altta.
+- H1 mekanik pin cakismasini onlemek icin USB-C 6 mm guneye alindi.
+- J9 capraz donusu kaldirildi; (58;104), -90 derece ile duz 5 pin sirasi.
+- J7/J8 nominal STEP mesafesi 3,23 mm, kesisim 0; sadece bu cift icin
+  courtyard istisnasi eklendi. Gercek lehim/fis zarflari numune kabulune kalir.
+- Yeni DRC hatasi 0; mevcut U2 kenar hatalari 15, uyari 129, parite 0,
+  baglantisiz oge 360. Kullanici U2 konumu ve diger parcalar korundu.
+- Karar: design_decisions/output/PORT_HIZASI_ENKODER_DUZELTME_20260925.md.
+- Asagidaki eski TASK-091 port hizasi ve tam mekanik kabul iddialari gecersizdir.
+
+25.09.2026 - TASK-091:
+- J7 USB-C Top (F.Cu) ve J8 RJ45 Bottom (B.Cu) port iliskisi sol panel kesitinde
+  (Y-Z) olculu gosterildi: Delta Y = 28,39 mm, 14,39 mm >= 2,0 mm es zamanli fis acikligi.
+- J9 panel enkoder 5P lehim pedleri capraz aciyla (61,750; 87,000 mm; -126,0°; F.Cu)
+  yeniden konumlandirildi; Pad 1..5 RJ45 keepout sinirindan 1,32 mm emniyetle tamamen
+  kurtarildi; 3D cakisma ve lehim temas riski sifirlandi; LCD cerceve acikligi 0,85 mm.
+- U2 ESP32-C6 MCU icin 4 aday karsilastirildi: Kuzeybatı Aday 1 (78,0; 75,6 mm; 0,0°; F.Cu)
+  19,65 mm pad mesafesi, ~22 mm dogrudan USB 2.0 diferansiyel hatti ve 4,88 mm kuzey acik
+  alana uzanan RF anteniyle tek uygulanabilir aday olarak secildi; West seridinde bos yer
+  olmadigi ve RF sarti kanitlandi; LCD standoff sarti (Z >= 2,50 mm) TASK-054'e devredildi.
+- Ethernet alti 634 mm2 brut serbest hacim TASK-093 yerlesimine devredildi.
+- Dogrulama: DRC error 0, schematic parity 0, baglantisiz oge 360 (baseline korundu).
+- Karar: design_decisions/output/ETHERNET_USB_MCU_ANKRAJ_TASK091_20260925.md.
+- Raporlar: hardware/docs/reports/task-091-20260925/.
+
+25.09.2026 - Ethernet alti alan kullanimi plan guncellemesi:
+- Kullanici istegiyle J8 mezanini altindaki uygun hacmin aktif komponent
+  yerlesiminde kullanilmasi kararlastirildi; guncel PCB geometrisi, aday refler,
+  RJ45/header kisitlari ve numune kabul kapisi analiz belgesine kaydedildi.
+- Karar: design_decisions/output/ETHERNET_ALTI_ALAN_ANALIZI_20260925.md.
+  Bu degisiklik analiz/is planidir; PCB tasima veya uretim onayi degildir.
+
+25.09.2026 - TASK-063:
+- J7 USB-C soketi (53,975; 82,500 mm; 270,0°; F.Cu) sol kenara yerlestirildi;
+  on kenar cizgisi X=50,300 mm ile 0,0000 mm tam hata ile hizalandi, 0,525 mm
+  metal burun on tasmasi saglandi.
+- J8 Waveshare 2-CH Ethernet mezanini (102,500; 102,000 mm; 0,0°; B.Cu) sol kenara
+  yerlestirildi; RJ45 agzi batiya bakar, govdesi X=47,00 mm'ye uzanir (nominal 4,3 mm
+  on tasma). J3 padleri ile 1,21 mm temiz bakir acikligi saglandi, kisa devre ve
+  solder mask koprusu hatasi 0'a indirildi.
+- Ekkablo fis acikligi: USB-C ve RJ45 eksenleri arasi 28,39 mm, govde araligi 15,34 mm,
+  es zamanli fis baslik acikligi 14,39 mm >= 2,0 mm proje sarti saglandi.
+- U2 ESP32-C6-MINI-1 (78,000; 75,600 mm; 0,0°; F.Cu) kuzey kenara yerlestirildi;
+  anten ucu Y=64,60 mm'ye uzanarak PCB disina 4,88 mm sarktildi; USB 2.0 diferansiyel
+  hat boyu ~25 mm ile ultra-kisa tutuldu.
+- J9 panel enkoder 5 pin THT lehim pedleri (58,000; 90,000 mm; -90,0°; F.Cu)
+  J7 ile RJ45 arasindaki koridora yerlestirildi; LCD cercevesine 5,52 mm aciklikla
+  serbest lehimleme/prob koridoru ve batiya dogrudan kablo cikisi saglandi.
+- C34 dekuplaj kondansatoru (104,800; 105,550 mm; 90,0°; F.Cu) J8 pinleriyle olan
+  fiziksel cakismayi giderecek sekilde yeniden konumlandirildi.
+- gopo.kicad_dru dosyasinda Kural 5 (Mezzanine courtyard exception) J9'u kapsayacak
+  sekilde guncellendi.
+- Dogrulama: DRC error 0, schematic parity 0, baglantisiz oge 360 (baseline korundu),
+  D5-U11 BOOST_FB iz boyu 2,585 mm korundu.
+- Karar: design_decisions/output/MEKANIK_ANKRAJLAR_TASK063_20260925.md.
+- Raporlar: hardware/docs/reports/task-063-20260925/.
+
 24.09.2026 - Iki turlu yerlesim ve uretime gecis plani:
 - TASK-086 kaba tum-blok alan plani, TASK-087 tam routing, TASK-088
   uretim oncesi elektriksel/mekanik kabul gorevleri eklendi.
@@ -434,6 +502,99 @@ akıyor. Dahili rail bir pre-boost arkasına alındı.
   J3 zarfi, pin 1/30 ve bukum yolu Dwgs.User'a islendi; numune dogrulama
   maddeleri TASK-012'ye baglandi. Karar:
   design_decisions/output/LCD_FPC_BUKUM_VE_J3_KONUMU_20260924.md.
+- PCB: TFT backlight (3.3V + PWM) grubu iliskisel yerlesimi yapildi
+  (TASK-081): Q7 (IRLML6344TRPBF SOT-23), R28 (100R 0402), R29 (100k 0402)
+  ve R60 (5R6 0805) F.Cu katmaninda iliskisel yerlestirildi. Q7 Pad 1 (G) ve
+  Pad 2 (S) batiya, Pad 3 (D / BL_K) doguya bakar; R28 seri gate somleme,
+  R29 gate-source pull-down koprusudur. R60 (+3.3V -> BL_A) akim sinirlayici
+  maksimum 27.4 mW kayipla (<%22 0805 limiti) calisir; PWM donus yolu
+  yerel GND duzlemine baglanip INA226 (>120 mm) ve RTC'den (>180 mm)
+  yalitilmistir. DRC 145 -> 145, unconnected 360, schematic parity 0.
+  Karar: design_decisions/output/TFT_BACKLIGHT_YERLESIM_TASK081_20260924.md.
+- PCB: TFT J3 konnektor ve C34 dekuplaj grubu iliskisel yerlesimi yapildi
+  (TASK-082): C34 (100n 0402) F.Cu katmaninda sabit J3 konnektorunun
+  (98.00; 109.30 mm, rot 90, locked) dogusuna (101.00; 105.55 mm, rot 90)
+  yerlestirildi. Pad 1 (+3.3V) J3 Pin 22 (+3.3V) ile 0.02 mm dikey sapmayla
+  dogrudan yatay hizada (3.0 mm pad mesafesi, 1.94 mm bakir araligi),
+  Pin 21 ve 23 ile ortak baraya baglanir; Pad 2 (GND) J3 Pin 25 (GND) ve
+  yerel GND via'si ile L2 toprak duzlemine baglanir. C34 govdesi (h<=0.55 mm)
+  LCD alti zarfina (<=1.80 mm, pay 1.25 mm) tam uyumludur. ZIF flip kapagi
+  ve FPC giris alani (Bati / -X yonu) tamamen engelsizdir (>3.0 mm aciklik).
+  SPI (Pin 16-20) ve backlight (Pin 2, 4) koridorlari korunmustur. DRC
+  145 -> 145 (0 yeni ihlal), unconnected 360 -> 360, schematic parity 0.
+  Karar: design_decisions/output/TFT_J3_YERLESIM_TASK082_20260924.md.
+- PCB: Panel enkoder (J9 + R34-R36 pull-up) grubu iliskisel yerlesimi ve
+  slot/kablo tanimi yapildi (TASK-083): R34, R35, R36 (10k 0402) pull-up
+  direncleri B.Cu katmaninda 2.0 mm adimla (40.7, 42.7, 44.7 mm, y=116.2 mm)
+  tek tip rot 90 olarak hizalandi; Pad 1'ler tek +3.3V barasinda (y=116.71 mm),
+  Pad 2'ler paralel MCU sinyal cikisinda (y=115.69 mm) birlestirildi.
+  J9 THT 5-pin kablo ankraji (58.00; 91.60 mm, rot -90, F.Cu) pin haritasi
+  (1=A, 2=GND, 3=B, 4=S1, 5=GND) dogrulandi. LCD sol kenarindan 5.72 mm
+  (min 5.52 mm > 4.0 mm) aciklikla 45-60 derece havya yaklasimi ve prob
+  erisim koridoru tanimlandi. Kablo bukum zarfi (R>=4.5 mm, Z>=6.0 mm),
+  3 kablo cikis secenegi ve anten/anahtarlama dugumlerinden uzak izolasyon
+  kurallari TASK-063'e devredildi. Slot tipi olarak Edge.Cuts yarigi yerine
+  GND duzlem butunlugunu koruyan acik bord keepout koridoru (6x24 mm, Z>=8 mm)
+  secildi; Edge.Cuts degistirilmedi. DRC 145 -> 145, unconnected 360,
+  schematic parity 0.
+  Karar: design_decisions/output/PANEL_ENKODER_J9_YERLESIM_TASK083_20260924.md.
+- PCB: Test noktalari (TP6-TP8, TP11-TP13) grubu iliskisel yerlesimi ve
+  14 TP haritasi yapildi (TASK-084): Alti test noktasi iki bagimsiz 100-mil
+  (2.540 mm) standart prob hucresine ayrildi: UART0 debug portu TP11 (TX),
+  TP12 (RX), TP13 (GND) F.Cu katmaninda (y=122.0 mm, x=207.5..212.6 mm);
+  I2C veri yolu portu TP6 (SCL), TP7 (SDA), TP8 (INT) B.Cu katmaninda
+  (y=126.0 mm, x=207.5..212.6 mm). TP13 GND referansi prob yay klipsi
+  mesafesinde yerlestirildi; hucreler arasi 4.0 mm dusey ayrim saglandi.
+  Kart uzerindeki 14 test noktasinin tamami (TP1-TP14) devre blogu, neti,
+  olcüm amaci ve prob yuzuyle haritalandi. Gurultulu SW dugumlerine test
+  noktasi konulmadi; RJ45 (>12 mm) ve LCD altı kisitlarina uyuldu. DRC
+  145 -> 145, unconnected 360, schematic parity 0.
+  Karar: design_decisions/output/TEST_NOKTALARI_YERLESIM_TASK084_20260924.md.
+- PCB: Uretici kurallari, 4-katman stackup (JLCPCB JLC04161H-7628), USB 2.0
+  diferansiyel empedansi (90 ohm) ve ozel DRC kurallari guncellendi (TASK-010):
+  hardware/gopo.kicad_dru icerisindeki eski referanslar (U9, J1) temizlendi;
+  U1/U7/U8/U11/U12 ince adimli entegreler icin 0.15 mm aciklik kurali, J7 USB-C
+  icin 0.25 mm kenar acikligi ve 0.18 mm NPTH kilavuz deligi kurali (0.1944 mm
+  mesafe, 4 hole_clearance hatasini cozdu) tanimlandi. U11 TPS55340 HTSSOP-14
+  termal padindeki 15 adet 0.20 mm termal via icin ozel kural eklendi (15
+  drill_out_of_range hatasini cozdu, genel kart 0.30 mm delik kurali korundu).
+  J8 mezanin courtyard istisnasi yalniz kanitli ciftlerle (TP14) sinirlandi,
+  RJ45 bolgesi keepout olarak tutuldu. Katman dizilimi JLC04161H-7628 (7628
+  prepreg 0.2104 mm, Er=4.6, core 1.065 mm, 1 oz dis / 0.5 oz ic bakir,
+  toplam 1.6 mm) olarak islendi. USB D+/D- icin W=0.25 mm, S=0.20 mm ile
+  Zdiff=89.0 ohm (%1.1 sapma) hesaplandi ve USB_DIFF_90 sinifi gopo.kicad_pro'ya
+  eklendi. DRC hatalari 19 -> 0'a indi (toplam ihlal 145 -> 126, yalniz
+  63 text_height + 63 text_thickness uyarisi kaldi), unconnected 360,
+  schematic parity 0, ERC 0.
+  Karar: design_decisions/output/URETICI_VE_DRC_KURALLARI_TASK010_20260925.md.
+- PCB: 15 fonksiyonel grup yerlesimi topluca dogrulandi ve kart yerlesimine
+  devredildi (TASK-085): Karttaki 143 footprint'in tamami (137 gruplanmis,
+  6 mekanik ankraj H1-H4, J3, J9) 15 gruba eksiksiz eslendi (%100 parite).
+  Her grubun x/y zarfi, hedef katmani (J7/U2 top, J8 ve guc bloklari bottom),
+  giris/cikis arayuz koridorlari (VBUS, V_PRE, 3V3, I2C, SPI, UART, OUT_POS)
+  ve kritik baglantilari konsolide handoff tablosuna islendi. D5-U11 BOOST_FB
+  hattinin kesintisizligi ve 2.585 mm uzunlugu (<=10 mm) teyit edildi.
+  J3 kilitli FPC ankraji, J9 acik bord enkoder koridoru ve RJ45 alti mutlak
+  keepout bolgesi TASK-086 kaba alan plani ve TASK-008 ince yerlesim icin
+  devir kurallarina baglandi. DRC 126 (0 hata, 126 metin uyarisi), unconnected
+  360, schematic parity 0.
+  Karar: design_decisions/output/GRUP_DEVIR_VE_KONSOLIDE_DOGRULAMA_TASK085_20260925.md.
+- PCB: Tum bloklarla kaba PCB alan plani hazirlandi ve aday duzenler
+  karsilastirildi (TASK-086): 99.40 x 61.04 mm kart uzerinde iki aday kaba
+  alan plani (Aday A ve Aday B) modellendi. Aday A (Dogrusal Bati->Dogu guc akisi,
+  Kuzeybati U2 ESP32-C6 / kisa 22 mm USB hatti, J7 top sol, J8 bottom sol ve
+  Kuzeydogu sessiz RTC kosesi) teknik ve elektriksel ustunlukleriyle secildi;
+  Aday B (uzun 72 mm USB hatti ve karisik guc akisi) elendi. Tum 15 grubun
+  gercek XY zarflari, yukseklikleri ve koridorlari kart uzerinde butcelendi;
+  guc bloklarinin sonradan sikismayacagi genis alanlar ayrildi. J8 Mezanin
+  alti Bolge 3 RJ45 bacak cikintisi mutlak keepout olarak korundu; Bolge 2
+  orta boslugu baslangicta kullanilmayan alan kabul edildi. SVG planlari
+  ve karsilastirma verileri uretildi. DRC 126 (0 hata, 126 metin uyarisi),
+  unconnected 360, schematic parity 0.
+  Karar: design_decisions/output/KABA_ALAN_PLANI_TASK086_20260925.md.
+
+
+
 
 Açık kalemler todo.txt dosyasındadır. Başlıcaları: OUT_EN için ESP32
 GPIO seçimi (boş pin yok), TBD parça seçimleri ve şema yerleşimi.

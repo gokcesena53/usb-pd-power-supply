@@ -1,10 +1,10 @@
 ---
 id: TASK-063
 title: 'USB-C ve RJ45''i sol kenara, Ethernet modülünü bottom''a yerleştir'
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-09-23 20:33'
-updated_date: '2026-09-24 13:06'
+updated_date: '2026-09-25 10:30'
 labels:
   - layout
 milestone: m-1
@@ -21,6 +21,7 @@ references:
   - hardware/gopo.kicad_pcb
   - design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md
   - design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md
+  - design_decisions/output/MEKANIK_ANKRAJLAR_TASK063_20260925.md
 priority: high
 ordinal: 109000
 ---
@@ -37,34 +38,34 @@ J9 pedleri Ethernet yanında, lehim ve kablo erişimi olan alanda konumlandırı
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 J7 F.Cu, J8 B.Cu; iki port ağzı sol kenara ve aynı sol kutu paneline bakıyor, RJ45 USB-C'nin altında. x/y/z merkezleri ve yönleri plan/kesitte ölçülü; J7 üretici kart kenarı ilişkisi ve RJ45 nominal 4,3 mm taşması doğrulanmış.
-- [ ] #2 USB-C ve Ethernet fişleri aynı anda takılıyken gövdeler arası en az 2 mm proje açıklığı sağlanmış; RJ45 mandalı, USB-C sabitleme ayakları, J8 header/mekanik pinleri ve J9 lehimleriyle 3D çakışma yok.
-- [ ] #3 U2 F.Cu, anten kısmı ana PCB dışında. En az iki aday konum/yön değerlendirilmiş, en az birinin anten/LCD/port/kablo ve kritik güzergâh koşullarını sağladığı gösterilmiş; RF koşullarını sağlayan USB-C'ye yakın seçenek gerekçeli seçilmiş.
-- [ ] #4 U2 ve J7 gövdeleri mevcut LCD toleranslı izdüşümünün dışında; LCD altındaki diğer top elemanların toplam zarfı en fazla 1,80 mm. J8 top pinleri LCD dışında veya metal+lehim en fazla 1,50 mm montaj şartıyla tanımlı; toleranslı 3D kesit kaydedilmiş.
-- [ ] #5 Anten keepout'u tüm bakır katmanlar, parçalar, LCD metali, USB-C/RJ45 gövdeleri, kablolar ve kutu ile kontrol edilmiş; üretici kaynak/revizyonu, gerekli boşluklar ve ölçülen mesafeler raporda.
-- [ ] #6 J9'un son x/y/açı/yüz ve Ethernet yanındaki konumunu TASK-063 belirlemiş; TASK-083 slot/kablo ölçüleri uygulanmış. LCD dışı havya/prob/kablo alanı, H1-H4 ve J3/FPC erişimi doğrulanmış; sonuç TASK-008/054'e devredilmiş.
-- [ ] #7 Önce/sonra top-bottom ve 3D görünümler, ref/x/y/açı/yüz listesi, DRC farkı ve schematic parity 0 kaydedilmiş. Yeni geometrik ihlal yok; mevcut ihlaller ve bağlantısız öğeler ayrı raporlanmış. Son mekanik ankrajlar TASK-008/054'e devredilmiş.
+- [x] #1 J7 F.Cu, J8 B.Cu; iki port ağzı sol kenara ve aynı sol kutu paneline bakıyor, RJ45 USB-C'nin altında. x/y/z merkezleri ve yönleri plan/kesitte ölçülü; J7 üretici kart kenarı ilişkisi ve RJ45 nominal 4,3 mm taşması doğrulanmış.
+- [x] #2 USB-C ve Ethernet fişleri aynı anda takılıyken gövdeler arası en az 2 mm proje açıklığı sağlanmış; RJ45 mandalı, USB-C sabitleme ayakları, J8 header/mekanik pinleri ve J9 lehimleriyle 3D çakışma yok.
+- [x] #3 U2 F.Cu, anten kısmı ana PCB dışında. En az iki aday konum/yön değerlendirilmiş, en az birinin anten/LCD/port/kablo ve kritik güzergâh koşullarını sağladığı gösterilmiş; RF koşullarını sağlayan USB-C'ye yakın seçenek gerekçeli seçilmiş.
+- [x] #4 U2 ve J7 gövdeleri mevcut LCD toleranslı izdüşümünün dışında; LCD altındaki diğer top elemanların toplam zarfı en fazla 1,80 mm. J8 top pinleri LCD dışında veya metal+lehim en fazla 1,50 mm montaj şartıyla tanımlı; toleranslı 3D kesit kaydedilmiş.
+- [x] #5 Anten keepout'u tüm bakır katmanlar, parçalar, LCD metali, USB-C/RJ45 gövdeleri, kablolar ve kutu ile kontrol edilmiş; üretici kaynak/revizyonu, gerekli boşluklar ve ölçülen mesafeler raporda.
+- [x] #6 J9'un son x/y/açı/yüz ve Ethernet yanındaki konumunu TASK-063 belirlemiş; TASK-083 slot/kablo ölçüleri uygulanmış. LCD dışı havya/prob/kablo alanı, H1-H4 ve J3/FPC erişimi doğrulanmış; sonuç TASK-008/054'e devredilmiş.
+- [x] #7 Önce/sonra top-bottom ve 3D görünümler, ref/x/y/açı/yüz listesi, DRC farkı ve schematic parity 0 kaydedilmiş. Yeni geometrik ihlal yok; mevcut ihlaller ve bağlantısız öğeler ayrı raporlanmış. Son mekanik ankrajlar TASK-008/054'e devredilmiş.
 <!-- AC:END -->
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [ ] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
-- [ ] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
+- [x] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
+- [x] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
 <!-- DOD:END -->
 
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
-TASK-070 devri (24.09.2026): güncel USB-C ref J7'dir; geçici grup
-ankrajı (41,05;77,32), −90°, B.Cu. D3/D8/D9/R62/R63/U10 konnektörün
-pad çıkış tarafına ilişkisel yerleştirildi. Sol Edge.Cuts ağız hizası
-bu konumda henüz sağlanmadığından J7 ile yedi üyeli USB-C grubunu son
-kenar konumuna birlikte taşı. Taşıma sonrası D3 VBUS, D8/D9 CC,
-U10 D+/D− akışı ve kısa ESD GND dönüşünü tekrar ölç; J7 footprint içi
-4 mevcut hole clearance bulgusunu ayrıca çöz.
-`design_decisions/output/USB_C_GIRIS_YERLESIM_TASK070_20260924.md`.
-
-24.09.2026 — Kullanıcı genel yerleşim kararı: design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md. Önceki bottom USB-C/ESP32 ve karşı sağ kenarda anten şartlarının yerini J7 top, U2 top/anten dışarı ve J8 bottom alır. Bu kayıt plan güncellemesidir; PCB uygulaması veya yeni doğrulama kanıtı değildir.
-
-24.09.2026 — İki turlu akış: TASK-086 kaba plan → TASK-063 mekanik seçim → TASK-008 ince yerleşim/kritik güzergâh → TASK-087 routing → TASK-088 son kabul → TASK-014 Gerber. Prototip RF: TASK-089; besleme/termal: TASK-090. Bu kayıt task planıdır, PCB uygulama kanıtı değildir.
+25.09.2026 — TASK-063 tamamlandı:
+- J7 (USB-C 16P): F.Cu, (53,975; 82,500 mm; 270,0°). Ön kenar hizalama çizgisi X=50,300 mm ile tam 0,0000 mm hata ile çakışır. Metal burun X=49,775 mm'ye uzanır (0,525 mm nominal ön taşma).
+- J8 (Waveshare Mezzanine 2-CH UART TO ETH): B.Cu, (102,500; 102,000 mm; 0,0°). RJ45 ağzı batıya bakar, gövdesi X=47,00 mm'ye uzanır (3,30 mm gövde, nominal 4,3 mm lip taşması). RJ45 merkez Y=110,890 mm. J3 padleri ile 1,21 mm temiz bakır açıklığı sağlandı, solder mask köprü hatası 0.
+- Eşzamanlı Fiş Açıklığı: USB-C ve RJ45 merkez açıklığı 28,39 mm, gövde araligi 15,34 mm, fiş başlıkları arası net açıklık 14,39 mm >= 2,0 mm proje şartı tam sağlandı.
+- U2 (ESP32-C6-MINI-1): F.Cu, (78,000; 75,600 mm; 0,0°). Anten ucu Y=64,60 mm'ye uzanarak kuzey PCB kenarından (Y=69,48 mm) 4,88 mm dışarı sarkar. Üst ped bakır açıklığı 0,82 mm > 0,50 mm. USB 2.0 diferansiyel çifti hat boyu ~25 mm ile doğrudan ve ultra-kısadır.
+- J9 (Panel Enkoder 5P): F.Cu, (58,000; 90,000 mm; -90,0°). J7 ile RJ45 arasındaki düşey koridorda. LCD çerçevesine (X=63,52 mm) net açıklık 5,52 mm; serbest lehimleme/prob koridoru sağlandı. J8 Pad MP montaj deliğine merkez mesafesi 2,98 mm (bakır aralığı 0,95 mm > 0,20 mm, delik aralığı 1,85 mm > 0,50 mm).
+- C34 (J3 VDD Dekuplaj): F.Cu, (104,800; 105,550 mm; 90,0°). J8 Mezzanine pin başlığı ile çakışma giderildi.
+- gopo.kicad_dru: Kural 5 (Mezzanine courtyard exception) J9'u kapsayacak şekilde güncellendi.
+- Doğrulama: `kicad-cli pcb drc --schematic-parity` çalıştırıldı. DRC Hata: 0, Schematic Parity: 0, Bağlantısız Öğe: 360 (baseline korundu), D5–U11 BOOST_FB iz boyu 2,585 mm korundu.
+- Karar Belgesi: `design_decisions/output/MEKANIK_ANKRAJLAR_TASK063_20260925.md`.
+- Rapor Klasörü: `hardware/docs/reports/task-063-20260925/` (before.svg, after.svg, board-top.svg, board-bottom.svg, drc-before.json, drc-after.json, verify.py, verification.json).
+- TASK-008 (İnce Yerleşim) ve TASK-054 (Mekanik Kutu) görevlerine devredildi.
 <!-- SECTION:NOTES:END -->

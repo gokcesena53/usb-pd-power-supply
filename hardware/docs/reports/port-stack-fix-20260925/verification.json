@@ -1,0 +1,501 @@
+{
+  "board_sha256": "8542087c6b158a94290d0a8fc05e3af5d8247e487f68f8126729f1c5a6189d63",
+  "changed_refs": [
+    "J7",
+    "J8",
+    "J9"
+  ],
+  "before": {
+    "J7": {
+      "xy": [
+        53.975,
+        82.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ]
+    },
+    "J8": {
+      "xy": [
+        102.5,
+        102.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J8-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "unconnected-(J8-Pin_10-Pad10)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "14",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "15",
+          "unconnected-(J8-Pin_15-Pad15)"
+        ],
+        [
+          "16",
+          "unconnected-(J8-Pin_16-Pad16)"
+        ],
+        [
+          "2",
+          "unconnected-(J8-Pin_2-Pad2)"
+        ],
+        [
+          "3",
+          "/MCU/ETH_CFG0"
+        ],
+        [
+          "4",
+          "/MCU/ETH_RUN"
+        ],
+        [
+          "5",
+          "/MCU/UART_TX"
+        ],
+        [
+          "6",
+          "unconnected-(J8-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "/MCU/UART_RX"
+        ],
+        [
+          "8",
+          "unconnected-(J8-Pin_8-Pad8)"
+        ],
+        [
+          "9",
+          "unconnected-(J8-Pin_9-Pad9)"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ]
+    },
+    "J9": {
+      "xy": [
+        61.75,
+        87.0
+      ],
+      "angle": -126.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "ENCODER_A"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "ENCODER_B"
+        ],
+        [
+          "4",
+          "ENCODER_SW"
+        ],
+        [
+          "5",
+          "GND"
+        ]
+      ]
+    }
+  },
+  "after": {
+    "J7": {
+      "xy": [
+        53.975,
+        88.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ]
+    },
+    "J8": {
+      "xy": [
+        102.5,
+        79.61
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J8-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "unconnected-(J8-Pin_10-Pad10)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "14",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "15",
+          "unconnected-(J8-Pin_15-Pad15)"
+        ],
+        [
+          "16",
+          "unconnected-(J8-Pin_16-Pad16)"
+        ],
+        [
+          "2",
+          "unconnected-(J8-Pin_2-Pad2)"
+        ],
+        [
+          "3",
+          "/MCU/ETH_CFG0"
+        ],
+        [
+          "4",
+          "/MCU/ETH_RUN"
+        ],
+        [
+          "5",
+          "/MCU/UART_TX"
+        ],
+        [
+          "6",
+          "unconnected-(J8-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "/MCU/UART_RX"
+        ],
+        [
+          "8",
+          "unconnected-(J8-Pin_8-Pad8)"
+        ],
+        [
+          "9",
+          "unconnected-(J8-Pin_9-Pad9)"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ]
+    },
+    "J9": {
+      "xy": [
+        58.0,
+        104.0
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "ENCODER_A"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "ENCODER_B"
+        ],
+        [
+          "4",
+          "ENCODER_SW"
+        ],
+        [
+          "5",
+          "GND"
+        ]
+      ]
+    }
+  },
+  "pad_net_mapping_unchanged": true,
+  "other_footprints_unchanged": true,
+  "port_center_y_mm": 88.5,
+  "port_y_alignment_error_mm": 0,
+  "baseline_errors": 15,
+  "final_errors": 15,
+  "new_errors": [],
+  "warnings": 129,
+  "schematic_parity": 0,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "sample_check": "RJ45 solder tails/USB solder fillets and real plug envelopes remain TASK-053/054/088 acceptance; STEP model is nominal.",
+  "pin_label_changes": [
+    {
+      "text": "1 A",
+      "before": [
+        61.5,
+        91.6
+      ],
+      "after": [
+        61,
+        104
+      ]
+    },
+    {
+      "text": "2 GND",
+      "before": [
+        61.5,
+        95.8
+      ],
+      "after": [
+        61,
+        108.2
+      ]
+    },
+    {
+      "text": "3 B",
+      "before": [
+        61.5,
+        100.0
+      ],
+      "after": [
+        61,
+        112.4
+      ]
+    },
+    {
+      "text": "4 SW",
+      "before": [
+        61.5,
+        104.199999
+      ],
+      "after": [
+        61,
+        116.6
+      ]
+    },
+    {
+      "text": "5 GND",
+      "before": [
+        61.5,
+        108.399999
+      ],
+      "after": [
+        61,
+        120.8
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="800" height="550">
+<style>
+  .title { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+  .subtitle { font-family: sans-serif; font-size: 12px; fill: #7f8c8d; }
+  .board { fill: #ecf0f1; stroke: #2c3e50; stroke-width: 2.5; rx: 15; }
+  .lcd-area { fill: rgba(52, 152, 219, 0.08); stroke: #2980b9; stroke-width: 1.5; stroke-dasharray: 4,4; }
+  .block-rect { stroke-width: 1.2; stroke: #2c3e50; opacity: 0.85; }
+  .block-text { font-family: sans-serif; font-size: 10px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+  .legend { font-family: sans-serif; font-size: 11px; fill: #2c3e50; }
+</style>
+<text x="50" y="30" class="title">Candidate B: Perimeter Flow + Northeast RF</text>
+<text x="50" y="45" class="subtitle">Boyut: 99.40 x 61.04 mm | Alan Bütçesi ve Kaba Blok Dağılımı</text>
+<rect x="50.0" y="50.0" width="700.0" height="429.8591549295774" class="board"/>
+<rect x="126.40845070422536" y="71.12676056338029" width="547.1830985915493" height="387.60563380281684" class="lcd-area"/>
+<text x="400.0" y="92.39436619718307" font-family="sans-serif" font-size="10" fill="#2980b9" text-anchor="middle">LCD GÖRÜNÜR ALANI (77.7 x 55.0 mm)</text>
+<circle cx="78.16901408450704" cy="78.16901408450704" r="11.267605633802816" fill="#bdc3c7" stroke="#2c3e50" stroke-width="1.5"/>
+<circle cx="721.8309859154929" cy="78.16901408450704" r="11.267605633802816" fill="#bdc3c7" stroke="#2c3e50" stroke-width="1.5"/>
+<circle cx="78.16901408450704" cy="451.69014084507035" r="11.267605633802816" fill="#bdc3c7" stroke="#2c3e50" stroke-width="1.5"/>
+<circle cx="721.8309859154929" cy="451.69014084507035" r="11.267605633802816" fill="#bdc3c7" stroke="#2c3e50" stroke-width="1.5"/>
+<rect x="50.0" y="50.0" width="385.2112676056338" height="186.76056338028164" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="242.6056338028169" y="146.3802816901408" class="block-text">ETHERNET_MEZANIN</text>
+<rect x="50.0" y="335.35211267605627" width="82.39436619718312" height="126.76056338028168" fill="#9b59b6" class="block-rect" rx="3"/>
+<text x="91.19718309859155" y="401.7323943661971" class="block-text">USB_C_GIRIS</text>
+<rect x="576.056338028169" y="50.0" width="154.92957746478874" height="130.42253521126756" fill="#3498db" class="block-rect" rx="3"/>
+<text x="653.5211267605633" y="118.21126760563378" class="block-text">ESP32_C6_MCU</text>
+<rect x="132.3943661971831" y="335.35211267605627" width="169.01408450704224" height="126.76056338028168" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="216.90140845070422" y="401.7323943661971" class="block-text">AP33772S_PD_KONTROLCU</text>
+<rect x="301.40845070422534" y="321.26760563380276" width="169.01408450704224" height="154.92957746478874" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="385.91549295774644" y="401.7323943661971" class="block-text">TPS55340_PRE_BOOST</text>
+<rect x="470.4225352112676" y="321.26760563380276" width="154.92957746478874" height="154.92957746478874" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="547.887323943662" y="401.7323943661971" class="block-text">AOZ1284_BUCK</text>
+<rect x="625.3521126760563" y="321.26760563380276" width="124.64788732394358" height="126.76056338028168" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="687.6760563380282" y="387.6478873239436" class="block-text">LM74801_CIKIS_ANAHTARI</text>
+<rect x="611.2676056338028" y="180.42253521126756" width="138.7323943661971" height="140.8450704225352" fill="#e74c3c" class="block-rect" rx="3"/>
+<text x="680.6338028169013" y="253.84507042253517" class="block-text">INA226_OLCUM_CIKIS</text>
+<rect x="512.6760563380282" y="222.67605633802813" width="84.50704225352112" height="98.59154929577464" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="554.9295774647887" y="274.97183098591546" class="block-text">CIKIS_DESARJI</text>
+<rect x="435.2112676056338" y="67.74647887323941" width="133.80281690140845" height="98.59154929577464" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="502.11267605633805" y="120.04225352112672" class="block-text">RTC_BQ32000</text>
+<rect x="512.6760563380282" y="166.33802816901405" width="70.4225352112676" height="70.4225352112676" fill="#e67e22" class="block-rect" rx="3"/>
+<text x="547.887323943662" y="204.54929577464785" class="block-text">I2C_SEVIYE_DONUSTURUCU</text>
+<rect x="61.97183098591551" y="250.84507042253517" width="56.33802816901408" height="77.46478873239437" fill="#9b59b6" class="block-rect" rx="3"/>
+<text x="90.14084507042256" y="292.57746478873236" class="block-text">PANEL_ENKODER</text>
+<rect x="357.7464788732394" y="229.71830985915489" width="84.50704225352112" height="77.46478873239437" fill="#3498db" class="block-rect" rx="3"/>
+<text x="400.0" y="271.45070422535207" class="block-text">TFT_BACKLIGHT</text>
+<rect x="371.83098591549293" y="300.14084507042253" width="49.29577464788732" height="49.29577464788732" fill="#3498db" class="block-rect" rx="3"/>
+<text x="396.4788732394366" y="327.7887323943662" class="block-text">TFT_J3</text>
+<rect x="442.2535211267606" y="194.5070422535211" width="70.4225352112676" height="98.59154929577464" fill="#9b59b6" class="block-rect" rx="3"/>
+<text x="477.46478873239437" y="246.80281690140842" class="block-text">TEST_NOKTALARI</text>
+<rect x="50" y="525" width="15" height="15" fill="#3498db" rx="2"/>
+<text x="72" y="537" class="legend">F.Cu (Top)</text>
+<rect x="170" y="525" width="15" height="15" fill="#e67e22" rx="2"/>
+<text x="192" y="537" class="legend">B.Cu (Bottom)</text>
+<rect x="310" y="525" width="15" height="15" fill="#9b59b6" rx="2"/>
+<text x="332" y="537" class="legend">Karma (F.Cu + B.Cu)</text>
+</svg>

@@ -1,0 +1,2290 @@
+[
+  {
+    "ref": "C1",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 69.5,
+    "y_mm": 125.5,
+    "angle_deg": 0.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 68.565,
+      "x_max": 70.435,
+      "y_min": 125.015,
+      "y_max": 125.985
+    }
+  },
+  {
+    "ref": "C10",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 107.0,
+    "y_mm": 94.0,
+    "angle_deg": -90.0,
+    "value": "22u",
+    "footprint": "C_0805_2012Metric",
+    "bbox": {
+      "x_min": 105.995,
+      "x_max": 108.005,
+      "y_min": 92.275,
+      "y_max": 95.725
+    }
+  },
+  {
+    "ref": "C11",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 141.2,
+    "y_mm": 114.1,
+    "angle_deg": 0.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 140.265,
+      "x_max": 142.135,
+      "y_min": 113.615,
+      "y_max": 114.585
+    }
+  },
+  {
+    "ref": "C12",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 120.8,
+    "y_mm": 104.91,
+    "angle_deg": 90.0,
+    "value": "4u7",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 119.175,
+      "x_max": 122.425,
+      "y_min": 102.585,
+      "y_max": 107.235
+    }
+  },
+  {
+    "ref": "C13",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 117.115,
+    "y_mm": 104.91,
+    "angle_deg": 90.0,
+    "value": "4u7",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 115.49,
+      "x_max": 118.74,
+      "y_min": 102.585,
+      "y_max": 107.235
+    }
+  },
+  {
+    "ref": "C14",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 127.9,
+    "y_mm": 110.0,
+    "angle_deg": 90.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 127.415,
+      "x_max": 128.385,
+      "y_min": 109.065,
+      "y_max": 110.935
+    }
+  },
+  {
+    "ref": "C15",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 113.3,
+    "y_mm": 96.7,
+    "angle_deg": 180.0,
+    "value": "47u",
+    "footprint": "CP_Elec_6.3x5.8",
+    "bbox": {
+      "x_min": 108.575,
+      "x_max": 118.025,
+      "y_min": 93.125,
+      "y_max": 100.275
+    }
+  },
+  {
+    "ref": "C16",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 120.0,
+    "y_mm": 97.3,
+    "angle_deg": -90.0,
+    "value": "47u",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 118.375,
+      "x_max": 121.625,
+      "y_min": 94.975,
+      "y_max": 99.625
+    }
+  },
+  {
+    "ref": "C17",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 132.5,
+    "y_mm": 107.5,
+    "angle_deg": 180.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 131.565,
+      "x_max": 133.435,
+      "y_min": 107.015,
+      "y_max": 107.985
+    }
+  },
+  {
+    "ref": "C18",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 121.8,
+    "y_mm": 108.3,
+    "angle_deg": 180.0,
+    "value": "10n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 120.865,
+      "x_max": 122.735,
+      "y_min": 107.815,
+      "y_max": 108.785
+    }
+  },
+  {
+    "ref": "C19",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 120.8,
+    "y_mm": 112.5,
+    "angle_deg": 90.0,
+    "value": "15n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 120.315,
+      "x_max": 121.285,
+      "y_min": 111.565,
+      "y_max": 113.435
+    }
+  },
+  {
+    "ref": "C2",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 67.5,
+    "y_mm": 121.5,
+    "angle_deg": 0.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 66.565,
+      "x_max": 68.435,
+      "y_min": 121.015,
+      "y_max": 121.985
+    }
+  },
+  {
+    "ref": "C20",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 96.5,
+    "y_mm": 93.58,
+    "angle_deg": 90.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 96.015,
+      "x_max": 96.985,
+      "y_min": 92.645,
+      "y_max": 94.515
+    }
+  },
+  {
+    "ref": "C21",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 111.5,
+    "y_mm": 89.8,
+    "angle_deg": 0.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 110.565,
+      "x_max": 112.435,
+      "y_min": 89.315,
+      "y_max": 90.285
+    }
+  },
+  {
+    "ref": "C23",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 100.15,
+    "y_mm": 125.76,
+    "angle_deg": 180.0,
+    "value": "47n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 99.215,
+      "x_max": 101.085,
+      "y_min": 125.275,
+      "y_max": 126.245
+    }
+  },
+  {
+    "ref": "C24",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 91.55,
+    "y_mm": 127.96,
+    "angle_deg": 180.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 90.615,
+      "x_max": 92.485,
+      "y_min": 127.475,
+      "y_max": 128.445
+    }
+  },
+  {
+    "ref": "C25",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 87.65,
+    "y_mm": 119.66,
+    "angle_deg": 180.0,
+    "value": "4u7",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 85.325,
+      "x_max": 89.975,
+      "y_min": 118.035,
+      "y_max": 121.285
+    }
+  },
+  {
+    "ref": "C26",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 104.15,
+    "y_mm": 117.36,
+    "angle_deg": 180.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 103.215,
+      "x_max": 105.085,
+      "y_min": 116.875,
+      "y_max": 117.845
+    }
+  },
+  {
+    "ref": "C27",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 103.95,
+    "y_mm": 121.16,
+    "angle_deg": -90.0,
+    "value": "4u7",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 102.325,
+      "x_max": 105.575,
+      "y_min": 118.835,
+      "y_max": 123.485
+    }
+  },
+  {
+    "ref": "C28",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 110.15,
+    "y_mm": 125.0,
+    "angle_deg": 180.0,
+    "value": "4u7",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 107.825,
+      "x_max": 112.475,
+      "y_min": 123.375,
+      "y_max": 126.625
+    }
+  },
+  {
+    "ref": "C29",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 87.65,
+    "y_mm": 111.66,
+    "angle_deg": 180.0,
+    "value": "47u",
+    "footprint": "CP_Elec_6.3x5.8",
+    "bbox": {
+      "x_min": 82.925,
+      "x_max": 92.375,
+      "y_min": 108.085,
+      "y_max": 115.235
+    }
+  },
+  {
+    "ref": "C3",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 63.5,
+    "y_mm": 115.0,
+    "angle_deg": 180.0,
+    "value": "2u2",
+    "footprint": "C_0805_2012Metric",
+    "bbox": {
+      "x_min": 61.775,
+      "x_max": 65.225,
+      "y_min": 113.995,
+      "y_max": 116.005
+    }
+  },
+  {
+    "ref": "C30",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 124.8,
+    "y_mm": 109.4,
+    "angle_deg": 0.0,
+    "value": "22n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 123.865,
+      "x_max": 125.735,
+      "y_min": 108.915,
+      "y_max": 109.885
+    }
+  },
+  {
+    "ref": "C31",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 140.0,
+    "y_mm": 99.5,
+    "angle_deg": 90.0,
+    "value": "220n",
+    "footprint": "C_0603_1608Metric",
+    "bbox": {
+      "x_min": 139.245,
+      "x_max": 140.755,
+      "y_min": 97.995,
+      "y_max": 101.005
+    }
+  },
+  {
+    "ref": "C32",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 139.5,
+    "y_mm": 103.0,
+    "angle_deg": 90.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 139.015,
+      "x_max": 139.985,
+      "y_min": 102.065,
+      "y_max": 103.935
+    }
+  },
+  {
+    "ref": "C33",
+    "group": "9_RTC_BQ32000",
+    "layer": "B.Cu",
+    "x_mm": 114.5,
+    "y_mm": 81.0,
+    "angle_deg": 180.0,
+    "value": "1F5",
+    "footprint": "Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal",
+    "bbox": {
+      "x_min": 110.24,
+      "x_max": 136.025,
+      "y_min": 70.475,
+      "y_max": 91.525
+    }
+  },
+  {
+    "ref": "C34",
+    "group": "13_TFT_J3",
+    "layer": "F.Cu",
+    "x_mm": 104.8,
+    "y_mm": 105.55,
+    "angle_deg": 90.0,
+    "value": "1u0",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 104.315,
+      "x_max": 105.285,
+      "y_min": 104.615,
+      "y_max": 106.485
+    }
+  },
+  {
+    "ref": "C35",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 132.5,
+    "y_mm": 124.05,
+    "angle_deg": 0.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 131.565,
+      "x_max": 133.435,
+      "y_min": 123.565,
+      "y_max": 124.535
+    }
+  },
+  {
+    "ref": "C4",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 68.0,
+    "y_mm": 118.5,
+    "angle_deg": 0.0,
+    "value": "1u0",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 67.065,
+      "x_max": 68.935,
+      "y_min": 118.015,
+      "y_max": 118.985
+    }
+  },
+  {
+    "ref": "C5",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 74.5,
+    "y_mm": 83.0,
+    "angle_deg": 0.0,
+    "value": "22u",
+    "footprint": "C_0805_2012Metric",
+    "bbox": {
+      "x_min": 72.775,
+      "x_max": 76.225,
+      "y_min": 81.995,
+      "y_max": 84.005
+    }
+  },
+  {
+    "ref": "C6",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 71.0,
+    "y_mm": 83.0,
+    "angle_deg": 0.0,
+    "value": "100n",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 70.065,
+      "x_max": 71.935,
+      "y_min": 82.515,
+      "y_max": 83.485
+    }
+  },
+  {
+    "ref": "C7",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 78.0,
+    "y_mm": 83.0,
+    "angle_deg": 0.0,
+    "value": "1u0",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 77.065,
+      "x_max": 78.935,
+      "y_min": 82.515,
+      "y_max": 83.485
+    }
+  },
+  {
+    "ref": "C8",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 77.5,
+    "y_mm": 110.0,
+    "angle_deg": -90.0,
+    "value": "4u7",
+    "footprint": "C_1210_3225Metric",
+    "bbox": {
+      "x_min": 75.875,
+      "x_max": 79.125,
+      "y_min": 107.675,
+      "y_max": 112.325
+    }
+  },
+  {
+    "ref": "C9",
+    "group": "9_RTC_BQ32000",
+    "layer": "B.Cu",
+    "x_mm": 137.5,
+    "y_mm": 81.0,
+    "angle_deg": 90.0,
+    "value": "1u0",
+    "footprint": "C_0402_1005Metric",
+    "bbox": {
+      "x_min": 137.015,
+      "x_max": 137.985,
+      "y_min": 80.065,
+      "y_max": 81.935
+    }
+  },
+  {
+    "ref": "D1",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 79.2,
+    "y_mm": 120.5,
+    "angle_deg": 180.0,
+    "value": "LED",
+    "footprint": "LED_0402_1005Metric",
+    "bbox": {
+      "x_min": 78.245,
+      "x_max": 80.39,
+      "y_min": 120.005,
+      "y_max": 120.995
+    }
+  },
+  {
+    "ref": "D10",
+    "group": "7_CIKIS_DESARJI",
+    "layer": "F.Cu",
+    "x_mm": 124.0,
+    "y_mm": 117.5,
+    "angle_deg": 90.0,
+    "value": "BZT52C12",
+    "footprint": "D_SOD-123",
+    "bbox": {
+      "x_min": 122.825,
+      "x_max": 125.175,
+      "y_min": 115.125,
+      "y_max": 119.92
+    }
+  },
+  {
+    "ref": "D2",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 132.8,
+    "y_mm": 103.5,
+    "angle_deg": 0.0,
+    "value": "SS2060FL",
+    "footprint": "D_SOD-123F",
+    "bbox": {
+      "x_min": 130.53,
+      "x_max": 135.025,
+      "y_min": 102.325,
+      "y_max": 104.675
+    }
+  },
+  {
+    "ref": "D3",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 61.5,
+    "y_mm": 82.5,
+    "angle_deg": -90.0,
+    "value": "SMBJ30A",
+    "footprint": "D_SMB",
+    "bbox": {
+      "x_min": 59.225,
+      "x_max": 63.775,
+      "y_min": 78.78,
+      "y_max": 86.175
+    }
+  },
+  {
+    "ref": "D4",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 102.95,
+    "y_mm": 114.66,
+    "angle_deg": 180.0,
+    "value": "SX36",
+    "footprint": "D_SMA",
+    "bbox": {
+      "x_min": 99.425,
+      "x_max": 106.52,
+      "y_min": 112.885,
+      "y_max": 116.435
+    }
+  },
+  {
+    "ref": "D5",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 92.17,
+    "y_mm": 123.26,
+    "angle_deg": 0.0,
+    "value": "BAS16H",
+    "footprint": "D_SOD-323",
+    "bbox": {
+      "x_min": 90.5,
+      "x_max": 93.795,
+      "y_min": 122.285,
+      "y_max": 124.235
+    }
+  },
+  {
+    "ref": "D6",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 124.8,
+    "y_mm": 104.5,
+    "angle_deg": 0.0,
+    "value": "BZT52C12",
+    "footprint": "D_SOD-123",
+    "bbox": {
+      "x_min": 122.38,
+      "x_max": 127.175,
+      "y_min": 103.325,
+      "y_max": 105.675
+    }
+  },
+  {
+    "ref": "D7",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 144.0,
+    "y_mm": 119.5,
+    "angle_deg": 0.0,
+    "value": "SMBJ30A",
+    "footprint": "D_SMB",
+    "bbox": {
+      "x_min": 140.28,
+      "x_max": 147.675,
+      "y_min": 117.225,
+      "y_max": 121.775
+    }
+  },
+  {
+    "ref": "D8",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 61.5,
+    "y_mm": 92.0,
+    "angle_deg": 0.0,
+    "value": "SMF30A",
+    "footprint": "D_SOD-123F",
+    "bbox": {
+      "x_min": 59.23,
+      "x_max": 63.725,
+      "y_min": 90.825,
+      "y_max": 93.175
+    }
+  },
+  {
+    "ref": "D9",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 61.5,
+    "y_mm": 94.5,
+    "angle_deg": 0.0,
+    "value": "SMF30A",
+    "footprint": "D_SOD-123F",
+    "bbox": {
+      "x_min": 59.23,
+      "x_max": 63.725,
+      "y_min": 93.325,
+      "y_max": 95.675
+    }
+  },
+  {
+    "ref": "H1",
+    "group": "ANCHOR_OR_OTHER",
+    "layer": "F.Cu",
+    "x_mm": 54.3,
+    "y_mm": 73.48,
+    "angle_deg": 0.0,
+    "value": "M3",
+    "footprint": "MountingHole_3.2mm_M3",
+    "bbox": {
+      "x_min": 50.825,
+      "x_max": 57.775,
+      "y_min": 70.005,
+      "y_max": 76.955
+    }
+  },
+  {
+    "ref": "H2",
+    "group": "ANCHOR_OR_OTHER",
+    "layer": "F.Cu",
+    "x_mm": 145.7,
+    "y_mm": 73.48,
+    "angle_deg": 0.0,
+    "value": "M3",
+    "footprint": "MountingHole_3.2mm_M3",
+    "bbox": {
+      "x_min": 142.225,
+      "x_max": 149.175,
+      "y_min": 70.005,
+      "y_max": 76.955
+    }
+  },
+  {
+    "ref": "H3",
+    "group": "ANCHOR_OR_OTHER",
+    "layer": "F.Cu",
+    "x_mm": 54.3,
+    "y_mm": 126.52,
+    "angle_deg": 0.0,
+    "value": "M3",
+    "footprint": "MountingHole_3.2mm_M3",
+    "bbox": {
+      "x_min": 50.825,
+      "x_max": 57.775,
+      "y_min": 123.045,
+      "y_max": 129.995
+    }
+  },
+  {
+    "ref": "H4",
+    "group": "ANCHOR_OR_OTHER",
+    "layer": "F.Cu",
+    "x_mm": 145.7,
+    "y_mm": 126.52,
+    "angle_deg": 0.0,
+    "value": "M3",
+    "footprint": "MountingHole_3.2mm_M3",
+    "bbox": {
+      "x_min": 142.225,
+      "x_max": 149.175,
+      "y_min": 123.045,
+      "y_max": 129.995
+    }
+  },
+  {
+    "ref": "J3",
+    "group": "ANCHOR_OR_OTHER",
+    "layer": "F.Cu",
+    "x_mm": 98.0,
+    "y_mm": 109.3,
+    "angle_deg": 90.0,
+    "value": "TFT032B018",
+    "footprint": "KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal",
+    "bbox": {
+      "x_min": 92.775,
+      "x_max": 99.275,
+      "y_min": 99.505,
+      "y_max": 119.095
+    }
+  },
+  {
+    "ref": "J4",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 146.0,
+    "y_mm": 104.0,
+    "angle_deg": 90.0,
+    "value": "SolderWire-1.5sqmm",
+    "footprint": "SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm",
+    "bbox": {
+      "x_min": 143.525,
+      "x_max": 148.475,
+      "y_min": 93.475,
+      "y_max": 106.725
+    }
+  },
+  {
+    "ref": "J7",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 53.975,
+    "y_mm": 88.5,
+    "angle_deg": -90.0,
+    "value": "USB_C_Receptacle_USB2.0_16P",
+    "footprint": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "bbox": {
+      "x_min": 49.77,
+      "x_max": 58.76,
+      "y_min": 83.155,
+      "y_max": 93.845
+    }
+  },
+  {
+    "ref": "J8",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 102.5,
+    "y_mm": 79.61,
+    "angle_deg": 0.0,
+    "value": "2-CH UART TO ETH",
+    "footprint": "Waveshare_2-CH_UART_TO_ETH",
+    "bbox": {
+      "x_min": 46.775,
+      "x_max": 105.46,
+      "y_min": 77.225,
+      "y_max": 99.775
+    }
+  },
+  {
+    "ref": "J9",
+    "group": "ANCHOR_OR_OTHER",
+    "layer": "F.Cu",
+    "x_mm": 58.0,
+    "y_mm": 104.0,
+    "angle_deg": -90.0,
+    "value": "ENCODER CABLE",
+    "footprint": "SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm",
+    "bbox": {
+      "x_min": 56.555,
+      "x_max": 59.445,
+      "y_min": 102.375,
+      "y_max": 122.425
+    }
+  },
+  {
+    "ref": "L1",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 126.995,
+    "y_mm": 97.37,
+    "angle_deg": 90.0,
+    "value": "22u",
+    "footprint": "L_CoreMaster_FPI0705_7.8x7.0mm_H5.0",
+    "bbox": {
+      "x_min": 122.47,
+      "x_max": 131.52,
+      "y_min": 93.195,
+      "y_max": 101.545
+    }
+  },
+  {
+    "ref": "L3",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 97.7,
+    "y_mm": 108.16,
+    "angle_deg": 180.0,
+    "value": "6u8",
+    "footprint": "L_7.3x7.3_H4.5",
+    "bbox": {
+      "x_min": 93.475,
+      "x_max": 101.925,
+      "y_min": 104.235,
+      "y_max": 112.085
+    }
+  },
+  {
+    "ref": "Q1",
+    "group": "10_I2C_SEVIYE_DONUSTURUCU",
+    "layer": "B.Cu",
+    "x_mm": 105.75,
+    "y_mm": 74.0,
+    "angle_deg": -90.0,
+    "value": "BSS138P",
+    "footprint": "SOT-23",
+    "bbox": {
+      "x_min": 104.025,
+      "x_max": 107.475,
+      "y_min": 72.045,
+      "y_max": 75.955
+    }
+  },
+  {
+    "ref": "Q2",
+    "group": "10_I2C_SEVIYE_DONUSTURUCU",
+    "layer": "B.Cu",
+    "x_mm": 110.25,
+    "y_mm": 74.0,
+    "angle_deg": -90.0,
+    "value": "BSS138P",
+    "footprint": "SOT-23",
+    "bbox": {
+      "x_min": 108.525,
+      "x_max": 111.975,
+      "y_min": 72.045,
+      "y_max": 75.955
+    }
+  },
+  {
+    "ref": "Q3",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 71.5,
+    "y_mm": 110.0,
+    "angle_deg": 0.0,
+    "value": "SQJB60EP",
+    "footprint": "Vishay_PowerPAK_SO-8L_Dual",
+    "bbox": {
+      "x_min": 68.1,
+      "x_max": 74.9,
+      "y_min": 106.025,
+      "y_max": 113.9
+    }
+  },
+  {
+    "ref": "Q4",
+    "group": "7_CIKIS_DESARJI",
+    "layer": "B.Cu",
+    "x_mm": 120.0,
+    "y_mm": 122.5,
+    "angle_deg": 0.0,
+    "value": "BSS138P",
+    "footprint": "SOT-23",
+    "bbox": {
+      "x_min": 118.045,
+      "x_max": 121.955,
+      "y_min": 120.775,
+      "y_max": 124.225
+    }
+  },
+  {
+    "ref": "Q5",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 128.5,
+    "y_mm": 99.0,
+    "angle_deg": 0.0,
+    "value": "SQJB60EP",
+    "footprint": "Vishay_PowerPAK_SO-8L_Dual",
+    "bbox": {
+      "x_min": 125.1,
+      "x_max": 131.9,
+      "y_min": 95.1,
+      "y_max": 102.975
+    }
+  },
+  {
+    "ref": "Q6",
+    "group": "7_CIKIS_DESARJI",
+    "layer": "F.Cu",
+    "x_mm": 119.5,
+    "y_mm": 117.5,
+    "angle_deg": 180.0,
+    "value": "BSS138P",
+    "footprint": "SOT-23",
+    "bbox": {
+      "x_min": 117.545,
+      "x_max": 121.455,
+      "y_min": 115.775,
+      "y_max": 119.225
+    }
+  },
+  {
+    "ref": "Q7",
+    "group": "12_TFT_BACKLIGHT",
+    "layer": "F.Cu",
+    "x_mm": 87.0,
+    "y_mm": 109.25,
+    "angle_deg": 0.0,
+    "value": "IRLML6344",
+    "footprint": "SOT-23",
+    "bbox": {
+      "x_min": 85.045,
+      "x_max": 88.955,
+      "y_min": 107.525,
+      "y_max": 110.975
+    }
+  },
+  {
+    "ref": "Q8",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 107.0,
+    "y_mm": 88.5,
+    "angle_deg": 90.0,
+    "value": "TSM3443CX6",
+    "footprint": "SOT-23-6",
+    "bbox": {
+      "x_min": 105.275,
+      "x_max": 108.9,
+      "y_min": 86.425,
+      "y_max": 90.575
+    }
+  },
+  {
+    "ref": "R1",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 80.5,
+    "y_mm": 83.0,
+    "angle_deg": 0.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 79.545,
+      "x_max": 81.455,
+      "y_min": 82.505,
+      "y_max": 83.495
+    }
+  },
+  {
+    "ref": "R10",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 92.5,
+    "y_mm": 83.0,
+    "angle_deg": 90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 92.005,
+      "x_max": 92.995,
+      "y_min": 82.045,
+      "y_max": 83.955
+    }
+  },
+  {
+    "ref": "R11",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 64.0,
+    "y_mm": 110.0,
+    "angle_deg": 0.0,
+    "value": "5m0",
+    "footprint": "R_2512_6332Metric",
+    "bbox": {
+      "x_min": 60.145,
+      "x_max": 67.855,
+      "y_min": 108.045,
+      "y_max": 111.955
+    }
+  },
+  {
+    "ref": "R12",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 73.0,
+    "y_mm": 115.2,
+    "angle_deg": 90.0,
+    "value": "6k2",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 72.505,
+      "x_max": 73.495,
+      "y_min": 114.245,
+      "y_max": 116.155
+    }
+  },
+  {
+    "ref": "R13",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 77.5,
+    "y_mm": 114.5,
+    "angle_deg": 0.0,
+    "value": "100R",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 76.545,
+      "x_max": 78.455,
+      "y_min": 114.005,
+      "y_max": 114.995
+    }
+  },
+  {
+    "ref": "R14",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 76.2,
+    "y_mm": 120.5,
+    "angle_deg": 0.0,
+    "value": "2k2",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 75.245,
+      "x_max": 77.155,
+      "y_min": 120.005,
+      "y_max": 120.995
+    }
+  },
+  {
+    "ref": "R15",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 88.5,
+    "y_mm": 83.0,
+    "angle_deg": 90.0,
+    "value": "22R",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 88.005,
+      "x_max": 88.995,
+      "y_min": 82.045,
+      "y_max": 83.955
+    }
+  },
+  {
+    "ref": "R16",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 82.5,
+    "y_mm": 83.0,
+    "angle_deg": 90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 82.005,
+      "x_max": 82.995,
+      "y_min": 82.045,
+      "y_max": 83.955
+    }
+  },
+  {
+    "ref": "R17",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 111.5,
+    "y_mm": 87.2,
+    "angle_deg": 0.0,
+    "value": "100k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 110.545,
+      "x_max": 112.455,
+      "y_min": 86.705,
+      "y_max": 87.695
+    }
+  },
+  {
+    "ref": "R2",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 84.5,
+    "y_mm": 83.0,
+    "angle_deg": 90.0,
+    "value": "22R",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 84.005,
+      "x_max": 84.995,
+      "y_min": 82.045,
+      "y_max": 83.955
+    }
+  },
+  {
+    "ref": "R21",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 71.8,
+    "y_mm": 125.5,
+    "angle_deg": 0.0,
+    "value": "100k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 70.845,
+      "x_max": 72.755,
+      "y_min": 125.005,
+      "y_max": 125.995
+    }
+  },
+  {
+    "ref": "R24",
+    "group": "9_RTC_BQ32000",
+    "layer": "B.Cu",
+    "x_mm": 137.5,
+    "y_mm": 84.0,
+    "angle_deg": 0.0,
+    "value": "4k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 136.545,
+      "x_max": 138.455,
+      "y_min": 83.505,
+      "y_max": 84.495
+    }
+  },
+  {
+    "ref": "R27",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 136.75,
+    "y_mm": 107.0,
+    "angle_deg": 0.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 135.795,
+      "x_max": 137.705,
+      "y_min": 106.505,
+      "y_max": 107.495
+    }
+  },
+  {
+    "ref": "R28",
+    "group": "12_TFT_BACKLIGHT",
+    "layer": "F.Cu",
+    "x_mm": 81.0,
+    "y_mm": 108.3,
+    "angle_deg": 0.0,
+    "value": "100R",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 80.045,
+      "x_max": 81.955,
+      "y_min": 107.805,
+      "y_max": 108.795
+    }
+  },
+  {
+    "ref": "R29",
+    "group": "12_TFT_BACKLIGHT",
+    "layer": "F.Cu",
+    "x_mm": 83.8,
+    "y_mm": 109.25,
+    "angle_deg": -90.0,
+    "value": "100k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 83.305,
+      "x_max": 84.295,
+      "y_min": 108.295,
+      "y_max": 110.205
+    }
+  },
+  {
+    "ref": "R3",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 86.5,
+    "y_mm": 83.0,
+    "angle_deg": 90.0,
+    "value": "22R",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 86.005,
+      "x_max": 86.995,
+      "y_min": 82.045,
+      "y_max": 83.955
+    }
+  },
+  {
+    "ref": "R34",
+    "group": "14_PANEL_ENKODER",
+    "layer": "B.Cu",
+    "x_mm": 54.5,
+    "y_mm": 106.0,
+    "angle_deg": 90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 54.005,
+      "x_max": 54.995,
+      "y_min": 105.045,
+      "y_max": 106.955
+    }
+  },
+  {
+    "ref": "R35",
+    "group": "14_PANEL_ENKODER",
+    "layer": "B.Cu",
+    "x_mm": 54.5,
+    "y_mm": 109.0,
+    "angle_deg": 90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 54.005,
+      "x_max": 54.995,
+      "y_min": 108.045,
+      "y_max": 109.955
+    }
+  },
+  {
+    "ref": "R36",
+    "group": "14_PANEL_ENKODER",
+    "layer": "B.Cu",
+    "x_mm": 54.5,
+    "y_mm": 112.0,
+    "angle_deg": -90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 54.005,
+      "x_max": 54.995,
+      "y_min": 111.045,
+      "y_max": 112.955
+    }
+  },
+  {
+    "ref": "R37",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 90.5,
+    "y_mm": 83.0,
+    "angle_deg": 90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 90.005,
+      "x_max": 90.995,
+      "y_min": 82.045,
+      "y_max": 83.955
+    }
+  },
+  {
+    "ref": "R38",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 131.0,
+    "y_mm": 109.3,
+    "angle_deg": 0.0,
+    "value": "100k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 130.045,
+      "x_max": 131.955,
+      "y_min": 108.805,
+      "y_max": 109.795
+    }
+  },
+  {
+    "ref": "R39",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 119.5,
+    "y_mm": 109.5,
+    "angle_deg": 0.0,
+    "value": "10k2",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 118.545,
+      "x_max": 120.455,
+      "y_min": 109.005,
+      "y_max": 109.995
+    }
+  },
+  {
+    "ref": "R4",
+    "group": "10_I2C_SEVIYE_DONUSTURUCU",
+    "layer": "B.Cu",
+    "x_mm": 105.75,
+    "y_mm": 70.5,
+    "angle_deg": 180.0,
+    "value": "4k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 104.795,
+      "x_max": 106.705,
+      "y_min": 70.005,
+      "y_max": 70.995
+    }
+  },
+  {
+    "ref": "R40",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 116.5,
+    "y_mm": 108.1,
+    "angle_deg": 180.0,
+    "value": "3k24",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 115.545,
+      "x_max": 117.455,
+      "y_min": 107.605,
+      "y_max": 108.595
+    }
+  },
+  {
+    "ref": "R41",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 123.5,
+    "y_mm": 110.2,
+    "angle_deg": -90.0,
+    "value": "51k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 123.005,
+      "x_max": 123.995,
+      "y_min": 109.245,
+      "y_max": 111.155
+    }
+  },
+  {
+    "ref": "R43",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 116.5,
+    "y_mm": 113.0,
+    "angle_deg": 90.0,
+    "value": "4k7",
+    "footprint": "R_2512_6332Metric",
+    "bbox": {
+      "x_min": 114.545,
+      "x_max": 118.455,
+      "y_min": 109.145,
+      "y_max": 116.855
+    }
+  },
+  {
+    "ref": "R47",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 91.65,
+    "y_mm": 119.66,
+    "angle_deg": 180.0,
+    "value": "78k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 90.695,
+      "x_max": 92.605,
+      "y_min": 119.165,
+      "y_max": 120.155
+    }
+  },
+  {
+    "ref": "R48",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 88.35,
+    "y_mm": 125.16,
+    "angle_deg": 180.0,
+    "value": "30k1",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 87.395,
+      "x_max": 89.305,
+      "y_min": 124.665,
+      "y_max": 125.655
+    }
+  },
+  {
+    "ref": "R49",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 89.15,
+    "y_mm": 127.96,
+    "angle_deg": 180.0,
+    "value": "9k76",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 88.195,
+      "x_max": 90.105,
+      "y_min": 127.465,
+      "y_max": 128.455
+    }
+  },
+  {
+    "ref": "R5",
+    "group": "10_I2C_SEVIYE_DONUSTURUCU",
+    "layer": "B.Cu",
+    "x_mm": 105.75,
+    "y_mm": 77.5,
+    "angle_deg": 90.0,
+    "value": "4k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 105.255,
+      "x_max": 106.245,
+      "y_min": 76.545,
+      "y_max": 78.455
+    }
+  },
+  {
+    "ref": "R50",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 111.1,
+    "y_mm": 108.0,
+    "angle_deg": 180.0,
+    "value": "2k87",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 110.145,
+      "x_max": 112.055,
+      "y_min": 107.505,
+      "y_max": 108.495
+    }
+  },
+  {
+    "ref": "R51",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 108.2,
+    "y_mm": 108.0,
+    "angle_deg": 180.0,
+    "value": "9k76",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 107.245,
+      "x_max": 109.155,
+      "y_min": 107.505,
+      "y_max": 108.495
+    }
+  },
+  {
+    "ref": "R52",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 94.65,
+    "y_mm": 127.96,
+    "angle_deg": 180.0,
+    "value": "2k0",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 93.695,
+      "x_max": 95.605,
+      "y_min": 127.465,
+      "y_max": 128.455
+    }
+  },
+  {
+    "ref": "R53",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 103.65,
+    "y_mm": 125.76,
+    "angle_deg": 180.0,
+    "value": "100k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 102.695,
+      "x_max": 104.605,
+      "y_min": 125.265,
+      "y_max": 126.255
+    }
+  },
+  {
+    "ref": "R54",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 124.8,
+    "y_mm": 107.2,
+    "angle_deg": 0.0,
+    "value": "1k0",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 123.845,
+      "x_max": 125.755,
+      "y_min": 106.705,
+      "y_max": 107.695
+    }
+  },
+  {
+    "ref": "R55",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 129.0,
+    "y_mm": 107.5,
+    "angle_deg": 90.0,
+    "value": "237k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 128.505,
+      "x_max": 129.495,
+      "y_min": 106.545,
+      "y_max": 108.455
+    }
+  },
+  {
+    "ref": "R56",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 131.2,
+    "y_mm": 107.5,
+    "angle_deg": 90.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 130.705,
+      "x_max": 131.695,
+      "y_min": 106.545,
+      "y_max": 108.455
+    }
+  },
+  {
+    "ref": "R58",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 133.4,
+    "y_mm": 107.5,
+    "angle_deg": 90.0,
+    "value": "100k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 132.905,
+      "x_max": 133.895,
+      "y_min": 106.545,
+      "y_max": 108.455
+    }
+  },
+  {
+    "ref": "R59",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 144.0,
+    "y_mm": 122.5,
+    "angle_deg": 0.0,
+    "value": "100k",
+    "footprint": "R_0603_1608Metric",
+    "bbox": {
+      "x_min": 142.495,
+      "x_max": 145.505,
+      "y_min": 121.745,
+      "y_max": 123.255
+    }
+  },
+  {
+    "ref": "R6",
+    "group": "10_I2C_SEVIYE_DONUSTURUCU",
+    "layer": "B.Cu",
+    "x_mm": 110.25,
+    "y_mm": 77.5,
+    "angle_deg": 90.0,
+    "value": "4k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 109.755,
+      "x_max": 110.745,
+      "y_min": 76.545,
+      "y_max": 78.455
+    }
+  },
+  {
+    "ref": "R60",
+    "group": "12_TFT_BACKLIGHT",
+    "layer": "F.Cu",
+    "x_mm": 87.0,
+    "y_mm": 104.75,
+    "angle_deg": 0.0,
+    "value": "5R6",
+    "footprint": "R_0805_2012Metric",
+    "bbox": {
+      "x_min": 85.295,
+      "x_max": 88.705,
+      "y_min": 103.775,
+      "y_max": 105.725
+    }
+  },
+  {
+    "ref": "R61",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 125.5,
+    "y_mm": 124.05,
+    "angle_deg": 0.0,
+    "value": "4k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 124.545,
+      "x_max": 126.455,
+      "y_min": 123.555,
+      "y_max": 124.545
+    }
+  },
+  {
+    "ref": "R62",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 61.5,
+    "y_mm": 96.8,
+    "angle_deg": 0.0,
+    "value": "5k1",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 60.545,
+      "x_max": 62.455,
+      "y_min": 96.305,
+      "y_max": 97.295
+    }
+  },
+  {
+    "ref": "R63",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 61.5,
+    "y_mm": 98.5,
+    "angle_deg": 0.0,
+    "value": "5k1",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 60.545,
+      "x_max": 62.455,
+      "y_min": 98.005,
+      "y_max": 98.995
+    }
+  },
+  {
+    "ref": "R64",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 76.5,
+    "y_mm": 125.5,
+    "angle_deg": 0.0,
+    "value": "2k0",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 75.545,
+      "x_max": 77.455,
+      "y_min": 125.005,
+      "y_max": 125.995
+    }
+  },
+  {
+    "ref": "R65",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 78.8,
+    "y_mm": 125.5,
+    "angle_deg": 0.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 77.845,
+      "x_max": 79.755,
+      "y_min": 125.005,
+      "y_max": 125.995
+    }
+  },
+  {
+    "ref": "R66",
+    "group": "7_CIKIS_DESARJI",
+    "layer": "F.Cu",
+    "x_mm": 127.5,
+    "y_mm": 117.5,
+    "angle_deg": -90.0,
+    "value": "100k",
+    "footprint": "R_0603_1608Metric",
+    "bbox": {
+      "x_min": 126.745,
+      "x_max": 128.255,
+      "y_min": 115.995,
+      "y_max": 119.005
+    }
+  },
+  {
+    "ref": "R67",
+    "group": "7_CIKIS_DESARJI",
+    "layer": "F.Cu",
+    "x_mm": 113.0,
+    "y_mm": 117.5,
+    "angle_deg": 0.0,
+    "value": "1k",
+    "footprint": "R_2512_6332Metric",
+    "bbox": {
+      "x_min": 109.145,
+      "x_max": 116.855,
+      "y_min": 115.545,
+      "y_max": 119.455
+    }
+  },
+  {
+    "ref": "R7",
+    "group": "10_I2C_SEVIYE_DONUSTURUCU",
+    "layer": "B.Cu",
+    "x_mm": 110.25,
+    "y_mm": 70.5,
+    "angle_deg": 0.0,
+    "value": "4k7",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 109.295,
+      "x_max": 111.205,
+      "y_min": 70.005,
+      "y_max": 70.995
+    }
+  },
+  {
+    "ref": "R8",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 74.2,
+    "y_mm": 125.5,
+    "angle_deg": 0.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 73.245,
+      "x_max": 75.155,
+      "y_min": 125.005,
+      "y_max": 125.995
+    }
+  },
+  {
+    "ref": "R9",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 81.1,
+    "y_mm": 125.5,
+    "angle_deg": 0.0,
+    "value": "10k",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 80.145,
+      "x_max": 82.055,
+      "y_min": 125.005,
+      "y_max": 125.995
+    }
+  },
+  {
+    "ref": "RShunt1",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 136.0,
+    "y_mm": 117.6,
+    "angle_deg": 0.0,
+    "value": "5m0",
+    "footprint": "R_2512_6332Metric",
+    "bbox": {
+      "x_min": 132.145,
+      "x_max": 139.855,
+      "y_min": 115.645,
+      "y_max": 119.555
+    }
+  },
+  {
+    "ref": "SW1",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "B.Cu",
+    "x_mm": 85.0,
+    "y_mm": 73.5,
+    "angle_deg": 0.0,
+    "value": "BOOT / PTS810",
+    "footprint": "SW_SPST_PTS810",
+    "bbox": {
+      "x_min": 82.125,
+      "x_max": 87.875,
+      "y_min": 71.625,
+      "y_max": 75.375
+    }
+  },
+  {
+    "ref": "SW2",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "B.Cu",
+    "x_mm": 92.5,
+    "y_mm": 73.5,
+    "angle_deg": 0.0,
+    "value": "RESET / PTS810",
+    "footprint": "SW_SPST_PTS810",
+    "bbox": {
+      "x_min": 89.625,
+      "x_max": 95.375,
+      "y_min": 71.625,
+      "y_max": 75.375
+    }
+  },
+  {
+    "ref": "TH1",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 68.0,
+    "y_mm": 115.2,
+    "angle_deg": 90.0,
+    "value": "10k NTC",
+    "footprint": "R_0402_1005Metric",
+    "bbox": {
+      "x_min": 67.505,
+      "x_max": 68.495,
+      "y_min": 114.245,
+      "y_max": 116.155
+    }
+  },
+  {
+    "ref": "TP1",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 56.0,
+    "y_mm": 117.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 54.975,
+      "x_max": 57.025,
+      "y_min": 115.975,
+      "y_max": 118.025
+    }
+  },
+  {
+    "ref": "TP10",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 97.0,
+    "y_mm": 83.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 95.975,
+      "x_max": 98.025,
+      "y_min": 81.975,
+      "y_max": 84.025
+    }
+  },
+  {
+    "ref": "TP11",
+    "group": "15_TEST_NOKTALARI",
+    "layer": "F.Cu",
+    "x_mm": 133.0,
+    "y_mm": 72.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 131.975,
+      "x_max": 134.025,
+      "y_min": 70.975,
+      "y_max": 73.025
+    }
+  },
+  {
+    "ref": "TP12",
+    "group": "15_TEST_NOKTALARI",
+    "layer": "F.Cu",
+    "x_mm": 135.5,
+    "y_mm": 72.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 134.475,
+      "x_max": 136.525,
+      "y_min": 70.975,
+      "y_max": 73.025
+    }
+  },
+  {
+    "ref": "TP13",
+    "group": "15_TEST_NOKTALARI",
+    "layer": "F.Cu",
+    "x_mm": 138.0,
+    "y_mm": 72.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 136.975,
+      "x_max": 139.025,
+      "y_min": 70.975,
+      "y_max": 73.025
+    }
+  },
+  {
+    "ref": "TP14",
+    "group": "11_ETHERNET_MEZANIN",
+    "layer": "B.Cu",
+    "x_mm": 107.0,
+    "y_mm": 82.15,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 105.975,
+      "x_max": 108.025,
+      "y_min": 81.125,
+      "y_max": 83.175
+    }
+  },
+  {
+    "ref": "TP2",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 68.0,
+    "y_mm": 101.5,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 66.975,
+      "x_max": 69.025,
+      "y_min": 100.475,
+      "y_max": 102.525
+    }
+  },
+  {
+    "ref": "TP3",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 76.0,
+    "y_mm": 105.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 74.975,
+      "x_max": 77.025,
+      "y_min": 103.975,
+      "y_max": 106.025
+    }
+  },
+  {
+    "ref": "TP4",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 56.0,
+    "y_mm": 120.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 54.975,
+      "x_max": 57.025,
+      "y_min": 118.975,
+      "y_max": 121.025
+    }
+  },
+  {
+    "ref": "TP5",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 65.0,
+    "y_mm": 104.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 63.975,
+      "x_max": 66.025,
+      "y_min": 102.975,
+      "y_max": 105.025
+    }
+  },
+  {
+    "ref": "TP6",
+    "group": "15_TEST_NOKTALARI",
+    "layer": "B.Cu",
+    "x_mm": 74.0,
+    "y_mm": 72.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 72.975,
+      "x_max": 75.025,
+      "y_min": 70.975,
+      "y_max": 73.025
+    }
+  },
+  {
+    "ref": "TP7",
+    "group": "15_TEST_NOKTALARI",
+    "layer": "B.Cu",
+    "x_mm": 77.0,
+    "y_mm": 72.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 75.975,
+      "x_max": 78.025,
+      "y_min": 70.975,
+      "y_max": 73.025
+    }
+  },
+  {
+    "ref": "TP8",
+    "group": "15_TEST_NOKTALARI",
+    "layer": "B.Cu",
+    "x_mm": 80.0,
+    "y_mm": 72.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 78.975,
+      "x_max": 81.025,
+      "y_min": 70.975,
+      "y_max": 73.025
+    }
+  },
+  {
+    "ref": "TP9",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 94.5,
+    "y_mm": 83.0,
+    "angle_deg": 0.0,
+    "value": "TestPoint",
+    "footprint": "TestPoint_Pad_D1.0mm",
+    "bbox": {
+      "x_min": 93.475,
+      "x_max": 95.525,
+      "y_min": 81.975,
+      "y_max": 84.025
+    }
+  },
+  {
+    "ref": "U1",
+    "group": "2_AP33772S_PD_KONTROLCU",
+    "layer": "B.Cu",
+    "x_mm": 72.0,
+    "y_mm": 120.5,
+    "angle_deg": 180.0,
+    "value": "AP33772SDKZ-13-FA02",
+    "footprint": "Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+    "bbox": {
+      "x_min": 69.345,
+      "x_max": 75.03,
+      "y_min": 117.845,
+      "y_max": 123.155
+    }
+  },
+  {
+    "ref": "U10",
+    "group": "1_USB_C_GIRIS",
+    "layer": "F.Cu",
+    "x_mm": 61.5,
+    "y_mm": 88.5,
+    "angle_deg": 0.0,
+    "value": "USBLC6-2SC6",
+    "footprint": "SOT-23-6",
+    "bbox": {
+      "x_min": 59.425,
+      "x_max": 63.575,
+      "y_min": 86.6,
+      "y_max": 90.225
+    }
+  },
+  {
+    "ref": "U11",
+    "group": "3_TPS55340_PRE_BOOST",
+    "layer": "B.Cu",
+    "x_mm": 98.0,
+    "y_mm": 121.0,
+    "angle_deg": 180.0,
+    "value": "TPS55340PWPR",
+    "footprint": "Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias",
+    "bbox": {
+      "x_min": 94.075,
+      "x_max": 101.925,
+      "y_min": 118.06,
+      "y_max": 123.775
+    }
+  },
+  {
+    "ref": "U12",
+    "group": "5_LM74801_CIKIS_ANAHTARI",
+    "layer": "F.Cu",
+    "x_mm": 135.5,
+    "y_mm": 101.5,
+    "angle_deg": 0.0,
+    "value": "LM74801-Q1",
+    "footprint": "WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm",
+    "bbox": {
+      "x_min": 132.97,
+      "x_max": 137.655,
+      "y_min": 99.725,
+      "y_max": 103.275
+    }
+  },
+  {
+    "ref": "U13",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 129.0,
+    "y_mm": 123.1,
+    "angle_deg": 0.0,
+    "value": "74LVC1G08",
+    "footprint": "SOT-23-5",
+    "bbox": {
+      "x_min": 126.925,
+      "x_max": 131.075,
+      "y_min": 121.375,
+      "y_max": 125.0
+    }
+  },
+  {
+    "ref": "U2",
+    "group": "8_ESP32_C6_MCU",
+    "layer": "F.Cu",
+    "x_mm": 77.92,
+    "y_mm": 75.065,
+    "angle_deg": 0.0,
+    "value": "ESP32-C6-MINI-1-H4",
+    "footprint": "ESP32-C6-MINI-1",
+    "bbox": {
+      "x_min": 56.295,
+      "x_max": 99.545,
+      "y_min": 49.04,
+      "y_max": 80.94
+    }
+  },
+  {
+    "ref": "U3",
+    "group": "6_INA226_OLCUM_CIKIS",
+    "layer": "B.Cu",
+    "x_mm": 136.75,
+    "y_mm": 112.1,
+    "angle_deg": -90.0,
+    "value": "INA226",
+    "footprint": "TSSOP-10_3x3mm_P0.5mm",
+    "bbox": {
+      "x_min": 134.95,
+      "x_max": 138.525,
+      "y_min": 108.945,
+      "y_max": 115.255
+    }
+  },
+  {
+    "ref": "U4",
+    "group": "9_RTC_BQ32000",
+    "layer": "B.Cu",
+    "x_mm": 143.0,
+    "y_mm": 82.0,
+    "angle_deg": 180.0,
+    "value": "BQ32000",
+    "footprint": "SOIC-8_3.9x4.9mm_P1.27mm",
+    "bbox": {
+      "x_min": 139.275,
+      "x_max": 146.725,
+      "y_min": 79.14,
+      "y_max": 84.725
+    }
+  },
+  {
+    "ref": "U5",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 126.7,
+    "y_mm": 105.31,
+    "angle_deg": 180.0,
+    "value": "AOZ1284PI",
+    "footprint": "SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.71x3.7mm",
+    "bbox": {
+      "x_min": 122.975,
+      "x_max": 130.425,
+      "y_min": 102.45,
+      "y_max": 108.035
+    }
+  },
+  {
+    "ref": "U6",
+    "group": "4_AOZ1284_BUCK",
+    "layer": "B.Cu",
+    "x_mm": 108.435,
+    "y_mm": 105.0,
+    "angle_deg": -90.0,
+    "value": "TLV431BQDBZT",
+    "footprint": "SOT-23",
+    "bbox": {
+      "x_min": 106.71,
+      "x_max": 110.16,
+      "y_min": 103.045,
+      "y_max": 106.955
+    }
+  },
+  {
+    "ref": "Y1",
+    "group": "9_RTC_BQ32000",
+    "layer": "B.Cu",
+    "x_mm": 143.0,
+    "y_mm": 89.0,
+    "angle_deg": -90.0,
+    "value": "32.768kHz",
+    "footprint": "Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm",
+    "bbox": {
+      "x_min": 138.475,
+      "x_max": 147.525,
+      "y_min": 85.925,
+      "y_max": 92.075
+    }
+  }
+]
