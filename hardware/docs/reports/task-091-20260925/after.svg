@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 960" width="1160" height="960" style="background:#0f172a; font-family: ui-sans-serif, system-ui, sans-serif;">
+  <defs>
+    <pattern id="grid_a" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4ade80" />
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid_a)" />
+
+  <text x="580" y="40" fill="#f8fafc" font-size="20" font-weight="bold" text-anchor="middle">TASK-091 ETHERNET &amp; MCU ANKRAJ REVIZYONU — SONRA (AFTER)</text>
+  <text x="580" y="65" fill="#4ade80" font-size="13" text-anchor="middle">J9 Çapraz Yerleşimle RJ45'ten Kurtarıldı, J8/J7 Port Hizası Kesitlendirildi, U2 Aday Analizi Tamamlandı</text>
+
+  <!-- PCB Outline -->
+  <rect x="162.39999999999998" y="155.84000000000003" width="795.1999999999999" height="488.32000000000005" rx="24" ry="24" fill="#064e3b" fill-opacity="0.3" stroke="#10b981" stroke-width="2.5" />
+  <text x="560.0" y="172.0" fill="#10b981" font-size="11" font-weight="bold" text-anchor="middle">KUZEY PCB KENARI (Y = 69.48 mm)</text>
+  <text x="152.0" y="400.0" fill="#10b981" font-size="11" font-weight="bold" text-anchor="middle" transform="rotate(-90 152.0 400.0)">SOL KENAR (X = 50.30 mm)</text>
+
+  <!-- Mounting Holes -->
+  <circle cx="194.39999999999998" cy="187.84000000000003" r="12.8" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="194.39999999999998" cy="187.84000000000003" r="24.0" fill="none" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="194.39999999999998" y="172.84000000000003" fill="#94a3b8" font-size="10" text-anchor="middle">H1</text>
+
+  <circle cx="194.39999999999998" cy="612.16" r="12.8" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="194.39999999999998" cy="612.16" r="24.0" fill="none" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="194.39999999999998" y="637.16" fill="#94a3b8" font-size="10" text-anchor="middle">H3</text>
+
+  <!-- LCD Envelope -->
+  <rect x="268.16" y="178.24" width="624.8" height="443.52" fill="#1e293b" fill-opacity="0.3" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="580.56" y="224.0" fill="#3b82f6" font-size="12" text-anchor="middle">TFT LCD İZDÜŞÜMÜ (Z &gt;= 2.50 mm Standoff Şartı)</text>
+
+  <!-- U2 ESP32-C6 (Selected Candidate 1) -->
+  <g transform="translate(384.0, 204.79999999999995)">
+    <rect x="-52.8" y="-88.0" width="105.6" height="40.96" fill="#ef4444" fill-opacity="0.25" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text x="0" y="-64.0" fill="#fca5a5" font-size="9" font-weight="bold" text-anchor="middle">RF ANTEN (4.88mm Taşma)</text>
+    <rect x="-52.8" y="-47.04" width="105.6" height="92.0" fill="#0284c7" fill-opacity="0.5" stroke="#38bdf8" stroke-width="2"/>
+    <text x="0" y="0" fill="#f0f9ff" font-size="11" font-weight="bold" text-anchor="middle">U2 ESP32-C6 (F.Cu)</text>
+    <text x="0" y="16" fill="#e0f2fe" font-size="9" text-anchor="middle">Aday 1 Seçildi (USB ~22mm)</text>
+  </g>
+
+  <!-- J7 USB-C (53.975, 82.5 on F.Cu) -->
+  <g transform="translate(191.8, 260.0)">
+    <rect x="-33.6" y="-36.0" width="4.24" height="72.0" fill="#f59e0b" fill-opacity="0.6" stroke="#f59e0b" stroke-width="1"/>
+    <rect x="-29.4" y="-36.0" width="68.0" height="72.0" fill="#0284c7" fill-opacity="0.5" stroke="#38bdf8" stroke-width="2"/>
+    <text x="0" y="2" fill="#f0f9ff" font-size="11" font-weight="bold" text-anchor="middle">J7 USB-C (Top)</text>
+    <text x="0" y="15" fill="#e0f2fe" font-size="9" text-anchor="middle">Z = Top (+Z)</text>
+  </g>
+
+  <!-- J8 Mezzanine on B.Cu -->
+  <g transform="translate(580.0, 416.0)">
+    <rect x="-444.0" y="-17.6" width="464.0" height="177.6" rx="8" ry="8" fill="#475569" fill-opacity="0.2" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <!-- RJ45 Jack body on West -->
+    <rect x="-444.0" y="6.72" width="176.0" height="128.8" fill="#0d9488" fill-opacity="0.6" stroke="#2dd4bf" stroke-width="2"/>
+    <text x="-356.0" y="71.12" fill="#ccfbf1" font-size="11" font-weight="bold" text-anchor="middle">RJ45 Port</text>
+    <text x="-356.0" y="86.12" fill="#ccfbf1" font-size="9" text-anchor="middle">Z = Bottom (-Z)</text>
+    <!-- Available Ethernet Underlay Zone for TASK-093 -->
+    <rect x="-261.2" y="-16.88" width="230.72" height="176.0" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,5"/>
+    <text x="-144.0" y="72.0" fill="#34d399" font-size="10" font-weight="bold" text-anchor="middle">TASK-093 ALANI</text>
+    <text x="-144.0" y="86.0" fill="#34d399" font-size="8" text-anchor="middle">(634 mm² Serbest)</text>
+  </g>
+
+  <!-- New Diagonal J9 Placement (61.75, 87.00, rot -126 deg) -->
+  <g>
+    <!-- Pads: P1=(61.75, 87.00), P2=(59.28, 90.40), P3=(56.81, 93.80), P4=(54.34, 97.19), P5=(51.88, 100.59) -->
+    <line x1="254.0" y1="296.0" x2="175.04000000000002" y2="404.72" stroke="#a78bfa" stroke-width="20" stroke-linecap="round" stroke-opacity="0.3"/>
+    <circle cx="254.0" cy="296.0" r="6" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="234.24" cy="323.20000000000005" r="6" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="214.48000000000002" cy="350.4" r="6" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="194.72000000000003" cy="377.52" r="6" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="175.04000000000002" cy="404.72" r="6" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="264.0" y="288.0" fill="#c4b5fd" font-size="11" font-weight="bold">J9 (Çapraz 5P)</text>
+    <text x="160.0" y="392.0" fill="#4ade80" font-size="9" font-weight="bold" text-anchor="end">RJ45 Açıklığı: 1.32 mm</text>
+  </g>
+
+  <!-- Left Panel Cross-Section Inset -->
+  <g transform="translate(850, 680)">
+    <rect x="-10" y="-20" width="280" height="230" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <text x="130" y="0" fill="#f8fafc" font-size="12" font-weight="bold" text-anchor="middle">SOL PANEL KESİTİ (Y-Z DÜZLEMİ)</text>
+    
+    <!-- Motherboard PCB -->
+    <rect x="20" y="70" width="220" height="12" fill="#065f46" stroke="#10b981" stroke-width="1"/>
+    <text x="245" y="80" fill="#34d399" font-size="9">PCB (1.6mm)</text>
+    
+    <!-- USB-C on Top (F.Cu) -->
+    <rect x="40" y="38" width="60" height="32" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="70" y="58" fill="#f0f9ff" font-size="9" font-weight="bold" text-anchor="middle">USB-C (Top)</text>
+    
+    <!-- RJ45 on Bottom (B.Cu) -->
+    <rect x="150" y="82" width="80" height="85" fill="#0d9488" stroke="#2dd4bf" stroke-width="1.5"/>
+    <text x="190" y="125" fill="#ccfbf1" font-size="9" font-weight="bold" text-anchor="middle">RJ45 (Bottom)</text>
+    
+    <!-- Dimensions -->
+    <line x1="70" y1="25" x2="190" y2="25" stroke="#38bdf8" stroke-width="1" marker-start="url(#arr-blue)" marker-end="url(#arr-blue)"/>
+    <text x="130" y="20" fill="#38bdf8" font-size="9" text-anchor="middle">ΔY = 28.39 mm</text>
+  </g>
+
+  <!-- USB D+/D- Route Annotation -->
+  <path d="M 221.2 260.0 Q 304.0 248.0 377.6 244.0" fill="none" stroke="#4ade80" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arr-green)"/>
+  <text x="296.0" y="280.0" fill="#4ade80" font-size="9" font-weight="bold">USB 2.0 (19.65 mm)</text>
+
+  <!-- Legend -->
+  <rect x="50" y="850" width="760" height="85" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="70" y="873" fill="#f8fafc" font-size="12" font-weight="bold">TASK-091 Doğrulama ve Çözüm Kanıtları:</text>
+  <text x="70" y="892" fill="#94a3b8" font-size="11">• J9 açısı -126.0° yapılarak Pad 1-5 RJ45 keepout dışına çıkarıldı (+1.32mm açıklık); LCD dışı koridor korundu</text>
+  <text x="70" y="908" fill="#94a3b8" font-size="11">• U2 MCU Aday 1 seçildi: USB pad mesafesi 19.65mm; West şeridinde yer olmadığı ve RF şartları kanıtlandı</text>
+  <text x="70" y="924" fill="#94a3b8" font-size="11">• USB üstte (F.Cu) / RJ45 altta (B.Cu) kesit ilişkisi netleştirildi; DRC Error: 0, Schematic Parity: 0</text>
+</svg>

@@ -1,5 +1,10 @@
 # Genel PCB yerleşimi — 24 Eylül 2026
 
+25.09.2026 kesinleştirme: Ethernet, sol panelden bakıldığında USB-C'nin
+**tam altında, aynı Y merkezinde** olmalıdır. Son merkez Y=88,500 mm;
+J9 X=58,000 mm üzerinde düz 5 pin sırasıdır. Güncel uygulama ve ölçüler:
+[Port hizası ve enkoder düzeltmesi](PORT_HIZASI_ENKODER_DUZELTME_20260925.md).
+
 Kullanıcıyla kararlaştırılan yerleşim hedefidir. Bu kayıt task planını
 günceller; PCB taşıması, routing veya yeni DRC/3D kanıtı değildir.
 
@@ -36,7 +41,11 @@ günceller; PCB taşıması, routing veya yeni DRC/3D kanıtı değildir.
 
 ## Ethernet altının kullanımı
 
-Modül altı ek alandır; genel yerleşim buraya parça sığdırmaya bağımlı olmaz.
+25.09.2026 kullanıcı isteğiyle modül altındaki uygun hacim aktif komponent
+yerleşimi için kullanılacaktır. Önceki boş bırakma tercihi yerine Ethernet
+yardımcı hücresi ve bağlantısı uygun düşük profilli gruplar değerlendirilir.
+Güncel analiz: `ETHERNET_ALTI_ALAN_ANALIZI_20260925.md`. Genel yerleşimin bu
+hacme bağımlılığı ve henüz numuneyle doğrulanmamış kabuller açıkça kaydedilir.
 Projedeki nominal 2,5 mm aralık ve yaklaşık 2,2 mm RJ45 lehim çıkıntısı numune
 garantisi değildir. RJ45 pim keepout'u, header/mekanik pin bölgesi ve modül
 kartının altı ayrı XY/Z haritasında gösterilir. Bottom flip sonrası keepout

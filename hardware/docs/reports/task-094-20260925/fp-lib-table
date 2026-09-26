@@ -1,0 +1,12 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Molex_541324062") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Molex_541324062.pretty") (options "") (descr ""))
+  (lib (name "L-KLS4-EC1121S-E5A-F12.5") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/L-KLS4-EC1121S-E5A-F12.5.pretty") (options "") (descr "KLS EC1121S E5A F12.5 project-local footprint"))
+  (lib (name "DG142R-5.08-02P-14-00AH") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/DG142R-5.08-02P-14-00AH.pretty") (options "") (descr "DG142R-5.08-02P-14-00AH project-local footprint"))
+  (lib (name "Power_Output_Custom") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Power_Output_Custom.pretty") (options "") (descr "Verified output connectors and RTC holder"))
+  (lib (name "Power_Management_Custom") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Power_Management_Custom.pretty") (options "") (descr "TPS61023 TI DRL0006A land pattern"))
+  (lib (name "Connector_FPC_Custom") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Connector_FPC_Custom.pretty") (options "") (descr "KLS FPC connectors (TFT032B018)"))
+  (lib (name "Package_SO_Custom") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Package_SO_Custom.pretty") (options "") (descr "Vishay PowerPAK SO-8L Dual (SQJB60EP), doc 63817"))
+  (lib (name "Module_Custom") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Module_Custom.pretty") (options "") (descr "Waveshare 2-CH UART TO ETH (CH9121) mezanin modulu, dogrudan lehimli"))
+  (lib (name "Inductor_Custom") (type "KiCad") (uri "C:/Users/Slayer/Desktop/gopo/usb-pd-power-supply/hardware/libraries/Inductor_Custom.pretty") (options "") (descr "Core Master FPI0705 guc bobini land pattern"))
+)

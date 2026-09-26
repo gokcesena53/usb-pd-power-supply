@@ -1,0 +1,21 @@
+{
+  "board_sha256": "36cdde4500dcb4acb2f9057a8fbbcb46448c5125013eb7dcabe4655564c085ec",
+  "baseline_errors": 15,
+  "final_errors": 15,
+  "baseline_warnings": 155,
+  "final_warnings": 153,
+  "new_violations": [],
+  "schematic_parity": 0,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parked_count": 26,
+  "j7_j8_unchanged": true,
+  "tracks_nets_unchanged": true,
+  "notch_vertical_edge_x_mm": 59.8,
+  "j9_copper_left_x_mm": 60.575,
+  "j9_notch_clearance_mm": 0.775,
+  "usb_edge_rule_mm": 0.254,
+  "unchanged_original_edge_items": 7,
+  "removed_left_edge_items": 1,
+  "copper_zones": 0
+}

@@ -4,7 +4,7 @@ title: Kritik yerleşim kurallarını uygula
 status: To Do
 assignee: []
 created_date: '2026-09-22 18:46'
-updated_date: '2026-09-24 13:06'
+updated_date: '2026-09-25 07:43'
 labels:
   - layout
 milestone: m-1
@@ -14,6 +14,7 @@ dependencies:
   - TASK-063
   - TASK-085
   - TASK-010
+  - TASK-092
 references:
   - hardware/datasheets/LM7480-Q1.pdf
   - design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md
@@ -60,4 +61,8 @@ Yüksek akım çıkış yolu J4'e doğrudan ilerlemeli; LM74801/MOSFET, şönt v
 24.09.2026 — Kullanıcı genel yerleşim kararı: design_decisions/output/PCB_GENEL_YERLESIM_KARARI_20260924.md. Önceki bottom USB-C/ESP32 ve karşı sağ kenarda anten şartlarının yerini J7 top, U2 top/anten dışarı ve J8 bottom alır. Bu kayıt plan güncellemesidir; PCB uygulaması veya yeni doğrulama kanıtı değildir.
 
 24.09.2026 — İki turlu akış: TASK-086 kaba plan → TASK-063 mekanik seçim → TASK-008 ince yerleşim/kritik güzergâh → TASK-087 routing → TASK-088 son kabul → TASK-014 Gerber. Prototip RF: TASK-089; besleme/termal: TASK-090. Bu kayıt task planıdır, PCB uygulama kanıtı değildir.
+
+25.09.2026 — Yeni kullanıcı isteğinin iş sırası: TASK-091 Ethernet/USB-C mekanik revizyonu → TASK-092 kalan komponentlerin fiziksel yerleşimi → TASK-008 kritik elektriksel yerleşim/güzergâh kabulü → TASK-087 routing. TASK-063 geçmiş başlangıç kanıtıdır; güncel port ankrajları TASK-091 çıktısından alınır. Bu kayıt yalnız iş planı güncellemesidir.
+
+25.09.2026 — Güncel yerleşim sırası TASK-091 → TASK-093 (Ethernet altı aktif komponent yerleşimi) → TASK-092 → TASK-008 → TASK-087. Alt hacimde seçilen reflerin güç/GND dönüşü, hassas sinyal ve termal kabulleri bu görevde nihai güzergâhlarla yeniden kontrol edilir; üretim numune kabulü TASK-053/088 dedir.
 <!-- SECTION:NOTES:END -->

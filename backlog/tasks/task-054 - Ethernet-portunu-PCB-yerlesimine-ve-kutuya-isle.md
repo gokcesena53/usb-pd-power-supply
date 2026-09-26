@@ -1,10 +1,10 @@
 ---
 id: TASK-054
 title: Ethernet portunu PCB yerlesimine ve kutuya isle
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-09-23 12:09'
-updated_date: '2026-09-24 13:06'
+updated_date: '2026-09-25 08:17'
 labels:
   - layout
   - fabrication

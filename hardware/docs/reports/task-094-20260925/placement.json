@@ -1,0 +1,7391 @@
+{
+  "before": {
+    "H2": {
+      "xy": [
+        145.7,
+        73.48
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "R1": {
+      "xy": [
+        80.5,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ]
+    },
+    "Q5": {
+      "xy": [
+        128.5,
+        99.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "C30": {
+      "xy": [
+        124.8,
+        109.4
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(C30-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D10": {
+      "xy": [
+        124.0,
+        117.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R3": {
+      "xy": [
+        86.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "2",
+          "USB_DP"
+        ]
+      ]
+    },
+    "C31": {
+      "xy": [
+        140.0,
+        99.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "Net-(U12-CAP)"
+        ]
+      ]
+    },
+    "Q7": {
+      "xy": [
+        87.0,
+        109.25
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USER INTERFACE/BL_K"
+        ]
+      ]
+    },
+    "C32": {
+      "xy": [
+        139.5,
+        103.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP10": {
+      "xy": [
+        97.0,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ]
+    },
+    "U2": {
+      "xy": [
+        77.92,
+        75.065
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "TFT_MOSI"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "Net-(U2-IO0)"
+        ],
+        [
+          "13",
+          "TFT_BL_PWM"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "OUT_EN"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "18",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "19",
+          "TFT_CS"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "unconnected-(U2-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "23",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "24",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "25",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "26",
+          "PD_INT_3V3"
+        ],
+        [
+          "27",
+          "ENCODER_SW"
+        ],
+        [
+          "28",
+          "ENCODER_A"
+        ],
+        [
+          "29",
+          "ENCODER_B"
+        ],
+        [
+          "3",
+          "+3.3V"
+        ],
+        [
+          "30",
+          "/MCU/UART_RX"
+        ],
+        [
+          "31",
+          "/MCU/UART_TX"
+        ],
+        [
+          "32",
+          "unconnected-(U2-NC-Pad32)"
+        ],
+        [
+          "33",
+          "unconnected-(U2-NC-Pad33)"
+        ],
+        [
+          "34",
+          "unconnected-(U2-NC-Pad34)"
+        ],
+        [
+          "35",
+          "unconnected-(U2-NC-Pad35)"
+        ],
+        [
+          "36",
+          "GND"
+        ],
+        [
+          "37",
+          "GND"
+        ],
+        [
+          "38",
+          "GND"
+        ],
+        [
+          "39",
+          "GND"
+        ],
+        [
+          "4",
+          "unconnected-(U2-NC-Pad4)"
+        ],
+        [
+          "40",
+          "GND"
+        ],
+        [
+          "41",
+          "GND"
+        ],
+        [
+          "42",
+          "GND"
+        ],
+        [
+          "43",
+          "GND"
+        ],
+        [
+          "44",
+          "GND"
+        ],
+        [
+          "45",
+          "GND"
+        ],
+        [
+          "46",
+          "GND"
+        ],
+        [
+          "47",
+          "GND"
+        ],
+        [
+          "48",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "5",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "50",
+          "GND"
+        ],
+        [
+          "51",
+          "GND"
+        ],
+        [
+          "52",
+          "GND"
+        ],
+        [
+          "53",
+          "GND"
+        ],
+        [
+          "6",
+          "INA_ALERT"
+        ],
+        [
+          "7",
+          "unconnected-(U2-NC-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U2-EN)"
+        ],
+        [
+          "9",
+          "TFT_SCLK"
+        ]
+      ]
+    },
+    "H4": {
+      "xy": [
+        145.7,
+        126.52
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "R66": {
+      "xy": [
+        127.5,
+        117.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ]
+    },
+    "C34": {
+      "xy": [
+        104.8,
+        105.55
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP9": {
+      "xy": [
+        94.5,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_CFG0"
+        ]
+      ]
+    },
+    "C6": {
+      "xy": [
+        71.0,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C7": {
+      "xy": [
+        78.0,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ]
+    },
+    "H1": {
+      "xy": [
+        54.3,
+        73.48
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "TP12": {
+      "xy": [
+        135.5,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_RX"
+        ]
+      ]
+    },
+    "R29": {
+      "xy": [
+        83.8,
+        109.25
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R55": {
+      "xy": [
+        129.0,
+        107.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ]
+      ]
+    },
+    "R2": {
+      "xy": [
+        84.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "2",
+          "USB_DM"
+        ]
+      ]
+    },
+    "J7": {
+      "xy": [
+        52.975,
+        88.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ]
+    },
+    "R37": {
+      "xy": [
+        90.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "C5": {
+      "xy": [
+        74.5,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q6": {
+      "xy": [
+        119.5,
+        117.5
+      ],
+      "angle": 180.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "Net-(Q6-D)"
+        ]
+      ]
+    },
+    "R16": {
+      "xy": [
+        82.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "2",
+          "Net-(U2-IO0)"
+        ]
+      ]
+    },
+    "R54": {
+      "xy": [
+        124.8,
+        107.2
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "Net-(C30-Pad1)"
+        ]
+      ]
+    },
+    "R28": {
+      "xy": [
+        81.0,
+        108.3
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "TFT_BL_PWM"
+        ],
+        [
+          "2",
+          "Net-(Q7-G)"
+        ]
+      ]
+    },
+    "D3": {
+      "xy": [
+        61.5,
+        82.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R60": {
+      "xy": [
+        87.0,
+        104.75
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A"
+        ]
+      ]
+    },
+    "U12": {
+      "xy": [
+        135.5,
+        101.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "10",
+          "V_PRE"
+        ],
+        [
+          "11",
+          "Net-(U12-CAP)"
+        ],
+        [
+          "12",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "13",
+          "unconnected-(U12-RTN-Pad13)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "3",
+          "V_PRE"
+        ],
+        [
+          "4",
+          "V_PRE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ]
+    },
+    "D8": {
+      "xy": [
+        61.5,
+        92.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "J3": {
+      "xy": [
+        98.0,
+        109.3
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J3-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "GND"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "TFT_SCLK"
+        ],
+        [
+          "18",
+          "TFT_CS"
+        ],
+        [
+          "19",
+          "TFT_MOSI"
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "+3.3V"
+        ],
+        [
+          "22",
+          "+3.3V"
+        ],
+        [
+          "23",
+          "+3.3V"
+        ],
+        [
+          "24",
+          "unconnected-(J3-Pin_24-Pad24)"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "26",
+          "unconnected-(J3-Pin_26-Pad26)"
+        ],
+        [
+          "27",
+          "unconnected-(J3-Pin_27-Pad27)"
+        ],
+        [
+          "28",
+          "unconnected-(J3-Pin_28-Pad28)"
+        ],
+        [
+          "29",
+          "unconnected-(J3-Pin_29-Pad29)"
+        ],
+        [
+          "3",
+          "unconnected-(J3-Pin_3-Pad3)"
+        ],
+        [
+          "30",
+          "GND"
+        ],
+        [
+          "4",
+          "/USER INTERFACE/BL_K"
+        ],
+        [
+          "5",
+          "GND"
+        ],
+        [
+          "6",
+          "unconnected-(J3-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "GND"
+        ],
+        [
+          "9",
+          "GND"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ]
+    },
+    "R58": {
+      "xy": [
+        133.4,
+        107.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D9": {
+      "xy": [
+        61.5,
+        94.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP11": {
+      "xy": [
+        133.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_TX"
+        ]
+      ]
+    },
+    "R15": {
+      "xy": [
+        88.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "/MCU/ETH_CFG0"
+        ]
+      ]
+    },
+    "R63": {
+      "xy": [
+        61.5,
+        98.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "J9": {
+      "xy": [
+        58.0,
+        104.0
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "ENCODER_A"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "ENCODER_B"
+        ],
+        [
+          "4",
+          "ENCODER_SW"
+        ],
+        [
+          "5",
+          "GND"
+        ]
+      ]
+    },
+    "R56": {
+      "xy": [
+        131.2,
+        107.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "U10": {
+      "xy": [
+        61.5,
+        88.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_DM"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "USB_DP"
+        ],
+        [
+          "4",
+          "USB_DP"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ],
+        [
+          "6",
+          "USB_DM"
+        ]
+      ]
+    },
+    "TP13": {
+      "xy": [
+        138.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ]
+      ]
+    },
+    "R10": {
+      "xy": [
+        92.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "R67": {
+      "xy": [
+        113.0,
+        117.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "Net-(Q6-D)"
+        ]
+      ]
+    },
+    "H3": {
+      "xy": [
+        54.3,
+        126.52
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "R62": {
+      "xy": [
+        61.5,
+        96.8
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D6": {
+      "xy": [
+        124.8,
+        104.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ]
+    },
+    "D1": {
+      "xy": [
+        79.2,
+        120.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ]
+    },
+    "R59": {
+      "xy": [
+        144.0,
+        122.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "U6": {
+      "xy": [
+        108.435,
+        105.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "3",
+          "GND"
+        ]
+      ]
+    },
+    "C12": {
+      "xy": [
+        120.8,
+        104.91
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q4": {
+      "xy": [
+        120.0,
+        122.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ]
+    },
+    "C2": {
+      "xy": [
+        67.5,
+        121.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C21": {
+      "xy": [
+        111.5,
+        89.8
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ]
+    },
+    "C33": {
+      "xy": [
+        114.5,
+        81.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R35": {
+      "xy": [
+        54.5,
+        109.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_B"
+        ]
+      ]
+    },
+    "C24": {
+      "xy": [
+        91.55,
+        127.96
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(C24-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q8": {
+      "xy": [
+        107.0,
+        88.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "3",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "4",
+          "+3.3V"
+        ],
+        [
+          "5",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "6",
+          "/MCU/ETH_3V3"
+        ]
+      ]
+    },
+    "C11": {
+      "xy": [
+        141.2,
+        114.1
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R14": {
+      "xy": [
+        76.2,
+        120.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-LED)"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ]
+    },
+    "R41": {
+      "xy": [
+        123.5,
+        110.2
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/COMP_NODE"
+        ],
+        [
+          "2",
+          "Net-(C19-Pad1)"
+        ]
+      ]
+    },
+    "R24": {
+      "xy": [
+        137.5,
+        84.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/RTC_INT"
+        ]
+      ]
+    },
+    "U5": {
+      "xy": [
+        126.7,
+        105.31
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "Net-(U5-BST)"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/FSW_SET"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/COMP_NODE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/SS_RAMP"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "9",
+          "V_PRE"
+        ]
+      ]
+    },
+    "D5": {
+      "xy": [
+        92.169998,
+        123.26
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ]
+    },
+    "C15": {
+      "xy": [
+        113.3,
+        96.7
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C35": {
+      "xy": [
+        132.5,
+        124.05
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "RShunt1": {
+      "xy": [
+        136.0,
+        117.6
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "OUT_POS"
+        ]
+      ]
+    },
+    "C8": {
+      "xy": [
+        77.5,
+        110.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R12": {
+      "xy": [
+        73.0,
+        115.2
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ]
+    },
+    "R53": {
+      "xy": [
+        103.65,
+        125.76
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "Net-(U11-EN)"
+        ]
+      ]
+    },
+    "R8": {
+      "xy": [
+        74.2,
+        125.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_INT_5V"
+        ],
+        [
+          "2",
+          "Net-(R64-Pad1)"
+        ]
+      ]
+    },
+    "R61": {
+      "xy": [
+        125.5,
+        124.05
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R17": {
+      "xy": [
+        111.5,
+        87.2
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ]
+    },
+    "C10": {
+      "xy": [
+        107.0,
+        94.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C26": {
+      "xy": [
+        104.15,
+        117.36
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C16": {
+      "xy": [
+        120.0,
+        97.3
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R49": {
+      "xy": [
+        89.15,
+        127.96
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP3": {
+      "xy": [
+        76.0,
+        105.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ]
+      ]
+    },
+    "R36": {
+      "xy": [
+        54.5,
+        112.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_SW"
+        ]
+      ]
+    },
+    "D4": {
+      "xy": [
+        102.95,
+        114.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      ]
+    },
+    "TP8": {
+      "xy": [
+        80.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ]
+      ]
+    },
+    "U11": {
+      "xy": [
+        97.999998,
+        121.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "3",
+          "PD_VOUT"
+        ],
+        [
+          "4",
+          "Net-(U11-EN)"
+        ],
+        [
+          "5",
+          "Net-(U11-SS)"
+        ],
+        [
+          "6",
+          "GND"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ]
+    },
+    "Y1": {
+      "xy": [
+        143.0,
+        89.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "Net-(U4-OSCO)"
+        ]
+      ]
+    },
+    "C28": {
+      "xy": [
+        110.15,
+        125.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP7": {
+      "xy": [
+        77.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SDA_3V3"
+        ]
+      ]
+    },
+    "TH1": {
+      "xy": [
+        68.0,
+        115.2
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-OTP)"
+        ]
+      ]
+    },
+    "U1": {
+      "xy": [
+        72.0,
+        120.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "10",
+          "unconnected-(U1-NC-Pad10)"
+        ],
+        [
+          "11",
+          "Net-(U1-VSEL)"
+        ],
+        [
+          "12",
+          "Net-(U1-V18)"
+        ],
+        [
+          "13",
+          "Net-(U1-OTP)"
+        ],
+        [
+          "14",
+          "unconnected-(U1-NC-Pad14)"
+        ],
+        [
+          "15",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "16",
+          "USB_CC2"
+        ],
+        [
+          "17",
+          "USB_CC1"
+        ],
+        [
+          "18",
+          "unconnected-(U1-DN-Pad18)"
+        ],
+        [
+          "19",
+          "unconnected-(U1-DP-Pad19)"
+        ],
+        [
+          "2",
+          "unconnected-(U1-NC-Pad2)"
+        ],
+        [
+          "20",
+          "PD_5V"
+        ],
+        [
+          "21",
+          "unconnected-(U1-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "23",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "24",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_5V"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_5V"
+        ],
+        [
+          "6",
+          "unconnected-(U1-FLIP-Pad6)"
+        ],
+        [
+          "7",
+          "unconnected-(U1-GPIO-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U1-LED)"
+        ],
+        [
+          "9",
+          "PD_INT_5V"
+        ]
+      ]
+    },
+    "C20": {
+      "xy": [
+        96.5,
+        93.58
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R65": {
+      "xy": [
+        78.8,
+        125.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(R65-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R48": {
+      "xy": [
+        88.35,
+        125.16
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ]
+    },
+    "R11": {
+      "xy": [
+        64.0,
+        110.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "R40": {
+      "xy": [
+        116.5,
+        108.1
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R52": {
+      "xy": [
+        94.65,
+        127.96
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "2",
+          "Net-(C24-Pad1)"
+        ]
+      ]
+    },
+    "R50": {
+      "xy": [
+        111.1,
+        108.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "Net-(U6-REF)"
+        ]
+      ]
+    },
+    "R13": {
+      "xy": [
+        77.5,
+        114.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ]
+    },
+    "C1": {
+      "xy": [
+        69.5,
+        125.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-V18)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R6": {
+      "xy": [
+        110.25,
+        77.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_5V"
+        ]
+      ]
+    },
+    "Q3": {
+      "xy": [
+        71.5,
+        110.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "3",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "6",
+          "PD_VOUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "C19": {
+      "xy": [
+        120.8,
+        112.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(C19-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R43": {
+      "xy": [
+        116.5,
+        113.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ]
+      ]
+    },
+    "C13": {
+      "xy": [
+        117.115,
+        104.91
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "U3": {
+      "xy": [
+        136.75,
+        112.1
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "INA_ALERT"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "6",
+          "+3.3V"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "OUT_POS"
+        ],
+        [
+          "9",
+          "OUT_POS"
+        ]
+      ]
+    },
+    "C17": {
+      "xy": [
+        132.5,
+        107.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U5-BST)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ]
+      ]
+    },
+    "C29": {
+      "xy": [
+        87.65,
+        111.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R9": {
+      "xy": [
+        81.1,
+        125.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ],
+        [
+          "2",
+          "Net-(R65-Pad1)"
+        ]
+      ]
+    },
+    "TP6": {
+      "xy": [
+        74.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ]
+      ]
+    },
+    "Q1": {
+      "xy": [
+        105.75,
+        74.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "3",
+          "PD_I2C_SCL_5V"
+        ]
+      ]
+    },
+    "TP14": {
+      "xy": [
+        107.0,
+        82.15
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_RUN"
+        ]
+      ]
+    },
+    "R21": {
+      "xy": [
+        71.8,
+        125.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-VSEL)"
+        ]
+      ]
+    },
+    "C14": {
+      "xy": [
+        127.9,
+        110.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C4": {
+      "xy": [
+        68.0,
+        118.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R39": {
+      "xy": [
+        119.5,
+        109.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ]
+      ]
+    },
+    "U13": {
+      "xy": [
+        129.0,
+        123.1
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ]
+      ]
+    },
+    "R27": {
+      "xy": [
+        136.75,
+        107.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ]
+      ]
+    },
+    "R47": {
+      "xy": [
+        91.65,
+        119.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q2": {
+      "xy": [
+        110.25,
+        74.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "3",
+          "PD_I2C_SDA_5V"
+        ]
+      ]
+    },
+    "TP1": {
+      "xy": [
+        56.0,
+        117.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ]
+      ]
+    },
+    "D7": {
+      "xy": [
+        144.0,
+        119.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C25": {
+      "xy": [
+        87.65,
+        119.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C18": {
+      "xy": [
+        121.8,
+        108.3
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SS_RAMP"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "L3": {
+      "xy": [
+        97.7,
+        108.16
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ]
+    },
+    "R34": {
+      "xy": [
+        54.5,
+        106.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_A"
+        ]
+      ]
+    },
+    "L1": {
+      "xy": [
+        126.995,
+        97.37
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "C9": {
+      "xy": [
+        137.5,
+        81.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP5": {
+      "xy": [
+        65.0,
+        104.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ]
+    },
+    "R5": {
+      "xy": [
+        105.75,
+        77.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_5V"
+        ]
+      ]
+    },
+    "J4": {
+      "xy": [
+        146.0,
+        104.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C23": {
+      "xy": [
+        100.15,
+        125.76
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-SS)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D2": {
+      "xy": [
+        132.8,
+        103.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R64": {
+      "xy": [
+        76.5,
+        125.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(R64-Pad1)"
+        ],
+        [
+          "2",
+          "PD_INT_3V3"
+        ]
+      ]
+    },
+    "C3": {
+      "xy": [
+        63.5,
+        115.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R51": {
+      "xy": [
+        108.2,
+        108.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "J8": {
+      "xy": [
+        102.5,
+        79.61
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J8-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "unconnected-(J8-Pin_10-Pad10)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "14",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "15",
+          "unconnected-(J8-Pin_15-Pad15)"
+        ],
+        [
+          "16",
+          "unconnected-(J8-Pin_16-Pad16)"
+        ],
+        [
+          "2",
+          "unconnected-(J8-Pin_2-Pad2)"
+        ],
+        [
+          "3",
+          "/MCU/ETH_CFG0"
+        ],
+        [
+          "4",
+          "/MCU/ETH_RUN"
+        ],
+        [
+          "5",
+          "/MCU/UART_TX"
+        ],
+        [
+          "6",
+          "unconnected-(J8-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "/MCU/UART_RX"
+        ],
+        [
+          "8",
+          "unconnected-(J8-Pin_8-Pad8)"
+        ],
+        [
+          "9",
+          "unconnected-(J8-Pin_9-Pad9)"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ]
+    },
+    "R38": {
+      "xy": [
+        131.0,
+        109.3
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FSW_SET"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C27": {
+      "xy": [
+        103.95,
+        121.16
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "SW2": {
+      "xy": [
+        92.5,
+        73.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ]
+    },
+    "TP2": {
+      "xy": [
+        68.0,
+        101.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "R4": {
+      "xy": [
+        105.75,
+        70.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "SW1": {
+      "xy": [
+        85.0,
+        73.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ]
+      ]
+    },
+    "TP4": {
+      "xy": [
+        56.0,
+        120.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ]
+      ]
+    },
+    "R7": {
+      "xy": [
+        110.25,
+        70.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3"
+        ]
+      ]
+    },
+    "U4": {
+      "xy": [
+        143.0,
+        82.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "Net-(U4-OSCO)"
+        ],
+        [
+          "3",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "4",
+          "GND"
+        ],
+        [
+          "5",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "6",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "7",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "8",
+          "+3.3V"
+        ]
+      ]
+    }
+  },
+  "after": {
+    "MECH_ENC": {
+      "xy": [
+        54.3,
+        112.4
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": []
+    },
+    "H2": {
+      "xy": [
+        145.7,
+        73.48
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "R1": {
+      "xy": [
+        80.5,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ]
+    },
+    "Q5": {
+      "xy": [
+        128.5,
+        99.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "C30": {
+      "xy": [
+        124.8,
+        109.4
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(C30-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D10": {
+      "xy": [
+        124.0,
+        117.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R3": {
+      "xy": [
+        86.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "2",
+          "USB_DP"
+        ]
+      ]
+    },
+    "C31": {
+      "xy": [
+        140.0,
+        99.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "Net-(U12-CAP)"
+        ]
+      ]
+    },
+    "Q7": {
+      "xy": [
+        87.0,
+        109.25
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USER INTERFACE/BL_K"
+        ]
+      ]
+    },
+    "C32": {
+      "xy": [
+        139.5,
+        103.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP10": {
+      "xy": [
+        97.0,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ]
+    },
+    "U2": {
+      "xy": [
+        77.92,
+        75.065
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "TFT_MOSI"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "Net-(U2-IO0)"
+        ],
+        [
+          "13",
+          "TFT_BL_PWM"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "OUT_EN"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "18",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "19",
+          "TFT_CS"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "unconnected-(U2-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "23",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "24",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "25",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "26",
+          "PD_INT_3V3"
+        ],
+        [
+          "27",
+          "ENCODER_SW"
+        ],
+        [
+          "28",
+          "ENCODER_A"
+        ],
+        [
+          "29",
+          "ENCODER_B"
+        ],
+        [
+          "3",
+          "+3.3V"
+        ],
+        [
+          "30",
+          "/MCU/UART_RX"
+        ],
+        [
+          "31",
+          "/MCU/UART_TX"
+        ],
+        [
+          "32",
+          "unconnected-(U2-NC-Pad32)"
+        ],
+        [
+          "33",
+          "unconnected-(U2-NC-Pad33)"
+        ],
+        [
+          "34",
+          "unconnected-(U2-NC-Pad34)"
+        ],
+        [
+          "35",
+          "unconnected-(U2-NC-Pad35)"
+        ],
+        [
+          "36",
+          "GND"
+        ],
+        [
+          "37",
+          "GND"
+        ],
+        [
+          "38",
+          "GND"
+        ],
+        [
+          "39",
+          "GND"
+        ],
+        [
+          "4",
+          "unconnected-(U2-NC-Pad4)"
+        ],
+        [
+          "40",
+          "GND"
+        ],
+        [
+          "41",
+          "GND"
+        ],
+        [
+          "42",
+          "GND"
+        ],
+        [
+          "43",
+          "GND"
+        ],
+        [
+          "44",
+          "GND"
+        ],
+        [
+          "45",
+          "GND"
+        ],
+        [
+          "46",
+          "GND"
+        ],
+        [
+          "47",
+          "GND"
+        ],
+        [
+          "48",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "5",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "50",
+          "GND"
+        ],
+        [
+          "51",
+          "GND"
+        ],
+        [
+          "52",
+          "GND"
+        ],
+        [
+          "53",
+          "GND"
+        ],
+        [
+          "6",
+          "INA_ALERT"
+        ],
+        [
+          "7",
+          "unconnected-(U2-NC-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U2-EN)"
+        ],
+        [
+          "9",
+          "TFT_SCLK"
+        ]
+      ]
+    },
+    "H4": {
+      "xy": [
+        145.7,
+        126.52
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "R66": {
+      "xy": [
+        127.5,
+        117.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ]
+    },
+    "C34": {
+      "xy": [
+        104.8,
+        105.55
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP9": {
+      "xy": [
+        94.5,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_CFG0"
+        ]
+      ]
+    },
+    "C6": {
+      "xy": [
+        71.0,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C7": {
+      "xy": [
+        78.0,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ]
+    },
+    "H1": {
+      "xy": [
+        54.3,
+        73.48
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "TP12": {
+      "xy": [
+        135.5,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_RX"
+        ]
+      ]
+    },
+    "R29": {
+      "xy": [
+        83.8,
+        109.25
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R55": {
+      "xy": [
+        129.0,
+        107.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ]
+      ]
+    },
+    "R2": {
+      "xy": [
+        84.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "2",
+          "USB_DM"
+        ]
+      ]
+    },
+    "J7": {
+      "xy": [
+        52.975,
+        88.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ]
+    },
+    "R37": {
+      "xy": [
+        90.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "C5": {
+      "xy": [
+        74.5,
+        83.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q6": {
+      "xy": [
+        119.5,
+        117.5
+      ],
+      "angle": 180.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "Net-(Q6-D)"
+        ]
+      ]
+    },
+    "R16": {
+      "xy": [
+        82.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "2",
+          "Net-(U2-IO0)"
+        ]
+      ]
+    },
+    "R54": {
+      "xy": [
+        124.8,
+        107.2
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "Net-(C30-Pad1)"
+        ]
+      ]
+    },
+    "R28": {
+      "xy": [
+        81.0,
+        108.3
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "TFT_BL_PWM"
+        ],
+        [
+          "2",
+          "Net-(Q7-G)"
+        ]
+      ]
+    },
+    "D3": {
+      "xy": [
+        61.5,
+        82.5
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R60": {
+      "xy": [
+        87.0,
+        104.75
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A"
+        ]
+      ]
+    },
+    "U12": {
+      "xy": [
+        135.5,
+        101.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "10",
+          "V_PRE"
+        ],
+        [
+          "11",
+          "Net-(U12-CAP)"
+        ],
+        [
+          "12",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "13",
+          "unconnected-(U12-RTN-Pad13)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "3",
+          "V_PRE"
+        ],
+        [
+          "4",
+          "V_PRE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ]
+    },
+    "D8": {
+      "xy": [
+        61.5,
+        92.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "J3": {
+      "xy": [
+        98.0,
+        109.3
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J3-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "GND"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "TFT_SCLK"
+        ],
+        [
+          "18",
+          "TFT_CS"
+        ],
+        [
+          "19",
+          "TFT_MOSI"
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "+3.3V"
+        ],
+        [
+          "22",
+          "+3.3V"
+        ],
+        [
+          "23",
+          "+3.3V"
+        ],
+        [
+          "24",
+          "unconnected-(J3-Pin_24-Pad24)"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "26",
+          "unconnected-(J3-Pin_26-Pad26)"
+        ],
+        [
+          "27",
+          "unconnected-(J3-Pin_27-Pad27)"
+        ],
+        [
+          "28",
+          "unconnected-(J3-Pin_28-Pad28)"
+        ],
+        [
+          "29",
+          "unconnected-(J3-Pin_29-Pad29)"
+        ],
+        [
+          "3",
+          "unconnected-(J3-Pin_3-Pad3)"
+        ],
+        [
+          "30",
+          "GND"
+        ],
+        [
+          "4",
+          "/USER INTERFACE/BL_K"
+        ],
+        [
+          "5",
+          "GND"
+        ],
+        [
+          "6",
+          "unconnected-(J3-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "GND"
+        ],
+        [
+          "9",
+          "GND"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ]
+    },
+    "R58": {
+      "xy": [
+        133.4,
+        107.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D9": {
+      "xy": [
+        61.5,
+        94.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP11": {
+      "xy": [
+        133.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_TX"
+        ]
+      ]
+    },
+    "R15": {
+      "xy": [
+        88.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "/MCU/ETH_CFG0"
+        ]
+      ]
+    },
+    "R63": {
+      "xy": [
+        61.5,
+        98.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "J9": {
+      "xy": [
+        61.5,
+        104.0
+      ],
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "ENCODER_A"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "ENCODER_B"
+        ],
+        [
+          "4",
+          "ENCODER_SW"
+        ],
+        [
+          "5",
+          "GND"
+        ]
+      ]
+    },
+    "R56": {
+      "xy": [
+        131.2,
+        107.5
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "U10": {
+      "xy": [
+        61.5,
+        88.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_DM"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "USB_DP"
+        ],
+        [
+          "4",
+          "USB_DP"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ],
+        [
+          "6",
+          "USB_DM"
+        ]
+      ]
+    },
+    "TP13": {
+      "xy": [
+        138.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ]
+      ]
+    },
+    "R10": {
+      "xy": [
+        92.5,
+        83.0
+      ],
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "R67": {
+      "xy": [
+        113.0,
+        117.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "Net-(Q6-D)"
+        ]
+      ]
+    },
+    "H3": {
+      "xy": [
+        54.3,
+        126.52
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    "R62": {
+      "xy": [
+        61.5,
+        96.8
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D6": {
+      "xy": [
+        124.8,
+        104.5
+      ],
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ]
+    },
+    "D1": {
+      "xy": [
+        34.2,
+        170.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ]
+    },
+    "R59": {
+      "xy": [
+        144.0,
+        122.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "U6": {
+      "xy": [
+        108.435,
+        105.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "3",
+          "GND"
+        ]
+      ]
+    },
+    "C12": {
+      "xy": [
+        120.8,
+        104.91
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q4": {
+      "xy": [
+        120.0,
+        122.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ]
+    },
+    "C2": {
+      "xy": [
+        22.5,
+        171.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C21": {
+      "xy": [
+        111.5,
+        89.8
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ]
+    },
+    "C33": {
+      "xy": [
+        114.5,
+        81.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R35": {
+      "xy": [
+        24.5,
+        184.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_B"
+        ]
+      ]
+    },
+    "C24": {
+      "xy": [
+        91.55,
+        127.96
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(C24-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q8": {
+      "xy": [
+        107.0,
+        88.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "3",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "4",
+          "+3.3V"
+        ],
+        [
+          "5",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "6",
+          "/MCU/ETH_3V3"
+        ]
+      ]
+    },
+    "C11": {
+      "xy": [
+        141.2,
+        114.1
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R14": {
+      "xy": [
+        31.2,
+        170.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-LED)"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ]
+    },
+    "R41": {
+      "xy": [
+        123.5,
+        110.2
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/COMP_NODE"
+        ],
+        [
+          "2",
+          "Net-(C19-Pad1)"
+        ]
+      ]
+    },
+    "R24": {
+      "xy": [
+        137.5,
+        84.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/RTC_INT"
+        ]
+      ]
+    },
+    "U5": {
+      "xy": [
+        126.7,
+        105.31
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "Net-(U5-BST)"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/FSW_SET"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/COMP_NODE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/SS_RAMP"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "9",
+          "V_PRE"
+        ]
+      ]
+    },
+    "D5": {
+      "xy": [
+        92.169998,
+        123.26
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ]
+    },
+    "C15": {
+      "xy": [
+        113.3,
+        96.7
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C35": {
+      "xy": [
+        132.5,
+        124.05
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "RShunt1": {
+      "xy": [
+        136.0,
+        117.6
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "OUT_POS"
+        ]
+      ]
+    },
+    "C8": {
+      "xy": [
+        32.5,
+        160.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R12": {
+      "xy": [
+        28.0,
+        165.2
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ]
+    },
+    "R53": {
+      "xy": [
+        103.65,
+        125.76
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "Net-(U11-EN)"
+        ]
+      ]
+    },
+    "R8": {
+      "xy": [
+        29.2,
+        175.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_INT_5V"
+        ],
+        [
+          "2",
+          "Net-(R64-Pad1)"
+        ]
+      ]
+    },
+    "R61": {
+      "xy": [
+        125.5,
+        124.05
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R17": {
+      "xy": [
+        111.5,
+        87.2
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ]
+    },
+    "C10": {
+      "xy": [
+        107.0,
+        94.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C26": {
+      "xy": [
+        104.15,
+        117.36
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C16": {
+      "xy": [
+        120.0,
+        97.3
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R49": {
+      "xy": [
+        89.15,
+        127.96
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP3": {
+      "xy": [
+        31.0,
+        155.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ]
+      ]
+    },
+    "R36": {
+      "xy": [
+        24.5,
+        187.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_SW"
+        ]
+      ]
+    },
+    "D4": {
+      "xy": [
+        102.95,
+        114.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      ]
+    },
+    "TP8": {
+      "xy": [
+        80.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ]
+      ]
+    },
+    "U11": {
+      "xy": [
+        97.999998,
+        121.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "3",
+          "PD_VOUT"
+        ],
+        [
+          "4",
+          "Net-(U11-EN)"
+        ],
+        [
+          "5",
+          "Net-(U11-SS)"
+        ],
+        [
+          "6",
+          "GND"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ]
+    },
+    "Y1": {
+      "xy": [
+        143.0,
+        89.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "Net-(U4-OSCO)"
+        ]
+      ]
+    },
+    "C28": {
+      "xy": [
+        110.15,
+        125.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP7": {
+      "xy": [
+        77.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SDA_3V3"
+        ]
+      ]
+    },
+    "TH1": {
+      "xy": [
+        23.0,
+        165.2
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-OTP)"
+        ]
+      ]
+    },
+    "U1": {
+      "xy": [
+        27.0,
+        170.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "10",
+          "unconnected-(U1-NC-Pad10)"
+        ],
+        [
+          "11",
+          "Net-(U1-VSEL)"
+        ],
+        [
+          "12",
+          "Net-(U1-V18)"
+        ],
+        [
+          "13",
+          "Net-(U1-OTP)"
+        ],
+        [
+          "14",
+          "unconnected-(U1-NC-Pad14)"
+        ],
+        [
+          "15",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "16",
+          "USB_CC2"
+        ],
+        [
+          "17",
+          "USB_CC1"
+        ],
+        [
+          "18",
+          "unconnected-(U1-DN-Pad18)"
+        ],
+        [
+          "19",
+          "unconnected-(U1-DP-Pad19)"
+        ],
+        [
+          "2",
+          "unconnected-(U1-NC-Pad2)"
+        ],
+        [
+          "20",
+          "PD_5V"
+        ],
+        [
+          "21",
+          "unconnected-(U1-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "23",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "24",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_5V"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_5V"
+        ],
+        [
+          "6",
+          "unconnected-(U1-FLIP-Pad6)"
+        ],
+        [
+          "7",
+          "unconnected-(U1-GPIO-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U1-LED)"
+        ],
+        [
+          "9",
+          "PD_INT_5V"
+        ]
+      ]
+    },
+    "C20": {
+      "xy": [
+        96.5,
+        93.58
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R65": {
+      "xy": [
+        33.8,
+        175.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(R65-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R48": {
+      "xy": [
+        88.35,
+        125.16
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ]
+    },
+    "R11": {
+      "xy": [
+        19.0,
+        160.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "R40": {
+      "xy": [
+        116.5,
+        108.1
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R52": {
+      "xy": [
+        94.65,
+        127.96
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "2",
+          "Net-(C24-Pad1)"
+        ]
+      ]
+    },
+    "R50": {
+      "xy": [
+        111.1,
+        108.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "Net-(U6-REF)"
+        ]
+      ]
+    },
+    "R13": {
+      "xy": [
+        32.5,
+        164.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ]
+    },
+    "C1": {
+      "xy": [
+        24.5,
+        175.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U1-V18)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R6": {
+      "xy": [
+        110.25,
+        77.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_5V"
+        ]
+      ]
+    },
+    "Q3": {
+      "xy": [
+        26.5,
+        160.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "3",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "6",
+          "PD_VOUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "C19": {
+      "xy": [
+        120.8,
+        112.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(C19-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R43": {
+      "xy": [
+        116.5,
+        113.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ]
+      ]
+    },
+    "C13": {
+      "xy": [
+        117.115,
+        104.91
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "U3": {
+      "xy": [
+        136.75,
+        112.1
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "INA_ALERT"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "6",
+          "+3.3V"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "OUT_POS"
+        ],
+        [
+          "9",
+          "OUT_POS"
+        ]
+      ]
+    },
+    "C17": {
+      "xy": [
+        132.5,
+        107.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U5-BST)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ]
+      ]
+    },
+    "C29": {
+      "xy": [
+        87.65,
+        111.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R9": {
+      "xy": [
+        36.1,
+        175.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ],
+        [
+          "2",
+          "Net-(R65-Pad1)"
+        ]
+      ]
+    },
+    "TP6": {
+      "xy": [
+        74.0,
+        72.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ]
+      ]
+    },
+    "Q1": {
+      "xy": [
+        105.75,
+        74.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "3",
+          "PD_I2C_SCL_5V"
+        ]
+      ]
+    },
+    "TP14": {
+      "xy": [
+        107.0,
+        82.15
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_RUN"
+        ]
+      ]
+    },
+    "R21": {
+      "xy": [
+        26.8,
+        175.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-VSEL)"
+        ]
+      ]
+    },
+    "C14": {
+      "xy": [
+        127.9,
+        110.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C4": {
+      "xy": [
+        23.0,
+        168.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R39": {
+      "xy": [
+        119.5,
+        109.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ]
+      ]
+    },
+    "U13": {
+      "xy": [
+        129.0,
+        123.1
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ]
+      ]
+    },
+    "R27": {
+      "xy": [
+        136.75,
+        107.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ]
+      ]
+    },
+    "R47": {
+      "xy": [
+        91.65,
+        119.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "Q2": {
+      "xy": [
+        110.25,
+        74.0
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "3",
+          "PD_I2C_SDA_5V"
+        ]
+      ]
+    },
+    "TP1": {
+      "xy": [
+        11.0,
+        167.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ]
+      ]
+    },
+    "D7": {
+      "xy": [
+        144.0,
+        119.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C25": {
+      "xy": [
+        87.65,
+        119.66
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C18": {
+      "xy": [
+        121.8,
+        108.3
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SS_RAMP"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "L3": {
+      "xy": [
+        97.7,
+        108.16
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ]
+    },
+    "R34": {
+      "xy": [
+        24.5,
+        181.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_A"
+        ]
+      ]
+    },
+    "L1": {
+      "xy": [
+        126.995,
+        97.37
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "C9": {
+      "xy": [
+        137.5,
+        81.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "TP5": {
+      "xy": [
+        20.0,
+        154.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ]
+    },
+    "R5": {
+      "xy": [
+        105.75,
+        77.5
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_5V"
+        ]
+      ]
+    },
+    "J4": {
+      "xy": [
+        146.0,
+        104.0
+      ],
+      "angle": 90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C23": {
+      "xy": [
+        100.15,
+        125.76
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U11-SS)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "D2": {
+      "xy": [
+        132.8,
+        103.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R64": {
+      "xy": [
+        31.5,
+        175.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(R64-Pad1)"
+        ],
+        [
+          "2",
+          "PD_INT_3V3"
+        ]
+      ]
+    },
+    "C3": {
+      "xy": [
+        18.5,
+        165.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "R51": {
+      "xy": [
+        108.2,
+        108.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "J8": {
+      "xy": [
+        102.5,
+        79.61
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "unconnected-(J8-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "unconnected-(J8-Pin_10-Pad10)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "14",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "15",
+          "unconnected-(J8-Pin_15-Pad15)"
+        ],
+        [
+          "16",
+          "unconnected-(J8-Pin_16-Pad16)"
+        ],
+        [
+          "2",
+          "unconnected-(J8-Pin_2-Pad2)"
+        ],
+        [
+          "3",
+          "/MCU/ETH_CFG0"
+        ],
+        [
+          "4",
+          "/MCU/ETH_RUN"
+        ],
+        [
+          "5",
+          "/MCU/UART_TX"
+        ],
+        [
+          "6",
+          "unconnected-(J8-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "/MCU/UART_RX"
+        ],
+        [
+          "8",
+          "unconnected-(J8-Pin_8-Pad8)"
+        ],
+        [
+          "9",
+          "unconnected-(J8-Pin_9-Pad9)"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ]
+    },
+    "R38": {
+      "xy": [
+        131.0,
+        109.3
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FSW_SET"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "C27": {
+      "xy": [
+        103.95,
+        121.16
+      ],
+      "angle": -90.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    "SW2": {
+      "xy": [
+        92.5,
+        73.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ]
+    },
+    "TP2": {
+      "xy": [
+        23.0,
+        151.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ]
+    },
+    "R4": {
+      "xy": [
+        105.75,
+        70.5
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ]
+    },
+    "SW1": {
+      "xy": [
+        85.0,
+        73.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ]
+      ]
+    },
+    "TP4": {
+      "xy": [
+        11.0,
+        170.0
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ]
+      ]
+    },
+    "R7": {
+      "xy": [
+        110.25,
+        70.5
+      ],
+      "angle": 0.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3"
+        ]
+      ]
+    },
+    "U4": {
+      "xy": [
+        143.0,
+        82.0
+      ],
+      "angle": 180.0,
+      "layer": "B.Cu",
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "Net-(U4-OSCO)"
+        ],
+        [
+          "3",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "4",
+          "GND"
+        ],
+        [
+          "5",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "6",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "7",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "8",
+          "+3.3V"
+        ]
+      ]
+    }
+  },
+  "parked_blocks": {
+    "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR": {
+      "translation": [
+        -45,
+        50
+      ],
+      "refs": [
+        "D1",
+        "U1",
+        "R14",
+        "C8",
+        "R21",
+        "C2",
+        "R12",
+        "R8",
+        "TP3",
+        "TH1",
+        "R65",
+        "R11",
+        "R13",
+        "C1",
+        "Q3",
+        "R9",
+        "C4",
+        "TP1",
+        "TP5",
+        "R64",
+        "C3",
+        "TP2",
+        "TP4"
+      ]
+    },
+    "ROTARY ENCODER": {
+      "translation": [
+        -30,
+        75
+      ],
+      "refs": [
+        "R35",
+        "R34",
+        "R36"
+      ]
+    }
+  },
+  "j9_labels": [
+    {
+      "text": "1 A",
+      "before": [
+        61.0,
+        104.0
+      ],
+      "after": [
+        64.5,
+        104.0
+      ]
+    },
+    {
+      "text": "2 GND",
+      "before": [
+        61.0,
+        108.2
+      ],
+      "after": [
+        64.5,
+        108.2
+      ]
+    },
+    {
+      "text": "3 B",
+      "before": [
+        61.0,
+        112.4
+      ],
+      "after": [
+        64.5,
+        112.4
+      ]
+    },
+    {
+      "text": "4 SW",
+      "before": [
+        61.0,
+        116.6
+      ],
+      "after": [
+        64.5,
+        116.6
+      ]
+    },
+    {
+      "text": "5 GND",
+      "before": [
+        61.0,
+        120.8
+      ],
+      "after": [
+        64.5,
+        120.8
+      ]
+    }
+  ],
+  "other_footprints_preserved": true,
+  "pad_nets_preserved": true,
+  "tracks_preserved": [
+    {
+      "uuid": "67174655-4b0a-418c-94ae-19de118917f4",
+      "start": [
+        93.219998,
+        123.26
+      ],
+      "end": [
+        93.519998,
+        123.26
+      ],
+      "net": "/USB_PD_CONTROLLER/BOOST_FB"
+    },
+    {
+      "uuid": "ab6f190f-2a38-4051-afdd-29de0667dd97",
+      "start": [
+        94.019998,
+        122.76
+      ],
+      "end": [
+        94.019998,
+        122.3
+      ],
+      "net": "/USB_PD_CONTROLLER/BOOST_FB"
+    },
+    {
+      "uuid": "bac123bf-3e8a-4a42-a3d9-e77dc0fb4f54",
+      "start": [
+        93.519998,
+        123.26
+      ],
+      "end": [
+        94.019998,
+        122.76
+      ],
+      "net": "/USB_PD_CONTROLLER/BOOST_FB"
+    },
+    {
+      "uuid": "dc31f985-bf69-4d4a-b183-b7bf2fcb8a73",
+      "start": [
+        94.019998,
+        122.3
+      ],
+      "end": [
+        95.137498,
+        122.3
+      ],
+      "net": "/USB_PD_CONTROLLER/BOOST_FB"
+    }
+  ],
+  "removed_edge_uuid": "b312398c-3afa-40d2-be7c-6b6378444b31",
+  "new_left_edge": [
+    [
+      50.3,
+      72.48
+    ],
+    [
+      50.3,
+      101.5
+    ],
+    [
+      51.3,
+      102.5
+    ],
+    [
+      58.8,
+      102.5
+    ],
+    [
+      59.8,
+      103.5
+    ],
+    [
+      59.8,
+      121.3
+    ],
+    [
+      58.8,
+      122.3
+    ],
+    [
+      51.3,
+      122.3
+    ],
+    [
+      50.3,
+      123.3
+    ],
+    [
+      50.3,
+      127.52
+    ]
+  ]
+}
