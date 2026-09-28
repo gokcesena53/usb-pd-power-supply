@@ -1,0 +1,31 @@
+{
+  "source_sha256": "81e4c9f16e19864cbf0ebd2b2fce5f8ca75153457234904a125ef8e253077e54",
+  "topology_identical": true,
+  "measurements": [
+    {
+      "from": "D4.1",
+      "to": "C28.1",
+      "before_mm": 12.336,
+      "candidate_mm": 3.735
+    },
+    {
+      "from": "U3.3",
+      "to": "U13.2",
+      "before_mm": 15.872,
+      "candidate_mm": 13.491
+    },
+    {
+      "from": "U13.4",
+      "to": "Q4.1",
+      "before_mm": 8.882,
+      "candidate_mm": 8.105
+    }
+  ],
+  "same_drc_violations": true,
+  "drc": {
+    "baseline": 25,
+    "candidate": 25,
+    "candidate_unconnected": 360
+  },
+  "source_unchanged": true
+}

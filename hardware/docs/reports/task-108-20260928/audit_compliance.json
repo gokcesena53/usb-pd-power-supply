@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "task_id": "TASK-108",
+    "title": "Global Dead-Space Elimination & Dense High-Density Compaction Pass",
+    "date": "2026-09-28",
+    "kicad_version": "10.0.5",
+    "pcb_file": "hardware/gopo.kicad_pcb",
+    "total_components": 144,
+    "compacted_components_count": 32,
+    "overall_status": "PASS"
+  },
+  "constraints_verified": {
+    "inter_component_courtyard_clearance_mm": 0.15,
+    "dense_linear_packing": "zero redundant gap achieved on all buses and pullup groups",
+    "courtyard_overlaps_count": 0,
+    "schematic_parity_issues": 0,
+    "max_anchor_deviation_mm": 0.0
+  },
+  "wirelength_metrics": {
+    "baseline_signal_wirelength_mm": 1319.04,
+    "compacted_signal_wirelength_mm": 1304.25,
+    "wirelength_reduction_mm": 14.79,
+    "wirelength_reduction_percent": 1.12,
+    "baseline_crossings": 141,
+    "compacted_crossings": 137,
+    "crossings_delta": -4
+  },
+  "bounding_box_metrics": {
+    "all_components": {
+      "baseline": {
+        "min_x": 41.61,
+        "max_x": 149.175,
+        "min_y": 49.04,
+        "max_y": 129.995,
+        "width": 107.565,
+        "height": 80.955,
+        "area_mm2": 8707.94
+      },
+      "compacted": {
+        "min_x": 41.61,
+        "max_x": 149.175,
+        "min_y": 49.04,
+        "max_y": 129.995,
+        "width": 107.565,
+        "height": 80.955,
+        "area_mm2": 8707.94
+      }
+    },
+    "non_anchor_components": {
+      "baseline": {
+        "min_x": 59.225,
+        "max_x": 147.675,
+        "min_y": 69.675,
+        "max_y": 128.525,
+        "width": 88.45,
+        "height": 58.85,
+        "area_mm2": 5205.28
+      },
+      "compacted": {
+        "min_x": 59.225,
+        "max_x": 147.675,
+        "min_y": 69.675,
+        "max_y": 126.995,
+        "width": 88.45,
+        "height": 57.32,
+        "area_mm2": 5069.95
+      },
+      "height_reduction_mm": 1.53,
+      "area_reduction_mm2": 135.33,
+      "area_reduction_percent": 2.6
+    }
+  },
+  "drc_verification": {
+    "total_violations": 25,
+    "baseline_limit": 25,
+    "unconnected_pads": 360,
+    "courtyard_overlaps": 0,
+    "schematic_parity_issues": 0
+  },
+  "compacted_components": {
+    "R58": {
+      "x": 134.0,
+      "y": 104.5,
+      "rot": 90.0,
+      "silk_x": 134.0,
+      "silk_y": 106.0,
+      "desc": "U12 SW_EN pulldown tightened to U12 pad 6 (1.75mm)"
+    },
+    "R56": {
+      "x": 132.86,
+      "y": 104.5,
+      "rot": 270.0,
+      "silk_x": 132.86,
+      "silk_y": 106.0,
+      "desc": "U12 OV_SENSE low divider side-by-side with R58 (0.15mm gap)"
+    },
+    "R55": {
+      "x": 131.72,
+      "y": 104.5,
+      "rot": 90.0,
+      "silk_x": 131.72,
+      "silk_y": 106.0,
+      "desc": "U12 OV_SENSE high divider side-by-side with R56 (0.15mm gap)"
+    },
+    "R54": {
+      "x": 129.5,
+      "y": 104.5,
+      "rot": 180.0,
+      "silk_x": 129.5,
+      "silk_y": 106.0,
+      "desc": "U12 GATE_DRV series resistor pulled up, flipped 180 deg to resolve crossings"
+    },
+    "C31": {
+      "x": 138.8,
+      "y": 99.5,
+      "rot": 270.0,
+      "silk_x": 138.8,
+      "silk_y": 97.2,
+      "desc": "U12 charge pump cap tightened to U12 pin 11 (0.39mm clearance)"
+    },
+    "C32": {
+      "x": 138.8,
+      "y": 103.0,
+      "rot": 90.0,
+      "silk_x": 138.8,
+      "silk_y": 104.7,
+      "desc": "U12 V_PRE decoupling cap tightened to U12 pin 10"
+    },
+    "C1": {
+      "x": 73.5,
+      "y": 124.3,
+      "rot": 180.0,
+      "silk_x": 73.5,
+      "silk_y": 125.5,
+      "desc": "U1 V18 core decoupling cap pulled up to U1 bottom edge"
+    },
+    "R21": {
+      "x": 75.56,
+      "y": 124.3,
+      "rot": 0.0,
+      "silk_x": 75.56,
+      "silk_y": 125.5,
+      "desc": "U1 VSEL resistor side-by-side with C1 (0.15mm gap)"
+    },
+    "R8": {
+      "x": 77.62,
+      "y": 124.3,
+      "rot": 0.0,
+      "silk_x": 77.62,
+      "silk_y": 125.5,
+      "desc": "U1 PD_INT_5V pullup side-by-side with R21 (0.15mm gap)"
+    },
+    "R64": {
+      "x": 79.68,
+      "y": 124.3,
+      "rot": 0.0,
+      "silk_x": 79.68,
+      "silk_y": 125.5,
+      "desc": "U1 config resistor side-by-side with R8 (0.15mm gap)"
+    },
+    "R65": {
+      "x": 81.74,
+      "y": 124.3,
+      "rot": 180.0,
+      "silk_x": 81.74,
+      "silk_y": 125.5,
+      "desc": "U1 config resistor side-by-side with R64 (0.15mm gap)"
+    },
+    "R9": {
+      "x": 83.8,
+      "y": 124.3,
+      "rot": 180.0,
+      "silk_x": 83.8,
+      "silk_y": 125.5,
+      "desc": "U1 config resistor side-by-side with R65 (0.15mm gap)"
+    },
+    "R14": {
+      "x": 80.8,
+      "y": 120.5,
+      "rot": 0.0,
+      "silk_x": 80.8,
+      "silk_y": 119.3,
+      "desc": "U1 LED resistor tightened to U1 east courtyard"
+    },
+    "R13": {
+      "x": 81.8,
+      "y": 122.5,
+      "rot": 0.0,
+      "silk_x": 81.8,
+      "silk_y": 121.3,
+      "desc": "U1 VOUT sense resistor tightened to U1 east courtyard"
+    },
+    "R2": {
+      "x": 64.5,
+      "y": 86.5,
+      "rot": 270.0,
+      "silk_x": 64.5,
+      "silk_y": 85.0,
+      "desc": "USB DM series resistor pulled 1.5mm toward U10 pin 6"
+    },
+    "R3": {
+      "x": 65.64,
+      "y": 86.5,
+      "rot": 270.0,
+      "silk_x": 65.64,
+      "silk_y": 85.0,
+      "desc": "USB DP series resistor packed side-by-side with R2 (0.15mm gap)"
+    },
+    "R34": {
+      "x": 65.44,
+      "y": 96.0,
+      "rot": 0.0,
+      "silk_x": 65.44,
+      "silk_y": 94.8,
+      "desc": "Encoder A pullup packed side-by-side with R35 (0.15mm gap)"
+    },
+    "R35": {
+      "x": 67.5,
+      "y": 96.0,
+      "rot": 0.0,
+      "silk_x": 67.5,
+      "silk_y": 94.8,
+      "desc": "Encoder B pullup central bus reference"
+    },
+    "R36": {
+      "x": 69.56,
+      "y": 96.0,
+      "rot": 0.0,
+      "silk_x": 69.56,
+      "silk_y": 94.8,
+      "desc": "Encoder SW pullup packed side-by-side with R35 (0.15mm gap)"
+    },
+    "R63": {
+      "x": 61.5,
+      "y": 97.89,
+      "rot": 180.0,
+      "silk_x": 61.5,
+      "silk_y": 99.0,
+      "desc": "USB CC2 pulldown pulled up to R62 (0.15mm gap)"
+    },
+    "R15": {
+      "x": 88.5,
+      "y": 83.0,
+      "rot": 90.0,
+      "silk_x": 88.5,
+      "silk_y": 84.5,
+      "desc": "U2 IO8 pullup strap along south courtyard"
+    },
+    "R37": {
+      "x": 89.64,
+      "y": 83.0,
+      "rot": 90.0,
+      "silk_x": 89.64,
+      "silk_y": 84.5,
+      "desc": "U2 IO8 pullup packed side-by-side with R15 (0.15mm gap)"
+    },
+    "R10": {
+      "x": 90.78,
+      "y": 83.0,
+      "rot": 90.0,
+      "silk_x": 90.78,
+      "silk_y": 84.5,
+      "desc": "U2 IO9 boot pullup packed side-by-side with R37 (0.15mm gap)"
+    },
+    "C23": {
+      "x": 100.5,
+      "y": 124.42,
+      "rot": 180.0,
+      "silk_x": 100.5,
+      "silk_y": 125.6,
+      "desc": "U11 SS decoupling cap pulled to U11 bottom courtyard (0.15mm clearance)"
+    },
+    "R53": {
+      "x": 102.56,
+      "y": 124.42,
+      "rot": 180.0,
+      "silk_x": 102.56,
+      "silk_y": 125.6,
+      "desc": "U11 EN pullup pulled to U11 bottom courtyard (0.15mm clearance), side-by-side with C23 (0.15mm)"
+    },
+    "R52": {
+      "x": 94.5,
+      "y": 126.5,
+      "rot": 180.0,
+      "silk_x": 94.5,
+      "silk_y": 127.7,
+      "desc": "U11 COMP resistor pulled up 1.5mm from board boundary"
+    },
+    "C24": {
+      "x": 91.5,
+      "y": 126.5,
+      "rot": 180.0,
+      "silk_x": 91.5,
+      "silk_y": 127.7,
+      "desc": "U11 COMP cap pulled up 1.5mm from board boundary"
+    },
+    "R49": {
+      "x": 89.0,
+      "y": 126.5,
+      "rot": 0.0,
+      "silk_x": 89.0,
+      "silk_y": 127.7,
+      "desc": "U11 FB divider low pulled up 1.5mm from board boundary"
+    },
+    "C35": {
+      "x": 132.16,
+      "y": 124.0,
+      "rot": 0.0,
+      "silk_x": 132.16,
+      "silk_y": 125.2,
+      "desc": "U13 VCC decoupling cap tightened to U13 pin 5 (0.15mm clearance)"
+    },
+    "R61": {
+      "x": 125.82,
+      "y": 124.0,
+      "rot": 180.0,
+      "silk_x": 125.82,
+      "silk_y": 125.2,
+      "desc": "U13 OUT_EN pulldown tightened to U13 pin 1 (0.15mm clearance)"
+    },
+    "C21": {
+      "x": 111.5,
+      "y": 88.39,
+      "rot": 180.0,
+      "silk_x": 111.5,
+      "silk_y": 89.6,
+      "desc": "ETH_PWR_EN cap pulled up to R17 (0.15mm clearance)"
+    },
+    "TP4": {
+      "x": 70.0,
+      "y": 125.0,
+      "rot": 0.0,
+      "silk_x": 70.0,
+      "silk_y": 126.2,
+      "desc": "PD_5V testpoint pulled up 2.5mm eliminating lower protrusion"
+    }
+  }
+}

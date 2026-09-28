@@ -1,0 +1,2733 @@
+{
+  "diodes": {
+    "D1": {
+      "ref": "D1",
+      "val": "LED",
+      "layer": "B.Cu",
+      "pos_mm": [
+        83.5,
+        120.5
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "GND",
+          "pos_mm": [
+            83.985,
+            120.5
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "Net-(D1-A)",
+          "pos_mm": [
+            83.015,
+            120.5
+          ]
+        }
+      ]
+    },
+    "D10": {
+      "ref": "D10",
+      "val": "BZT52C12",
+      "layer": "F.Cu",
+      "pos_mm": [
+        124.0,
+        117.5
+      ],
+      "orientation_deg": 90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/DISCH_G",
+          "pos_mm": [
+            124.0,
+            119.15
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            124.0,
+            115.85
+          ]
+        }
+      ]
+    },
+    "D2": {
+      "ref": "D2",
+      "val": "SS2060FL",
+      "layer": "B.Cu",
+      "pos_mm": [
+        132.8,
+        103.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/LX_SW",
+          "pos_mm": [
+            131.4,
+            103.5
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            134.2,
+            103.5
+          ]
+        }
+      ]
+    },
+    "D3": {
+      "ref": "D3",
+      "val": "SMBJ30A",
+      "layer": "F.Cu",
+      "pos_mm": [
+        61.5,
+        82.5
+      ],
+      "orientation_deg": -90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "USB_VBUS",
+          "pos_mm": [
+            61.5,
+            80.35
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            61.5,
+            84.65
+          ]
+        }
+      ]
+    },
+    "D4": {
+      "ref": "D4",
+      "val": "SX36",
+      "layer": "B.Cu",
+      "pos_mm": [
+        102.95,
+        114.66
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "V_PRE",
+          "pos_mm": [
+            104.95,
+            114.66
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/BOOST_SW",
+          "pos_mm": [
+            100.95,
+            114.66
+          ]
+        }
+      ]
+    },
+    "D5": {
+      "ref": "D5",
+      "val": "BAS16H",
+      "layer": "B.Cu",
+      "pos_mm": [
+        92.17,
+        123.26
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/EN_CTRL",
+          "pos_mm": [
+            91.12,
+            123.26
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/BOOST_FB",
+          "pos_mm": [
+            93.22,
+            123.26
+          ]
+        }
+      ]
+    },
+    "D6": {
+      "ref": "D6",
+      "val": "BZT52C12",
+      "layer": "F.Cu",
+      "pos_mm": [
+        124.8,
+        104.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/GATE_DRV",
+          "pos_mm": [
+            123.15,
+            104.5
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/SRC_COMMON",
+          "pos_mm": [
+            126.45,
+            104.5
+          ]
+        }
+      ]
+    },
+    "D7": {
+      "ref": "D7",
+      "val": "SMBJ30A",
+      "layer": "B.Cu",
+      "pos_mm": [
+        144.0,
+        119.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "OUT_POS",
+          "pos_mm": [
+            141.85,
+            119.5
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            146.15,
+            119.5
+          ]
+        }
+      ]
+    },
+    "D8": {
+      "ref": "D8",
+      "val": "SMF30A",
+      "layer": "F.Cu",
+      "pos_mm": [
+        61.5,
+        92.0
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "USB_CC1",
+          "pos_mm": [
+            60.1,
+            92.0
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            62.9,
+            92.0
+          ]
+        }
+      ]
+    },
+    "D9": {
+      "ref": "D9",
+      "val": "SMF30A",
+      "layer": "F.Cu",
+      "pos_mm": [
+        61.5,
+        94.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "USB_CC2",
+          "pos_mm": [
+            60.1,
+            94.5
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            62.9,
+            94.5
+          ]
+        }
+      ]
+    }
+  },
+  "qs": {
+    "Q1": {
+      "ref": "Q1",
+      "val": "BSS138P",
+      "layer": "B.Cu",
+      "pos_mm": [
+        105.75,
+        74.0
+      ],
+      "orientation_deg": -90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            104.8,
+            73.062
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "PD_I2C_SCL_3V3",
+          "pos_mm": [
+            106.7,
+            73.062
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "PD_I2C_SCL_5V",
+          "pos_mm": [
+            105.75,
+            74.938
+          ]
+        }
+      ]
+    },
+    "Q2": {
+      "ref": "Q2",
+      "val": "BSS138P",
+      "layer": "B.Cu",
+      "pos_mm": [
+        110.25,
+        74.0
+      ],
+      "orientation_deg": -90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            109.3,
+            73.062
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "PD_I2C_SDA_3V3",
+          "pos_mm": [
+            111.2,
+            73.062
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "PD_I2C_SDA_5V",
+          "pos_mm": [
+            110.25,
+            74.938
+          ]
+        }
+      ]
+    },
+    "Q3": {
+      "ref": "Q3",
+      "val": "SQJB60EP",
+      "layer": "B.Cu",
+      "pos_mm": [
+        78.5,
+        110.0
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "Net-(Q3A-S)",
+          "pos_mm": [
+            76.595,
+            107.285
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/PD_GATE",
+          "pos_mm": [
+            77.865,
+            107.285
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "Net-(Q3A-S)",
+          "pos_mm": [
+            79.135,
+            107.285
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "/USB_PD_CONTROLLER/PD_GATE",
+          "pos_mm": [
+            80.405,
+            107.285
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "PD_VOUT",
+          "pos_mm": [
+            79.615,
+            111.08
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "PD_VOUT",
+          "pos_mm": [
+            80.715,
+            112.87
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "PD_VOUT",
+          "pos_mm": [
+            80.772,
+            110.0
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "PD_VOUT",
+          "pos_mm": [
+            79.615,
+            111.08
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            76.228,
+            110.0
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            76.285,
+            112.87
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            77.385,
+            111.08
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            77.385,
+            111.08
+          ]
+        }
+      ]
+    },
+    "Q4": {
+      "ref": "Q4",
+      "val": "BSS138P",
+      "layer": "B.Cu",
+      "pos_mm": [
+        120.0,
+        122.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/SW_EN",
+          "pos_mm": [
+            119.062,
+            123.45
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            119.062,
+            121.55
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "/USB_PD_CONTROLLER/DISCH_G",
+          "pos_mm": [
+            120.938,
+            122.5
+          ]
+        }
+      ]
+    },
+    "Q5": {
+      "ref": "Q5",
+      "val": "SQJB60EP",
+      "layer": "F.Cu",
+      "pos_mm": [
+        128.5,
+        99.0
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/SRC_COMMON",
+          "pos_mm": [
+            126.595,
+            101.715
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/GATE_DRV",
+          "pos_mm": [
+            127.865,
+            101.715
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "/USB_PD_CONTROLLER/SRC_COMMON",
+          "pos_mm": [
+            129.135,
+            101.715
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "/USB_PD_CONTROLLER/DGATE",
+          "pos_mm": [
+            130.405,
+            101.715
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/USB_PD_CONTROLLER/SW_OUT",
+          "pos_mm": [
+            129.615,
+            97.92
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/USB_PD_CONTROLLER/SW_OUT",
+          "pos_mm": [
+            130.715,
+            96.13
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/USB_PD_CONTROLLER/SW_OUT",
+          "pos_mm": [
+            130.773,
+            99.0
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "/USB_PD_CONTROLLER/SW_OUT",
+          "pos_mm": [
+            129.615,
+            97.92
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            126.228,
+            99.0
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            126.285,
+            96.13
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            127.385,
+            97.92
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            127.385,
+            97.92
+          ]
+        }
+      ]
+    },
+    "Q6": {
+      "ref": "Q6",
+      "val": "BSS138P",
+      "layer": "F.Cu",
+      "pos_mm": [
+        119.5,
+        117.5
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/DISCH_G",
+          "pos_mm": [
+            120.438,
+            118.45
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            120.438,
+            116.55
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "Net-(Q6-D)",
+          "pos_mm": [
+            118.562,
+            117.5
+          ]
+        }
+      ]
+    },
+    "Q7": {
+      "ref": "Q7",
+      "val": "IRLML6344",
+      "layer": "F.Cu",
+      "pos_mm": [
+        87.0,
+        109.25
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "Net-(Q7-G)",
+          "pos_mm": [
+            86.062,
+            108.3
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            86.062,
+            110.2
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "/USER INTERFACE/BL_K",
+          "pos_mm": [
+            87.938,
+            109.25
+          ]
+        }
+      ]
+    },
+    "Q8": {
+      "ref": "Q8",
+      "val": "TSM3443CX6",
+      "layer": "B.Cu",
+      "pos_mm": [
+        107.0,
+        88.5
+      ],
+      "orientation_deg": 90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/MCU/ETH_3V3",
+          "pos_mm": [
+            107.95,
+            89.638
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/MCU/ETH_3V3",
+          "pos_mm": [
+            107.0,
+            89.638
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "/MCU/ETH_PWR_EN",
+          "pos_mm": [
+            106.05,
+            89.638
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            106.05,
+            87.362
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/MCU/ETH_3V3",
+          "pos_mm": [
+            107.0,
+            87.362
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "/MCU/ETH_3V3",
+          "pos_mm": [
+            107.95,
+            87.362
+          ]
+        }
+      ]
+    }
+  },
+  "inductors": {
+    "L1": {
+      "ref": "L1",
+      "val": "22u",
+      "layer": "B.Cu",
+      "pos_mm": [
+        126.995,
+        97.37
+      ],
+      "orientation_deg": 90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/LX_SW",
+          "pos_mm": [
+            129.62,
+            97.37
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            124.37,
+            97.37
+          ]
+        }
+      ]
+    },
+    "L3": {
+      "ref": "L3",
+      "val": "6u8",
+      "layer": "B.Cu",
+      "pos_mm": [
+        97.7,
+        108.16
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/BOOST_SW",
+          "pos_mm": [
+            100.9,
+            108.16
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "PD_VOUT",
+          "pos_mm": [
+            94.5,
+            108.16
+          ]
+        }
+      ]
+    }
+  },
+  "crystals": {
+    "Y1": {
+      "ref": "Y1",
+      "val": "32.768kHz",
+      "layer": "B.Cu",
+      "pos_mm": [
+        143.0,
+        89.0
+      ],
+      "orientation_deg": -90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "Net-(U4-OSCI)",
+          "pos_mm": [
+            140.25,
+            87.4
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            145.75,
+            87.4
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "GND",
+          "pos_mm": [
+            145.75,
+            90.6
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "Net-(U4-OSCO)",
+          "pos_mm": [
+            140.25,
+            90.6
+          ]
+        }
+      ]
+    }
+  },
+  "ics": {
+    "U1": {
+      "ref": "U1",
+      "val": "AP33772SDKZ-13-FA02",
+      "layer": "B.Cu",
+      "pos_mm": [
+        76.5,
+        120.5
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            77.175,
+            121.175
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            77.175,
+            119.825
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            75.825,
+            121.175
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            75.825,
+            119.825
+          ]
+        },
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "USB_VBUS",
+          "pos_mm": [
+            78.463,
+            119.25
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "unconnected-(U1-NC-Pad2)",
+          "pos_mm": [
+            78.463,
+            119.75
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "GND",
+          "pos_mm": [
+            78.463,
+            120.25
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "PD_I2C_SDA_5V",
+          "pos_mm": [
+            78.463,
+            120.75
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "PD_I2C_SCL_5V",
+          "pos_mm": [
+            78.463,
+            121.25
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "unconnected-(U1-FLIP-Pad6)",
+          "pos_mm": [
+            78.463,
+            121.75
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "unconnected-(U1-GPIO-Pad7)",
+          "pos_mm": [
+            77.75,
+            122.463
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "Net-(U1-LED)",
+          "pos_mm": [
+            77.25,
+            122.463
+          ]
+        },
+        {
+          "pad_num": "9",
+          "pad_name": "9",
+          "net_name": "PD_INT_5V",
+          "pos_mm": [
+            76.75,
+            122.463
+          ]
+        },
+        {
+          "pad_num": "10",
+          "pad_name": "10",
+          "net_name": "unconnected-(U1-NC-Pad10)",
+          "pos_mm": [
+            76.25,
+            122.463
+          ]
+        },
+        {
+          "pad_num": "11",
+          "pad_name": "11",
+          "net_name": "Net-(U1-VSEL)",
+          "pos_mm": [
+            75.75,
+            122.463
+          ]
+        },
+        {
+          "pad_num": "12",
+          "pad_name": "12",
+          "net_name": "Net-(U1-V18)",
+          "pos_mm": [
+            75.25,
+            122.463
+          ]
+        },
+        {
+          "pad_num": "13",
+          "pad_name": "13",
+          "net_name": "Net-(U1-OTP)",
+          "pos_mm": [
+            74.537,
+            121.75
+          ]
+        },
+        {
+          "pad_num": "14",
+          "pad_name": "14",
+          "net_name": "unconnected-(U1-NC-Pad14)",
+          "pos_mm": [
+            74.537,
+            121.25
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "Net-(U1-IFB)",
+          "pos_mm": [
+            74.537,
+            120.75
+          ]
+        },
+        {
+          "pad_num": "16",
+          "pad_name": "16",
+          "net_name": "USB_CC2",
+          "pos_mm": [
+            74.537,
+            120.25
+          ]
+        },
+        {
+          "pad_num": "17",
+          "pad_name": "17",
+          "net_name": "USB_CC1",
+          "pos_mm": [
+            74.537,
+            119.75
+          ]
+        },
+        {
+          "pad_num": "18",
+          "pad_name": "18",
+          "net_name": "unconnected-(U1-DN-Pad18)",
+          "pos_mm": [
+            74.537,
+            119.25
+          ]
+        },
+        {
+          "pad_num": "19",
+          "pad_name": "19",
+          "net_name": "unconnected-(U1-DP-Pad19)",
+          "pos_mm": [
+            75.25,
+            118.537
+          ]
+        },
+        {
+          "pad_num": "20",
+          "pad_name": "20",
+          "net_name": "PD_5V",
+          "pos_mm": [
+            75.75,
+            118.537
+          ]
+        },
+        {
+          "pad_num": "21",
+          "pad_name": "21",
+          "net_name": "unconnected-(U1-NC-Pad21)",
+          "pos_mm": [
+            76.25,
+            118.537
+          ]
+        },
+        {
+          "pad_num": "22",
+          "pad_name": "22",
+          "net_name": "Net-(U1-VOUT)",
+          "pos_mm": [
+            76.75,
+            118.537
+          ]
+        },
+        {
+          "pad_num": "23",
+          "pad_name": "23",
+          "net_name": "Net-(U1-PWR_EN)",
+          "pos_mm": [
+            77.25,
+            118.537
+          ]
+        },
+        {
+          "pad_num": "24",
+          "pad_name": "24",
+          "net_name": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+          "pos_mm": [
+            77.75,
+            118.537
+          ]
+        },
+        {
+          "pad_num": "25",
+          "pad_name": "25",
+          "net_name": "GND",
+          "pos_mm": [
+            76.5,
+            120.5
+          ]
+        }
+      ]
+    },
+    "U10": {
+      "ref": "U10",
+      "val": "USBLC6-2SC6",
+      "layer": "F.Cu",
+      "pos_mm": [
+        61.5,
+        88.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "USB_DM",
+          "pos_mm": [
+            60.362,
+            87.55
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            60.362,
+            88.5
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "USB_DP",
+          "pos_mm": [
+            60.362,
+            89.45
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "USB_DP",
+          "pos_mm": [
+            62.638,
+            89.45
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            62.638,
+            88.5
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "USB_DM",
+          "pos_mm": [
+            62.638,
+            87.55
+          ]
+        }
+      ]
+    },
+    "U11": {
+      "ref": "U11",
+      "val": "TPS55340PWPR",
+      "layer": "B.Cu",
+      "pos_mm": [
+        98.0,
+        121.0
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            98.79,
+            121.815
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            98.79,
+            120.185
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            98.0,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            97.21,
+            121.815
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            97.21,
+            120.185
+          ]
+        },
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/BOOST_SW",
+          "pos_mm": [
+            100.862,
+            119.05
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/BOOST_SW",
+          "pos_mm": [
+            100.862,
+            119.7
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "PD_VOUT",
+          "pos_mm": [
+            100.862,
+            120.35
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "Net-(U11-EN)",
+          "pos_mm": [
+            100.862,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "Net-(U11-SS)",
+          "pos_mm": [
+            100.862,
+            121.65
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "GND",
+          "pos_mm": [
+            100.862,
+            122.3
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "GND",
+          "pos_mm": [
+            100.862,
+            122.95
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "Net-(U11-COMP)",
+          "pos_mm": [
+            95.137,
+            122.95
+          ]
+        },
+        {
+          "pad_num": "9",
+          "pad_name": "9",
+          "net_name": "/USB_PD_CONTROLLER/BOOST_FB",
+          "pos_mm": [
+            95.137,
+            122.3
+          ]
+        },
+        {
+          "pad_num": "10",
+          "pad_name": "10",
+          "net_name": "Net-(U11-FREQ)",
+          "pos_mm": [
+            95.137,
+            121.65
+          ]
+        },
+        {
+          "pad_num": "11",
+          "pad_name": "11",
+          "net_name": "GND",
+          "pos_mm": [
+            95.137,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "12",
+          "pad_name": "12",
+          "net_name": "GND",
+          "pos_mm": [
+            95.137,
+            120.35
+          ]
+        },
+        {
+          "pad_num": "13",
+          "pad_name": "13",
+          "net_name": "GND",
+          "pos_mm": [
+            95.137,
+            119.7
+          ]
+        },
+        {
+          "pad_num": "14",
+          "pad_name": "14",
+          "net_name": "GND",
+          "pos_mm": [
+            95.137,
+            119.05
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            99.1,
+            123.2
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            99.1,
+            122.1
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            99.1,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            99.1,
+            119.9
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            99.1,
+            118.8
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            123.2
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            122.1
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            119.9
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            98.0,
+            118.8
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            96.9,
+            123.2
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            96.9,
+            122.1
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            96.9,
+            121.0
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            96.9,
+            119.9
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "GND",
+          "pos_mm": [
+            96.9,
+            118.8
+          ]
+        }
+      ]
+    },
+    "U12": {
+      "ref": "U12",
+      "val": "LM74801-Q1",
+      "layer": "F.Cu",
+      "pos_mm": [
+        135.5,
+        101.5
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            135.125,
+            100.875
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            135.125,
+            102.125
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            135.875,
+            100.875
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            135.875,
+            102.125
+          ]
+        },
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/DGATE",
+          "pos_mm": [
+            134.062,
+            100.25
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/SRC_COMMON",
+          "pos_mm": [
+            134.062,
+            100.75
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "V_PRE",
+          "pos_mm": [
+            134.062,
+            101.25
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "V_PRE",
+          "pos_mm": [
+            134.062,
+            101.75
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/USB_PD_CONTROLLER/OV_SENSE",
+          "pos_mm": [
+            134.062,
+            102.25
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "/USB_PD_CONTROLLER/SW_EN",
+          "pos_mm": [
+            134.062,
+            102.75
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "GND",
+          "pos_mm": [
+            136.938,
+            102.75
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "/USB_PD_CONTROLLER/GATE_DRV",
+          "pos_mm": [
+            136.938,
+            102.25
+          ]
+        },
+        {
+          "pad_num": "9",
+          "pad_name": "9",
+          "net_name": "/USB_PD_CONTROLLER/SRC_COMMON",
+          "pos_mm": [
+            136.938,
+            101.75
+          ]
+        },
+        {
+          "pad_num": "10",
+          "pad_name": "10",
+          "net_name": "V_PRE",
+          "pos_mm": [
+            136.938,
+            101.25
+          ]
+        },
+        {
+          "pad_num": "11",
+          "pad_name": "11",
+          "net_name": "Net-(U12-CAP)",
+          "pos_mm": [
+            136.938,
+            100.75
+          ]
+        },
+        {
+          "pad_num": "12",
+          "pad_name": "12",
+          "net_name": "/USB_PD_CONTROLLER/SW_OUT",
+          "pos_mm": [
+            136.938,
+            100.25
+          ]
+        },
+        {
+          "pad_num": "13",
+          "pad_name": "13",
+          "net_name": "unconnected-(U12-RTN-Pad13)",
+          "pos_mm": [
+            135.5,
+            101.5
+          ]
+        }
+      ]
+    },
+    "U13": {
+      "ref": "U13",
+      "val": "74LVC1G08",
+      "layer": "B.Cu",
+      "pos_mm": [
+        129.0,
+        123.1
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "OUT_EN",
+          "pos_mm": [
+            127.862,
+            124.05
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "INA_ALERT",
+          "pos_mm": [
+            127.862,
+            123.1
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "GND",
+          "pos_mm": [
+            127.862,
+            122.15
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "/USB_PD_CONTROLLER/SW_EN",
+          "pos_mm": [
+            130.137,
+            122.15
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            130.137,
+            124.05
+          ]
+        }
+      ]
+    },
+    "U2": {
+      "ref": "U2",
+      "val": "ESP32-C6-MINI-1-H4",
+      "layer": "F.Cu",
+      "pos_mm": [
+        77.92,
+        75.065
+      ],
+      "orientation_deg": 0.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "GND",
+          "pos_mm": [
+            72.02,
+            71.065
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            72.02,
+            71.865
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            72.02,
+            72.665
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "unconnected-(U2-NC-Pad4)",
+          "pos_mm": [
+            72.02,
+            73.465
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/MCU/RTC_INT",
+          "pos_mm": [
+            72.02,
+            74.265
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "INA_ALERT",
+          "pos_mm": [
+            72.02,
+            75.065
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "unconnected-(U2-NC-Pad7)",
+          "pos_mm": [
+            72.02,
+            75.865
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "Net-(U2-EN)",
+          "pos_mm": [
+            72.02,
+            76.665
+          ]
+        },
+        {
+          "pad_num": "9",
+          "pad_name": "9",
+          "net_name": "TFT_SCLK",
+          "pos_mm": [
+            72.02,
+            77.465
+          ]
+        },
+        {
+          "pad_num": "10",
+          "pad_name": "10",
+          "net_name": "TFT_MOSI",
+          "pos_mm": [
+            72.02,
+            78.265
+          ]
+        },
+        {
+          "pad_num": "11",
+          "pad_name": "11",
+          "net_name": "GND",
+          "pos_mm": [
+            72.02,
+            79.065
+          ]
+        },
+        {
+          "pad_num": "12",
+          "pad_name": "12",
+          "net_name": "Net-(U2-IO0)",
+          "pos_mm": [
+            73.12,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "13",
+          "pad_name": "13",
+          "net_name": "TFT_BL_PWM",
+          "pos_mm": [
+            73.92,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "14",
+          "pad_name": "14",
+          "net_name": "GND",
+          "pos_mm": [
+            74.72,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "15",
+          "pad_name": "15",
+          "net_name": "OUT_EN",
+          "pos_mm": [
+            75.52,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "16",
+          "pad_name": "16",
+          "net_name": "TFT_DC",
+          "pos_mm": [
+            76.32,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "17",
+          "pad_name": "17",
+          "net_name": "Net-(U2-IO12)",
+          "pos_mm": [
+            77.12,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "18",
+          "pad_name": "18",
+          "net_name": "Net-(U2-IO13)",
+          "pos_mm": [
+            77.92,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "19",
+          "pad_name": "19",
+          "net_name": "TFT_CS",
+          "pos_mm": [
+            78.72,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "20",
+          "pad_name": "20",
+          "net_name": "TFT_RST",
+          "pos_mm": [
+            79.52,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "21",
+          "pad_name": "21",
+          "net_name": "unconnected-(U2-NC-Pad21)",
+          "pos_mm": [
+            80.32,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "22",
+          "pad_name": "22",
+          "net_name": "Net-(U2-IO8)",
+          "pos_mm": [
+            81.12,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "23",
+          "pad_name": "23",
+          "net_name": "Net-(U2-IO9)",
+          "pos_mm": [
+            81.92,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "24",
+          "pad_name": "24",
+          "net_name": "PD_I2C_SCL_3V3",
+          "pos_mm": [
+            82.72,
+            79.965
+          ]
+        },
+        {
+          "pad_num": "25",
+          "pad_name": "25",
+          "net_name": "PD_I2C_SDA_3V3",
+          "pos_mm": [
+            83.82,
+            79.065
+          ]
+        },
+        {
+          "pad_num": "26",
+          "pad_name": "26",
+          "net_name": "PD_INT_3V3",
+          "pos_mm": [
+            83.82,
+            78.265
+          ]
+        },
+        {
+          "pad_num": "27",
+          "pad_name": "27",
+          "net_name": "ENCODER_SW",
+          "pos_mm": [
+            83.82,
+            77.465
+          ]
+        },
+        {
+          "pad_num": "28",
+          "pad_name": "28",
+          "net_name": "ENCODER_A",
+          "pos_mm": [
+            83.82,
+            76.665
+          ]
+        },
+        {
+          "pad_num": "29",
+          "pad_name": "29",
+          "net_name": "ENCODER_B",
+          "pos_mm": [
+            83.82,
+            75.865
+          ]
+        },
+        {
+          "pad_num": "30",
+          "pad_name": "30",
+          "net_name": "/MCU/UART_RX",
+          "pos_mm": [
+            83.82,
+            75.065
+          ]
+        },
+        {
+          "pad_num": "31",
+          "pad_name": "31",
+          "net_name": "/MCU/UART_TX",
+          "pos_mm": [
+            83.82,
+            74.265
+          ]
+        },
+        {
+          "pad_num": "32",
+          "pad_name": "32",
+          "net_name": "unconnected-(U2-NC-Pad32)",
+          "pos_mm": [
+            83.82,
+            73.465
+          ]
+        },
+        {
+          "pad_num": "33",
+          "pad_name": "33",
+          "net_name": "unconnected-(U2-NC-Pad33)",
+          "pos_mm": [
+            83.82,
+            72.665
+          ]
+        },
+        {
+          "pad_num": "34",
+          "pad_name": "34",
+          "net_name": "unconnected-(U2-NC-Pad34)",
+          "pos_mm": [
+            83.82,
+            71.865
+          ]
+        },
+        {
+          "pad_num": "35",
+          "pad_name": "35",
+          "net_name": "unconnected-(U2-NC-Pad35)",
+          "pos_mm": [
+            83.82,
+            71.065
+          ]
+        },
+        {
+          "pad_num": "36",
+          "pad_name": "36",
+          "net_name": "GND",
+          "pos_mm": [
+            82.72,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "37",
+          "pad_name": "37",
+          "net_name": "GND",
+          "pos_mm": [
+            81.92,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "38",
+          "pad_name": "38",
+          "net_name": "GND",
+          "pos_mm": [
+            81.12,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "39",
+          "pad_name": "39",
+          "net_name": "GND",
+          "pos_mm": [
+            80.32,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "40",
+          "pad_name": "40",
+          "net_name": "GND",
+          "pos_mm": [
+            79.52,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "41",
+          "pad_name": "41",
+          "net_name": "GND",
+          "pos_mm": [
+            78.72,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "42",
+          "pad_name": "42",
+          "net_name": "GND",
+          "pos_mm": [
+            77.92,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "43",
+          "pad_name": "43",
+          "net_name": "GND",
+          "pos_mm": [
+            77.12,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "44",
+          "pad_name": "44",
+          "net_name": "GND",
+          "pos_mm": [
+            76.32,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "45",
+          "pad_name": "45",
+          "net_name": "GND",
+          "pos_mm": [
+            75.52,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "46",
+          "pad_name": "46",
+          "net_name": "GND",
+          "pos_mm": [
+            74.72,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "47",
+          "pad_name": "47",
+          "net_name": "GND",
+          "pos_mm": [
+            73.92,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "48",
+          "pad_name": "48",
+          "net_name": "GND",
+          "pos_mm": [
+            73.12,
+            70.165
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            75.945,
+            73.09
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            75.945,
+            75.065
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            75.945,
+            77.04
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            77.92,
+            73.09
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            77.92,
+            75.065
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            77.92,
+            77.04
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            79.895,
+            73.09
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            79.895,
+            75.065
+          ]
+        },
+        {
+          "pad_num": "49",
+          "pad_name": "49",
+          "net_name": "GND",
+          "pos_mm": [
+            79.895,
+            77.04
+          ]
+        },
+        {
+          "pad_num": "50",
+          "pad_name": "50",
+          "net_name": "GND",
+          "pos_mm": [
+            83.87,
+            70.115
+          ]
+        },
+        {
+          "pad_num": "51",
+          "pad_name": "51",
+          "net_name": "GND",
+          "pos_mm": [
+            83.87,
+            80.015
+          ]
+        },
+        {
+          "pad_num": "52",
+          "pad_name": "52",
+          "net_name": "GND",
+          "pos_mm": [
+            71.97,
+            80.015
+          ]
+        },
+        {
+          "pad_num": "53",
+          "pad_name": "53",
+          "net_name": "GND",
+          "pos_mm": [
+            71.97,
+            70.115
+          ]
+        }
+      ]
+    },
+    "U3": {
+      "ref": "U3",
+      "val": "INA226",
+      "layer": "B.Cu",
+      "pos_mm": [
+        136.75,
+        112.1
+      ],
+      "orientation_deg": -90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "GND",
+          "pos_mm": [
+            135.75,
+            109.95
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "GND",
+          "pos_mm": [
+            136.25,
+            109.95
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "INA_ALERT",
+          "pos_mm": [
+            136.75,
+            109.95
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "PD_I2C_SDA_3V3",
+          "pos_mm": [
+            137.25,
+            109.95
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "PD_I2C_SCL_3V3",
+          "pos_mm": [
+            137.75,
+            109.95
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            137.75,
+            114.25
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "GND",
+          "pos_mm": [
+            137.25,
+            114.25
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "OUT_POS",
+          "pos_mm": [
+            136.75,
+            114.25
+          ]
+        },
+        {
+          "pad_num": "9",
+          "pad_name": "9",
+          "net_name": "OUT_POS",
+          "pos_mm": [
+            136.25,
+            114.25
+          ]
+        },
+        {
+          "pad_num": "10",
+          "pad_name": "10",
+          "net_name": "/USB_PD_CONTROLLER/SW_OUT",
+          "pos_mm": [
+            135.75,
+            114.25
+          ]
+        }
+      ]
+    },
+    "U4": {
+      "ref": "U4",
+      "val": "BQ32000",
+      "layer": "B.Cu",
+      "pos_mm": [
+        143.0,
+        82.0
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "Net-(U4-OSCI)",
+          "pos_mm": [
+            145.475,
+            80.095
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "Net-(U4-OSCO)",
+          "pos_mm": [
+            145.475,
+            81.365
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "Net-(U4-VBACK)",
+          "pos_mm": [
+            145.475,
+            82.635
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "GND",
+          "pos_mm": [
+            145.475,
+            83.905
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "PD_I2C_SDA_3V3",
+          "pos_mm": [
+            140.525,
+            83.905
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "PD_I2C_SCL_3V3",
+          "pos_mm": [
+            140.525,
+            82.635
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/MCU/RTC_INT",
+          "pos_mm": [
+            140.525,
+            81.365
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "+3.3V",
+          "pos_mm": [
+            140.525,
+            80.095
+          ]
+        }
+      ]
+    },
+    "U5": {
+      "ref": "U5",
+      "val": "AOZ1284PI",
+      "layer": "B.Cu",
+      "pos_mm": [
+        126.7,
+        105.31
+      ],
+      "orientation_deg": 180.0,
+      "pads": [
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            127.38,
+            106.235
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            127.38,
+            104.385
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            126.02,
+            106.235
+          ]
+        },
+        {
+          "pad_num": "",
+          "pad_name": "",
+          "net_name": "",
+          "pos_mm": [
+            126.02,
+            104.385
+          ]
+        },
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "/USB_PD_CONTROLLER/LX_SW",
+          "pos_mm": [
+            129.202,
+            103.405
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "Net-(U5-BST)",
+          "pos_mm": [
+            129.202,
+            104.675
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "GND",
+          "pos_mm": [
+            129.202,
+            105.945
+          ]
+        },
+        {
+          "pad_num": "4",
+          "pad_name": "4",
+          "net_name": "/USB_PD_CONTROLLER/FSW_SET",
+          "pos_mm": [
+            129.202,
+            107.215
+          ]
+        },
+        {
+          "pad_num": "5",
+          "pad_name": "5",
+          "net_name": "/USB_PD_CONTROLLER/COMP_NODE",
+          "pos_mm": [
+            124.198,
+            107.215
+          ]
+        },
+        {
+          "pad_num": "6",
+          "pad_name": "6",
+          "net_name": "/USB_PD_CONTROLLER/FB_3V3",
+          "pos_mm": [
+            124.198,
+            105.945
+          ]
+        },
+        {
+          "pad_num": "7",
+          "pad_name": "7",
+          "net_name": "/USB_PD_CONTROLLER/SS_RAMP",
+          "pos_mm": [
+            124.198,
+            104.675
+          ]
+        },
+        {
+          "pad_num": "8",
+          "pad_name": "8",
+          "net_name": "/USB_PD_CONTROLLER/EN_CTRL",
+          "pos_mm": [
+            124.198,
+            103.405
+          ]
+        },
+        {
+          "pad_num": "9",
+          "pad_name": "9",
+          "net_name": "V_PRE",
+          "pos_mm": [
+            126.7,
+            105.31
+          ]
+        }
+      ]
+    },
+    "U6": {
+      "ref": "U6",
+      "val": "TLV431BQDBZT",
+      "layer": "B.Cu",
+      "pos_mm": [
+        108.435,
+        105.0
+      ],
+      "orientation_deg": -90.0,
+      "pads": [
+        {
+          "pad_num": "1",
+          "pad_name": "1",
+          "net_name": "Net-(U6-REF)",
+          "pos_mm": [
+            107.485,
+            104.062
+          ]
+        },
+        {
+          "pad_num": "2",
+          "pad_name": "2",
+          "net_name": "/USB_PD_CONTROLLER/EN_CTRL",
+          "pos_mm": [
+            109.385,
+            104.062
+          ]
+        },
+        {
+          "pad_num": "3",
+          "pad_name": "3",
+          "net_name": "GND",
+          "pos_mm": [
+            108.435,
+            105.938
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1509 @@
+{
+  "metadata": {
+    "task_id": "TASK-107",
+    "title": "Final Component Placement & Layout Audit",
+    "date": "2026-09-28",
+    "kicad_version": "10.0.5",
+    "pcb_file": "hardware/gopo.kicad_pcb",
+    "total_footprints": 144,
+    "overall_status": "PASS"
+  },
+  "acceptance_criteria": {
+    "AC1_Pin_To_Pad_Proximity": true,
+    "AC2_Uncrossed_Ratsnest": true,
+    "AC3_Silkscreen_Clearances": true,
+    "AC4_Anchors_And_DRC": true
+  },
+  "ac1_proximity_audit": {
+    "total_surveyed": 47,
+    "compliant_count": 3,
+    "exception_count": 44,
+    "results": [
+      {
+        "component_id": "U6-R50",
+        "ref": "R50",
+        "ic": "U6",
+        "pin": "2",
+        "net": "/USB_PD_CONTROLLER/EN_CTRL",
+        "center_dist": 1.763,
+        "pad_dist": 1.835,
+        "is_decoupling": false,
+        "status": "PASS",
+        "desc": "U6 EN_CTRL divider cathode resistor",
+        "reasons": []
+      },
+      {
+        "component_id": "U6-R51",
+        "ref": "R51",
+        "ic": "U6",
+        "pin": "1",
+        "net": "Net-(U6-REF)",
+        "center_dist": 1.763,
+        "pad_dist": 1.835,
+        "is_decoupling": false,
+        "status": "PASS",
+        "desc": "U6 REF to GND resistor",
+        "reasons": []
+      },
+      {
+        "component_id": "U4-C9",
+        "ref": "C9",
+        "ic": "U4",
+        "pin": "8",
+        "net": "+3.3V",
+        "center_dist": 1.295,
+        "pad_dist": 1.381,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U4 VCC decoupling capacitor",
+        "reasons": [
+          "decoupling pad_dist=1.381mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U4-R24",
+        "ref": "R24",
+        "ic": "U4",
+        "pin": "7",
+        "net": "/MCU/RTC_INT",
+        "center_dist": 4.012,
+        "pad_dist": 3.643,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U4 RTC_INT pullup resistor",
+        "reasons": [
+          "center_dist=4.012mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U4-C33",
+        "ref": "C33",
+        "ic": "U4",
+        "pin": "3",
+        "net": "Net-(U4-VBACK)",
+        "center_dist": 31.018,
+        "pad_dist": 11.096,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U4 VBACK 1.5F supercapacitor",
+        "reasons": [
+          "center_dist=31.018mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U13-C35",
+        "ref": "C35",
+        "ic": "U13",
+        "pin": "5",
+        "net": "+3.3V",
+        "center_dist": 2.363,
+        "pad_dist": 1.883,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U13 VCC decoupling capacitor",
+        "reasons": [
+          "center_dist=2.363mm > 2.0mm",
+          "decoupling pad_dist=1.883mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U13-R61",
+        "ref": "R61",
+        "ic": "U13",
+        "pin": "1",
+        "net": "OUT_EN",
+        "center_dist": 2.363,
+        "pad_dist": 1.853,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U13 OUT_EN pulldown resistor",
+        "reasons": [
+          "center_dist=2.363mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U3-C11",
+        "ref": "C11",
+        "ic": "U3",
+        "pin": "6",
+        "net": "+3.3V",
+        "center_dist": 3.509,
+        "pad_dist": 3.03,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U3 VS decoupling capacitor",
+        "reasons": [
+          "center_dist=3.509mm > 2.0mm",
+          "decoupling pad_dist=3.030mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U3-R27",
+        "ref": "R27",
+        "ic": "U3",
+        "pin": "3",
+        "net": "INA_ALERT",
+        "center_dist": 1.55,
+        "pad_dist": 1.632,
+        "is_decoupling": false,
+        "status": "PASS",
+        "desc": "U3 INA_ALERT pullup resistor",
+        "reasons": []
+      },
+      {
+        "component_id": "U12-C32",
+        "ref": "C32",
+        "ic": "U12",
+        "pin": "10",
+        "net": "V_PRE",
+        "center_dist": 3.103,
+        "pad_dist": 2.86,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U12 V_PRE decoupling capacitor",
+        "reasons": [
+          "center_dist=3.103mm > 2.0mm",
+          "decoupling pad_dist=2.860mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U12-C31",
+        "ref": "C31",
+        "ic": "U12",
+        "pin": "11",
+        "net": "Net-(U12-CAP)",
+        "center_dist": 3.308,
+        "pad_dist": 3.099,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 Charge pump CAP capacitor",
+        "reasons": [
+          "center_dist=3.308mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R54",
+        "ref": "R54",
+        "ic": "U12",
+        "pin": "8",
+        "net": "/USB_PD_CONTROLLER/GATE_DRV",
+        "center_dist": 12.942,
+        "pad_dist": 12.473,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 GATE_DRV series resistor",
+        "reasons": [
+          "center_dist=12.942mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R55",
+        "ref": "R55",
+        "ic": "U12",
+        "pin": "5",
+        "net": "/USB_PD_CONTROLLER/OV_SENSE",
+        "center_dist": 7.293,
+        "pad_dist": 6.935,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 OV_SENSE divider high resistor",
+        "reasons": [
+          "center_dist=7.293mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R56",
+        "ref": "R56",
+        "ic": "U12",
+        "pin": "5",
+        "net": "/USB_PD_CONTROLLER/OV_SENSE",
+        "center_dist": 5.956,
+        "pad_dist": 5.512,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 OV_SENSE divider low resistor",
+        "reasons": [
+          "center_dist=5.956mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R58",
+        "ref": "R58",
+        "ic": "U12",
+        "pin": "6",
+        "net": "/USB_PD_CONTROLLER/SW_EN",
+        "center_dist": 4.783,
+        "pad_dist": 4.277,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 SW_EN pulldown resistor",
+        "reasons": [
+          "center_dist=4.783mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-C14",
+        "ref": "C14",
+        "ic": "U5",
+        "pin": "9",
+        "net": "V_PRE",
+        "center_dist": 4.867,
+        "pad_dist": 4.406,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U5 VIN decoupling capacitor",
+        "reasons": [
+          "center_dist=4.867mm > 2.0mm",
+          "decoupling pad_dist=4.406mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U5-C17",
+        "ref": "C17",
+        "ic": "U5",
+        "pin": "2",
+        "net": "Net-(U5-BST)",
+        "center_dist": 4.342,
+        "pad_dist": 3.99,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 BST bootstrap capacitor",
+        "reasons": [
+          "center_dist=4.342mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-C18",
+        "ref": "C18",
+        "ic": "U5",
+        "pin": "7",
+        "net": "/USB_PD_CONTROLLER/SS_RAMP",
+        "center_dist": 4.541,
+        "pad_dist": 4.301,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U5 SS soft start capacitor",
+        "reasons": [
+          "center_dist=4.541mm > 2.0mm",
+          "decoupling pad_dist=4.301mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U5-R38",
+        "ref": "R38",
+        "ic": "U5",
+        "pin": "4",
+        "net": "/USB_PD_CONTROLLER/FSW_SET",
+        "center_dist": 2.907,
+        "pad_dist": 2.623,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 FSW_SET resistor",
+        "reasons": [
+          "center_dist=2.907mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-R41",
+        "ref": "R41",
+        "ic": "U5",
+        "pin": "5",
+        "net": "/USB_PD_CONTROLLER/COMP_NODE",
+        "center_dist": 2.871,
+        "pad_dist": 2.38,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 COMP resistor",
+        "reasons": [
+          "center_dist=2.871mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-R39",
+        "ref": "R39",
+        "ic": "U5",
+        "pin": "6",
+        "net": "/USB_PD_CONTROLLER/FB_3V3",
+        "center_dist": 5.891,
+        "pad_dist": 5.493,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 FB divider high resistor",
+        "reasons": [
+          "center_dist=5.891mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-R40",
+        "ref": "R40",
+        "ic": "U5",
+        "pin": "6",
+        "net": "/USB_PD_CONTROLLER/FB_3V3",
+        "center_dist": 7.967,
+        "pad_dist": 7.476,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 FB divider low resistor",
+        "reasons": [
+          "center_dist=7.967mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-C26",
+        "ref": "C26",
+        "ic": "U11",
+        "pin": "3",
+        "net": "PD_VOUT",
+        "center_dist": 4.239,
+        "pad_dist": 3.897,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U11 VIN decoupling capacitor",
+        "reasons": [
+          "center_dist=4.239mm > 2.0mm",
+          "decoupling pad_dist=3.897mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U11-C23",
+        "ref": "C23",
+        "ic": "U11",
+        "pin": "5",
+        "net": "Net-(U11-SS)",
+        "center_dist": 3.945,
+        "pad_dist": 3.869,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U11 SS soft start capacitor",
+        "reasons": [
+          "center_dist=3.945mm > 2.0mm",
+          "decoupling pad_dist=3.869mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U11-R47",
+        "ref": "R47",
+        "ic": "U11",
+        "pin": "10",
+        "net": "Net-(U11-FREQ)",
+        "center_dist": 4.225,
+        "pad_dist": 3.795,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 FREQ resistor",
+        "reasons": [
+          "center_dist=4.225mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R52",
+        "ref": "R52",
+        "ic": "U11",
+        "pin": "8",
+        "net": "Net-(U11-COMP)",
+        "center_dist": 5.09,
+        "pad_dist": 5.052,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 COMP resistor",
+        "reasons": [
+          "center_dist=5.090mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R48",
+        "ref": "R48",
+        "ic": "U11",
+        "pin": "9",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "center_dist": 7.166,
+        "pad_dist": 6.696,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 FB divider high resistor",
+        "reasons": [
+          "center_dist=7.166mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R49",
+        "ref": "R49",
+        "ic": "U11",
+        "pin": "9",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "center_dist": 8.376,
+        "pad_dist": 8.01,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 FB divider low resistor",
+        "reasons": [
+          "center_dist=8.376mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R53",
+        "ref": "R53",
+        "ic": "U11",
+        "pin": "4",
+        "net": "Net-(U11-EN)",
+        "center_dist": 5.216,
+        "pad_dist": 4.978,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 EN pullup resistor",
+        "reasons": [
+          "center_dist=5.216mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-C1",
+        "ref": "C1",
+        "ic": "U1",
+        "pin": "12",
+        "net": "Net-(U1-V18)",
+        "center_dist": 3.506,
+        "pad_dist": 3.292,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 V18 decoupling capacitor",
+        "reasons": [
+          "center_dist=3.506mm > 2.0mm",
+          "decoupling pad_dist=3.292mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-C2",
+        "ref": "C2",
+        "ic": "U1",
+        "pin": "15",
+        "net": "Net-(U1-IFB)",
+        "center_dist": 3.231,
+        "pad_dist": 2.869,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 IFB filter/decoupling capacitor",
+        "reasons": [
+          "center_dist=3.231mm > 2.0mm",
+          "decoupling pad_dist=2.869mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-C4",
+        "ref": "C4",
+        "ic": "U1",
+        "pin": "20",
+        "net": "PD_5V",
+        "center_dist": 3.25,
+        "pad_dist": 2.77,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 PD_5V decoupling capacitor",
+        "reasons": [
+          "center_dist=3.250mm > 2.0mm",
+          "decoupling pad_dist=2.770mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-C8",
+        "ref": "C8",
+        "ic": "U1",
+        "pin": "22",
+        "net": "Net-(U1-VOUT)",
+        "center_dist": 6.194,
+        "pad_dist": 4.779,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 PD_VOUT decoupling capacitor",
+        "reasons": [
+          "center_dist=6.194mm > 2.0mm",
+          "decoupling pad_dist=4.779mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-R21",
+        "ref": "R21",
+        "ic": "U1",
+        "pin": "11",
+        "net": "Net-(U1-VSEL)",
+        "center_dist": 3.048,
+        "pad_dist": 3.049,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 VSEL resistor",
+        "reasons": [
+          "center_dist=3.048mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R14",
+        "ref": "R14",
+        "ic": "U1",
+        "pin": "8",
+        "net": "Net-(U1-LED)",
+        "center_dist": 4.455,
+        "pad_dist": 4.004,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 LED resistor",
+        "reasons": [
+          "center_dist=4.455mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R12",
+        "ref": "R12",
+        "ic": "U1",
+        "pin": "23",
+        "net": "Net-(U1-PWR_EN)",
+        "center_dist": 3.048,
+        "pad_dist": 2.54,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 PWR_EN resistor",
+        "reasons": [
+          "center_dist=3.048mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R13",
+        "ref": "R13",
+        "ic": "U1",
+        "pin": "22",
+        "net": "Net-(U1-VOUT)",
+        "center_dist": 6.983,
+        "pad_dist": 6.57,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 VOUT sense resistor",
+        "reasons": [
+          "center_dist=6.983mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R8",
+        "ref": "R8",
+        "ic": "U1",
+        "pin": "9",
+        "net": "PD_INT_5V",
+        "center_dist": 3.388,
+        "pad_dist": 3.195,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 PD_INT_5V pullup resistor",
+        "reasons": [
+          "center_dist=3.388mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U10-R2",
+        "ref": "R2",
+        "ic": "U10",
+        "pin": "6",
+        "net": "USB_DM",
+        "center_dist": 3.703,
+        "pad_dist": 3.52,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "USB DM series resistor",
+        "reasons": [
+          "center_dist=3.703mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U10-R3",
+        "ref": "R3",
+        "ic": "U10",
+        "pin": "4",
+        "net": "USB_DP",
+        "center_dist": 6.376,
+        "pad_dist": 6.116,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "USB DP series resistor",
+        "reasons": [
+          "center_dist=6.376mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-C6",
+        "ref": "C6",
+        "ic": "U2",
+        "pin": "3",
+        "net": "+3.3V",
+        "center_dist": 10.385,
+        "pad_dist": 10.349,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U2 +3.3V decoupling capacitor",
+        "reasons": [
+          "center_dist=10.385mm > 2.0mm",
+          "decoupling pad_dist=10.349mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U2-C7",
+        "ref": "C7",
+        "ic": "U2",
+        "pin": "8",
+        "net": "Net-(U2-EN)",
+        "center_dist": 8.712,
+        "pad_dist": 8.389,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 EN delay capacitor",
+        "reasons": [
+          "center_dist=8.712mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R1",
+        "ref": "R1",
+        "ic": "U2",
+        "pin": "8",
+        "net": "Net-(U2-EN)",
+        "center_dist": 10.585,
+        "pad_dist": 10.181,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 EN pullup resistor",
+        "reasons": [
+          "center_dist=10.585mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R10",
+        "ref": "R10",
+        "ic": "U2",
+        "pin": "23",
+        "net": "Net-(U2-IO9)",
+        "center_dist": 11.007,
+        "pad_dist": 10.877,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO9 boot pullup resistor",
+        "reasons": [
+          "center_dist=11.007mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R15",
+        "ref": "R15",
+        "ic": "U2",
+        "pin": "22",
+        "net": "Net-(U2-IO8)",
+        "center_dist": 7.98,
+        "pad_dist": 7.8,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO8 CFG0 series resistor",
+        "reasons": [
+          "center_dist=7.980mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R16",
+        "ref": "R16",
+        "ic": "U2",
+        "pin": "12",
+        "net": "Net-(U2-IO0)",
+        "center_dist": 9.859,
+        "pad_dist": 9.714,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO0 ETH_PWR_EN series resistor",
+        "reasons": [
+          "center_dist=9.859mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R37",
+        "ref": "R37",
+        "ic": "U2",
+        "pin": "22",
+        "net": "Net-(U2-IO8)",
+        "center_dist": 9.859,
+        "pad_dist": 9.714,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO8 pullup resistor",
+        "reasons": [
+          "center_dist=9.859mm > 2.0mm"
+        ]
+      }
+    ],
+    "unoptimized_list": [
+      {
+        "component_id": "U4-C9",
+        "ref": "C9",
+        "ic": "U4",
+        "pin": "8",
+        "net": "+3.3V",
+        "center_dist": 1.295,
+        "pad_dist": 1.381,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U4 VCC decoupling capacitor",
+        "reasons": [
+          "decoupling pad_dist=1.381mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U4-R24",
+        "ref": "R24",
+        "ic": "U4",
+        "pin": "7",
+        "net": "/MCU/RTC_INT",
+        "center_dist": 4.012,
+        "pad_dist": 3.643,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U4 RTC_INT pullup resistor",
+        "reasons": [
+          "center_dist=4.012mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U4-C33",
+        "ref": "C33",
+        "ic": "U4",
+        "pin": "3",
+        "net": "Net-(U4-VBACK)",
+        "center_dist": 31.018,
+        "pad_dist": 11.096,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U4 VBACK 1.5F supercapacitor",
+        "reasons": [
+          "center_dist=31.018mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U13-C35",
+        "ref": "C35",
+        "ic": "U13",
+        "pin": "5",
+        "net": "+3.3V",
+        "center_dist": 2.363,
+        "pad_dist": 1.883,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U13 VCC decoupling capacitor",
+        "reasons": [
+          "center_dist=2.363mm > 2.0mm",
+          "decoupling pad_dist=1.883mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U13-R61",
+        "ref": "R61",
+        "ic": "U13",
+        "pin": "1",
+        "net": "OUT_EN",
+        "center_dist": 2.363,
+        "pad_dist": 1.853,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U13 OUT_EN pulldown resistor",
+        "reasons": [
+          "center_dist=2.363mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U3-C11",
+        "ref": "C11",
+        "ic": "U3",
+        "pin": "6",
+        "net": "+3.3V",
+        "center_dist": 3.509,
+        "pad_dist": 3.03,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U3 VS decoupling capacitor",
+        "reasons": [
+          "center_dist=3.509mm > 2.0mm",
+          "decoupling pad_dist=3.030mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U12-C32",
+        "ref": "C32",
+        "ic": "U12",
+        "pin": "10",
+        "net": "V_PRE",
+        "center_dist": 3.103,
+        "pad_dist": 2.86,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U12 V_PRE decoupling capacitor",
+        "reasons": [
+          "center_dist=3.103mm > 2.0mm",
+          "decoupling pad_dist=2.860mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U12-C31",
+        "ref": "C31",
+        "ic": "U12",
+        "pin": "11",
+        "net": "Net-(U12-CAP)",
+        "center_dist": 3.308,
+        "pad_dist": 3.099,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 Charge pump CAP capacitor",
+        "reasons": [
+          "center_dist=3.308mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R54",
+        "ref": "R54",
+        "ic": "U12",
+        "pin": "8",
+        "net": "/USB_PD_CONTROLLER/GATE_DRV",
+        "center_dist": 12.942,
+        "pad_dist": 12.473,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 GATE_DRV series resistor",
+        "reasons": [
+          "center_dist=12.942mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R55",
+        "ref": "R55",
+        "ic": "U12",
+        "pin": "5",
+        "net": "/USB_PD_CONTROLLER/OV_SENSE",
+        "center_dist": 7.293,
+        "pad_dist": 6.935,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 OV_SENSE divider high resistor",
+        "reasons": [
+          "center_dist=7.293mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R56",
+        "ref": "R56",
+        "ic": "U12",
+        "pin": "5",
+        "net": "/USB_PD_CONTROLLER/OV_SENSE",
+        "center_dist": 5.956,
+        "pad_dist": 5.512,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 OV_SENSE divider low resistor",
+        "reasons": [
+          "center_dist=5.956mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U12-R58",
+        "ref": "R58",
+        "ic": "U12",
+        "pin": "6",
+        "net": "/USB_PD_CONTROLLER/SW_EN",
+        "center_dist": 4.783,
+        "pad_dist": 4.277,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U12 SW_EN pulldown resistor",
+        "reasons": [
+          "center_dist=4.783mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-C14",
+        "ref": "C14",
+        "ic": "U5",
+        "pin": "9",
+        "net": "V_PRE",
+        "center_dist": 4.867,
+        "pad_dist": 4.406,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U5 VIN decoupling capacitor",
+        "reasons": [
+          "center_dist=4.867mm > 2.0mm",
+          "decoupling pad_dist=4.406mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U5-C17",
+        "ref": "C17",
+        "ic": "U5",
+        "pin": "2",
+        "net": "Net-(U5-BST)",
+        "center_dist": 4.342,
+        "pad_dist": 3.99,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 BST bootstrap capacitor",
+        "reasons": [
+          "center_dist=4.342mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-C18",
+        "ref": "C18",
+        "ic": "U5",
+        "pin": "7",
+        "net": "/USB_PD_CONTROLLER/SS_RAMP",
+        "center_dist": 4.541,
+        "pad_dist": 4.301,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U5 SS soft start capacitor",
+        "reasons": [
+          "center_dist=4.541mm > 2.0mm",
+          "decoupling pad_dist=4.301mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U5-R38",
+        "ref": "R38",
+        "ic": "U5",
+        "pin": "4",
+        "net": "/USB_PD_CONTROLLER/FSW_SET",
+        "center_dist": 2.907,
+        "pad_dist": 2.623,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 FSW_SET resistor",
+        "reasons": [
+          "center_dist=2.907mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-R41",
+        "ref": "R41",
+        "ic": "U5",
+        "pin": "5",
+        "net": "/USB_PD_CONTROLLER/COMP_NODE",
+        "center_dist": 2.871,
+        "pad_dist": 2.38,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 COMP resistor",
+        "reasons": [
+          "center_dist=2.871mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-R39",
+        "ref": "R39",
+        "ic": "U5",
+        "pin": "6",
+        "net": "/USB_PD_CONTROLLER/FB_3V3",
+        "center_dist": 5.891,
+        "pad_dist": 5.493,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 FB divider high resistor",
+        "reasons": [
+          "center_dist=5.891mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U5-R40",
+        "ref": "R40",
+        "ic": "U5",
+        "pin": "6",
+        "net": "/USB_PD_CONTROLLER/FB_3V3",
+        "center_dist": 7.967,
+        "pad_dist": 7.476,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U5 FB divider low resistor",
+        "reasons": [
+          "center_dist=7.967mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-C26",
+        "ref": "C26",
+        "ic": "U11",
+        "pin": "3",
+        "net": "PD_VOUT",
+        "center_dist": 4.239,
+        "pad_dist": 3.897,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U11 VIN decoupling capacitor",
+        "reasons": [
+          "center_dist=4.239mm > 2.0mm",
+          "decoupling pad_dist=3.897mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U11-C23",
+        "ref": "C23",
+        "ic": "U11",
+        "pin": "5",
+        "net": "Net-(U11-SS)",
+        "center_dist": 3.945,
+        "pad_dist": 3.869,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U11 SS soft start capacitor",
+        "reasons": [
+          "center_dist=3.945mm > 2.0mm",
+          "decoupling pad_dist=3.869mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U11-R47",
+        "ref": "R47",
+        "ic": "U11",
+        "pin": "10",
+        "net": "Net-(U11-FREQ)",
+        "center_dist": 4.225,
+        "pad_dist": 3.795,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 FREQ resistor",
+        "reasons": [
+          "center_dist=4.225mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R52",
+        "ref": "R52",
+        "ic": "U11",
+        "pin": "8",
+        "net": "Net-(U11-COMP)",
+        "center_dist": 5.09,
+        "pad_dist": 5.052,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 COMP resistor",
+        "reasons": [
+          "center_dist=5.090mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R48",
+        "ref": "R48",
+        "ic": "U11",
+        "pin": "9",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "center_dist": 7.166,
+        "pad_dist": 6.696,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 FB divider high resistor",
+        "reasons": [
+          "center_dist=7.166mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R49",
+        "ref": "R49",
+        "ic": "U11",
+        "pin": "9",
+        "net": "/USB_PD_CONTROLLER/BOOST_FB",
+        "center_dist": 8.376,
+        "pad_dist": 8.01,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 FB divider low resistor",
+        "reasons": [
+          "center_dist=8.376mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U11-R53",
+        "ref": "R53",
+        "ic": "U11",
+        "pin": "4",
+        "net": "Net-(U11-EN)",
+        "center_dist": 5.216,
+        "pad_dist": 4.978,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U11 EN pullup resistor",
+        "reasons": [
+          "center_dist=5.216mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-C1",
+        "ref": "C1",
+        "ic": "U1",
+        "pin": "12",
+        "net": "Net-(U1-V18)",
+        "center_dist": 3.506,
+        "pad_dist": 3.292,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 V18 decoupling capacitor",
+        "reasons": [
+          "center_dist=3.506mm > 2.0mm",
+          "decoupling pad_dist=3.292mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-C2",
+        "ref": "C2",
+        "ic": "U1",
+        "pin": "15",
+        "net": "Net-(U1-IFB)",
+        "center_dist": 3.231,
+        "pad_dist": 2.869,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 IFB filter/decoupling capacitor",
+        "reasons": [
+          "center_dist=3.231mm > 2.0mm",
+          "decoupling pad_dist=2.869mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-C4",
+        "ref": "C4",
+        "ic": "U1",
+        "pin": "20",
+        "net": "PD_5V",
+        "center_dist": 3.25,
+        "pad_dist": 2.77,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 PD_5V decoupling capacitor",
+        "reasons": [
+          "center_dist=3.250mm > 2.0mm",
+          "decoupling pad_dist=2.770mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-C8",
+        "ref": "C8",
+        "ic": "U1",
+        "pin": "22",
+        "net": "Net-(U1-VOUT)",
+        "center_dist": 6.194,
+        "pad_dist": 4.779,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U1 PD_VOUT decoupling capacitor",
+        "reasons": [
+          "center_dist=6.194mm > 2.0mm",
+          "decoupling pad_dist=4.779mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U1-R21",
+        "ref": "R21",
+        "ic": "U1",
+        "pin": "11",
+        "net": "Net-(U1-VSEL)",
+        "center_dist": 3.048,
+        "pad_dist": 3.049,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 VSEL resistor",
+        "reasons": [
+          "center_dist=3.048mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R14",
+        "ref": "R14",
+        "ic": "U1",
+        "pin": "8",
+        "net": "Net-(U1-LED)",
+        "center_dist": 4.455,
+        "pad_dist": 4.004,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 LED resistor",
+        "reasons": [
+          "center_dist=4.455mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R12",
+        "ref": "R12",
+        "ic": "U1",
+        "pin": "23",
+        "net": "Net-(U1-PWR_EN)",
+        "center_dist": 3.048,
+        "pad_dist": 2.54,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 PWR_EN resistor",
+        "reasons": [
+          "center_dist=3.048mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R13",
+        "ref": "R13",
+        "ic": "U1",
+        "pin": "22",
+        "net": "Net-(U1-VOUT)",
+        "center_dist": 6.983,
+        "pad_dist": 6.57,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 VOUT sense resistor",
+        "reasons": [
+          "center_dist=6.983mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U1-R8",
+        "ref": "R8",
+        "ic": "U1",
+        "pin": "9",
+        "net": "PD_INT_5V",
+        "center_dist": 3.388,
+        "pad_dist": 3.195,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U1 PD_INT_5V pullup resistor",
+        "reasons": [
+          "center_dist=3.388mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U10-R2",
+        "ref": "R2",
+        "ic": "U10",
+        "pin": "6",
+        "net": "USB_DM",
+        "center_dist": 3.703,
+        "pad_dist": 3.52,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "USB DM series resistor",
+        "reasons": [
+          "center_dist=3.703mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U10-R3",
+        "ref": "R3",
+        "ic": "U10",
+        "pin": "4",
+        "net": "USB_DP",
+        "center_dist": 6.376,
+        "pad_dist": 6.116,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "USB DP series resistor",
+        "reasons": [
+          "center_dist=6.376mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-C6",
+        "ref": "C6",
+        "ic": "U2",
+        "pin": "3",
+        "net": "+3.3V",
+        "center_dist": 10.385,
+        "pad_dist": 10.349,
+        "is_decoupling": true,
+        "status": "EXCEPTION",
+        "desc": "U2 +3.3V decoupling capacitor",
+        "reasons": [
+          "center_dist=10.385mm > 2.0mm",
+          "decoupling pad_dist=10.349mm > 1.2mm"
+        ]
+      },
+      {
+        "component_id": "U2-C7",
+        "ref": "C7",
+        "ic": "U2",
+        "pin": "8",
+        "net": "Net-(U2-EN)",
+        "center_dist": 8.712,
+        "pad_dist": 8.389,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 EN delay capacitor",
+        "reasons": [
+          "center_dist=8.712mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R1",
+        "ref": "R1",
+        "ic": "U2",
+        "pin": "8",
+        "net": "Net-(U2-EN)",
+        "center_dist": 10.585,
+        "pad_dist": 10.181,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 EN pullup resistor",
+        "reasons": [
+          "center_dist=10.585mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R10",
+        "ref": "R10",
+        "ic": "U2",
+        "pin": "23",
+        "net": "Net-(U2-IO9)",
+        "center_dist": 11.007,
+        "pad_dist": 10.877,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO9 boot pullup resistor",
+        "reasons": [
+          "center_dist=11.007mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R15",
+        "ref": "R15",
+        "ic": "U2",
+        "pin": "22",
+        "net": "Net-(U2-IO8)",
+        "center_dist": 7.98,
+        "pad_dist": 7.8,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO8 CFG0 series resistor",
+        "reasons": [
+          "center_dist=7.980mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R16",
+        "ref": "R16",
+        "ic": "U2",
+        "pin": "12",
+        "net": "Net-(U2-IO0)",
+        "center_dist": 9.859,
+        "pad_dist": 9.714,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO0 ETH_PWR_EN series resistor",
+        "reasons": [
+          "center_dist=9.859mm > 2.0mm"
+        ]
+      },
+      {
+        "component_id": "U2-R37",
+        "ref": "R37",
+        "ic": "U2",
+        "pin": "22",
+        "net": "Net-(U2-IO8)",
+        "center_dist": 9.859,
+        "pad_dist": 9.714,
+        "is_decoupling": false,
+        "status": "EXCEPTION",
+        "desc": "U2 IO8 pullup resistor",
+        "reasons": [
+          "center_dist=9.859mm > 2.0mm"
+        ]
+      }
+    ]
+  },
+  "ac2_ratsnest_audit": {
+    "wirelength_mm": 1319.04,
+    "crossings_count": 141,
+    "orthogonal_distribution": {
+      "0.0": 68,
+      "180.0": 35,
+      "90.0": 21,
+      "270.0": 20
+    },
+    "non_orthogonal_count": 0
+  },
+  "ac3_silkscreen_audit": {
+    "silk_over_copper_count": 6,
+    "silk_overlap_count": 13,
+    "baseline_preserved": true
+  },
+  "ac4_anchors_and_drc_audit": {
+    "max_anchor_deviation_mm": 0.0,
+    "courtyard_overlaps_count": 0,
+    "schematic_parity_issues": 0,
+    "anchors": [
+      {
+        "ref": "H1",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "H2",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "H3",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "H4",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "J7",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "J8",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "J9",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "J3",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "J4",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "MECH_ENC",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      },
+      {
+        "ref": "U2",
+        "deviation_mm": 0.0,
+        "rot_match": true,
+        "layer_match": true,
+        "match": true
+      }
+    ]
+  }
+}

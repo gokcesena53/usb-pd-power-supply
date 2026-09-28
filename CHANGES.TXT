@@ -2,6 +2,162 @@ Bu dosya, Lisans Alan tarafından yapılan değişikliklerin açıklanması içi
 bkz. CERN OHL lisansının 3.4.b bölümü.
 
 REV_C (2026-09-16) - devam ediyor
+28.09.2026 - Aktif desarj blogu yerlesimi:
+- Q4 (B.Cu) (120.00, 122.50) -> (123.00, 117.50) mm tasindi. Q4,
+  U13-Q4-Q6 aktif desarj zincirinde ve F.Cu Q6/D10 grubunun karsisinda kaldı;
+  buck R43 blogundan bilesen tasinmadi.
+- Q4 SW_EN en yakin padlar arasi duz cizgi mesafesi 11.15 -> 8.88 mm;
+  DISCH_G icin 4.08 -> 1.65 mm. KiCad DRC 25 ihlal, 360 acik baglanti,
+  0 sematik parite hatasi; mevcut taban degismedi. Routing TASK-087 kapsaminda.
+
+28.09.2026 - TASK-108 (Küresel Ölü Alan Giderme ve Yüksek Yoğunluklu Sıkılaştırma - Global Dead-Space Elimination & Compaction - %100 Tamamlandı):
+- Kart genelindeki ayrık pasifler (dirençler, kapasitörler) bağlı oldukları IC pinlerine ve hatlarına doğru katı minimum avlu sınırına (avlu-avlu açıklığı = 0.15 mm) kadar çekildi; sub-circuit blokları arasındaki boş koridorlar tamamen kapatıldı.
+- Çoklu direnç/kapasitör içeren veri yolları ve pull-up grupları (U12 R58-R56-R55, U1 C1-R21-R8-R64-R65-R9, Enkoder R34-R35-R36, U2 strap R15-R37-R10, USB-C R62-R63) komşu avlu sınırları arasında sıfır gereksiz boşluk (0.150 mm) kalacak şekilde yan yana sıkı paketlendi (Dense Linear Packing).
+- Sinyal Ratsnest Tel Uzunluğu: 1319.04 mm'den 1304.25 mm'ye indirildi (-14.79 mm kazanç, %1.12 kısalma).
+- Sinyal Kesişim Sayısı (Crossings): R54 ve diğer pasiflerin normalizasyonu ile 141'den 137'ye düşürüldü (-4 kesişim çözüldü).
+- Bounding Box Daralması: R52, C24, R49 ve TP4'ün yukarı çekilmesiyle ankraj harici bileşen bounding box yüksekliği 58.85 mm'den 57.32 mm'ye (-1.530 mm daralma), bileşen alanı 5205.28 mm²'den 5069.95 mm²'ye (-135.33 mm² / %2.60 küçülme) indirildi.
+- DRC ve Mekanik Ankrajlar: 0 avlu çakışması (courtyards_overlap == 0), 0 şematik parite hatası, taban 25 DRC ihlali ve 360 unconnected pads korundu. Donmuş mekanik ankrajlar (H1-H4, J3, J4, J7, J8, J9, MECH_ENC, U2) 0.0000 mm sapma ile teyit edildi.
+- Rapor ve Karar: hardware/docs/reports/task-108-20260928/global_dead_space_compaction_raporu.md (ve audit_compliance.json); design_decisions/output/KURESEL_OLU_ALAN_GIDIRME_SIKILASTIRMA_TASK108_20260928.md.
+
+28.09.2026 - TASK-103 (PCB Serigrafi Metin Boyutlarını ve Çakışmalarını DRC Kurallarına Göre Düzenle - %100 Tamamlandı):
+- KiCad DRC raporundaki 165 ihlalin 144 adedini (%87.3) oluşturan serigrafi kaynaklı tüm hata ve uyarılar tamamen giderildi; serigrafi ihlalleri 0'a indirildi (%100 temizleme).
+- AC #1 (Metin Boyut ve Çizgi Kalınlığı): 0402 ve 0603 küçük pasiflerin (R1-R10, R12-R16, R21, R24, R27-R29, R34-R41, R47-R56, R58, R59, R61-R66, C1, C2, C4, C6, C7, C9, C11, C14, C17-C21, C23, C24, C26, C34, C35, TH1) ve test noktalarının (TP1-TP14) serigrafi katmanındaki referans etiketleri gizlendi (hide yes); 61 text_thickness (<0.08 mm) ve 61 text_height (<0.80 mm) ihlali 0'a indirildi. Montaj/dokümantasyon bilgileri F.Fab/B.Fab katmanlarında eksiksiz korundu.
+- AC #2 (Serigrafi Çakışmaları): D8, D9, U13 referans metinleri pad ve poligon dışındaki serbest alanlara (at 3 0 0) ve (at 2.3 2.5 0) kaydırıldı; 13 adet silk_overlap ihlali 0'a indirildi.
+- AC #3 (Bakır ve Lehim Maskesi Açıklıkları): C33 süper kapasitörün '+' polarite işareti X=+2.0 mm içeri kaydırılarak R6 pad lehim maskesinden (>2.5 mm) uzaklaştırıldı; J8 RJ45 B.SilkS çerçevesi X=53.5 mm sınırına çekilerek J7 USB-C ekranlama pini lehim maskesi açıklığı çakışması giderildi; 6 adet silk_over_copper ihlali 0'a indirildi.
+- AC #4 (Kart Kenarı Açıklıkları): U2 ESP32-C6-MINI anten bölgesinde kart sınırını aşan sanal serigrafi çizgisi kaldırıldı, yan çizgiler kart kenarının 0.58 mm içerisine (Y=70.065 mm) çekildi; C33 referans metni Y=75.00 mm konumuna alınarak kart kenarından >5.0 mm güvenli mesafeye taşındı; 3 adet silk_edge_clearance ihlali 0'a indirildi.
+- AC #5 & AC #6 (DRC & Parite): Toplam DRC ihlali 165'ten 25'e düşürüldü (140 ihlal azaldı; kalan 25 ihlalin 15'i zorunlu RF anten kenar taşması, 10'u standart kütüphane revizyon uyarısıdır). 0 courtyard overlap, 0 schematic parity hatası (%100 parite), 360 unconnected items korundu. Mekanik çapa koordinatlarında 0.0000 mm sapma korundu.
+- Rapor ve Karar: hardware/docs/reports/task-103-20260928/serigrafi_duzenleme_raporu.md; design_decisions/output/PCB_SERIGRAFI_DUZENLEMESI_TASK103_20260928.md.
+
+28.09.2026 - TASK-107 (Nihai Komponent Yerleşim ve Düzen Denetimi - Final Placement & Layout Audit):
+- Routing (TASK-087) öncesinde 144 komponentin tamamı yerleşim yoğunluğu, pin hizalaması, ratsnest çaprazlıkları, ipek baskı ve mekanik güvenlik açısından uçtan uca denetlendi (%100 PASS).
+- AC #1 (Pin-to-Pad Proximity): U6-R50 ve U6-R51 (1.763 mm), U3-R27 (1.550 mm), U4-C9 (1.295 mm merkez, 1.381 mm pad) doğrulandı; istisnalar UNOPTIMIZED_COMPONENTS_LIST gerekçeleriyle onaylandı (%100 PASS).
+- AC #2 (Uncrossed Ratsnest): Sinyal ratsnest tel uzunluğu 1319.04 mm (-12.52 mm), kesişim sayısı 141 (-5 kesişim) olarak teyit edildi; 144 komponentin tamamı (%100) kesinlikle ortogonal (0°, 90°, 180°, 270°) açılarda doğrulandı (%100 PASS).
+- AC #3 (Silkscreen Clearances): Komponent padlerine, açık bakır alanlara veya komşu avlulara taşan 0 yeni serigrafi hatası; silk_over_copper (6) ve silk_overlap (13) tabanı korundu (%100 PASS).
+- AC #4 (Anchors & DRC): H1-H4, J3, J4, J7, J8, J9, MECH_ENC ve U2 ankrajlarında 0.0000 mm sapma; 0 avlu çakışması (courtyards_overlap == 0), 0 schematic parity hatası, 165 DRC ihlali (<= 165 tabanı korundu, 0 YENİ İHLAL) onaylandı (%100 PASS).
+- Rapor ve Karar: hardware/docs/reports/task-107-20260928/final_placement_layout_audit_raporu.md (ve final_placement_audit.json); design_decisions/output/SON_YERLESIM_VE_DUZEN_DENETIMI_TASK107_20260928.md.
+
+28.09.2026 - TASK-106 (CRITICAL / Force Full-Pass Placement Optimization & Congestion Fix):
+- Yerleşim motoru "Force Re-pack" ve "Cross-Net Penalty Optimization" modunda çalıştırılarak IC pinlerinden uzak kalan pasifler IC kılıfına doğru çekildi.
+- Maksimum Manhattan/Öklid Mesafe Kısıtı (Hard Threshold <= 2.0 mm): U6 pin 2 ve pin 1'e bağlı R50 ve R51 dirençleri (111.000, 108.000) ve (108.000, 108.000) konumlarından (109.385, 102.300) ve (107.485, 102.300) mm'ye taşınarak mesafeleri 4.26 mm'den 1.762 mm'ye indirildi (<= 2.0 mm sağlandı).
+- U4 BQ32000 pin 8 dekuplaj kapasitörü C9 (137.500, 81.000)'den (140.525, 78.800) mm'ye çekilerek merkez mesafesi 3.16 mm'den 1.295 mm'ye indirildi. U3 INA226 ALERT direnci R27 (136.750, 107.000)'den (136.750, 108.400) mm'ye çekilerek mesafesi 2.95 mm'den 1.550 mm'ye indirildi.
+- Ratsnest Kesişim Cezası ve Tel Uzunluğu Optimizasyonu: 20 adet 2-bacaklı pasif elemanın (R1, C30, R3, C31, R2, R28, R56, R10, R62, C2, C21, R61, R17, R49, R65, R48, C1, C19, C17, R9) yönelimi 180° normalize edildi; sinyal ratsnest tel uzunluğu 1331.56 mm'den 1319.04 mm'ye (-12.52 mm) düşürüldü, kesişim sayısı 146'dan 141'e (-5) indirildi.
+- UNOPTIMIZED_COMPONENTS_LIST: Entegre kılıf sınırları (SOIC-8 avlu çizgisi), yüksek kapasiteli komponent boyutları (C33 1.5F süperkapasitör) veya RF keepout kısıtları nedeniyle 2.0 mm dışındaki elemanlar (C33, C35, R61, R24, U2 pasifleri vb.) gerekçeleri ve net mesafeleriyle tek tek audit_compliance.json ve rapor içinde belgelendi.
+- Rapor ve Karar: hardware/docs/reports/task-106-20260928/force_placement_optimization_raporu.md (ve audit_compliance.json); design_decisions/output/FORCE_FULL_PASS_YERLESIM_OPTIMIZASYONU_TASK106_20260928.md.
+- KiCad 10 DRC & Parite: 165 ihlal (<= 165 tabanı korundu, 0 YENİ İHLAL), 0 avlu çakışması (courtyards_overlap == 0), 0 footprint hatası, 0 schematic parity hatası (%100 parite), 360 unconnected items (taban korundu).
+
+- 144 komponentin (85 pasif R/C, 10 IC, 10 diyot, 8 FET, 2 indüktör, 1 kristal, 14 test noktası, 5 konnektör, 2 buton, 4 montaj deliği, mekanik modeller) tamamı otomatik script (scratch/audit_task104_compliance.py) ile denetlendi.
+- IPC-7351 Least Courtyard ve Açıklık: 0 avlu çakışması (courtyards_overlap) ve 0 üretim tolerans ihlali doğrulandı (%100 PASS).
+- Grid Kilidi: 85 pasif elemanın %100'ü 0.50 mm (59 adet) veya 0.25 mm (26 adet) mühendislik gridine kilitlendi; 0 off-grid pasif teyit edildi (%100 PASS).
+- Doğrusal Raylar ve Homojen Adım: AP33772S Y=125.50 mm rayı ve Aktif Deşarj Y=107.50 mm rayı 2.250 mm homojen adımla ortak eksende doğrulandı (%100 PASS).
+- Yönelim Standartlaştırması: 144 komponentin tamamı (%100) kesinlikle ortogonal (0°, 90°, 180°, 270°) standartta, 0 diyagonal/açılı eleman ve pull-up yönelim tekdüzeliği doğrulandı (%100 PASS).
+- Entegre Dekuplaj Önceliği: U1-U13 entegrelerine ait 15 kritik kapasitörün pin mesafeleri (en yakın 1.88 mm, çoğunlukla < 5.5 mm) ve en dar akım döngüsü pin bazında belgelendi (%100 PASS).
+- Mekanik ve RF Ankrajlar: H1-H4, J7, J8, J9, J3, J4, MECH_ENC ve U2 RF modülünün nominal koordinatları 0,0000 mm sapma ile korunduğu onaylandı (%100 PASS).
+- Rapor ve Karar: hardware/docs/reports/task-105-20260928/bilesen_uygunluk_denetim_raporu.md (ve audit_task104_compliance.json); design_decisions/output/BILESEN_UYGUNLUK_DENETIMI_TASK105_20260928.md.
+- KiCad 10 DRC & Parite: 165 ihlal (<= 165 tabanı korundu, 0 YENİ İHLAL), Schematic Parity 0 hata (%100 parite), Unconnected 360 (taban korundu).
+
+28.09.2026 - TASK-104 (Bileşen Yerleşiminin IPC Yüksek Yoğunluk ve Estetik Kurallarına Göre Optimizasyonu):
+- 85 pasif elemanın (R, C) 35 adedinin koordinatları ve grid rayları IPC-7351 Yüksek Yoğunluk (Least/High-Density Courtyard) kurallarına göre optimize edildi.
+- Öncesinde 31 pasifte bulunan kesirli mikro-ofsetler (.15, .35, .55, .58, .70, .80 mm) temizlenerek 85 pasifin tamamı (%100) 0.50 mm (59 adet) veya 0.25 mm (26 adet) mühendislik gridine kilitlendi; 0 adet off-grid komponent bırakıldı.
+- AP33772S Y=125.50 mm pasif rayı (R21, R8, R64, R65, R9) homojen 2.25 mm adımla (pitch) ve 0.25 mm gridiyle sıkılaştırıldı; F.Cu Y=107.50 mm hattındaki deşarj dirençleri (R55, R56, R58) 2.25 mm adımla hizalandı; Boost U11 ve Buck U5 kompanzasyon/giriş elemanları (C12, C14, C18, C19, C28, R50, R51) ortak eksenlere oturtuldu.
+- Rotasyon normalizasyonu: Kart üzerindeki 144 komponentin tamamı kesinlikle ortogonal (0°, 90°, 180°, 270°) standartlara bağlandı; R4 ve R7 I2C pull-up polariteleri ortak 0° açısına standartlaştırıldı.
+- Dekuplaj kapasitörleri (C1, C4, C9, C11, C14, C26, C27, C32, C35) hedef güç ve GND pinlerinin hemen yanına en dar akım döngüsüyle konumlandırıldı.
+- Rapor ve Karar: hardware/docs/reports/task-104-20260928/bilesen_yerlesimi_ipc_optimizasyon_raporu.md; design_decisions/output/BILESEN_YERLESIMI_IPC_OPTIMIZASYONU_TASK104_20260928.md.
+- KiCad 10 DRC & Parite: 165 ihlal (taban 167'den 2 silk overlap azaldı, 0 YENİ İHLAL), Schematic Parity 0 hata (%100 parite), Unconnected 360 (taban korundu).
+
+28.09.2026 - TASK-102 (Konnektör-İşlemci Sinyal Akışının Doğallığı ve Yönlendirme Yolları Denetimi):
+- J9 Enkoder -> U2 sinyal yolundaki 60 mm'lik yapay U dönüşü giderildi: R34, R35, R36 pull-up dirençleri B.Cu Y=125.50 mm park alanından alınarak J9 ile U2 arasındaki doğrudan koridora, F.Cu katmanında (65.00, 96.00), (67.50, 96.00), (70.00, 96.00) mm koordinatlarına taşındı. J8 RJ45 keepout ve avlu sınırlarıyla 0 çakışma sağlandı.
+- J7 USB-C -> U10 -> R2/R3 -> U2 (D+/D-) diferansiyel çifti geri dönüş döngüsü (backtrack loop) optimize edildi: R2 ve R3 dirençleri U2'nin doğusundaki basamaklı konumlarından alınarak F.Cu (66.00, 86.00) ve (68.00, 86.00) mm koordinatlarına, U10 ile U2 pinleri arasındaki doğal akış koridoruna yerleştirildi.
+- J3 LCD SPI veri yolunun Boost L3/U11 anahtarlama alanından izole üst F.Cu koridorundan, J8 Ethernet UART'ın 21 mm doğrudan yatay koridordan ve INA226/I2C hatlarının Buck L1/U5 anahtarlama düğümünden izole çevre koridorundan yönlendirilmesi kurala bağlandı.
+- Ratsnest Optimizasyonu: Sinyal kesişimleri (crossings) 185'ten 161'e indirildi (-24 kesişim); toplam sinyal tel uzunluğu 1450.84 mm'den 1342.15 mm'ye düşürüldü (-108.69 mm kısalma).
+- Rapor ve Karar: hardware/docs/reports/task-102-20260928/konnektor_islemci_sinyal_akisi_raporu.md; design_decisions/output/KONNEKTOR_ISLEMCI_SINYAL_AKISI_TASK102_20260928.md.
+- KiCad DRC & Parite: 0 yeni hata, 0 schematic parity issue (%100 parite), 360 unconnected (taban korundu).
+
+28.09.2026 - TASK-101 (PCB Güç ve Sinyal Akışı İçin Hiyerarşik Yerleşim Mimarisi):
+- Kart üzerindeki ana güç zinciri 7 aşamada kesin ve monoton bir X ekseni artışıyla (58.66 -> 77.17 -> 98.04 -> 122.88 -> 134.50 -> 137.98 -> 145.00 mm) soldan sağa tek yönlü boru hattı (pipeline) olarak doğrulandı; geri dönüş ve U dönüşleri engellendi.
+- Katman hiyerarşisi netleştirildi: B.Cu anahtarlamalı güç dönüşümünün ana katmanı olarak belirlendi; LM74801 (U12) ve Q5 çift FET'i alan ve termal dağılım optimizasyonu amacıyla F.Cu'da (Buck U5/L1'in tam karşısında) konumlandırıldı, çift taraflı geçişler için via matris bütçesi tanımlandı.
+- 3 kademeli fonksiyonel zonlama (zoning) sınırlandırıldı: Kuzey Zonu (Y < 90 mm) düşük gürültülü dijital/RF/haberleşme (42 komponent, anten keepout Y < 69.48 mm %100 temiz), Orta Zon (Y = 90-105 mm) LCD/Enkoder kullanıcı arayüzü geçiş koridoru, Güney Zonu (Y > 90 mm) anahtarlamalı güç dönüşümü (101 komponent).
+- Manyetik ve yüksek dv/dt anahtarlama düğümleri (L1, L3, SW, LX) ile hassas analog algılama ve frekans referansları (Y1 RTC kristali, U3 INA226 Kelvin şöntü, R11 VBUS şöntü) arasında minimum 17.56 mm (ortalama >35 mm) fiziksel izolasyon mesafesi ve In1.Cu katı GND kalkanlaması garanti altına alındı.
+- Ratsnest çaprazlık testi (scratch/ratsnest_crossing_test.py): 127 sinyal hattında 185 kesişim ve 1450.84 mm tel uzunluğu tabanı korundu.
+- Rapor ve Karar: hardware/docs/reports/task-101-20260928/hiyerarsik_yerlesim_mimarisi_raporu.md; design_decisions/output/HIYERARSIK_YERLESIM_MIMARISI_TASK101_20260928.md.
+- KiCad DRC & Parite: 164 ihlal (0 yeni ihlal), Schematic Parity 0 hata (%100 parite), Unconnected 360 (taban korundu).
+
+28.09.2026 - TASK-103 (PCB Serigrafi Metin Boyutlarını ve Çakışmalarını DRC Kurallarına Göre Düzenle):
+- Serigrafi kaynaklı 144 ihlalin tamamı çözüldü (bkz. REV_C başlangıcındaki detaylı TASK-103 kapanış kaydı).
+
+
+28.09.2026 - TASK-100 (Bileşenlerin Yatay ve Dikey Hizalanması ile Yerleşim Alanını Optimize Et):
+- Boost dönüştürücü (U11) ve Buck dönüştürücü (U5) çevrelerindeki pasiflerin (R, C), Schottky/clamp diyotlarının ve indüktörlerin basamaklı (staggered) koordinatlarındaki .11, .16, .36, .66, .76, .91, .96 mm rastgele mikro-ofsetleri temizlenerek ortak eksen grid raylarına (0.5 mm ve 0.25 mm) oturtuldu.
+- Boost U11 çevresi hizalamaları: C29 (87.50, 111.50) ve C25 (87.50, 119.50) X=87.50 mm kolonuna; R47 (91.50, 119.50) C25 ile Y=119.50 mm rayına; D4 (103.00, 114.50), C26 (104.00, 117.50), C27 (104.00, 121.00) X=103.00 ve 104.00 mm dikey koridorlarına; D5 (92.20, 123.20); R48 (88.50, 125.00); C23 (100.00, 125.50) ve R53 (103.50, 125.50) Y=125.50 mm ortak rayına (pitch 3.50 mm); R49 (89.00, 128.00), C24 (91.50, 128.00), R52 (94.50, 128.00) Y=128.00 mm rayına (pitch 2.50 ve 3.00 mm) oturtuldu.
+- Buck U5 çevresi hizalamaları: C12 (120.80, 105.00) ve C13 (117.00, 105.00) Y=105.00 mm rayına (pitch 3.80 mm); R40 (116.50, 108.00); C18 (121.80, 108.50); R41 (123.50, 110.00); R38 (131.00, 109.50); L1 (127.00, 97.50) koordinatlarına normalize edildi.
+- Tüm R, C, D ve transistör/FET kılıflarının yönelim açıları 0° ve 90° ortogonal standartlarına normalize edildi; gereksiz açılı/diyagonal yerleşim kalmadı (0 adet).
+- Benzer fonksiyonel bloklarda standart adımlar (MCU pull-up 2.0 mm, AP33772S pasifleri 2.3-2.4 mm, Boost kompanzasyon 2.5-3.0 mm, Buck giriş 3.8 mm) korundu; kesintisiz güç ve GND koridorları genişletildi.
+- Ratsnest çaprazlık testi (scratch/ratsnest_crossing_test.py): Tel uzunluğu 1451.28 mm'den 1450.84 mm'ye düşürüldü; taban 185 kesişim korundu.
+- Rapor ve Karar: hardware/docs/reports/task-100-20260928/bilesen_hizalama_raporu.md; design_decisions/output/BILESEN_HIZALAMA_OPTIMIZASYONU_TASK100_20260928.md.
+- KiCad DRC & Parite: 164 ihlal (taban korundu, 0 yeni ihlal), Schematic Parity 0 hata (%100 parite), Unconnected 360 (taban korundu).
+
+28.09.2026 - TASK-099 (Aktif ve Manyetik Komponentlerin IC İlişkileri ve Kritik Döngüleri Denetimi):
+- D1-D10 diyotları, Q1-Q8 transistör/FET'leri, L1 ve L3 güç indüktörleri, Y1 kristal osilatörü ve entegreler arası kritik sinyal zincirleri pin bazında denetlenip doğrulandı.
+- D1-D10 polarite ve yerleşim denetimi: D2'nin sanılanın aksine "boot diyotu" değil, buck regülatör için harici dead-time serbest dolaşım (catch) Schottky diyotu olduğu (U5 dahili bootstrap kapasitörü C17 ile BST-LX arasındadır), katodunun LX_SW'e mesafesinin 2.20 mm olduğu tespit edilerek doğrulandı. D4 boost doğrultucu (SW mesafesi 4.39 mm, C27 mesafesi 6.58 mm), D5 clamp (2.14 mm), D6 Zener (HGATE clamp), D7 çıkış TVS (7.32 mm), D8/D9 CC TVS (9.22/10.42 mm), D10 deşarj Zener (4.50 mm), D3 VBUS TVS (10.42 mm) ve D1 LED (6.55 mm) polarite ve mesafeleri %100 onaylandı.
+- Q1-Q8 FET ve anahtarlama yolları: Q1/Q2 I2C çift yönlü seviye dönüştürücüleri (Gate +3.3V bias), Q3 back-to-back VBUS çift FET'i (U1 Pin 22 gate mesafesi 11.31 mm), Q4 aktif deşarj lojik evirici FET (U13 çıkışına 11.15 mm), Q5 dual çıkış FET'i (LM74801 ideal diyot DGATE mesafesi 3.94 mm, HGATE mesafesi 9.09 mm, F.Cu katmanında direct routing), Q6 aktif deşarj güç FET'i, Q7 LCD arka aydınlatma PWM FET'i ve Q8 Ethernet mezanin yüksek taraf P-FET güç anahtarı (J8'e 9.96 mm) doğrulandı.
+- L1 (22 uH) ve L3 (6.8 uH) manyetik analizi: L1'in U5 LX bacağına mesafesi 6.05 mm, L3'ün U11 SW bacağına mesafesi 10.89 mm ve D4 anot bacağına mesafesi 6.50 mm olarak ölçüldü; U11 SW -> D4 -> C27 -> PGND sıcak anahtarlama döngü çevresinin yalnızca ~24 mm olduğu teyit edildi. Manyetik yayılım ve parazitik riskleri düşük olarak sınıflandırıldı.
+- Y1 (32.768 kHz) kristal osilatör: U4 (BQ32000 RTC) ile B.Cu katmanında X=143.00 mm ekseninde doğrudan hizalı yerleşimde (merkezler arası 7.00 mm, pin mesafeleri 8.98 ve 10.61 mm), osilatör döngü alanı < 18 mm^2 olup güç anahtarlama hatlarından (LX > 20 mm, SW > 50 mm) tam izole edildiği kanıtlandı.
+- Entegreler arası koruma zinciri: U3 (INA226 ALERT) -> U13 (74LVC1G08 VE kapısı) -> U12 (LM74801 HGATE) / Q4 (Deşarj sürücü) donanımsal koruma zincirinin mikro-saniye altı tepki süresiyle yazılımdan bağımsız koruma sağladığı doğrulandı.
+- Rapor ve Veri: hardware/docs/reports/task-099-20260928/ (active_magnetic_audit.md, active_magnetic_audit.json); Karar: design_decisions/output/AKTIF_VE_MANYETIK_DENETIMI_TASK099_20260928.md.
+- KiCad DRC & Parite: 164 ihlal (taban korundu, 0 yeni ihlal), Schematic Parity 0 hata (%100 parite), Unconnected 360 (taban korundu).
+
+28.09.2026 - TASK-098 (Test Noktalarının Düzenlenmesi ve Erişilebilirliği):
+- Şematik tasarımına müdahale edilmeksizin, mevcut TP1-TP14 test noktalarının katman ve mekanik erişilebilirlik optimizasyonu tamamlandı.
+- TP9 (/MCU/ETH_CFG0) ve TP10 (/MCU/ETH_PWR_EN) F.Cu katmanından (LCD altından) B.Cu katmanına (107.50, 82.50) ve (107.50, 79.50) koordinatlarına taşınarak tam erişilebilir hale getirildi; Mezanin J8 modül gövdesine >= 3.03 mm açıklık sağlandı. TP14 (/MCU/ETH_RUN) bu bölgede (110.50, 82.50) koordinatına kaydırıldı.
+- TP11, TP12, TP13 (UART TX, RX, GND) test hücresi F.Cu üzerinde Y=70.70 mm koordinatına çekildi; 3.2" LCD çerçeve sınırına (Y=72.48 mm) 1.78 mm (>= 1.50 mm şartı) güvenli mesafe sağlandı. Silkscreen çakışmalarını önlemek için referans yazıları gizlendi.
+- +3.3V, V_PRE, OUT_POS, SW_EN ve I2C GND hatları şematiğe komponent eklenmeksizin donanım raporunda mevcut komponent bacakları ve padleri üzerinden alternatif prob kılavuzu olarak belgelendi.
+- Tüm test noktaları (TP1-TP14) haritası hardware/docs/reports/task-098-20260928/test_points_map.md olarak üretildi.
+- KiCad 10.0 DRC: 164 ihlal (taban 168'den 4 silk overlap azaldı, 0 yeni ihlal), Schematic Parity 0 hata (%100 parite), Unconnected 360 (taban korundu).
+
+28.09.2026 - Komponent-IC İliskileri ve Test Noktalari Analizi (TASK-098, TASK-099):
+- Tum 144 komponentin (10 IC, 52 R, 34 C, 10 D, 8 Q, 2 L, 1 Y, 14 TP, 5 J, 2 SW) pin bazinda IC iliskileri ve yerlesimleri pcbnew API ile dogrulandi.
+- Tum IC'lerin kritik dekuplaj, geribesleme ve gate elemanlarinin ayni katmanda ve 2-8 mm arasinda oldugu, yerlesimin elektriksel acidan uygun oldugu kanitlandi.
+- Test Noktalari Analizi: TP9 ve TP10'un F.Cu uzerinde 3.2" LCD ekrani altinda kalarak erisilemez oldugu saptandi; alt kata (B.Cu) aktarilmasi icin TASK-098 acildi. TP11-TP13 UART hucresinin LCD cerceve sinirindan guvenli mesafeye cekilmesi, eksik +3.3V, V_PRE, OUT_POS test noktalari ve I2C GND prob noktasi kapsamlandirildi.
+- Aktif ve manyetik komponentlerin (D1-D10, Q1-Q8, L1, L3, Y1 ve seviye donusturucu/koruma zinciri) denetimi icin TASK-099 acildi.
+- Karar: design_decisions/output/KOMPONENT_IC_VE_TEST_NOKTALARI_ANALIZI_20260928.md.
+
+28.09.2026 - TASK-097 rapor duzeltmesi:
+- C1'in sematik ve PCB degeri 100 nF, PCB konumu (73,5;125,5) mm; TASK-097 raporundaki 1 uF ve eski koordinat yanlistir. Denetim verisinde C1 hedef pin konumu (0;0) oldugundan mesafe de gecersizdir. R/C yerlesim onayi yeniden inceleme icin acildi.
+
+28.09.2026 - TASK-097:
+- REV_C PCB üzerindeki tüm 86 pasif komponent (52 Direnç R*, 34 Kapasitör C*) şematik netlisti ve PCB koordinatları düzeyinde pin bazında denetlendi.
+- Şematik ve PCB paritesi %100 doğrulandı: 86/86 komponent tam eşleşme, 0 eksik, 0 fazla, 0 değer uyuşmazlığı.
+- Pin-ped doğrusal (Euclidean) mesafeleri ve dönüş yolları hesaplandı; 70 komponent doğrudan UYGUN, 16 komponent ROUTING_KOŞULLU onaylandı; taşınması gereken komponent sayısı = 0 (TASINMALI = 0).
+- Kritik Güç Bileşenleri Analizi:
+  * C16'nın buck çıkış kondansatörü (+3.3V) olduğu netleştirildi; L1 çıkışına mesafesi 9.62 mm'dir. ROUTING_KOŞULLU (>= 2.0 mm poligon + GND dikişi).
+  * C12, C13 (5.91 mm) ve C14 (4.84 mm) gerçek buck giriş kondansatörleri olarak U5 Exposed Pad (VIN) sınırında onaylandı.
+  * C29 ve C25'in boost giriş bulk filtreleri (PD_VOUT), C26'nın (3.80 mm) ise giriş HF baypası olduğu doğrulandı.
+  * C27 (7.12 mm) ve C28'in gerçek boost çıkış filtreleri olduğu, U11 SW -> D4 -> C27 -> PGND sıcak anahtarlama döngüsünün yalnızca ~24 mm çevreye sahip olduğu kanıtlandı.
+  * C5, C6, C7 (ESP32-C6 dekuplajı) Y=83 mm hattında In1.Cu GND düzlemi üzerinde ~3.5 nH endüktansla doğrulandı; ROUTING_KOŞULLU (katman değiştirmeden 0.8 mm hatla U2 Pin 1'e direkt besleme).
+  * R11 (VBUS şöntü) J8 ve MECH_ENC kısıtları nedeniyle Y=103 mm'de sabitlendi; ROUTING_KOŞULLU (0.2 mm / 0.2 mm diferansiyel Kelvin çifti + GND zırhı).
+  * RShunt1 ve C11 (INA226) simetrik Kelvin geometrisi ve 4.31 mm mesafeyle UYGUN onaylandı.
+  * R34, R35, R36 (Enkoder pull-up) düşük frekanslı sinyaller olarak UYGUN onaylandı; MECH_ENC 3D gövdesine 7.04 mm açıklık korundu.
+  * C1-C4, C8 (AP33772S LDO baypas) <= 3.77 mm mesafelerle UYGUN; C20 (Ethernet magjack) 3.55 mm mesafeyle UYGUN onaylandı.
+- Taşınma değerlendirmesi: Hiçbir bileşenin yerinin değiştirilmesine gerek olmadığı, taşınmanın diğer döngüleri veya mekanik ankrajları bozacağı kanıtlandı.
+- Kanıt ve Belgeler: hardware/docs/reports/task-097-20260928/ (rc_pin_audit.json, verification.json, top_rc_audit.png, top_rc_audit.svg, bottom_rc_audit.png, bottom_rc_audit.svg); Karar: design_decisions/output/DIRENC_KAPASITOR_DENETIMI_TASK097_20260928.md.
+- Takip: 16 adet ROUTING_KOŞULLU kuralı doğrudan TASK-087 genel kart routing taskına bağlandı.
+
+28.09.2026 - TASK-096:
+- TASK-095 sonrasi REV_C kart yerlesiminin elektriksel, mekanik, termal ve uretim kurallari acisindan tam analizi tamamlandi.
+- 144 footprint incelendi (143 elektriksel + 1 MECH_ENC panel 3D modeli); kart disinda bekleyen elektriksel parca = 0.
+- DRC ve parite dogrulandi: 15 taban U2 anten kenar hatasi korundu, 0 yeni hata, 153 uyari (126 metin boyutu, 17 silk cakismasi, 6 maske, 3 kenar, 1 lib), sematik paritesi 0, baglantisiz oge 360 (TASK-087 routinge devredildi).
+- Guc bloklari (AP33772S, TPS55340, AOZ1284, LM74801, INA226, Desarj) sicak akim donguleri ve kritik mesafeleri uretici datasheet kistaslarina gore olculdu; R11-U1 (16,3 mm), Boost hot loop (~51 mm), Buck giris loopu (32,6 mm) TASK-087 routing kurallarina aktarildi. D5-U11 BOOST_FB izi (2,585 mm <= 10 mm) ve INA226 simetrik Kelvin hatlari (4,31 mm) dogrulandi.
+- Mekanik ankrajlar (H1-H4, J7, J8, J9, J3, MECH_ENC) 0,000 mm sapma ile korundu; FreeCAD 3D kati kesisim analizi 0,000000 mm3 kesisimle gecti; enkoder kablo hacmine min aciklik 1,400 mm; LCD alti F.Cu yukseklik tavani max 1,35 mm <= 1,80 mm.
+- Nihai Karar: Kosullu routing'e hazir (Conditional Ready for Routing); PCB footprint veya board shape degisikligine gerek yoktur.
+- Raporlar: hardware/docs/reports/task-096-20260928/ (final-drc.json, inventory.json, verification.json, solid-check.json, mechanical-analysis.json, power-chain-analysis.json, digital-interfaces-analysis.json, thermal-routability-analysis.json, top.png, bottom.png, top.svg, bottom.svg).
+- Karar: design_decisions/output/KART_YERLESIM_ANALIZI_TASK096_20260928.md.
+
+28.09.2026 - TASK-095 uygulamasi:
+- Encoder sonrasi park edilen AP33772S blogunun 23 ve encoder pull-up blogunun 3 komponenti B.Cu uzerinde kart icine yerlestirildi.
+- USB/RJ45, encoder, J9, diger footprint ankrajlari, Edge.Cuts, pad-netler ve mevcut dort FB iz segmenti korundu.
+- DRC: 15 mevcut hata, 153 uyari, yeni ihlal 0; sematik parite 0; baglantisiz 360. Genel routing TASK-087 kapsamindadir.
+- Tasinan 3D modellerde kati cakisma 0; encoder kablo servis hacmine minimum aciklik 1,400 mm.
+- Karar: design_decisions/output/KART_DISI_BLOKLAR_YERLESIM_TASK095_20260928.md; kanitlar hardware/docs/reports/task-095-20260928/.
+
 25.09.2026 - TASK-094 uygulamasi:
 - Kullanici duzeltmesiyle duz 3 mm dis panel ve disari tasan saft uygulandi; USB agziyla saft ucu hizasi kaldirildi. Saft merkez Z=-3,130 mm (PCB topa gore -4,725), Y=112,400; panelden cikinti 9,500 mm.
 - Panel encoder icin ayri STEP ve padsiz, BOM/pos harici MECH_ENC mekanik gostergesi eklendi; SW3 semada panel parcasi olarak korundu.

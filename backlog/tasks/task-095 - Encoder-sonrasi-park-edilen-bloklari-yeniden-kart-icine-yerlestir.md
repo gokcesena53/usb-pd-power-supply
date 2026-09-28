@@ -1,10 +1,10 @@
 ---
 id: TASK-095
 title: Encoder sonrasi park edilen bloklari yeniden kart icine yerlestir
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-09-25 13:23'
-updated_date: '2026-09-26 10:52'
+updated_date: '2026-09-28 05:17'
 labels:
   - layout
 milestone: m-1
@@ -15,6 +15,8 @@ references:
   - design_decisions/output/ENCODER_SOL_PANEL_GOREV_KAPSAMI_20260925.md
   - design_decisions/output/ENCODER_SOL_PANEL_TASK094_20260925.md
   - hardware/docs/reports/task-094-20260925/placement.json
+  - design_decisions/output/KART_DISI_BLOKLAR_YERLESIM_TASK095_20260928.md
+  - hardware/docs/reports/task-095-20260928/verification.json
 priority: high
 ordinal: 181000
 ---
@@ -27,20 +29,22 @@ Sonraki ayri calisma: TASK-094 tamamlandiktan sonra TASK-094.02 park envanterind
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 TASK-094.02 park listesindeki her ref yeni x/y/aci/yuz/grup bilgisiyle kart icine alinmis; unutulan veya gerekcesiz disarida kalan blok yok.
-- [ ] #2 USB/RJ45 ve encoder nihai ankrajlari degismemis; encoder/J9 kablo, 3 mm panel, LCD/FPC, anten, mezanin ve montaj erisim zarflari korunmus.
-- [ ] #3 Blok ici kritik dongu/dekuplaj/FB/COMP/Kelvin iliskileri ve mevcut yerel baglantilar kontrol edilmis; pad-net eslesmeleri korunmus, yeni sol kenarda en az 0,254 mm ve daha siki mevcut kurallar saglanmis.
-- [ ] #4 Once/sonra DRC, schematic parity ve 3D aciklik kanitlari kayitli; yeni aciklanmamis ihlal 0, parite farki 0; baglantisiz oge degisimi ve routing devri belgelenmis.
+- [x] #1 TASK-094.02 park listesindeki her ref yeni x/y/aci/yuz/grup bilgisiyle kart icine alinmis; unutulan veya gerekcesiz disarida kalan blok yok.
+- [x] #2 USB/RJ45 ve encoder nihai ankrajlari degismemis; encoder/J9 kablo, 3 mm panel, LCD/FPC, anten, mezanin ve montaj erisim zarflari korunmus.
+- [x] #3 Blok ici kritik dongu/dekuplaj/FB/COMP/Kelvin iliskileri ve mevcut yerel baglantilar kontrol edilmis; pad-net eslesmeleri korunmus, yeni sol kenarda en az 0,254 mm ve daha siki mevcut kurallar saglanmis.
+- [x] #4 Once/sonra DRC, schematic parity ve 3D aciklik kanitlari kayitli; yeni aciklanmamis ihlal 0, parite farki 0; baglantisiz oge degisimi ve routing devri belgelenmis.
 <!-- AC:END -->
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [ ] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
-- [ ] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
+- [x] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
+- [x] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
 <!-- DOD:END -->
 
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
 TASK-094 devri: AP33772S grubunun 23 uyesi ve R34/R35/R36 kart disinda; once/sonra koordinatlari placement.json. J7/J8 ve encoder ankrajlarini koru. Alt yuz kablo servis hacmi PCB X=57,8..70, Y=102..123, STEP Z=-17..-0,5 mm; buraya komponent yerlestirme. J9=(61,5;104), aci=-90. Yeni dik sol kenar X=59,8 ve bakir acikligi>=0,254 mm/daha siki mevcut kural. Bu gorev henuz uygulanmadi.
+
+28.09.2026 uygulandi: 26 komponent B.Cu uzerinde kart icinde. J7/J8/J9/MECH_ENC ve diger ankrajlar, Edge.Cuts, pad-netler ve 4 FB segmenti korundu. DRC once/sonra 15 hata ve 153 uyari; yeni ihlal 0, sematik parite 0, baglantisiz 360. FreeCAD kati kesisim 0, kablo hacmine minimum 1.400 mm. Son koordinatlar placement.json; olcum ve PCB SHA256 verification.json; 3D solid-check.json; nihai DRC final-drc.json. Elektriksel yerlesim ve TASK-087 routing devri karar raporunda. CHANGES.TXT guncellendi.
 <!-- SECTION:NOTES:END -->

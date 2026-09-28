@@ -1,0 +1,962 @@
+{
+  "AP33772S": {
+    "U1.20-C4.1": {
+      "description": "V5V LDO bypass cap to pin 20",
+      "distance_mm": 3.73,
+      "pos1": [
+        75.75,
+        118.5375
+      ],
+      "pos2": [
+        72.02,
+        118.5
+      ],
+      "nets": [
+        "PD_5V",
+        "PD_5V"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "U1.12-C1.1": {
+      "description": "V18 LDO bypass cap to pin 12",
+      "distance_mm": 3.768,
+      "pos1": [
+        75.25,
+        122.4625
+      ],
+      "pos2": [
+        73.02,
+        125.5
+      ],
+      "nets": [
+        "Net-(U1-V18)",
+        "Net-(U1-V18)"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "U1.15-C2.1": {
+      "description": "IFB filter cap to pin 15",
+      "distance_mm": 3.648,
+      "pos1": [
+        74.5375,
+        120.75
+      ],
+      "pos2": [
+        71.52,
+        122.8
+      ],
+      "nets": [
+        "Net-(U1-IFB)",
+        "Net-(U1-IFB)"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "U1.16-R11.1": {
+      "description": "Kelvin sense CSP to shunt R11 pin 1",
+      "distance_mm": 17.279,
+      "pos1": [
+        74.5375,
+        120.25
+      ],
+      "pos2": [
+        73.5375,
+        103.0
+      ],
+      "nets": [
+        "USB_CC2",
+        "USB_VBUS"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "U1.17-R11.2": {
+      "description": "Kelvin sense CSN to shunt R11 pin 2",
+      "distance_mm": 17.459,
+      "pos1": [
+        74.5375,
+        119.75
+      ],
+      "pos2": [
+        79.4625,
+        103.0
+      ],
+      "nets": [
+        "USB_CC1",
+        "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "U1.23-R12.1": {
+      "description": "Gate drive output to series resistor R12",
+      "distance_mm": 2.54,
+      "pos1": [
+        77.25,
+        118.5375
+      ],
+      "pos2": [
+        77.5,
+        116.01
+      ],
+      "nets": [
+        "Net-(U1-PWR_EN)",
+        "Net-(U1-PWR_EN)"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "R12.2-Q3.2": {
+      "description": "Gate series resistor R12 to Q3 gate pin 2",
+      "distance_mm": 7.714,
+      "pos1": [
+        77.5,
+        114.99
+      ],
+      "pos2": [
+        77.865,
+        107.285
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/PD_GATE",
+        "/USB_PD_CONTROLLER/PD_GATE"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "R11.2-Q3.7": {
+      "description": "Shunt R11 output to Q3 drain pins (5,6,7,8)",
+      "distance_mm": 7.711,
+      "pos1": [
+        79.4625,
+        103.0
+      ],
+      "pos2": [
+        76.2275,
+        110.0
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+        "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "Q3.1-C8.1": {
+      "description": "Q3 source pins (1,2,3) to switched VBUS cap C8",
+      "distance_mm": 10.672,
+      "pos1": [
+        76.595,
+        107.285
+      ],
+      "pos2": [
+        81.225,
+        116.9
+      ],
+      "nets": [
+        "Net-(Q3A-S)",
+        "PD_VOUT"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    },
+    "Q3.1-TH1.1": {
+      "description": "Thermal sensor TH1 proximity to power FET Q3",
+      "distance_mm": 5.237,
+      "pos1": [
+        76.595,
+        107.285
+      ],
+      "pos2": [
+        73.5,
+        111.51
+      ],
+      "nets": [
+        "Net-(Q3A-S)",
+        "GND"
+      ],
+      "layers": [
+        "B.Cu",
+        "B.Cu"
+      ]
+    }
+  },
+  "TPS55340": {
+    "distances": {
+      "C23.1-L3.1": {
+        "description": "Input cap C23 to Inductor L3 pin 1",
+        "distance_mm": 17.602,
+        "pos1": [
+          100.63,
+          125.76
+        ],
+        "pos2": [
+          100.9,
+          108.16
+        ],
+        "nets": [
+          "Net-(U11-SS)",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      },
+      "L3.2-U11.15": {
+        "description": "Inductor L3 pin 2 to U11 SW pin 15",
+        "distance_mm": 15.728,
+        "pos1": [
+          94.5,
+          108.16
+        ],
+        "pos2": [
+          99.099998,
+          123.2
+        ],
+        "nets": [
+          "PD_VOUT",
+          "GND"
+        ]
+      },
+      "U11.15-D4.1": {
+        "description": "U11 SW pin 15 to Boost Diode D4 anode",
+        "distance_mm": 10.352,
+        "pos1": [
+          99.099998,
+          123.2
+        ],
+        "pos2": [
+          104.95,
+          114.66
+        ],
+        "nets": [
+          "GND",
+          "V_PRE"
+        ]
+      },
+      "D4.2-C28.1": {
+        "description": "Boost Diode D4 cathode to output bulk cap C28",
+        "distance_mm": 14.862,
+        "pos1": [
+          100.95,
+          114.66
+        ],
+        "pos2": [
+          111.625,
+          125.0
+        ],
+        "nets": [
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          "V_PRE"
+        ]
+      },
+      "D4.2-C29.1": {
+        "description": "Boost Diode D4 cathode to output HF cap C29",
+        "distance_mm": 11.016,
+        "pos1": [
+          100.95,
+          114.66
+        ],
+        "pos2": [
+          90.35,
+          111.66
+        ],
+        "nets": [
+          "/USB_PD_CONTROLLER/BOOST_SW",
+          "PD_VOUT"
+        ]
+      },
+      "C28.2-U11.1": {
+        "description": "Output cap C28 GND to U11 PGND pin 1 (Hot Loop Ground Return)",
+        "distance_mm": 9.82,
+        "pos1": [
+          108.675,
+          125.0
+        ],
+        "pos2": [
+          100.862498,
+          119.05
+        ],
+        "nets": [
+          "GND",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      },
+      "C29.2-U11.1": {
+        "description": "Output cap C29 GND to U11 PGND pin 1 (Hot Loop Ground Return)",
+        "distance_mm": 17.545,
+        "pos1": [
+          84.95,
+          111.66
+        ],
+        "pos2": [
+          100.862498,
+          119.05
+        ],
+        "nets": [
+          "GND",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      },
+      "U11.7-R47.1": {
+        "description": "U11 COMP pin 7 to compensation resistor R47",
+        "distance_mm": 9.304,
+        "pos1": [
+          100.862498,
+          122.95
+        ],
+        "pos2": [
+          92.16,
+          119.66
+        ],
+        "nets": [
+          "GND",
+          "Net-(U11-FREQ)"
+        ]
+      },
+      "R47.2-C25.1": {
+        "description": "Compensation resistor R47 to comp capacitor C25",
+        "distance_mm": 2.015,
+        "pos1": [
+          91.14,
+          119.66
+        ],
+        "pos2": [
+          89.125,
+          119.66
+        ],
+        "nets": [
+          "GND",
+          "PD_VOUT"
+        ]
+      },
+      "U11.6-R48.1": {
+        "description": "U11 FB pin 6 to feedback top resistor R48",
+        "distance_mm": 12.339,
+        "pos1": [
+          100.862498,
+          122.3
+        ],
+        "pos2": [
+          88.86,
+          125.16
+        ],
+        "nets": [
+          "GND",
+          "V_PRE"
+        ]
+      },
+      "U11.6-R49.1": {
+        "description": "U11 FB pin 6 to feedback bottom resistor R49",
+        "distance_mm": 12.551,
+        "pos1": [
+          100.862498,
+          122.3
+        ],
+        "pos2": [
+          89.66,
+          127.96
+        ],
+        "nets": [
+          "GND",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      }
+    },
+    "boost_fb_trace": {
+      "total_length_mm": 2.585,
+      "segments_count": 4,
+      "segments": [
+        {
+          "start": [
+            93.22,
+            123.26
+          ],
+          "end": [
+            93.52,
+            123.26
+          ],
+          "length_mm": 0.3,
+          "width_mm": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "start": [
+            94.02,
+            122.76
+          ],
+          "end": [
+            94.02,
+            122.3
+          ],
+          "length_mm": 0.46,
+          "width_mm": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "start": [
+            93.52,
+            123.26
+          ],
+          "end": [
+            94.02,
+            122.76
+          ],
+          "length_mm": 0.707,
+          "width_mm": 0.2,
+          "layer": "B.Cu"
+        },
+        {
+          "start": [
+            94.02,
+            122.3
+          ],
+          "end": [
+            95.137,
+            122.3
+          ],
+          "length_mm": 1.117,
+          "width_mm": 0.2,
+          "layer": "B.Cu"
+        }
+      ]
+    }
+  },
+  "AOZ1284": {
+    "C15.1-U5.5": {
+      "description": "Input bulk cap C15 to U5 VIN pin 5",
+      "distance_mm": 13.333,
+      "pos1": [
+        116.0,
+        96.7
+      ],
+      "pos2": [
+        124.1975,
+        107.215
+      ],
+      "nets": [
+        "+3.3V",
+        "/USB_PD_CONTROLLER/COMP_NODE"
+      ]
+    },
+    "C16.1-U5.5": {
+      "description": "Input HF cap C16 to U5 VIN pin 5",
+      "distance_mm": 12.139,
+      "pos1": [
+        120.0,
+        95.825
+      ],
+      "pos2": [
+        124.1975,
+        107.215
+      ],
+      "nets": [
+        "+3.3V",
+        "/USB_PD_CONTROLLER/COMP_NODE"
+      ]
+    },
+    "C16.2-U5.4": {
+      "description": "Input HF cap C16 GND to U5 PGND pin 4 (Hot Loop)",
+      "distance_mm": 12.487,
+      "pos1": [
+        120.0,
+        98.775
+      ],
+      "pos2": [
+        129.2025,
+        107.215
+      ],
+      "nets": [
+        "GND",
+        "/USB_PD_CONTROLLER/FSW_SET"
+      ]
+    },
+    "U5.2-L1.1": {
+      "description": "U5 LX switch pin 2 to Buck Inductor L1 pin 1",
+      "distance_mm": 7.317,
+      "pos1": [
+        129.2025,
+        104.675
+      ],
+      "pos2": [
+        129.62,
+        97.37
+      ],
+      "nets": [
+        "Net-(U5-BST)",
+        "/USB_PD_CONTROLLER/LX_SW"
+      ]
+    },
+    "U5.1-C17.1": {
+      "description": "U5 BST pin 1 to bootstrap cap C17 pin 1",
+      "distance_mm": 5.571,
+      "pos1": [
+        129.2025,
+        103.405
+      ],
+      "pos2": [
+        132.98,
+        107.5
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/LX_SW",
+        "Net-(U5-BST)"
+      ]
+    },
+    "C17.2-U5.2": {
+      "description": "Bootstrap cap C17 pin 2 to U5 LX pin 2",
+      "distance_mm": 3.99,
+      "pos1": [
+        132.02,
+        107.5
+      ],
+      "pos2": [
+        129.2025,
+        104.675
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/LX_SW",
+        "Net-(U5-BST)"
+      ]
+    },
+    "L1.2-C12.1": {
+      "description": "Buck Inductor L1 pin 2 to output cap C12 pin 1",
+      "distance_mm": 9.696,
+      "pos1": [
+        124.37,
+        97.37
+      ],
+      "pos2": [
+        120.8,
+        106.385
+      ],
+      "nets": [
+        "+3.3V",
+        "V_PRE"
+      ]
+    },
+    "L1.2-C13.1": {
+      "description": "Buck Inductor L1 pin 2 to output cap C13 pin 1",
+      "distance_mm": 11.572,
+      "pos1": [
+        124.37,
+        97.37
+      ],
+      "pos2": [
+        117.115,
+        106.385
+      ],
+      "nets": [
+        "+3.3V",
+        "V_PRE"
+      ]
+    },
+    "U5.8-R39.1": {
+      "description": "U5 COMP pin 8 to compensation resistor R39",
+      "distance_mm": 8.017,
+      "pos1": [
+        124.1975,
+        103.405
+      ],
+      "pos2": [
+        118.99,
+        109.5
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/EN_CTRL",
+        "+3.3V"
+      ]
+    },
+    "R39.2-C18.1": {
+      "description": "Compensation resistor R39 to comp cap C18",
+      "distance_mm": 2.568,
+      "pos1": [
+        120.01,
+        109.5
+      ],
+      "pos2": [
+        122.28,
+        108.3
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/FB_3V3",
+        "/USB_PD_CONTROLLER/SS_RAMP"
+      ]
+    },
+    "U5.6-R38.1": {
+      "description": "U5 FB pin 6 to feedback top resistor R38",
+      "distance_mm": 7.131,
+      "pos1": [
+        124.1975,
+        105.945
+      ],
+      "pos2": [
+        130.49,
+        109.3
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/FB_3V3",
+        "/USB_PD_CONTROLLER/FSW_SET"
+      ]
+    },
+    "U5.6-R41.1": {
+      "description": "U5 FB pin 6 to feedback bottom resistor R41",
+      "distance_mm": 3.809,
+      "pos1": [
+        124.1975,
+        105.945
+      ],
+      "pos2": [
+        123.5,
+        109.69
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/FB_3V3",
+        "/USB_PD_CONTROLLER/COMP_NODE"
+      ]
+    }
+  },
+  "LM74801": {
+    "U12.1-Q5.1": {
+      "description": "U12 Anode sense pin 1 to Q5 source pin 1",
+      "distance_mm": 7.61,
+      "pos1": [
+        134.0625,
+        100.25
+      ],
+      "pos2": [
+        126.595,
+        101.715
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/DGATE",
+        "/USB_PD_CONTROLLER/SRC_COMMON"
+      ]
+    },
+    "U12.8-Q5.5": {
+      "description": "U12 Cathode sense pin 8 to Q5 drain pin 5",
+      "distance_mm": 8.507,
+      "pos1": [
+        136.9375,
+        102.25
+      ],
+      "pos2": [
+        129.615,
+        97.92
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/GATE_DRV",
+        "/USB_PD_CONTROLLER/SW_OUT"
+      ]
+    },
+    "U12.4-Q5.4": {
+      "description": "U12 DGATE pin 4 to Q5 gate pin 4",
+      "distance_mm": 3.658,
+      "pos1": [
+        134.0625,
+        101.75
+      ],
+      "pos2": [
+        130.405,
+        101.715
+      ],
+      "nets": [
+        "V_PRE",
+        "/USB_PD_CONTROLLER/DGATE"
+      ]
+    },
+    "U12.2-C31.1": {
+      "description": "U12 CAP pin 2 to charge pump cap C31 pin 1",
+      "distance_mm": 5.956,
+      "pos1": [
+        134.0625,
+        100.75
+      ],
+      "pos2": [
+        140.0,
+        100.275
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/SRC_COMMON",
+        "V_PRE"
+      ]
+    },
+    "C31.2-U12.1": {
+      "description": "Charge pump cap C31 pin 2 to U12 A pin 1",
+      "distance_mm": 6.13,
+      "pos1": [
+        140.0,
+        98.725
+      ],
+      "pos2": [
+        134.0625,
+        100.25
+      ],
+      "nets": [
+        "Net-(U12-CAP)",
+        "/USB_PD_CONTROLLER/DGATE"
+      ]
+    },
+    "Q5.5-C30.1": {
+      "description": "Q5 drain pin 5 to output filter cap C30 pin 1",
+      "distance_mm": 12.642,
+      "pos1": [
+        129.615,
+        97.92
+      ],
+      "pos2": [
+        124.32,
+        109.4
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/SW_OUT",
+        "Net-(C30-Pad1)"
+      ]
+    },
+    "Q5.1-D6.1": {
+      "description": "Q5 source pin 1 to protection diode D6 pin 1",
+      "distance_mm": 4.43,
+      "pos1": [
+        126.595,
+        101.715
+      ],
+      "pos2": [
+        123.15,
+        104.5
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/SRC_COMMON",
+        "/USB_PD_CONTROLLER/GATE_DRV"
+      ]
+    }
+  },
+  "INA226": {
+    "Q5.5-RShunt1.1": {
+      "description": "LM74801 Q5 output drain to Shunt RShunt1 pin 1",
+      "distance_mm": 19.975,
+      "pos1": [
+        129.615,
+        97.92
+      ],
+      "pos2": [
+        133.0375,
+        117.6
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/SW_OUT",
+        "/USB_PD_CONTROLLER/SW_OUT"
+      ]
+    },
+    "RShunt1.1-U3.10": {
+      "description": "Kelvin sense RShunt1 pin 1 to INA226 IN+ pin 10",
+      "distance_mm": 4.31,
+      "pos1": [
+        133.0375,
+        117.6
+      ],
+      "pos2": [
+        135.75,
+        114.25
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/SW_OUT",
+        "/USB_PD_CONTROLLER/SW_OUT"
+      ]
+    },
+    "RShunt1.2-U3.9": {
+      "description": "Kelvin sense RShunt1 pin 2 to INA226 IN- pin 9",
+      "distance_mm": 4.31,
+      "pos1": [
+        138.9625,
+        117.6
+      ],
+      "pos2": [
+        136.25,
+        114.25
+      ],
+      "nets": [
+        "OUT_POS",
+        "OUT_POS"
+      ]
+    },
+    "U3.10-C11.1": {
+      "description": "INA226 IN+ pin 10 to filter cap C11 pin 1",
+      "distance_mm": 4.972,
+      "pos1": [
+        135.75,
+        114.25
+      ],
+      "pos2": [
+        140.72,
+        114.1
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/SW_OUT",
+        "+3.3V"
+      ]
+    },
+    "U3.9-C11.2": {
+      "description": "INA226 IN- pin 9 to filter cap C11 pin 2",
+      "distance_mm": 5.432,
+      "pos1": [
+        136.25,
+        114.25
+      ],
+      "pos2": [
+        141.68,
+        114.1
+      ],
+      "nets": [
+        "OUT_POS",
+        "GND"
+      ]
+    },
+    "RShunt1.2-J4.1": {
+      "description": "Shunt RShunt1 pin 2 to Output Terminal J4 pin 1",
+      "distance_mm": 15.313,
+      "pos1": [
+        138.9625,
+        117.6
+      ],
+      "pos2": [
+        146.0,
+        104.0
+      ],
+      "nets": [
+        "OUT_POS",
+        "OUT_POS"
+      ]
+    },
+    "J4.1-D7.1": {
+      "description": "Output Terminal J4 pin 1 to TVS Diode D7 pin 1",
+      "distance_mm": 16.046,
+      "pos1": [
+        146.0,
+        104.0
+      ],
+      "pos2": [
+        141.85,
+        119.5
+      ],
+      "nets": [
+        "OUT_POS",
+        "OUT_POS"
+      ]
+    },
+    "U3.3-R27.2": {
+      "description": "INA226 ALERT pin 3 to pull-up resistor R27 pin 2",
+      "distance_mm": 2.994,
+      "pos1": [
+        136.75,
+        109.95
+      ],
+      "pos2": [
+        137.26,
+        107.0
+      ],
+      "nets": [
+        "INA_ALERT",
+        "INA_ALERT"
+      ]
+    },
+    "U3.6-C35.1": {
+      "description": "INA226 VS power pin 6 to decoupling cap C35 pin 1",
+      "distance_mm": 11.352,
+      "pos1": [
+        137.75,
+        114.25
+      ],
+      "pos2": [
+        132.02,
+        124.05
+      ],
+      "nets": [
+        "+3.3V",
+        "+3.3V"
+      ]
+    }
+  },
+  "Discharge": {
+    "J4.1-R66.1": {
+      "description": "Output OUT_POS to discharge resistor R66 pin 1",
+      "distance_mm": 22.426,
+      "pos1": [
+        146.0,
+        104.0
+      ],
+      "pos2": [
+        127.5,
+        116.675
+      ],
+      "nets": [
+        "OUT_POS",
+        "/USB_PD_CONTROLLER/SW_OUT"
+      ]
+    },
+    "R66.2-R67.1": {
+      "description": "Discharge resistor R66 to R67",
+      "distance_mm": 17.482,
+      "pos1": [
+        127.5,
+        118.325
+      ],
+      "pos2": [
+        110.0375,
+        117.5
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/DISCH_G",
+        "OUT_POS"
+      ]
+    },
+    "R67.2-Q4.1": {
+      "description": "Discharge resistor R67 to discharge FET Q4 drain/source",
+      "distance_mm": 6.709,
+      "pos1": [
+        115.9625,
+        117.5
+      ],
+      "pos2": [
+        119.0625,
+        123.45
+      ],
+      "nets": [
+        "Net-(Q6-D)",
+        "/USB_PD_CONTROLLER/SW_EN"
+      ]
+    },
+    "Q6.1-Q4.2": {
+      "description": "Discharge driver Q6 to power discharge FET Q4 gate",
+      "distance_mm": 3.391,
+      "pos1": [
+        120.4375,
+        118.45
+      ],
+      "pos2": [
+        119.0625,
+        121.55
+      ],
+      "nets": [
+        "/USB_PD_CONTROLLER/DISCH_G",
+        "GND"
+      ]
+    }
+  }
+}

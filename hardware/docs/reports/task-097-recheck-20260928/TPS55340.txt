@@ -1,0 +1,3939 @@
+
+PDF PAGE 1
+TPS55340 Integrated 5-A Wide Input Range Boost/SEPIC/Flyback DC/DC Regulator
+1 Features
+•
+Internal 5-A, 40-V low-side MOSFET switch
+•
+2.9-V to 32-V input voltage range
+•
+±0.7% reference voltage
+•
+0.5-mA operating quiescent current
+•
+2.7-µA shutdown supply current
+•
+Fixed frequency current mode PWM control
+•
+Frequency adjustable from 100 kHz to 1.2 MHz
+•
+Synchronization capability to external clock
+•
+Adjustable soft-start time
+•
+Pulse skipping for higher efficiency at light loads
+•
+Cycle-by-cycle current limit, thermal shutdown, 
+and UVLO protection
+•
+QFN-16 (3-mm × 3-mm) and HTSSOP-14 
+packages with PowerPAD™
+•
+Wide –40°C to 150°C operating TJ range
+•
+Create a custom design using the TPS55340 with 
+the WEBENCH Power Designer
+2 Applications
+•
+3.3-V, 5-V, 12-V, 24-V power conversion
+•
+Boost, SEPIC, and flyback topologies
+•
+Thunderbolt port, USB type-C power delivery, 
+power docking for tablets, and portable PCs
+•
+Industrial power systems
+•
+ADSL modems
+3 Description
+The TPS55340 is a monolithic, nonsynchronous, 
+switching regulator with integrated 5-A, 40-V power 
+switch. The device can be configured in several 
+standard switching-regulator topologies, including 
+boost, SEPIC, and isolated flyback. The device has 
+a wide input voltage range to support applications with 
+input voltage from multicell batteries or regulated
+3.3-V, 5-V, 12-V, and 24-V power rails.
+The TPS55340 regulates the output voltage with 
+current mode PWM (pulse width modulation) control, 
+and has an internal oscillator. The switching frequency 
+of PWM is set by either an external resistor or by 
+synchronizing to an external clock signal. The user 
+can program the switching frequency from
+100 kHz to 1.2 MHz.
+The device features a programmable soft-start 
+function to limit inrush current during start-up and 
+has other built-in protection features including cycle-
+by-cycle overcurrent limit and thermal shutdown.
+The TPS55340 is available in a small 3-mm × 3-mm 
+16-pin QFN as well as 14-pin HTSSOP packages with 
+PowerPAD for enhanced thermal performance.
+The 5-A, 40-V TPS55340 boost converter in the 
+HTSSOP-14 package is pin-to-pin compatible with the 
+3-A, 40-V TPS61175, and it extends the maximum 
+input voltage from 18 V to 32 V.
+Device Information
+PART NUMBER
+PACKAGE(1)
+BODY SIZE (NOM)
+TPS55340
+HTSSOP (14)
+5.00 mm × 4.40 mm
+WQFN (16)
+3.00 mm × 3.00 mm
+(1)
+For all available packages, see the orderable addendum at 
+the end of the data sheet.
+TPS55340
+VIN
+EN
+SW
+SW
+SW
+FREQ
+SS
+COMP
+SYNC
+FB
+PGND
+PGND
+PGND
+VIN
+VOUT
+RSL
+RSH
+L
+D
+CI
+CO
+RFREQ
+CSS
+RC
+CC
+AGND
+Typical Application (Boost)
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0
+0.4
+0.8
+1.2
+1.6
+2
+2.4
+Output Current (A)
+Efficiency (%)
+VIN = 15 V
+VIN = 12 V
+VIN = 5 V
+VOUT = 24 V
+fSW = 600 kHz
+G031 
+Efficiency vs Output Current
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+PDF PAGE 2
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Revision History.............................................................. 2
+5 Pin Configuration and Functions...................................3
+6 Specifications.................................................................. 4
+6.1 Absolute Maximum Ratings........................................ 4
+6.2 ESD Ratings............................................................... 4
+6.3 Recommended Operating Conditions.........................4
+6.4 Thermal Information....................................................4
+6.5 Electrical Characteristics.............................................5
+6.6 Typical Characteristics................................................6
+7 Detailed Description........................................................9
+7.1 Overview.....................................................................9
+7.2 Functional Block Diagram...........................................9
+7.3 Feature Description.....................................................9
+7.4 Device Functional Modes..........................................12
+8 Application and Implementation..................................13
+8.1 Application Information............................................. 13
+8.2 Typical Applications.................................................. 13
+9 Power Supply Recommendations................................27
+10 Layout...........................................................................28
+10.1 Layout Guidelines................................................... 28
+10.2 Layout Example...................................................... 28
+10.3 Thermal Considerations..........................................28
+11 Device and Documentation Support..........................29
+11.1 Device Support........................................................29
+11.2 Receiving Notification of Documentation Updates..29
+11.3 Support Resources................................................. 29
+11.4 Trademarks............................................................. 29
+11.5 Electrostatic Discharge Caution..............................29
+11.6 Glossary..................................................................29
+12 Mechanical, Packaging, and Orderable 
+Information.................................................................... 30
+4 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision D (June 2019) to Revision E (September 2021)
+Page
+•
+Updated the numbering format for tables, figures, and cross-references throughout the document. ................1
+Changes from Revision C (October 2014) to Revision D (June 2019)
+Page
+•
+Added text note under pin configuration diagrams. ........................................................................................... 3
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 3
+5 Pin Configuration and Functions
+PowerPAD
+16
+SS
+EN
+VIN
+SW
+FREQ
+NC
+PGND
+PGND
+SW
+SW
+NC
+PGND
+SYNC
+AGND
+COMP
+FB
+15
+14
+13
+5
+6
+7
+8
+1
+2
+3
+4
+12
+11
+10
+9
+TI recommends connecting NC with AGND.
+Figure 5-1. RTE Package 16-Pin WQFN Top View 
+1
+7
+6
+5
+4
+3
+2
+14
+8
+9
+10
+11
+12
+13
+SW
+SW
+VIN
+EN
+SS
+SYNC
+AGND
+PGND
+PGND
+NC
+FREQ
+FB
+COMP
+PGND
+PowerPAD
+TI recommends connecting NC with AGND.
+Figure 5-2. PWP Package 14-Pin HTSSOP (Top 
+View) 
+Table 5-1. Pin Functions
+PIN
+DESCRIPTION
+NAME
+QFN-16
+HTSSOP-14
+AGND
+6
+7
+Signal ground of the IC
+COMP
+7
+8
+Output of the transconductance error amplifier. An external RC network connected to this pin 
+compensates the regulator feedback loop.
+EN
+3
+4
+Enable pin. When the voltage of this pin falls below the enable threshold for more than 1 ms, 
+the IC turns off.
+FB
+8
+9
+Error amplifier input and feedback pin for positive voltage regulation. Connect to the center tap 
+of a resistor divider to program the output voltage.
+FREQ
+9
+10
+Switching frequency program pin. An external resistor connected between the FREQ pin and 
+AGND sets the switching frequency.
+NC
+10, 14
+11
+Reserved pin that must be connected to ground
+PGND
+11, 12, 13
+12, 13, 14
+Power ground of the IC. It is connected to the source of the internal power MOSFET switch.
+PowerPAD
+—
+—
+The PowerPAD should be soldered to the AGND. If possible, use thermal vias to connect to 
+internal ground plane for improved power dissipation.
+SS
+4
+5
+Soft-start programming pin. A capacitor between the SS pin and AGND pin programs soft-start 
+timing.
+SW
+1, 15, 16
+1, 2
+SW is the drain of the internal power MOSFET. Connect SW to the switched side of the boost or 
+SEPIC inductor or the flyback transformer.
+SYNC
+5
+6
+Switching frequency synchronization pin. An external clock signal can be used to set the 
+switching frequency between 200 kHz and 1.0 MHz. If not used, this pin should be tied to 
+AGND.
+VIN
+2
+3
+The input supply pin to the IC. Connect VIN to a supply voltage between 2.9 V and 32 V. It is 
+acceptable for the voltage on the pin to be different from the boost power stage input.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+3
+Product Folder Links: TPS55340
+
+
+PDF PAGE 4
+6 Specifications
+6.1 Absolute Maximum Ratings
+over operating temperature range (unless otherwise noted)(1)
+MIN
+MAX
+UNIT
+Supply voltages on pin VIN(2)
+–0.3
+34
+V
+Voltage on pin EN(2)
+–0.3
+34
+V
+Voltage on pins FB, FREQ, and COMP(2)
+–0.3
+3
+V
+Voltage on pin SS(2)
+–0.3
+5
+V
+Voltage on pin SYNC(2)
+–0.3
+7
+V
+Voltage on pin SW(2)
+–0.3
+40
+V
+Operating junction temperature
+–40
+150
+°C
+Storage temperature, Tstg
+–65
+150
+°C
+(1)
+Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress ratings 
+only and functional operation of the device at these or any other conditions beyond those indicated under Section 6.3 is not implied. 
+Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+(2)
+All voltage values are with respect to network ground terminal
+6.2 ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic discharge
+Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all pins(1)
+±2000
+V
+Charged device model (CDM), per JEDEC specification JESD22-C101, all 
+pins(2)
+±500
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)
+JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+6.3 Recommended Operating Conditions
+MIN
+NOM
+MAX
+UNIT
+VIN
+Input voltage range
+2.9
+32
+V
+VOUT
+Output voltage range
+VIN
+38
+V
+VEN
+EN voltage range
+0
+32
+V
+VSYN
+External switching frequency logic input range
+0
+5
+V
+TA
+Operating free-air temperature
+–40
+125
+°C
+TJ
+Operating junction temperature
+–40
+150
+°C
+6.4 Thermal Information
+THERMAL METRIC(1)
+TPS55340
+UNIT
+QFN
+(16 PINS)
+HTSSOP 
+(14 PINS)
+RθJA
+Junction-to-ambient thermal resistance
+43.3
+43.2
+°C/W
+RθJC(top)
+Junction-to-case (top) thermal resistance
+38.7
+33.3
+RθJB
+Junction-to-board thermal resistance
+14.5
+28.3
+ψJT
+Junction-to-top characterization parameter
+0.4
+1.3
+ψJB
+Junction-to-board characterization parameter
+14.5
+28.1
+RθJC(bot)
+Junction-to-case (bottom) thermal resistance
+3.5
+3.9
+(1)
+For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application 
+report (SPRA953).
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+4
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 5
+6.5 Electrical Characteristics
+VIN = 5 V, TJ = –40°C to 150°C, unless otherwise noted. Typical values are at TA = 25°C.
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+SUPPLY CURRENT
+VIN
+Input voltage range
+2.9
+32
+V
+IQ
+Operating quiescent current into VIN
+Device nonswitching, VFB = 2 V
+0.5
+mA
+ISD
+Shutdown current
+EN = GND
+2.7
+10
+µA
+VUVLO
+Undervoltage lockout threshold
+VIN falling
+2.5
+2.7
+V
+Vhys
+Undervoltage lockout hysteresis
+120
+140
+160
+mV
+ENABLE AND REFERENCE CONTROL
+VEN
+EN threshold voltage
+EN rising input
+0.9
+1.08
+1.30
+V
+VEN
+EN threshold voltage
+EN falling input
+0.74
+0.92
+1.125
+V
+VENh
+EN threshold hysteresis
+0.16
+V
+REN
+EN pulldown resistor
+400
+950
+1600
+kΩ
+Toff
+Shutdown delay, SS discharge
+EN high to low
+1.0
+ms
+VSYNh
+SYN logic high voltage
+1.2
+V
+VSYNl
+SYN logic low voltage
+0.4
+V
+VOLTAGE AND CURRENT CONTROL
+VREF
+Voltage feedback regulation voltage
+1.204
+1.229
+1.254
+V
+TA = 25°C
+1.220
+1.229
+1.238
+IFB
+Voltage feedback input bias current
+TA = 25°C
+1.6
+20
+nA
+Isink
+COMP pin sink current
+VFB = VREF + 200 mV, VCOMP = 1 V
+42
+µA
+Isource
+COMP pin source current
+VFB = VREF – 200 mV, VCOMP = 1 V
+42
+µA
+VCCLP
+COMP pin clamp voltage
+High Clamp, VFB = 1 V
+3.1
+V
+Low Clamp, VFB = 1.5 V
+0.75
+VCTH
+COMP pin threshold
+Duty cycle = 0%
+1.04
+V
+Gea
+Error amplifier transconductance
+240
+360
+440
+µS
+Rea
+Error amplifier output resistance
+10
+MΩ
+fea
+Error amplifier crossover frequency
+500
+kHz
+FREQUENCY
+fSW
+Frequency
+RFREQ = 480 kΩ
+75
+94
+130
+kHz
+RFREQ = 80 kΩ
+460
+577
+740
+RFREQ = 40 kΩ
+920
+1140
+1480
+Dmax
+Maximum duty cycle
+VFB = 1.0 V, RFREQ = 80 kΩ
+89%
+96%
+VFREQ
+FREQ pin voltage
+1.25
+V
+Tmin_on
+Minimum on pulse width
+RFREQ = 80 kΩ
+77
+ns
+POWER SWITCH
+RDS(ON)
+N-channel MOSFET on-resistance
+VIN = 5 V
+60
+110
+mΩ
+VIN = 3 V
+70
+120
+ILN_NFET
+N-channel leakage current
+VDS = 25 V, TA = 25°C
+2.1
+µA
+OCP and SS
+ILIM
+N-channel MOSFET current limit
+D = Dmax
+5.25
+6.6
+7.75
+A
+ISS
+Soft-start bias current
+VSS = 0 V
+6
+µA
+THERMAL SHUTDOWN
+Tshutdown
+Thermal shutdown threshold
+165
+°C
+Thysteresis
+Thermal shutdown threshold 
+hysteresis
+15
+°C
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+5
+Product Folder Links: TPS55340
+
+
+PDF PAGE 6
+6.6 Typical Characteristics
+VIN = 5 V, TA = 25°C (unless otherwise noted)
+300
+320
+340
+360
+380
+400
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Transconductance (µA/V)
+G001 
+Figure 6-1. Error Amplifier Transconductance vs 
+Temperature
+1
+2
+3
+4
+5
+6
+7
+8
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Current Limit Threshold (A)
+G002 
+Figure 6-2. Switch Current Limit vs Temperature
+1.22
+1.222
+1.224
+1.226
+1.228
+1.23
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Voltage Reference (V)
+G003 
+Figure 6-3. Feedback Voltage Reference vs 
+Temperature
+0
+20
+40
+60
+80
+100
+120
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+VIN = 3 V
+VIN = 5 V
+VIN = 12 V
+Temperature (°C)
+Resistance (mΩ)
+G004 
+Figure 6-4. RDS(ON) vs Temperature
+0
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+30
+100
+500
+Resistance (kΩ)
+Frequency (kHz)
+G005 
+Figure 6-5. Frequency vs FREQ Resistance
+0
+200
+400
+600
+800
+1000
+1200
+1400
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Frequency (kHz)
+RFREQ = 40 kΩ
+RFREQ = 80 kΩ
+RFREQ = 480 kΩ
+G006 
+Figure 6-6. Frequency vs Temperature
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+6
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 7
+Voltage on the VIN Pin (V)
+Frequency (kHz)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+0
+50
+100
+150
+200
+250
+300
+350
+400
+D006
+Figure 6-7. Minimum Switching Frequency for 
+Quick Recovery from Frequency Foldback
+0
+100
+200
+300
+400
+500
+600
+700
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Frequency (kHz)
+Non-Foldback
+Foldback
+RFREQ = 80 kΩ
+G007 
+Figure 6-8. Nonfoldback Frequency vs Foldback 
+Frequency
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+COMP Voltage (V)
+COMP Pin Clamp High
+COMP Pin Clamp Low
+G008 
+Figure 6-9. COMP Clamp Voltage vs Temperature
+2.5
+2.54
+2.58
+2.62
+2.66
+2.7
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Input Voltage (V)
+UVLO Start
+UVLO Stop
+G009 
+Figure 6-10. Input Voltage UVLO vs Temperature
+0.7
+0.8
+0.9
+1
+1.1
+1.2
+1.3
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Enable Voltage (V)
+EN Voltage Rising
+EN Voltage Falling
+G010 
+Figure 6-11. Enable Voltage vs Temperature
+94
+95
+96
+97
+98
+99
+100
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Maximum Duty Cycle (%)
+RFREQ = 80 kΩ
+G011 
+Figure 6-12. Maximum Duty Cycle vs Temperature
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+7
+Product Folder Links: TPS55340
+
+
+PDF PAGE 8
+70
+75
+80
+85
+90
+95
+100
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Minimum On Time (ns)
+RFREQ = 80 kΩ
+G012 
+Figure 6-13. Minimum On-Time vs Temperature
+1
+2
+3
+4
+5
+6
+7
+8
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Shutdown Current (µA)
+G013 
+Figure 6-14. Shutdown Current vs Temperature
+0.3
+0.6
+0.9
+1.2
+1.5
+1.8
+2.1
+−50
+−25
+0
+25
+50
+75
+100
+125
+150
+Temperature (°C)
+Supply Current (mA)
+Switching
+Non-Switching
+G014 
+Figure 6-15. Supply Current vs Temperature
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+8
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 9
+7 Detailed Description
+7.1 Overview
+The TPS55340 device is a monolithic, nonsynchronous, switching regulator with an integrated 5-A, 40-V power 
+switch. The device can be configured in several standard switching-regulator topologies, including boost, SEPIC, 
+and isolated flyback. The device has a wide input voltage range to support applications with input voltage from 
+multicell batteries or regulated 3.3-V, 5-V, 12-V, and 24-V power rails.
+7.2 Functional Block Diagram
+SW
+Ramp
+Generator
+Lossless
+Current Sense
+EN
+PGND
+Error
+Amp
+VIN
+PWM
+Control
+COMP
+SS
+FREQ
+SYNC
+FB
+AGND
+1.229V
+Reference
+S
+Oscillator
+Gate
+Driver
+7.3 Feature Description
+7.3.1 Operation
+If designed as a boost converter, the TPS55340 device regulates the output with current-mode, pulse-width-
+modulation (PWM) control. The PWM control circuitry turns on the switch at the beginning of each oscillator 
+clock cycle. The input voltage is applied across the inductor and stores the energy as inductor current ramps up. 
+During this portion of the switching cycle, the load current is provided by the output capacitor. When the inductor 
+current reaches a threshold level set by the error amplifier output, the power switch turns off and the external 
+Schottky diode is forward biased to allow the inductor current to flow to the output. The inductor transfers stored 
+energy to replenish the output capacitor and supply the load current. This operation repeats every switching 
+cycle. The duty cycle of the converter is determined by the PWM control comparator which compares the 
+error amplifier output and the current signal. The oscillator frequency is programmed by the external resistor or 
+synchronized to an external clock signal.
+A ramp signal from the oscillator is added to the inductor current ramp to provide slope compensation. Slope 
+compensation is required to avoid subharmonic oscillation that is intrinsic to peak-current mode control at duty 
+cycles higher than 50%. If the inductor value is too small, the internal slope compensation may not be adequate 
+to maintain stability.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+9
+Product Folder Links: TPS55340
+
+
+PDF PAGE 10
+The PWM control feedback loop regulates the FB pin to a reference voltage through a transconductance error 
+amplifier. The output of the error amplifier is connected to the COMP pin. An external RC compensation network 
+connected to the COMP pin is chosen for feedback loop stability and optimum transient response.
+7.3.2 Switching Frequency
+The switching frequency is set by a resistor (RFREQ) connected to the FREQ pin of the TPS55340. The 
+relationship between the timing resistance RFREQ and frequency is shown in the Figure 6-5. Do not leave this pin 
+open. A resistor must always be connected from the FREQ pin to ground for proper operation. The resistor value 
+required for a desired frequency can be calculated using Equation 1.
+RFREQ(kΩ) = 57500 × ƒsw(kHz)–1.03
+(1)
+For the given resistor value, the corresponding frequency can be calculated by Equation 2.
+ƒsw(kHz) = 41600 × RFREQ(kΩ)–0.97
+(2)
+The TPS55340 switching frequency can be synchronized to an external clock signal that is applied to the SYNC 
+pin. The required logic levels of the external clock are shown in Section 6.3. The recommended duty cycle of 
+the clock is in the range of 10% to 90%. A resistor must be connected from the FREQ pin to ground when the 
+converter is synchronized to the external clock and the external clock frequency must be within ±20% of the 
+corresponding frequency set by the resistor. For example, if the frequency programmed by the FREQ pin resistor 
+is 600 kHz, the external clock signal should be in the range of 480 kHz to 720 kHz.
+With a switching frequency below 280 kHz (typical) after the TPS55340 enters frequency foldback as described 
+in Section 7.3.3, if a load remains when the overcurrent condition is removed, then the output may not recover to 
+the set value. For the output to return to the set value, the load must be removed completely or the TPS55340 
+power cycled with the EN pin or VIN pin. Select a nominal switching frequency of 350 kHz for quicker recovery 
+from frequency foldback.
+7.3.3 Overcurrent Protection and Frequency Foldback
+The TPS55340 provides cycle-by-cycle overcurrent protection that turns off the power switch once the inductor 
+current reaches the overcurrent limit threshold. The PWM circuitry resets itself at the beginning of the next 
+switch cycle. During an overcurrent event, the output voltage begins to drop as a function of the load on the 
+output. When the FB voltage through the feedback resistors drops lower than 0.9 V, the switching frequency is 
+automatically reduced to 1/4 of the normal value. Figure 6-8 shows the nonfoldback frequency with an 80-kΩ 
+timing resistor and the corresponding foldback frequency. The switching frequency does not return to normal 
+until the overcurrent condition is removed and the FB voltage increases above 0.9 V. The frequency foldback 
+feature is disabled during soft-start.
+7.3.3.1 Minimum On-Time and Pulse Skipping
+The TPS55340 PWM control system has a minimum PWM pulse width of 77 ns (typical). This minimum on-time 
+determines the minimum duty cycle of the PWM for any set switching frequency. When the voltage regulation 
+loop of the TPS55340 requires a minimum on-time pulse width less than 77 ns, the IC enters pulse skipping 
+mode. In this mode, the device will hold the power switch off for several switching cycles to prevent the output 
+voltage from rising above the desired regulated voltage. This operation typically occurs in light load conditions 
+when the PWM operates in discontinuous conduction mode. Pulse skipping increases the output ripple as shown 
+in Figure 8-7.
+7.3.4 Voltage Reference and Setting Output Voltage
+An internal voltage reference provides a precise 1.229-V voltage reference at the error amplifier noninverting 
+input. To set the output voltage, select the FB pin resistor RSH and RSL according to Equation 3.
+SH
+OUT
+SL
+R
+V
+1.229 V
+1
+R
+æ
+ö
+=
+´
++
+ç
+÷
+è
+ø
+(3)
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+10
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 11
+7.3.5 Soft-Start
+The TPS55340 has a built-in soft-start circuit which significantly reduces the start-up current spike and output 
+voltage overshoot. When the IC is enabled, an internal bias current source (6 µA, typical) charges a capacitor 
+(CSS) on the SS pin. The voltage at the capacitor clamps the output of the internal error amplifier that determines 
+the peak current and duty cycle of PWM controller. Limiting the peak switch current during start-up with a slow 
+ramp on the SS pin will reduce in-rush current and output voltage overshoot. Once the capacitor reaches 1.8 V, 
+the soft-start cycle is completed and the soft-start voltage no longer clamps the error amplifier output. When the 
+EN is pulled low for at least 1 ms, the IC enters the shutdown mode and the SS capacitor is discharged through 
+a 5-kΩ resistor to prepare for the next soft-start sequence.
+7.3.6 Slope Compensation
+The TPS55340 has internal slope compensation to prevent subharmonic oscillations. The sensed current slope 
+of boost converter can be expressed as Equation 4:
+VIN
+S
+R
+n
+SENSE
+L
+=
+´
+(4)
+The slope compensation dv/dt can be calculated using Equation 5.
+0.32 V R
+0.5
+A
+FREQ
+Se
+16
+(1 D)
+6 pF
+6 pF
+m
+=
++
+´
+-
+´
+(5)
+In a converter with current mode control, in addition to the output voltage feedback loop, the inner current loop 
+including the inductor current sampling effect as well as the slope compensation on the small signal response 
+should be taken into account, which can be modeled as seen in Equation 6:
+(
+)
+1
+He(s)
+Se
+s
+1
+(1 D)
+0.5
+2
+S
+s
+n
+1
+2
+fsw
+fsw
+=
+é
+ù
+æ
+ö
+ê
+ú
+ç
+÷
+´
++
+´
+-
+-
+ç
+÷
+ê
+ú
+è
+ø
+ë
+û
++
++
+p´
+(6)
+where
+•
+RSENSE (15 mΩ) is the equivalent current sense resistor.
+•
+RFREQ is timing resistor used to set frequency.
+•
+D is the duty cycle.
+Note
+If Sn << Se, the converter operates in voltage mode control rather than current mode control, and 
+Equation 6 is no longer valid.
+7.3.7 Enable and Thermal Shutdown
+The TPS55340 enters shutdown when the EN voltage is less than 0.68 V (minimum) for more than 1 ms. In 
+shutdown, the input supply current for the device is less than 10 µA (maximum). The EN pin has an internal
+950-kΩ pulldown resistor to disable the device if the pin is floating.
+An internal thermal shutdown turns off the device when the junction temperature exceeds 165°C (typical). The 
+device will restart when the junction temperature drops by 15°C.
+7.3.8 Undervoltage Lockout (UVLO)
+An undervoltage lockout circuit prevents mis-operation of the device at input voltages below 2.5 V (typical). 
+When the input voltage is below the UVLO threshold, the device remains off and the internal power MOSFET is 
+turned off. The UVLO threshold is set below minimum operating voltage of 2.9 V to ensure that a transient VIN 
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: TPS55340
+
+
+PDF PAGE 12
+dip will not cause the device to reset. For the input voltages between UVLO threshold and 2.9 V, the device tries 
+to operate, but the electrical specifications are not assured.
+7.4 Device Functional Modes
+7.4.1 Operation With VIN < 2.9 V (Minimum VIN)
+The TPS55340 device operates with input voltages above 2.9 V. The typical UVLO voltage (turning off) is 2.5 
+V and the TPS55340 device remains off at input voltages lower than that point. For the input voltages between 
+UVLO threshold and 2.9 V, the device tries to operate, but the electrical specifications are not ensured.
+7.4.2 Operation With EN Control
+The enable rising-edge threshold voltage is 1.08 V (typical) with 0.16 V hysteresis (typical). With the EN pin held 
+below the turn-off voltage, the device is disabled and switching is inhibited. The IC quiescent current is reduced 
+in this state. When the input voltage is above the UVLO threshold and the EN pin voltage increases above the 
+rising edge threshold, the device becomes active. Switching enables and the soft-start sequence initiates. The 
+TPS55340 device starts at the soft-start time determined by the external soft-start capacitor.
+7.4.3 Operation at Light Loads
+The device is designed to operate in high-efficiency, pulse-skipping mode under light load conditions. 
+Discontinuous-conduction-mode (DCM) operation initiates when the switch current falls to 0 A. During DCM 
+operation, the catch diode stops conducting when the switch current falls to 0 A. The switching node (the SW 
+pin) waveform takes on the characteristics of DCM operation as shown in Figure 8-6. As the load decreases 
+further and when the voltage-regulation loop of TPS55340 device requires an on-time pulse width less than the 
+minimum PWM pulse width of 77 ns (typical), the IC enters pulse-skipping mode. In this mode, the device holds 
+the power switch off for several switching cycles to prevent the output voltage from rising too much above the 
+desired regulated voltage.
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+12
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 13
+8 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification, 
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for 
+determining suitability of components for their purposes, as well as validating and testing their design 
+implementation to confirm system functionality.
+8.1 Application Information
+The TPS55340 device can be configured in several standard switching-regulator topologies, including boost, 
+SEPIC, and isolated flyback. For example, the device configured in boost topology is widely used to convert a 
+lower dc voltage to a higher dc voltage with a maximum available switching current of 5.25 A. Use the following 
+design procedure to select component values for a boost converter design or SEPIC design for the TPS55340 
+device. Alternately, use the WEBENCH® software to generate a complete design. The WEBENCH software 
+uses an iterative design procedure and accesses a comprehensive database of components when generating a 
+design. This section presents a simplified discussion of the design process.
+8.2 Typical Applications
+The following section provides a step-by-step design approach for configuring the TPS55340 as a voltage 
+regulating boost converter, as shown in Figure 8-1. When configured as SEPIC or flyback converter, a different 
+design approach is required. A design example of SEPIC converter is provided in the next section.
+8.2.1 Boost Converter
+100 pF
+Figure 8-1. Boost Converter Application Schematic
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+13
+Product Folder Links: TPS55340
+
+
+PDF PAGE 14
+8.2.1.1 Design Requirements
+For this design example, use the parameters listed in Table 8-1. These parameters are typically determined at 
+the system level.
+Table 8-1. Design Parameters
+PARAMETER
+VALUE
+Output voltage
+24 V
+Input voltage
+5 V to 12 V
+Maximum output current
+800 mA
+Transient response 50% load step (ΔVOUT = 3%)
+960 mV
+Output voltage ripple (0.5% of VOUT)
+120 mV
+8.2.1.2 Detailed Design Procedure
+8.2.1.2.1 Custom Design with WEBENCH Tools
+Click here to create a custom design using the TPS55340 device with the WEBENCH® Power Designer.
+1.
+Start by entering your VIN, VOUT and IOUT requirements.
+2.
+Optimize your design for key parameters like efficiency, footprint and cost using the optimizer dial and 
+compare this design with other possible solutions from Texas Instruments.
+3.
+WEBENCH Power Designer provides you with a customized schematic along with a list of materials with real 
+time pricing and component availability.
+4.
+In most cases, you will also be able to:
+•
+Run electrical simulations to see important waveforms and circuit performance,
+•
+Run thermal simulations to understand the thermal performance of your board,
+•
+Export your customized schematic and layout into popular CAD formats,
+•
+Print PDF reports for the design, and share your design with colleagues.
+5.
+Get more information about WEBENCH tools at www.ti.com/webench.
+8.2.1.2.2 Selecting the Switching Frequency (R4)
+The first step is to decide on a switching frequency for the regulator. There are tradeoffs to consider for a 
+higher or lower switching frequency. A higher switching frequency allows for lower valued inductor and smaller 
+output capacitors leading to the smallest solution size. A lower switching frequency will result in a larger solution 
+size but better efficiency. The user will typically set the frequency for the minimum tolerable efficiency to avoid 
+excessively large external components.
+A switching frequency of 600 kHz is a good trade-off between efficiency and solution size. The appropriate 
+resistor value is found from the resistance versus frequency graph of Figure 6-5, or calculated using Equation 1. 
+R4 is calculated to be 78.4 kΩ and the nearest standard value resistor of 78.7 kΩ is selected. A resistor must be 
+placed from the FREQ pin to ground, even if an external oscillation is applied for synchronization.
+8.2.1.2.3 Determining the Duty Cycle
+The input-to-output voltage conversion ratio of the TPS55340 is limited by the worst case maximum duty cycle 
+of 89% and the minimum duty cycle which is determined by the minimum on-time of 77 ns and the switching 
+frequency. The minimum duty cycle can be estimated with Equation 7. With a 600-kHz switching frequency the 
+minimum duty cycle is 4%.
+DPS = TON min × ƒsw
+(7)
+The duty cycle at which the converter operates is dependent on the mode in which the converter is running. If 
+the converter is running in DCM, where the inductor current ramps to zero at the end of each cycle, the duty 
+cycle varies with changes of the load much more than it does when running in continuous conduction mode 
+(CCM). In CCM, where the inductor maintains a minimum dc current, the duty cycle is related primarily to the 
+input and output voltages as computed below. Assume a 0.5-V drop VD across the Schottky rectifier. At the 
+minimum input of 5 V, the duty cycle will be 80%. At the maximum input of 12 V, the duty cycle is 51%.
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+14
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 15
+OUT
+D
+IN
+OUT
+V
+V
+V
+D
+V
+VD
++
+-
+=
++
+(8)
+At light loads the converter will operate in DCM. In this case the duty cycle is a function of the load, input and 
+output voltages, inductance, and switching frequency as computed below. This can be calculated only after an 
+inductance is chosen in the following section. While operating in DCM with very light load conditions, the duty 
+cycle demand will force the TPS55340 to operate with the minimum on-time. The converter will then begin pulse 
+skipping which can increase the output ripple.
+OUT
+D
+IN
+OUT
+SW
+IN
+2
+(V
+V
+V ) L
+I
+D
+V
+´
++
+-
+´
+´
+´ ¦
+=
+(9)
+All converters using a diode as the freewheeling or catch component have a load current level at which 
+they transit from DCM to CCM. At this point the inductor current just falls to zero during the off-time of the 
+power switch. At higher load currents, the inductor current does not fall to zero and diode and switch current 
+assume a trapezoidal wave shape as opposed to a triangular wave shape. The load current boundary between 
+discontinuous conduction and continuous conduction can be found for a set of converter parameters as follows:
+(
+)
+(
+)
+OUT
+D
+IN
+IN
+OUT(crit)
+OUT
+D
+SW
+2
+2
+V
+V
+V
+V
+I
+2
+V
+V
+L
++
+-
+´
+=
+´
++
+´ ¦
+´
+(10)
+For loads higher than the result of Equation 10, the duty cycle is given by Equation 8. For loads less than the 
+results of Equation 10, the duty cycle is given by Equation 9. For Equation 7 through Equation 10, the variable 
+definitions are as follows:
+•
+VOUT is the output voltage of the converter in V.
+•
+VD is the forward conduction voltage drop across the rectifier or catch diode in V.
+•
+VIN is the input voltage to the converter in V.
+•
+IOUT is the output current of the converter in A.
+•
+L is the inductor value in H.
+•
+ƒSW is the switching frequency in Hz.
+Unless otherwise stated, the design equations that follow assume that the converter is running in CCM which 
+typically results in a higher efficiency for the power levels of this converter.
+8.2.1.2.4 Selecting the Inductor (L1)
+The selection of the inductor affects steady-state operation as well as transient behavior and loop stability. These 
+factors make it the most important component in power regulator design. There are three important inductor 
+specifications: inductor value, dc resistance and saturation current. Considering inductor value alone is not 
+enough. Inductor values can have ±20% tolerance with no current bias. When the inductor current approaches 
+saturation level, the effective inductance can fall to a fraction of the zero current value.
+The minimum value of the inductor should be able to meet the inductor current ripple (ΔIL) requirement at worst 
+case. In a boost converter, maximum inductor current ripple occurs at 50% duty cycle. For the applications 
+where duty cycle is always smaller or larger than 50%, Equation 12 should be used with the duty cycle closest 
+to 50% and corresponding input voltage to calculate the minimum inductance. For applications that must operate 
+with 50% duty cycle when input voltage is somewhere between the minimum and the maximum input voltage, 
+Equation 13 should be used. KIND is a coefficient that represents the amount of inductor ripple current relative 
+to the maximum input current (IINDC = ILavg). The maximum input current can be estimated with Equation 11, 
+with an estimated efficiency based on similar applications (ηEST). The inductor ripple current will be filtered by 
+the output capacitor. Therefore, choosing high inductor ripple currents will impact the selection of the output 
+capacitor because the output capacitor must have a ripple current rating equal to or greater than the inductor 
+ripple current. In general, the inductor ripple value (KIND) is at the discretion of the designer. However, the 
+following guidelines may be used.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: TPS55340
+
+
+PDF PAGE 16
+For CCM operation, it is recommended to use KIND values in the range of 0.2 to 0.4. Choosing KIND closer to 0.2 
+results in a larger inductance value, maximizes the potential output current of the converter and minimizes EMI. 
+Choosing KIND closer to 0.4 results in a smaller inductance value, a physically smaller inductor, and improved 
+transient response, but potentially worse EMI and lower efficiency. Using an inductor with a smaller inductance 
+value may result in the converter operating in DCM. This reduces the maximum output current of the boost 
+converter, causes larger input voltage and output voltage ripple, and reduced efficiency. For this design, choose 
+KIND = 0.3 and a conservative efficiency estimate of 85% with the minimum input voltage and maximum output 
+current. Equation 12 is used with the maximum input voltage because this corresponds to duty cycle closest to 
+50%. The maximum input current is estimated at 4.52 A and the minimum inductance is 7.53 µH. A standard 
+value of 10 µH is chosen.
+OUT
+OUT
+IN
+EST
+IN
+V
+I
+I DC
+V
+min
+´
+= h
+´
+(11)
+IN
+O
+IN
+IND
+SW
+V
+D
+L
+min
+I DC
+K
+³
+´
+´
+¦
+, D
+50%, V
+with D closest to 50%
+≠
+IN
+(12)
+(
+)
+OUT
+D
+O
+IN
+IND
+SW
+V
+V
+1
+L
+min
+I DC
+K
+4
++
+³
+´
+´
+´ ¦
+, D=50%
+(13)
+After choosing the inductance, the required current ratings can be calculated. The inductor will be closest to 
+its ratings with the minimum input voltage. The ripple with the chosen inductance is calculated with Equation 
+14. The RMS and peak inductor current can be found with Equation 15 and Equation 16. For this design the 
+current ripple is 663 mA, the RMS inductor current is 4.52 A, and the peak inductor current is 4.85 A. It is 
+generally recommended for the peak inductor current rating of the selected inductor be 20% higher to account 
+for transients during powerup, faults, or transient load conditions. The most conservative approach is to specify 
+an inductor with a saturation current greater than the maximum peak current limit of the TPS55340. This helps 
+to avoid saturation of the inductor. The chosen inductor is a Würth Elektronik 74437368100. It has a saturation 
+current rating of 12.5 A, RMS current rating of 5.2 A, and typical DCR of 27.0 mΩ.
+IN
+L
+O
+SW
+V
+min
+Dmax
+I
+L
+D
+=
+´ ¦
+(14)
+(
+)
+L
+L
+IN
+2
+2
+I
+I rms
+I DC
+12
+D
+æ
+ö
+=
++ ç
+÷
+è
+ø
+(15)
+L
+L
+IN
+I
+I peak
+I DC
+2
+D
+=
++
+(16)
+The TPS55340 has built-in slope compensation to avoid subharmonic oscillation associated with current mode 
+control. If the inductor value is too small, the slope compensation may not be adequate, and the loop can be 
+unstable.
+8.2.1.2.5 Computing the Maximum Output Current
+The overcurrent limit for the integrated power MOSFET limits the maximum input current and thus the maximum 
+input power for a given input voltage. Maximum output power is less than maximum input power due to 
+power conversion losses. Therefore, the current limit setting, input voltage, output voltage, and efficiency can 
+all change maximum current output (IOUTmax). The current limit clamps the peak inductor current; therefore, 
+the ripple has to be subtracted to derive maximum dc current. Decreasing the KIND or designing for a higher 
+efficiency will increase the maximum output current. This can be evaluated with the chosen inductance or the 
+chosen KIND. This should be evaluated with the minimum input voltage and minimum peak current limit (ILIM) of 
+5.25 A.
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+16
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 17
+L
+IND
+IN
+LIM
+EST
+IN
+LIM
+EST
+OUT
+OUT
+OUT
+I
+K
+V
+min
+I
+V
+min
+I
+1
+2
+2
+I
+max
+V
+V
+D
+æ
+ö
+æ
+ö
+´
+-
+´ h
+´
+´
+-
+´ h
+ç
+÷
+ç
+÷
+è
+ø
+è
+ø
+=
+=
+(17)
+In this design with a 5-V input boosted to a 24-V output and a 10-μH inductor with an assumed Schottky forward 
+voltage of 0.5 V and estimated efficiency of 85%, the maximum output current is 871 mA. With the 12-V input 
+and increased estimated efficiency of 90%, the maximum output current increases to 2.13 A. This circuit was 
+evaluated to its maximum output currents with both the minimum and maximum input voltage.
+8.2.1.2.6 Selecting the Output Capacitors (C8, C9, C10)
+At least 4.7 µF of ceramic-type X5R or X7R capacitance is recommended at the output. The output capacitance 
+is mainly selected to meet the requirements for the output ripple (VRIPPLE) and voltage change during a load 
+transient. Then the loop is compensated for the output capacitor selected. The output capacitance should be 
+chosen based on the most stringent of these criteria. The output ripple voltage is related to the capacitance and 
+equivalent series resistance (ESR) of the output capacitor. Assuming a capacitor with zero ESR, the minimum 
+capacitance needed for a given ripple can be calculated by Equation 18. If high ESR capacitors are used, it will 
+contribute additional ripple. The maximum ESR for a specified ripple is calculated with Equation 19. ESR ripple 
+can be neglected for ceramic capacitors but must be considered if tantalum or electrolytic capacitors are used. 
+The minimum ceramic output capacitance needed to meet a load transient requirement can be estimated by the 
+Equation 20. Equation 21 can be used to calculate the RMS current that the output capacitor needs to support.
+OUT
+OUT
+SW
+RIPPLE
+Dmax
+I
+C
+V
+´
+³ ¦
+´
+(18)
+OUT
+RIPPLE
+SW
+OUT
+L
+Dmax
+I
+V
+C
+ESR
+I
+æ
+ö
+´
+-
+ç
+÷
+¦
+´
+è
+ø
+£
+D
+(19)
+TRAN
+OUT
+BW
+TRAN
+I
+C
+2
+V
+D
+³
+´ p´ ¦
+´ D
+(20)
+(
+)
+CO
+OUT
+Dmax
+I
+rms
+I
+1 Dmax
+=
+-
+(21)
+Using Equation 18 for this design, the minimum output capacitance for the specified 120-mV output ripple is
+8.8 µF. For a maximum transient voltage change (ΔVTRAN) of 960 mV with a 400-mA load transient (ΔITRAN) and 
+a 6-kHz control loop bandwidth (fBW) with Equation 20, the minimum output capacitance is 11.1 µF. The most 
+stringent criteria is the 11.1 µF for the required load transient. Equation 21 gives a 1.58-A RMS current in the 
+output capacitor. The capacitor should also be properly rated for the desired output voltage.
+Care must be taken when evaluating ceramic capacitors that derate under dc bias, aging, and ac signal 
+conditions. For example, larger form factor capacitors (in 1206 size) have self-resonant frequencies in the range 
+of converter switching frequency. Self-resonance causes the effective capacitance to be significantly lower. 
+The dc bias can also significantly reduce capacitance. Ceramic capacitors can lose as much as 50% of the 
+capacitance when operated at the rated voltage. Therefore, allow a margin in selected capacitor voltage rating 
+to ensure adequate capacitance at the required output voltage. For this example, three 4.7-µF, 50-V, 1210 X7R 
+ceramic capacitors are used in parallel leading to a negligible ESR. Choosing 50-V capacitors instead of 35-V 
+reduces the effects of dc bias and allows this example circuit to be rated for the maximum output voltage range 
+of the TPS55340.
+8.2.1.2.7 Selecting the Input Capacitors (C2, C7)
+At least 4.7 µF of ceramic input capacitance is recommended. Additional input capacitance may be required to 
+meet ripple and/or transient requirements. High-quality ceramic, type X5R or X7R are recommended to minimize 
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+17
+Product Folder Links: TPS55340
+
+
+PDF PAGE 18
+capacitance variations over temperature. The capacitor must also have an RMS current rating greater than the 
+maximum RMS input current of the TPS55340 calculated with Equation 22. The input capacitor must also be 
+rated greater than the maximum input voltage. The input voltage ripple can be calculated with Equation 23.
+L
+CI
+I
+I rms
+12
+D
+=
+(22)
+I
+L
+CIN
+SW
+IN
+IL
+Vripple
+I
+R
+4
+C
+D
+=
++ D
+´
+´ ¦
+´
+(23)
+In the design example, the input RMS current is calculated to be 191 mA. The chosen input capacitor is a 10-µF, 
+35-V, 1210 X7R with 3-mΩ ESR. Although one with a lower voltage rating can be used, a 35-V rated capacitor 
+was chosen to limit the affects of dc bias and to allow the circuit to be rated for the entire input range of the 
+TPS55340. The input ripple is calculated to be 30 mV. An additional 0.1-µF, 50-V, 0603 X5R is located close to 
+the VIN and GND pins for extra decoupling.
+8.2.1.2.8 Setting Output Voltage (R1, R2)
+To set the output voltage in either DCM or CCM, select the values of R1 and R2 according to the following 
+equations:
+OUT
+R1
+V
+1.229V
+1
+R2
+æ
+ö
+=
+´
++
+ç
+÷
+è
+ø
+(24)
+OUT
+V
+R1
+R2
+1
+1.229V
+æ
+ö
+=
+´
+-
+ç
+÷
+è
+ø
+(25)
+Considering the leakage current through the resistor divider and noise decoupling into the FB pin, an optimum 
+value for R2 is around 10 kΩ. The output voltage tolerance depends on the VFB accuracy and the tolerance of 
+R1 and R2. In this example with a 24-V output using Equation 25, R1 is calculated to 185.3 kΩ. The nearest 
+standard value of 187 kΩ is used.
+8.2.1.2.9 Setting the Soft-start Time (C7)
+Choose the appropriate capacitor to set soft-start time and avoid overshoot. Increasing the soft-start time 
+reduces the overshoot during startup. A 0.047-µF ceramic capacitor is used in this example.
+8.2.1.2.10 Selecting the Schottky Diode (D1)
+The high switching frequency of the TPS55340 demands high-speed rectification for optimum efficiency. Ensure 
+that the average and peak current ratings of the diode exceed the average output current and peak inductor 
+current. In addition, the reverse breakdown voltage of the diode must exceed the regulated output voltage. The 
+diode must also be rated for the power dissipated which can be calculated with Equation 26.
+PD = VD × IOUT
+(26)
+In this conservative design example, the diode is chosen to be rated for the maximum output current of 2.13 A. 
+During normal operation with 800-mA output current and assuming a Schottky diode drop of 0.5 V, the diode 
+must be capable of dissipating 400 mW. The recommended minimum ratings for this design are a 40-V, 3-A 
+diode. However, to improve the flexibility of this design, a Diodes Inc B540-13-F in an SMC package is used with 
+voltage and current ratings of 40 V and 5 A.
+8.2.1.2.11 Compensating the Control Loop (R3, C4, C5)
+The TPS55340 requires external compensation which allows the loop response to be optimized for each 
+application. The COMP pin is the output of the internal error amplifier. An external resistor R3 and ceramic 
+capacitor C4 are connected to the COMP pin to provide a pole and a zero, shown in Figure 8-1. This pole and 
+zero, along with the inherent pole and zero of a boost converter, determine the closed-loop frequency response. 
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+18
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 19
+This is important for converter stability and transient response. Loop compensation should be designed for the 
+minimum operating voltage.
+The following equations summarize the loop equations for the TPS55340 configured as a CCM boost converter. 
+They include the power stage output pole (ƒOUT) and the right-half-plane zero (ƒRHPZ) of a boost converter 
+calculated with Equation 27 and Equation 28, respectively. When calculating ƒOUT, it is important to include the 
+derating of ceramic output capacitors. In the example with an estimated 10.2-µF capacitance, these frequencies 
+are calculated to be 980 kHz and 22.1 kHz, respectively. The dc gain (A) of the power stage is calculated with 
+Equation 29 and is 39.9 dB in this design. The compensation pole (ƒP) and zero (ƒZ) generated by R3, C4, and 
+internal transconductance amplifier are calculated with Equation 30 and Equation 31, respectively.
+Most CCM boost converters will have a stable control loop if fZ is set slightly above ƒP through proper 
+sizing of R3 and C4. A good starting point is C4 = 0.1 µF and R3 = 2 kΩ. Increasing R3 or reducing C4 
+increases the closed-loop bandwidth, and therefore improves the transient response. Adjusting R3 and C4 in the 
+opposite direction increases the phase and gain margin of the loop, which improves loop stability. It is generally 
+recommended to limit the bandwidth of the loop to the lower of either 1/5 of the switching frequency ƒSW or 1/3 
+the RHPZ frequency, ƒRHPZ shown in Equation 28. The spreadsheet tool located in the TPS55340 product folder 
+at www.ti.com can also be used to aid in compensation design.
+OUT
+OUT
+OUT
+2
+2
+R
+C
+¦
+»
+p´
+´
+(27)
+OUT
+IN
+RHPZ
+OUT
+2
+R
+V
+2
+L
+V
+æ
+ö
+¦
+»
+´ ç
+÷
+p´
+è
+ø
+(28)
+ea
+IN
+OUT
+OUT
+OUT
+SENSE
+V
+1.229
+1
+A
+G
+10M
+R
+V
+V
+R
+2
+=
+´
+´
+W ´
+´
+´
+´
+(29)
+P
+1
+2
+10M
+C4
+¦
+=
+p´
+W ´
+(30)
+Z
+1
+2
+R3
+C4
+¦
+=
+p´
+´
+(31)
+co1
+SW
+5
+¦
+¦
+=
+(32)
+co2
+RHPZ
+3
+¦
+¦
+=
+(33)
+where
+•
+COUT is the equivalent output capacitor (COUT= C8 + C9 + C10)
+•
+ROUT is the equivalent load resistance (VOUT/IOUT)
+•
+Gea is the error amplifier transconductance located in Section 6.5
+•
+RSENSE (15 mΩ, typical) is the sense resistor in the current control loop
+•
+ƒco1 and ƒco2 are possible bandwidths.
+An additional capacitor from the COMP pin to GND (C5) can be used to place a high-frequency pole in the 
+control loop. This is not always necessary with ceramic output capacitors. If a nonceramic output capacitor is 
+used, there is an additional zero (fZESR) in the control loop which can be calculated with Equation 35. The value 
+of C5 and the pole created by C5 can be calculated with Equation 36 and Equation 34, respectively. Finally, if 
+more phase margin is needed, an additional zero (fZFF) can be added by placing a capacitor (CFF) in parallel 
+with the top feedback resistor R1. It is recommended to place the zero at the target cross-over frequency or 
+higher. The feed-forward capacitor also adds a pole at a higher frequency. The recommended value of CFF can 
+be calculated with Equation 37.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+19
+Product Folder Links: TPS55340
+
+
+PDF PAGE 20
+P2
+1
+2
+R3
+C5
+¦
+=
+p´
+´
+(34)
+ZESR
+ESR
+OUT
+1
+2
+R
+C
+¦
+»
+p´
+´
+(35)
+ESR
+OUT
+R
+C
+C5
+R3
+´
+=
+(36)
+FF
+REF
+ZFF
+OUT
+1
+C
+V
+2
+R1
+V
+=
+p´
+´ ¦
+´
+(37)
+where
+•
+RESR is the ESR of the output capacitor
+If a network measurement tool is available, the most accurate compensation design can be achieved following 
+this procedure. The power stage frequency response is first measured using a network analyzer at the minimum 
+5-V input and maximum 800-mA load. This measurement is shown in Figure 8-2. In this design only one pole 
+and one zero are used, so the maximum phase increase from the compensation will be 180 degrees. For a
+60-degree phase margin, the power stage phase must be –120 degrees at its lowest point. Based on the target 
+6-kHz bandwidth, the measured power stage gain, KPS(fBW), is 24.84 dB and the phase is –110.3 degrees.
+100
+1k
+10k
+100k
+−60
+−40
+−20
+0
+20
+40
+60
+−180
+−150
+−120
+−90
+−60
+−30
+0
+Frequency (Hz)
+Gain (dB)
+Gain
+Phase
+G016 
+Figure 8-2. Power Stage Gain and Phase of the Boost Converter
+R3 is then chosen to set the compensation gain to be the reciprocal of the power stage gain at the target 
+bandwidth using Equation 38. C4 is then chosen to place a zero at 1/10 the target bandwidth with Equation 39. 
+In this case, R3 is calculated to be 2.56 kΩ and the nearest standard value of 2.55 kΩ is used. C4 is calculated 
+at 0.104 µF and the nearest standard value of 0.100 µF is used. Although not necessary because this design 
+uses all ceramic capacitors, a 100-pF capacitor is selected for C5 to add a high-frequency pole at a frequency 
+100 times the target bandwidth.
+(
+)
+(
+)
+KPS
+BW
+20
+1
+R3
+R2
+Gea
+10
+R1
+R2
+¦
+= æ
+ö
+ç
+÷
+´
+´
+ç
+÷
++
+è
+ø
+(38)
+BW
+1
+C4
+2
+R3
+10
+=
+¦
+p´
+´
+(39)
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+20
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 21
+8.2.1.3 Application Curves
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0
+0.4
+0.8
+1.2
+1.6
+2
+Output Current (A)
+Efficiency (%)
+VIN = 5 V
+VIN = 12 V
+G017 
+Figure 8-3. Efficiency vs Output Current
+I
+= 200mA/div
+OUT
+Time - 1ms/div
+V
+(ac coupled) = 500mV/div
+OUT
+Figure 8-4. Load Transient Response
+V
+(ac coupled) = 100mV/div
+OUT
+SW = 20V/div
+I = 1A/div
+L
+Time - 1ms/div
+Figure 8-5. CCM PWM Operation
+V
+(ac coupled) = 10mV/div
+OUT
+I = 1A/div
+L
+SW = 20V/div
+Time - 1 s/div
+m
+Figure 8-6. DCM PWM Operation
+V
+(ac coupled) = 20mV/div
+OUT
+I = 200mA/div
+L
+SW = 20V/div
+Time - 50 s/div
+m
+Figure 8-7. Pulse Skipping
+V
+= 1V/div
+IN
+EN = 2V/div
+V
+= 10V/div
+OUT
+SW = 10V/div
+Time - 500 s/div
+m
+Figure 8-8. Start-Up
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+21
+Product Folder Links: TPS55340
+
+
+PDF PAGE 22
+100
+1k
+10k
+100k
+−60
+−40
+−20
+0
+20
+40
+60
+−180
+−120
+−60
+0
+60
+120
+180
+Frequency (Hz)
+Gain (dB)
+Phase (°)
+5 V Gain
+5 V Phase
+15 V Gain
+15 V Phase
+IOUT = 800 mA
+G023 
+Figure 8-9. Closed-Loop Gain and Phase of the Boost Converter
+8.2.2 SEPIC Converter
+VIN
+6-18V
+VIN
+VIN
+12V, 1A
+49.9
+86.6k
+1
+1
+Not Populated
+TP3
+SYNC
+SYNC
+TP2
+TP5
+TP4
+Lb
+La
+Figure 8-10. SEPIC Converter Application Schematic
+8.2.2.1 Design Requirements
+The parameters listed in Table 8-2 are used for a SEPIC converter design. These calculations are performed 
+only for CCM operation. The use of a coupled inductor is assumed.
+Table 8-2. Design Parameters
+PARAMETER
+VALUE
+Output voltage
+12 V
+Input voltage
+6 V to 18 V, 12 V nominal
+Maximum output current
+1 A
+Transient response 50% load step (ΔVOUT = 4%)
+480 mV
+Output voltage ripple (0.5% of VOUT)
+60 mV
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+22
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 23
+8.2.2.2 Detailed Design Procedure
+8.2.2.2.1 Selecting the Switching Frequency (R4)
+A 500-kHz switching frequency (ƒSW) is selected for this design. Using Equation 1, R4 is calculated and the 
+nearest standard value of 95.3 kΩ is used.
+8.2.2.2.2 Duty Cycle
+The duty cycle of a SEPIC converter is calculated with Equation 40. With the 6-V minimum input voltage, the 
+duty cycle is 68%; and with the 18-V maximum input voltage, the duty cycle is 41%.
+OUT
+D
+OUT
+D
+IN
+V
+V
+D
+V
+V
+V
++
+=
++
++
+(40)
+8.2.2.2.3 Selecting the Inductor (L1)
+With an estimated 85% efficiency, the input current is calculated with Equation 9 to be 2.35 A. With KIND of 
+0.3 and the maximum 18-V input voltage, the minimum inductance is calculated to be 10.5 µH using Equation 
+41. The nearest standard value of 12 µH is used. As mentioned previously, this equation assumes a coupled 
+inductor is used.
+IN
+SW
+IN
+IND
+V
+max Dmin
+L
+2
+I DC
+K
+´
+³
+´ ¦
+´
+´
+(41)
+The inductor ripple current is recalculated to be 615 mA with Equation 42. The peak current is calculated to be
+3.69 A. The typical current limit is used as the saturation rating for the inductor used. The RMS current for La is 
+approximately the average input current of 2.35 A. The RMS current for Lb is approximately the output current 
+of 1 A. For this design, a CoilCraft MSD1260-123 is used with 6.86-A saturation, 74-mΩ DCR, and 3.12-A RMS 
+current rating for one winding.
+IN
+L
+SW
+V
+max Dmin
+I
+2
+L
+´
+D
+=
+´ ¦
+´
+(42)
+L
+L
+peak
+peak
+DC
+L
+La
+Lb
+IN
+OUT
+I
+I
+I peak
+I
+I
+I
+I
+2
+2
+D
+D
+æ
+ö
+æ
+ö
+=
++
+=
++
++
++
+ç
+÷
+ç
+÷
+è
+ø
+è
+ø
+(43)
+8.2.2.2.4 Calculating the Maximum Output Current
+The maximum output current with the minimum input voltage 6 V, chosen inductance 12 µH, 5.25-A minimum 
+current limit, and estimated 85% efficiency is calculated to be 1.47 A using Equation 44.
+(
+)
+(
+)
+LIM
+L
+LIM
+IN
+IND
+OUT
+OUT
+OUT
+IN
+EST
+IN
+EST
+I
+I
+I
+I DC
+K
+I
+max
+V
+V
+1
+1
+V
+min
+V
+min
+- D
+-
+´
+=
+=
+æ
+ö
+æ
+ö
++
++
+ç
+÷
+ç
+÷
+´ h
+´ h
+è
+ø
+è
+ø
+(44)
+8.2.2.2.5 Selecting the Output Capacitors (C8, C9, C10)
+To meet the 60-mV ripple specification, the minimum output capacitance is calculated to be 22.5 µF with 
+Equation 45. This design uses ceramic output capacitors and the effects of ESR are ignored. To meet the 
+transient response of 500 mA with less than 480-mV voltage change and a 7-kHz control loop bandwidth, the 
+minimum output capacitance is calculated to be 23.7 µF using Equation 46. The RMS current is calculated with 
+Equation 22 to be 1.44 A. The output capacitors used in this design are 3 × 22 µF, 25 V, X7R 1210 ceramic 
+capacitors. With voltage derating, the effective total output capacitance is estimated to be 30.4 µF.
+OUT
+OUT
+SW
+RIPPLE
+Dmax
+I
+C
+V
+´
+³ ¦
+´
+(45)
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+23
+Product Folder Links: TPS55340
+
+
+PDF PAGE 24
+TRAN
+OUT
+BW
+TRAN
+I
+C
+2
+V
+D
+³
+p´ ¦
+´ D
+(46)
+8.2.2.2.6 Selecting the Series Capacitor (C6)
+The series capacitor is chosen to limit the ripple current to 5% of the maximum input voltage. Using Equation 
+47 the minimum capacitance is 1.5 µF. Using Equation 48 the RMS current is calculated to be 1.63 A. A 2.2-µF 
+ceramic capacitor in a 1206 package is selected.
+OUT
+P
+IN
+SW
+I
+Dmax
+C
+0.05
+V
+max
+ƒ
+´
+³
+´
+´
+(47)
+CP
+IN
+(1 Dmax)
+I
+rms
+I DC
+Dmax
+-
+=
+´
+(48)
+8.2.2.2.7 Selecting the Input Capacitor (C2, C7)
+Based on the minimum 4.7-µF ceramic recommended for the TPS55340, a 10-µF X7R input capacitor is used 
+with an additional 0.1 µF placed close to the VIN and GND pins. With an estimated 6-µF capacitance after 
+voltage derating, the input ripple voltage is calculated to be 39.9 mV using Equation 49. The RMS current of the 
+input capacitance is calculated to be 0.177 A with Equation 50.
+L
+ripple
+I
+SW
+IN
+I
+V
+4
+C
+D
+=
+´ ¦
+´
+(49)
+L
+CI
+I
+I rms
+12
+D
+=
+(50)
+8.2.2.2.8 Selecting the Schottky Diode (D1)
+The selected diode must have a minimum breakdown voltage (VBR) calculated with Equation 51 which is 30.5 
+V in this design. The average current rating is recommended to be greater than the maximum output current. 
+With the maximum 18-V input, average current is calculated to be 2.6 A using Equation 17. The package must 
+also be capable of handling the power dissipation. With an estimated 0.5-V forward voltage, power dissipation 
+is calculated with Equation 26 to be 500 mW. Diodes Inc B340B is chosen with a 40-V, 3-A rating in an SMB 
+package.
+VBR = VO + VINmax + VF
+(51)
+8.2.2.2.9 Setting the Output Voltage (R1, R2)
+With R2 fixed at 10 kΩ using Equation 25 the nearest standard value of 86.6 kΩ is chosen for R1.
+8.2.2.2.10 Setting the Soft-start Time (C3)
+The recommended 0.047-µF soft-start capacitor is used.
+8.2.2.2.11 MOSFET Rating Considerations
+In a SEPIC converter the MOSFET must be rated to handle the sum of the input and output voltages. In this 
+design with the maximum input voltage of 18 V and output voltage of 12 V, the FET will see approximately 30 V. 
+A 10% tolerance is recommended to account for any ringing. The 40-V rating of the TPS55340 power MOSFET 
+comfortably satisfies this requirement.
+8.2.2.2.12 Compensating the Control Loop (R3, C4)
+This design was compensated by measuring the frequency response of the power stage at the lowest input 
+voltage of 6 V and choosing the components for the desired bandwidth. The lowest right half plane zero (ƒRHPZ) 
+is calculated to be 36.7 kHz with Equation 52. Using the recommendation to limit the bandwidth to 1/3 of ƒRHPZ, 
+the maximum recommended is 12.2 kHz.
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+24
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 25
+(
+)
+OUT
+OUT
+RHPZ
+2
+V
+I
+D
+2
+L
+1 D
+¦
+=
+æ
+ö
+´ p´
+´ ç
+÷
+ç
+÷
+-
+è
+ø
+(52)
+This design also uses only one pole and one zero. To achieve approximately 60 degrees of phase margin, the 
+power stage phase must be no lower than approximately –120 degrees at the desired bandwidth. To ensure a 
+stable design, R3 was initially set to 1 kΩ and C4 was 1 µF. Figure 8-11 shows the measurement of the power 
+stage. At 7 kHz the power stage has a gain of 19.52 dB and phase of –118.1 degrees.
+100
+1k
+10k
+100k
+−60
+−40
+−20
+0
+20
+40
+60
+−180
+−120
+−60
+0
+60
+120
+180
+Frequency (Hz)
+Gain (dB)
+Phase (°)
+6 V Input Gain
+6 V Input Phase
+G025 
+Figure 8-11. SEPIC Power Stage Gain and Phase
+As there are no changes in the transconductance amplifier, the equations used to calculate the external 
+compensation components in a boost design can be used in the SEPIC design. Using the maximum Gea from 
+the electrical specification of 440 µmho, Equation 38 calculates the nearest standard value of R3 to be 2.37 kΩ. 
+Using Equation 39, C4 is calculated to the nearest standard value of 0.1 µF.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+25
+Product Folder Links: TPS55340
+
+
+PDF PAGE 26
+8.2.2.3 Application Curves
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+Output Current (A)
+Efficiency (%)
+VIN = 6 V
+VIN = 12 V
+VIN = 18 V
+G026 
+Figure 8-12. Efficiency vs Output Current
+V
+(ac coupled) = 200mV/div
+OUT
+I
+= 500mA/div
+OUT
+Time - 500 s/div
+m
+Figure 8-13. Load Transient Response
+V
+(ac coupled) = 50mV/div
+OUT
+I
+= 1A/div
+La
+I
+= 1A/div
+Lb
+SW = 10V/div
+Time - 2 s/div
+m
+Figure 8-14. CCM PWM Operation
+V
+= 5V/div
+OUT
+V
+= 2V/div
+IN
+EN = 2V/div
+SW = 20V/div
+Time - 1ms/div
+Figure 8-15. Output Voltage Soft-start
+100
+1k
+10k
+100k
+−60
+−40
+−20
+0
+20
+40
+60
+−180
+−120
+−60
+0
+60
+120
+180
+Frequency (Hz)
+Gain (dB)
+Phase (°)
+6 V Gain
+6 V Phase
+18 V Gain
+18 V Phase
+G030 
+Figure 8-16. Closed-Loop Gain and Phase of the SEPIC Converter
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+26
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 27
+9 Power Supply Recommendations
+The device is designed to operate from an input voltage supply range between 2.9 V and 32 V. This input supply 
+must be well regulated. If the input supply is located more than a few inches from the TPS55340 converter 
+additional bulk capacitance may be required in addition to the ceramic bypass capacitors. An electrolytic 
+capacitor with a value of 100 μF is a typical choice.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+27
+Product Folder Links: TPS55340
+
+
+PDF PAGE 28
+10 Layout
+10.1 Layout Guidelines
+As for all switching power supplies, especially those with high frequency and high switch current, printed-circuit 
+board (PCB) layout is an important design step. If the layout is not carefully designed, the regulator can suffer 
+from instability as well as noise problems. The following guidelines are recommended for good PCB layout.
+•
+To prevent radiation of high-frequency resonance problems, use proper layout of the high-frequency 
+switching path.
+•
+Minimize the length and area of all traces connected to the SW pin and always use a ground plane under the 
+switching regulator to minimize inter-plane coupling.
+•
+The high current path, including the internal MOSFET switch, Schottky diode, and output capacitor, contains 
+nanosecond rise times and fall times. Keep these rise times and fall times as short as possible.
+•
+Place the VIN bypass capacitor as close to the VIN pin and the AGND pin as possible to reduce the IC supply 
+ripple.
+•
+Connect the AGND and PGND pins to thermal pad directly on the same layer.
+10.2 Layout Example
+LO
+Output
+Filter
+Capacitor
+VO
+VI
+Power Ground
+Power Ground
+VI
+Bypass
+Capacitor
+VI
+High-Frequency
+Bypass Capacitor
+C(SS)
+CI
+Feedback
+Resistors
+Frequency
+Set
+Resistor
+Connect to VO on the
+inner or bottom layer
+Connect to AGND on the
+inner or bottom layer
+Output
+Filter
+Capacitor
+Compensation
+Network
+UVLO
+Resistors
+Bypass capacitor
+for TPS55340.
+Put close to Pin 2
+9
+10
+12
+11
+4
+3
+1
+2
+5
+6
+8
+7
+SW
+16
+15
+13
+14
+PowerPad
+SW
+NC
+PGND
+SYNC
+AGND
+COMP
+FB
+SS
+EN
+VIN
+SW
+FREQ
+NC
+PGND
+PGND
+Figure 10-1. TPS55340 Layout Example
+10.3 Thermal Considerations
+The maximum IC junction temperature should be restricted to 150°C under normal operating conditions. This 
+restriction limits the power dissipation of the TPS55340. The TPS55340 features a thermally enhanced QFN 
+package. This package includes a PowerPAD that improves the thermal capabilities of the package. The thermal 
+resistance of the QFN package in any application greatly depends on the PCB layout and the PowerPAD 
+connection. The PowerPAD must be soldered to the analog ground on the PCB. Use thermal vias underneath 
+the PowerPAD to achieve good thermal performance.
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+28
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 29
+11 Device and Documentation Support
+11.1 Device Support
+11.1.1 Third-Party Products Disclaimer
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT 
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES 
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER 
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+11.1.2 Development Support
+11.1.2.1 Custom Design with WEBENCH Tools
+Click here to create a custom design using the TPS55340 device with the WEBENCH® Power Designer.
+1.
+Start by entering your VIN, VOUT and IOUT requirements.
+2.
+Optimize your design for key parameters like efficiency, footprint and cost using the optimizer dial and 
+compare this design with other possible solutions from Texas Instruments.
+3.
+WEBENCH Power Designer provides you with a customized schematic along with a list of materials with real 
+time pricing and component availability.
+4.
+In most cases, you will also be able to:
+•
+Run electrical simulations to see important waveforms and circuit performance,
+•
+Run thermal simulations to understand the thermal performance of your board,
+•
+Export your customized schematic and layout into popular CAD formats,
+•
+Print PDF reports for the design, and share your design with colleagues.
+5.
+Get more information about WEBENCH tools at www.ti.com/webench.
+11.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on 
+Subscribe to updates to register and receive a weekly digest of any product information that has changed. For 
+change details, review the revision history included in any revised document.
+11.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight 
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do 
+not necessarily reflect TI's views; see TI's Terms of Use.
+11.4 Trademarks
+PowerPAD™ and TI E2E™ are trademarks of Texas Instruments.
+WEBENCH® is a registered trademark of TI.
+are registered trademarks of Texas Instruments.
+All trademarks are the property of their respective owners.
+11.5 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled 
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may 
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published 
+specifications.
+11.6 Glossary
+TI Glossary 
+This glossary lists and explains terms, acronyms, and definitions.
+www.ti.com
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+Copyright © 2021 Texas Instruments Incorporated
+Submit Document Feedback
+29
+Product Folder Links: TPS55340
+
+
+PDF PAGE 30
+12 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most 
+current data available for the designated devices. This data is subject to change without notice and revision of 
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+TPS55340
+SLVSBD4E – MAY 2012 – REVISED SEPTEMBER 2021
+www.ti.com
+30
+Submit Document Feedback
+Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS55340
+
+
+PDF PAGE 31
+PACKAGE OPTION ADDENDUM
+www.ti.com
+9-Nov-2025
+PACKAGING INFORMATION
+Orderable part number
+Status
+(1)
+Material type
+(2)
+Package | Pins
+Package qty | Carrier
+RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C)
+Part marking
+(6)
+TPS55340PWP
+Active
+Production
+HTSSOP (PWP) | 14
+90 | TUBE
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWP.A
+Active
+Production
+HTSSOP (PWP) | 14
+90 | TUBE
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWP.B
+Active
+Production
+HTSSOP (PWP) | 14
+90 | TUBE
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWPR
+Active
+Production
+HTSSOP (PWP) | 14
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWPR.A
+Active
+Production
+HTSSOP (PWP) | 14
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWPR.B
+Active
+Production
+HTSSOP (PWP) | 14
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWPRG4
+Active
+Production
+HTSSOP (PWP) | 14
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWPRG4.A
+Active
+Production
+HTSSOP (PWP) | 14
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340PWPRG4.B
+Active
+Production
+HTSSOP (PWP) | 14
+2000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTER
+Active
+Production
+WQFN (RTE) | 16
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTER.A
+Active
+Production
+WQFN (RTE) | 16
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTER.B
+Active
+Production
+WQFN (RTE) | 16
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTERG4
+Active
+Production
+WQFN (RTE) | 16
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTERG4.A
+Active
+Production
+WQFN (RTE) | 16
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTERG4.B
+Active
+Production
+WQFN (RTE) | 16
+3000 | LARGE T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTET
+Active
+Production
+WQFN (RTE) | 16
+250 | SMALL T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTET.A
+Active
+Production
+WQFN (RTE) | 16
+250 | SMALL T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+TPS55340RTET.B
+Active
+Production
+WQFN (RTE) | 16
+250 | SMALL T&R
+Yes
+NIPDAU
+Level-2-260C-1 YEAR
+-40 to 150
+55340
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+Addendum-Page 1
+
+
+PDF PAGE 32
+PACKAGE OPTION ADDENDUM
+www.ti.com
+9-Nov-2025
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+ 
+ OTHER QUALIFIED VERSIONS OF TPS55340 :
+• Automotive : TPS55340-Q1
+• Enhanced Product : TPS55340-EP
+ NOTE: Qualified Version Definitions:
+• Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+• Enhanced Product - Supports Defense, Aerospace and Medical Applications
+Addendum-Page 2
+
+
+PDF PAGE 33
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0
+B0
+K0
+W
+Dimension designed to accommodate the component length
+Dimension designed to accommodate the component thickness
+Overall width of the carrier tape
+Pitch between successive cavity centers
+Dimension designed to accommodate the component width
+TAPE DIMENSIONS
+K0
+ P1
+B0 W
+A0
+Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket Quadrants
+Sprocket Holes
+Q1
+Q1
+Q2
+Q2
+Q3
+Q3
+Q4
+Q4
+User Direction of Feed
+P1
+Reel
+Diameter
+ 
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+TPS55340PWPR
+HTSSOP
+PWP
+14
+2000
+330.0
+12.4
+6.9
+5.6
+1.6
+8.0
+12.0
+Q1
+TPS55340PWPRG4
+HTSSOP
+PWP
+14
+2000
+330.0
+12.4
+6.9
+5.6
+1.6
+8.0
+12.0
+Q1
+TPS55340RTER
+WQFN
+RTE
+16
+3000
+330.0
+12.4
+3.3
+3.3
+1.1
+8.0
+12.0
+Q2
+TPS55340RTERG4
+WQFN
+RTE
+16
+3000
+330.0
+12.4
+3.3
+3.3
+1.1
+8.0
+12.0
+Q2
+TPS55340RTET
+WQFN
+RTE
+16
+250
+180.0
+12.4
+3.3
+3.3
+1.1
+8.0
+12.0
+Q2
+Pack Materials-Page 1
+
+
+PDF PAGE 34
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W
+L
+H
+ 
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+TPS55340PWPR
+HTSSOP
+PWP
+14
+2000
+350.0
+350.0
+43.0
+TPS55340PWPRG4
+HTSSOP
+PWP
+14
+2000
+350.0
+350.0
+43.0
+TPS55340RTER
+WQFN
+RTE
+16
+3000
+346.0
+346.0
+33.0
+TPS55340RTERG4
+WQFN
+RTE
+16
+3000
+346.0
+346.0
+33.0
+TPS55340RTET
+WQFN
+RTE
+16
+250
+210.0
+185.0
+35.0
+Pack Materials-Page 2
+
+
+PDF PAGE 35
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TUBE
+ 
+ 
+L - Tube length
+T - Tube  
+height
+W - Tube  
+width
+B - Alignment groove width
+ 
+ 
+*All dimensions are nominal
+Device
+Package Name
+Package Type
+Pins
+SPQ
+L (mm)
+W (mm)
+T (µm)
+B (mm)
+TPS55340PWP
+PWP
+HTSSOP
+14
+90
+530
+10.2
+3600
+3.5
+TPS55340PWP.A
+PWP
+HTSSOP
+14
+90
+530
+10.2
+3600
+3.5
+TPS55340PWP.B
+PWP
+HTSSOP
+14
+90
+530
+10.2
+3600
+3.5
+Pack Materials-Page 3
+
+
+PDF PAGE 36
+www.ti.com
+GENERIC PACKAGE VIEW
+This image is a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+PowerPAD  TSSOP - 1.2 mm max height
+PWP 14
+PLASTIC SMALL OUTLINE
+4.4 x 5.0, 0.65 mm pitch
+4224995/A
+
+
+PDF PAGE 37
+www.ti.com
+PACKAGE OUTLINE
+C
+12X 0.65
+2X
+3.9
+14X 0.30
+0.17
+6.6
+6.2 TYP
+SEATING
+PLANE
+0.15
+0.05
+0.25
+GAGE PLANE
+0 -8
+1.2 MAX
+2X (0.6)
+NOTE 5
+2X (0.4)
+NOTE 5
+2.59
+1.89
+2.6
+1.9
+4X (0 -12 )
+B
+4.5
+4.3
+A
+5.1
+4.9
+NOTE 3
+0.75
+0.50
+(0.15) TYP
+PowerPAD   TSSOP - 1.2 mm max height
+PWP0014K
+SMALL OUTLINE PACKAGE
+4229706/B   12/2023
+1
+7
+8
+14
+0.1
+C A B
+PIN 1 INDEX
+AREA
+SEE DETAIL  A
+0.1 C
+NOTES: 
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+    exceed 0.15 mm per side. 
+4. Reference JEDEC registration MO-153.
+5. Features may differ or may not be present.
+ 
+TM
+PowerPAD is a trademark of Texas Instruments.
+A  20
+DETAIL A
+TYPICAL
+SCALE  2.500
+THERMAL
+PAD
+1
+7
+8
+14
+15
+
+
+PDF PAGE 38
+www.ti.com
+EXAMPLE BOARD LAYOUT
+0.05 MAX
+ALL AROUND
+0.05 MIN
+ALL AROUND
+14X (1.5)
+14X (0.45)
+12X (0.65)
+(5.8)
+(R0.05) TYP
+(3.4)
+NOTE 9
+(5)
+NOTE 9
+(1.1) TYP
+(0.6)
+(1.2) TYP
+(
+0.2) TYP
+VIA
+(2.6)
+(2.59)
+PowerPAD   TSSOP - 1.2 mm max height
+PWP0014K
+SMALL OUTLINE PACKAGE
+4229706/B   12/2023
+NOTES: (continued)
+ 
+  6. Publication IPC-7351 may have alternate designs. 
+  7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+  8. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+      numbers SLMA002 (www.ti.com/lit/slma002) and SLMA004 (www.ti.com/lit/slma004).
+  9. Size of metal pad may vary due to creepage requirement.
+10. Vias are optional depending on application, refer to device data sheet. It is recommended that vias under paste be filled, plugged
+      or tented. 
+TM
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE: 12X
+SYMM
+SYMM
+1
+7
+8
+14
+METAL COVERED
+BY SOLDER MASK
+SOLDER MASK
+DEFINED PAD
+SEE DETAILS
+15
+15.000
+METAL
+SOLDER MASK
+OPENING
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+OPENING
+EXPOSED METAL
+EXPOSED METAL
+SOLDER MASK DETAILS
+NON-SOLDER MASK
+DEFINED
+SOLDER MASK
+DEFINED
+
+
+PDF PAGE 39
+www.ti.com
+EXAMPLE STENCIL DESIGN
+14X (1.5)
+14X (0.45)
+12X (0.65)
+(5.8)
+(R0.05) TYP
+(2.59)
+BASED ON
+0.125 THICK
+STENCIL
+(2.6)
+BASED ON
+0.125 THICK
+STENCIL
+PowerPAD   TSSOP - 1.2 mm max height
+PWP0014K
+SMALL OUTLINE PACKAGE
+4229706/B   12/2023
+2.20 X 2.19
+0.175
+2.37 X 2.36
+0.15
+2.60 X 2.59 (SHOWN)
+0.125
+2.91 X 2.90
+0.1
+SOLDER STENCIL
+OPENING
+STENCIL
+THICKNESS
+NOTES: (continued)
+ 
+11. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+      design recommendations.   
+12. Board assembly site may have different recommendations for stencil design.
+ 
+TM
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE: 12X
+SYMM
+SYMM
+1
+7
+8
+14
+METAL COVERED
+BY SOLDER MASK
+SEE TABLE FOR
+DIFFERENT OPENINGS
+FOR OTHER STENCIL
+THICKNESSES
+15
+
+
+PDF PAGE 40
+www.ti.com
+GENERIC PACKAGE VIEW
+This image is a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+WQFN - 0.8 mm max height
+RTE 16
+PLASTIC QUAD FLATPACK - NO LEAD
+3 x 3, 0.5 mm pitch
+4225944/A
+
+
+PDF PAGE 41
+www.ti.com
+PACKAGE OUTLINE
+C
+16X 0.30
+0.18
+1.68
+0.07
+16X 0.5
+0.3
+0.8 MAX
+(DIM A) TYP
+0.05
+0.00
+12X 0.5
+4X
+1.5
+A
+3.1
+2.9
+B
+3.1
+2.9
+WQFN - 0.8 mm max height
+RTE0016C
+PLASTIC QUAD FLATPACK - NO LEAD
+4219117/B   04/2022
+SIDE WALL 
+METAL THICKNESS
+DIM A
+OPTION 1
+OPTION 2
+0.1
+0.2
+PIN 1 INDEX AREA
+0.08
+SEATING PLANE
+1
+4
+9
+12
+5
+8
+16
+13
+(OPTIONAL)
+PIN 1 ID
+0.1
+C A B
+0.05
+EXPOSED
+THERMAL PAD
+17
+SYMM
+SYMM
+NOTES:
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.
+SCALE  3.600
+
+
+PDF PAGE 42
+www.ti.com
+EXAMPLE BOARD LAYOUT
+0.07 MIN
+ALL AROUND
+0.07 MAX
+ALL AROUND
+16X (0.24)
+16X (0.6)
+(
+0.2) TYP
+VIA
+12X (0.5)
+(2.8)
+(2.8)
+(0.58)
+TYP
+(
+1.68)
+(R0.05)
+ALL PAD CORNERS
+(0.58) TYP
+WQFN - 0.8 mm max height
+RTE0016C
+PLASTIC QUAD FLATPACK - NO LEAD
+4219117/B   04/2022
+SYMM
+1
+4
+5
+8
+9
+12
+13
+16
+SYMM
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:20X
+17
+NOTES: (continued)
+ 
+4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+    number SLUA271 (www.ti.com/lit/slua271).
+5. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+    on this view. It is recommended that vias under paste be filled, plugged or tented. 
+SOLDER MASK
+OPENING
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+EXPOSED
+METAL
+METAL
+SOLDER MASK
+OPENING
+SOLDER MASK DETAILS
+NON SOLDER MASK
+DEFINED
+(PREFERRED)
+EXPOSED
+METAL
+
+
+PDF PAGE 43
+www.ti.com
+EXAMPLE STENCIL DESIGN
+16X (0.6)
+16X (0.24)
+12X (0.5)
+(2.8)
+(2.8)
+(
+1.55)
+(R0.05) TYP
+WQFN - 0.8 mm max height
+RTE0016C
+PLASTIC QUAD FLATPACK - NO LEAD
+4219117/B   04/2022
+NOTES: (continued)
+ 
+6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+   design recommendations. 
+ 
+SYMM
+ALL AROUND
+METAL
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+ 
+EXPOSED PAD 17:
+85% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE
+SCALE:25X
+SYMM
+1
+4
+5
+8
+9
+12
+13
+16
+17
+
+
+PDF PAGE 44
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

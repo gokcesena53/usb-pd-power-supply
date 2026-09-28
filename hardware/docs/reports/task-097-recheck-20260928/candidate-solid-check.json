@@ -1,0 +1,13 @@
+{
+  "intersection_mm3": {
+    "C5": 0,
+    "C6": 0,
+    "C7": 0,
+    "R1": 0,
+    "R2": 0,
+    "R3": 0
+  },
+  "pair_intersections": [],
+  "note": "Candidate six MCU passives only. Nominal models; no physical assembly tolerance claim.",
+  "passed": true
+}

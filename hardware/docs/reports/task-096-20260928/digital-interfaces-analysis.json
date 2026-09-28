@@ -1,0 +1,37 @@
+{
+  "ESP32_C6_MCU": {
+    "antenna_keepout_violators": [],
+    "decoupling_distances_mm": {
+      "C5_to_U2_V33": 12.033,
+      "C6_to_U2_V33": 12.029,
+      "C7_to_U2_V33": 13.141
+    },
+    "switches": {
+      "SW1_pos": 85.0,
+      "SW1_layer": "B.Cu",
+      "SW2_pos": 92.5,
+      "SW2_layer": "B.Cu"
+    }
+  },
+  "RTC_BQ32000": {
+    "crystal_distances_mm": {
+      "Y1_pin1_to_U4_OSCI": 8.981,
+      "Y1_pin2_to_U4_OSCO": 6.041,
+      "C9_to_U4_VCC": 3.327,
+      "C33_to_U4_VBACKUP": 26.028
+    }
+  },
+  "Ethernet_Supply_Cell": {
+    "C20_under_J8": {
+      "C20_to_J8_Pin14_ETH3V3_mm": 3.549,
+      "C20_to_J8_Pin12_GND_mm": 3.549
+    }
+  },
+  "USB_ESD": {
+    "J7_VBUS_to_D3_TVS_mm": 11.609,
+    "J7_DP_to_U10_ESD_mm": 3.773
+  },
+  "Encoder_Pullups": {
+    "J9_Pin1_to_R34_mm": 22.033
+  }
+}

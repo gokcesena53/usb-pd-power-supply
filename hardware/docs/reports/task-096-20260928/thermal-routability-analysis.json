@@ -1,0 +1,185 @@
+{
+  "corridors": {
+    "corridor_a_north_width_mm": 46.18,
+    "corridor_b_pocket_to_boost_width_mm": 27.85,
+    "corridor_c_j8_to_c33_width_mm": 12.0,
+    "corridor_d_south_height_mm": 30.74
+  },
+  "thermal_blocks": [
+    {
+      "name": "TPS55340 Pre-Boost",
+      "key_refs": [
+        "U11",
+        "L3",
+        "D4",
+        "C28",
+        "C29"
+      ],
+      "layer": "B.Cu",
+      "est_max_power_loss_w": 2.2,
+      "bbox": {
+        "x_min": 84.95,
+        "x_max": 105.0,
+        "y_min": 108.0,
+        "y_max": 128.0
+      },
+      "thermal_vias_present": "U11 footprint has 15 thermal vias (drill 0.20 mm) under exposed pad",
+      "risk_level": "HIGH",
+      "mitigation": "Requires solid polygon pour on B.Cu and inner GND planes to spread heat; keep thermal vias unobstructed"
+    },
+    {
+      "name": "AOZ1284 Buck",
+      "key_refs": [
+        "U5",
+        "L1",
+        "D2",
+        "C12",
+        "C13",
+        "C15",
+        "C16"
+      ],
+      "layer": "B.Cu",
+      "est_max_power_loss_w": 1.6,
+      "bbox": {
+        "x_min": 108.0,
+        "x_max": 130.0,
+        "y_min": 95.0,
+        "y_max": 113.0
+      },
+      "thermal_vias_present": "Exposed pad on SO-8 package requires via array to GND plane during routing",
+      "risk_level": "MEDIUM-HIGH",
+      "mitigation": "Connect U5 exposed pad directly to inner GND plane with 4-6 thermal vias"
+    },
+    {
+      "name": "AP33772S & Input Switch Q3",
+      "key_refs": [
+        "Q3",
+        "R11",
+        "U1"
+      ],
+      "layer": "B.Cu",
+      "est_max_power_loss_w": 0.35,
+      "bbox": {
+        "x_min": 72.0,
+        "x_max": 85.0,
+        "y_min": 103.0,
+        "y_max": 126.0
+      },
+      "thermal_vias_present": "U1 QFN-24 exposed pad has thermal vias; Q3 drain/source planes carry current",
+      "risk_level": "LOW-MEDIUM",
+      "mitigation": "Thermal sensor TH1 placed 3.5 mm from Q3 source for accurate overtemperature shutdown"
+    },
+    {
+      "name": "LM74801 Output Switch Q5",
+      "key_refs": [
+        "Q5",
+        "U12"
+      ],
+      "layer": "F.Cu",
+      "est_max_power_loss_w": 0.15,
+      "bbox": {
+        "x_min": 128.0,
+        "x_max": 140.0,
+        "y_min": 99.0,
+        "y_max": 109.0
+      },
+      "thermal_vias_present": "Q5 PowerPAK drain/source pads on F.Cu under LCD",
+      "risk_level": "LOW",
+      "mitigation": "Normal operating loss is minimal (<0.2W). Inrush/reverse transient dissipation handled by copper footprint"
+    },
+    {
+      "name": "Active Discharge R66/R67/Q4",
+      "key_refs": [
+        "R66",
+        "R67",
+        "Q4"
+      ],
+      "layer": "Mixed (F.Cu/B.Cu)",
+      "est_max_power_loss_w": 0.05,
+      "peak_pulse_power_w": 4.0,
+      "bbox": {
+        "x_min": 113.0,
+        "x_max": 128.0,
+        "y_min": 115.0,
+        "y_max": 123.0
+      },
+      "thermal_vias_present": "Surface dissipation",
+      "risk_level": "LOW (transient only)",
+      "mitigation": "Pulse rated 0603/1206 resistors handle short burst bleeder energy"
+    }
+  ],
+  "high_density_nets": [
+    [
+      "GND",
+      152
+    ],
+    [
+      "+3.3V",
+      34
+    ],
+    [
+      "V_PRE",
+      14
+    ],
+    [
+      "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      13
+    ],
+    [
+      "PD_VOUT",
+      13
+    ],
+    [
+      "/USB_PD_CONTROLLER/SW_OUT",
+      8
+    ],
+    [
+      "USB_VBUS",
+      8
+    ],
+    [
+      "/MCU/ETH_3V3",
+      8
+    ],
+    [
+      "OUT_POS",
+      7
+    ],
+    [
+      "PD_I2C_SCL_3V3",
+      6
+    ],
+    [
+      "PD_I2C_SDA_3V3",
+      6
+    ],
+    [
+      "Net-(U2-EN)",
+      5
+    ],
+    [
+      "/USB_PD_CONTROLLER/SRC_COMMON",
+      5
+    ],
+    [
+      "USB_DP",
+      5
+    ],
+    [
+      "/MCU/ETH_PWR_EN",
+      5
+    ],
+    [
+      "USB_DM",
+      5
+    ],
+    [
+      "/USB_PD_CONTROLLER/EN_CTRL",
+      5
+    ],
+    [
+      "PD_5V",
+      5
+    ]
+  ]
+}

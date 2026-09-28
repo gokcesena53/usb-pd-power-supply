@@ -1,0 +1,16 @@
+{
+  "hash": "3fef79fb84dd7873a7848b67d45493059cb3772e0c8dd45b3bf90e45d1a4e9f6",
+  "kicad": "10.0.5",
+  "count": 86,
+  "R": 52,
+  "C": 34,
+  "mismatches": [],
+  "missing": [],
+  "classification": {
+    "ROUTING_KOSULLU": 40,
+    "UYGUN": 40,
+    "TASINMALI": 6
+  },
+  "measurement_count": 97,
+  "all_target_pads_exist_and_nets_match": true
+}

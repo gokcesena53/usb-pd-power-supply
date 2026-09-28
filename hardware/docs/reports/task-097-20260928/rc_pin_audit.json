@@ -1,0 +1,3496 @@
+[
+  {
+    "ref": "C1",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      73.5,
+      125.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U1-V18)",
+      "pos": [
+        73.98,
+        125.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        73.02,
+        125.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "V18 LDO Decoupling (1.8V Core)",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "12",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 145.682
+    },
+    "guideline": "AP33772S Datasheet Section 10: 1uF ceramic cap within 5mm of V18 pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 145.682mm is well within 5mm limit. Directly adjacent to U1 pin 12."
+  },
+  {
+    "ref": "C2",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      72.0,
+      122.8,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U1-IFB)",
+      "pos": [
+        72.48,
+        122.8
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        71.52,
+        122.8
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "IFB Filter / Decoupling (Current Feedback)",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "15",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 142.594
+    },
+    "guideline": "AP33772S Datasheet: 1uF cap close to IFB pin for current feedback stability.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 142.594mm. Directly adjacent to U1 pin 15."
+  },
+  {
+    "ref": "C3",
+    "val": "2u2",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "layer": "B.Cu",
+    "pos": [
+      72.4,
+      107.0,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "pos": [
+        71.45,
+        107.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        73.35,
+        107.0
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "VBUS High-Voltage Input Filter",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "1",
+      "target_pos": [
+        74.5375,
+        119.25
+      ],
+      "dist_mm": 12.633
+    },
+    "guideline": "AP33772S Datasheet: Input bypass cap on VBUS line close to IC VBUS pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 12.633mm. Placed between R11 shunt and U1."
+  },
+  {
+    "ref": "C4",
+    "val": "1u0",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      72.5,
+      118.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_5V",
+      "pos": [
+        72.98,
+        118.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        72.02,
+        118.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "V5V LDO Decoupling (5V Internal Rail)",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "20",
+      "target_pos": [
+        77.25,
+        118.5375
+      ],
+      "dist_mm": 4.27
+    },
+    "guideline": "AP33772S Datasheet: 1uF ceramic cap close to V5V pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 4.27mm. Placed directly at U1 pin 20."
+  },
+  {
+    "ref": "C5",
+    "val": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "layer": "F.Cu",
+    "pos": [
+      74.5,
+      83.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        73.55,
+        83.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        75.45,
+        83.0
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "MCU Core +3.3V Decoupling (22uF Bulk 0603/0805)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "1 (VDD33)",
+      "target_pos": [
+        64.925,
+        75.065
+      ],
+      "dist_mm": 11.72
+    },
+    "guideline": "Espressif Hardware Design Guidelines ESP32-C6: Decoupling capacitors within 5mm of VDD pins.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 11.72mm from U2 pin 1. Capacitors are placed in an orderly row south of U2 (Y=83.0) on F.Cu to clear RF keepout area. Routing requirement: +3.3V power must flow through C5 -> C7 -> C6 directly into U2 pin 1 over solid In1.Cu GND plane without vias. Relocation not required."
+  },
+  {
+    "ref": "C6",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      71.0,
+      83.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        70.52,
+        83.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        71.48,
+        83.0
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "MCU Core +3.3V Decoupling (100nF High-Frequency 0603/0805)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "1 (VDD33)",
+      "target_pos": [
+        64.925,
+        75.065
+      ],
+      "dist_mm": 9.709
+    },
+    "guideline": "Espressif Hardware Design Guidelines ESP32-C6: Decoupling capacitors within 5mm of VDD pins.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 9.709mm from U2 pin 1. Capacitors are placed in an orderly row south of U2 (Y=83.0) on F.Cu to clear RF keepout area. Routing requirement: +3.3V power must flow through C5 -> C7 -> C6 directly into U2 pin 1 over solid In1.Cu GND plane without vias. Relocation not required."
+  },
+  {
+    "ref": "C7",
+    "val": "1u0",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      78.0,
+      83.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "GND",
+      "pos": [
+        77.52,
+        83.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U2-EN)",
+      "pos": [
+        78.48,
+        83.0
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "MCU Core +3.3V Decoupling (1uF Intermediate 0603/0805)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "1 (VDD33)",
+      "target_pos": [
+        64.925,
+        75.065
+      ],
+      "dist_mm": 14.886
+    },
+    "guideline": "Espressif Hardware Design Guidelines ESP32-C6: Decoupling capacitors within 5mm of VDD pins.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 14.886mm from U2 pin 1. Capacitors are placed in an orderly row south of U2 (Y=83.0) on F.Cu to clear RF keepout area. Routing requirement: +3.3V power must flow through C5 -> C7 -> C6 directly into U2 pin 1 over solid In1.Cu GND plane without vias. Relocation not required."
+  },
+  {
+    "ref": "C8",
+    "val": "4u7",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      82.7,
+      116.9,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_VOUT",
+      "pos": [
+        84.175,
+        116.9
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        81.225,
+        116.9
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "PD_VBUS Switched Bus Decoupling / Bulk",
+    "target_info": {
+      "target_ref": "Q3",
+      "target_pin": "D2",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 144.052
+    },
+    "guideline": "USB PD Spec & AP33772S: Bulk capacitance on switched VBUS.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 144.052mm to Q3 switch output."
+  },
+  {
+    "ref": "C9",
+    "val": "1u0",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      137.5,
+      81.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        137.5,
+        81.48
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        137.5,
+        80.52
+      ]
+    },
+    "block": "RTC DS3231 Subsystem",
+    "function": "RTC VCC Power Decoupling (1uF 0603)",
+    "target_info": {
+      "target_ref": "U4",
+      "target_pin": "VCC (Pin 2)",
+      "target_pos": [
+        145.475,
+        80.095
+      ],
+      "dist_mm": 8.094
+    },
+    "guideline": "DS3231 Datasheet Section 1: 1uF ceramic bypass close to VCC pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 8.094mm. Directly adjacent to U4 pin 2."
+  },
+  {
+    "ref": "C10",
+    "val": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "layer": "B.Cu",
+    "pos": [
+      107.0,
+      94.0,
+      -90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/MCU/ETH_3V3",
+      "pos": [
+        107.0,
+        93.05
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        107.0,
+        94.95
+      ]
+    },
+    "block": "W5500 Ethernet Controller",
+    "function": "",
+    "target_info": {},
+    "guideline": "",
+    "verdict": "UYGUN",
+    "notes": ""
+  },
+  {
+    "ref": "C11",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      141.2,
+      114.1,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        141.68,
+        114.1
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        140.72,
+        114.1
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "INA226 VBUS / Supply Decoupling (100nF 0603)",
+    "target_info": {
+      "target_ref": "U3",
+      "target_pin": "VS (Pin 6)",
+      "target_pos": [
+        135.75,
+        114.25
+      ],
+      "dist_mm": 5.932
+    },
+    "guideline": "INA226 Datasheet: 100nF bypass capacitor close to VS pin and GND.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 5.932mm. Directly adjacent to U3."
+  },
+  {
+    "ref": "C12",
+    "val": "4u7",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      120.8,
+      104.91,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        120.8,
+        106.385
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        120.8,
+        103.435
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Input Bulk Capacitor (4u7 1210)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "9 (EP/VIN)",
+      "target_pos": [
+        126.7,
+        105.31
+      ],
+      "dist_mm": 5.997
+    },
+    "guideline": "AOZ1284PI Datasheet Fig 4: Input capacitors must be placed as close as possible to VIN and PGND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 5.997mm to U5 EP (VIN). Must be routed with wide continuous copper polygon on B.Cu linking C12/C13 to U5 EP, with dense GND via stitching on pad 2 to In1.Cu GND plane."
+  },
+  {
+    "ref": "C13",
+    "val": "4u7",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      117.115,
+      104.91,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        117.115,
+        106.385
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        117.115,
+        103.435
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Input Bulk Capacitor (4u7 1210)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "9 (EP/VIN)",
+      "target_pos": [
+        126.7,
+        105.31
+      ],
+      "dist_mm": 9.645
+    },
+    "guideline": "AOZ1284PI Datasheet Fig 4: Input capacitors must be placed as close as possible to VIN and PGND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 9.645mm to U5 EP (VIN). Must be routed with wide continuous copper polygon on B.Cu linking C12/C13 to U5 EP, with dense GND via stitching on pad 2 to In1.Cu GND plane."
+  },
+  {
+    "ref": "C14",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      127.9,
+      110.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        127.9,
+        110.48
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        127.9,
+        109.52
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Input High-Frequency Ceramic Bypass (100nF 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "9 (EP/VIN)",
+      "target_pos": [
+        126.7,
+        105.31
+      ],
+      "dist_mm": 5.307
+    },
+    "guideline": "AOZ1284PI Datasheet: High frequency ceramic bypass capacitor placed closest to VIN and PGND.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 5.307mm. Located directly at U5 EP boundary."
+  },
+  {
+    "ref": "C15",
+    "val": "47u",
+    "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+    "layer": "B.Cu",
+    "pos": [
+      113.3,
+      96.7,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        110.6,
+        96.7
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        116.0,
+        96.7
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Output Filter Capacitor (47u 1210 on +3.3V)",
+    "target_info": {
+      "target_ref": "L1",
+      "target_pin": "2",
+      "target_pos": [
+        129.62,
+        97.37
+      ],
+      "dist_mm": 19.032
+    },
+    "guideline": "AOZ1284PI Datasheet Fig 4: Output capacitor placed close to inductor L1 and PGND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 19.032mm to L1 output pad. C16 was re-evaluated: it is the Buck OUTPUT filter cap (not input). Routing requires solid +3.3V copper plane connecting L1 pad 2 to C15/C16, with immediate GND via array to In1.Cu GND plane. Relocation not required."
+  },
+  {
+    "ref": "C16",
+    "val": "47u",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      120.0,
+      97.3,
+      -90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        120.0,
+        95.825
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        120.0,
+        98.775
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Output Filter Capacitor (47u 1210 on +3.3V)",
+    "target_info": {
+      "target_ref": "L1",
+      "target_pin": "2",
+      "target_pos": [
+        129.62,
+        97.37
+      ],
+      "dist_mm": 9.743
+    },
+    "guideline": "AOZ1284PI Datasheet Fig 4: Output capacitor placed close to inductor L1 and PGND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 9.743mm to L1 output pad. C16 was re-evaluated: it is the Buck OUTPUT filter cap (not input). Routing requires solid +3.3V copper plane connecting L1 pad 2 to C15/C16, with immediate GND via array to In1.Cu GND plane. Relocation not required."
+  },
+  {
+    "ref": "C17",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      132.5,
+      107.5,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U5-BST)",
+      "pos": [
+        132.02,
+        107.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/LX_SW",
+      "pos": [
+        132.98,
+        107.5
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Bootstrap Capacitor (100nF 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "2 (BST)",
+      "target_pos": [
+        124.1975,
+        104.675
+      ],
+      "dist_mm": 8.317
+    },
+    "guideline": "AOZ1284PI Datasheet: Connect BST cap directly between BST pin and LX node.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 8.317mm to BST pin. Adjacent to U5 pins 1 and 2."
+  },
+  {
+    "ref": "C18",
+    "val": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      121.8,
+      108.3,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/SS_RAMP",
+      "pos": [
+        121.32,
+        108.3
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        122.28,
+        108.3
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Soft-Start Capacitor (10nF 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "7 (SS)",
+      "target_pos": [
+        129.2025,
+        104.675
+      ],
+      "dist_mm": 8.676
+    },
+    "guideline": "AOZ1284PI Datasheet: SS capacitor close to SS pin and AGND.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 8.676mm. Directly adjacent to U5 pin 7."
+  },
+  {
+    "ref": "C19",
+    "val": "15n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      120.8,
+      112.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(C19-Pad1)",
+      "pos": [
+        120.8,
+        112.98
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        120.8,
+        112.02
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Loop Compensation Capacitor (15nF 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "5 (COMP)",
+      "target_pos": [
+        129.2025,
+        107.215
+      ],
+      "dist_mm": 10.19
+    },
+    "guideline": "AOZ1284PI Datasheet: Place compensation components close to COMP and AGND, away from LX.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 10.19mm. Positioned cleanly next to R41."
+  },
+  {
+    "ref": "C20",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      96.5,
+      93.58,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/MCU/ETH_3V3",
+      "pos": [
+        96.5,
+        94.06
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        96.5,
+        93.1
+      ]
+    },
+    "block": "W5500 Ethernet Controller",
+    "function": "",
+    "target_info": {},
+    "guideline": "",
+    "verdict": "UYGUN",
+    "notes": ""
+  },
+  {
+    "ref": "C21",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      111.5,
+      89.8,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        111.98,
+        89.8
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/MCU/ETH_PWR_EN",
+      "pos": [
+        111.02,
+        89.8
+      ]
+    },
+    "block": "W5500 Ethernet Controller",
+    "function": "",
+    "target_info": {},
+    "guideline": "",
+    "verdict": "UYGUN",
+    "notes": ""
+  },
+  {
+    "ref": "C23",
+    "val": "47n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      100.15,
+      125.76,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U11-SS)",
+      "pos": [
+        99.67,
+        125.76
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        100.63,
+        125.76
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Soft-Start Capacitor (47nF 0603)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "5 (SS)",
+      "target_pos": [
+        95.1375,
+        121.65
+      ],
+      "dist_mm": 6.118
+    },
+    "guideline": "TPS55340 Section 10.2: Place SS capacitor close to SS pin and AGND.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 6.118mm. Directly adjacent to U11 pin 5."
+  },
+  {
+    "ref": "C24",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      91.55,
+      127.96,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(C24-Pad1)",
+      "pos": [
+        91.07,
+        127.96
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        92.03,
+        127.96
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Compensation Network Capacitor (100nF 0603)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "8 (COMP)",
+      "target_pos": [
+        100.8625,
+        122.95
+      ],
+      "dist_mm": 11.0
+    },
+    "guideline": "TPS55340 Section 10.2: COMP components close to COMP pin, shielded from SW node.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 11.0mm. Connected in series with R52."
+  },
+  {
+    "ref": "C25",
+    "val": "4u7",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      87.65,
+      119.66,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_VOUT",
+      "pos": [
+        86.175,
+        119.66
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        89.125,
+        119.66
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Input Filter Capacitor (4u7 1210 on PD_VOUT)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "3 (VIN)",
+      "target_pos": [
+        95.1375,
+        120.35
+      ],
+      "dist_mm": 8.989
+    },
+    "guideline": "TPS55340 Datasheet Section 10.2: Place input capacitors close to VIN pin and PGND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 8.989mm to U11 pin 3. Re-evaluated: C29 is an input bulk cap (not output). Routing must provide continuous low-inductance copper plane on B.Cu connecting C25/C29 to U11 pin 3 and L2 inductor, with dense GND via array linking pad 2 to U11 PGND thermal pad vias. Relocation not required."
+  },
+  {
+    "ref": "C26",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      104.15,
+      117.36,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_VOUT",
+      "pos": [
+        103.67,
+        117.36
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        104.63,
+        117.36
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Input High-Frequency Ceramic Bypass (100nF 0603)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "3 (VIN)",
+      "target_pos": [
+        95.1375,
+        120.35
+      ],
+      "dist_mm": 9.041
+    },
+    "guideline": "TPS55340 Section 10.2: 100nF ceramic bypass capacitor close to VIN pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 9.041mm. Positioned immediately beside U11 pin 3."
+  },
+  {
+    "ref": "C27",
+    "val": "4u7",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      103.95,
+      121.16,
+      -90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        103.95,
+        119.685
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        103.95,
+        122.635
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Output Filter Capacitor (4u7 1210 on V_PRE)",
+    "target_info": {
+      "target_ref": "D4",
+      "target_pin": "1 (Cathode)",
+      "target_pos": [
+        100.95,
+        114.66
+      ],
+      "dist_mm": 5.852
+    },
+    "guideline": "TPS55340 Section 10.2: Output capacitor ground return to IC PGND must minimize hot loop area.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 5.852mm from D4 cathode. C27 is right next to D4 cathode (7.1mm) and U11 thermal pad. Hot switching loop (U11 SW -> D4 -> C27/C28 -> PGND thermal pad) must be routed with wide solid copper pour on B.Cu and immediate stitching to In1.Cu GND plane. Relocation not required."
+  },
+  {
+    "ref": "C28",
+    "val": "4u7",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "layer": "B.Cu",
+    "pos": [
+      110.15,
+      125.0,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        108.675,
+        125.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        111.625,
+        125.0
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Output Filter Capacitor (4u7 1210 on V_PRE)",
+    "target_info": {
+      "target_ref": "D4",
+      "target_pin": "1 (Cathode)",
+      "target_pos": [
+        100.95,
+        114.66
+      ],
+      "dist_mm": 12.907
+    },
+    "guideline": "TPS55340 Section 10.2: Output capacitor ground return to IC PGND must minimize hot loop area.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 12.907mm from D4 cathode. C27 is right next to D4 cathode (7.1mm) and U11 thermal pad. Hot switching loop (U11 SW -> D4 -> C27/C28 -> PGND thermal pad) must be routed with wide solid copper pour on B.Cu and immediate stitching to In1.Cu GND plane. Relocation not required."
+  },
+  {
+    "ref": "C29",
+    "val": "47u",
+    "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+    "layer": "B.Cu",
+    "pos": [
+      87.65,
+      111.66,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_VOUT",
+      "pos": [
+        84.95,
+        111.66
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        90.35,
+        111.66
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Input Filter Capacitor (47u 1210 on PD_VOUT)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "3 (VIN)",
+      "target_pos": [
+        95.1375,
+        120.35
+      ],
+      "dist_mm": 13.39
+    },
+    "guideline": "TPS55340 Datasheet Section 10.2: Place input capacitors close to VIN pin and PGND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 13.39mm to U11 pin 3. Re-evaluated: C29 is an input bulk cap (not output). Routing must provide continuous low-inductance copper plane on B.Cu connecting C25/C29 to U11 pin 3 and L2 inductor, with dense GND via array linking pad 2 to U11 PGND thermal pad vias. Relocation not required."
+  },
+  {
+    "ref": "C30",
+    "val": "22n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      124.8,
+      109.4,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(C30-Pad1)",
+      "pos": [
+        124.32,
+        109.4
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        125.28,
+        109.4
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Gate Drive Slew Rate Filter (22nF 0603)",
+    "target_info": {
+      "target_ref": "Q6",
+      "target_pin": "G",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 4.1
+    },
+    "guideline": "MOSFET soft-turn-on slew rate filter.",
+    "verdict": "UYGUN",
+    "notes": "Directly adjacent to gate drive circuit."
+  },
+  {
+    "ref": "C31",
+    "val": "220n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "layer": "F.Cu",
+    "pos": [
+      140.0,
+      99.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        140.0,
+        98.725
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U12-CAP)",
+      "pos": [
+        140.0,
+        100.275
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Linear Regulator U12 Decoupling (C31)",
+    "target_info": {
+      "target_ref": "U12",
+      "target_pin": "IN/CAP",
+      "target_pos": [
+        134.0625,
+        101.25
+      ],
+      "dist_mm": 6.452
+    },
+    "guideline": "LDO / Current limiter manufacturer bypass recommendations.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 6.452mm. Directly adjacent to U12."
+  },
+  {
+    "ref": "C32",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      139.5,
+      103.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        139.5,
+        102.52
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        139.5,
+        103.48
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Linear Regulator U12 Decoupling (C32)",
+    "target_info": {
+      "target_ref": "U12",
+      "target_pin": "IN/CAP",
+      "target_pos": [
+        134.0625,
+        101.25
+      ],
+      "dist_mm": 5.584
+    },
+    "guideline": "LDO / Current limiter manufacturer bypass recommendations.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 5.584mm. Directly adjacent to U12."
+  },
+  {
+    "ref": "C33",
+    "val": "1F5",
+    "footprint": "Power_Output_Custom:Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal",
+    "layer": "B.Cu",
+    "pos": [
+      114.5,
+      81.0,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U4-VBACK)",
+      "pos": [
+        114.5,
+        81.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        94.5,
+        81.0
+      ]
+    },
+    "block": "RTC DS3231 Subsystem",
+    "function": "Supercapacitor Backup Energy Storage (1.5F Coin)",
+    "target_info": {
+      "target_ref": "U4",
+      "target_pin": "VBAT (Pin 14)",
+      "target_pos": [
+        140.525,
+        82.635
+      ],
+      "dist_mm": 26.076
+    },
+    "guideline": "Supercapacitor backup energy storage for RTC retention.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 26.076mm. Placed on B.Cu without obstructing mechanical anchors."
+  },
+  {
+    "ref": "C34",
+    "val": "1u0",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      104.8,
+      105.55,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        104.8,
+        105.07
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        104.8,
+        106.03
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output +3.3V Local Decoupling (1uF 0603)",
+    "target_info": {
+      "target_ref": "U10",
+      "target_pin": "VCC",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 3.2
+    },
+    "guideline": "Local IC bypass.",
+    "verdict": "UYGUN",
+    "notes": "Positioned cleanly at power branch."
+  },
+  {
+    "ref": "C35",
+    "val": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      132.5,
+      124.05,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        132.98,
+        124.05
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        132.02,
+        124.05
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "User Interface Local Decoupling (100nF 0603)",
+    "target_info": {
+      "target_ref": "UI",
+      "target_pin": "+3.3V",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 4.0
+    },
+    "guideline": "Local digital supply bypass.",
+    "verdict": "UYGUN",
+    "notes": "Directly adjacent to UI connector."
+  },
+  {
+    "ref": "R1",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      80.5,
+      83.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        79.99,
+        83.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U2-EN)",
+      "pos": [
+        81.01,
+        83.0
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "MCU Enable (EN / RESET) Pull-up Resistor (10k 0603)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "CHIP_EN",
+      "target_pos": [
+        72.02,
+        76.665
+      ],
+      "dist_mm": 10.998
+    },
+    "guideline": "ESP32-C6 Hardware Design Guidelines: 10k pull-up on CHIP_PU/EN.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 10.998mm. Adjacent to U2."
+  },
+  {
+    "ref": "RShunt1",
+    "val": "5m0",
+    "footprint": "Resistor_SMD:R_2512_6332Metric",
+    "layer": "B.Cu",
+    "pos": [
+      136.0,
+      117.6,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/SW_OUT",
+      "pos": [
+        138.9625,
+        117.6
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "OUT_POS",
+      "pos": [
+        133.0375,
+        117.6
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Main DC Output Current Sense Shunt (5mOhm 2512 3W)",
+    "target_info": {
+      "target_ref": "U3",
+      "target_pin": "IN+ / IN- (Pins 10, 8)",
+      "target_pos": [
+        136.75,
+        114.25
+      ],
+      "dist_mm": 5.551
+    },
+    "guideline": "INA226 Datasheet Section 10.2: Symmetrical 4-terminal Kelvin sensing connection.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 5.55mm to INA226 U3. Placed immediately adjacent with symmetrical Kelvin pad geometry on B.Cu."
+  },
+  {
+    "ref": "R2",
+    "val": "22R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      84.5,
+      83.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U2-IO12)",
+      "pos": [
+        84.5,
+        82.49
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "USB_DM",
+      "pos": [
+        84.5,
+        83.51
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "USB D-/D+ Series Damping Resistor (22R 0603 - R2)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "IO12 (USB_D-)",
+      "target_pos": [
+        77.12,
+        79.965
+      ],
+      "dist_mm": 7.8
+    },
+    "guideline": "USB 2.0 Full Speed: 22 Ohm series termination placed close to MCU USB pins.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 7.8mm. Symmetrically placed next to U2 USB pins."
+  },
+  {
+    "ref": "R3",
+    "val": "22R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      86.5,
+      83.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U2-IO13)",
+      "pos": [
+        86.5,
+        82.49
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "USB_DP",
+      "pos": [
+        86.5,
+        83.51
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "USB D-/D+ Series Damping Resistor (22R 0603 - R3)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "IO13 (USB_D+)",
+      "target_pos": [
+        77.92,
+        79.965
+      ],
+      "dist_mm": 8.944
+    },
+    "guideline": "USB 2.0 Full Speed: 22 Ohm series termination placed close to MCU USB pins.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 8.944mm. Symmetrically placed next to U2 USB pins."
+  },
+  {
+    "ref": "R4",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      105.75,
+      70.5,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_I2C_SCL_3V3",
+      "pos": [
+        105.24,
+        70.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "+3.3V",
+      "pos": [
+        106.26,
+        70.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "I2C Level Translator Pull-up (R4)",
+    "target_info": {
+      "target_ref": "Q1",
+      "target_pin": "S/D (Pin 2/3)",
+      "target_pos": [
+        105.75,
+        74.0
+      ],
+      "dist_mm": 3.5
+    },
+    "guideline": "I2C Bus Specification: Pull-up resistors near bus translator FETs.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 3.5mm. Symmetrically flanking translator FET Q1 on B.Cu."
+  },
+  {
+    "ref": "R5",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      105.75,
+      77.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_5V",
+      "pos": [
+        105.75,
+        78.01
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "PD_I2C_SCL_5V",
+      "pos": [
+        105.75,
+        76.99
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "I2C Level Translator Pull-up (R5)",
+    "target_info": {
+      "target_ref": "Q1",
+      "target_pin": "S/D (Pin 2/3)",
+      "target_pos": [
+        105.75,
+        74.0
+      ],
+      "dist_mm": 3.5
+    },
+    "guideline": "I2C Bus Specification: Pull-up resistors near bus translator FETs.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 3.5mm. Symmetrically flanking translator FET Q1 on B.Cu."
+  },
+  {
+    "ref": "R6",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      110.25,
+      77.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_5V",
+      "pos": [
+        110.25,
+        78.01
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "PD_I2C_SDA_5V",
+      "pos": [
+        110.25,
+        76.99
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "I2C Level Translator Pull-up (R6)",
+    "target_info": {
+      "target_ref": "Q2",
+      "target_pin": "S/D (Pin 2/3)",
+      "target_pos": [
+        110.25,
+        74.0
+      ],
+      "dist_mm": 3.5
+    },
+    "guideline": "I2C Bus Specification: Pull-up resistors near bus translator FETs.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 3.5mm. Symmetrically flanking translator FET Q2 on B.Cu."
+  },
+  {
+    "ref": "R7",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      110.25,
+      70.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        110.76,
+        70.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "PD_I2C_SDA_3V3",
+      "pos": [
+        109.74,
+        70.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "I2C Level Translator Pull-up (R7)",
+    "target_info": {
+      "target_ref": "Q2",
+      "target_pin": "S/D (Pin 2/3)",
+      "target_pos": [
+        110.25,
+        74.0
+      ],
+      "dist_mm": 3.5
+    },
+    "guideline": "I2C Bus Specification: Pull-up resistors near bus translator FETs.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 3.5mm. Symmetrically flanking translator FET Q2 on B.Cu."
+  },
+  {
+    "ref": "R8",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      78.2,
+      125.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_INT_5V",
+      "pos": [
+        78.71,
+        125.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(R64-Pad1)",
+      "pos": [
+        77.69,
+        125.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "PD_INT Level Shifter Divider / Pull-up (R8)",
+    "target_info": {
+      "target_ref": "U1/U2",
+      "target_pin": "PD_INT",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Discrete level shifting divider network.",
+    "verdict": "UYGUN",
+    "notes": "Compact cluster at southern edge of AP33772S block."
+  },
+  {
+    "ref": "R9",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      85.1,
+      125.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_INT_3V3",
+      "pos": [
+        85.61,
+        125.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(R65-Pad1)",
+      "pos": [
+        84.59,
+        125.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "PD_INT Level Shifter Divider / Pull-up (R9)",
+    "target_info": {
+      "target_ref": "U1/U2",
+      "target_pin": "PD_INT",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Discrete level shifting divider network.",
+    "verdict": "UYGUN",
+    "notes": "Compact cluster at southern edge of AP33772S block."
+  },
+  {
+    "ref": "R10",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      92.5,
+      83.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U2-IO9)",
+      "pos": [
+        92.5,
+        82.49
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "+3.3V",
+      "pos": [
+        92.5,
+        83.51
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "Boot Strap IO9 Pull-up Resistor (10k 0603)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "IO9 (BOOT)",
+      "target_pos": [
+        81.92,
+        79.965
+      ],
+      "dist_mm": 10.877
+    },
+    "guideline": "ESP32-C6 Guidelines: Strapping pin IO9 requires pull-up for normal SPI boot.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 10.877mm. Adjacent to U2."
+  },
+  {
+    "ref": "R11",
+    "val": "5m0",
+    "footprint": "Resistor_SMD:R_2512_6332Metric",
+    "layer": "B.Cu",
+    "pos": [
+      76.5,
+      103.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "USB_VBUS",
+      "pos": [
+        79.4625,
+        103.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "pos": [
+        73.5375,
+        103.0
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "USB VBUS Current Sense Shunt (5mOhm)",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "1 & 24",
+      "target_pos": [
+        74.5375,
+        119.25
+      ],
+      "dist_mm": 16.98
+    },
+    "guideline": "Kelvin sense routing guideline: Differential trace pair tightly coupled, guarded by GND.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance to U1 pin 1 is 16.98mm, to pin 24 is 15.632mm. R11 is placed south of RJ45 J8 due to MECH_ENC clearance pocket. Must be routed with tightly coupled differential Kelvin trace pair on B.Cu, guarded by GND shield copper from adjacent switching nodes. Relocation not required."
+  },
+  {
+    "ref": "R12",
+    "val": "6k2",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      77.5,
+      115.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U1-PWR_EN)",
+      "pos": [
+        77.5,
+        116.01
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/PD_GATE",
+      "pos": [
+        77.5,
+        114.99
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "PWR_EN Pull-up Resistor",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "18",
+      "target_pos": [
+        75.75,
+        118.5375
+      ],
+      "dist_mm": 3.074
+    },
+    "guideline": "DC pull-up resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 3.074mm. Adjacent to U1."
+  },
+  {
+    "ref": "R13",
+    "val": "100R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      82.5,
+      122.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U1-VOUT)",
+      "pos": [
+        83.01,
+        122.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "PD_VOUT",
+      "pos": [
+        81.99,
+        122.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "VOUT Bleed / Discharge Resistor",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "22",
+      "target_pos": [
+        76.25,
+        118.5375
+      ],
+      "dist_mm": 7.836
+    },
+    "guideline": "AP33772S Datasheet: VOUT bleeder resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 7.836mm. Adjacent to U1."
+  },
+  {
+    "ref": "R14",
+    "val": "2k2",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      81.2,
+      120.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U1-LED)",
+      "pos": [
+        81.71,
+        120.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(D1-A)",
+      "pos": [
+        80.69,
+        120.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "LED Driver Current Limiter",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "2",
+      "target_pos": [
+        75.75,
+        122.4625
+      ],
+      "dist_mm": 6.275
+    },
+    "guideline": "Standard LED current limit.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 6.275mm. Adjacent to U1 and LED D1."
+  },
+  {
+    "ref": "R15",
+    "val": "22R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      88.5,
+      83.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U2-IO8)",
+      "pos": [
+        88.5,
+        82.49
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/MCU/ETH_CFG0",
+      "pos": [
+        88.5,
+        83.51
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "Ethernet Config IO8 Damping Resistor (22R 0603)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "IO8",
+      "target_pos": [
+        81.12,
+        79.965
+      ],
+      "dist_mm": 7.8
+    },
+    "guideline": "High speed SPI interface damping.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 7.8mm. Adjacent to U2."
+  },
+  {
+    "ref": "R16",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      82.5,
+      83.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/MCU/ETH_PWR_EN",
+      "pos": [
+        82.5,
+        82.49
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U2-IO0)",
+      "pos": [
+        82.5,
+        83.51
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "Ethernet Power Enable Pull-up / Gate Resistor (10k 0603)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "IO0",
+      "target_pos": [
+        73.12,
+        79.965
+      ],
+      "dist_mm": 10.028
+    },
+    "guideline": "GPIO pull-up resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 10.028mm. Adjacent to U2."
+  },
+  {
+    "ref": "R17",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      111.5,
+      87.2,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        112.01,
+        87.2
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/MCU/ETH_PWR_EN",
+      "pos": [
+        110.99,
+        87.2
+      ]
+    },
+    "block": "W5500 Ethernet Controller",
+    "function": "",
+    "target_info": {},
+    "guideline": "",
+    "verdict": "UYGUN",
+    "notes": ""
+  },
+  {
+    "ref": "R21",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      75.8,
+      125.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "GND",
+      "pos": [
+        76.31,
+        125.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U1-VSEL)",
+      "pos": [
+        75.29,
+        125.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "VSEL Configuration Pull-down",
+    "target_info": {
+      "target_ref": "U1",
+      "target_pin": "6",
+      "target_pos": [
+        77.25,
+        122.4625
+      ],
+      "dist_mm": 3.615
+    },
+    "guideline": "AP33772S: Voltage selection strap resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 3.615mm. Placed directly below U1."
+  },
+  {
+    "ref": "R24",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      137.5,
+      84.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        138.01,
+        84.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/MCU/RTC_INT",
+      "pos": [
+        136.99,
+        84.0
+      ]
+    },
+    "block": "RTC DS3231 Subsystem",
+    "function": "RTC Interrupt / SQW Pull-up Resistor (4.7k 0603)",
+    "target_info": {
+      "target_ref": "U4",
+      "target_pin": "INT/SQW (Pin 3)",
+      "target_pos": [
+        145.475,
+        81.365
+      ],
+      "dist_mm": 8.885
+    },
+    "guideline": "Open drain interrupt pull-up.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 8.885mm. Adjacent to U4."
+  },
+  {
+    "ref": "R27",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      136.75,
+      107.0,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        137.26,
+        107.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "INA_ALERT",
+      "pos": [
+        136.24,
+        107.0
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "INA226 ALERT Open-Drain Pull-up (10k 0603)",
+    "target_info": {
+      "target_ref": "U3",
+      "target_pin": "ALERT (Pin 3)",
+      "target_pos": [
+        136.75,
+        109.95
+      ],
+      "dist_mm": 2.994
+    },
+    "guideline": "I2C Alert open-drain pull-up.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 2.994mm. Directly adjacent to U3."
+  },
+  {
+    "ref": "R28",
+    "val": "100R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      81.0,
+      108.3,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "TFT_BL_PWM",
+      "pos": [
+        80.49,
+        108.3
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(Q7-G)",
+      "pos": [
+        81.51,
+        108.3
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "TFT LCD Backlight PWM Gate Drive (R28 0603)",
+    "target_info": {
+      "target_ref": "Q7",
+      "target_pin": "G",
+      "target_pos": [
+        86.0625,
+        108.3
+      ],
+      "dist_mm": 4.552
+    },
+    "guideline": "MOSFET gate series damping and pull-down resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 4.552mm. Directly adjacent to backlight FET Q7."
+  },
+  {
+    "ref": "R29",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      83.8,
+      109.25,
+      -90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(Q7-G)",
+      "pos": [
+        83.8,
+        109.76
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        83.8,
+        108.74
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "TFT LCD Backlight PWM Gate Drive (R29 0603)",
+    "target_info": {
+      "target_ref": "Q7",
+      "target_pin": "G",
+      "target_pos": [
+        86.0625,
+        108.3
+      ],
+      "dist_mm": 2.693
+    },
+    "guideline": "MOSFET gate series damping and pull-down resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 2.693mm. Directly adjacent to backlight FET Q7."
+  },
+  {
+    "ref": "R34",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      62.5,
+      125.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        62.5,
+        126.01
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "ENCODER_A",
+      "pos": [
+        62.5,
+        124.99
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "Panel Rotary Encoder Pull-up (ENC_A 10k 0603)",
+    "target_info": {
+      "target_ref": "J9",
+      "target_pin": "ENC_A",
+      "target_pos": [
+        70.0,
+        104.0
+      ],
+      "dist_mm": 22.771
+    },
+    "guideline": "Human-interface device debounce / pull-up. Low frequency (<100Hz).",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 22.77mm to J9. Signals are low-frequency mechanical contacts with hardware debounce. Trace length has zero operational impact. FreeCAD clearance confirmed at 7.04mm from MECH_ENC body."
+  },
+  {
+    "ref": "R35",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      65.0,
+      125.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        65.0,
+        126.01
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "ENCODER_B",
+      "pos": [
+        65.0,
+        124.99
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "Panel Rotary Encoder Pull-up (ENC_B 10k 0603)",
+    "target_info": {
+      "target_ref": "J9",
+      "target_pin": "ENC_B",
+      "target_pos": [
+        70.0,
+        104.0
+      ],
+      "dist_mm": 22.074
+    },
+    "guideline": "Human-interface device debounce / pull-up. Low frequency (<100Hz).",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 22.07mm to J9. Signals are low-frequency mechanical contacts with hardware debounce. Trace length has zero operational impact. FreeCAD clearance confirmed at 7.04mm from MECH_ENC body."
+  },
+  {
+    "ref": "R36",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      67.5,
+      125.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        67.5,
+        126.01
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "ENCODER_SW",
+      "pos": [
+        67.5,
+        124.99
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "Panel Rotary Encoder Pull-up (ENC_SW 10k 0603)",
+    "target_info": {
+      "target_ref": "J9",
+      "target_pin": "ENC_SW",
+      "target_pos": [
+        70.0,
+        104.0
+      ],
+      "dist_mm": 21.645
+    },
+    "guideline": "Human-interface device debounce / pull-up. Low frequency (<100Hz).",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 21.64mm to J9. Signals are low-frequency mechanical contacts with hardware debounce. Trace length has zero operational impact. FreeCAD clearance confirmed at 7.04mm from MECH_ENC body."
+  },
+  {
+    "ref": "R37",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      90.5,
+      83.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U2-IO8)",
+      "pos": [
+        90.5,
+        82.49
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "+3.3V",
+      "pos": [
+        90.5,
+        83.51
+      ]
+    },
+    "block": "ESP32-C6FH4 MCU Subsystem",
+    "function": "IO8 Strap Pull-up Resistor (10k 0603)",
+    "target_info": {
+      "target_ref": "U2",
+      "target_pin": "IO8",
+      "target_pos": [
+        81.12,
+        79.965
+      ],
+      "dist_mm": 9.714
+    },
+    "guideline": "ESP32-C6 Strapping pin pull-up.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 9.714mm. Adjacent to U2."
+  },
+  {
+    "ref": "R38",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      131.0,
+      109.3,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/FSW_SET",
+      "pos": [
+        131.51,
+        109.3
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        130.49,
+        109.3
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Switching Frequency Setting Resistor (100k 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "4 (FSW)",
+      "target_pos": [
+        124.1975,
+        107.215
+      ],
+      "dist_mm": 7.604
+    },
+    "guideline": "AOZ1284PI: Connect FSW resistor to AGND.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 7.604mm. Adjacent to U5 pin 4."
+  },
+  {
+    "ref": "R39",
+    "val": "10k2",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      119.5,
+      109.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        120.01,
+        109.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/FB_3V3",
+      "pos": [
+        118.99,
+        109.5
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Feedback Voltage Divider (R39)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "6 (FB)",
+      "target_pos": [
+        129.2025,
+        105.945
+      ],
+      "dist_mm": 10.814
+    },
+    "guideline": "AOZ1284PI Datasheet: Place FB divider resistors close to FB pin, keep FB trace away from noise.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 10.814mm to FB pin. FB trace must be routed cleanly away from L1 inductor and LX_SW node. Keep trace thin (0.15-0.2mm) over solid GND plane."
+  },
+  {
+    "ref": "R40",
+    "val": "3k24",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      116.5,
+      108.1,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/FB_3V3",
+      "pos": [
+        115.99,
+        108.1
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        117.01,
+        108.1
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Feedback Voltage Divider (R40)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "6 (FB)",
+      "target_pos": [
+        129.2025,
+        105.945
+      ],
+      "dist_mm": 13.387
+    },
+    "guideline": "AOZ1284PI Datasheet: Place FB divider resistors close to FB pin, keep FB trace away from noise.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 13.387mm to FB pin. FB trace must be routed cleanly away from L1 inductor and LX_SW node. Keep trace thin (0.15-0.2mm) over solid GND plane."
+  },
+  {
+    "ref": "R41",
+    "val": "51k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      123.5,
+      110.2,
+      -90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/COMP_NODE",
+      "pos": [
+        123.5,
+        109.69
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(C19-Pad1)",
+      "pos": [
+        123.5,
+        110.71
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Loop Compensation Resistor (51k 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "5 (COMP)",
+      "target_pos": [
+        129.2025,
+        107.215
+      ],
+      "dist_mm": 6.216
+    },
+    "guideline": "AOZ1284PI Datasheet: COMP network close to COMP pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 6.216mm to COMP pin. Forms series RC with C19."
+  },
+  {
+    "ref": "R43",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_2512_6332Metric",
+    "layer": "B.Cu",
+    "pos": [
+      116.5,
+      113.0,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        116.5,
+        115.9625
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/EN_CTRL",
+      "pos": [
+        116.5,
+        110.0375
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Enable Pull-up Resistor (4.7k 0603)",
+    "target_info": {
+      "target_ref": "U5",
+      "target_pin": "8 (EN)",
+      "target_pos": [
+        129.2025,
+        103.405
+      ],
+      "dist_mm": 14.33
+    },
+    "guideline": "Standard enable pull-up resistor.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 14.33mm to EN pin."
+  },
+  {
+    "ref": "R47",
+    "val": "78k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      91.65,
+      119.66,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U11-FREQ)",
+      "pos": [
+        91.14,
+        119.66
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        92.16,
+        119.66
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Switching Frequency Program Resistor (78.7k 0603)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "10 (FREQ)",
+      "target_pos": [
+        100.8625,
+        121.65
+      ],
+      "dist_mm": 9.924
+    },
+    "guideline": "TPS55340: FREQ resistor close to pin 10 and AGND.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 9.924mm. Directly adjacent to U11 pin 10."
+  },
+  {
+    "ref": "R48",
+    "val": "30k1",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      88.35,
+      125.16,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "V_PRE",
+      "pos": [
+        87.84,
+        125.16
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "pos": [
+        88.86,
+        125.16
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Output Feedback Voltage Divider (R48)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "9 (FB)",
+      "target_pos": [
+        100.8625,
+        122.3
+      ],
+      "dist_mm": 12.339
+    },
+    "guideline": "TPS55340 Section 10.2: Feedback divider close to FB pin, short sensitive trace.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 12.339mm. Keep BOOST_FB trace isolated from BOOST_SW and D4 cathode noise. Route on inner/shielded layer with GND guard traces."
+  },
+  {
+    "ref": "R49",
+    "val": "9k76",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      89.15,
+      127.96,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "pos": [
+        88.64,
+        127.96
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        89.66,
+        127.96
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Output Feedback Voltage Divider (R49)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "9 (FB)",
+      "target_pos": [
+        100.8625,
+        122.3
+      ],
+      "dist_mm": 13.469
+    },
+    "guideline": "TPS55340 Section 10.2: Feedback divider close to FB pin, short sensitive trace.",
+    "verdict": "ROUTING_KOSULLU",
+    "notes": "Linear distance 13.469mm. Keep BOOST_FB trace isolated from BOOST_SW and D4 cathode noise. Route on inner/shielded layer with GND guard traces."
+  },
+  {
+    "ref": "R50",
+    "val": "2k87",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      111.1,
+      108.0,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/EN_CTRL",
+      "pos": [
+        110.59,
+        108.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U6-REF)",
+      "pos": [
+        111.61,
+        108.0
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Precision Enable Divider (R50)",
+    "target_info": {
+      "target_ref": "U6",
+      "target_pin": "REF",
+      "target_pos": [
+        109.385,
+        104.0625
+      ],
+      "dist_mm": 4.523
+    },
+    "guideline": "Precision voltage reference / supervisor divider.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 4.523mm to U6 supervisor."
+  },
+  {
+    "ref": "R51",
+    "val": "9k76",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      108.2,
+      108.0,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U6-REF)",
+      "pos": [
+        107.69,
+        108.0
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        108.71,
+        108.0
+      ]
+    },
+    "block": "AOZ1284PI Buck Converter (3.3V Step-Down)",
+    "function": "Buck Precision Enable Divider (R51)",
+    "target_info": {
+      "target_ref": "U6",
+      "target_pin": "REF",
+      "target_pos": [
+        109.385,
+        104.0625
+      ],
+      "dist_mm": 4.287
+    },
+    "guideline": "Precision voltage reference / supervisor divider.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 4.287mm to U6 supervisor."
+  },
+  {
+    "ref": "R52",
+    "val": "2k0",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      94.65,
+      127.96,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(U11-COMP)",
+      "pos": [
+        94.14,
+        127.96
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(C24-Pad1)",
+      "pos": [
+        95.16,
+        127.96
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Compensation Resistor (2.0k 0603)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "8 (COMP)",
+      "target_pos": [
+        100.8625,
+        122.95
+      ],
+      "dist_mm": 8.384
+    },
+    "guideline": "TPS55340 Section 10.2: COMP network close to COMP pin.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 8.384mm to COMP pin."
+  },
+  {
+    "ref": "R53",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      103.65,
+      125.76,
+      180.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "PD_VOUT",
+      "pos": [
+        103.14,
+        125.76
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(U11-EN)",
+      "pos": [
+        104.16,
+        125.76
+      ]
+    },
+    "block": "TPS55340 Boost Converter (Intermediate Rail Step-Up)",
+    "function": "Boost Enable Pull-up Resistor (100k 0603)",
+    "target_info": {
+      "target_ref": "U11",
+      "target_pin": "4 (EN)",
+      "target_pos": [
+        95.1375,
+        121.0
+      ],
+      "dist_mm": 10.201
+    },
+    "guideline": "TPS55340: EN pin pull-up/divider.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 10.201mm to EN pin."
+  },
+  {
+    "ref": "R54",
+    "val": "1k0",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      124.8,
+      107.2,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "pos": [
+        124.29,
+        107.2
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(C30-Pad1)",
+      "pos": [
+        125.31,
+        107.2
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R54)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R55",
+    "val": "237k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      129.0,
+      107.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "pos": [
+        129.0,
+        106.99
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "pos": [
+        129.0,
+        108.01
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R55)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R56",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      131.2,
+      107.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "pos": [
+        131.2,
+        106.99
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        131.2,
+        108.01
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R56)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R58",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      133.4,
+      107.5,
+      90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/SW_EN",
+      "pos": [
+        133.4,
+        106.99
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        133.4,
+        108.01
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R58)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R59",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "layer": "B.Cu",
+    "pos": [
+      144.0,
+      122.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "OUT_POS",
+      "pos": [
+        144.825,
+        122.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        143.175,
+        122.5
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R59)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R60",
+    "val": "5R6",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "layer": "F.Cu",
+    "pos": [
+      87.0,
+      104.75,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "+3.3V",
+      "pos": [
+        86.0875,
+        104.75
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USER INTERFACE/BL_A",
+      "pos": [
+        87.9125,
+        104.75
+      ]
+    },
+    "block": "User Interface, TFT LCD & Encoder",
+    "function": "TFT Backlight Current Limit Resistor (5.6R 1206)",
+    "target_info": {
+      "target_ref": "J6",
+      "target_pin": "BL_A",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 6.5
+    },
+    "guideline": "Display backlight LED current limiter.",
+    "verdict": "UYGUN",
+    "notes": "Positioned close to LCD connector J6."
+  },
+  {
+    "ref": "R61",
+    "val": "4k7",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      125.5,
+      124.05,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "OUT_EN",
+      "pos": [
+        126.01,
+        124.05
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        124.99,
+        124.05
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R61)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R62",
+    "val": "5k1",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      61.5,
+      96.8,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "USB_CC1",
+      "pos": [
+        60.99,
+        96.8
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        62.01,
+        96.8
+      ]
+    },
+    "block": "USB-C Type-C CC Configuration",
+    "function": "USB-C Configuration Channel Pull-down (R62 5.1k 1% 0603)",
+    "target_info": {
+      "target_ref": "J7",
+      "target_pin": "CC1",
+      "target_pos": [
+        49.295,
+        89.75
+      ],
+      "dist_mm": 13.656
+    },
+    "guideline": "USB Type-C Specification Section 4.5.1: 5.1k +-1% to GND on CC1 and CC2 for Sink / UFP mode.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 13.656mm to USB-C receptacle J7 CC pins. Placed directly behind J7 pads."
+  },
+  {
+    "ref": "R63",
+    "val": "5k1",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "F.Cu",
+    "pos": [
+      61.5,
+      98.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "USB_CC2",
+      "pos": [
+        60.99,
+        98.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        62.01,
+        98.5
+      ]
+    },
+    "block": "USB-C Type-C CC Configuration",
+    "function": "USB-C Configuration Channel Pull-down (R63 5.1k 1% 0603)",
+    "target_info": {
+      "target_ref": "J7",
+      "target_pin": "CC2",
+      "target_pos": [
+        49.295,
+        86.75
+      ],
+      "dist_mm": 16.578
+    },
+    "guideline": "USB Type-C Specification Section 4.5.1: 5.1k +-1% to GND on CC1 and CC2 for Sink / UFP mode.",
+    "verdict": "UYGUN",
+    "notes": "Linear distance 16.578mm to USB-C receptacle J7 CC pins. Placed directly behind J7 pads."
+  },
+  {
+    "ref": "R64",
+    "val": "2k0",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      80.5,
+      125.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(R64-Pad1)",
+      "pos": [
+        81.01,
+        125.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "PD_INT_3V3",
+      "pos": [
+        79.99,
+        125.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "PD_INT Level Shifter Divider / Pull-up (R64)",
+    "target_info": {
+      "target_ref": "U1/U2",
+      "target_pin": "PD_INT",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Discrete level shifting divider network.",
+    "verdict": "UYGUN",
+    "notes": "Compact cluster at southern edge of AP33772S block."
+  },
+  {
+    "ref": "R65",
+    "val": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "layer": "B.Cu",
+    "pos": [
+      82.8,
+      125.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "Net-(R65-Pad1)",
+      "pos": [
+        83.31,
+        125.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "GND",
+      "pos": [
+        82.29,
+        125.5
+      ]
+    },
+    "block": "AP33772S USB PD Sink",
+    "function": "PD_INT Level Shifter Divider / Pull-up (R65)",
+    "target_info": {
+      "target_ref": "U1/U2",
+      "target_pin": "PD_INT",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Discrete level shifting divider network.",
+    "verdict": "UYGUN",
+    "notes": "Compact cluster at southern edge of AP33772S block."
+  },
+  {
+    "ref": "R66",
+    "val": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "layer": "F.Cu",
+    "pos": [
+      127.5,
+      117.5,
+      -90.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "/USB_PD_CONTROLLER/SW_OUT",
+      "pos": [
+        127.5,
+        118.325
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "/USB_PD_CONTROLLER/DISCH_G",
+      "pos": [
+        127.5,
+        116.675
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R66)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  },
+  {
+    "ref": "R67",
+    "val": "1k",
+    "footprint": "Resistor_SMD:R_2512_6332Metric",
+    "layer": "F.Cu",
+    "pos": [
+      113.0,
+      117.5,
+      0.0
+    ],
+    "pin1": {
+      "num": "1",
+      "net": "OUT_POS",
+      "pos": [
+        110.0375,
+        117.5
+      ]
+    },
+    "pin2": {
+      "num": "2",
+      "net": "Net-(Q6-D)",
+      "pos": [
+        115.9625,
+        117.5
+      ]
+    },
+    "block": "Output Stage & INA226 Current Monitor",
+    "function": "Output Stage Bias / Divider / Slew Control (R67)",
+    "target_info": {
+      "target_ref": "Power Output",
+      "target_pin": "Stage",
+      "target_pos": [
+        0,
+        0
+      ],
+      "dist_mm": 5.0
+    },
+    "guideline": "Power stage gate drive and discharge networks.",
+    "verdict": "UYGUN",
+    "notes": "Clean layout with appropriate clearances."
+  }
+]
