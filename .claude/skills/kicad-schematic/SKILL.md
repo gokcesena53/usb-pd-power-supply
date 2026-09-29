@@ -614,6 +614,17 @@ başlığı böyle bulundu). `E.remove_texts(t, {başlıklar})` ile önce sil.
 karakter). Notun metnini betikte değiştirdiysen eski hali tam eşleşmez ve
 sayfada kalır (RTC ve J3 notları ikilendi): `E.remove_texts(t, prefixes=('TFT032B018',))`.
 
+**`update_pcb.py` şemada olmayan footprint'i silerdi.** Montaj delikleri (H1-H4,
+kilitli) ve MECH_ENC şemada yok, "board only"; 29.09.2026 dry-run'ı `SIL H1..H4,
+MECH_ENC` gösterdi. Artık board-only ve kilitli footprint `KORU` olarak kalır (KiCad'in
+Update PCB davranışı). Yazmadan önce her zaman `--dry-run` çıktısında `SIL` ara.
+
+**MCU pin ataması değişimi = etiket yeniden adlandırma.** U2 pinleri kısa tel + etiketle
+bağlıysa (araya pasif girmiyorsa) yalnız etiket adını/şeklini değiştir; geometri aynı
+kalır, netlist farkı yalnız değişen netler. Yerel etiket yazısı telin üstüne basılır ve
+üst satırdaki global etiket gövdesine biner (IO21 RTC_INT/INA_ALERT): teli kısaltıp
+etiketi uca `rot=180` koy.
+
 **Eski ERC hataları gerçek devre hatası olabilir.** todo listesinde yıllanmış
 "R6 pin 2 bağlı değil / Q2 pin 3 bağlı değil / PD_I2C_SDA_5V dangling" üçlüsü
 aslında SDA seviye dönüştürücüsünün kopukluğuydu (SCL tarafı R5/Q1 doğruydu).

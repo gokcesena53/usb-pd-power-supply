@@ -1,0 +1,42 @@
+{
+ "assign": {
+  "5": "PD_INT_3V3",
+  "6": "ENCODER_A",
+  "9": "TFT_SCLK",
+  "10": "TFT_DC",
+  "13": "TFT_BL_PWM",
+  "16": "ENCODER_B",
+  "19": "ENCODER_SW",
+  "20": "TFT_CS",
+  "24": "TFT_MOSI",
+  "25": "TFT_RST",
+  "26": "INA_ALERT",
+  "27": "RTC_INT",
+  "28": "PD_I2C_SCL_3V3",
+  "29": "PD_I2C_SDA_3V3"
+ },
+ "orig": {
+  "5": "RTC_INT",
+  "6": "INA_ALERT",
+  "9": "TFT_SCLK",
+  "10": "TFT_MOSI",
+  "13": "TFT_BL_PWM",
+  "16": "TFT_DC",
+  "19": "TFT_CS",
+  "20": "TFT_RST",
+  "24": "PD_I2C_SCL_3V3",
+  "25": "PD_I2C_SDA_3V3",
+  "26": "PD_INT_3V3",
+  "27": "ENCODER_SW",
+  "28": "ENCODER_A",
+  "29": "ENCODER_B"
+ },
+ "cost": [
+  8827.900185344053,
+  8441.853685829532
+ ],
+ "cross": [
+  51,
+  42
+ ]
+}

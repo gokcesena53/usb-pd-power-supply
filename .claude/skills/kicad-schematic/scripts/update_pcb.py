@@ -142,6 +142,11 @@ def main():
     keep, log = [], []
 
     for r in sorted(set(fps) - set(comps), key=natural):
+        # KiCad'in Update PCB'si gibi: "board only" (montaj deligi, mekanik encoder) ve kilitli
+        # footprint semada yoktur ama silinmez (29.09.2026: H1-H4 kilitli + MECH_ENC silinecekti)
+        if fps[r].IsBoardOnly() or fps[r].IsLocked():
+            log.append(f'KORU  {r}: {"board only" if fps[r].IsBoardOnly() else "kilitli"}')
+            continue
         keep.append(fps.pop(r)); b.Remove(keep[-1]); log.append(f'SIL   {r}')
 
     for r in sorted(comps, key=natural):

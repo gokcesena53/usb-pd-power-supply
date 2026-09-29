@@ -2,6 +2,60 @@ Bu dosya, Lisans Alan tarafından yapılan değişikliklerin açıklanması içi
 bkz. CERN OHL lisansının 3.4.b bölümü.
 
 REV_C (2026-09-16) - devam ediyor
+29.09.2026 - Sifirdan yerlesim (kicad-placement, agirlikli ratsnest):
+- H1-H4 ve J3 disindaki 139 parcadan 137'si yeniden yerlestirildi
+  (MECH_ENC ve J9 sabit dis hat girintisiyle belirlendigi icin yerinde).
+  Parca yuzleri, footprint'ler, netler ve dis hat degismedi.
+- Agirlikli skor 7171 -> 4025 (-%44), bloklar arasi 1425 -> 829 (-%42).
+  Courtyard cakismasi 0, sematik parite 0.
+- D5-U11 BOOST_FB 4 segmentlik deneme yolu silindi (361 acik baglanti).
+  Referans yazilari icin 29 yeni serigrafi ihlali acik.
+- Karar: design_decisions/output/SIFIRDAN_YERLESIM_AGIRLIKLI_RATSNEST_20260929.md
+  Rapor: hardware/docs/reports/placement-scratch-20260929/
+29.09.2026 - FPC buküm yolu keepout'u ve agirlik guncellemesi:
+- Siradan baglanti agirligi 1 -> 5 (kritik 10, olcum/FB 5, diger 5).
+- LCD FPC buküm yolu (X 102.55-142.92, Y 101.05-117.55 mm) top layerda
+  komponent yasagi. OUTSW top kumesi (U12, Q5, Q6, C30-C32, D6, D10,
+  R54-R56, R58, R66, R67) ic duzeni korunarak (+7.0, -15.5) mm tasindi;
+  R60, U13, C35, R61, Q4 ve UI direnclerinde kucuk kaydirma (44 parca).
+- Kilitli H1-H4/J3 yerinde; netler, yuzler, footprint'ler degismedi.
+  Skor (yeni agirlik) 10771 -> 10973 (+%2); kritik kenar uzamasi yok.
+  Serigrafi ihlali 29 -> 37 (TASK-116).
+  Rapor: hardware/docs/reports/placement-fpc-20260929/
+29.09.2026 - Routability iyilestirmesi (kesisme, dekuplaj yuzu, IC-yerel parcalar):
+- Yerlesim maliyetine ayni yuz ratsnest kesismesi, dekuplaj-IC ayni yuz kurali
+  (yer yoksa karsi yuz) ve IC-yerel destek parcasi cekimi eklendi.
+- Ayni yuz kesisme 113 -> 75, via kenari 28 -> 27, kopuk parca 10 -> 7;
+  S 10973 -> 10983 (+%0.1); uzayan kritik kenar yok (w>=5 korumali).
+- R2/R3 (USB seri) U2 pinlerine 1.5 mm; 105 parcada kucuk kaydirma/donme.
+  Kilitli parcalar, yuzler, netler degismedi; DRC ihlali 62 -> 59, parite 0.
+  Rapor: hardware/docs/reports/placement-routability-20260929/
+29.09.2026 - Duzlem netleri metrigi ve yerlesim guncellemesi:
+- In2 POWER_PLANE tum guc hatlari icin bolunmus polygon (kullanici karari).
+  Guc netleri ve GND'nin siradan baglantilari kesisme hesabindan cikarildi,
+  W_PLANE=1 ile sayiliyor; S tabani yeniden hesaplandi (10983 -> 8237).
+- Sinyal kesismesi 57 -> 51, S 8237 -> 8170 (-%1); uzayan kritik kenar yok;
+  Kelvin R11/RShunt1 20.7 -> 20.1 mm. 100 parcada kucuk kaydirma/donme.
+  DRC 59 -> 56, parite 0. Rapor: hardware/docs/reports/placement-plane-20260929/
+29.09.2026 - ESP32-C6 pin atamasi (TASK-123, kullanici onayli):
+- mcu.kicad_sch: U2 pinlerindeki 12 etiket yeniden adlandirildi (geometri ayni).
+  TFT_DC IO7->IO5, TFT_CS IO14->IO15, TFT_MOSI IO5->IO18, TFT_RST IO15->IO19,
+  ENCODER_A/B/SW IO22/23/21->IO3/7/14, PD_INT_3V3 IO20->IO2, INA_ALERT IO3->IO20,
+  RTC_INT IO2->IO21, I2C SCL/SDA IO18/19->IO22/23. ERC 0; netlist farki yalniz bu netler.
+- PCB semadan guncellendi (yalniz U2 pad netleri), yerlesim yeni atamaya gore
+  iyilestirildi: sinyal kesismesi 51 -> 38, S 7919 -> 7841; kilitli parcalar yerinde,
+  parite 0, DRC 56 -> 60 (serigrafi, TASK-116).
+- update_pcb.py: "board only" ve kilitli footprint'ler artik silinmiyor (H1-H4, MECH_ENC).
+- software/FIRMWARE_GEREKSINIMLERI.md pin tablosu guncellendi.
+  Rapor: hardware/docs/reports/placement-pinswap-20260929/
+29.09.2026 - Blok bazli yeniden yerlesim (LNS, TASK-124):
+- BOOST: sicak dongu (U11, L3, D4, C25-C28) sabit, kucuk sinyal uydulari yeniden
+  kuruldu. C23 (SS) U11'e 7.0 -> 2.7 mm, R53 (EN) 6.7 -> 5.3 mm; C24 GND +1.1 mm.
+  Sicak dongu 17.0 mm ayni, kesisme 38, S 7841 -> 7840. 10 parca tasindi.
+- PD: iki deneme mevcut yerlesimden kotu (dekuplaj +%2..%8), degisiklik yok.
+- Kilitli parcalar yerinde, parite 0, DRC 60 -> 61 (serigrafi, TASK-116).
+  Rapor: hardware/docs/reports/placement-lns-20260929/
+
 28.09.2026 - Aktif desarj blogu yerlesimi:
 - Q4 (B.Cu) (120.00, 122.50) -> (123.00, 117.50) mm tasindi. Q4,
   U13-Q4-Q6 aktif desarj zincirinde ve F.Cu Q6/D10 grubunun karsisinda kaldı;
