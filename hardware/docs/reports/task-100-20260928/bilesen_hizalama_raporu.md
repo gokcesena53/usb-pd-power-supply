@@ -64,7 +64,7 @@ Aşağıdaki tabloda mikro-ofsetleri temizlenen ve grid eksenlerine oturtulan t�
 ## 4. Doğrulama ve Metrikler
 
 ### 4.1. Ratsnest Çaprazlık ve Tel Uzunluğu Analizi
-- **Ölçüm Aracı:** `scratch/ratsnest_crossing_test.py` (Prim MST algoritması, güç düzlemleri hariç sinyal hatları 2D kesişim analizi).
+- **Ölçüm Aracı:** `hardware/docs/reports/task-100-20260928/scripts/ratsnest_crossing_test.py` (Prim MST algoritması, güç düzlemleri hariç sinyal hatları 2D kesişim analizi).
 - **Segment Sayısı:** 127 sinyal hattı.
 - **Tel Uzunluğu (Wirelength):** $1451.28\text{ mm} \rightarrow \mathbf{1450.84\text{ mm}}$ (Hizalama ile azaltıldı; tam flip simülasyonunda $1429.96\text{ mm}$).
 - **Kesişim Sayısı (Crossings):** Taban 185 korundu / optimize edildi.

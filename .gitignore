@@ -51,6 +51,10 @@ __pycache__/
 
 # Yerel klasör
 local/
+# Gecici calisma alani: deneme betikleri, aday PCB'ler, DRC ciktilari.
+# Kanit olan betik ilgili hardware/docs/reports/<gorev>/scripts/ altina,
+# kalici arac .claude/skills/<skill>/scripts/ altina tasinir.
+scratch/
 .claude/settings.local.json
 
 # Firma ici malzeme talep formati ve ondan uretilen liste (GitHub'a yuklenmez)

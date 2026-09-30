@@ -52,7 +52,7 @@ Kritik yönlendirme (routing) aşaması olan TASK-087 öncesinde, kart üzerinde
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [x] #1 Otomasyon denetim scripti (`scratch/audit_task107_final.py`) çalıştırıldı ve sayısal çıktılar alındı
+- [x] #1 Otomasyon denetim scripti (`hardware/docs/reports/task-107-20260928/scripts/audit_task107_final.py`) çalıştırıldı ve sayısal çıktılar alındı
 - [x] #2 Donanım revizyon raporu ve tasarım kararı oluşturuldu
 - [x] #3 `CHANGES.TXT` güncellendi
 <!-- DOD:END -->

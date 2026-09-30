@@ -2,6 +2,15 @@ Bu dosya, Lisans Alan tarafından yapılan değişikliklerin açıklanması içi
 bkz. CERN OHL lisansının 3.4.b bölümü.
 
 REV_C (2026-09-16) - devam ediyor
+30.09.2026 - scratch/ klasoru depodan cikarildi (TASK-125):
+- 795e911 ve 44d5015 ile giren 297 gecici dosya (deneme betikleri, aday
+  PCB'ler, DRC ciktilari) git'ten cikarildi; scratch/ .gitignore'a eklendi.
+  Tasarim dosyalari (sema, PCB, kutuphane) degismedi.
+- Raporlarin kanit olarak yol verdigi 7 dosya ve bunlarin 2 cikti dosyasi
+  hardware/docs/reports/task-{100,105,106,107,108}-20260928/scripts/ altina
+  tasindi; rapor, gorev ve karar dosyalarindaki yollar guncellendi. Asagidaki
+  eski kayitlarda gecen scratch/... yollari bu yeni konumlara karsilik gelir.
+- Karar: design_decisions/output/SCRATCH_KLASORU_DEPO_DISI_TASK125_20260930.md
 29.09.2026 - Sifirdan yerlesim (kicad-placement, agirlikli ratsnest):
 - H1-H4 ve J3 disindaki 139 parcadan 137'si yeniden yerlestirildi
   (MECH_ENC ve J9 sabit dis hat girintisiyle belirlendigi icin yerinde).

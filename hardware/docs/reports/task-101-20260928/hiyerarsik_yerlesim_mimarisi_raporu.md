@@ -97,7 +97,7 @@ Güç indüktörleri ($L1, L3$) ve yüksek $dv/dt$ anahtarlama düğümleri ($SW
 ## 6. Doğrulama ve Metrikler
 
 ### 6.1. Ratsnest Çaprazlık ve Tel Uzunluğu Analizi
-- **Ölçüm Aracı:** `scratch/ratsnest_crossing_test.py`
+- **Ölçüm Aracı:** `hardware/docs/reports/task-100-20260928/scripts/ratsnest_crossing_test.py`
 - **Sinyal Segment Sayısı:** 127
 - **Sinyal Kesişim Sayısı (Crossings):** **185** (Hiyerarşik boru hattı ve zonlama ile taban korundu).
 - **Toplam Sinyal Teli Uzunluğu (MST):** **$1450.84\text{ mm}$**.

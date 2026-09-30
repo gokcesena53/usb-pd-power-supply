@@ -43,6 +43,9 @@ kısayoluna düşer). KiCad araç/dizin bulma `kicadtools.py`'dedir (bkz.
 | Tasarım kararı, hesap, inceleme | `design_decisions/` (tek kaynak; `backlog/decisions` kullanılmaz) |
 | Firmware'in donanımdan beklediği davranış | `software/FIRMWARE_GEREKSINIMLERI.md` |
 | Lisans gereği değişiklik kaydı | `CHANGES.TXT` (CERN OHL 3.4.b) |
+| Deneme betiği, aday PCB, ara DRC çıktısı | Repo dışı oturum scratchpad'i (`scratch/` git'te yok sayılır) |
+| Görevin kanıtı olan betik/çıktı | `hardware/docs/reports/<görev>/scripts/` |
+| Tekrar kullanılacak araç | `.claude/skills/<skill>/scripts/` |
 
 Karar görev sırasında değişirse ilgili `design_decisions/` dosyasını ve
 `CHANGES.TXT`'yi de güncelle; görev bu dosyalara `--ref`/`--doc` ile bağlanır.

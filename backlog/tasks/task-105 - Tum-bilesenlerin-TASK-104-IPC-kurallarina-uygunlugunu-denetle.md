@@ -51,7 +51,7 @@ PCB üzerindeki tüm 144 komponentin (85 pasif R/C, 10 IC, 10 diyot, 8 transist�
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [x] #1 Otomasyon denetim scripti (`scratch/audit_task104_compliance.py`) ve JSON veri çıktısı üretildi
+- [x] #1 Otomasyon denetim scripti (`hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py`) ve JSON veri çıktısı üretildi
 - [x] #2 Donanım denetim raporu (`hardware/docs/reports/task-105-20260928/`) oluşturuldu
 - [x] #3 Karar belgesi (`design_decisions/output/`) ve `CHANGES.TXT` güncellendi
 <!-- DOD:END -->
@@ -59,7 +59,7 @@ PCB üzerindeki tüm 144 komponentin (85 pasif R/C, 10 IC, 10 diyot, 8 transist�
 ## Implementation Notes
 <!-- SECTION:NOTES:BEGIN -->
 ### Denetim Özeti ve Doğrulama Çıktıları:
-- **Otomasyon Scripti:** `scratch/audit_task104_compliance.py`
+- **Otomasyon Scripti:** `hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py`
 - **Sayısal Veri Dosyası:** `hardware/docs/reports/task-105-20260928/audit_task104_compliance.json`
 - **Donanım Uygunluk Raporu:** `hardware/docs/reports/task-105-20260928/bilesen_uygunluk_denetim_raporu.md`
 - **Tasarım Kararı:** `design_decisions/output/BILESEN_UYGUNLUK_DENETIMI_TASK105_20260928.md`

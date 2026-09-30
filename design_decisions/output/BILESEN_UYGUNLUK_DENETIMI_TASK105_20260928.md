@@ -25,7 +25,7 @@ REV_C PCB tasarımı üzerindeki tüm 144 komponentin (85 pasif R/C, 10 IC, 10 d
 
 ## 3. Doğrulama ve Rapor Referansları
 
-- **Otomasyon Denetim Scripti:** `scratch/audit_task104_compliance.py`
+- **Otomasyon Denetim Scripti:** `hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py`
 - **Sayısal Veri Çıktısı (JSON):** `hardware/docs/reports/task-105-20260928/audit_task104_compliance.json`
 - **Ayrıntılı Donanım Raporu:** `hardware/docs/reports/task-105-20260928/bilesen_uygunluk_denetim_raporu.md`
 - **KiCad 10 DRC & Parite:**

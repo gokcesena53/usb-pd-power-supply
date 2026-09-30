@@ -100,6 +100,6 @@ Tüm kritik entegrelerin dekuplaj kapasitörleri pin merkezlerine en kısa mesaf
 - **Avlu (Courtyard) Çakışması:** **0 adet** (Tüm komponentler IPC toleransları dahilinde).
 
 ### 4.2. Ratsnest Çaprazlık Testi
-- **Komut:** `scratch/ratsnest_crossing_test.py`
+- **Komut:** `hardware/docs/reports/task-100-20260928/scripts/ratsnest_crossing_test.py`
 - **Sinyal Hatları Tel Uzunluğu (Wirelength):** $1342.15\text{ mm}$
 - **Sinyal Kesişim Sayısı (Crossings):** $161$ kesişim

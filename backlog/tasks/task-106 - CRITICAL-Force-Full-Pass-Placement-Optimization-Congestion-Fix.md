@@ -55,7 +55,7 @@ Son revizyonda kart üzerindeki bazı alt devre bloklarında pasif elemanların 
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [x] #1 `scratch/execute_final_optimization.py` ve `scratch/force_repack_optimizer.py` scriptleri çalıştırıldı
+- [x] #1 `hardware/docs/reports/task-106-20260928/scripts/execute_final_optimization.py` ve `hardware/docs/reports/task-106-20260928/scripts/force_repack_optimizer.py` scriptleri çalıştırıldı
 - [x] #2 `hardware/gopo.kicad_pcb` güncellendi ve KiCad 10 DRC ile doğrulandı
 - [x] #3 `audit_compliance.json` raporlandı
 - [x] #4 `CHANGES.TXT` ve tasarım karar dokümanı güncellendi

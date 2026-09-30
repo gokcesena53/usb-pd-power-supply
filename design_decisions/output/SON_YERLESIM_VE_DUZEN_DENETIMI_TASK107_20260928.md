@@ -28,4 +28,4 @@ TASK-087 (PCB Routing) aşamasına geçiş öncesinde, PCB üzerindeki tüm 144 
 - **Ayrıntılı Denetim Raporu:** `hardware/docs/reports/task-107-20260928/final_placement_layout_audit_raporu.md`
 - **Sayısal Denetim Çıktısı (JSON):** `hardware/docs/reports/task-107-20260928/final_placement_audit.json`
 - **Görev Takip Belgesi:** `backlog/tasks/task-107 - Final-Component-Placement-and-Layout-Audit.md`
-- **Yürütme Scripti:** `scratch/audit_task107_final.py`
+- **Yürütme Scripti:** `hardware/docs/reports/task-107-20260928/scripts/audit_task107_final.py`

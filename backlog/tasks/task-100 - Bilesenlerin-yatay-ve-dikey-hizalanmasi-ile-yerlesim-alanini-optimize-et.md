@@ -76,7 +76,7 @@ PCB üzerindeki 86 pasif eleman (R, C) ve aktif komponentlerin dağınık, rastg
 - $X = 87.50\text{ mm}$ ve $X = 104.00\text{ mm}$ kolonları ile $Y = 105.00\text{ mm}$, $Y = 119.50\text{ mm}$, $Y = 125.50\text{ mm}$, $Y = 128.00\text{ mm}$ satırları boyunca kesintisiz yönlendirme koridorları açıldı; PD_VOUT, V_PRE ve GND poligonlarının akışı rahatlatıldı.
 
 ### 5. Doğrulama, DRC ve Ratsnest Metrikleri
-- **Ratsnest Metrikleri:** `scratch/ratsnest_crossing_test.py` ile tel uzunluğu $1451.28\text{ mm} \rightarrow \mathbf{1450.84\text{ mm}}$'ye indirildi; kesişim sayısı 185 tabanı korundu.
+- **Ratsnest Metrikleri:** `hardware/docs/reports/task-100-20260928/scripts/ratsnest_crossing_test.py` ile tel uzunluğu $1451.28\text{ mm} \rightarrow \mathbf{1450.84\text{ mm}}$'ye indirildi; kesişim sayısı 185 tabanı korundu.
 - **KiCad DRC:** `kicad-cli pcb drc --schematic-parity hardware/gopo.kicad_pcb`
   - **İhlal Sayısı:** 164 ihlal (Taban korundu, **0 YENİ İHLAL**).
   - **Şematik Paritesi:** **0 schematic parity issue** (%100 parite).

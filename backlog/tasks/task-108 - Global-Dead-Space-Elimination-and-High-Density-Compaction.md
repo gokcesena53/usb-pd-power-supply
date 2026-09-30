@@ -52,7 +52,7 @@ Kart genelindeki tüm alt devre bloklarında pasif bileşenler ile ilişkili ent
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [x] #1 Otomasyon sıkıştırma ve denetim scripti (`scratch/execute_task108_compaction.py`) çalıştırıldı
+- [x] #1 Otomasyon sıkıştırma ve denetim scripti (`hardware/docs/reports/task-108-20260928/scripts/execute_task108_compaction.py`) çalıştırıldı
 - [x] #2 `hardware/gopo.kicad_pcb` güncellendi ve KiCad 10 DRC ile doğrulandı
 - [x] #3 `hardware/docs/reports/task-108-20260928/` altında denetim raporu ve kök dizinde `audit_compliance.json` üretildi
 - [x] #4 Tasarım kararı `design_decisions/output/KURESEL_OLU_ALAN_GIDIRME_SIKILASTIRMA_TASK108_20260928.md` ve `CHANGES.TXT` güncellendi

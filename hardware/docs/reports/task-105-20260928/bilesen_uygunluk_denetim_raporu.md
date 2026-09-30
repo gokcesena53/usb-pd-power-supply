@@ -3,7 +3,7 @@
 **Tarih:** 28 Eylül 2026  
 **İncelenen Dosya:** `hardware/gopo.kicad_pcb`  
 **Araç Sürümleri:** KiCad 10.0.5, Python 3.10.11 / KiCad pcbnew Python API  
-**Denetim Komut Dosyası:** `scratch/audit_task104_compliance.py`  
+**Denetim Komut Dosyası:** `hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py`  
 **Sayısal Veri Çıktısı:** `hardware/docs/reports/task-105-20260928/audit_task104_compliance.json`  
 **Durum:** TAMAMLANDI (DONE) — TÜM KRİTERLER BAŞARILI (PASS)
 
@@ -13,7 +13,7 @@
 
 Bu denetim raporu; TASK-104 kapsamında REV_C PCB tasarımı üzerinde optimize edilen bileşen yerleşiminin, IPC-7351 Yüksek Yoğunluk (Least/High-Density Courtyard) kurallarına, grid hizalama standartlarına, ortogonal rotasyon normalizasyonuna, entegre dekuplaj önceliğine ve mekanik ankraj toleranslarına tam uyumluluğunu pin ve koordinat bazında uçtan uca doğrulamak amacıyla hazırlanmıştır.
 
-Denetim, KiCad 10.0.5 `pcbnew` Python kütüphanesi ve `kicad-cli pcb drc --schematic-parity` motoru kullanılarak otomatik script (`scratch/audit_task104_compliance.py`) ile gerçekleştirilmiştir. Kart üzerindeki **144 komponentin tamamı** matematiksel ve geometrik olarak taranmış, 7 temel kabul kriterinin tamamında **%100 BAŞARI (PASS)** elde edilmiştir.
+Denetim, KiCad 10.0.5 `pcbnew` Python kütüphanesi ve `kicad-cli pcb drc --schematic-parity` motoru kullanılarak otomatik script (`hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py`) ile gerçekleştirilmiştir. Kart üzerindeki **144 komponentin tamamı** matematiksel ve geometrik olarak taranmış, 7 temel kabul kriterinin tamamında **%100 BAŞARI (PASS)** elde edilmiştir.
 
 ### Temel Denetim Sonuçları:
 - **Toplam Ayak İzi (Footprint):** 144 adet (85 pasif R/C, 10 IC, 10 diyot, 8 transistör/FET, 2 güç indüktörü, 1 kristal osilatör, 14 test noktası, 5 konnektör, 2 buton, 4 montaj deliği, 1 şönt, 1 termistör, 1 mekanik enkoder gövdesi).
@@ -69,7 +69,7 @@ Komponentler arasındaki yerleşim yoğunlaştırılırken IPC-7351 Level C (Lea
 
 ### 3.2. AC #2: Grid Hizalama ve Eksen Rayları Denetimi (%100 Grid Kilidi)
 - **Kriter:** 85 pasif bileşenin (R, C) tamamının (%100) $0.25\text{ mm}$ veya $0.50\text{ mm}$ mühendislik gridine kilitlendiği, 0 adet off-grid komponent kaldığı otomatik script ile kanıtlanmalıdır.
-- **Doğrulama Yöntemi:** `scratch/audit_task104_compliance.py` ile 85 elemanın $X$ ve $Y$ merkez koordinatlarının $0.50\text{ mm}$ ve $0.25\text{ mm}$ modülo kontrolü.
+- **Doğrulama Yöntemi:** `hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py` ile 85 elemanın $X$ ve $Y$ merkez koordinatlarının $0.50\text{ mm}$ ve $0.25\text{ mm}$ modülo kontrolü.
 - **Sonuç:**
   - $0.50\text{ mm}$ Gridine Kilitli: **59 adet (%69.4)**
   - $0.25\text{ mm}$ Gridine Kilitli: **26 adet (%30.6)**
@@ -270,7 +270,7 @@ Komponentler arasındaki yerleşim yoğunlaştırılırken IPC-7351 Level C (Lea
 
 ### 3.7. AC #7: KiCad 10 DRC ve Şematik Parite Güvencesi
 - **Kriter:** DRC çalıştırılarak $\le 165$ ihlal tabanının (0 yeni ihlal), 0 şematik parite hatasının ve 360 bağlantısız öğe tabanının belgelenmesi.
-- **Doğrulama Komutu:** `kicad-cli pcb drc --schematic-parity -o scratch/task105_current_drc.rpt hardware/gopo.kicad_pcb`
+- **Doğrulama Komutu:** `kicad-cli pcb drc --schematic-parity -o hardware/docs/reports/task-105-20260928/scripts/task105_current_drc.rpt hardware/gopo.kicad_pcb`
 - **Sonuç:**
   - **Toplam DRC İhlali:** **165 ihlal** ($\le 165$ tabanı korunmuş; **0 YENİ İHLAL**).
     *(İhlallerin 146'sı serigrafi kaynaklı olup TASK-103 kapsamında giderilecektir; kalanlar önceden bilinen ve belgelenen mikro board edge clearance ihlalleridir).*
@@ -295,6 +295,6 @@ Komponentler arasındaki yerleşim yoğunlaştırılırken IPC-7351 Level C (Lea
 | **AC #8** | Detaylı Uygunluk Raporu ve Tasarım Kararı | Dokümantasyon üretimi | Rapor ve karar belgesi tamamlandı | **PASS** |
 
 ### Definition of Done (DoD) Kontrol Listesi:
-- [x] #1 Otomasyon denetim scripti (`scratch/audit_task104_compliance.py`) ve JSON veri çıktısı (`hardware/docs/reports/task-105-20260928/audit_task104_compliance.json`) üretildi.
+- [x] #1 Otomasyon denetim scripti (`hardware/docs/reports/task-105-20260928/scripts/audit_task104_compliance.py`) ve JSON veri çıktısı (`hardware/docs/reports/task-105-20260928/audit_task104_compliance.json`) üretildi.
 - [x] #2 Donanım denetim raporu (`hardware/docs/reports/task-105-20260928/bilesen_uygunluk_denetim_raporu.md`) oluşturuldu.
 - [x] #3 Karar belgesi (`design_decisions/output/BILESEN_UYGUNLUK_DENETIMI_TASK105_20260928.md`) ve `CHANGES.TXT` güncellendi.
