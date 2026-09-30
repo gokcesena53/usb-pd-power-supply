@@ -1,0 +1,227 @@
+{
+  "task": "TASK-063",
+  "date": "2026-09-25",
+  "anchors": {
+    "J7": {
+      "x_mm": 53.975,
+      "y_mm": 82.5,
+      "rot_deg": -90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        49.77,
+        76.937,
+        58.823,
+        87.845
+      ]
+    },
+    "J8": {
+      "x_mm": 102.5,
+      "y_mm": 102.0,
+      "rot_deg": 0.0,
+      "layer": "B.Cu",
+      "bbox_mm": [
+        46.775,
+        97.611,
+        105.9,
+        124.038
+      ]
+    },
+    "U2": {
+      "x_mm": 78.0,
+      "y_mm": 75.6,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        56.375,
+        49.575,
+        99.625,
+        83.348
+      ]
+    },
+    "J9": {
+      "x_mm": 58.0,
+      "y_mm": 90.0,
+      "rot_deg": -90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        56.555,
+        88.375,
+        61.482,
+        108.425
+      ]
+    },
+    "C34": {
+      "x_mm": 104.8,
+      "y_mm": 105.55,
+      "rot_deg": 90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        104.315,
+        103.973,
+        107.348,
+        107.127
+      ]
+    },
+    "J3": {
+      "x_mm": 98.0,
+      "y_mm": 109.3,
+      "rot_deg": 90.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        91.152,
+        99.505,
+        101.848,
+        119.095
+      ]
+    },
+    "H1": {
+      "x_mm": 54.3,
+      "y_mm": 73.48,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        50.825,
+        70.005,
+        57.775,
+        78.478
+      ]
+    },
+    "H2": {
+      "x_mm": 145.7,
+      "y_mm": 73.48,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        142.225,
+        70.005,
+        149.175,
+        78.478
+      ]
+    },
+    "H3": {
+      "x_mm": 54.3,
+      "y_mm": 126.52,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        50.825,
+        123.045,
+        57.775,
+        131.518
+      ]
+    },
+    "H4": {
+      "x_mm": 145.7,
+      "y_mm": 126.52,
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "bbox_mm": [
+        142.225,
+        123.045,
+        149.175,
+        131.518
+      ]
+    }
+  },
+  "clearances": {
+    "boost_fb_track_length_mm": 2.5846,
+    "j7": {
+      "center_mm": [
+        53.975,
+        82.5
+      ],
+      "edge_alignment_x_mm": 50.3,
+      "edge_alignment_error_mm": 0.0,
+      "receptacle_nose_overhang_mm": 0.525,
+      "clearance_to_lcd_x_mm": 4.78
+    },
+    "j8_rj45": {
+      "center_mm": [
+        102.5,
+        102.0
+      ],
+      "rj45_mouth_center_y_mm": 110.89,
+      "rj45_body_y_span_mm": [
+        102.84,
+        118.94
+      ],
+      "rj45_overhang_body_mm": 3.3,
+      "rj45_overhang_nominal_tabs_mm": 4.3
+    },
+    "plug_clearance": {
+      "center_to_center_y_mm": 28.39,
+      "connector_body_gap_y_mm": 15.34,
+      "estimated_plug_gap_mm": 14.39,
+      "required_min_mm": 2.0,
+      "passes": true
+    },
+    "u2_rf": {
+      "center_mm": [
+        78.0,
+        75.6
+      ],
+      "antenna_tip_y_mm": 64.6,
+      "antenna_overhang_past_pcb_mm": 4.88,
+      "top_pad_edge_clearance_mm": 0.82,
+      "usb_d_pair_estimated_length_mm": 25.0
+    },
+    "j9_encoder": {
+      "center_mm": [
+        58.0,
+        90.0
+      ],
+      "lcd_frame_clearance_x_mm": 5.52,
+      "dist_to_j8_pad_mp_mm": 2.979,
+      "copper_clearance_to_j8_mp_mm": 0.954
+    },
+    "j8_j3_clearance": {
+      "j8_row2_x_mm": 99.96,
+      "j3_pad_edge_x_mm": 98.75,
+      "clean_copper_gap_mm": 1.21
+    },
+    "c34_decoupling": {
+      "center_mm": [
+        104.8,
+        105.55
+      ],
+      "gap_to_j8_row1_mm": 1.0
+    }
+  },
+  "acceptance_criteria": {
+    "AC1_port_locations_and_overhangs": {
+      "status": "PASS",
+      "evidence": "J7 on F.Cu (53.975, 82.5, rot 270), edge error 0.0000mm; J8 on B.Cu (102.5, 102.0, rot 0), mouth faces West, overhang 3.3mm body / 4.3mm nominal."
+    },
+    "AC2_plug_clearance_and_3d_non_collision": {
+      "status": "PASS",
+      "evidence": "Plug clearance 14.39mm >= 2.0mm; J8 MP to J9 Pad 4 Cu clearance 0.954mm; J8 Row 2 to J3 pads 1.210mm."
+    },
+    "AC3_u2_top_antenna_outside_board": {
+      "status": "PASS",
+      "evidence": "U2 on F.Cu (78.0, 75.6, rot 0); antenna hangs North past PCB edge by 4.88mm; USB 2.0 diff pair length ~25.0mm."
+    },
+    "AC4_lcd_clearances_and_envelopes": {
+      "status": "PASS",
+      "evidence": "J7 completely outside LCD (X <= 58.74 < 63.52, margin 4.78mm); J8 top pins defined with <=1.50mm cut/solder requirement under LCD."
+    },
+    "AC5_antenna_keepout_verification": {
+      "status": "PASS",
+      "evidence": "North of board edge (Y < 69.48) is completely open space; >7.5mm to LCD frame, >14.1mm to USB-C shell, >38mm to RJ45."
+    },
+    "AC6_j9_encoder_placement_and_access": {
+      "status": "PASS",
+      "evidence": "J9 on F.Cu at (58.0, 90.0, rot -90); LCD clearance 5.52mm provides free probe/iron access; exempted from J8 2D B.Courtyard via Rule 5."
+    },
+    "AC7_verification_artifacts_and_drc_parity": {
+      "status": "PASS",
+      "evidence": "DRC errors: 0, parity issues: 0, unconnected items: 360 (baseline preserved)."
+    }
+  },
+  "drc_summary": {
+    "total_violations": 128,
+    "errors": 0,
+    "warnings": 128,
+    "unconnected_items": 360,
+    "schematic_parity_issues": 0
+  }
+}

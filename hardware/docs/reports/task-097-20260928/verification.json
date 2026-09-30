@@ -1,0 +1,135 @@
+{
+  "task": "TASK-097",
+  "title": "T\u00fcm diren\u00e7 ve kapasit\u00f6rlerin yerle\u015fimini pin baz\u0131nda denetle",
+  "date": "2026-09-28",
+  "status": "AUDIT_COMPLETED",
+  "verdict": "ALL_APPROVED_FOR_ROUTING",
+  "pcb_sha256": "3fef79fb84dd7873a7848b67d45493059cb3772e0c8dd45b3bf90e45d1a4e9f6",
+  "metrics": {
+    "total_rc_components": 86,
+    "total_resistors": 52,
+    "total_capacitors": 34,
+    "schematic_parity_mismatches": 0,
+    "missing_in_pcb": 0,
+    "extra_in_pcb": 0,
+    "value_mismatches": 0,
+    "verdict_uygun": 70,
+    "verdict_routing_kosullu": 16,
+    "verdict_tasinmali": 0,
+    "mechanical_anchor_conflicts": 0,
+    "drc_courtyard_conflicts": 0,
+    "solid_collision_volume_mm3": 0.0
+  },
+  "critical_components_evaluated": [
+    {
+      "ref": "C16",
+      "val": "47u",
+      "layer": "B.Cu",
+      "function": "Buck \u00c7\u0131k\u0131\u015f Filtre Kondansat\u00f6r\u00fc (+3.3V)",
+      "target": "L1 Pad 2 (+3.3V)",
+      "euclidean_distance_mm": 9.62,
+      "verdict": "ROUTING_KOSULLU",
+      "routing_condition": "TASK-096 raporundaki 'giri\u015f kapasit\u00f6r\u00fc' varsay\u0131m\u0131 \u015fematik analizi ile d\u00fczeltildi; C16 asl\u0131nda buck \u00e7\u0131k\u0131\u015f kondansat\u00f6r\u00fcd\u00fcr. L1 ile C16 aras\u0131nda B.Cu katman\u0131nda en az 2.0 mm geni\u015fli\u011finde poligon \u00e7ekilmeli, Pad 2 den In1.Cu GND d\u00fczlemine yo\u011fun via diki\u015fi yap\u0131lmal\u0131d\u0131r."
+    },
+    {
+      "ref": "C12, C13",
+      "val": "4u7",
+      "layer": "B.Cu",
+      "function": "Buck Giri\u015f Bulk Kondansat\u00f6rleri (V_PRE)",
+      "target": "U5 Exposed Pad (Pin 9 / VIN)",
+      "euclidean_distance_mm": 5.91,
+      "verdict": "ROUTING_KOSULLU",
+      "routing_condition": "AOZ1284PI VIN giri\u015fine B.Cu \u00fczerinden do\u011frudan kesintisiz poligon ba\u011flanmal\u0131 ve GND pedlerinden In1.Cu katman\u0131na d\u00f6n\u00fc\u015f via'lar\u0131 eklenmelidir."
+    },
+    {
+      "ref": "C14",
+      "val": "100n",
+      "layer": "B.Cu",
+      "function": "Buck Giri\u015f Y\u00fcksek Frekans Seramik Bypass",
+      "target": "U5 Exposed Pad (Pin 9 / VIN)",
+      "euclidean_distance_mm": 4.84,
+      "verdict": "UYGUN",
+      "routing_condition": "U5 Exposed Pad s\u0131n\u0131r\u0131na do\u011frudan yerle\u015ftirilmi\u015ftir; ek \u00f6nlem gerekmez."
+    },
+    {
+      "ref": "C29, C25",
+      "val": "47u, 4u7",
+      "layer": "B.Cu",
+      "function": "Boost Giri\u015f Filtre Kondansat\u00f6rleri (PD_VOUT)",
+      "target": "U11 Pin 3 (VIN)",
+      "euclidean_distance_mm": 13.39,
+      "verdict": "ROUTING_KOSULLU",
+      "routing_condition": "TASK-096 raporundaki '\u00e7\u0131k\u0131\u015f s\u0131cak d\u00f6ng\u00fcs\u00fc' varsay\u0131m\u0131 \u015fematik analiziyle d\u00fczeltildi; C29 boost giri\u015f filtresidir. Y\u00fcksek frekans bypass'\u0131 100nF C26 (U11'e 3.8 mm) taraf\u0131ndan sa\u011flanmaktad\u0131r. C29/C25 giri\u015f hatt\u0131 B.Cu \u00fczerinden geni\u015f poligonla ba\u011flanmal\u0131d\u0131r."
+    },
+    {
+      "ref": "C27, C28",
+      "val": "4u7",
+      "layer": "B.Cu",
+      "function": "Boost \u00c7\u0131k\u0131\u015f Filtre Kondansat\u00f6rleri (V_PRE)",
+      "target": "D4 Katot & U11 PGND Termal Pedi",
+      "euclidean_distance_mm": 7.12,
+      "verdict": "ROUTING_KOSULLU",
+      "routing_condition": "U11 SW -> D4 -> C27 -> PGND s\u0131cak anahtarlama d\u00f6ng\u00fcs\u00fc yakla\u015f\u0131k 24 mm \u00e7evreye sahiptir. B.Cu \u00fczerinde kesintisiz kat\u0131 poligonla ba\u011flanmal\u0131 ve U11 termal pedinin 15 via's\u0131na do\u011frudan ba\u011flanmal\u0131d\u0131r."
+    },
+    {
+      "ref": "C5, C6, C7",
+      "val": "22u, 100n, 1u",
+      "layer": "F.Cu",
+      "function": "ESP32-C6 \u00c7ekirdek +3.3V Dekuplaj Grubu",
+      "target": "U2 Pin 1 (VDD33)",
+      "euclidean_distance_mm": 12.01,
+      "verdict": "ROUTING_KOSULLU",
+      "routing_condition": "RF keepout ve USB-C/Ethernet ankrajlar\u0131 nedeniyle Y=83 mm hatt\u0131nda yerle\u015ftirilmi\u015ftir. +3.3V beslemesi C5 -> C7 -> C6 s\u0131ras\u0131yla U2 pin 1 e katman de\u011fi\u015ftirmeden (vias\u0131z), 0.8 mm kal\u0131nl\u0131\u011f\u0131nda hatla ve In1.Cu GND d\u00fczlemi referans\u0131yla ula\u015ft\u0131r\u0131lmal\u0131d\u0131r."
+    },
+    {
+      "ref": "R11",
+      "val": "5m0",
+      "layer": "B.Cu",
+      "function": "USB VBUS Ak\u0131m Alg\u0131lama \u015e\u00f6nt\u00fc (1206)",
+      "target": "U1 Pin 1 & Pin 24 (AP33772S)",
+      "euclidean_distance_mm": 16.98,
+      "verdict": "ROUTING_KOSULLU",
+      "routing_condition": "Ethernet RJ45 J8 ve panel enkoder cebi ankrajlar\u0131 nedeniyle Y=103 mm de konumland\u0131r\u0131lm\u0131\u015ft\u0131r. U1'e giden VBUS_SENSE hatlar\u0131 B.Cu \u00fczerinde 0.2 mm geni\u015flik / 0.2 mm aral\u0131kl\u0131 s\u0131k\u0131 diferansiyel Kelvin \u00e7ifti olarak \u00e7ekilmeli, \u00e7evresi GND ile ekranlanmal\u0131d\u0131r."
+    },
+    {
+      "ref": "RShunt1, C11",
+      "val": "5m0, 100n",
+      "layer": "B.Cu",
+      "function": "\u00c7\u0131k\u0131\u015f Ak\u0131m \u015e\u00f6nt\u00fc (2512 3W) & INA226 Dekuplaj\u0131",
+      "target": "U3 INA226 IN+/IN- & VS",
+      "euclidean_distance_mm": 4.31,
+      "verdict": "UYGUN",
+      "routing_condition": "INA226 U3 ile simetrik Kelvin ped geometrisine ve 4.3 mm mesafeye sahiptir. M\u00fckemmel yerle\u015fim."
+    },
+    {
+      "ref": "R34, R35, R36",
+      "val": "10k",
+      "layer": "B.Cu",
+      "function": "Panel Enkoder Pull-up Diren\u00e7leri (ENC_A, ENC_B, ENC_SW)",
+      "target": "J9 Enkoder Konnekt\u00f6r\u00fc",
+      "euclidean_distance_mm": 21.01,
+      "verdict": "UYGUN",
+      "routing_condition": "\u0130nsan aray\u00fcz\u00fc d\u00fc\u015f\u00fck frekansl\u0131 (<100 Hz) sinyalleridir; hat uzunlu\u011fu i\u015flevsel performans \u00fczerinde s\u0131f\u0131r etkiye sahiptir. FreeCAD mekanik a\u00e7\u0131kl\u0131\u011f\u0131 7.04 mm olarak do\u011frulanm\u0131\u015ft\u0131r."
+    },
+    {
+      "ref": "C1, C2, C3, C4, C8",
+      "val": "1u, 1u, 1u, 1u, 10u",
+      "layer": "B.Cu",
+      "function": "AP33772S LDO Dekuplaj & VBUS Baypas",
+      "target": "U1 \u0130lgili Pinleri (V18, IFB, VBUS, V5V)",
+      "euclidean_distance_mm": 3.73,
+      "verdict": "UYGUN",
+      "routing_condition": "Veri sayfas\u0131 s\u0131n\u0131rlar\u0131 (<=5 mm) i\u00e7inde, U1 pinlerine biti\u015fik konumland\u0131r\u0131lm\u0131\u015ft\u0131r."
+    },
+    {
+      "ref": "C20",
+      "val": "100n",
+      "layer": "B.Cu",
+      "function": "Ethernet RJ45 Magjack Alt\u0131 Dekuplaj",
+      "target": "J8 Pin 14/12",
+      "euclidean_distance_mm": 3.55,
+      "verdict": "UYGUN",
+      "routing_condition": "Do\u011frudan J8 magjack trafo orta u\u00e7lar\u0131n\u0131n alt\u0131na yerle\u015ftirilmi\u015ftir; WIZnet W5500 uygulama notuna tam uygundur."
+    }
+  ]
+}

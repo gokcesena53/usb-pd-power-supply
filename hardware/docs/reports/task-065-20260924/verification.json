@@ -1,0 +1,92 @@
+{
+  "footprints": 143,
+  "flipped": 58,
+  "models": 125,
+  "bare_pads_or_holes": 18,
+  "missing_models": 0,
+  "lcd_tall_top_bodies": 0,
+  "lcd_top_pin_conflicts": 0,
+  "anchors_preserved": [
+    "J3",
+    "J9",
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+  ],
+  "groups_and_pad_nets_preserved": true,
+  "edge_cuts_preserved": true,
+  "blocks": {
+    "TPS55340 PRE-BOOST": {
+      "side": "B.Cu",
+      "refs": [
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "D4",
+        "D5",
+        "L3",
+        "R47",
+        "R48",
+        "R49",
+        "R52",
+        "R53",
+        "U11"
+      ]
+    },
+    "AOZ1284 3.3V BUCK": {
+      "side": "B.Cu",
+      "refs": [
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "D2",
+        "L1",
+        "R38",
+        "R39",
+        "R40",
+        "R41",
+        "R43",
+        "R50",
+        "R51",
+        "U5",
+        "U6"
+      ]
+    },
+    "TFT BACKLIGHT (3.3V + PWM)": {
+      "side": "F.Cu",
+      "refs": [
+        "Q7",
+        "R28",
+        "R29",
+        "R60"
+      ]
+    }
+  },
+  "fb_continuity": true,
+  "fb_layer": "B.Cu",
+  "fb_length_mm": 2.5846067811865474,
+  "new_drc_violations": 0,
+  "drc_before": 148,
+  "drc_after": 146,
+  "drc_counts_after": {
+    "hole_clearance": 4,
+    "drill_out_of_range": 15,
+    "text_thickness": 63,
+    "text_height": 63,
+    "silk_over_copper": 1
+  },
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "schematic_parity": 0,
+  "note": "Staging placement; repeat height/pin audit after final placement and routing."
+}

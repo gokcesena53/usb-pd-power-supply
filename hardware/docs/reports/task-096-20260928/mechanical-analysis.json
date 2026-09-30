@@ -1,0 +1,858 @@
+{
+  "anchors": {
+    "H1": {
+      "desc": "Mounting Hole Top-Left",
+      "expected_pos": [
+        54.3,
+        73.48
+      ],
+      "actual_pos": [
+        54.3,
+        73.48
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "H2": {
+      "desc": "Mounting Hole Top-Right",
+      "expected_pos": [
+        145.7,
+        73.48
+      ],
+      "actual_pos": [
+        145.7,
+        73.48
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "H3": {
+      "desc": "Mounting Hole Bottom-Left",
+      "expected_pos": [
+        54.3,
+        126.52
+      ],
+      "actual_pos": [
+        54.3,
+        126.52
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "H4": {
+      "desc": "Mounting Hole Bottom-Right",
+      "expected_pos": [
+        145.7,
+        126.52
+      ],
+      "actual_pos": [
+        145.7,
+        126.52
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "J7": {
+      "desc": "USB-C Receptacle",
+      "expected_pos": [
+        52.975,
+        88.5
+      ],
+      "actual_pos": [
+        52.975,
+        88.5
+      ],
+      "rot_deg": -90.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "J8": {
+      "desc": "Ethernet Mezzanine Header",
+      "expected_pos": [
+        102.5,
+        79.61
+      ],
+      "actual_pos": [
+        102.5,
+        79.61
+      ],
+      "rot_deg": 0.0,
+      "layer": "B.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "J9": {
+      "desc": "Panel Encoder FPC Header",
+      "expected_pos": [
+        61.5,
+        104.0
+      ],
+      "actual_pos": [
+        61.5,
+        104.0
+      ],
+      "rot_deg": -90.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "J3": {
+      "desc": "TFT LCD FPC Connector",
+      "expected_pos": [
+        98.0,
+        109.3
+      ],
+      "actual_pos": [
+        98.0,
+        109.3
+      ],
+      "rot_deg": 90.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    },
+    "MECH_ENC": {
+      "desc": "Panel Rotary Encoder 3D Model",
+      "expected_pos": [
+        54.3,
+        112.4
+      ],
+      "actual_pos": [
+        54.3,
+        112.4
+      ],
+      "rot_deg": 0.0,
+      "layer": "F.Cu",
+      "diff_mm": 0.0,
+      "status": "EXACT"
+    }
+  },
+  "copper_to_edge": {
+    "min_clearance_mm": 0.285,
+    "min_pad": [
+      "U2",
+      "50",
+      "GND",
+      0.2849999999999966,
+      [
+        83.87,
+        70.115
+      ]
+    ],
+    "pads_under_0_5mm_count": 15,
+    "pads_under_0_5mm": [
+      {
+        "ref": "U2",
+        "pad": "36",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          82.72,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "37",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          81.92,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "38",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          81.12,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "39",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          80.32,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "40",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          79.52,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "41",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          78.72,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "42",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          77.92,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "43",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          77.12,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "44",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          76.32,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "45",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          75.52,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "46",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          74.72,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "47",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          73.92,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "48",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          73.12,
+          70.165
+        ],
+        "size": [
+          0.8,
+          0.4
+        ],
+        "min_clearance_mm": 0.485,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "50",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          83.87,
+          70.115
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "min_clearance_mm": 0.285,
+        "is_u2_antenna": false
+      },
+      {
+        "ref": "U2",
+        "pad": "53",
+        "net": "GND",
+        "layer": "F.Cu",
+        "pos": [
+          71.97,
+          70.115
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "min_clearance_mm": 0.285,
+        "is_u2_antenna": false
+      }
+    ]
+  },
+  "lcd_underlay": {
+    "total_components": 41,
+    "max_height_excluding_u2_mm": 1.35,
+    "highest_component": [
+      "D10",
+      "BZT52C12",
+      1.35
+    ],
+    "all_compliant_under_1_8mm": true,
+    "items": [
+      {
+        "ref": "MECH_ENC",
+        "val": "PANEL EC1121S; J9 cable",
+        "footprint": "",
+        "pos": [
+          54.3,
+          112.4
+        ],
+        "est_height_mm": 1.0,
+        "compliant": true
+      },
+      {
+        "ref": "R1",
+        "val": "10k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          80.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "Q5",
+        "val": "SQJB60EP",
+        "footprint": "Vishay_PowerPAK_SO-8L_Dual",
+        "pos": [
+          128.5,
+          99.0
+        ],
+        "est_height_mm": 1.04,
+        "compliant": true
+      },
+      {
+        "ref": "C30",
+        "val": "22n",
+        "footprint": "C_0402_1005Metric",
+        "pos": [
+          124.8,
+          109.4
+        ],
+        "est_height_mm": 0.5,
+        "compliant": true
+      },
+      {
+        "ref": "D10",
+        "val": "BZT52C12",
+        "footprint": "D_SOD-123",
+        "pos": [
+          124.0,
+          117.5
+        ],
+        "est_height_mm": 1.35,
+        "compliant": true
+      },
+      {
+        "ref": "R3",
+        "val": "22R",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          86.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "C31",
+        "val": "220n",
+        "footprint": "C_0603_1608Metric",
+        "pos": [
+          140.0,
+          99.5
+        ],
+        "est_height_mm": 0.85,
+        "compliant": true
+      },
+      {
+        "ref": "Q7",
+        "val": "IRLML6344",
+        "footprint": "SOT-23",
+        "pos": [
+          87.0,
+          109.25
+        ],
+        "est_height_mm": 1.1,
+        "compliant": true
+      },
+      {
+        "ref": "C32",
+        "val": "100n",
+        "footprint": "C_0402_1005Metric",
+        "pos": [
+          139.5,
+          103.0
+        ],
+        "est_height_mm": 0.5,
+        "compliant": true
+      },
+      {
+        "ref": "TP10",
+        "val": "TestPoint",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pos": [
+          97.0,
+          83.0
+        ],
+        "est_height_mm": 0.05,
+        "compliant": true
+      },
+      {
+        "ref": "U2",
+        "val": "ESP32-C6-MINI-1-H4",
+        "footprint": "ESP32-C6-MINI-1",
+        "pos": [
+          77.92,
+          75.065
+        ],
+        "est_height_mm": 2.4,
+        "compliant": true
+      },
+      {
+        "ref": "R66",
+        "val": "100k",
+        "footprint": "R_0603_1608Metric",
+        "pos": [
+          127.5,
+          117.5
+        ],
+        "est_height_mm": 0.55,
+        "compliant": true
+      },
+      {
+        "ref": "C34",
+        "val": "1u0",
+        "footprint": "C_0402_1005Metric",
+        "pos": [
+          104.8,
+          105.55
+        ],
+        "est_height_mm": 0.5,
+        "compliant": true
+      },
+      {
+        "ref": "TP9",
+        "val": "TestPoint",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pos": [
+          94.5,
+          83.0
+        ],
+        "est_height_mm": 0.05,
+        "compliant": true
+      },
+      {
+        "ref": "C6",
+        "val": "100n",
+        "footprint": "C_0402_1005Metric",
+        "pos": [
+          71.0,
+          83.0
+        ],
+        "est_height_mm": 0.5,
+        "compliant": true
+      },
+      {
+        "ref": "C7",
+        "val": "1u0",
+        "footprint": "C_0402_1005Metric",
+        "pos": [
+          78.0,
+          83.0
+        ],
+        "est_height_mm": 0.5,
+        "compliant": true
+      },
+      {
+        "ref": "TP12",
+        "val": "TestPoint",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pos": [
+          135.5,
+          72.0
+        ],
+        "est_height_mm": 0.05,
+        "compliant": true
+      },
+      {
+        "ref": "R29",
+        "val": "100k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          83.8,
+          109.25
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R55",
+        "val": "237k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          129.0,
+          107.5
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R2",
+        "val": "22R",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          84.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R37",
+        "val": "10k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          90.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "C5",
+        "val": "22u",
+        "footprint": "C_0805_2012Metric",
+        "pos": [
+          74.5,
+          83.0
+        ],
+        "est_height_mm": 1.25,
+        "compliant": true
+      },
+      {
+        "ref": "Q6",
+        "val": "BSS138P",
+        "footprint": "SOT-23",
+        "pos": [
+          119.5,
+          117.5
+        ],
+        "est_height_mm": 1.1,
+        "compliant": true
+      },
+      {
+        "ref": "R16",
+        "val": "10k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          82.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R54",
+        "val": "1k0",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          124.8,
+          107.2
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R28",
+        "val": "100R",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          81.0,
+          108.3
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "D3",
+        "val": "SMBJ30A",
+        "footprint": "D_SMB",
+        "pos": [
+          61.5,
+          82.5
+        ],
+        "est_height_mm": 1.0,
+        "compliant": true
+      },
+      {
+        "ref": "R60",
+        "val": "5R6",
+        "footprint": "R_0805_2012Metric",
+        "pos": [
+          87.0,
+          104.75
+        ],
+        "est_height_mm": 0.7,
+        "compliant": true
+      },
+      {
+        "ref": "U12",
+        "val": "LM74801-Q1",
+        "footprint": "WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm",
+        "pos": [
+          135.5,
+          101.5
+        ],
+        "est_height_mm": 1.0,
+        "compliant": true
+      },
+      {
+        "ref": "D8",
+        "val": "SMF30A",
+        "footprint": "D_SOD-123F",
+        "pos": [
+          61.5,
+          92.0
+        ],
+        "est_height_mm": 1.35,
+        "compliant": true
+      },
+      {
+        "ref": "J3",
+        "val": "TFT032B018",
+        "footprint": "KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal",
+        "pos": [
+          98.0,
+          109.3
+        ],
+        "est_height_mm": 1.0,
+        "compliant": true
+      },
+      {
+        "ref": "R58",
+        "val": "100k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          133.4,
+          107.5
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "D9",
+        "val": "SMF30A",
+        "footprint": "D_SOD-123F",
+        "pos": [
+          61.5,
+          94.5
+        ],
+        "est_height_mm": 1.35,
+        "compliant": true
+      },
+      {
+        "ref": "TP11",
+        "val": "TestPoint",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pos": [
+          133.0,
+          72.0
+        ],
+        "est_height_mm": 0.05,
+        "compliant": true
+      },
+      {
+        "ref": "R15",
+        "val": "22R",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          88.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R56",
+        "val": "10k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          131.2,
+          107.5
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "U10",
+        "val": "USBLC6-2SC6",
+        "footprint": "SOT-23-6",
+        "pos": [
+          61.5,
+          88.5
+        ],
+        "est_height_mm": 1.1,
+        "compliant": true
+      },
+      {
+        "ref": "TP13",
+        "val": "TestPoint",
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "pos": [
+          138.0,
+          72.0
+        ],
+        "est_height_mm": 0.05,
+        "compliant": true
+      },
+      {
+        "ref": "R10",
+        "val": "10k",
+        "footprint": "R_0402_1005Metric",
+        "pos": [
+          92.5,
+          83.0
+        ],
+        "est_height_mm": 0.4,
+        "compliant": true
+      },
+      {
+        "ref": "R67",
+        "val": "1k",
+        "footprint": "R_2512_6332Metric",
+        "pos": [
+          113.0,
+          117.5
+        ],
+        "est_height_mm": 1.0,
+        "compliant": true
+      },
+      {
+        "ref": "D6",
+        "val": "BZT52C12",
+        "footprint": "D_SOD-123",
+        "pos": [
+          124.8,
+          104.5
+        ],
+        "est_height_mm": 1.35,
+        "compliant": true
+      }
+    ]
+  }
+}

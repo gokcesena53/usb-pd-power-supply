@@ -1,0 +1,107 @@
+[
+  {
+    "from": "U11.1",
+    "to": "D4.2",
+    "distance_mm": 4.552,
+    "net": "/USB_PD_CONTROLLER/BOOST_SW",
+    "same_net": true
+  },
+  {
+    "from": "D4.1",
+    "to": "C27.1",
+    "distance_mm": 5.124,
+    "net": "V_PRE",
+    "same_net": true
+  },
+  {
+    "from": "D4.1",
+    "to": "C28.1",
+    "distance_mm": 12.336,
+    "net": "V_PRE",
+    "same_net": true
+  },
+  {
+    "from": "U11.1",
+    "to": "L3.1",
+    "distance_mm": 10.89,
+    "net": "/USB_PD_CONTROLLER/BOOST_SW",
+    "same_net": true
+  },
+  {
+    "from": "U5.9",
+    "to": "C12.1",
+    "distance_mm": 6.063,
+    "net": "V_PRE",
+    "same_net": true
+  },
+  {
+    "from": "U5.3",
+    "to": "C12.2",
+    "distance_mm": 8.792,
+    "net": "GND",
+    "same_net": true
+  },
+  {
+    "from": "U5.9",
+    "to": "C14.1",
+    "distance_mm": 5.331,
+    "net": "V_PRE",
+    "same_net": true
+  },
+  {
+    "from": "U5.6",
+    "to": "R39.2",
+    "distance_mm": 5.493,
+    "net": "/USB_PD_CONTROLLER/FB_3V3",
+    "same_net": true
+  },
+  {
+    "from": "U3.10",
+    "to": "RShunt1.1",
+    "distance_mm": 4.31,
+    "net": "/USB_PD_CONTROLLER/SW_OUT",
+    "same_net": true
+  },
+  {
+    "from": "U3.9",
+    "to": "RShunt1.2",
+    "distance_mm": 4.31,
+    "net": "OUT_POS",
+    "same_net": true
+  },
+  {
+    "from": "U3.3",
+    "to": "U13.2",
+    "distance_mm": 15.872,
+    "net": "INA_ALERT",
+    "same_net": true
+  },
+  {
+    "from": "U13.4",
+    "to": "Q4.1",
+    "distance_mm": 8.882,
+    "net": "/USB_PD_CONTROLLER/SW_EN",
+    "same_net": true
+  },
+  {
+    "from": "R11.2",
+    "to": "Q5.7",
+    "distance_mm": 46.936,
+    "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+    "same_net": true
+  },
+  {
+    "from": "R11.2",
+    "to": "Q3.7",
+    "distance_mm": 7.711,
+    "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+    "same_net": true
+  },
+  {
+    "from": "Q5.5",
+    "to": "RShunt1.1",
+    "distance_mm": 19.975,
+    "net": "/USB_PD_CONTROLLER/SW_OUT",
+    "same_net": true
+  }
+]

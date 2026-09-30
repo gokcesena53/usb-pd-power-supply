@@ -2042,6 +2042,251 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x05"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x05_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 193.04 12.7)
@@ -2069,17 +2314,6 @@
 		)
 		(uuid "c80f1acc-4450-4ff5-9aaf-76a13044d4b0")
 	)
-	(text "ENCODER: A=GPIO22, B=GPIO23, SW=GPIO21\n3.3V pull-ups; contacts close to GND.\nFirmware: quadrature state decoding and switch debounce required."
-		(exclude_from_sim no)
-		(at 195.58 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "13670df4-59d7-40d6-88e0-e23db627553d")
-	)
 	(text "TFT CONNECTOR J3"
 		(exclude_from_sim no)
 		(at 118.11 19.05 0)
@@ -2092,19 +2326,6 @@
 			(justify left bottom)
 		)
 		(uuid "1a388915-0d7c-449e-8d98-20ceef303000")
-	)
-	(text "ROTARY ENCODER"
-		(exclude_from_sim no)
-		(at 195.58 19.05 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-				(color 72 120 180 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "5a3bf107-7b65-435d-823e-5b84358212a6")
 	)
 	(junction
 		(at 256.54 57.15)
@@ -4304,8 +4525,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed3841bf-b7b4-40f8-991f-518da5edbf65")
@@ -4331,7 +4552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "L-KLS4-EC1121S-E5A-F12.5:L-KLS4-EC1121S-E5A-F12.5"
+		(property "Footprint" ""
 			(at 236.22 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4474,7 +4695,7 @@
 				)
 			)
 		)
-		(property "DesignNote" "TBD"
+		(property "DesignNote" "TASK-066: panel-mounted encoder, five wires to J9; pin 1=A, 2=C/GND, 3=B, 4=S1, 5=S2/GND. Insulated knob and enclosure strain relief."
 			(at 236.22 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4585,6 +4806,17 @@
 			)
 		)
 		(property "RotationalLife" "TBD"
+			(at 236.22 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mounting" "Panel; housing retained by enclosure bracket; not soldered to PCB"
 			(at 236.22 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7074,5 +7306,496 @@
 			(justify left bottom)
 		)
 		(uuid "c3a659bb-c3aa-4009-b6e1-78ebc394c1d0")
+	)
+	(text "ENCODER: SW3 PANEL / PULL-UPS PCB"
+		(exclude_from_sim no)
+		(at 195.58 19.05 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab53f88b-7f34-4f0a-91cd-2124f6e9a926")
+	)
+	(text "A=GPIO22, B=GPIO23, SW=GPIO21.\nR34-R36: 10k pull-ups on PCB; no RC fitted.\nSW3: panel mounted, five wires to J9 below."
+		(exclude_from_sim no)
+		(at 195.58 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a76755b-83a2-4c5c-90e9-081e3f0b86a9")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 254 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "36bac041-a089-4a3c-8206-c5f572df9a3b")
+		(property "Reference" "J9"
+			(at 251.46 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ENCODER CABLE"
+			(at 257.81 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "WireTermination"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Five plated solder pads, 4.2 mm pitch, 0.65 mm drill; no header installed"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mounting" "Five wires soldered to PCB; strain relief in enclosure"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DesignNote" "1=A, 2=C/GND, 3=B, 4=S1, 5=S2/GND. Five flexible insulated 0.14 mm2 wires, OD <=1.5 mm, conductor bundle <=0.5 mm; length <=150 mm. Place outside LCD projection."
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "N/A - PCB solder pads"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A - PCB feature"
+			(at 254 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "167de8f7-c63c-4840-8829-30f6fc7dc7a3")
+		)
+		(pin "2"
+			(uuid "dca5897f-a754-465f-bf8a-876dcacf841f")
+		)
+		(pin "3"
+			(uuid "35c4fc5c-5b55-45ce-9702-31932812eb80")
+		)
+		(pin "4"
+			(uuid "e83bfa94-7861-4cd0-b93d-01c6ce65b718")
+		)
+		(pin "5"
+			(uuid "6fc3bc3f-cc1a-4a01-9b3f-337b199e47e7")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 118.11) (xy 233.68 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4b4e28d-a961-4353-bd92-87f24e5a2253")
+	)
+	(global_label "ENCODER_A"
+		(shape output)
+		(at 233.68 118.11 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf1171db-7ed1-4220-8747-d054ba2b50f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 123.19) (xy 233.68 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0da5739a-cb3a-451c-b952-ea263e3373f6")
+	)
+	(global_label "ENCODER_B"
+		(shape output)
+		(at 233.68 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f58f3a28-6914-4076-b602-fa42e8ceb8ba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 125.73) (xy 233.68 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7737f5e0-1bea-4015-8b6a-9f7c6ec55592")
+	)
+	(global_label "ENCODER_SW"
+		(shape output)
+		(at 233.68 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "709cffb1-2ef9-425d-b4c5-7117ad13ef77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 120.65) (xy 203.2 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "418d16a2-4769-47f6-bb4d-b3a73930b3cb")
+	)
+	(wire
+		(pts
+			(xy 203.2 120.65) (xy 203.2 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e583ff-fb13-4bcc-8c95-7688ac59b0c0")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "475a842f-491d-4aa7-8bf1-895282e4a89b")
+		(property "Reference" "#PWR276"
+			(at 205.74 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.98 120.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b780dba1-a286-4a9d-9dd2-2f0a068aafae")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
+					(reference "#PWR276")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 128.27) (xy 241.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56bdea0c-fcac-467c-9bee-48deefb4f1c6")
+	)
+	(wire
+		(pts
+			(xy 241.3 128.27) (xy 241.3 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11814fe3-5f3b-4824-a18d-8343d6f05225")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "967c42f1-0a4a-4665-8048-2e4f04b6ad09")
+		(property "Reference" "#PWR277"
+			(at 243.84 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.08 127.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97d44948-e2a9-4a30-aa70-96976c4af460")
+		)
+		(instances
+			(project "gopo"
+				(path "/a43081a6-9aa2-4898-9347-bbcb5849dafd/f0e4530d-2b12-46bf-98ff-bd44498f317b"
+					(reference "#PWR277")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 193.04 101.6)
+		(end 284.48 162.56)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 72 120 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e3b31e40-555b-42c8-8a0a-025bbf0b81a9")
+	)
+	(text "PCB WIRE PADS - J9"
+		(exclude_from_sim no)
+		(at 195.58 106.68 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f2a2122-ff58-4b34-9432-349dc6f32a02")
+	)
+	(text "1=A  2=C/GND  3=B  4=S1  5=S2/GND\n5 x 0.14mm2 stranded wire, length <=150mm.\nSolder pads only; enclosure provides strain relief.\nInsulated knob; keep cable away from switching nodes.\nFirmware: quadrature state validation + switch debounce."
+		(exclude_from_sim no)
+		(at 195.58 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 120 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "68ac41e3-8591-484a-b2fe-2d597d2984a6")
 	)
 )

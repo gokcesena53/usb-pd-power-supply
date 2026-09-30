@@ -1,0 +1,413 @@
+{
+  "task": "TASK-096",
+  "date": "2026-09-28",
+  "status": "PASSED",
+  "moved_vs_stationary": {
+    "R11": 0,
+    "Q3": 0,
+    "C8": 0.0,
+    "C3": 0,
+    "U1": 0,
+    "C4": 0,
+    "C2": 0,
+    "C1": 0,
+    "R12": 0,
+    "TH1": 0,
+    "R13": 0,
+    "R14": 0,
+    "D1": 0,
+    "R21": 0,
+    "R8": 0,
+    "R64": 0,
+    "R65": 0,
+    "R9": 0,
+    "R34": 0,
+    "R35": 0,
+    "R36": 0
+  },
+  "pair_intersections": [],
+  "clearances": {
+    "R11": {
+      "J8": {
+        "distance_mm": 2.687,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 15.5507,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 11.1866,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 3.35,
+        "intersection_mm3": 0.0
+      }
+    },
+    "Q3": {
+      "J8": {
+        "distance_mm": 7.5614,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 18.3461,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 13.8423,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 6.05,
+        "intersection_mm3": 0.0
+      }
+    },
+    "C8": {
+      "J8": {
+        "distance_mm": 16.15,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 23.326,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 18.8543,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 11.1,
+        "intersection_mm3": 0.0
+      }
+    },
+    "C3": {
+      "J8": {
+        "distance_mm": 6.9943,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 13.6644,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 9.2652,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 1.4,
+        "intersection_mm3": 0.0
+      }
+    },
+    "U1": {
+      "J8": {
+        "distance_mm": 19.1203,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 16.7,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 12.3103,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 4.5051,
+        "intersection_mm3": 0.0
+      }
+    },
+    "C4": {
+      "J8": {
+        "distance_mm": 18.8584,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 14.2088,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 9.9232,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 2.0,
+        "intersection_mm3": 0.0
+      }
+    },
+    "C2": {
+      "J8": {
+        "distance_mm": 23.1383,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 14.0246,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 9.4508,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 1.5,
+        "intersection_mm3": 0.0
+      }
+    },
+    "C1": {
+      "J8": {
+        "distance_mm": 25.829,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 16.2336,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 11.5432,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 3.75,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R12": {
+      "J8": {
+        "distance_mm": 15.6529,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 19.7197,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 15.0319,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 7.2503,
+        "intersection_mm3": 0.0
+      }
+    },
+    "TH1": {
+      "J8": {
+        "distance_mm": 11.2142,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 16.3831,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 11.088,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 3.2506,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R13": {
+      "J8": {
+        "distance_mm": 22.8514,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 24.3502,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 19.7772,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 12.0004,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R14": {
+      "J8": {
+        "distance_mm": 20.8611,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 22.9107,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 18.4601,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 10.7005,
+        "intersection_mm3": 0.0
+      }
+    },
+    "D1": {
+      "J8": {
+        "distance_mm": 20.8462,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 25.2097,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 20.7461,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 13.002,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R21": {
+      "J8": {
+        "distance_mm": 25.8396,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 18.4049,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 13.6965,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 5.7587,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R8": {
+      "J8": {
+        "distance_mm": 25.8396,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 20.7002,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 15.9848,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 8.0226,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R64": {
+      "J8": {
+        "distance_mm": 25.8396,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 22.9201,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 18.2048,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 10.2505,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R65": {
+      "J8": {
+        "distance_mm": 25.8396,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 25.1543,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 20.4425,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 12.5045,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R9": {
+      "J8": {
+        "distance_mm": 25.8396,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 27.3995,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 22.6927,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 14.7727,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R34": {
+      "J8": {
+        "distance_mm": 25.5933,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 7.036,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 3.9423,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 2.0025,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R35": {
+      "J8": {
+        "distance_mm": 25.5933,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 8.832,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 4.8169,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 2.0025,
+        "intersection_mm3": 0.0
+      }
+    },
+    "R36": {
+      "J8": {
+        "distance_mm": 25.5933,
+        "intersection_mm3": 0.0
+      },
+      "MECH_ENC": {
+        "distance_mm": 10.9089,
+        "intersection_mm3": 0.0
+      },
+      "J9": {
+        "distance_mm": 6.4768,
+        "intersection_mm3": 0.0
+      },
+      "cable": {
+        "distance_mm": 2.0025,
+        "intersection_mm3": 0.0
+      }
+    }
+  },
+  "max_stationary_intersection_mm3": 0,
+  "minimum_cable_clearance_mm": 1.4,
+  "minimum_encoder_clearance_mm": 7.036,
+  "solid_collision_check_passed": true
+}

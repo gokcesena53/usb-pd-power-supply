@@ -11,7 +11,7 @@ dependencies: []
 references:
   - 'https://www.motorobit.com/4mm-metal-disi-banana-konnektor-kirmizi'
 priority: medium
-ordinal: 110000
+ordinal: 112000
 ---
 
 ## Description

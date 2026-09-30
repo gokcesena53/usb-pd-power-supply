@@ -1,0 +1,1924 @@
+{
+  "placements": [
+    {
+      "ref": "U1",
+      "value": "AP33772SDKZ-13-FA02",
+      "before_xy": [
+        66.815,
+        140.72
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        60.0,
+        150.5
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "5613f3cf-cf40-4885-bfe0-9fa698a659a7",
+      "before_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "10",
+          "unconnected-(U1-NC-Pad10)"
+        ],
+        [
+          "11",
+          "Net-(U1-VSEL)"
+        ],
+        [
+          "12",
+          "Net-(U1-V18)"
+        ],
+        [
+          "13",
+          "Net-(U1-OTP)"
+        ],
+        [
+          "14",
+          "unconnected-(U1-NC-Pad14)"
+        ],
+        [
+          "15",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "16",
+          "USB_CC2"
+        ],
+        [
+          "17",
+          "USB_CC1"
+        ],
+        [
+          "18",
+          "unconnected-(U1-DN-Pad18)"
+        ],
+        [
+          "19",
+          "unconnected-(U1-DP-Pad19)"
+        ],
+        [
+          "2",
+          "unconnected-(U1-NC-Pad2)"
+        ],
+        [
+          "20",
+          "PD_5V"
+        ],
+        [
+          "21",
+          "unconnected-(U1-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "23",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "24",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_5V"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_5V"
+        ],
+        [
+          "6",
+          "unconnected-(U1-FLIP-Pad6)"
+        ],
+        [
+          "7",
+          "unconnected-(U1-GPIO-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U1-LED)"
+        ],
+        [
+          "9",
+          "PD_INT_5V"
+        ]
+      ],
+      "after_pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "10",
+          "unconnected-(U1-NC-Pad10)"
+        ],
+        [
+          "11",
+          "Net-(U1-VSEL)"
+        ],
+        [
+          "12",
+          "Net-(U1-V18)"
+        ],
+        [
+          "13",
+          "Net-(U1-OTP)"
+        ],
+        [
+          "14",
+          "unconnected-(U1-NC-Pad14)"
+        ],
+        [
+          "15",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "16",
+          "USB_CC2"
+        ],
+        [
+          "17",
+          "USB_CC1"
+        ],
+        [
+          "18",
+          "unconnected-(U1-DN-Pad18)"
+        ],
+        [
+          "19",
+          "unconnected-(U1-DP-Pad19)"
+        ],
+        [
+          "2",
+          "unconnected-(U1-NC-Pad2)"
+        ],
+        [
+          "20",
+          "PD_5V"
+        ],
+        [
+          "21",
+          "unconnected-(U1-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "23",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "24",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_5V"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_5V"
+        ],
+        [
+          "6",
+          "unconnected-(U1-FLIP-Pad6)"
+        ],
+        [
+          "7",
+          "unconnected-(U1-GPIO-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U1-LED)"
+        ],
+        [
+          "9",
+          "PD_INT_5V"
+        ]
+      ],
+      "before_bbox": [
+        64.16,
+        137.69,
+        69.47,
+        143.375
+      ],
+      "after_bbox": [
+        57.345,
+        147.845,
+        63.03,
+        153.155
+      ]
+    },
+    {
+      "ref": "Q3",
+      "value": "SQJB60EP",
+      "before_xy": [
+        59.145,
+        141.464999
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        59.5,
+        140.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "6d9f89f7-d44b-4b70-a4be-be821dbb6efa",
+      "before_pads": [
+        [
+          "1",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "3",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "6",
+          "PD_VOUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "3",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "6",
+          "PD_VOUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "before_bbox": [
+        55.245,
+        138.064999,
+        63.12,
+        144.864999
+      ],
+      "after_bbox": [
+        56.1,
+        136.025,
+        62.9,
+        143.9
+      ]
+    },
+    {
+      "ref": "R11",
+      "value": "5m0",
+      "before_xy": [
+        52.25,
+        141.92
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        52.0,
+        140.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "5e4999d6-e13b-47e3-a7c0-70a27d7de6dd",
+      "before_pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "before_bbox": [
+        50.295,
+        138.065,
+        54.205,
+        145.775
+      ],
+      "after_bbox": [
+        48.145,
+        138.045,
+        55.855,
+        141.955
+      ]
+    },
+    {
+      "ref": "TH1",
+      "value": "10k NTC",
+      "before_xy": [
+        55.28,
+        153.459999
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        56.0,
+        145.2
+      ],
+      "after_angle": 90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "525540e8-2d09-4dd6-9e85-d9f0c1f36ea0",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-OTP)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-OTP)"
+        ]
+      ],
+      "before_bbox": [
+        54.785,
+        152.504999,
+        55.775,
+        154.414999
+      ],
+      "after_bbox": [
+        55.505,
+        144.245,
+        56.495,
+        146.155
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "LED",
+      "before_xy": [
+        59.78,
+        152.999999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        67.2,
+        150.5
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "009ad82d-6f53-4010-bad0-21d875813a1a",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ],
+      "before_bbox": [
+        58.825,
+        152.504999,
+        60.97,
+        153.494999
+      ],
+      "after_bbox": [
+        66.245,
+        150.005,
+        68.39,
+        150.995
+      ]
+    },
+    {
+      "ref": "C1",
+      "value": "100n",
+      "before_xy": [
+        63.03,
+        156.04
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        57.5,
+        155.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "6b65bc6f-8494-47c9-8036-131a101ef0c9",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U1-V18)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U1-V18)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        62.095,
+        155.555,
+        63.965,
+        156.525
+      ],
+      "after_bbox": [
+        56.565,
+        155.015,
+        58.435,
+        155.985
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "before_xy": [
+        57.3,
+        153.44
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        55.5,
+        151.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "11119241-4833-416d-b8b8-5aa72e727e77",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        56.815,
+        152.505,
+        57.785,
+        154.375
+      ],
+      "after_bbox": [
+        54.565,
+        151.015,
+        56.435,
+        151.985
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "2u2",
+      "before_xy": [
+        52.019999,
+        153.51
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        51.5,
+        145.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "d502e238-42b8-4dd1-9a0c-d4213e66a213",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        50.294999,
+        152.505,
+        53.744999,
+        154.515
+      ],
+      "after_bbox": [
+        49.775,
+        143.995,
+        53.225,
+        146.005
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "1u0",
+      "before_xy": [
+        65.94,
+        156.04
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        56.0,
+        148.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "9a3a28e5-fdc4-4095-8b26-4a938d86cb2d",
+      "before_pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        65.005,
+        155.555,
+        66.875,
+        156.525
+      ],
+      "after_bbox": [
+        55.065,
+        148.015,
+        56.935,
+        148.985
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "4u7",
+      "before_xy": [
+        51.92,
+        149.14
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        65.5,
+        140.0
+      ],
+      "after_angle": -90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "2dec3cca-ef18-4bf2-a0b1-53df450bf7d7",
+      "before_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        50.295,
+        146.815,
+        53.545,
+        151.465
+      ],
+      "after_bbox": [
+        63.875,
+        137.675,
+        67.125,
+        142.325
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "before_xy": [
+        57.15,
+        156.049999
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        62.2,
+        155.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "34917b35-e889-4913-9833-990cded2896b",
+      "before_pads": [
+        [
+          "1",
+          "PD_INT_5V"
+        ],
+        [
+          "2",
+          "Net-(R64-Pad1)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_INT_5V"
+        ],
+        [
+          "2",
+          "Net-(R64-Pad1)"
+        ]
+      ],
+      "before_bbox": [
+        56.195,
+        155.554999,
+        58.105,
+        156.544999
+      ],
+      "after_bbox": [
+        61.245,
+        155.005,
+        63.155,
+        155.995
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "10k",
+      "before_xy": [
+        60.1,
+        156.049999
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        69.1,
+        155.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "8a80b680-cc2c-4dfd-a1c6-735b7d2b934f",
+      "before_pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ],
+        [
+          "2",
+          "Net-(R65-Pad1)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ],
+        [
+          "2",
+          "Net-(R65-Pad1)"
+        ]
+      ],
+      "before_bbox": [
+        59.145,
+        155.554999,
+        61.055,
+        156.544999
+      ],
+      "after_bbox": [
+        68.145,
+        155.005,
+        70.055,
+        155.995
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "6k2",
+      "before_xy": [
+        62.73,
+        152.999999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        61.0,
+        145.2
+      ],
+      "after_angle": 90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "305d8cb3-4908-4973-bf76-faf6e86562c0",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ],
+      "before_bbox": [
+        61.775,
+        152.504999,
+        63.685,
+        153.494999
+      ],
+      "after_bbox": [
+        60.505,
+        144.245,
+        61.495,
+        146.155
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "100R",
+      "before_xy": [
+        65.679999,
+        152.999999
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        65.5,
+        144.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "6a1ab6e9-f382-4db7-9843-14cfb39d91c6",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ],
+      "before_bbox": [
+        64.724999,
+        152.504999,
+        66.634999,
+        153.494999
+      ],
+      "after_bbox": [
+        64.545,
+        144.005,
+        66.455,
+        144.995
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "2k2",
+      "before_xy": [
+        68.63,
+        152.999999
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        64.2,
+        150.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "22561e98-14bc-408e-a016-535f4154cd20",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U1-LED)"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U1-LED)"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ],
+      "before_bbox": [
+        67.675,
+        152.504999,
+        69.585,
+        153.494999
+      ],
+      "after_bbox": [
+        63.245,
+        150.005,
+        65.155,
+        150.995
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "100k",
+      "before_xy": [
+        71.579999,
+        152.999999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        59.8,
+        155.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "9272102f-0bca-409f-b47a-751f40285853",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-VSEL)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-VSEL)"
+        ]
+      ],
+      "before_bbox": [
+        70.624999,
+        152.504999,
+        72.534999,
+        153.494999
+      ],
+      "after_bbox": [
+        58.845,
+        155.005,
+        60.755,
+        155.995
+      ]
+    },
+    {
+      "ref": "R64",
+      "value": "2k0",
+      "before_xy": [
+        51.25,
+        156.049999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        64.5,
+        155.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "d473336a-0401-4532-97ce-24ccf5b8c8b4",
+      "before_pads": [
+        [
+          "1",
+          "Net-(R64-Pad1)"
+        ],
+        [
+          "2",
+          "PD_INT_3V3"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(R64-Pad1)"
+        ],
+        [
+          "2",
+          "PD_INT_3V3"
+        ]
+      ],
+      "before_bbox": [
+        50.295,
+        155.554999,
+        52.205,
+        156.544999
+      ],
+      "after_bbox": [
+        63.545,
+        155.005,
+        65.455,
+        155.995
+      ]
+    },
+    {
+      "ref": "R65",
+      "value": "10k",
+      "before_xy": [
+        54.2,
+        156.049999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        66.8,
+        155.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "5ca4c102-bdab-4af8-88ec-2411357de763",
+      "before_pads": [
+        [
+          "1",
+          "Net-(R65-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(R65-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        53.245,
+        155.554999,
+        55.155,
+        156.544999
+      ],
+      "after_bbox": [
+        65.845,
+        155.005,
+        67.755,
+        155.995
+      ]
+    },
+    {
+      "ref": "TP1",
+      "value": "TestPoint",
+      "before_xy": [
+        55.612553,
+        147.841273
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        46.5,
+        140.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "b0e90fef-eb6e-4583-b9ef-baaba19ab11b",
+      "before_pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ]
+      ],
+      "before_bbox": [
+        54.587553,
+        146.816273,
+        56.637553,
+        148.866273
+      ],
+      "after_bbox": [
+        45.475,
+        138.975,
+        47.525,
+        141.025
+      ]
+    },
+    {
+      "ref": "TP2",
+      "value": "TestPoint",
+      "before_xy": [
+        58.705104,
+        147.841273
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        54.5,
+        135.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "f1bff415-9fc4-4ce8-a31f-93d8da5bb681",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "before_bbox": [
+        57.680104,
+        146.816273,
+        59.730104,
+        148.866273
+      ],
+      "after_bbox": [
+        53.475,
+        134.475,
+        55.525,
+        136.525
+      ]
+    },
+    {
+      "ref": "TP3",
+      "value": "TestPoint",
+      "before_xy": [
+        61.797655,
+        147.841273
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        69.5,
+        140.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "489806a6-4a6f-410d-8915-51d60fd14716",
+      "before_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ]
+      ],
+      "before_bbox": [
+        60.772655,
+        146.816273,
+        62.822655,
+        148.866273
+      ],
+      "after_bbox": [
+        68.475,
+        138.975,
+        70.525,
+        141.025
+      ]
+    },
+    {
+      "ref": "TP4",
+      "value": "TestPoint",
+      "before_xy": [
+        64.890205,
+        147.841273
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        52.0,
+        149.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "f96f8872-6e73-4d7c-9831-a2257f17f968",
+      "before_pads": [
+        [
+          "1",
+          "PD_5V"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_5V"
+        ]
+      ],
+      "before_bbox": [
+        63.865205,
+        146.816273,
+        65.915205,
+        148.866273
+      ],
+      "after_bbox": [
+        50.975,
+        147.975,
+        53.025,
+        150.025
+      ]
+    },
+    {
+      "ref": "TP5",
+      "value": "TestPoint",
+      "before_xy": [
+        67.982756,
+        147.841273
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        61.0,
+        134.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "uuid": "cdb47d6d-93bc-414a-804d-405b3fe5d43a",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ],
+      "before_bbox": [
+        66.957756,
+        146.816273,
+        69.007756,
+        148.866273
+      ],
+      "after_bbox": [
+        59.975,
+        133.475,
+        62.025,
+        135.525
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "U1.20",
+      "a_net": "PD_5V",
+      "a_xy": [
+        59.25,
+        148.5375
+      ],
+      "b": "C4.1",
+      "b_net": "PD_5V",
+      "b_xy": [
+        55.52,
+        148.5
+      ],
+      "straight_mm": 3.7302
+    },
+    {
+      "a": "U1.12",
+      "a_net": "Net-(U1-V18)",
+      "a_xy": [
+        58.75,
+        152.4625
+      ],
+      "b": "C1.1",
+      "b_net": "Net-(U1-V18)",
+      "b_xy": [
+        57.02,
+        155.5
+      ],
+      "straight_mm": 3.4956
+    },
+    {
+      "a": "U1.15",
+      "a_net": "Net-(U1-IFB)",
+      "a_xy": [
+        58.0375,
+        150.75
+      ],
+      "b": "C2.1",
+      "b_net": "Net-(U1-IFB)",
+      "b_xy": [
+        55.02,
+        151.5
+      ],
+      "straight_mm": 3.1093
+    },
+    {
+      "a": "U1.13",
+      "a_net": "Net-(U1-OTP)",
+      "a_xy": [
+        58.0375,
+        151.75
+      ],
+      "b": "TH1.2",
+      "b_net": "Net-(U1-OTP)",
+      "b_xy": [
+        56.0,
+        144.69
+      ],
+      "straight_mm": 7.3481
+    },
+    {
+      "a": "U1.23",
+      "a_net": "Net-(U1-PWR_EN)",
+      "a_xy": [
+        60.75,
+        148.5375
+      ],
+      "b": "R12.1",
+      "b_net": "Net-(U1-PWR_EN)",
+      "b_xy": [
+        61.0,
+        145.71
+      ],
+      "straight_mm": 2.8385
+    },
+    {
+      "a": "R12.2",
+      "a_net": "/USB_PD_CONTROLLER/PD_GATE",
+      "a_xy": [
+        61.0,
+        144.69
+      ],
+      "b": "Q3.2",
+      "b_net": "/USB_PD_CONTROLLER/PD_GATE",
+      "b_xy": [
+        58.865,
+        137.285
+      ],
+      "straight_mm": 7.7066
+    },
+    {
+      "a": "U1.22",
+      "a_net": "Net-(U1-VOUT)",
+      "a_xy": [
+        60.25,
+        148.5375
+      ],
+      "b": "R13.1",
+      "b_net": "Net-(U1-VOUT)",
+      "b_xy": [
+        64.99,
+        144.5
+      ],
+      "straight_mm": 6.2265
+    },
+    {
+      "a": "R13.2",
+      "a_net": "PD_VOUT",
+      "a_xy": [
+        66.01,
+        144.5
+      ],
+      "b": "Q3.5",
+      "b_net": "PD_VOUT",
+      "b_xy": [
+        60.615,
+        141.08
+      ],
+      "straight_mm": 6.3877
+    },
+    {
+      "a": "R11.2",
+      "a_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "a_xy": [
+        54.9625,
+        140.0
+      ],
+      "b": "Q3.7",
+      "b_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "b_xy": [
+        57.2275,
+        140.0
+      ],
+      "straight_mm": 2.265
+    },
+    {
+      "a": "Q3.5",
+      "a_net": "PD_VOUT",
+      "a_xy": [
+        60.615,
+        141.08
+      ],
+      "b": "C8.1",
+      "b_net": "PD_VOUT",
+      "b_xy": [
+        65.5,
+        138.525
+      ],
+      "straight_mm": 5.5128
+    },
+    {
+      "a": "R11.1",
+      "a_net": "USB_VBUS",
+      "a_xy": [
+        49.0375,
+        140.0
+      ],
+      "b": "U1.1",
+      "b_net": "USB_VBUS",
+      "b_xy": [
+        61.9625,
+        149.25
+      ],
+      "straight_mm": 15.894
+    },
+    {
+      "a": "R11.2",
+      "a_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "a_xy": [
+        54.9625,
+        140.0
+      ],
+      "b": "U1.24",
+      "b_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "b_xy": [
+        61.25,
+        148.5375
+      ],
+      "straight_mm": 10.6029
+    },
+    {
+      "a": "R11.1",
+      "a_net": "USB_VBUS",
+      "a_xy": [
+        49.0375,
+        140.0
+      ],
+      "b": "TP1.1",
+      "b_net": "USB_VBUS",
+      "b_xy": [
+        46.5,
+        140.0
+      ],
+      "straight_mm": 2.5375
+    },
+    {
+      "a": "R11.2",
+      "a_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "a_xy": [
+        54.9625,
+        140.0
+      ],
+      "b": "TP2.1",
+      "b_net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "b_xy": [
+        54.5,
+        135.5
+      ],
+      "straight_mm": 4.5237
+    },
+    {
+      "a": "Q3.5",
+      "a_net": "PD_VOUT",
+      "a_xy": [
+        60.615,
+        141.08
+      ],
+      "b": "TP3.1",
+      "b_net": "PD_VOUT",
+      "b_xy": [
+        69.5,
+        140.0
+      ],
+      "straight_mm": 8.9504
+    },
+    {
+      "a": "C4.1",
+      "a_net": "PD_5V",
+      "a_xy": [
+        55.52,
+        148.5
+      ],
+      "b": "TP4.1",
+      "b_net": "PD_5V",
+      "b_xy": [
+        52.0,
+        149.0
+      ],
+      "straight_mm": 3.5553
+    },
+    {
+      "a": "R12.2",
+      "a_net": "/USB_PD_CONTROLLER/PD_GATE",
+      "a_xy": [
+        61.0,
+        144.69
+      ],
+      "b": "TP5.1",
+      "b_net": "/USB_PD_CONTROLLER/PD_GATE",
+      "b_xy": [
+        61.0,
+        134.5
+      ],
+      "straight_mm": 10.19
+    },
+    {
+      "a": "U1.8",
+      "a_net": "Net-(U1-LED)",
+      "a_xy": [
+        60.75,
+        152.4625
+      ],
+      "b": "R14.1",
+      "b_net": "Net-(U1-LED)",
+      "b_xy": [
+        63.69,
+        150.5
+      ],
+      "straight_mm": 3.5348
+    },
+    {
+      "a": "R14.2",
+      "a_net": "Net-(D1-A)",
+      "a_xy": [
+        64.71,
+        150.5
+      ],
+      "b": "D1.2",
+      "b_net": "Net-(D1-A)",
+      "b_xy": [
+        66.715,
+        150.5
+      ],
+      "straight_mm": 2.005
+    },
+    {
+      "a": "U1.11",
+      "a_net": "Net-(U1-VSEL)",
+      "a_xy": [
+        59.25,
+        152.4625
+      ],
+      "b": "R21.2",
+      "b_net": "Net-(U1-VSEL)",
+      "b_xy": [
+        60.31,
+        155.5
+      ],
+      "straight_mm": 3.2171
+    }
+  ],
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "u1_orientation": {
+    "rotation": 180.0,
+    "cc1_pad": {
+      "net": "USB_CC1",
+      "xy": [
+        58.0375,
+        149.75
+      ]
+    },
+    "cc2_pad": {
+      "net": "USB_CC2",
+      "xy": [
+        58.0375,
+        150.25
+      ]
+    },
+    "vbus_in_pad": {
+      "net": "USB_VBUS",
+      "xy": [
+        61.9625,
+        149.25
+      ]
+    },
+    "vbus_sense_pad": {
+      "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "xy": [
+        61.25,
+        148.5375
+      ]
+    },
+    "pwr_en_pad": {
+      "net": "Net-(U1-PWR_EN)",
+      "xy": [
+        60.75,
+        148.5375
+      ]
+    },
+    "vout_sense_pad": {
+      "net": "Net-(U1-VOUT)",
+      "xy": [
+        60.25,
+        148.5375
+      ]
+    }
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "silk_over_copper": 1,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

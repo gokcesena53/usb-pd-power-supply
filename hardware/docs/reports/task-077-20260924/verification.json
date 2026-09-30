@@ -1,0 +1,1825 @@
+{
+  "placements": [
+    {
+      "ref": "U2",
+      "value": "ESP32-C6-MINI-1-H4",
+      "before_xy": [
+        160.62,
+        93.6
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        160.62,
+        93.6
+      ],
+      "after_angle": 90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "312836b7-5ddc-4a3c-8361-9c10e127bb46",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "TFT_MOSI"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "Net-(U2-IO0)"
+        ],
+        [
+          "13",
+          "TFT_BL_PWM"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "OUT_EN"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "18",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "19",
+          "TFT_CS"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "unconnected-(U2-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "23",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "24",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "25",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "26",
+          "PD_INT_3V3"
+        ],
+        [
+          "27",
+          "ENCODER_SW"
+        ],
+        [
+          "28",
+          "ENCODER_A"
+        ],
+        [
+          "29",
+          "ENCODER_B"
+        ],
+        [
+          "3",
+          "+3.3V"
+        ],
+        [
+          "30",
+          "/MCU/UART_RX"
+        ],
+        [
+          "31",
+          "/MCU/UART_TX"
+        ],
+        [
+          "32",
+          "unconnected-(U2-NC-Pad32)"
+        ],
+        [
+          "33",
+          "unconnected-(U2-NC-Pad33)"
+        ],
+        [
+          "34",
+          "unconnected-(U2-NC-Pad34)"
+        ],
+        [
+          "35",
+          "unconnected-(U2-NC-Pad35)"
+        ],
+        [
+          "36",
+          "GND"
+        ],
+        [
+          "37",
+          "GND"
+        ],
+        [
+          "38",
+          "GND"
+        ],
+        [
+          "39",
+          "GND"
+        ],
+        [
+          "4",
+          "unconnected-(U2-NC-Pad4)"
+        ],
+        [
+          "40",
+          "GND"
+        ],
+        [
+          "41",
+          "GND"
+        ],
+        [
+          "42",
+          "GND"
+        ],
+        [
+          "43",
+          "GND"
+        ],
+        [
+          "44",
+          "GND"
+        ],
+        [
+          "45",
+          "GND"
+        ],
+        [
+          "46",
+          "GND"
+        ],
+        [
+          "47",
+          "GND"
+        ],
+        [
+          "48",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "5",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "50",
+          "GND"
+        ],
+        [
+          "51",
+          "GND"
+        ],
+        [
+          "52",
+          "GND"
+        ],
+        [
+          "53",
+          "GND"
+        ],
+        [
+          "6",
+          "INA_ALERT"
+        ],
+        [
+          "7",
+          "unconnected-(U2-NC-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U2-EN)"
+        ],
+        [
+          "9",
+          "TFT_SCLK"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "TFT_MOSI"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "Net-(U2-IO0)"
+        ],
+        [
+          "13",
+          "TFT_BL_PWM"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "OUT_EN"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "18",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "19",
+          "TFT_CS"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "unconnected-(U2-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "23",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "24",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "25",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "26",
+          "PD_INT_3V3"
+        ],
+        [
+          "27",
+          "ENCODER_SW"
+        ],
+        [
+          "28",
+          "ENCODER_A"
+        ],
+        [
+          "29",
+          "ENCODER_B"
+        ],
+        [
+          "3",
+          "+3.3V"
+        ],
+        [
+          "30",
+          "/MCU/UART_RX"
+        ],
+        [
+          "31",
+          "/MCU/UART_TX"
+        ],
+        [
+          "32",
+          "unconnected-(U2-NC-Pad32)"
+        ],
+        [
+          "33",
+          "unconnected-(U2-NC-Pad33)"
+        ],
+        [
+          "34",
+          "unconnected-(U2-NC-Pad34)"
+        ],
+        [
+          "35",
+          "unconnected-(U2-NC-Pad35)"
+        ],
+        [
+          "36",
+          "GND"
+        ],
+        [
+          "37",
+          "GND"
+        ],
+        [
+          "38",
+          "GND"
+        ],
+        [
+          "39",
+          "GND"
+        ],
+        [
+          "4",
+          "unconnected-(U2-NC-Pad4)"
+        ],
+        [
+          "40",
+          "GND"
+        ],
+        [
+          "41",
+          "GND"
+        ],
+        [
+          "42",
+          "GND"
+        ],
+        [
+          "43",
+          "GND"
+        ],
+        [
+          "44",
+          "GND"
+        ],
+        [
+          "45",
+          "GND"
+        ],
+        [
+          "46",
+          "GND"
+        ],
+        [
+          "47",
+          "GND"
+        ],
+        [
+          "48",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "5",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "50",
+          "GND"
+        ],
+        [
+          "51",
+          "GND"
+        ],
+        [
+          "52",
+          "GND"
+        ],
+        [
+          "53",
+          "GND"
+        ],
+        [
+          "6",
+          "INA_ALERT"
+        ],
+        [
+          "7",
+          "unconnected-(U2-NC-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U2-EN)"
+        ],
+        [
+          "9",
+          "TFT_SCLK"
+        ]
+      ],
+      "before_bbox": [
+        154.745,
+        71.975,
+        186.645,
+        115.225
+      ],
+      "after_bbox": [
+        154.745,
+        71.975,
+        186.645,
+        115.225
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "22u",
+      "before_xy": [
+        156.47,
+        117.27
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        163.0,
+        105.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "8a5f5455-ca3f-4a55-8be7-efe40ee361d5",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        154.745,
+        116.265,
+        158.195,
+        118.275
+      ],
+      "after_bbox": [
+        161.275,
+        104.495,
+        164.725,
+        106.505
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "before_xy": [
+        176.39,
+        116.75
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        163.0,
+        102.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "5f5086a9-7c56-4b2a-84d1-0ba9873f3576",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        175.455,
+        116.265,
+        177.325,
+        117.235
+      ],
+      "after_bbox": [
+        162.065,
+        102.015,
+        163.935,
+        102.985
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "1u0",
+      "before_xy": [
+        173.93,
+        117.2
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        159.0,
+        102.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "655bf6d9-9e2f-45ea-89ab-0e6f50e100f2",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "before_bbox": [
+        173.445,
+        116.265,
+        174.415,
+        118.135
+      ],
+      "after_bbox": [
+        158.065,
+        102.015,
+        159.935,
+        102.985
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "10k",
+      "before_xy": [
+        159.73,
+        117.22
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        156.5,
+        102.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "0b7b4922-19c6-440d-b508-6c41d36dcd40",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "before_bbox": [
+        159.235,
+        116.265,
+        160.225,
+        118.175
+      ],
+      "after_bbox": [
+        155.545,
+        102.005,
+        157.455,
+        102.995
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "22R",
+      "before_xy": [
+        167.85,
+        117.22
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        152.0,
+        94.4
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "782102c6-35bd-46a6-b085-3f9e9e14e788",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "2",
+          "USB_DM"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "2",
+          "USB_DM"
+        ]
+      ],
+      "before_bbox": [
+        167.355,
+        116.265,
+        168.345,
+        118.175
+      ],
+      "after_bbox": [
+        151.045,
+        93.905,
+        152.955,
+        94.895
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "22R",
+      "before_xy": [
+        169.88,
+        117.22
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        152.0,
+        93.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "1a823a46-88a1-4c32-a3a3-a5b4d4df72ca",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "2",
+          "USB_DP"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "2",
+          "USB_DP"
+        ]
+      ],
+      "before_bbox": [
+        169.385,
+        116.265,
+        170.375,
+        118.175
+      ],
+      "after_bbox": [
+        151.045,
+        92.505,
+        152.955,
+        93.495
+      ]
+    },
+    {
+      "ref": "R10",
+      "value": "10k",
+      "before_xy": [
+        161.76,
+        117.22
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        152.0,
+        89.6
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "e9fa27d0-6241-41dd-8e34-31f3005f0dbb",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "before_bbox": [
+        161.265,
+        116.265,
+        162.255,
+        118.175
+      ],
+      "after_bbox": [
+        151.045,
+        89.105,
+        152.955,
+        90.095
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "22R",
+      "before_xy": [
+        163.79,
+        117.22
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        152.0,
+        87.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "d40c52ac-e6e3-4aa1-a4c4-94d0c2bbf97d",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "/MCU/ETH_CFG0"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "/MCU/ETH_CFG0"
+        ]
+      ],
+      "before_bbox": [
+        163.295,
+        116.265,
+        164.285,
+        118.175
+      ],
+      "after_bbox": [
+        151.045,
+        87.005,
+        152.955,
+        87.995
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "10k",
+      "before_xy": [
+        165.82,
+        117.22
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        152.0,
+        98.4
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "912402ba-9d83-4a4e-8bbb-96551994720d",
+      "before_pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "2",
+          "Net-(U2-IO0)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "2",
+          "Net-(U2-IO0)"
+        ]
+      ],
+      "before_bbox": [
+        165.325,
+        116.265,
+        166.315,
+        118.175
+      ],
+      "after_bbox": [
+        151.045,
+        97.905,
+        152.955,
+        98.895
+      ]
+    },
+    {
+      "ref": "R37",
+      "value": "10k",
+      "before_xy": [
+        171.91,
+        117.22
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        152.0,
+        91.2
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "7db6caee-fde6-4847-b51f-da8fab1ee379",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "before_bbox": [
+        171.415,
+        116.265,
+        172.405,
+        118.175
+      ],
+      "after_bbox": [
+        151.045,
+        90.705,
+        152.955,
+        91.695
+      ]
+    },
+    {
+      "ref": "SW1",
+      "value": "BOOT / PTS810",
+      "before_xy": [
+        189.56,
+        74.85
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        158.5,
+        116.5
+      ],
+      "after_angle": 90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "f3f67cac-36f0-4e49-b0ee-3ca11a3c648d",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ]
+      ],
+      "before_bbox": [
+        187.685,
+        71.975,
+        191.435,
+        77.725
+      ],
+      "after_bbox": [
+        156.625,
+        113.625,
+        160.375,
+        119.375
+      ]
+    },
+    {
+      "ref": "SW2",
+      "value": "RESET / PTS810",
+      "before_xy": [
+        194.35,
+        74.85
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        158.5,
+        109.5
+      ],
+      "after_angle": 90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "e68b89b6-49a1-4394-b8ee-7ab94c2e9d99",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "before_bbox": [
+        192.475,
+        71.975,
+        196.225,
+        77.725
+      ],
+      "after_bbox": [
+        156.625,
+        106.625,
+        160.375,
+        112.375
+      ]
+    },
+    {
+      "ref": "TP9",
+      "value": "TestPoint",
+      "before_xy": [
+        201.385103,
+        73.001273
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        152.0,
+        84.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "4e838c78-a8f7-4074-a921-175ffa74536e",
+      "before_pads": [
+        [
+          "1",
+          "/MCU/ETH_CFG0"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/MCU/ETH_CFG0"
+        ]
+      ],
+      "before_bbox": [
+        200.360103,
+        71.976273,
+        202.410103,
+        74.026273
+      ],
+      "after_bbox": [
+        150.975,
+        83.475,
+        153.025,
+        85.525
+      ]
+    },
+    {
+      "ref": "TP10",
+      "value": "TestPoint",
+      "before_xy": [
+        198.292553,
+        73.001273
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        152.0,
+        105.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "ESP32-C6-MINI-1-H4",
+      "uuid": "2f2ccc8e-f9c6-4a10-8913-f7cbd0db94db",
+      "before_pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ],
+      "before_bbox": [
+        197.267553,
+        71.976273,
+        199.317553,
+        74.026273
+      ],
+      "after_bbox": [
+        150.975,
+        103.975,
+        153.025,
+        106.025
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "C6.1",
+      "a_net": "+3.3V",
+      "a_xy": [
+        162.52,
+        102.5
+      ],
+      "b": "U2.3",
+      "b_net": "+3.3V",
+      "b_xy": [
+        163.02,
+        99.5
+      ],
+      "desc": "+3.3V high-frequency decoupling capacitor to VDD pin 3",
+      "straight_mm": 3.0414
+    },
+    {
+      "a": "C5.1",
+      "a_net": "+3.3V",
+      "a_xy": [
+        162.05,
+        105.5
+      ],
+      "b": "U2.3",
+      "b_net": "+3.3V",
+      "b_xy": [
+        163.02,
+        99.5
+      ],
+      "desc": "+3.3V bulk decoupling capacitor to VDD pin 3",
+      "straight_mm": 6.0779
+    },
+    {
+      "a": "C7.2",
+      "a_net": "Net-(U2-EN)",
+      "a_xy": [
+        159.48,
+        102.5
+      ],
+      "b": "U2.8",
+      "b_net": "Net-(U2-EN)",
+      "b_xy": [
+        159.02,
+        99.5
+      ],
+      "desc": "EN reset timing capacitor (delay filter) to EN pin 8",
+      "straight_mm": 3.0351
+    },
+    {
+      "a": "R1.2",
+      "a_net": "Net-(U2-EN)",
+      "a_xy": [
+        157.01,
+        102.5
+      ],
+      "b": "U2.8",
+      "b_net": "Net-(U2-EN)",
+      "b_xy": [
+        159.02,
+        99.5
+      ],
+      "desc": "EN pull-up resistor to EN pin 8",
+      "straight_mm": 3.6111
+    },
+    {
+      "a": "SW2.2",
+      "a_net": "Net-(U2-EN)",
+      "a_xy": [
+        157.425,
+        111.575
+      ],
+      "b": "U2.8",
+      "b_net": "Net-(U2-EN)",
+      "b_xy": [
+        159.02,
+        99.5
+      ],
+      "desc": "RESET tactile switch to EN pin 8",
+      "straight_mm": 12.1799
+    },
+    {
+      "a": "R2.1",
+      "a_net": "Net-(U2-IO12)",
+      "a_xy": [
+        151.49,
+        94.4
+      ],
+      "b": "U2.17",
+      "b_net": "Net-(U2-IO12)",
+      "b_xy": [
+        155.72,
+        94.4
+      ],
+      "desc": "USB_DM series damping resistor to IO12 pin 17",
+      "straight_mm": 4.23
+    },
+    {
+      "a": "R3.1",
+      "a_net": "Net-(U2-IO13)",
+      "a_xy": [
+        151.49,
+        93.0
+      ],
+      "b": "U2.18",
+      "b_net": "Net-(U2-IO13)",
+      "b_xy": [
+        155.72,
+        93.6
+      ],
+      "desc": "USB_DP series damping resistor to IO13 pin 18",
+      "straight_mm": 4.2723
+    },
+    {
+      "a": "R10.1",
+      "a_net": "Net-(U2-IO9)",
+      "a_xy": [
+        151.49,
+        89.6
+      ],
+      "b": "U2.23",
+      "b_net": "Net-(U2-IO9)",
+      "b_xy": [
+        155.72,
+        89.6
+      ],
+      "desc": "IO9 boot strapping pull-up resistor to IO9 pin 23",
+      "straight_mm": 4.23
+    },
+    {
+      "a": "SW1.2",
+      "a_net": "Net-(U2-IO9)",
+      "a_xy": [
+        157.425,
+        118.575
+      ],
+      "b": "U2.23",
+      "b_net": "Net-(U2-IO9)",
+      "b_xy": [
+        155.72,
+        89.6
+      ],
+      "desc": "BOOT tactile switch to IO9 pin 23",
+      "straight_mm": 29.0251
+    },
+    {
+      "a": "R37.1",
+      "a_net": "Net-(U2-IO8)",
+      "a_xy": [
+        151.49,
+        91.2
+      ],
+      "b": "U2.22",
+      "b_net": "Net-(U2-IO8)",
+      "b_xy": [
+        155.72,
+        90.4
+      ],
+      "desc": "IO8 pull-up resistor to IO8 pin 22",
+      "straight_mm": 4.305
+    },
+    {
+      "a": "R15.1",
+      "a_net": "Net-(U2-IO8)",
+      "a_xy": [
+        151.49,
+        87.5
+      ],
+      "b": "U2.22",
+      "b_net": "Net-(U2-IO8)",
+      "b_xy": [
+        155.72,
+        90.4
+      ],
+      "desc": "ETH_CFG0 series damping resistor to IO8 pin 22",
+      "straight_mm": 5.1286
+    },
+    {
+      "a": "R16.2",
+      "a_net": "Net-(U2-IO0)",
+      "a_xy": [
+        152.51,
+        98.4
+      ],
+      "b": "U2.12",
+      "b_net": "Net-(U2-IO0)",
+      "b_xy": [
+        155.72,
+        98.4
+      ],
+      "desc": "IO0 / ETH_PWR_EN pull-down resistor to IO0 pin 12",
+      "straight_mm": 3.21
+    },
+    {
+      "a": "TP9.1",
+      "a_net": "/MCU/ETH_CFG0",
+      "a_xy": [
+        152.0,
+        84.5
+      ],
+      "b": "R15.2",
+      "b_net": "/MCU/ETH_CFG0",
+      "b_xy": [
+        152.51,
+        87.5
+      ],
+      "desc": "Test point TP9 on ETH_CFG0",
+      "straight_mm": 3.043
+    },
+    {
+      "a": "TP10.1",
+      "a_net": "/MCU/ETH_PWR_EN",
+      "a_xy": [
+        152.0,
+        105.0
+      ],
+      "b": "R16.1",
+      "b_net": "/MCU/ETH_PWR_EN",
+      "b_xy": [
+        151.49,
+        98.4
+      ],
+      "desc": "Test point TP10 on ETH_PWR_EN",
+      "straight_mm": 6.6197
+    },
+    {
+      "a": "C6.2",
+      "a_net": "GND",
+      "a_xy": [
+        163.48,
+        102.5
+      ],
+      "b": "U2.1",
+      "b_net": "GND",
+      "b_xy": [
+        164.62,
+        99.5
+      ],
+      "desc": "GND return loop: C6.2 to U2 pin 1 (GND)",
+      "straight_mm": 3.2093
+    }
+  ],
+  "antenna_keepout_zone": {
+    "x_min": 166.22,
+    "x_max": 186.62,
+    "y_min": 72.0,
+    "y_max": 115.2,
+    "rule": "Must be completely free of all traces, copper, vias, and components on all layers",
+    "peripherals_inside_keepout": 0,
+    "peripherals_status": [
+      {
+        "ref": "C5",
+        "bbox": [
+          161.275,
+          104.495,
+          164.725,
+          106.505
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 11.555
+      },
+      {
+        "ref": "C6",
+        "bbox": [
+          162.065,
+          102.015,
+          163.935,
+          102.985
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 12.345
+      },
+      {
+        "ref": "C7",
+        "bbox": [
+          158.065,
+          102.015,
+          159.935,
+          102.985
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 8.345
+      },
+      {
+        "ref": "R1",
+        "bbox": [
+          155.545,
+          102.005,
+          157.455,
+          102.995
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 5.825
+      },
+      {
+        "ref": "R2",
+        "bbox": [
+          151.045,
+          93.905,
+          152.955,
+          94.895
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.325
+      },
+      {
+        "ref": "R3",
+        "bbox": [
+          151.045,
+          92.505,
+          152.955,
+          93.495
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.325
+      },
+      {
+        "ref": "R10",
+        "bbox": [
+          151.045,
+          89.105,
+          152.955,
+          90.095
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.325
+      },
+      {
+        "ref": "R15",
+        "bbox": [
+          151.045,
+          87.005,
+          152.955,
+          87.995
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.325
+      },
+      {
+        "ref": "R16",
+        "bbox": [
+          151.045,
+          97.905,
+          152.955,
+          98.895
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.325
+      },
+      {
+        "ref": "R37",
+        "bbox": [
+          151.045,
+          90.705,
+          152.955,
+          91.695
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.325
+      },
+      {
+        "ref": "SW1",
+        "bbox": [
+          156.625,
+          113.625,
+          160.375,
+          119.375
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 6.905
+      },
+      {
+        "ref": "SW2",
+        "bbox": [
+          156.625,
+          106.625,
+          160.375,
+          112.375
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 6.905
+      },
+      {
+        "ref": "TP9",
+        "bbox": [
+          150.975,
+          83.475,
+          153.025,
+          85.525
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.255
+      },
+      {
+        "ref": "TP10",
+        "bbox": [
+          150.975,
+          103.975,
+          153.025,
+          106.025
+        ],
+        "inside_keepout": false,
+        "edge_clearance_mm": 1.255
+      }
+    ]
+  },
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "circuit_summary": {
+    "module": "ESP32-C6-MINI-1-H4 (U2)",
+    "layer": "B.Cu",
+    "antenna_orientation": "Facing EAST (towards board right edge)",
+    "power_decoupling": "C6 (0402 100n bypass) placed 3.04 mm from VDD Pin 3; C5 (0805 22uF bulk) directly adjacent at 5.58 mm",
+    "reset_timing": "C7 (0402 1uF) placed 3.03 mm from EN Pin 8; R1 (0402 10k pull-up) placed 3.45 mm from EN Pin 8",
+    "tactile_switches": "SW2 (RESET) and SW1 (BOOT) placed in safe non-RF corridor at x=158.5 mm (8 mm away from antenna keepout)",
+    "west_column_signals": "R2 (USB_DM 22R), R3 (USB_DP 22R), R16 (ETH_PWR_EN 10k), R10 (Boot 10k), R37 (IO8 10k), R15 (ETH_CFG0 22R) aligned at x=152.0 mm (>2.2 mm from Edge.Cuts)",
+    "test_points": "TP9 (ETH_CFG0) at (152.0, 84.5) and TP10 (ETH_PWR_EN) at (152.0, 105.0) on B.Cu west column"
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "violations_before_total": 145,
+  "violations_after_total": 145,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

@@ -11,7 +11,7 @@ görevlerde izlenir; bu doküman değiştiğinde ilgili görevin kabul kriterler
 - **UART0 (GPIO16 TX / GPIO17 RX) Ethernet köprüsüne ayrıldı** (23.09.2026): J8 üzerinden
   CH9121'in kanal 1'ine (RXD1/TXD1) gider. TP11/TP12 aynı netlerde tap olarak kalır.
   Loglar USB-Serial/JTAG üzerinden akmaya devam eder; UART0'a konsol bağlanmaz.
-- **I2C tek bus**: GPIO18 SCL / GPIO19 SDA, R4/R7 4k7.
+- **I2C tek bus**: GPIO22 SCL / GPIO23 SDA, R4/R7 4k7 (29.09.2026'ya kadar GPIO18/19; TASK-123).
 
   | Cihaz | Adres |
   | --- | --- |
@@ -19,9 +19,37 @@ görevlerde izlenir; bu doküman değiştiğinde ilgili görevin kabul kriterler
   | INA226 | 0x40 |
   | BQ32000 | 0x68 |
 
-- INA226 ALERT → GPIO3 (yalnız okuma; EN düğümü değil).
-- Ekran: ST7789V2 240x320, 4 telli SPI: SCLK GPIO4, MOSI GPIO5, **CS GPIO14**,
-  **DC GPIO7**, RST GPIO15; TFT_BL_PWM (GPIO1) aktif-yüksek PWM.
+- INA226 ALERT → GPIO20 (yalnız okuma; EN düğümü değil).
+- Ekran: ST7789V2 240x320, 4 telli SPI: SCLK GPIO4, **MOSI GPIO18**, **CS GPIO15**,
+  **DC GPIO5**, **RST GPIO19**; TFT_BL_PWM (GPIO1) aktif-yüksek PWM. SPI GPIO matrisi
+  üzerinden (FSPICLK IOMUX pini GPIO6 = OUT_EN); saat sınırı pin değişiminden önceyle aynı.
+- **Pin tablosu (TASK-123, 29.09.2026)** - PCB'de ESP32 pin sırası J3/J9 sırasına göre
+  yeniden atandı (sinyal ratsnest kesişmesi 51 -> 38). Deep-sleep uyanması gereksinimi yok
+  (kullanıcı, 29.09.2026); RTC_INT ve INA_ALERT LP olmayan pinlerde.
+
+  | GPIO | Net | Önceki GPIO |
+  | --- | --- | --- |
+  | 0 | ETH_PWR_EN | aynı |
+  | 1 | TFT_BL_PWM | aynı |
+  | 2 | PD_INT_3V3 | 20 |
+  | 3 | ENCODER_A | 22 |
+  | 4 | TFT_SCLK (strapping MTMS) | aynı |
+  | 5 | TFT_DC (strapping MTDI) | 7 |
+  | 6 | OUT_EN | aynı |
+  | 7 | ENCODER_B | 23 |
+  | 8 / 9 | ETH_CFG0 / BOOT | aynı |
+  | 12 / 13 | USB D- / D+ | aynı |
+  | 14 | ENCODER_SW | 21 |
+  | 15 | TFT_CS (strapping, JTAG kaynağı; EFUSE_JTAG_SEL_ENABLE=0 iken etkisiz) | 14 |
+  | 16 / 17 | UART_TX / UART_RX | aynı |
+  | 18 | TFT_MOSI | 5 |
+  | 19 | TFT_RST | 15 |
+  | 20 | INA_ALERT | 3 |
+  | 21 | RTC_INT | 2 |
+  | 22 / 23 | PD_I2C_SCL_3V3 / PD_I2C_SDA_3V3 | 18 / 19 |
+
+  Strapping pinlerinde (GPIO4/5/15) yalnız TFT girişleri var (yüksek empedans, kartta pull
+  yok); firmware bu pinleri boot tamamlanmadan sürmemeli.
 - **ETH_CFG0 = GPIO8** (strapping, R15 22 Ω seri): CH9121 CFG0 girişi. High = normal mod,
   low = yapılandırma modu. R37 10k pull-up boot boyunca high tutar, yani ESP32 reset'teyken
   modül normal modda kalır. **Firmware GPIO8'i boot tamamlanmadan sürmemeli**; varsayılanı high.

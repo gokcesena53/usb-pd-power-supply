@@ -1,0 +1,479 @@
+{
+  "board_dimensions": {
+    "width_mm": 99.4,
+    "height_mm": 61.04,
+    "gross_area_mm2": 6067.38,
+    "x_bounds": [
+      50.3,
+      149.7
+    ],
+    "y_bounds": [
+      69.48,
+      130.52
+    ]
+  },
+  "candidate_a": {
+    "name": "Candidate A: Linear Eastward Power Flow + Northwest RF & Control (Recommended)",
+    "description": "J7 USB-C top-left, J8 Ethernet bottom-left under J7, U2 ESP32-C6 top edge (antenna outside North), linear west-to-east power flow on B.Cu, quiet RTC in North-East.",
+    "blocks": {
+      "1_USB_C_GIRIS": {
+        "x_range": [
+          50.3,
+          62.0
+        ],
+        "y_range": [
+          72.0,
+          89.0
+        ],
+        "face": "F.Cu / B.Cu",
+        "w": 11.7,
+        "h": 17.0
+      },
+      "8_ESP32_C6_MCU": {
+        "x_range": [
+          64.0,
+          85.5
+        ],
+        "y_range": [
+          69.48,
+          88.0
+        ],
+        "face": "F.Cu",
+        "w": 21.5,
+        "h": 18.5,
+        "antenna_out": true
+      },
+      "11_ETHERNET_MEZANIN": {
+        "x_range": [
+          50.3,
+          105.0
+        ],
+        "y_range": [
+          104.0,
+          130.52
+        ],
+        "face": "B.Cu",
+        "w": 54.7,
+        "h": 26.5
+      },
+      "14_PANEL_ENKODER": {
+        "x_range": [
+          52.0,
+          60.0
+        ],
+        "y_range": [
+          90.0,
+          103.0
+        ],
+        "face": "F.Cu / B.Cu",
+        "w": 8.0,
+        "h": 13.0
+      },
+      "2_AP33772S_PD_KONTROLCU": {
+        "x_range": [
+          62.0,
+          86.0
+        ],
+        "y_range": [
+          88.0,
+          105.0
+        ],
+        "face": "B.Cu",
+        "w": 24.0,
+        "h": 17.0
+      },
+      "3_TPS55340_PRE_BOOST": {
+        "x_range": [
+          86.0,
+          110.0
+        ],
+        "y_range": [
+          82.0,
+          104.0
+        ],
+        "face": "B.Cu",
+        "w": 24.0,
+        "h": 22.0
+      },
+      "4_AOZ1284_BUCK": {
+        "x_range": [
+          110.0,
+          132.0
+        ],
+        "y_range": [
+          82.0,
+          104.0
+        ],
+        "face": "B.Cu",
+        "w": 22.0,
+        "h": 22.0
+      },
+      "5_LM74801_CIKIS_ANAHTARI": {
+        "x_range": [
+          130.0,
+          149.0
+        ],
+        "y_range": [
+          84.0,
+          102.0
+        ],
+        "face": "B.Cu",
+        "w": 19.0,
+        "h": 18.0
+      },
+      "6_INA226_OLCUM_CIKIS": {
+        "x_range": [
+          128.0,
+          149.7
+        ],
+        "y_range": [
+          102.0,
+          128.0
+        ],
+        "face": "B.Cu / F.Cu (J4)",
+        "w": 21.7,
+        "h": 26.0
+      },
+      "7_CIKIS_DESARJI": {
+        "x_range": [
+          116.0,
+          128.0
+        ],
+        "y_range": [
+          104.0,
+          118.0
+        ],
+        "face": "B.Cu",
+        "w": 12.0,
+        "h": 14.0
+      },
+      "9_RTC_BQ32000": {
+        "x_range": [
+          126.0,
+          147.0
+        ],
+        "y_range": [
+          69.48,
+          84.0
+        ],
+        "face": "B.Cu",
+        "w": 21.0,
+        "h": 14.5
+      },
+      "10_I2C_SEVIYE_DONUSTURUCU": {
+        "x_range": [
+          86.0,
+          96.0
+        ],
+        "y_range": [
+          72.0,
+          82.0
+        ],
+        "face": "B.Cu",
+        "w": 10.0,
+        "h": 10.0
+      },
+      "12_TFT_BACKLIGHT": {
+        "x_range": [
+          94.0,
+          106.0
+        ],
+        "y_range": [
+          95.0,
+          106.0
+        ],
+        "face": "F.Cu",
+        "w": 12.0,
+        "h": 11.0
+      },
+      "13_TFT_J3": {
+        "x_range": [
+          96.0,
+          103.0
+        ],
+        "y_range": [
+          105.0,
+          112.0
+        ],
+        "face": "F.Cu",
+        "w": 7.0,
+        "h": 7.0
+      },
+      "15_TEST_NOKTALARI": {
+        "x_range": [
+          106.0,
+          116.0
+        ],
+        "y_range": [
+          108.0,
+          122.0
+        ],
+        "face": "F.Cu / B.Cu",
+        "w": 10.0,
+        "h": 14.0
+      }
+    },
+    "metrics": {
+      "usb_trace_length_mm": 22.0,
+      "rf_keepout_ok": true,
+      "simultaneous_plug_clearance_mm": 2.5,
+      "power_loop_flow": "Linear West-to-East",
+      "rtc_isolation_mm": 26.5
+    }
+  },
+  "candidate_b": {
+    "name": "Candidate B: Perimeter Flow + Northeast RF",
+    "description": "J8 Ethernet top-left, J7 USB-C bottom-left, U2 ESP32-C6 north-east edge, power loops wrap around bottom edge. Long USB traces (~70 mm) across the board.",
+    "blocks": {
+      "11_ETHERNET_MEZANIN": {
+        "x_range": [
+          50.3,
+          105.0
+        ],
+        "y_range": [
+          69.48,
+          96.0
+        ],
+        "face": "B.Cu",
+        "w": 54.7,
+        "h": 26.5
+      },
+      "1_USB_C_GIRIS": {
+        "x_range": [
+          50.3,
+          62.0
+        ],
+        "y_range": [
+          110.0,
+          128.0
+        ],
+        "face": "F.Cu / B.Cu",
+        "w": 11.7,
+        "h": 18.0
+      },
+      "8_ESP32_C6_MCU": {
+        "x_range": [
+          125.0,
+          147.0
+        ],
+        "y_range": [
+          69.48,
+          88.0
+        ],
+        "face": "F.Cu",
+        "w": 22.0,
+        "h": 18.5,
+        "antenna_out": true
+      },
+      "2_AP33772S_PD_KONTROLCU": {
+        "x_range": [
+          62.0,
+          86.0
+        ],
+        "y_range": [
+          110.0,
+          128.0
+        ],
+        "face": "B.Cu",
+        "w": 24.0,
+        "h": 18.0
+      },
+      "3_TPS55340_PRE_BOOST": {
+        "x_range": [
+          86.0,
+          110.0
+        ],
+        "y_range": [
+          108.0,
+          130.0
+        ],
+        "face": "B.Cu",
+        "w": 24.0,
+        "h": 22.0
+      },
+      "4_AOZ1284_BUCK": {
+        "x_range": [
+          110.0,
+          132.0
+        ],
+        "y_range": [
+          108.0,
+          130.0
+        ],
+        "face": "B.Cu",
+        "w": 22.0,
+        "h": 22.0
+      },
+      "5_LM74801_CIKIS_ANAHTARI": {
+        "x_range": [
+          132.0,
+          149.7
+        ],
+        "y_range": [
+          108.0,
+          126.0
+        ],
+        "face": "B.Cu",
+        "w": 17.7,
+        "h": 18.0
+      },
+      "6_INA226_OLCUM_CIKIS": {
+        "x_range": [
+          130.0,
+          149.7
+        ],
+        "y_range": [
+          88.0,
+          108.0
+        ],
+        "face": "B.Cu / F.Cu (J4)",
+        "w": 19.7,
+        "h": 20.0
+      },
+      "7_CIKIS_DESARJI": {
+        "x_range": [
+          116.0,
+          128.0
+        ],
+        "y_range": [
+          94.0,
+          108.0
+        ],
+        "face": "B.Cu",
+        "w": 12.0,
+        "h": 14.0
+      },
+      "9_RTC_BQ32000": {
+        "x_range": [
+          105.0,
+          124.0
+        ],
+        "y_range": [
+          72.0,
+          86.0
+        ],
+        "face": "B.Cu",
+        "w": 19.0,
+        "h": 14.0
+      },
+      "10_I2C_SEVIYE_DONUSTURUCU": {
+        "x_range": [
+          116.0,
+          126.0
+        ],
+        "y_range": [
+          86.0,
+          96.0
+        ],
+        "face": "B.Cu",
+        "w": 10.0,
+        "h": 10.0
+      },
+      "14_PANEL_ENKODER": {
+        "x_range": [
+          52.0,
+          60.0
+        ],
+        "y_range": [
+          98.0,
+          109.0
+        ],
+        "face": "F.Cu / B.Cu",
+        "w": 8.0,
+        "h": 11.0
+      },
+      "12_TFT_BACKLIGHT": {
+        "x_range": [
+          94.0,
+          106.0
+        ],
+        "y_range": [
+          95.0,
+          106.0
+        ],
+        "face": "F.Cu",
+        "w": 12.0,
+        "h": 11.0
+      },
+      "13_TFT_J3": {
+        "x_range": [
+          96.0,
+          103.0
+        ],
+        "y_range": [
+          105.0,
+          112.0
+        ],
+        "face": "F.Cu",
+        "w": 7.0,
+        "h": 7.0
+      },
+      "15_TEST_NOKTALARI": {
+        "x_range": [
+          106.0,
+          116.0
+        ],
+        "y_range": [
+          90.0,
+          104.0
+        ],
+        "face": "F.Cu / B.Cu",
+        "w": 10.0,
+        "h": 14.0
+      }
+    },
+    "metrics": {
+      "usb_trace_length_mm": 72.0,
+      "rf_keepout_ok": true,
+      "simultaneous_plug_clearance_mm": 2.0,
+      "power_loop_flow": "U-Shape / Perimeter",
+      "rtc_isolation_mm": 14.0
+    }
+  },
+  "comparison": {
+    "criteria": [
+      {
+        "name": "USB 2.0 D+/D- Yol Uzunlu\u011fu",
+        "cand_a": "22.0 mm (\u00c7ok K\u0131sa / D\u00fc\u015f\u00fck Kay\u0131p)",
+        "cand_b": "72.0 mm (Uzun / EMI Riski)",
+        "winner": "Candidate A"
+      },
+      {
+        "name": "Mekanik Kararla Uyum (PCB_GENEL_YERLESIM_KARARI)",
+        "cand_a": "Tam Uyum (J7 Top, J8 Bottom, U2 Top/D\u0131\u015f)",
+        "cand_b": "K\u0131smi Uyum (J8 Top'a kayd\u0131r\u0131lm\u0131\u015f)",
+        "winner": "Candidate A"
+      },
+      {
+        "name": "E\u015fzamanl\u0131 Fi\u015f A\u00e7\u0131kl\u0131\u011f\u0131 (Z)",
+        "cand_a": "2.5 mm (>2.0 mm)",
+        "cand_b": "2.0 mm (S\u0131n\u0131r)",
+        "winner": "Candidate A"
+      },
+      {
+        "name": "G\u00fc\u00e7 Ak\u0131\u015f\u0131 ve D\u00f6ng\u00fc Do\u011frusall\u0131\u011f\u0131",
+        "cand_a": "Do\u011frusal Bat\u0131 -> Do\u011fu (S\u0131f\u0131r Geri D\u00f6n\u00fc\u015f)",
+        "cand_b": "U-Tipi Alt Kenar Yay\u0131l\u0131m\u0131",
+        "winner": "Candidate A"
+      },
+      {
+        "name": "Termal Ayr\u0131m (So\u011fuk MCU vs S\u0131cak G\u00fc\u00e7)",
+        "cand_a": "Kuzey So\u011fuk MCU / G\u00fcney S\u0131cak G\u00fc\u00e7 (M\u00fckemmel)",
+        "cand_b": "Kar\u0131\u015f\u0131k (G\u00fc\u00e7 bobinleri MCU'ya yak\u0131n)",
+        "winner": "Candidate A"
+      },
+      {
+        "name": "RTC BQ32000 Sessiz K\u00f6\u015fe Mesafesi",
+        "cand_a": "26.5 mm (Kuzeydo\u011fu Sessiz B\u00f6lge)",
+        "cand_b": "14.0 mm (L1 Buck Bobinine Yak\u0131n)",
+        "winner": "Candidate A"
+      },
+      {
+        "name": "Sonu\u00e7 De\u011ferlendirmesi",
+        "cand_a": "SE\u00c7\u0130LD\u0130 (Uygulama \u0130\u00e7in Onayland\u0131)",
+        "cand_b": "ELEND\u0130",
+        "winner": "Candidate A"
+      }
+    ]
+  }
+}

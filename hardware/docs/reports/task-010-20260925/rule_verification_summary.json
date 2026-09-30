@@ -1,0 +1,33 @@
+{
+  "old_rules_summary": {
+    "total": 145,
+    "violations": {
+      "hole_clearance": 4,
+      "drill_out_of_range": 15,
+      "text_thickness": 63,
+      "text_height": 63
+    },
+    "unconnected": 360
+  },
+  "new_rules_summary": {
+    "total": 126,
+    "violations": {
+      "text_thickness": 63,
+      "text_height": 63
+    },
+    "unconnected": 360
+  },
+  "controlled_experiments": {
+    "u11_thermal_via_rule_effect": {
+      "without_rule": 15,
+      "with_rule": 0,
+      "difference": 15
+    },
+    "j7_npth_hole_clearance_rule_effect": {
+      "without_rule": 4,
+      "with_rule": 0,
+      "difference": 4
+    },
+    "text_warnings_unchanged": 126
+  }
+}

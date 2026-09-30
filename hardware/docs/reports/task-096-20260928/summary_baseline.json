@@ -1,0 +1,137 @@
+{
+  "pcb_sha256": "3fef79fb84dd7873a7848b67d45493059cb3772e0c8dd45b3bf90e45d1a4e9f6",
+  "kicad_version": "10.0.5",
+  "python_version": "3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]",
+  "total_footprints": 144,
+  "outside_electrical_count": 0,
+  "outside_electrical_list": [],
+  "drc": {
+    "total_violations": 168,
+    "errors_count": 15,
+    "warnings_count": 153,
+    "parity_issues_count": 0,
+    "unconnected_count": 360,
+    "error_items": [
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 36 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 37 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 38 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 39 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 40 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 41 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 42 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 43 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 44 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 45 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 46 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 47 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 48 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 50 [GND] of U2 on F.Cu"
+        ]
+      },
+      {
+        "type": "copper_edge_clearance",
+        "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2850 mm)",
+        "items": [
+          "Segment on Edge.Cuts",
+          "Pad 53 [GND] of U2 on F.Cu"
+        ]
+      }
+    ]
+  }
+}

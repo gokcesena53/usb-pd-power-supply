@@ -1,0 +1,8015 @@
+{
+  "sha256": "94d79f2ce54674b5e176ad94766ab1519537063b1747744d24e8624f2ad588bd",
+  "thickness": 1.6,
+  "footprints": [
+    {
+      "ref": "C1",
+      "value": "100n",
+      "uuid": "6b65bc6f-8494-47c9-8036-131a101ef0c9",
+      "footprint": "C_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        63.03,
+        156.04
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        62.095,
+        155.555,
+        63.965,
+        156.525
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U1-V18)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "22u",
+      "uuid": "3de064d2-aff6-4dd7-856a-ecb888dd9903",
+      "footprint": "C_0805_2012Metric",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "B.Cu",
+      "xy": [
+        108.757144,
+        163.38
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        107.752144,
+        161.655,
+        109.762144,
+        165.105
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "100n",
+      "uuid": "20535293-6cf0-418f-afc7-2790484e89f2",
+      "footprint": "C_0402_1005Metric",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "B.Cu",
+      "xy": [
+        163.384288,
+        61.47
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        162.449288,
+        60.985,
+        164.319288,
+        61.955
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "4u7",
+      "uuid": "0cb8beb9-b678-41a3-9f07-68726dc17a4a",
+      "footprint": "C_1210_3225Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        87.93,
+        55.91
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        86.305,
+        53.585,
+        89.555,
+        58.235
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "4u7",
+      "uuid": "80353b40-5547-41f2-9381-a3a82a4a3d3f",
+      "footprint": "C_1210_3225Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        92.22,
+        55.91
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        90.595,
+        53.585,
+        93.845,
+        58.235
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100n",
+      "uuid": "9405131e-ec5b-42bb-99b6-eb34945cc944",
+      "footprint": "C_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        85.82,
+        61.01
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        85.335,
+        60.075,
+        86.305,
+        61.945
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C15",
+      "value": "47u",
+      "uuid": "2b65e2b6-1a93-441e-8099-4f53cd5188ef",
+      "footprint": "CP_Elec_6.3x5.8",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        97.58,
+        47.769999
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        92.855,
+        44.194999,
+        102.305,
+        51.344999
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "47u",
+      "uuid": "4664c4e6-ee6b-4dbd-8824-bb6ed1347444",
+      "footprint": "C_1210_3225Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        96.51,
+        55.91
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        94.885,
+        53.585,
+        98.135,
+        58.235
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "100n",
+      "uuid": "827c9e37-8095-4a7b-8c47-11ee8bbbce83",
+      "footprint": "C_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        78.75,
+        63.949999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        77.815,
+        63.464999,
+        79.685,
+        64.434999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U5-BST)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C18",
+      "value": "10n",
+      "uuid": "b46c2f02-a252-4e26-a737-3cfa8bafc865",
+      "footprint": "C_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        81.66,
+        63.949999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        80.725,
+        63.464999,
+        82.595,
+        64.434999
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SS_RAMP"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C19",
+      "value": "15n",
+      "uuid": "730d3574-f779-425c-b95c-96590c984b5d",
+      "footprint": "C_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        87.83,
+        61.01
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        87.345,
+        60.075,
+        88.315,
+        61.945
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(C19-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "uuid": "11119241-4833-416d-b8b8-5aa72e727e77",
+      "footprint": "C_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        57.3,
+        153.44
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        56.815,
+        152.505,
+        57.785,
+        154.375
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C20",
+      "value": "100n",
+      "uuid": "5c8fcc7f-c5f3-4b99-a533-e2288c42e9b5",
+      "footprint": "C_0402_1005Metric",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "F.Cu",
+      "xy": [
+        117.779695,
+        162.14
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        116.844695,
+        161.655,
+        118.714695,
+        162.625
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C21",
+      "value": "100n",
+      "uuid": "12d284da-3c38-4c9b-8992-44528dd00411",
+      "footprint": "C_0402_1005Metric",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "F.Cu",
+      "xy": [
+        120.689695,
+        162.14
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        119.754695,
+        161.655,
+        121.624695,
+        162.625
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C23",
+      "value": "47n",
+      "uuid": "d2caa200-d283-42bf-b324-17921f210e82",
+      "footprint": "C_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        57.129999,
+        63.93
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        56.194999,
+        63.445,
+        58.064999,
+        64.415
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U11-SS)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C24",
+      "value": "100n",
+      "uuid": "1b8c89bf-a7fe-4cac-9312-a1d4ca043143",
+      "footprint": "C_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        60.04,
+        63.93
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        59.105,
+        63.445,
+        60.975,
+        64.415
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(C24-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C25",
+      "value": "4u7",
+      "uuid": "b3420e13-5309-4203-9e4e-456174f64687",
+      "footprint": "C_1210_3225Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        69.6,
+        54.19
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        67.275,
+        52.565,
+        71.925,
+        55.815
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C26",
+      "value": "100n",
+      "uuid": "41dbe7f6-bf1f-4612-b5e8-8644ff67b272",
+      "footprint": "C_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        62.949999,
+        63.93
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        62.014999,
+        63.445,
+        63.884999,
+        64.415
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C27",
+      "value": "4u7",
+      "uuid": "df38c967-afb5-44ed-9ada-f88599fc4ed5",
+      "footprint": "C_1210_3225Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        52.62,
+        60.78
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        50.295,
+        59.155,
+        54.945,
+        62.405
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C28",
+      "value": "4u7",
+      "uuid": "4ffddcd8-5423-4bcd-8c62-d59468e2c4dd",
+      "footprint": "C_1210_3225Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        58.309999,
+        60.78
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        55.984999,
+        59.155,
+        60.634999,
+        62.405
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C29",
+      "value": "47u",
+      "uuid": "89980d68-ab45-4914-9edb-26f134c0622a",
+      "footprint": "CP_Elec_6.3x5.8",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        64.51,
+        47.25
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        59.785,
+        43.675,
+        69.235,
+        50.825
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "2u2",
+      "uuid": "d502e238-42b8-4dd1-9a0c-d4213e66a213",
+      "footprint": "C_0805_2012Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        52.019999,
+        153.51
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        50.294999,
+        152.505,
+        53.744999,
+        154.515
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C30",
+      "value": "22n",
+      "uuid": "0d0e7517-d75a-44f9-99c5-00b87d9c188a",
+      "footprint": "C_0402_1005Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        113.94,
+        63.93
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        113.005,
+        63.445,
+        114.875,
+        64.415
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(C30-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C31",
+      "value": "220n",
+      "uuid": "1e427c08-9a03-4ba6-94aa-8c45bfdbc656",
+      "footprint": "C_0603_1608Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        114.4,
+        60.809999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        112.895,
+        60.054999,
+        115.905,
+        61.564999
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "Net-(U12-CAP)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C32",
+      "value": "100n",
+      "uuid": "2e49305e-6c71-4019-ac3a-b9a121b693c9",
+      "footprint": "C_0402_1005Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        116.85,
+        63.93
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        115.915,
+        63.445,
+        117.785,
+        64.415
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C33",
+      "value": "1F5",
+      "uuid": "15bd2310-855b-49b3-bf66-c9f8589b2d1c",
+      "footprint": "Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal",
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "side": "F.Cu",
+      "xy": [
+        227.975102,
+        82.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        206.450102,
+        71.975,
+        232.235102,
+        93.025
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Power_Output_Custom.3dshapes/Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C34",
+      "value": "1u0",
+      "uuid": "4d9ac654-ba07-4ec7-b2e7-8b66e0f6ade2",
+      "footprint": "C_0402_1005Metric",
+      "group": "TFT CONNECTOR J3",
+      "side": "F.Cu",
+      "xy": [
+        28.648569,
+        108.229999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        27.713569,
+        107.744999,
+        29.583569,
+        108.714999
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C35",
+      "value": "100n",
+      "uuid": "2bd2a365-3ba5-477b-a4ff-0d8a23ccd542",
+      "footprint": "C_0402_1005Metric",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "F.Cu",
+      "xy": [
+        166.294288,
+        61.47
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        165.359288,
+        60.985,
+        167.229288,
+        61.955
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "1u0",
+      "uuid": "9a3a28e5-fdc4-4095-8b26-4a938d86cb2d",
+      "footprint": "C_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        65.94,
+        156.04
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        65.005,
+        155.555,
+        66.875,
+        156.525
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "22u",
+      "uuid": "8a5f5455-ca3f-4a55-8be7-efe40ee361d5",
+      "footprint": "C_0805_2012Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        156.47,
+        117.27
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        154.745,
+        116.265,
+        158.195,
+        118.275
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "uuid": "5f5086a9-7c56-4b2a-84d1-0ba9873f3576",
+      "footprint": "C_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        176.39,
+        116.75
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        175.455,
+        116.265,
+        177.325,
+        117.235
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "1u0",
+      "uuid": "655bf6d9-9e2f-45ea-89ab-0e6f50e100f2",
+      "footprint": "C_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        173.93,
+        117.2
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        173.445,
+        116.265,
+        174.415,
+        118.135
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "4u7",
+      "uuid": "2dec3cca-ef18-4bf2-a0b1-53df450bf7d7",
+      "footprint": "C_1210_3225Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "F.Cu",
+      "xy": [
+        51.92,
+        149.14
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        50.295,
+        146.815,
+        53.545,
+        151.465
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "1u0",
+      "uuid": "cafe6e1f-2580-47f1-9382-0d113d5920a9",
+      "footprint": "C_0402_1005Metric",
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "side": "B.Cu",
+      "xy": [
+        215.455101,
+        95.0
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        214.970101,
+        94.065,
+        215.940101,
+        95.935
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "LED",
+      "uuid": "009ad82d-6f53-4010-bad0-21d875813a1a",
+      "footprint": "LED_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        59.78,
+        152.999999
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        58.825,
+        152.504999,
+        60.97,
+        153.494999
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D10",
+      "value": "BZT52C12",
+      "uuid": "12cdb498-9b5e-4ad8-b4a9-87f83132e125",
+      "footprint": "D_SOD-123",
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "side": "F.Cu",
+      "xy": [
+        188.050005,
+        62.16
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        185.630005,
+        60.985,
+        190.425005,
+        63.335
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "SS2060FL",
+      "uuid": "d4224302-df14-491c-b4e3-99582a255209",
+      "footprint": "D_SOD-123F",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        80.04,
+        61.25
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        77.77,
+        60.075,
+        82.265,
+        62.425
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "SMBJ30A",
+      "uuid": "a1409f9b-ccaf-414c-a550-8098051873b1",
+      "footprint": "D_SMB",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        40.879999,
+        74.25
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        37.204999,
+        71.975,
+        44.599999,
+        76.525
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D4",
+      "value": "SX36",
+      "uuid": "497e88c0-77e9-4b01-a1de-55d8e4d09fdb",
+      "footprint": "D_SMA",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        62.71,
+        54.34
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        59.14,
+        52.565,
+        66.235,
+        56.115
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D5",
+      "value": "BAS16H",
+      "uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "footprint": "D_SOD-323",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        60.05,
+        57.6
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        58.425,
+        56.625,
+        61.72,
+        58.575
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D6",
+      "value": "BZT52C12",
+      "uuid": "fe9d1d0c-0160-41c0-bfe1-04b8c5adab95",
+      "footprint": "D_SOD-123",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        109.48,
+        61.23
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        107.06,
+        60.055,
+        111.855,
+        62.405
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D7",
+      "value": "SMBJ30A",
+      "uuid": "b199094b-a051-495a-bab1-3d1d7b640f82",
+      "footprint": "D_SMB",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "F.Cu",
+      "xy": [
+        151.904288,
+        57.67
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        148.184288,
+        55.395,
+        155.579288,
+        59.945
+      ],
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D8",
+      "value": "SMF30A",
+      "uuid": "a9297cb6-0fd6-462b-8612-59255b445d0d",
+      "footprint": "D_SOD-123F",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        34.59,
+        84.88
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        32.32,
+        83.705,
+        36.815,
+        86.055
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D9",
+      "value": "SMF30A",
+      "uuid": "c8ecc7a6-761f-43eb-b756-aacf0bc8b01b",
+      "footprint": "D_SOD-123F",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        40.079999,
+        84.88
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        37.809999,
+        83.705,
+        42.304999,
+        86.055
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "H1",
+      "value": "M3",
+      "uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "footprint": "MountingHole_3.2mm_M3",
+      "group": "",
+      "side": "F.Cu",
+      "xy": [
+        54.3,
+        73.48
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "bbox": [
+        50.825,
+        70.005,
+        57.775,
+        76.955
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "H2",
+      "value": "M3",
+      "uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "footprint": "MountingHole_3.2mm_M3",
+      "group": "",
+      "side": "F.Cu",
+      "xy": [
+        145.7,
+        73.48
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "bbox": [
+        142.225,
+        70.005,
+        149.175,
+        76.955
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "H3",
+      "value": "M3",
+      "uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "footprint": "MountingHole_3.2mm_M3",
+      "group": "",
+      "side": "F.Cu",
+      "xy": [
+        54.3,
+        126.52
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "bbox": [
+        50.825,
+        123.045,
+        57.775,
+        129.995
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "H4",
+      "value": "M3",
+      "uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "footprint": "MountingHole_3.2mm_M3",
+      "group": "",
+      "side": "F.Cu",
+      "xy": [
+        145.7,
+        126.52
+      ],
+      "angle": 0.0,
+      "locked": true,
+      "bbox": [
+        142.225,
+        123.045,
+        149.175,
+        129.995
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "J3",
+      "value": "TFT032B018",
+      "uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "footprint": "KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal",
+      "group": "",
+      "side": "F.Cu",
+      "xy": [
+        98.0,
+        109.3
+      ],
+      "angle": 90.0,
+      "locked": true,
+      "bbox": [
+        92.775,
+        99.505,
+        99.275,
+        119.095
+      ],
+      "pads": [
+        [
+          "1",
+          "unconnected-(J3-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "GND"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "TFT_SCLK"
+        ],
+        [
+          "18",
+          "TFT_CS"
+        ],
+        [
+          "19",
+          "TFT_MOSI"
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "+3.3V"
+        ],
+        [
+          "22",
+          "+3.3V"
+        ],
+        [
+          "23",
+          "+3.3V"
+        ],
+        [
+          "24",
+          "unconnected-(J3-Pin_24-Pad24)"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "26",
+          "unconnected-(J3-Pin_26-Pad26)"
+        ],
+        [
+          "27",
+          "unconnected-(J3-Pin_27-Pad27)"
+        ],
+        [
+          "28",
+          "unconnected-(J3-Pin_28-Pad28)"
+        ],
+        [
+          "29",
+          "unconnected-(J3-Pin_29-Pad29)"
+        ],
+        [
+          "3",
+          "unconnected-(J3-Pin_3-Pad3)"
+        ],
+        [
+          "30",
+          "GND"
+        ],
+        [
+          "4",
+          "/USER INTERFACE/BL_K"
+        ],
+        [
+          "5",
+          "GND"
+        ],
+        [
+          "6",
+          "unconnected-(J3-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "GND"
+        ],
+        [
+          "9",
+          "GND"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Connector_FPC_Custom.3dshapes/KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "SolderWire-1.5sqmm",
+      "uuid": "d22c07c5-82be-4e20-8fc1-15906f94bd26",
+      "footprint": "SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "B.Cu",
+      "xy": [
+        163.294288,
+        50.519999
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        152.769288,
+        48.044999,
+        166.019288,
+        52.994999
+      ],
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J7",
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "footprint": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        31.379999,
+        77.32
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        27.174999,
+        71.975,
+        36.164999,
+        82.665
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "A1",
+          "GND"
+        ],
+        [
+          "A12",
+          "GND"
+        ],
+        [
+          "A4",
+          "USB_VBUS"
+        ],
+        [
+          "A5",
+          "USB_CC1"
+        ],
+        [
+          "A6",
+          "USB_DP"
+        ],
+        [
+          "A7",
+          "USB_DM"
+        ],
+        [
+          "A8",
+          "unconnected-(J7-SBU1-PadA8)"
+        ],
+        [
+          "A9",
+          "USB_VBUS"
+        ],
+        [
+          "B1",
+          "GND"
+        ],
+        [
+          "B12",
+          "GND"
+        ],
+        [
+          "B4",
+          "USB_VBUS"
+        ],
+        [
+          "B5",
+          "USB_CC2"
+        ],
+        [
+          "B6",
+          "USB_DP"
+        ],
+        [
+          "B7",
+          "USB_DM"
+        ],
+        [
+          "B8",
+          "unconnected-(J7-SBU2-PadB8)"
+        ],
+        [
+          "B9",
+          "USB_VBUS"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ],
+        [
+          "SH",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J8",
+      "value": "2-CH UART TO ETH",
+      "uuid": "de4b97b7-93f3-462c-817f-d1144d13fa25",
+      "footprint": "Waveshare_2-CH_UART_TO_ETH",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "F.Cu",
+      "xy": [
+        158.287144,
+        158.23
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        102.562144,
+        138.065,
+        161.247144,
+        160.615
+      ],
+      "pads": [
+        [
+          "1",
+          "unconnected-(J8-Pin_1-Pad1)"
+        ],
+        [
+          "10",
+          "unconnected-(J8-Pin_10-Pad10)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "14",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "15",
+          "unconnected-(J8-Pin_15-Pad15)"
+        ],
+        [
+          "16",
+          "unconnected-(J8-Pin_16-Pad16)"
+        ],
+        [
+          "2",
+          "unconnected-(J8-Pin_2-Pad2)"
+        ],
+        [
+          "3",
+          "/MCU/ETH_CFG0"
+        ],
+        [
+          "4",
+          "/MCU/ETH_RUN"
+        ],
+        [
+          "5",
+          "/MCU/UART_TX"
+        ],
+        [
+          "6",
+          "unconnected-(J8-Pin_6-Pad6)"
+        ],
+        [
+          "7",
+          "/MCU/UART_RX"
+        ],
+        [
+          "8",
+          "unconnected-(J8-Pin_8-Pad8)"
+        ],
+        [
+          "9",
+          "unconnected-(J8-Pin_9-Pad9)"
+        ],
+        [
+          "MP",
+          ""
+        ],
+        [
+          "MP",
+          ""
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Module_Custom.3dshapes/Waveshare_2-CH_UART_TO_ETH.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J9",
+      "value": "ENCODER CABLE",
+      "uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "footprint": "SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm",
+      "group": "",
+      "side": "F.Cu",
+      "xy": [
+        58.0,
+        91.6
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        56.555,
+        89.975,
+        59.445,
+        110.025
+      ],
+      "pads": [
+        [
+          "1",
+          "ENCODER_A"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "ENCODER_B"
+        ],
+        [
+          "4",
+          "ENCODER_SW"
+        ],
+        [
+          "5",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Connector_Wire.3dshapes/SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "22u",
+      "uuid": "c55e734b-7d0a-4240-82d9-8c957f3e9205",
+      "footprint": "L_CoreMaster_FPI0705_7.8x7.0mm_H5.0",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        82.34,
+        48.37
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        77.815,
+        44.195,
+        86.865,
+        52.545
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Inductor_Custom.3dshapes/L_CoreMaster_FPI0705_7.8x7.0mm_H5.0.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L3",
+      "value": "6u8",
+      "uuid": "ba1130c3-fa53-4ce1-a479-01e6ec204aa3",
+      "footprint": "L_7.3x7.3_H4.5",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        54.519999,
+        47.6
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        50.294999,
+        43.675,
+        58.744999,
+        51.525
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/L_7.3x7.3_H4.5.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "BSS138P",
+      "uuid": "8e51f329-3f3c-4cff-a45c-d88aec61bf6a",
+      "footprint": "SOT-23",
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "side": "B.Cu",
+      "xy": [
+        208.175101,
+        110.009999
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        206.450101,
+        108.054999,
+        209.900101,
+        111.964999
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "3",
+          "PD_I2C_SCL_5V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q2",
+      "value": "BSS138P",
+      "uuid": "ad27416d-a7c6-4acd-855b-952caaba5cd0",
+      "footprint": "SOT-23",
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "side": "B.Cu",
+      "xy": [
+        212.665102,
+        110.009999
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        210.940102,
+        108.054999,
+        214.390102,
+        111.964999
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "3",
+          "PD_I2C_SDA_5V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q3",
+      "value": "SQJB60EP",
+      "uuid": "6d9f89f7-d44b-4b70-a4be-be821dbb6efa",
+      "footprint": "Vishay_PowerPAK_SO-8L_Dual",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        59.145,
+        141.464999
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        55.245,
+        138.064999,
+        63.12,
+        144.864999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "3",
+          "Net-(Q3A-S)"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "5",
+          "PD_VOUT"
+        ],
+        [
+          "6",
+          "PD_VOUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q4",
+      "value": "BSS138P",
+      "uuid": "0cf8e536-aa9e-467c-840a-ab9cd7d67bd9",
+      "footprint": "SOT-23",
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "side": "B.Cu",
+      "xy": [
+        191.200005,
+        57.99
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        189.475005,
+        56.035,
+        192.925005,
+        59.945
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q5",
+      "value": "SQJB60EP",
+      "uuid": "0b8553e5-e95d-4913-9bf0-f9c0b796fa9f",
+      "footprint": "Vishay_PowerPAK_SO-8L_Dual",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        110.505,
+        55.04
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        107.105,
+        51.14,
+        113.905,
+        59.015
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "3",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q6",
+      "value": "BSS138P",
+      "uuid": "8c324f3c-2c96-4321-8c8e-2aebe1856d0c",
+      "footprint": "SOT-23",
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "side": "F.Cu",
+      "xy": [
+        182.680005,
+        62.71
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        180.725005,
+        60.985,
+        184.635005,
+        64.435
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "Net-(Q6-D)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q7",
+      "value": "IRLML6344",
+      "uuid": "21999567-8b12-45e4-b1ca-88fccf2b95bb",
+      "footprint": "SOT-23",
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "side": "F.Cu",
+      "xy": [
+        20.068569,
+        97.45
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        18.113569,
+        95.725,
+        22.023569,
+        99.175
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "/USER INTERFACE/BL_K"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q8",
+      "value": "TSM3443CX6",
+      "uuid": "1e22d651-902c-4cda-af82-1834afebddcf",
+      "footprint": "SOT-23-6",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "F.Cu",
+      "xy": [
+        104.637144,
+        163.38
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        102.562144,
+        161.48,
+        106.712144,
+        165.105
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "2",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "3",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "4",
+          "+3.3V"
+        ],
+        [
+          "5",
+          "/MCU/ETH_3V3"
+        ],
+        [
+          "6",
+          "/MCU/ETH_3V3"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "10k",
+      "uuid": "0b7b4922-19c6-440d-b508-6c41d36dcd40",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        159.73,
+        117.22
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        159.235,
+        116.265,
+        160.225,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R10",
+      "value": "10k",
+      "uuid": "e9fa27d0-6241-41dd-8e34-31f3005f0dbb",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        161.76,
+        117.22
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        161.265,
+        116.265,
+        162.255,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R11",
+      "value": "5m0",
+      "uuid": "5e4999d6-e13b-47e3-a7c0-70a27d7de6dd",
+      "footprint": "R_2512_6332Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        52.25,
+        141.92
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        50.295,
+        138.065,
+        54.205,
+        145.775
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "6k2",
+      "uuid": "305d8cb3-4908-4973-bf76-faf6e86562c0",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        62.73,
+        152.999999
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        61.775,
+        152.504999,
+        63.685,
+        153.494999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "100R",
+      "uuid": "6a1ab6e9-f382-4db7-9843-14cfb39d91c6",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        65.679999,
+        152.999999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        64.724999,
+        152.504999,
+        66.634999,
+        153.494999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "2",
+          "PD_VOUT"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "2k2",
+      "uuid": "22561e98-14bc-408e-a016-535f4154cd20",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        68.63,
+        152.999999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        67.675,
+        152.504999,
+        69.585,
+        153.494999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U1-LED)"
+        ],
+        [
+          "2",
+          "Net-(D1-A)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "22R",
+      "uuid": "d40c52ac-e6e3-4aa1-a4c4-94d0c2bbf97d",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        163.79,
+        117.22
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        163.295,
+        116.265,
+        164.285,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "/MCU/ETH_CFG0"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "10k",
+      "uuid": "912402ba-9d83-4a4e-8bbb-96551994720d",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        165.82,
+        117.22
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        165.325,
+        116.265,
+        166.315,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ],
+        [
+          "2",
+          "Net-(U2-IO0)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R17",
+      "value": "100k",
+      "uuid": "3d7bc53e-12e5-40f6-84b0-e8c51496176b",
+      "footprint": "R_0402_1005Metric",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "F.Cu",
+      "xy": [
+        114.849695,
+        162.149999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        113.894695,
+        161.654999,
+        115.804695,
+        162.644999
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "22R",
+      "uuid": "782102c6-35bd-46a6-b085-3f9e9e14e788",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        167.85,
+        117.22
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        167.355,
+        116.265,
+        168.345,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "2",
+          "USB_DM"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "100k",
+      "uuid": "9272102f-0bca-409f-b47a-751f40285853",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        71.579999,
+        152.999999
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        70.624999,
+        152.504999,
+        72.534999,
+        153.494999
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-VSEL)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R24",
+      "value": "4k7",
+      "uuid": "27cb90b8-adf0-4a55-9c4d-f400fc2726c3",
+      "footprint": "R_0402_1005Metric",
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "side": "B.Cu",
+      "xy": [
+        213.435101,
+        95.02
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        212.940101,
+        94.065,
+        213.930101,
+        95.975
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/RTC_INT"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R27",
+      "value": "10k",
+      "uuid": "a87e6f45-e848-48d8-a5f8-34db53e5fe3e",
+      "footprint": "R_0402_1005Metric",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "B.Cu",
+      "xy": [
+        153.914288,
+        61.94
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        153.419288,
+        60.985,
+        154.409288,
+        62.895
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R28",
+      "value": "100R",
+      "uuid": "98f48702-da20-43f2-937e-6005a70a261d",
+      "footprint": "R_0402_1005Metric",
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "side": "F.Cu",
+      "xy": [
+        19.068569,
+        100.71
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        18.113569,
+        100.215,
+        20.023569,
+        101.205
+      ],
+      "pads": [
+        [
+          "1",
+          "TFT_BL_PWM"
+        ],
+        [
+          "2",
+          "Net-(Q7-G)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R29",
+      "value": "100k",
+      "uuid": "750f1eed-107e-411e-af01-6425e8147ed2",
+      "footprint": "R_0402_1005Metric",
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "side": "F.Cu",
+      "xy": [
+        22.018569,
+        100.71
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        21.063569,
+        100.215,
+        22.973569,
+        101.205
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(Q7-G)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "22R",
+      "uuid": "1a823a46-88a1-4c32-a3a3-a5b4d4df72ca",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        169.88,
+        117.22
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        169.385,
+        116.265,
+        170.375,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "2",
+          "USB_DP"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R34",
+      "value": "10k",
+      "uuid": "c15c7b8c-1595-48da-8717-139309b6341a",
+      "footprint": "R_0402_1005Metric",
+      "group": "ROTARY ENCODER",
+      "side": "B.Cu",
+      "xy": [
+        40.699999,
+        116.21
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        40.204999,
+        115.255,
+        41.194999,
+        117.165
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_A"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R35",
+      "value": "10k",
+      "uuid": "1b84e453-894e-4662-9183-b9f635a9dc4f",
+      "footprint": "R_0402_1005Metric",
+      "group": "ROTARY ENCODER",
+      "side": "B.Cu",
+      "xy": [
+        42.73,
+        116.21
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        42.235,
+        115.255,
+        43.225,
+        117.165
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_B"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R36",
+      "value": "10k",
+      "uuid": "49585db7-8bc7-4605-aa2d-435fbf56ead2",
+      "footprint": "R_0402_1005Metric",
+      "group": "ROTARY ENCODER",
+      "side": "B.Cu",
+      "xy": [
+        44.76,
+        116.21
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        44.265,
+        115.255,
+        45.255,
+        117.165
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "ENCODER_SW"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R37",
+      "value": "10k",
+      "uuid": "7db6caee-fde6-4847-b51f-da8fab1ee379",
+      "footprint": "R_0402_1005Metric",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        171.91,
+        117.22
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        171.415,
+        116.265,
+        172.405,
+        118.175
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R38",
+      "value": "100k",
+      "uuid": "dea059a5-4b4d-406a-9b51-499220647458",
+      "footprint": "R_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        90.31,
+        60.57
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        89.355,
+        60.075,
+        91.265,
+        61.065
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FSW_SET"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R39",
+      "value": "10k2",
+      "uuid": "a1a23219-ba4e-4bab-8ce5-ef1b052ff356",
+      "footprint": "R_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        93.259999,
+        60.57
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        92.304999,
+        60.075,
+        94.214999,
+        61.065
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "4k7",
+      "uuid": "f2585f05-fb6e-4884-80bf-184d71d4ff00",
+      "footprint": "R_0402_1005Metric",
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "side": "B.Cu",
+      "xy": [
+        215.925101,
+        109.009999
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        215.430101,
+        108.054999,
+        216.420101,
+        109.964999
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "2",
+          "+3.3V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R40",
+      "value": "3k24",
+      "uuid": "6130962d-0802-4613-9fa7-39c2d5f9dd81",
+      "footprint": "R_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        96.21,
+        60.57
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        95.255,
+        60.075,
+        97.165,
+        61.065
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R41",
+      "value": "51k",
+      "uuid": "26391b9c-0758-4d1c-8c57-a5648f429c09",
+      "footprint": "R_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        83.8,
+        61.03
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        83.305,
+        60.075,
+        84.295,
+        61.985
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/COMP_NODE"
+        ],
+        [
+          "2",
+          "Net-(C19-Pad1)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R43",
+      "value": "4k7",
+      "uuid": "7e6ac0b9-0449-4ae1-818a-251253f3a122",
+      "footprint": "R_2512_6332Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        89.86,
+        48.05
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        87.905,
+        44.195,
+        91.815,
+        51.905
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R47",
+      "value": "78k7",
+      "uuid": "acb2388b-7b00-4ebb-a9fd-2431d95fb183",
+      "footprint": "R_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        66.919999,
+        59.65
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        65.964999,
+        59.155,
+        67.874999,
+        60.145
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R48",
+      "value": "30k1",
+      "uuid": "5da794ed-9257-475d-b7b0-5d610a650f90",
+      "footprint": "R_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        69.869999,
+        59.65
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        68.914999,
+        59.155,
+        70.824999,
+        60.145
+      ],
+      "pads": [
+        [
+          "1",
+          "V_PRE"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R49",
+      "value": "9k76",
+      "uuid": "481b4062-a1f8-4d56-8e21-76e86094322a",
+      "footprint": "R_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        72.82,
+        59.65
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        71.865,
+        59.155,
+        73.775,
+        60.145
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "4k7",
+      "uuid": "d0917bb3-ac3b-4a82-8e24-20bb3117c3b6",
+      "footprint": "R_0402_1005Metric",
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "side": "B.Cu",
+      "xy": [
+        206.945101,
+        113.96
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        206.450101,
+        113.005,
+        207.440101,
+        114.915
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "PD_I2C_SCL_5V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R50",
+      "value": "2k87",
+      "uuid": "69c66cea-6fe1-4c1b-a119-555897c3d8fd",
+      "footprint": "R_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        99.16,
+        60.57
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        98.205,
+        60.075,
+        100.115,
+        61.065
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "2",
+          "Net-(U6-REF)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R51",
+      "value": "9k76",
+      "uuid": "d9d958fe-bc3b-4d14-a43e-3c5b545f4e63",
+      "footprint": "R_0402_1005Metric",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        102.11,
+        60.57
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        101.155,
+        60.075,
+        103.065,
+        61.065
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R52",
+      "value": "2k0",
+      "uuid": "652b7b7c-81ac-4a38-ac14-fd21c7672e1d",
+      "footprint": "R_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        51.25,
+        63.94
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        50.295,
+        63.445,
+        52.205,
+        64.435
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "2",
+          "Net-(C24-Pad1)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R53",
+      "value": "100k",
+      "uuid": "329d6b03-4493-4086-ae9d-f0be91f0a3a0",
+      "footprint": "R_0402_1005Metric",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        54.2,
+        63.94
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        53.245,
+        63.445,
+        55.155,
+        64.435
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ],
+        [
+          "2",
+          "Net-(U11-EN)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R54",
+      "value": "1k0",
+      "uuid": "979fa127-6c33-480c-af4d-fb90ebd75f23",
+      "footprint": "R_0402_1005Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        117.9,
+        60.55
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        116.945,
+        60.055,
+        118.855,
+        61.045
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "2",
+          "Net-(C30-Pad1)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R55",
+      "value": "237k",
+      "uuid": "75292d9e-edad-4214-8cf3-2c304a623fbe",
+      "footprint": "R_0402_1005Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        120.85,
+        60.55
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        119.895,
+        60.055,
+        121.805,
+        61.045
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R56",
+      "value": "10k",
+      "uuid": "dab12b80-c69d-4bb3-82b3-caabd00bf81d",
+      "footprint": "R_0402_1005Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        108.06,
+        63.94
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        107.105,
+        63.445,
+        109.015,
+        64.435
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R58",
+      "value": "100k",
+      "uuid": "bfcfa918-62e6-4c68-802e-9c5115f95a5e",
+      "footprint": "R_0402_1005Metric",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        111.01,
+        63.94
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        110.055,
+        63.445,
+        111.965,
+        64.435
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R59",
+      "value": "100k",
+      "uuid": "0b455597-c18b-4fd3-9dc9-2635a11184ce",
+      "footprint": "R_0603_1608Metric",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "F.Cu",
+      "xy": [
+        156.954288,
+        61.739999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        155.449288,
+        60.984999,
+        158.459288,
+        62.494999
+      ],
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "4k7",
+      "uuid": "6bd892b8-824d-4ba2-a8b2-8292b7263d47",
+      "footprint": "R_0402_1005Metric",
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "side": "B.Cu",
+      "xy": [
+        208.975101,
+        113.96
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        208.480101,
+        113.005,
+        209.470101,
+        114.915
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_5V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R60",
+      "value": "5R6",
+      "uuid": "a4f26e04-660d-46f6-a96d-c9092ebd2c1a",
+      "footprint": "R_0805_2012Metric",
+      "group": "TFT BACKLIGHT (3.3V + PWM)",
+      "side": "F.Cu",
+      "xy": [
+        24.768569,
+        96.7
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        23.063569,
+        95.725,
+        26.473569,
+        97.675
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/USER INTERFACE/BL_A"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R61",
+      "value": "4k7",
+      "uuid": "3887163f-49cb-427a-934a-e0e03a42893b",
+      "footprint": "R_0402_1005Metric",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "F.Cu",
+      "xy": [
+        160.454288,
+        61.48
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        159.499288,
+        60.985,
+        161.409288,
+        61.975
+      ],
+      "pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R62",
+      "value": "5k1",
+      "uuid": "f69829e1-1838-4d1a-9d7d-fea277078227",
+      "footprint": "R_0402_1005Metric",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        44.3,
+        84.2
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        43.345,
+        83.705,
+        45.255,
+        84.695
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_CC1"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R63",
+      "value": "5k1",
+      "uuid": "d77541c9-4564-4a20-836c-24e577717818",
+      "footprint": "R_0402_1005Metric",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        28.13,
+        88.69
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        27.175,
+        88.195,
+        29.085,
+        89.185
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_CC2"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R64",
+      "value": "2k0",
+      "uuid": "d473336a-0401-4532-97ce-24ccf5b8c8b4",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "F.Cu",
+      "xy": [
+        51.25,
+        156.049999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        50.295,
+        155.554999,
+        52.205,
+        156.544999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(R64-Pad1)"
+        ],
+        [
+          "2",
+          "PD_INT_3V3"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R65",
+      "value": "10k",
+      "uuid": "5ca4c102-bdab-4af8-88ec-2411357de763",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "F.Cu",
+      "xy": [
+        54.2,
+        156.049999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        53.245,
+        155.554999,
+        55.155,
+        156.544999
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(R65-Pad1)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R66",
+      "value": "100k",
+      "uuid": "4d236090-5898-4448-b326-0b8bc3218143",
+      "footprint": "R_0603_1608Metric",
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "side": "F.Cu",
+      "xy": [
+        192.970005,
+        61.74
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        191.465005,
+        60.985,
+        194.475005,
+        62.495
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/DISCH_G"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R67",
+      "value": "1k",
+      "uuid": "ea71a38c-b847-4426-9ee7-0571573efb83",
+      "footprint": "R_2512_6332Metric",
+      "group": "CIKIS DESARJI (R59 yerine aktif)",
+      "side": "F.Cu",
+      "xy": [
+        184.580005,
+        57.99
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        180.725005,
+        56.035,
+        188.435005,
+        59.945
+      ],
+      "pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "Net-(Q6-D)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "4k7",
+      "uuid": "fc13fb33-7bb7-409f-82ff-434b52cfe415",
+      "footprint": "R_0402_1005Metric",
+      "group": "I2C SEVIYE DONUSTURUCU 5V <-> 3.3V",
+      "side": "B.Cu",
+      "xy": [
+        211.005101,
+        113.96
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        210.510101,
+        113.005,
+        211.500101,
+        114.915
+      ],
+      "pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "PD_I2C_SDA_3V3"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "uuid": "34917b35-e889-4913-9833-990cded2896b",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        57.15,
+        156.049999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        56.195,
+        155.554999,
+        58.105,
+        156.544999
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_INT_5V"
+        ],
+        [
+          "2",
+          "Net-(R64-Pad1)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "10k",
+      "uuid": "8a80b680-cc2c-4dfd-a1c6-735b7d2b934f",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        60.1,
+        156.049999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        59.145,
+        155.554999,
+        61.055,
+        156.544999
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ],
+        [
+          "2",
+          "Net-(R65-Pad1)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "RShunt1",
+      "value": "5m0",
+      "uuid": "2d71ff63-b8b7-4e15-ad36-18232092898e",
+      "footprint": "R_2512_6332Metric",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "B.Cu",
+      "xy": [
+        160.474288,
+        57.35
+      ],
+      "angle": 180.0,
+      "locked": false,
+      "bbox": [
+        156.619288,
+        55.395,
+        164.329288,
+        59.305
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "OUT_POS"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "SW1",
+      "value": "BOOT / PTS810",
+      "uuid": "f3f67cac-36f0-4e49-b0ee-3ca11a3c648d",
+      "footprint": "SW_SPST_PTS810",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        189.56,
+        74.85
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        187.685,
+        71.975,
+        191.435,
+        77.725
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "2",
+          "Net-(U2-IO9)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS810.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "SW2",
+      "value": "RESET / PTS810",
+      "uuid": "e68b89b6-49a1-4394-b8ee-7ab94c2e9d99",
+      "footprint": "SW_SPST_PTS810",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        194.35,
+        74.85
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        192.475,
+        71.975,
+        196.225,
+        77.725
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ],
+        [
+          "2",
+          "Net-(U2-EN)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS810.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TH1",
+      "value": "10k NTC",
+      "uuid": "525540e8-2d09-4dd6-9e85-d9f0c1f36ea0",
+      "footprint": "R_0402_1005Metric",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        55.28,
+        153.459999
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        54.785,
+        152.504999,
+        55.775,
+        154.414999
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "Net-(U1-OTP)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP1",
+      "value": "TestPoint",
+      "uuid": "b0e90fef-eb6e-4583-b9ef-baaba19ab11b",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        55.612553,
+        147.841273
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        54.587553,
+        146.816273,
+        56.637553,
+        148.866273
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_VBUS"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP10",
+      "value": "TestPoint",
+      "uuid": "2f2ccc8e-f9c6-4a10-8913-f7cbd0db94db",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        198.292553,
+        73.001273
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        197.267553,
+        71.976273,
+        199.317553,
+        74.026273
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_PWR_EN"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP11",
+      "value": "TestPoint",
+      "uuid": "d1369d44-b041-46b0-895f-84f110bda202",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "TEST NOKTALARI",
+      "side": "F.Cu",
+      "xy": [
+        207.477654,
+        122.481273
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        206.452654,
+        121.456273,
+        208.502654,
+        123.506273
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_TX"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP12",
+      "value": "TestPoint",
+      "uuid": "6ec3984b-ea40-439b-9261-0c47021b381e",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "TEST NOKTALARI",
+      "side": "F.Cu",
+      "xy": [
+        210.570205,
+        122.481273
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        209.545205,
+        121.456273,
+        211.595205,
+        123.506273
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/UART_RX"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP13",
+      "value": "TestPoint",
+      "uuid": "e9b04ec4-e15d-4ae3-b51a-a732bd5be394",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "TEST NOKTALARI",
+      "side": "F.Cu",
+      "xy": [
+        213.662756,
+        122.481273
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        212.637756,
+        121.456273,
+        214.687756,
+        123.506273
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP14",
+      "value": "TestPoint",
+      "uuid": "91e77a5f-c449-4697-a441-c462cec5f893",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "side": "F.Cu",
+      "xy": [
+        111.829697,
+        162.681273
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        110.804697,
+        161.656273,
+        112.854697,
+        163.706273
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_RUN"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP2",
+      "value": "TestPoint",
+      "uuid": "f1bff415-9fc4-4ce8-a31f-93d8da5bb681",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        58.705104,
+        147.841273
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        57.680104,
+        146.816273,
+        59.730104,
+        148.866273
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP3",
+      "value": "TestPoint",
+      "uuid": "489806a6-4a6f-410d-8915-51d60fd14716",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        61.797655,
+        147.841273
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        60.772655,
+        146.816273,
+        62.822655,
+        148.866273
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_VOUT"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP4",
+      "value": "TestPoint",
+      "uuid": "f96f8872-6e73-4d7c-9831-a2257f17f968",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        64.890205,
+        147.841273
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        63.865205,
+        146.816273,
+        65.915205,
+        148.866273
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_5V"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP5",
+      "value": "TestPoint",
+      "uuid": "cdb47d6d-93bc-414a-804d-405b3fe5d43a",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        67.982756,
+        147.841273
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        66.957756,
+        146.816273,
+        69.007756,
+        148.866273
+      ],
+      "pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/PD_GATE"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP6",
+      "value": "TestPoint",
+      "uuid": "8cba68c7-9305-4cf0-96b3-a587c37d21a7",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "TEST NOKTALARI",
+      "side": "B.Cu",
+      "xy": [
+        207.477654,
+        125.573818
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        206.452654,
+        124.548818,
+        208.502654,
+        126.598818
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP7",
+      "value": "TestPoint",
+      "uuid": "50b60b44-8c44-4f40-9821-7a59ac60405d",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "TEST NOKTALARI",
+      "side": "B.Cu",
+      "xy": [
+        210.570205,
+        125.573818
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        209.545205,
+        124.548818,
+        211.595205,
+        126.598818
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_I2C_SDA_3V3"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP8",
+      "value": "TestPoint",
+      "uuid": "4a2bbf56-112f-41f9-b24b-ca592d005b2c",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "TEST NOKTALARI",
+      "side": "B.Cu",
+      "xy": [
+        213.662756,
+        125.573818
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        212.637756,
+        124.548818,
+        214.687756,
+        126.598818
+      ],
+      "pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP9",
+      "value": "TestPoint",
+      "uuid": "4e838c78-a8f7-4074-a921-175ffa74536e",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        201.385103,
+        73.001273
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        200.360103,
+        71.976273,
+        202.410103,
+        74.026273
+      ],
+      "pads": [
+        [
+          "1",
+          "/MCU/ETH_CFG0"
+        ]
+      ],
+      "models": []
+    },
+    {
+      "ref": "U1",
+      "value": "AP33772SDKZ-13-FA02",
+      "uuid": "5613f3cf-cf40-4885-bfe0-9fa698a659a7",
+      "footprint": "Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "side": "B.Cu",
+      "xy": [
+        66.815,
+        140.72
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        64.16,
+        137.69,
+        69.47,
+        143.375
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "USB_VBUS"
+        ],
+        [
+          "10",
+          "unconnected-(U1-NC-Pad10)"
+        ],
+        [
+          "11",
+          "Net-(U1-VSEL)"
+        ],
+        [
+          "12",
+          "Net-(U1-V18)"
+        ],
+        [
+          "13",
+          "Net-(U1-OTP)"
+        ],
+        [
+          "14",
+          "unconnected-(U1-NC-Pad14)"
+        ],
+        [
+          "15",
+          "Net-(U1-IFB)"
+        ],
+        [
+          "16",
+          "USB_CC2"
+        ],
+        [
+          "17",
+          "USB_CC1"
+        ],
+        [
+          "18",
+          "unconnected-(U1-DN-Pad18)"
+        ],
+        [
+          "19",
+          "unconnected-(U1-DP-Pad19)"
+        ],
+        [
+          "2",
+          "unconnected-(U1-NC-Pad2)"
+        ],
+        [
+          "20",
+          "PD_5V"
+        ],
+        [
+          "21",
+          "unconnected-(U1-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U1-VOUT)"
+        ],
+        [
+          "23",
+          "Net-(U1-PWR_EN)"
+        ],
+        [
+          "24",
+          "/USB_PD_CONTROLLER/PD_VBUS_SENSED"
+        ],
+        [
+          "25",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_5V"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_5V"
+        ],
+        [
+          "6",
+          "unconnected-(U1-FLIP-Pad6)"
+        ],
+        [
+          "7",
+          "unconnected-(U1-GPIO-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U1-LED)"
+        ],
+        [
+          "9",
+          "PD_INT_5V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U10",
+      "value": "USBLC6-2SC6",
+      "uuid": "dc1ecd20-3377-4f0b-900e-772d7ed8c9f9",
+      "footprint": "SOT-23-6",
+      "group": "USB-C GIRIS",
+      "side": "F.Cu",
+      "xy": [
+        29.249999,
+        85.43
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        27.174999,
+        83.53,
+        31.324999,
+        87.155
+      ],
+      "pads": [
+        [
+          "1",
+          "USB_DM"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "USB_DP"
+        ],
+        [
+          "4",
+          "USB_DP"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ],
+        [
+          "6",
+          "USB_DM"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U11",
+      "value": "TPS55340PWPR",
+      "uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "footprint": "Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias",
+      "group": "TPS55340 PRE-BOOST",
+      "side": "F.Cu",
+      "xy": [
+        54.22,
+        55.34
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        50.295,
+        52.4,
+        58.145,
+        58.115
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "10",
+          "Net-(U11-FREQ)"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "GND"
+        ],
+        [
+          "13",
+          "GND"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "15",
+          "GND"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/BOOST_SW"
+        ],
+        [
+          "3",
+          "PD_VOUT"
+        ],
+        [
+          "4",
+          "Net-(U11-EN)"
+        ],
+        [
+          "5",
+          "Net-(U11-SS)"
+        ],
+        [
+          "6",
+          "GND"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "Net-(U11-COMP)"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/BOOST_FB"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U12",
+      "value": "LM74801-Q1",
+      "uuid": "a88757d0-5fd6-4d33-b292-24e961c29136",
+      "footprint": "WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm",
+      "group": "LM74801 CIKIS ANAHTARI + IDEAL DIYOT",
+      "side": "F.Cu",
+      "xy": [
+        117.1,
+        52.915
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        114.57,
+        51.14,
+        119.255,
+        54.69
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/DGATE"
+        ],
+        [
+          "10",
+          "V_PRE"
+        ],
+        [
+          "11",
+          "Net-(U12-CAP)"
+        ],
+        [
+          "12",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "13",
+          "unconnected-(U12-RTN-Pad13)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ],
+        [
+          "3",
+          "V_PRE"
+        ],
+        [
+          "4",
+          "V_PRE"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/OV_SENSE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/GATE_DRV"
+        ],
+        [
+          "9",
+          "/USB_PD_CONTROLLER/SRC_COMMON"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U13",
+      "value": "74LVC1G08",
+      "uuid": "a4465aab-9a4c-47a0-8551-9ed10363d361",
+      "footprint": "SOT-23-5",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "F.Cu",
+      "xy": [
+        150.304288,
+        62.709999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        148.229288,
+        60.809999,
+        152.379288,
+        64.434999
+      ],
+      "pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "ESP32-C6-MINI-1-H4",
+      "uuid": "312836b7-5ddc-4a3c-8361-9c10e127bb46",
+      "footprint": "ESP32-C6-MINI-1",
+      "group": "ESP32-C6-MINI-1-H4",
+      "side": "B.Cu",
+      "xy": [
+        160.62,
+        93.6
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        154.745,
+        71.975,
+        186.645,
+        115.225
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "TFT_MOSI"
+        ],
+        [
+          "11",
+          "GND"
+        ],
+        [
+          "12",
+          "Net-(U2-IO0)"
+        ],
+        [
+          "13",
+          "TFT_BL_PWM"
+        ],
+        [
+          "14",
+          "GND"
+        ],
+        [
+          "15",
+          "OUT_EN"
+        ],
+        [
+          "16",
+          "TFT_DC"
+        ],
+        [
+          "17",
+          "Net-(U2-IO12)"
+        ],
+        [
+          "18",
+          "Net-(U2-IO13)"
+        ],
+        [
+          "19",
+          "TFT_CS"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "20",
+          "TFT_RST"
+        ],
+        [
+          "21",
+          "unconnected-(U2-NC-Pad21)"
+        ],
+        [
+          "22",
+          "Net-(U2-IO8)"
+        ],
+        [
+          "23",
+          "Net-(U2-IO9)"
+        ],
+        [
+          "24",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "25",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "26",
+          "PD_INT_3V3"
+        ],
+        [
+          "27",
+          "ENCODER_SW"
+        ],
+        [
+          "28",
+          "ENCODER_A"
+        ],
+        [
+          "29",
+          "ENCODER_B"
+        ],
+        [
+          "3",
+          "+3.3V"
+        ],
+        [
+          "30",
+          "/MCU/UART_RX"
+        ],
+        [
+          "31",
+          "/MCU/UART_TX"
+        ],
+        [
+          "32",
+          "unconnected-(U2-NC-Pad32)"
+        ],
+        [
+          "33",
+          "unconnected-(U2-NC-Pad33)"
+        ],
+        [
+          "34",
+          "unconnected-(U2-NC-Pad34)"
+        ],
+        [
+          "35",
+          "unconnected-(U2-NC-Pad35)"
+        ],
+        [
+          "36",
+          "GND"
+        ],
+        [
+          "37",
+          "GND"
+        ],
+        [
+          "38",
+          "GND"
+        ],
+        [
+          "39",
+          "GND"
+        ],
+        [
+          "4",
+          "unconnected-(U2-NC-Pad4)"
+        ],
+        [
+          "40",
+          "GND"
+        ],
+        [
+          "41",
+          "GND"
+        ],
+        [
+          "42",
+          "GND"
+        ],
+        [
+          "43",
+          "GND"
+        ],
+        [
+          "44",
+          "GND"
+        ],
+        [
+          "45",
+          "GND"
+        ],
+        [
+          "46",
+          "GND"
+        ],
+        [
+          "47",
+          "GND"
+        ],
+        [
+          "48",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "49",
+          "GND"
+        ],
+        [
+          "5",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "50",
+          "GND"
+        ],
+        [
+          "51",
+          "GND"
+        ],
+        [
+          "52",
+          "GND"
+        ],
+        [
+          "53",
+          "GND"
+        ],
+        [
+          "6",
+          "INA_ALERT"
+        ],
+        [
+          "7",
+          "unconnected-(U2-NC-Pad7)"
+        ],
+        [
+          "8",
+          "Net-(U2-EN)"
+        ],
+        [
+          "9",
+          "TFT_SCLK"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/ESP32-C6-MINI-1.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "INA226",
+      "uuid": "81402291-de1b-4da7-92dd-b010b70386d8",
+      "footprint": "TSSOP-10_3x3mm_P0.5mm",
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "side": "B.Cu",
+      "xy": [
+        150.004288,
+        51.199999
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        148.229288,
+        48.044999,
+        151.804288,
+        54.354999
+      ],
+      "pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "INA_ALERT"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "6",
+          "+3.3V"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "OUT_POS"
+        ],
+        [
+          "9",
+          "OUT_POS"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-10_3x3mm_P0.5mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U4",
+      "value": "BQ32000",
+      "uuid": "fee4aab2-2145-45e4-b657-bc15a74495c9",
+      "footprint": "SOIC-8_3.9x4.9mm_P1.27mm",
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "side": "B.Cu",
+      "xy": [
+        209.175101,
+        97.79
+      ],
+      "angle": 90.0,
+      "locked": false,
+      "bbox": [
+        206.450101,
+        94.065,
+        212.035101,
+        101.515
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "Net-(U4-OSCO)"
+        ],
+        [
+          "3",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "4",
+          "GND"
+        ],
+        [
+          "5",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "6",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "7",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "8",
+          "+3.3V"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U5",
+      "value": "AOZ1284PI",
+      "uuid": "28f576c4-1891-45ed-a012-cdbb619ddac3",
+      "footprint": "SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.71x3.7mm",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        81.54,
+        56.309999
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        77.815,
+        53.449999,
+        85.265,
+        59.034999
+      ],
+      "pads": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "1",
+          "/USB_PD_CONTROLLER/LX_SW"
+        ],
+        [
+          "2",
+          "Net-(U5-BST)"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/FSW_SET"
+        ],
+        [
+          "5",
+          "/USB_PD_CONTROLLER/COMP_NODE"
+        ],
+        [
+          "6",
+          "/USB_PD_CONTROLLER/FB_3V3"
+        ],
+        [
+          "7",
+          "/USB_PD_CONTROLLER/SS_RAMP"
+        ],
+        [
+          "8",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "9",
+          "V_PRE"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U6",
+      "value": "TLV431BQDBZT",
+      "uuid": "0c0a927d-76e9-447d-9380-462f5d3121ab",
+      "footprint": "SOT-23",
+      "group": "AOZ1284 3.3V BUCK",
+      "side": "F.Cu",
+      "xy": [
+        100.9,
+        55.54
+      ],
+      "angle": -90.0,
+      "locked": false,
+      "bbox": [
+        99.175,
+        53.585,
+        102.625,
+        57.495
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U6-REF)"
+        ],
+        [
+          "2",
+          "/USB_PD_CONTROLLER/EN_CTRL"
+        ],
+        [
+          "3",
+          "GND"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Y1",
+      "value": "32.768kHz",
+      "uuid": "4df5b8b2-3508-490b-8cf7-54fb3ae3b155",
+      "footprint": "Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm",
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "side": "F.Cu",
+      "xy": [
+        233.615101,
+        76.5
+      ],
+      "angle": 0.0,
+      "locked": false,
+      "bbox": [
+        230.540101,
+        71.975,
+        236.690101,
+        81.025
+      ],
+      "pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "Net-(U4-OSCO)"
+        ]
+      ],
+      "models": [
+        {
+          "path": "${KIPRJMOD}/libraries/Generic_Custom.3dshapes/Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm.step",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "uuid": "67174655-4b0a-418c-94ae-19de118917f4",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "side": "F.Cu",
+      "start": [
+        59.0,
+        57.6
+      ],
+      "end": [
+        58.7,
+        57.6
+      ],
+      "width": 0.2
+    },
+    {
+      "uuid": "ab6f190f-2a38-4051-afdd-29de0667dd97",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "side": "F.Cu",
+      "start": [
+        58.2,
+        57.1
+      ],
+      "end": [
+        58.2,
+        56.64
+      ],
+      "width": 0.2
+    },
+    {
+      "uuid": "bac123bf-3e8a-4a42-a3d9-e77dc0fb4f54",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "side": "F.Cu",
+      "start": [
+        58.7,
+        57.6
+      ],
+      "end": [
+        58.2,
+        57.1
+      ],
+      "width": 0.2
+    },
+    {
+      "uuid": "dc31f985-bf69-4d4a-b183-b7bf2fcb8a73",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "side": "F.Cu",
+      "start": [
+        58.2,
+        56.64
+      ],
+      "end": [
+        57.0825,
+        56.64
+      ],
+      "width": 0.2
+    }
+  ],
+  "zones": 0,
+  "edge_cuts": [
+    {
+      "uuid": "3d46ec0d-8369-4a5e-b3f5-2907c0f9e2ee",
+      "shape": "Arc",
+      "start": [
+        146700000,
+        69480000
+      ],
+      "end": [
+        149700000,
+        72480000
+      ],
+      "width": 50000,
+      "mid": [
+        148821320,
+        70358679
+      ]
+    },
+    {
+      "uuid": "3df5564a-a4d2-4348-bb10-28a23e15fbda",
+      "shape": "Arc",
+      "start": [
+        50300000,
+        72480000
+      ],
+      "end": [
+        53300000,
+        69480000
+      ],
+      "width": 50000,
+      "mid": [
+        51178679,
+        70358679
+      ]
+    },
+    {
+      "uuid": "4af24f42-99a0-41ed-9bda-e793a8e02140",
+      "shape": "Line",
+      "start": [
+        146700000,
+        130520000
+      ],
+      "end": [
+        53300000,
+        130520000
+      ],
+      "width": 50000,
+      "mid": null
+    },
+    {
+      "uuid": "6127134d-eb84-4dfb-ba93-ffd8a6fac668",
+      "shape": "Line",
+      "start": [
+        53300000,
+        69480000
+      ],
+      "end": [
+        146700000,
+        69480000
+      ],
+      "width": 50000,
+      "mid": null
+    },
+    {
+      "uuid": "63286870-57ee-46b1-b408-3c75040ff9f2",
+      "shape": "Arc",
+      "start": [
+        149700000,
+        127520000
+      ],
+      "end": [
+        146700000,
+        130520000
+      ],
+      "width": 50000,
+      "mid": [
+        148821320,
+        129641320
+      ]
+    },
+    {
+      "uuid": "6bb1758e-4dcd-4ce7-a0af-e1cdb258c4b1",
+      "shape": "Line",
+      "start": [
+        149700000,
+        72480000
+      ],
+      "end": [
+        149700000,
+        127520000
+      ],
+      "width": 50000,
+      "mid": null
+    },
+    {
+      "uuid": "b312398c-3afa-40d2-be7c-6b6378444b31",
+      "shape": "Line",
+      "start": [
+        50300000,
+        127520000
+      ],
+      "end": [
+        50300000,
+        72480000
+      ],
+      "width": 50000,
+      "mid": null
+    },
+    {
+      "uuid": "bd02318a-bcb5-4263-b10a-a8527b99a166",
+      "shape": "Arc",
+      "start": [
+        53300000,
+        130520000
+      ],
+      "end": [
+        50300000,
+        127520000
+      ],
+      "width": 50000,
+      "mid": [
+        51178679,
+        129641320
+      ]
+    }
+  ]
+}

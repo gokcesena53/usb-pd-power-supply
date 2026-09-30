@@ -1,0 +1,1728 @@
+{
+  "total_footprints": 143,
+  "group_count": 15,
+  "grouped_footprints_count": 137,
+  "mechanical_anchors": {
+    "H1": {
+      "ref": "H1",
+      "value": "M3",
+      "x": 54.3,
+      "y": 73.48,
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "locked": true
+    },
+    "H2": {
+      "ref": "H2",
+      "value": "M3",
+      "x": 145.7,
+      "y": 73.48,
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "locked": true
+    },
+    "H3": {
+      "ref": "H3",
+      "value": "M3",
+      "x": 54.3,
+      "y": 126.52,
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "locked": true
+    },
+    "H4": {
+      "ref": "H4",
+      "value": "M3",
+      "x": 145.7,
+      "y": 126.52,
+      "angle": 0.0,
+      "layer": "F.Cu",
+      "locked": true
+    },
+    "J3": {
+      "ref": "J3",
+      "value": "TFT032B018",
+      "x": 98.0,
+      "y": 109.3,
+      "angle": 90.0,
+      "layer": "F.Cu",
+      "locked": true
+    },
+    "J9": {
+      "ref": "J9",
+      "value": "ENCODER CABLE",
+      "x": 58.0,
+      "y": 91.6,
+      "angle": -90.0,
+      "layer": "F.Cu",
+      "locked": false
+    }
+  },
+  "missing_refs": [],
+  "unassigned_refs": [],
+  "boost_fb_track_mm": 0.0,
+  "groups": {
+    "1_USB_C_GIRIS": {
+      "task": "TASK-070",
+      "doc": "USB_C_GIRIS_YERLESIM_TASK070_20260924.md",
+      "role": "USB-C giri\u015f portu, TVS koruma, CC pull-down, USB 2.0 ESD",
+      "target_face": "F.Cu (J7) / B.Cu (D3, D8, D9, U10, R62, R63 per TASK-063)",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 7,
+      "bbox": {
+        "min_x": 27.199,
+        "max_x": 45.255,
+        "min_y": 71.247,
+        "max_y": 90.675,
+        "width": 18.056,
+        "height": 19.428,
+        "area_mm2": 350.8
+      },
+      "interfaces": [
+        "USB_VBUS",
+        "USB_CC1",
+        "USB_CC2",
+        "USB_DP",
+        "USB_DM",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "J7",
+          "value": "USB_C_Receptacle_USB2.0_16P",
+          "x": 41.049999,
+          "y": 77.32,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D3",
+          "value": "SMBJ30A",
+          "x": 40.0,
+          "y": 87.0,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D8",
+          "value": "SMF30A",
+          "x": 33.0,
+          "y": 74.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D9",
+          "value": "SMF30A",
+          "x": 33.0,
+          "y": 80.9,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "U10",
+          "value": "USBLC6-2SC6",
+          "x": 32.7,
+          "y": 77.3,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R62",
+          "value": "5k1",
+          "x": 29.0,
+          "y": 74.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R63",
+          "value": "5k1",
+          "x": 29.0,
+          "y": 80.9,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "2_AP33772S_PD_KONTROLCU": {
+      "task": "TASK-071",
+      "doc": "AP33772S_YERLESIM_TASK071_20260924.md",
+      "role": "USB PD Sink Kontrolc\u00fc, Kelvin ak\u0131m \u015f\u00f6nt\u00fc, NTC ve VBUS alg\u0131lama",
+      "target_face": "B.Cu",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 23,
+      "bbox": {
+        "min_x": 45.382,
+        "max_x": 70.525,
+        "min_y": 133.475,
+        "max_y": 157.518,
+        "width": 25.143,
+        "height": 24.043,
+        "area_mm2": 604.53
+      },
+      "interfaces": [
+        "USB_VBUS",
+        "PD_VBUS_SENSED",
+        "I2C_SDA_5V",
+        "I2C_SCL_5V",
+        "PD_INT",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U1",
+          "value": "AP33772SDKZ-13-FA02",
+          "x": 60.0,
+          "y": 150.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "Q3",
+          "value": "SQJB60EP",
+          "x": 59.5,
+          "y": 140.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R8",
+          "value": "10k",
+          "x": 62.2,
+          "y": 155.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R9",
+          "value": "10k",
+          "x": 69.1,
+          "y": 155.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R11",
+          "value": "5m0",
+          "x": 52.0,
+          "y": 140.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R12",
+          "value": "6k2",
+          "x": 61.0,
+          "y": 145.2,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R13",
+          "value": "100R",
+          "x": 65.5,
+          "y": 144.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R14",
+          "value": "2k2",
+          "x": 64.2,
+          "y": 150.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R21",
+          "value": "100k",
+          "x": 59.8,
+          "y": 155.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R64",
+          "value": "2k0",
+          "x": 64.5,
+          "y": 155.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R65",
+          "value": "10k",
+          "x": 66.8,
+          "y": 155.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C1",
+          "value": "100n",
+          "x": 57.5,
+          "y": 155.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C2",
+          "value": "100n",
+          "x": 55.5,
+          "y": 151.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C3",
+          "value": "2u2",
+          "x": 51.5,
+          "y": 145.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C4",
+          "value": "1u0",
+          "x": 56.0,
+          "y": 148.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C8",
+          "value": "4u7",
+          "x": 65.5,
+          "y": 140.0,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D1",
+          "value": "LED",
+          "x": 67.2,
+          "y": 150.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TH1",
+          "value": "10k NTC",
+          "x": 56.0,
+          "y": 145.2,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP1",
+          "value": "TestPoint",
+          "x": 46.5,
+          "y": 140.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP2",
+          "value": "TestPoint",
+          "x": 54.5,
+          "y": 135.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP3",
+          "value": "TestPoint",
+          "x": 69.5,
+          "y": 140.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP4",
+          "value": "TestPoint",
+          "x": 52.0,
+          "y": 149.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP5",
+          "value": "TestPoint",
+          "x": 61.0,
+          "y": 134.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "3_TPS55340_PRE_BOOST": {
+      "task": "TASK-072",
+      "doc": "TPS55340_YERLESIM_TASK072_20260924.md",
+      "role": "Pre-boost reg\u00fclat\u00f6r (V_PRE \u00fcretimi, 4.8V - 21V)",
+      "target_face": "B.Cu",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 16,
+      "bbox": {
+        "min_x": 54.775,
+        "max_x": 84.325,
+        "min_y": 37.202,
+        "max_y": 65.625,
+        "width": 29.55,
+        "height": 28.423,
+        "area_mm2": 839.91
+      },
+      "interfaces": [
+        "USB_VBUS",
+        "V_PRE",
+        "BOOST_FB",
+        "EN_CTRL",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U11",
+          "value": "TPS55340PWPR",
+          "x": 69.849998,
+          "y": 55.34,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "L3",
+          "value": "6u8",
+          "x": 69.55,
+          "y": 42.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D4",
+          "value": "SX36",
+          "x": 74.8,
+          "y": 49.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D5",
+          "value": "BAS16H",
+          "x": 64.019998,
+          "y": 57.6,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C23",
+          "value": "47n",
+          "x": 72.0,
+          "y": 60.1,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C24",
+          "value": "100n",
+          "x": 63.4,
+          "y": 62.3,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C25",
+          "value": "4u7",
+          "x": 59.5,
+          "y": 54.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C26",
+          "value": "100n",
+          "x": 76.0,
+          "y": 51.7,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C27",
+          "value": "4u7",
+          "x": 75.8,
+          "y": 55.5,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C28",
+          "value": "4u7",
+          "x": 82.0,
+          "y": 64.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C29",
+          "value": "47u",
+          "x": 59.5,
+          "y": 46.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R47",
+          "value": "78k7",
+          "x": 63.5,
+          "y": 54.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R48",
+          "value": "30k1",
+          "x": 60.2,
+          "y": 59.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R49",
+          "value": "9k76",
+          "x": 61.0,
+          "y": 62.3,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R52",
+          "value": "2k0",
+          "x": 66.5,
+          "y": 62.3,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R53",
+          "value": "100k",
+          "x": 75.5,
+          "y": 60.1,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "4_AOZ1284_BUCK": {
+      "task": "TASK-073",
+      "doc": "AOZ1284_YERLESIM_TASK073_20260924.md",
+      "role": "Senkron buck reg\u00fclat\u00f6r ve TLV431 referans kelep\u00e7esi (0.8V - 20V / 5A)",
+      "target_face": "B.Cu",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 19,
+      "bbox": {
+        "min_x": 78.123,
+        "max_x": 106.525,
+        "min_y": 42.502,
+        "max_y": 68.077,
+        "width": 28.402,
+        "height": 25.576,
+        "area_mm2": 726.41
+      },
+      "interfaces": [
+        "V_PRE",
+        "PD_VOUT",
+        "BUCK_FB",
+        "EN_CTRL",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U5",
+          "value": "AOZ1284PI",
+          "x": 98.2,
+          "y": 56.31,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "U6",
+          "value": "TLV431BQDBZT",
+          "x": 79.935,
+          "y": 56.0,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "L1",
+          "value": "22u",
+          "x": 98.495,
+          "y": 48.37,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D2",
+          "value": "SS2060FL",
+          "x": 104.3,
+          "y": 54.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C12",
+          "value": "4u7",
+          "x": 92.3,
+          "y": 55.91,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C13",
+          "value": "4u7",
+          "x": 88.615,
+          "y": 55.91,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C14",
+          "value": "100n",
+          "x": 99.4,
+          "y": 61.0,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C15",
+          "value": "47u",
+          "x": 84.8,
+          "y": 47.7,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C16",
+          "value": "47u",
+          "x": 91.5,
+          "y": 48.3,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C17",
+          "value": "100n",
+          "x": 104.0,
+          "y": 58.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C18",
+          "value": "10n",
+          "x": 93.3,
+          "y": 59.3,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C19",
+          "value": "15n",
+          "x": 92.3,
+          "y": 63.5,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R38",
+          "value": "100k",
+          "x": 102.5,
+          "y": 60.3,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R39",
+          "value": "10k2",
+          "x": 91.0,
+          "y": 60.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R40",
+          "value": "3k24",
+          "x": 88.0,
+          "y": 59.1,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R41",
+          "value": "51k",
+          "x": 95.0,
+          "y": 61.2,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R43",
+          "value": "4k7",
+          "x": 88.0,
+          "y": 64.0,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R50",
+          "value": "2k87",
+          "x": 82.6,
+          "y": 59.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R51",
+          "value": "9k76",
+          "x": 79.7,
+          "y": 59.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "5_LM74801_CIKIS_ANAHTARI": {
+      "task": "TASK-074",
+      "doc": "LM74801_YERLESIM_TASK074_20260924.md",
+      "role": "\u0130deal diyot ve ters ak\u0131m korumal\u0131 \u00e7\u0131k\u0131\u015f g\u00fc\u00e7 anahtar\u0131",
+      "target_face": "B.Cu",
+      "current_layers": [
+        "F.Cu"
+      ],
+      "ref_count": 10,
+      "bbox": {
+        "min_x": 102.913,
+        "max_x": 124.278,
+        "min_y": 48.352,
+        "max_y": 66.448,
+        "width": 21.365,
+        "height": 18.096,
+        "area_mm2": 386.63
+      },
+      "interfaces": [
+        "PD_VOUT",
+        "OUT_POS",
+        "OUT_EN",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U12",
+          "value": "LM74801-Q1",
+          "x": 117.5,
+          "y": 56.5,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "Q5",
+          "value": "SQJB60EP",
+          "x": 110.5,
+          "y": 54.0,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D6",
+          "value": "BZT52C12",
+          "x": 106.8,
+          "y": 59.5,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C30",
+          "value": "22n",
+          "x": 106.8,
+          "y": 64.4,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C31",
+          "value": "220n",
+          "x": 122.0,
+          "y": 54.5,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C32",
+          "value": "100n",
+          "x": 121.5,
+          "y": 58.0,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R54",
+          "value": "1k0",
+          "x": 106.8,
+          "y": 62.2,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R55",
+          "value": "237k",
+          "x": 111.0,
+          "y": 62.5,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R56",
+          "value": "10k",
+          "x": 113.2,
+          "y": 62.5,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R58",
+          "value": "100k",
+          "x": 115.4,
+          "y": 62.5,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "6_INA226_OLCUM_CIKIS": {
+      "task": "TASK-075",
+      "doc": "INA226_PANEL_CIKISI_YERLESIM_TASK075_20260924.md",
+      "role": "Hassas ak\u0131m/gerilim izleme, \u015f\u00f6nt direnci ve \u00e7\u0131k\u0131\u015f klemensi/banana jak",
+      "target_face": "B.Cu (U3, U13, RShunt1) / F.Cu (J4 Banana Jak)",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 10,
+      "bbox": {
+        "min_x": 144.923,
+        "max_x": 178.525,
+        "min_y": 47.845,
+        "max_y": 72.018,
+        "width": 33.602,
+        "height": 24.173,
+        "area_mm2": 812.28
+      },
+      "interfaces": [
+        "OUT_POS",
+        "I2C_SDA",
+        "I2C_SCL",
+        "ALERT",
+        "+3.3V",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U3",
+          "value": "INA226",
+          "x": 157.75,
+          "y": 51.0,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "U13",
+          "value": "74LVC1G08",
+          "x": 150.0,
+          "y": 62.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "RShunt1",
+          "value": "5m0",
+          "x": 157.0,
+          "y": 56.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "J4",
+          "value": "SolderWire-1.5sqmm",
+          "x": 168.0,
+          "y": 51.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C11",
+          "value": "100n",
+          "x": 162.2,
+          "y": 53.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C35",
+          "value": "100n",
+          "x": 153.5,
+          "y": 62.95,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D7",
+          "value": "SMBJ30A",
+          "x": 167.0,
+          "y": 57.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R27",
+          "value": "10k",
+          "x": 152.5,
+          "y": 48.85,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R59",
+          "value": "100k",
+          "x": 167.0,
+          "y": 62.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R61",
+          "value": "4k7",
+          "x": 146.5,
+          "y": 62.95,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "7_CIKIS_DESARJI": {
+      "task": "TASK-076",
+      "doc": "CIKIS_DESARJI_YERLESIM_TASK076_20260924.md",
+      "role": "Aktif h\u0131zl\u0131 \u00e7\u0131k\u0131\u015f kapasit\u00f6r de\u015farj h\u00fccresi",
+      "target_face": "B.Cu",
+      "current_layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "ref_count": 5,
+      "bbox": {
+        "min_x": 180.145,
+        "max_x": 200.778,
+        "min_y": 53.613,
+        "max_y": 65.748,
+        "width": 20.633,
+        "height": 12.135,
+        "area_mm2": 250.39
+      },
+      "interfaces": [
+        "OUT_POS",
+        "OUT_DISCHARGE",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "Q4",
+          "value": "BSS138P",
+          "x": 191.0,
+          "y": 62.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "Q6",
+          "value": "BSS138P",
+          "x": 190.5,
+          "y": 57.5,
+          "angle": 180.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "D10",
+          "value": "BZT52C12",
+          "x": 195.0,
+          "y": 57.5,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R66",
+          "value": "100k",
+          "x": 198.5,
+          "y": 57.5,
+          "angle": -90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R67",
+          "value": "1k",
+          "x": 184.0,
+          "y": 57.5,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "8_ESP32_C6_MCU": {
+      "task": "TASK-077",
+      "doc": "ESP32_C6_YERLESIM_TASK077_20260924.md",
+      "role": "Ana MCU kontrolc\u00fc, Wi-Fi 6 / BLE 5, butonlar, RF anten",
+      "target_face": "F.Cu (Top)",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 15,
+      "bbox": {
+        "min_x": 150.81,
+        "max_x": 186.645,
+        "min_y": 71.975,
+        "max_y": 119.375,
+        "width": 35.835,
+        "height": 47.4,
+        "area_mm2": 1698.6
+      },
+      "interfaces": [
+        "+3.3V",
+        "UART",
+        "SPI",
+        "I2C",
+        "GPIO",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U2",
+          "value": "ESP32-C6-MINI-1-H4",
+          "x": 160.62,
+          "y": 93.6,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C5",
+          "value": "22u",
+          "x": 163.0,
+          "y": 105.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C6",
+          "value": "100n",
+          "x": 163.0,
+          "y": 102.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C7",
+          "value": "1u0",
+          "x": 159.0,
+          "y": 102.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R1",
+          "value": "10k",
+          "x": 156.5,
+          "y": 102.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R2",
+          "value": "22R",
+          "x": 152.0,
+          "y": 94.4,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R3",
+          "value": "22R",
+          "x": 152.0,
+          "y": 93.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R10",
+          "value": "10k",
+          "x": 152.0,
+          "y": 89.6,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R15",
+          "value": "22R",
+          "x": 152.0,
+          "y": 87.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R16",
+          "value": "10k",
+          "x": 152.0,
+          "y": 98.4,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R37",
+          "value": "10k",
+          "x": 152.0,
+          "y": 91.2,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "SW1",
+          "value": "BOOT / PTS810",
+          "x": 158.5,
+          "y": 116.5,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "SW2",
+          "value": "RESET / PTS810",
+          "x": 158.5,
+          "y": 109.5,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP9",
+          "value": "TestPoint",
+          "x": 152.0,
+          "y": 84.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP10",
+          "value": "TestPoint",
+          "x": 152.0,
+          "y": 105.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "9_RTC_BQ32000": {
+      "task": "TASK-078",
+      "doc": "RTC_BQ32000_YERLESIM_TASK078_20260924.md",
+      "role": "Ger\u00e7ek zamanl\u0131 saat (RTC), 32.768 kHz kristal, 1.5F s\u00fcperkapasit\u00f6r yedekleme",
+      "target_face": "B.Cu (C33 THT)",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 5,
+      "bbox": {
+        "min_x": 203.72,
+        "max_x": 229.505,
+        "min_y": 70.652,
+        "max_y": 101.725,
+        "width": 25.785,
+        "height": 31.073,
+        "area_mm2": 801.22
+      },
+      "interfaces": [
+        "+3.3V",
+        "I2C_SDA",
+        "I2C_SCL",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "U4",
+          "value": "BQ32000",
+          "x": 214.0,
+          "y": 99.0,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "Y1",
+          "value": "32.768kHz",
+          "x": 223.5,
+          "y": 97.725,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C9",
+          "value": "1u0",
+          "x": 211.5,
+          "y": 94.5,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C33",
+          "value": "1F5",
+          "x": 207.98,
+          "y": 82.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R24",
+          "value": "4k7",
+          "x": 208.5,
+          "y": 97.7,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "10_I2C_SEVIYE_DONUSTURUCU": {
+      "task": "TASK-079",
+      "doc": "I2C_SEVIYE_DONUSTURUCU_YERLESIM_TASK079_20260924.md",
+      "role": "\u00c7ift y\u00f6nl\u00fc I2C seviye d\u00f6n\u00fc\u015ft\u00fcr\u00fcc\u00fc (MCU 3.3V <-> Periferikler 5V)",
+      "target_face": "B.Cu",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 6,
+      "bbox": {
+        "min_x": 207.275,
+        "max_x": 215.279,
+        "min_y": 106.994,
+        "max_y": 115.62,
+        "width": 8.004,
+        "height": 8.626,
+        "area_mm2": 69.04
+      },
+      "interfaces": [
+        "+3.3V",
+        "I2C_SDA_3V3",
+        "I2C_SCL_3V3",
+        "I2C_SDA_5V",
+        "I2C_SCL_5V",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "Q1",
+          "value": "BSS138P",
+          "x": 209.0,
+          "y": 111.0,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "Q2",
+          "value": "BSS138P",
+          "x": 213.5,
+          "y": 111.0,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R4",
+          "value": "4k7",
+          "x": 209.0,
+          "y": 107.5,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R5",
+          "value": "4k7",
+          "x": 209.0,
+          "y": 114.5,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R6",
+          "value": "4k7",
+          "x": 213.5,
+          "y": 114.5,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R7",
+          "value": "4k7",
+          "x": 213.5,
+          "y": 107.5,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "11_ETHERNET_MEZANIN": {
+      "task": "TASK-080",
+      "doc": "ETHERNET_MEZANIN_YERLESIM_TASK080_20260924.md",
+      "role": "Waveshare 2-CH UART to ETH mezanin mod\u00fcl\u00fc ve P-MOSFET besleme anahtar\u0131",
+      "target_face": "B.Cu (Bottom)",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 7,
+      "bbox": {
+        "min_x": 139.763,
+        "max_x": 214.012,
+        "min_y": 136.192,
+        "max_y": 162.619,
+        "width": 74.249,
+        "height": 26.427,
+        "area_mm2": 1962.18
+      },
+      "interfaces": [
+        "+3.3V",
+        "ETH_3V3",
+        "ETH_PWR_EN",
+        "UART_TX",
+        "UART_RX",
+        "ETH_RUN",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "J8",
+          "value": "2-CH UART TO ETH",
+          "x": 158.287,
+          "y": 158.23,
+          "angle": 180.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "Q8",
+          "value": "TSM3443CX6",
+          "x": 147.0,
+          "y": 142.99,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R17",
+          "value": "100k",
+          "x": 143.5,
+          "y": 142.99,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C10",
+          "value": "22u",
+          "x": 154.0,
+          "y": 144.26,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C20",
+          "value": "100n",
+          "x": 150.8,
+          "y": 144.26,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "C21",
+          "value": "100n",
+          "x": 140.5,
+          "y": 142.99,
+          "angle": -90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP14",
+          "value": "TestPoint",
+          "x": 153.0,
+          "y": 155.69,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "12_TFT_BACKLIGHT": {
+      "task": "TASK-081",
+      "doc": "TFT_BACKLIGHT_YERLESIM_TASK081_20260924.md",
+      "role": "TFT LCD arka ayd\u0131nlatma ak\u0131m s\u0131n\u0131rlay\u0131c\u0131 ve PWM anahtar\u0131",
+      "target_face": "F.Cu (Top)",
+      "current_layers": [
+        "F.Cu"
+      ],
+      "ref_count": 4,
+      "bbox": {
+        "min_x": 15.045,
+        "max_x": 26.149,
+        "min_y": 92.002,
+        "max_y": 102.248,
+        "width": 11.104,
+        "height": 10.246,
+        "area_mm2": 113.78
+      },
+      "interfaces": [
+        "+3.3V",
+        "BL_A",
+        "BL_K",
+        "TFT_BL_PWM",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "Q7",
+          "value": "IRLML6344",
+          "x": 22.0,
+          "y": 99.0,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R28",
+          "value": "100R",
+          "x": 16.0,
+          "y": 98.05,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R29",
+          "value": "100k",
+          "x": 18.8,
+          "y": 99.0,
+          "angle": -90.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R60",
+          "value": "5R6",
+          "x": 22.0,
+          "y": 94.5,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "13_TFT_J3": {
+      "task": "TASK-082",
+      "doc": "TFT_J3_YERLESIM_TASK082_20260924.md",
+      "role": "3.2 in\u00e7 TFT LCD 30-pin FPC konnekt\u00f6r\u00fc ve VDD ayr\u0131\u015ft\u0131rma kapasit\u00f6r\u00fc",
+      "target_face": "F.Cu (Top)",
+      "current_layers": [
+        "F.Cu"
+      ],
+      "ref_count": 1,
+      "bbox": {
+        "min_x": 98.992,
+        "max_x": 103.008,
+        "min_y": 103.973,
+        "max_y": 107.127,
+        "width": 4.017,
+        "height": 3.155,
+        "area_mm2": 12.67
+      },
+      "interfaces": [
+        "+3.3V",
+        "SPI_MOSI",
+        "SPI_CLK",
+        "SPI_CS",
+        "TFT_DC",
+        "TFT_RST",
+        "BL_A",
+        "BL_K",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "C34",
+          "value": "1u0",
+          "x": 101.0,
+          "y": 105.55,
+          "angle": 90.0,
+          "layer": "F.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "14_PANEL_ENKODER": {
+      "task": "TASK-083",
+      "doc": "PANEL_ENKODER_J9_YERLESIM_TASK083_20260924.md",
+      "role": "Panel d\u00f6ner enkoder kablo ba\u011flant\u0131s\u0131 ve 10k filtre pull-up diren\u00e7leri",
+      "target_face": "B.Cu (R34, R35, R36 pull-up)",
+      "current_layers": [
+        "B.Cu"
+      ],
+      "ref_count": 3,
+      "bbox": {
+        "min_x": 40.146,
+        "max_x": 45.254,
+        "min_y": 115.082,
+        "max_y": 117.32,
+        "width": 5.107,
+        "height": 2.239,
+        "area_mm2": 11.43
+      },
+      "interfaces": [
+        "+3.3V",
+        "ENC_A",
+        "ENC_B",
+        "ENC_SW",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "R34",
+          "value": "10k",
+          "x": 40.7,
+          "y": 116.2,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R35",
+          "value": "10k",
+          "x": 42.7,
+          "y": 116.2,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "R36",
+          "value": "10k",
+          "x": 44.7,
+          "y": 116.2,
+          "angle": 90.0,
+          "layer": "B.Cu",
+          "locked": false
+        }
+      ]
+    },
+    "15_TEST_NOKTALARI": {
+      "task": "TASK-084",
+      "doc": "TEST_NOKTALARI_YERLESIM_TASK084_20260924.md",
+      "role": "UART0 debug h\u00fccresi (TP11-13) ve I2C bara te\u015fhis h\u00fccresi (TP6-8)",
+      "target_face": "F.Cu (UART0) / B.Cu (I2C)",
+      "current_layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "ref_count": 6,
+      "bbox": {
+        "min_x": 203.946,
+        "max_x": 216.134,
+        "min_y": 119.702,
+        "max_y": 127.179,
+        "width": 12.187,
+        "height": 7.477,
+        "area_mm2": 91.13
+      },
+      "interfaces": [
+        "UART0_TX",
+        "UART0_RX",
+        "I2C_SCL",
+        "I2C_SDA",
+        "GND"
+      ],
+      "members": [
+        {
+          "ref": "TP6",
+          "value": "TestPoint",
+          "x": 207.5,
+          "y": 126.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP7",
+          "value": "TestPoint",
+          "x": 210.04,
+          "y": 126.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP8",
+          "value": "TestPoint",
+          "x": 212.58,
+          "y": 126.0,
+          "angle": 0.0,
+          "layer": "B.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP11",
+          "value": "TestPoint",
+          "x": 207.5,
+          "y": 122.0,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP12",
+          "value": "TestPoint",
+          "x": 210.04,
+          "y": 122.0,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        },
+        {
+          "ref": "TP13",
+          "value": "TestPoint",
+          "x": 212.58,
+          "y": 122.0,
+          "angle": 0.0,
+          "layer": "F.Cu",
+          "locked": false
+        }
+      ]
+    }
+  }
+}

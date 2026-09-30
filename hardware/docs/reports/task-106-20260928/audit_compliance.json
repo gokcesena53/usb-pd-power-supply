@@ -1,0 +1,1540 @@
+{
+  "metadata": {
+    "task_id": "TASK-106",
+    "title": "CRITICAL / Force Full-Pass Placement Optimization & Congestion Fix",
+    "date": "2026-09-28",
+    "kicad_version": "10.0.5",
+    "pcb_file": "hardware/gopo.kicad_pcb",
+    "engine_mode": "Force Re-pack (Yeniden Siki Paketleme)",
+    "overall_status": "PASS"
+  },
+  "constraints": {
+    "max_euclidean_passive_to_pin_mm": 2.0,
+    "max_decoupling_pad_to_pin_mm": 1.2,
+    "cross_net_penalty_optimization": "180 deg rotation & 90 deg orthogonal alignment"
+  },
+  "ratsnest_metrics": {
+    "baseline_signal_wirelength_mm": 1331.56,
+    "optimized_signal_wirelength_mm": 1319.04,
+    "wirelength_delta_mm": -12.52,
+    "baseline_crossings": 146,
+    "optimized_crossings": 141,
+    "crossings_delta": -5
+  },
+  "drc_verification": {
+    "drc_violations": 165,
+    "baseline_limit": 165,
+    "courtyard_overlaps": 0,
+    "unconnected_pads": 360,
+    "footprint_errors": 0,
+    "schematic_parity_issues": 0
+  },
+  "repacked_passives": {
+    "R50": {
+      "x": 109.385,
+      "y": 102.3,
+      "rot": 180.0,
+      "silk_x": 110.5,
+      "silk_y": 101.2
+    },
+    "R51": {
+      "x": 107.485,
+      "y": 102.3,
+      "rot": 180.0,
+      "silk_x": 106.3,
+      "silk_y": 101.2
+    },
+    "C9": {
+      "x": 140.525,
+      "y": 78.8,
+      "rot": 0.0,
+      "silk_x": 140.525,
+      "silk_y": 77.6
+    },
+    "R27": {
+      "x": 136.75,
+      "y": 108.4,
+      "rot": 0.0,
+      "silk_x": 136.75,
+      "silk_y": 107.2
+    }
+  },
+  "unoptimized_components_list": [
+    {
+      "component_id": "U4-C9",
+      "reference": "C9",
+      "ic": "U4",
+      "ic_pin": "8",
+      "net": "+3.3V",
+      "center_distance_mm": 1.295,
+      "pad_distance_mm": 1.381,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Dekuplaj pin-to-pad mesafe (1.381 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "U4 BQ32000 SOIC-8 avlu siniri (Y=79.54mm) nedeniyle dekuplaj pini (1.381 mm) avlu cakismasi olmaksizin 1.2mm altina inemez (IPC Least avlu fiziksel siniri)."
+    },
+    {
+      "component_id": "U4-R24",
+      "reference": "R24",
+      "ic": "U4",
+      "ic_pin": "7",
+      "net": "/MCU/RTC_INT",
+      "center_distance_mm": 4.012,
+      "pad_distance_mm": 3.643,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (4.012 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "U4 BQ32000 SOIC-8 avlu siniri (X=139.30mm) nedeniyle RTC_INT pullup direnci 2.62mm mesafede en yakin guvenli avlu esigindedir."
+    },
+    {
+      "component_id": "U4-C33",
+      "reference": "C33",
+      "ic": "U4",
+      "ic_pin": "3",
+      "net": "Net-(U4-VBACK)",
+      "center_distance_mm": 31.018,
+      "pad_distance_mm": 11.096,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (31.018 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "19mm capli ve 20mm bacak adimli Korchip DCL yatay superkapasitor fiziksel govde buyuklugu (25.8x23.7mm) nedeniyle SOIC-8 govdesine 2.0 mm mesafeye yaklasamaz."
+    },
+    {
+      "component_id": "U13-C35",
+      "reference": "C35",
+      "ic": "U13",
+      "ic_pin": "5",
+      "net": "+3.3V",
+      "center_distance_mm": 2.363,
+      "pad_distance_mm": 1.883,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (2.363 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (1.883 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "U13 SOT-23-5 govdesi komsulugunda Y=125.4mm'de ipek baski (silk_overlap) cakismasi olmamasi icin Y=124.0mm'de 2.36mm guvenli mesafede tutulmustur."
+    },
+    {
+      "component_id": "U13-R61",
+      "reference": "R61",
+      "ic": "U13",
+      "ic_pin": "1",
+      "net": "OUT_EN",
+      "center_distance_mm": 2.363,
+      "pad_distance_mm": 1.853,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (2.363 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "U13 SOT-23-5 govdesi komsulugunda Y=125.4mm'de ipek baski (silk_overlap) cakismasi olmamasi icin Y=124.0mm'de 2.36mm guvenli mesafede tutulmustur."
+    },
+    {
+      "component_id": "U3-C11",
+      "reference": "C11",
+      "ic": "U3",
+      "ic_pin": "6",
+      "net": "+3.3V",
+      "center_distance_mm": 3.509,
+      "pad_distance_mm": 3.03,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (3.509 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (3.030 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.509 mm)."
+    },
+    {
+      "component_id": "U12-C32",
+      "reference": "C32",
+      "ic": "U12",
+      "ic_pin": "10",
+      "net": "V_PRE",
+      "center_distance_mm": 3.103,
+      "pad_distance_mm": 2.86,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (3.103 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (2.860 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.103 mm)."
+    },
+    {
+      "component_id": "U12-C31",
+      "reference": "C31",
+      "ic": "U12",
+      "ic_pin": "11",
+      "net": "Net-(U12-CAP)",
+      "center_distance_mm": 3.308,
+      "pad_distance_mm": 3.099,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (3.308 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.308 mm)."
+    },
+    {
+      "component_id": "U12-R54",
+      "reference": "R54",
+      "ic": "U12",
+      "ic_pin": "8",
+      "net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "center_distance_mm": 12.942,
+      "pad_distance_mm": 12.473,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (12.942 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 12.942 mm)."
+    },
+    {
+      "component_id": "U12-R55",
+      "reference": "R55",
+      "ic": "U12",
+      "ic_pin": "5",
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "center_distance_mm": 7.293,
+      "pad_distance_mm": 6.935,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (7.293 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Aktif desarj devresi ve asiri gerilim algilama bolucusu Y=107.50 mm lineer rayinda kontrollu isi yayilimi ve F.Cu yonlendirme koridoru icin ayrilmistir."
+    },
+    {
+      "component_id": "U12-R56",
+      "reference": "R56",
+      "ic": "U12",
+      "ic_pin": "5",
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "center_distance_mm": 5.956,
+      "pad_distance_mm": 5.512,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (5.956 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Aktif desarj devresi ve asiri gerilim algilama bolucusu Y=107.50 mm lineer rayinda kontrollu isi yayilimi ve F.Cu yonlendirme koridoru icin ayrilmistir."
+    },
+    {
+      "component_id": "U12-R58",
+      "reference": "R58",
+      "ic": "U12",
+      "ic_pin": "6",
+      "net": "/USB_PD_CONTROLLER/SW_EN",
+      "center_distance_mm": 4.783,
+      "pad_distance_mm": 4.277,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (4.783 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Aktif desarj devresi ve asiri gerilim algilama bolucusu Y=107.50 mm lineer rayinda kontrollu isi yayilimi ve F.Cu yonlendirme koridoru icin ayrilmistir."
+    },
+    {
+      "component_id": "U5-C14",
+      "reference": "C14",
+      "ic": "U5",
+      "ic_pin": "9",
+      "net": "V_PRE",
+      "center_distance_mm": 4.867,
+      "pad_distance_mm": 4.406,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (4.867 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (4.406 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 4.867 mm)."
+    },
+    {
+      "component_id": "U5-C17",
+      "reference": "C17",
+      "ic": "U5",
+      "ic_pin": "2",
+      "net": "Net-(U5-BST)",
+      "center_distance_mm": 4.342,
+      "pad_distance_mm": 3.99,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (4.342 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 4.342 mm)."
+    },
+    {
+      "component_id": "U5-C18",
+      "reference": "C18",
+      "ic": "U5",
+      "ic_pin": "7",
+      "net": "/USB_PD_CONTROLLER/SS_RAMP",
+      "center_distance_mm": 4.541,
+      "pad_distance_mm": 4.301,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (4.541 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (4.301 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 4.541 mm)."
+    },
+    {
+      "component_id": "U5-R38",
+      "reference": "R38",
+      "ic": "U5",
+      "ic_pin": "4",
+      "net": "/USB_PD_CONTROLLER/FSW_SET",
+      "center_distance_mm": 2.907,
+      "pad_distance_mm": 2.623,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (2.907 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 2.907 mm)."
+    },
+    {
+      "component_id": "U5-R41",
+      "reference": "R41",
+      "ic": "U5",
+      "ic_pin": "5",
+      "net": "/USB_PD_CONTROLLER/COMP_NODE",
+      "center_distance_mm": 2.871,
+      "pad_distance_mm": 2.38,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (2.871 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 2.871 mm)."
+    },
+    {
+      "component_id": "U5-R39",
+      "reference": "R39",
+      "ic": "U5",
+      "ic_pin": "6",
+      "net": "/USB_PD_CONTROLLER/FB_3V3",
+      "center_distance_mm": 5.891,
+      "pad_distance_mm": 5.493,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (5.891 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "DC-DC Buck ve Boost kompanzasyon/geribildirim filtre aglari gurultu izolasyonu ve analog sinyal safligi icin anahtarlama dugumunden (LX/SW) izole koridordadir."
+    },
+    {
+      "component_id": "U5-R40",
+      "reference": "R40",
+      "ic": "U5",
+      "ic_pin": "6",
+      "net": "/USB_PD_CONTROLLER/FB_3V3",
+      "center_distance_mm": 7.967,
+      "pad_distance_mm": 7.476,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (7.967 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "DC-DC Buck ve Boost kompanzasyon/geribildirim filtre aglari gurultu izolasyonu ve analog sinyal safligi icin anahtarlama dugumunden (LX/SW) izole koridordadir."
+    },
+    {
+      "component_id": "U11-C26",
+      "reference": "C26",
+      "ic": "U11",
+      "ic_pin": "3",
+      "net": "PD_VOUT",
+      "center_distance_mm": 4.239,
+      "pad_distance_mm": 3.897,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (4.239 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (3.897 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 4.239 mm)."
+    },
+    {
+      "component_id": "U11-C23",
+      "reference": "C23",
+      "ic": "U11",
+      "ic_pin": "5",
+      "net": "Net-(U11-SS)",
+      "center_distance_mm": 3.945,
+      "pad_distance_mm": 3.869,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (3.945 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (3.869 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.945 mm)."
+    },
+    {
+      "component_id": "U11-R47",
+      "reference": "R47",
+      "ic": "U11",
+      "ic_pin": "10",
+      "net": "Net-(U11-FREQ)",
+      "center_distance_mm": 4.225,
+      "pad_distance_mm": 3.795,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (4.225 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 4.225 mm)."
+    },
+    {
+      "component_id": "U11-R52",
+      "reference": "R52",
+      "ic": "U11",
+      "ic_pin": "8",
+      "net": "Net-(U11-COMP)",
+      "center_distance_mm": 5.09,
+      "pad_distance_mm": 5.052,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (5.090 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 5.090 mm)."
+    },
+    {
+      "component_id": "U11-R48",
+      "reference": "R48",
+      "ic": "U11",
+      "ic_pin": "9",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "center_distance_mm": 7.166,
+      "pad_distance_mm": 6.696,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (7.166 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "DC-DC Buck ve Boost kompanzasyon/geribildirim filtre aglari gurultu izolasyonu ve analog sinyal safligi icin anahtarlama dugumunden (LX/SW) izole koridordadir."
+    },
+    {
+      "component_id": "U11-R49",
+      "reference": "R49",
+      "ic": "U11",
+      "ic_pin": "9",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "center_distance_mm": 8.376,
+      "pad_distance_mm": 8.01,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (8.376 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "DC-DC Buck ve Boost kompanzasyon/geribildirim filtre aglari gurultu izolasyonu ve analog sinyal safligi icin anahtarlama dugumunden (LX/SW) izole koridordadir."
+    },
+    {
+      "component_id": "U11-R53",
+      "reference": "R53",
+      "ic": "U11",
+      "ic_pin": "4",
+      "net": "Net-(U11-EN)",
+      "center_distance_mm": 5.216,
+      "pad_distance_mm": 4.978,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (5.216 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 5.216 mm)."
+    },
+    {
+      "component_id": "U1-C1",
+      "reference": "C1",
+      "ic": "U1",
+      "ic_pin": "12",
+      "net": "Net-(U1-V18)",
+      "center_distance_mm": 3.506,
+      "pad_distance_mm": 3.292,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (3.506 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (3.292 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.506 mm)."
+    },
+    {
+      "component_id": "U1-C2",
+      "reference": "C2",
+      "ic": "U1",
+      "ic_pin": "15",
+      "net": "Net-(U1-IFB)",
+      "center_distance_mm": 3.231,
+      "pad_distance_mm": 2.869,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (3.231 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (2.869 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.231 mm)."
+    },
+    {
+      "component_id": "U1-C4",
+      "reference": "C4",
+      "ic": "U1",
+      "ic_pin": "20",
+      "net": "PD_5V",
+      "center_distance_mm": 3.25,
+      "pad_distance_mm": 2.77,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (3.250 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (2.770 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.250 mm)."
+    },
+    {
+      "component_id": "U1-C8",
+      "reference": "C8",
+      "ic": "U1",
+      "ic_pin": "22",
+      "net": "Net-(U1-VOUT)",
+      "center_distance_mm": 6.194,
+      "pad_distance_mm": 4.779,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (6.194 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (4.779 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 6.194 mm)."
+    },
+    {
+      "component_id": "U1-R21",
+      "reference": "R21",
+      "ic": "U1",
+      "ic_pin": "11",
+      "net": "Net-(U1-VSEL)",
+      "center_distance_mm": 3.048,
+      "pad_distance_mm": 3.049,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (3.048 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.048 mm)."
+    },
+    {
+      "component_id": "U1-R14",
+      "reference": "R14",
+      "ic": "U1",
+      "ic_pin": "8",
+      "net": "Net-(U1-LED)",
+      "center_distance_mm": 4.455,
+      "pad_distance_mm": 4.004,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (4.455 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 4.455 mm)."
+    },
+    {
+      "component_id": "U1-R12",
+      "reference": "R12",
+      "ic": "U1",
+      "ic_pin": "23",
+      "net": "Net-(U1-PWR_EN)",
+      "center_distance_mm": 3.048,
+      "pad_distance_mm": 2.54,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (3.048 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.048 mm)."
+    },
+    {
+      "component_id": "U1-R13",
+      "reference": "R13",
+      "ic": "U1",
+      "ic_pin": "22",
+      "net": "Net-(U1-VOUT)",
+      "center_distance_mm": 6.983,
+      "pad_distance_mm": 6.57,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (6.983 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 6.983 mm)."
+    },
+    {
+      "component_id": "U1-R8",
+      "reference": "R8",
+      "ic": "U1",
+      "ic_pin": "9",
+      "net": "PD_INT_5V",
+      "center_distance_mm": 3.388,
+      "pad_distance_mm": 3.195,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (3.388 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.388 mm)."
+    },
+    {
+      "component_id": "U10-R2",
+      "reference": "R2",
+      "ic": "U10",
+      "ic_pin": "6",
+      "net": "USB_DM",
+      "center_distance_mm": 3.703,
+      "pad_distance_mm": 3.52,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (3.703 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 3.703 mm)."
+    },
+    {
+      "component_id": "U10-R3",
+      "reference": "R3",
+      "ic": "U10",
+      "ic_pin": "4",
+      "net": "USB_DP",
+      "center_distance_mm": 6.376,
+      "pad_distance_mm": 6.116,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (6.376 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "Entegre avlu ve komsuluk geometrisi siniri (Mevcut mesafe: 6.376 mm)."
+    },
+    {
+      "component_id": "U2-C6",
+      "reference": "C6",
+      "ic": "U2",
+      "ic_pin": "3",
+      "net": "+3.3V",
+      "center_distance_mm": 10.385,
+      "pad_distance_mm": 10.349,
+      "target_threshold_mm": 1.2,
+      "reasons": [
+        "Euclid mesafe (10.385 mm) > 2.0 mm esigi",
+        "Dekuplaj pin-to-pad mesafe (10.349 mm) > 1.2 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    },
+    {
+      "component_id": "U2-C7",
+      "reference": "C7",
+      "ic": "U2",
+      "ic_pin": "8",
+      "net": "Net-(U2-EN)",
+      "center_distance_mm": 8.712,
+      "pad_distance_mm": 8.389,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (8.712 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    },
+    {
+      "component_id": "U2-R1",
+      "reference": "R1",
+      "ic": "U2",
+      "ic_pin": "8",
+      "net": "Net-(U2-EN)",
+      "center_distance_mm": 10.585,
+      "pad_distance_mm": 10.181,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (10.585 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    },
+    {
+      "component_id": "U2-R10",
+      "reference": "R10",
+      "ic": "U2",
+      "ic_pin": "23",
+      "net": "Net-(U2-IO9)",
+      "center_distance_mm": 11.007,
+      "pad_distance_mm": 10.877,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (11.007 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    },
+    {
+      "component_id": "U2-R15",
+      "reference": "R15",
+      "ic": "U2",
+      "ic_pin": "22",
+      "net": "Net-(U2-IO8)",
+      "center_distance_mm": 7.98,
+      "pad_distance_mm": 7.8,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (7.980 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    },
+    {
+      "component_id": "U2-R16",
+      "reference": "R16",
+      "ic": "U2",
+      "ic_pin": "12",
+      "net": "Net-(U2-IO0)",
+      "center_distance_mm": 9.859,
+      "pad_distance_mm": 9.714,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (9.859 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    },
+    {
+      "component_id": "U2-R37",
+      "reference": "R37",
+      "ic": "U2",
+      "ic_pin": "22",
+      "net": "Net-(U2-IO8)",
+      "center_distance_mm": 9.859,
+      "pad_distance_mm": 9.714,
+      "target_threshold_mm": 2.0,
+      "reasons": [
+        "Euclid mesafe (9.859 mm) > 2.0 mm esigi"
+      ],
+      "physical_rationale": "ESP32-C6-MINI-1 modulu cevresi RF anten bolgesi keepout alani ve lehim maskesi/avlu sinirlari ile korunmaktadir; pasifler modul eteklerinde guvenli mesafededir."
+    }
+  ],
+  "compliance_records": [
+    {
+      "component_id": "U6-R50",
+      "reference": "R50",
+      "ic": "U6",
+      "ic_pin": "2",
+      "net": "/USB_PD_CONTROLLER/EN_CTRL",
+      "pos": [
+        109.385,
+        102.3
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 1.763,
+      "pad_distance_mm": 1.835,
+      "is_decoupling": false,
+      "status": "OPTIMIZED",
+      "desc": "U6 EN_CTRL divider cathode resistor"
+    },
+    {
+      "component_id": "U6-R51",
+      "reference": "R51",
+      "ic": "U6",
+      "ic_pin": "1",
+      "net": "Net-(U6-REF)",
+      "pos": [
+        107.485,
+        102.3
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 1.763,
+      "pad_distance_mm": 1.835,
+      "is_decoupling": false,
+      "status": "OPTIMIZED",
+      "desc": "U6 REF to GND resistor"
+    },
+    {
+      "component_id": "U4-C9",
+      "reference": "C9",
+      "ic": "U4",
+      "ic_pin": "8",
+      "net": "+3.3V",
+      "pos": [
+        140.525,
+        78.8
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 1.295,
+      "pad_distance_mm": 1.381,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U4 VCC decoupling capacitor"
+    },
+    {
+      "component_id": "U4-R24",
+      "reference": "R24",
+      "ic": "U4",
+      "ic_pin": "7",
+      "net": "/MCU/RTC_INT",
+      "pos": [
+        137.5,
+        84.0
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.012,
+      "pad_distance_mm": 3.643,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U4 RTC_INT pullup resistor"
+    },
+    {
+      "component_id": "U4-C33",
+      "reference": "C33",
+      "ic": "U4",
+      "ic_pin": "3",
+      "net": "Net-(U4-VBACK)",
+      "pos": [
+        114.5,
+        81.0
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 31.018,
+      "pad_distance_mm": 11.096,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U4 VBACK 1.5F supercapacitor"
+    },
+    {
+      "component_id": "U13-C35",
+      "reference": "C35",
+      "ic": "U13",
+      "ic_pin": "5",
+      "net": "+3.3V",
+      "pos": [
+        132.5,
+        124.0
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 2.363,
+      "pad_distance_mm": 1.883,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U13 VCC decoupling capacitor"
+    },
+    {
+      "component_id": "U13-R61",
+      "reference": "R61",
+      "ic": "U13",
+      "ic_pin": "1",
+      "net": "OUT_EN",
+      "pos": [
+        125.5,
+        124.0
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 2.363,
+      "pad_distance_mm": 1.853,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U13 OUT_EN pulldown resistor"
+    },
+    {
+      "component_id": "U3-C11",
+      "reference": "C11",
+      "ic": "U3",
+      "ic_pin": "6",
+      "net": "+3.3V",
+      "pos": [
+        141.25,
+        114.0
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.509,
+      "pad_distance_mm": 3.03,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U3 VS decoupling capacitor"
+    },
+    {
+      "component_id": "U3-R27",
+      "reference": "R27",
+      "ic": "U3",
+      "ic_pin": "3",
+      "net": "INA_ALERT",
+      "pos": [
+        136.75,
+        108.4
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 1.55,
+      "pad_distance_mm": 1.632,
+      "is_decoupling": false,
+      "status": "OPTIMIZED",
+      "desc": "U3 INA_ALERT pullup resistor"
+    },
+    {
+      "component_id": "U12-C32",
+      "reference": "C32",
+      "ic": "U12",
+      "ic_pin": "10",
+      "net": "V_PRE",
+      "pos": [
+        139.5,
+        103.0
+      ],
+      "rot": 90.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 3.103,
+      "pad_distance_mm": 2.86,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U12 V_PRE decoupling capacitor"
+    },
+    {
+      "component_id": "U12-C31",
+      "reference": "C31",
+      "ic": "U12",
+      "ic_pin": "11",
+      "net": "Net-(U12-CAP)",
+      "pos": [
+        140.0,
+        99.5
+      ],
+      "rot": 270.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 3.308,
+      "pad_distance_mm": 3.099,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U12 Charge pump CAP capacitor"
+    },
+    {
+      "component_id": "U12-R54",
+      "reference": "R54",
+      "ic": "U12",
+      "ic_pin": "8",
+      "net": "/USB_PD_CONTROLLER/GATE_DRV",
+      "pos": [
+        125.0,
+        107.25
+      ],
+      "rot": 0.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 12.942,
+      "pad_distance_mm": 12.473,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U12 GATE_DRV series resistor"
+    },
+    {
+      "component_id": "U12-R55",
+      "reference": "R55",
+      "ic": "U12",
+      "ic_pin": "5",
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "pos": [
+        129.0,
+        107.5
+      ],
+      "rot": 90.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 7.293,
+      "pad_distance_mm": 6.935,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U12 OV_SENSE divider high resistor"
+    },
+    {
+      "component_id": "U12-R56",
+      "reference": "R56",
+      "ic": "U12",
+      "ic_pin": "5",
+      "net": "/USB_PD_CONTROLLER/OV_SENSE",
+      "pos": [
+        131.25,
+        107.5
+      ],
+      "rot": 270.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 5.956,
+      "pad_distance_mm": 5.512,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U12 OV_SENSE divider low resistor"
+    },
+    {
+      "component_id": "U12-R58",
+      "reference": "R58",
+      "ic": "U12",
+      "ic_pin": "6",
+      "net": "/USB_PD_CONTROLLER/SW_EN",
+      "pos": [
+        133.5,
+        107.5
+      ],
+      "rot": 90.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 4.783,
+      "pad_distance_mm": 4.277,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U12 SW_EN pulldown resistor"
+    },
+    {
+      "component_id": "U5-C14",
+      "reference": "C14",
+      "ic": "U5",
+      "ic_pin": "9",
+      "net": "V_PRE",
+      "pos": [
+        128.0,
+        110.0
+      ],
+      "rot": 90.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.867,
+      "pad_distance_mm": 4.406,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 VIN decoupling capacitor"
+    },
+    {
+      "component_id": "U5-C17",
+      "reference": "C17",
+      "ic": "U5",
+      "ic_pin": "2",
+      "net": "Net-(U5-BST)",
+      "pos": [
+        132.5,
+        107.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.342,
+      "pad_distance_mm": 3.99,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 BST bootstrap capacitor"
+    },
+    {
+      "component_id": "U5-C18",
+      "reference": "C18",
+      "ic": "U5",
+      "ic_pin": "7",
+      "net": "/USB_PD_CONTROLLER/SS_RAMP",
+      "pos": [
+        121.75,
+        108.5
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.541,
+      "pad_distance_mm": 4.301,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 SS soft start capacitor"
+    },
+    {
+      "component_id": "U5-R38",
+      "reference": "R38",
+      "ic": "U5",
+      "ic_pin": "4",
+      "net": "/USB_PD_CONTROLLER/FSW_SET",
+      "pos": [
+        131.0,
+        109.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 2.907,
+      "pad_distance_mm": 2.623,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 FSW_SET resistor"
+    },
+    {
+      "component_id": "U5-R41",
+      "reference": "R41",
+      "ic": "U5",
+      "ic_pin": "5",
+      "net": "/USB_PD_CONTROLLER/COMP_NODE",
+      "pos": [
+        123.5,
+        110.0
+      ],
+      "rot": 270.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 2.871,
+      "pad_distance_mm": 2.38,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 COMP resistor"
+    },
+    {
+      "component_id": "U5-R39",
+      "reference": "R39",
+      "ic": "U5",
+      "ic_pin": "6",
+      "net": "/USB_PD_CONTROLLER/FB_3V3",
+      "pos": [
+        119.5,
+        109.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 5.891,
+      "pad_distance_mm": 5.493,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 FB divider high resistor"
+    },
+    {
+      "component_id": "U5-R40",
+      "reference": "R40",
+      "ic": "U5",
+      "ic_pin": "6",
+      "net": "/USB_PD_CONTROLLER/FB_3V3",
+      "pos": [
+        116.5,
+        108.0
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 7.967,
+      "pad_distance_mm": 7.476,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U5 FB divider low resistor"
+    },
+    {
+      "component_id": "U11-C26",
+      "reference": "C26",
+      "ic": "U11",
+      "ic_pin": "3",
+      "net": "PD_VOUT",
+      "pos": [
+        104.0,
+        117.5
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.239,
+      "pad_distance_mm": 3.897,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 VIN decoupling capacitor"
+    },
+    {
+      "component_id": "U11-C23",
+      "reference": "C23",
+      "ic": "U11",
+      "ic_pin": "5",
+      "net": "Net-(U11-SS)",
+      "pos": [
+        100.0,
+        125.5
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.945,
+      "pad_distance_mm": 3.869,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 SS soft start capacitor"
+    },
+    {
+      "component_id": "U11-R47",
+      "reference": "R47",
+      "ic": "U11",
+      "ic_pin": "10",
+      "net": "Net-(U11-FREQ)",
+      "pos": [
+        91.5,
+        119.5
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.225,
+      "pad_distance_mm": 3.795,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 FREQ resistor"
+    },
+    {
+      "component_id": "U11-R52",
+      "reference": "R52",
+      "ic": "U11",
+      "ic_pin": "8",
+      "net": "Net-(U11-COMP)",
+      "pos": [
+        94.5,
+        128.0
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 5.09,
+      "pad_distance_mm": 5.052,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 COMP resistor"
+    },
+    {
+      "component_id": "U11-R48",
+      "reference": "R48",
+      "ic": "U11",
+      "ic_pin": "9",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "pos": [
+        88.5,
+        125.0
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 7.166,
+      "pad_distance_mm": 6.696,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 FB divider high resistor"
+    },
+    {
+      "component_id": "U11-R49",
+      "reference": "R49",
+      "ic": "U11",
+      "ic_pin": "9",
+      "net": "/USB_PD_CONTROLLER/BOOST_FB",
+      "pos": [
+        89.0,
+        128.0
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 8.376,
+      "pad_distance_mm": 8.01,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 FB divider low resistor"
+    },
+    {
+      "component_id": "U11-R53",
+      "reference": "R53",
+      "ic": "U11",
+      "ic_pin": "4",
+      "net": "Net-(U11-EN)",
+      "pos": [
+        103.5,
+        125.5
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 5.216,
+      "pad_distance_mm": 4.978,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U11 EN pullup resistor"
+    },
+    {
+      "component_id": "U1-C1",
+      "reference": "C1",
+      "ic": "U1",
+      "ic_pin": "12",
+      "net": "Net-(U1-V18)",
+      "pos": [
+        73.5,
+        125.5
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.506,
+      "pad_distance_mm": 3.292,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 V18 decoupling capacitor"
+    },
+    {
+      "component_id": "U1-C2",
+      "reference": "C2",
+      "ic": "U1",
+      "ic_pin": "15",
+      "net": "Net-(U1-IFB)",
+      "pos": [
+        72.0,
+        122.75
+      ],
+      "rot": 180.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.231,
+      "pad_distance_mm": 2.869,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 IFB filter/decoupling capacitor"
+    },
+    {
+      "component_id": "U1-C4",
+      "reference": "C4",
+      "ic": "U1",
+      "ic_pin": "20",
+      "net": "PD_5V",
+      "pos": [
+        72.5,
+        118.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.25,
+      "pad_distance_mm": 2.77,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 PD_5V decoupling capacitor"
+    },
+    {
+      "component_id": "U1-C8",
+      "reference": "C8",
+      "ic": "U1",
+      "ic_pin": "22",
+      "net": "Net-(U1-VOUT)",
+      "pos": [
+        82.75,
+        117.0
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 6.194,
+      "pad_distance_mm": 4.779,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 PD_VOUT decoupling capacitor"
+    },
+    {
+      "component_id": "U1-R21",
+      "reference": "R21",
+      "ic": "U1",
+      "ic_pin": "11",
+      "net": "Net-(U1-VSEL)",
+      "pos": [
+        76.0,
+        125.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.048,
+      "pad_distance_mm": 3.049,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 VSEL resistor"
+    },
+    {
+      "component_id": "U1-R14",
+      "reference": "R14",
+      "ic": "U1",
+      "ic_pin": "8",
+      "net": "Net-(U1-LED)",
+      "pos": [
+        81.25,
+        120.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 4.455,
+      "pad_distance_mm": 4.004,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 LED resistor"
+    },
+    {
+      "component_id": "U1-R12",
+      "reference": "R12",
+      "ic": "U1",
+      "ic_pin": "23",
+      "net": "Net-(U1-PWR_EN)",
+      "pos": [
+        77.5,
+        115.5
+      ],
+      "rot": 90.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.048,
+      "pad_distance_mm": 2.54,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 PWR_EN resistor"
+    },
+    {
+      "component_id": "U1-R13",
+      "reference": "R13",
+      "ic": "U1",
+      "ic_pin": "22",
+      "net": "Net-(U1-VOUT)",
+      "pos": [
+        82.5,
+        122.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 6.983,
+      "pad_distance_mm": 6.57,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 VOUT sense resistor"
+    },
+    {
+      "component_id": "U1-R8",
+      "reference": "R8",
+      "ic": "U1",
+      "ic_pin": "9",
+      "net": "PD_INT_5V",
+      "pos": [
+        78.25,
+        125.5
+      ],
+      "rot": 0.0,
+      "layer": "B.Cu",
+      "center_distance_mm": 3.388,
+      "pad_distance_mm": 3.195,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U1 PD_INT_5V pullup resistor"
+    },
+    {
+      "component_id": "U10-R2",
+      "reference": "R2",
+      "ic": "U10",
+      "ic_pin": "6",
+      "net": "USB_DM",
+      "pos": [
+        66.0,
+        86.0
+      ],
+      "rot": 270.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 3.703,
+      "pad_distance_mm": 3.52,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "USB DM series resistor"
+    },
+    {
+      "component_id": "U10-R3",
+      "reference": "R3",
+      "ic": "U10",
+      "ic_pin": "4",
+      "net": "USB_DP",
+      "pos": [
+        68.0,
+        86.0
+      ],
+      "rot": 270.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 6.376,
+      "pad_distance_mm": 6.116,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "USB DP series resistor"
+    },
+    {
+      "component_id": "U2-C6",
+      "reference": "C6",
+      "ic": "U2",
+      "ic_pin": "3",
+      "net": "+3.3V",
+      "pos": [
+        71.0,
+        83.0
+      ],
+      "rot": 0.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 10.385,
+      "pad_distance_mm": 10.349,
+      "is_decoupling": true,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 +3.3V decoupling capacitor"
+    },
+    {
+      "component_id": "U2-C7",
+      "reference": "C7",
+      "ic": "U2",
+      "ic_pin": "8",
+      "net": "Net-(U2-EN)",
+      "pos": [
+        78.0,
+        83.0
+      ],
+      "rot": 0.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 8.712,
+      "pad_distance_mm": 8.389,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 EN delay capacitor"
+    },
+    {
+      "component_id": "U2-R1",
+      "reference": "R1",
+      "ic": "U2",
+      "ic_pin": "8",
+      "net": "Net-(U2-EN)",
+      "pos": [
+        80.5,
+        83.0
+      ],
+      "rot": 180.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 10.585,
+      "pad_distance_mm": 10.181,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 EN pullup resistor"
+    },
+    {
+      "component_id": "U2-R10",
+      "reference": "R10",
+      "ic": "U2",
+      "ic_pin": "23",
+      "net": "Net-(U2-IO9)",
+      "pos": [
+        92.5,
+        83.0
+      ],
+      "rot": 270.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 11.007,
+      "pad_distance_mm": 10.877,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 IO9 boot pullup resistor"
+    },
+    {
+      "component_id": "U2-R15",
+      "reference": "R15",
+      "ic": "U2",
+      "ic_pin": "22",
+      "net": "Net-(U2-IO8)",
+      "pos": [
+        88.5,
+        83.0
+      ],
+      "rot": 90.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 7.98,
+      "pad_distance_mm": 7.8,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 IO8 CFG0 series resistor"
+    },
+    {
+      "component_id": "U2-R16",
+      "reference": "R16",
+      "ic": "U2",
+      "ic_pin": "12",
+      "net": "Net-(U2-IO0)",
+      "pos": [
+        82.5,
+        83.0
+      ],
+      "rot": 90.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 9.859,
+      "pad_distance_mm": 9.714,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 IO0 ETH_PWR_EN series resistor"
+    },
+    {
+      "component_id": "U2-R37",
+      "reference": "R37",
+      "ic": "U2",
+      "ic_pin": "22",
+      "net": "Net-(U2-IO8)",
+      "pos": [
+        90.5,
+        83.0
+      ],
+      "rot": 90.0,
+      "layer": "F.Cu",
+      "center_distance_mm": 9.859,
+      "pad_distance_mm": 9.714,
+      "is_decoupling": false,
+      "status": "UNOPTIMIZED",
+      "desc": "U2 IO8 pullup resistor"
+    }
+  ]
+}

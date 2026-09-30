@@ -1,0 +1,73 @@
+{
+  "task": "TASK-096",
+  "title": "Kart yerle\u015fimini elektriksel ve mekanik a\u00e7\u0131dan analiz et",
+  "date": "2026-09-28",
+  "status": "ANALYSIS_COMPLETED",
+  "verdict": "CONDITIONAL_READY_FOR_ROUTING",
+  "pcb_sha256": "3fef79fb84dd7873a7848b67d45493059cb3772e0c8dd45b3bf90e45d1a4e9f6",
+  "kicad_version": "10.0.5",
+  "metrics": {
+    "total_footprints": 144,
+    "electrical_footprints": 143,
+    "mechanical_footprints": 1,
+    "outside_electrical_components": 0,
+    "drc_errors": 15,
+    "baseline_u2_errors": 15,
+    "new_drc_errors": 0,
+    "drc_warnings": 153,
+    "schematic_parity_issues": 0,
+    "unconnected_items": 360,
+    "max_3d_solid_intersection_volume_mm3": 0,
+    "minimum_cable_clearance_mm": 1.4,
+    "minimum_encoder_clearance_mm": 7.036,
+    "max_fcu_height_under_lcd_mm": 1.35,
+    "boost_fb_trace_length_mm": 2.585
+  },
+  "critical_findings_summary": [
+    {
+      "id": "FINDING-01",
+      "block": "AP33772S",
+      "severity": "MEDIUM",
+      "title": "VBUS Ak\u0131m Alg\u0131lama \u015e\u00f6nt\u00fc R11 ile U1 Kontrolc\u00fcs\u00fc Mesafesi",
+      "measurement": "Euclidean mesafe 16.3 mm (R11 Y=103.0, U1 Y=120.5)",
+      "impact": "Uzun ak\u0131m alg\u0131lama hatlar\u0131 yak\u0131n Boost/Buck anahtarlama g\u00fcr\u00fclt\u00fcs\u00fcne duyarl\u0131d\u0131r.",
+      "routing_requirement": "TASK-087 routing a\u015famas\u0131nda R11 u\u00e7lar\u0131ndan U1 Pin 1 ve Pin 24 aras\u0131na s\u0131k\u0131 diferansiyel Kelvin \u00e7ifti \u00e7ekilmeli, \u00e7evresi GND ile z\u0131rhlanmal\u0131d\u0131r."
+    },
+    {
+      "id": "FINDING-02",
+      "block": "TPS55340",
+      "severity": "MEDIUM",
+      "title": "Boost Anahtarlama S\u0131cak D\u00f6ng\u00fcs\u00fc (Hot Loop) \u00c7evresi",
+      "measurement": "SW -> D4 -> C29 -> PGND d\u00f6ng\u00fc \u00e7evresi yakla\u015f\u0131k 51.0 mm (C29 bat\u0131da X=87..90, D4 do\u011fuda X=101..105)",
+      "impact": "Y\u00fcksek di/dt d\u00f6ng\u00fcs\u00fc end\u00fcktans\u0131 ve EMI yay\u0131l\u0131m riski.",
+      "routing_requirement": "TASK-087 a\u015famas\u0131nda B.Cu \u00fczerinde geni\u015f ve kesintisiz bak\u0131r poligon d\u00f6k\u00fclmeli, C29 ve D4 topraklar\u0131 do\u011frudan U11 termal pedine ba\u011flanmal\u0131d\u0131r."
+    },
+    {
+      "id": "FINDING-03",
+      "block": "AOZ1284",
+      "severity": "MEDIUM",
+      "title": "Buck Giri\u015f Kapasit\u00f6r\u00fc C16 ile U5 Giri\u015fi Mesafesi",
+      "measurement": "Euclidean mesafe 11.4 mm (C16 Y=97.3, U5 Y=105.3)",
+      "impact": "Buck giri\u015f di/dt darbe ak\u0131mlar\u0131nda end\u00fcktif gerilim s\u0131\u00e7ramas\u0131.",
+      "routing_requirement": "C16 VIN ve GND u\u00e7lar\u0131ndan U5 Pin 5 ve Pin 4/termal pedine en az 1.5 mm geni\u015fli\u011finde d\u00fc\u015f\u00fck end\u00fcktansl\u0131 do\u011frudan bak\u0131r k\u00f6pr\u00fc kurulmal\u0131."
+    },
+    {
+      "id": "FINDING-04",
+      "block": "INA226 & J4",
+      "severity": "LOW-MEDIUM",
+      "title": "\u015e\u00f6nt RShunt1 ile J4 \u00c7\u0131k\u0131\u015f Klemensi Mesafesi",
+      "measurement": "Euclidean mesafe 15.3 mm (RShunt1 X=136.0, J4 X=146.0)",
+      "impact": "3A DC \u00e7\u0131k\u0131\u015f ak\u0131m\u0131 i\u00e7in empedans ve I2R kay\u0131plar\u0131.",
+      "routing_requirement": "RShunt1 pin 2 ile J4 pin 1 aras\u0131na B.Cu \u00fczerinde en az 2.5 mm geni\u015fli\u011finde kal\u0131n g\u00fc\u00e7 poligonu \u00e7ekilmeli."
+    },
+    {
+      "id": "FINDING-05",
+      "block": "ESP32-C6",
+      "severity": "LOW",
+      "title": "Decoupling Kapasit\u00f6rleri C5, C6, C7 ile U2 Pin 1 Mesafesi",
+      "measurement": "Euclidean mesafe 12.0 mm (Kapasit\u00f6rler Y=83.0, U2 Pin 1 X=64.9, Y=75.1)",
+      "impact": "3.3V ray\u0131 y\u00fcksek frekans g\u00fcr\u00fclt\u00fc bast\u0131rma etkinli\u011fi.",
+      "routing_requirement": "In1.Cu GND referans d\u00fczlemi kesintisiz korunmal\u0131; +3.3V ray\u0131 do\u011frudan kapasit\u00f6r pedlerinden ge\u00e7erek U2 pin 1 e ula\u015fmal\u0131d\u0131r."
+    }
+  ]
+}

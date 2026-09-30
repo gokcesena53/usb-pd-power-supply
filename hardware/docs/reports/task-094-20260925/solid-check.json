@@ -1,0 +1,74 @@
+{
+  "encoder_bounds": [
+    37.3,
+    -119.55,
+    -9.38,
+    57.8,
+    -104.75,
+    3.12
+  ],
+  "encoder_model_matches_target": true,
+  "pairs": {
+    "board-body": {
+      "distance_mm": 2.008083663595718,
+      "intersection_mm3": 0.0
+    },
+    "J7": {
+      "distance_mm": 11.808853670022337,
+      "intersection_mm3": 0.0
+    },
+    "J8": {
+      "distance_mm": 5.25,
+      "intersection_mm3": 0.0
+    },
+    "J9": {
+      "distance_mm": 3.4957485164124744,
+      "intersection_mm3": 0.0
+    },
+    "J3": {
+      "distance_mm": 35.69416093704964,
+      "intersection_mm3": 0.0
+    },
+    "panel-world": {
+      "distance_mm": 0.0,
+      "intersection_mm3": 0.0
+    },
+    "LCD_XY_envelope": {
+      "distance_mm": 5.720000000000006,
+      "intersection_mm3": 0.0
+    }
+  },
+  "cable_service_envelope": {
+    "bounds": [
+      57.8,
+      -123.0,
+      -17.0,
+      70.0,
+      -102.0,
+      -0.5
+    ],
+    "description": "Below-board service envelope; 26-28 AWG wires, bend radius >=4.5 mm, stripped ends terminate on J9 pads. Final harness verified with sample."
+  },
+  "cable_pairs": {
+    "board-body": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.5
+    },
+    "J7": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 9.221438202217247
+    },
+    "J8": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 2.5
+    },
+    "J3": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 23.54339663260168
+    },
+    "panel-world": {
+      "intersection_mm3": 0.0,
+      "distance_mm": 8.0
+    }
+  }
+}

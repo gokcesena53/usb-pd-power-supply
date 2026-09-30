@@ -1,0 +1,29 @@
+{
+ "board": "/tmp/claude-1000/-home-aztec-Desktop-gopo/770f9d48-fab4-4e9c-b974-6439e1243407/scratchpad/fr/A_fpc.kicad_pcb",
+ "planes": [
+  "In1.Cu=GND",
+  "In2.Cu=+3.3V"
+ ],
+ "passes": 12,
+ "mode": "gui :99",
+ "route_s": 861,
+ "freerouting_rc": 0,
+ "tracks": 1152,
+ "vias": 79,
+ "length_mm": {
+  "F.Cu": 930.4,
+  "B.Cu": 1186.2
+ },
+ "length_total_mm": 2116.5,
+ "unconnected": 43,
+ "parity": 0,
+ "violations": {
+  "silk_overlap": 20,
+  "silk_over_copper": 17,
+  "copper_edge_clearance": 15,
+  "lib_footprint_mismatch": 10,
+  "isolated_copper": 8,
+  "clearance": 4
+ },
+ "status": "bitti"
+}

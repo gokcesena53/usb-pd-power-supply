@@ -15,7 +15,7 @@ documentation:
   - design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md
   - software/FIRMWARE_GEREKSINIMLERI.md
 priority: high
-ordinal: 106000
+ordinal: 109000
 ---
 
 ## Description

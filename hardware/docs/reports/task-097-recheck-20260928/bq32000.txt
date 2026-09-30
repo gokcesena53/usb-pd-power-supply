@@ -1,0 +1,2397 @@
+
+PDF PAGE 1
+BQ32000 Real-Time Clock (RTC)
+1 Features
+•
+Automatic Switchover to Backup Supply
+•
+I2C Interface Supports Serial Clock up to 400 kHz
+•
+Uses 32.768-kHz Crystal With –63-ppm to
++126-ppm Adjustment
+•
+Integrated Oscillator-Fail Detection
+•
+8-Pin SOIC Package
+•
+–40°C to 125°C Ambient Operating Temperature
+2 Applications
+•
+General Consumer Electronics
+3 Description
+The BQ32000 device is a compatible replacement for 
+industry standard real-time clocks.
+The 
+BQ32000 
+features 
+an 
+automatic 
+backup 
+supply with integrated trickle charger. The backup 
+supply can be implemented using a capacitor or 
+non-rechargeable battery. The BQ32000 has a 
+programmable calibration adjustment from –63 ppm 
+to +126 ppm. The BQ32000 registers include an OF 
+(oscillator fail) flag indicating the status of the RTC 
+oscillator, as well as a STOP bit that allows the host 
+processor to disable the oscillator. The time registers 
+are normally updated once per second, and all the 
+registers are updated at the same time to prevent a 
+timekeeping glitch. The BQ32000 includes automatic 
+leap-year compensation.
+Device Information (1) 
+PART NUMBER
+PACKAGE
+PACKAGE SIZE(2)
+BQ32000
+SOIC (8)
+4.90mm × 3.91mm
+(1)
+For all available packages, see the orderable addendum at 
+the end of the data sheet.
+(2)
+The package size (length × width) is a nominal value and 
+includes pins, where applicable.
+bq32000
+SCL
+SDA
+____
+IRQ
+3.0 to 3.6 V
+Real-Time
+Clock
+Controller
+Simplified Schematic
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+PDF PAGE 2
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Pin Configuration and Functions...................................3
+Pin Functions.................................................................... 3
+5 Specifications.................................................................. 4
+5.1 Absolute Maximum Ratings (1) ...................................4
+5.2 ESD Ratings............................................................... 4
+5.3 Recommended Operating Conditions.........................4
+5.4 Thermal Information....................................................4
+5.5 Electrical Characteristics.............................................5
+5.6 I2C Timing Requirements............................................5
+5.7 Typical Characteristics................................................6
+6 Detailed Description........................................................7
+6.1 Overview.....................................................................7
+6.2 Functional Block Diagram...........................................7
+6.3 Feature Description.....................................................7
+6.4 Device Functional Modes..........................................10
+6.5 Programming............................................................ 10
+7 Register Maps................................................................12
+7.1 I2C Read After Backup Mode....................................12
+7.2 Normal Register Descriptions................................... 12
+7.3 Special Function Registers....................................... 17
+8 Application and Implementation..................................19
+8.1 Application Information............................................. 19
+8.2 Typical Application.................................................... 19
+8.3 Layout....................................................................... 23
+9 Device and Documentation Support............................25
+9.1 Device Support......................................................... 25
+9.2 Community Resources..............................................25
+9.3 Trademarks...............................................................25
+10 Revision History.......................................................... 25
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 3
+4 Pin Configuration and Functions
+1
+2
+3
+4
+5
+6
+7
+8
+SDA
+SCL
+IRQ
+VCC
+GND
+VBACK
+OSCO
+OSCI
+Figure 4-1. D Package 8-Pin SOIC Top View 
+Pin Functions
+PIN
+I/O
+DESCRIPTION
+NAME
+NO.
+POWER AND GROUND
+GND
+4
+-
+Ground
+VBACK
+3
+-
+Backup device power
+VCC
+8
+-
+Main device power
+SERIAL INTERFACE
+SCL
+6
+I
+I2C serial interface clock
+SDA
+5
+I/O
+I2C serial data
+INTERRUPT
+IRQ
+7
+O
+Configurable interrupt output. Open-drain output.
+OSCILLATOR
+OSCI
+1
+-
+Oscillator input
+OSCO
+2
+-
+Oscillator output
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+3
+Product Folder Links: bq32000
+
+
+PDF PAGE 4
+5 Specifications
+5.1 Absolute Maximum Ratings (1) 
+over operating free-air temperature range (unless otherwise noted)
+MIN
+MAX
+UNIT
+Input voltage, VIN
+VCC to GND
+–0.3
+4
+V
+All other pins to GND
+–0.3
+VCC + 0.3
+V
+Operating junction temperature, TJ
+–40
+150
+°C
+Storage temperature, Tstg
+–60
+150
+°C
+(1)
+Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply 
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. 
+If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully 
+functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+5.2 ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic discharge
+Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all pins(1)
+2000
+V
+Charged device model (CDM), per JEDEC specification JESD22-C101, all 
+pins(2)
+500
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)
+JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+5.3 Recommended Operating Conditions
+MIN
+NOM
+MAX UNIT
+VCC
+Supply voltage, VCC to GND
+3
+3.6
+V
+TA
+Operating free-air temperature
+–40
+125
+°C
+fo
+Crystal resonant frequency
+32.768
+kHz
+RS
+Crystal series resistance
+70
+kΩ
+CL
+Crystal load capacitance #unique_11/unique_11_Connect_42_GUID-C58B930C-DF53-49A6-B349-
+D6A078C861AF 
+10.8
+12
+13.2
+pF
+(1) If CL is 12 pF then an external load capacitor must not be used.
+5.4 Thermal Information
+over operating free-air temperature range (unless otherwise noted)
+THERMAL METRIC(1)
+BQ32000
+UNIT
+D (SOIC)
+8 PINS
+RθJA
+Junction-to-ambient thermal resistance
+114.8
+°C/W
+RθJC(top)
+Junction-to-case (top) thermal resistance
+59.1
+°C/W
+RθJB
+Junction-to-board thermal resistance
+55.5
+°C/W
+ψJT
+Junction-to-top characterization parameter
+11.9
+°C/W
+ψJT
+Junction-to-board characterization parameter
+55
+°C/W
+(1)
+For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application 
+report, SPRA953.
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+4
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 5
+5.5 Electrical Characteristics
+over operating free-air temperature range (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+POWER SUPPLY
+ICC
+VCC supply current
+100
+μA
+VBACK
+Backup supply voltage
+Operating
+1.4
+VCC
+V
+Switchover
+2.0
+VCC
+IBACK
+Backup supply current
+VCC needs a pulse (1), VBACK = 3 V, Oscillator on, TA = 25°C
+1.2
+1.5
+μA
+LOGIC LEVEL INPUTS
+VIL
+Input low voltage
+0.3 VCC
+V
+VIH
+Input high voltage
+0.7 VCC
+V
+IIN
+Input current
+0 V ≤ VIN ≤ VCC
+-1
+1
+μA
+LOGIC LEVEL OUTPUTS
+VOL
+Output low voltage
+IOL = 3 mA
+0.4
+V
+IL
+Leakage current
+-1
+1
+μA
+REAL-TIME CLOCK CHARACTERISTICS
+Pre-calibration accuracy
+VCC = 3.3 V, VBACK = 3 V, Oscillator on, TA = 25°C
+±35(2)
+ppm
+(1)
+The currents measured after issuing a pulse on VCC. The pulse amplitude 0-VCC; pulse width min 1 ms.
+(2)
+Typical accuracy is measured using reference board design and KDS DMX-26S surface-mount 32.768-kHz crystal. Variation in board 
+design and crystal section results in different typical accuracy.
+5.6 I2C Timing Requirements
+STANDARD MODE
+FAST MODE
+UNIT
+MIN
+MAX
+MIN
+MAX
+fscl
+I2C clock frequency
+0
+100
+0
+400
+kHz
+tsch
+I2C clock high time
+4
+0.6
+μs
+tscl
+I2C clock low time
+4.7
+1.3
+μs
+tsp
+I2C spike time
+0
+50
+0
+50
+ns
+tsds
+I2C serial data setup time
+250
+100
+ns
+tsdh
+I2C serial data hold time
+0
+0
+ns
+ticr
+I2C input rise time
+1000
+20 + 0.1Cb (1)
+300
+ns
+ticf
+I2C input fall time
+300
+20 + 0.1Cb (1)
+300
+ns
+tocf
+I2C output fall time
+300
+20 + 0.1Cb (1)
+300
+μs
+tbuf
+I2C bus free time
+4.7
+1.3
+μs
+tsts
+I2C Start setup time
+4.7
+0.6
+μs
+tsth
+I2C Start hold time
+4
+0.6
+μs
+tsps
+I2C Stop setup time
+4
+0.6
+μs
+tvd(data)
+Valid data time (SCL low to SDA valid)
+1
+1
+μs
+tvd(ack)
+Valid data time of ACK
+(ACK signal from SCL low to SDA low)
+1
+1
+μs
+(1)
+Cb = total capacitance of one bus line in pF
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+5
+Product Folder Links: bq32000
+
+
+PDF PAGE 6
+0.7 VCC
+0.3 VCC
+0.7 VCC
+0.3 VCC
+0.7 VCC
+0.3 VCC
+0.7 VCC
+0.3 VCC
+SDA
+SCL
+Start Condition
+SDA
+SCL
+Start Condition
+Stop Condition
+8
+9
+tsps
+ticf
+ticr
+tsdh
+tvd
+tvd
+tbuf
+D7/A
+ticf
+ticr
+tsds
+tsds
+tsth
+tsch
+tscl
+1/fscl
+1
+2
+3
+4
+Figure 5-1. I2C Timing Diagram
+5.7 Typical Characteristics
+-10
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+20
+25
+30
+35
+40
+45
+50
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+Iback (uA) 
+ICC (uA) 
+Vbackup (V) 
+Icc (uA)
+Iback (uA)
+C001 
+VCC = 2 V 
+Figure 5-2. Current Consumption vs Backup 
+Supply Voltage
+-10
+-5
+0
+5
+10
+15
+20
+100
+101.5
+103
+104.5
+106
+107.5
+2.4
+2.9
+3.4
+3.9
+Iback (uA) 
+ICC (uA) 
+Vbackup (V) 
+Icc (uA)
+Iback (uA)
+C002 
+VCC = 3.3 V 
+Figure 5-3. Current Consumption vs Backup 
+Supply Voltage
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+6
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 7
+6 Detailed Description
+6.1 Overview
+The BQ32000 is a real-time clock that features an automatic backup supply with an integrated trickle charger.
+6.2 Functional Block Diagram
+4.7 kW
+4.7 kW
+4.7 kW
+VBACK
+OSCI
+OSCO
+Use only
+super-capacitor
+or battery,
+not both
+IRQ
+SCL
+SDA
+0.22 F
+GND
+I2C Register
+Interface With
+Undervoltage
+Lockout
+32-kHz
+Oscillator
+Trickle
+Charge
+Automatic
+Backup
+Switch
+VCORE
+Interrupt
+Generator
+VCC
+VCC
+Registers
+Place supply-decoupling
+capacitor near supply pin
+1 µF
+VCC
+All pullup resistors must be connected to VCC such that no pullup is applied during backup supply operation.
+6.3 Feature Description
+6.3.1 IRQ Function
+The IRQ pin of the BQ32000 functions as a general-purpose output or a frequency test output. The function of 
+IRQ is configurable in the device register space by setting the FT, FTF, and OUT bits. On initial power cycles, the 
+OUT bit is set to one, and the FTF and FT bits are set to zero. On subsequent power-ups, with backup supply 
+present, the OUT bit remains unchanged, and the FTF and FT bits are set to zero. When operating on backup 
+supply, the IRQ pin function is unused. IRQ pullup resistor must be tied to VCC to prevent IRQ operation when 
+operating on backup supply. The effect of the calibration logic is not normally observable when IRQ is configured 
+to output 1Hz. The calibration logic functions by periodically adjusting the width of the 1Hz clock. The calibration 
+effect is observable only every eight or sixteen minutes, depending on the sign of the calibration.
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+7
+Product Folder Links: bq32000
+
+
+PDF PAGE 8
+Figure 6-1. IRQ Pin Functional Diagram
+Table 6-1. IRQ Function
+FT
+OUT
+FTF
+IRQ STATE
+1
+X
+1
+1Hz
+1
+X
+0
+512Hz
+0
+1
+X
+1
+0
+0
+X
+0
+Calibration steps
+The SF KEY 1 and SF KEY 2 registers are used to enable access to the main special function register (SFR). 
+Access to SFR is granted only after the special function keys are written sequentially to SF KEY 1 and SF KEY 
+2. Each write to the SFR must be preceded by writing the SF keys to the SF key registers, in order, SF KEY 1 
+then SF KEY 2.
+Write 0x5E to Register 0x20 (SF KEY 1).
+Write 0xC7 to Register 0x21 (SF KEY 2).
+Write 0x01 to Register 0x22 (SFR) to set 1Hz calibration output.
+Then you can configure the programmable calibration feature
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+8
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 9
+6.3.2 VBACK Switchover
+The BQ32000 has an internal switchover circuit that causes the device to switch from main power supply to 
+backup power supply when the voltage of the main supply pin VCC drops below a minimum threshold. The VBACK 
+switchover circuit uses an internal reference voltage VREF derived from the on-chip bandgap reference; VREF is 
+approximately 2.8V. The device switches to the VBACK supply when VCC is less than the lesser of VBACK or VREF. 
+Similarly, the device switches to the VCC supply when VCC is greater than either VBACK or VREF.
+Some registers are reset to default values when the RTC switches from main power supply to backup power 
+supply. Please see the register definitions to determine what register bits are effected by a backup switchover 
+(effected bits have the reset value (1/0) shown for 'Cycle', bits that are unchanged by backup are marked 'UC').
+The time keeping registers can take up to 1 second to update after the RTC switches from backup power supply 
+to main power supply.
+3.3V
+VBACK
+VRE F
+V C
+C
+–5 V/ms (max)
+3.3V
+VBACK
+VRE F
+On VBACK
+On VBACK
+OnVCC
+On VCC
+VBACK > VREF
+VBACK > VREF
+3.3V
+VRE F
+VBACK
+On VBACK
+On VCC
+VREF > VBACK
+3.3V
+VRE F
+VBACK
+On VBACK
+OnVCC
+VREF > VBACK
+Voltage
+Voltage
+Voltage
+Voltage
+Time
+Time
+Time
+Time
+V C
+C
+V C
+C
+V C
+C
+–5 V/ms (max)
+Figure 6-2. Switchover Diagram
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+9
+Product Folder Links: bq32000
+
+
+PDF PAGE 10
+6.3.3 Trickle Charge
+The BQ32000 includes a trickle charge circuit to maintain the charge of the backup supply when a super 
+capacitor is used. The trickle charge circuit is implemented as a series of three switches that are independently 
+controlled by setting the TCHE[3:0], TCH2, and TCFE bits in the register space.
+TCHE[3:0] must be written as 0x5h and TCH2 as 1 to close the trickle charge switches and enable charging 
+of the backup supply from VCC. Additionally, TCFE can be set to 1 to bypass the internal diode and boost 
+the charge voltage of the backup supply. All trickle charge switches are opened when the device is initially 
+powered on and each time the device switches from the main supply to the backup supply. The trickle charge 
+circuit is intended for use with super capacitors; however, BQ32000 can be used with a rechargeable battery 
+under certain conditions. Care must be taken not to overcharge a rechargeable battery when enabling trickle 
+charge. Follow all charging guidelines specific to the rechargeable battery or super capacitor when enabling 
+trickle charge.
+940 W
+20 kW
+180 W
+VBACK
+Figure 6-3. Trickle Charge Switch Functional Diagram
+6.4 Device Functional Modes
+When the device switches from the main power supply to backup supply, the Time keeping register Registers 
+[0-9] cannot be accessed via the I2C. The access to these registers are only when VCC > Vref.
+The Time keeping registers can take up to 1 second to update after the device switches from backup power 
+supply to main power supply.
+6.5 Programming
+6.5.1 I2C Serial Interface
+The I2C interface allows control and monitoring of the RTC by a microcontroller. I2C is a two-wire serial interface 
+developed by Philips Semiconductor (see I2C-Bus Specification, Version 2.1, January 2000).
+The bus consists of a data line (SDA) and a clock line (SCL) with off-chip pullup resistors. When the bus is idle, 
+both SDA and SCL lines are pulled high.
+A leader device, usually a microcontroller or a digital signal processor, controls the bus. The leader is 
+responsible for generating the SCL signal and device addresses. The leader also generates specific conditions 
+that indicate the START and STOP of data transfer.
+A followe device receives and/or transmits data on the bus under control of the leader device. This device 
+operates only as a follower device.
+I2C communication is initiated by a leader sending a start condition, a high-to-low transition on the SDA I/O 
+while SCL is held high. After the start condition, the device address byte is sent, most-significant bit (MSB) 
+first, including the data direction bit (R /W). After receiving a valid address byte, this device responds with 
+an acknowledge, a low on the SDA I/O during the high of the acknowledge-related clock pulse. This device 
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+10
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 11
+responds to the I2C follower address 11010000b for write commands and follower address 11010001b for read 
+commands.
+This device does not respond to the general call address.
+A data byte follows the address acknowledge. If the R/ W bit is low, the data is written from the leader. If the R/ 
+W bit is high, the data from this device are the values read from the register previously selected by a write to the 
+subaddress register. The data byte is followed by an acknowledge sent from this device. Data is output only if 
+complete bytes are received and acknowledged.
+A stop condition, which is a low-to-high transition on the SDA I/O while the SCL input is high, is sent by the 
+leader to terminate the transfer. A leader device must wait at least 60 μs after the RTC exits backup mode to 
+generate a START condition.
+S
+1 1
+1
+0
+0 0 0 W
+Follower
+Address
+ACK
+(A )
+N
+ACK
+Sub
+Address
+START
+S
+START
+1 1
+1
+0
+0 0 0
+R
+Follower
+Address
+ACK
+(D )
+N
+ACK
+DataN
+(D
+)
+N+1
+NACK
+DataN+1
+STOP
+Figure 6-4. I2C Read Mode
+Follower
+Figure 6-5. I2C Write Mode
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: bq32000
+
+
+PDF PAGE 12
+7 Register Maps
+Table 7-1. Normal Registers
+REGISTER
+ADDRESS
+(HEX)
+REGISTER NAME
+DESCRIPTION
+0
+0x00
+SECONDS
+Clock seconds and STOP bit
+1
+0x01
+MINUTES
+Clock minutes
+2
+0x02
+CENT_HOURS
+Clock hours, century, and CENT_EN bit
+3
+0x03
+DAY
+Clock day
+4
+0x04
+DATE
+Clock date
+5
+0x05
+MONTH
+Clock month
+6
+0x06
+YEARS
+Clock years
+7
+0x07
+CAL_CFG1
+Calibration and configuration
+8
+0x08
+TCH2
+Trickle charge enable
+9
+0x09
+CFG2
+Configuration 2
+Table 7-2. Special Function Registers
+REGISTER
+ADDRESS
+(HEX)
+REGISTER NAME
+DESCRIPTION
+32
+0x20
+SF KEY 1
+Special function key 1
+33
+0x21
+SF KEY 2
+Special function key 2
+34
+0x22
+SFR
+Special function register
+7.1 I2C Read After Backup Mode
+The time keeping registers can take up to 1 second to update after the RTC switches from backup power supply 
+to main power supply. An I2C read of the RTC that starts before the update has completed returns the time when 
+the RTC enters backup mode. To maintain that the correct time is read after backup mode, the host must wait 
+longer than 1 second after the main supply is greater than 2.8V and VBACK.
+7.2 Normal Register Descriptions
+7.2.1 SECONDS Register (address = 0x00) [reset = 0XXXXXXb]
+Description – Clock seconds and STOP bit
+Figure 7-1. SECONDS Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+STOP
+10_SECOND
+1_SECOND
+Name
+r/w
+r/w
+r/w
+Read/Write
+0
+X
+X
+X
+X
+X
+X
+X
+Initial
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+Cycle
+STOP
+Oscillator stop. The STOP bit is used to force the oscillator to stop oscillating. STOP is set to 0 on initial application of 
+power, on all subsequent power cycles STOP remains unchanged. On initial power application STOP can be written to 1 
+and then written to 0 to force start the oscillator.
+0
+Normal
+1
+Stop
+10_SECOND
+BCD of tens of seconds. The 10_SECOND bits are the BCD representation of the number of tens of seconds on the clock. 
+Valid values are 0 to 5. If invalid data is written to 10_SECOND, the clock updates with invalid data in 10_SECOND until 
+the counter rolls over; thereafter, the data in 10_SECOND is valid. Time keeping registers can take up to 1 second to 
+update after the RTC switches from backup power supply to main power supply.
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+12
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 13
+1_SECOND
+BCD of seconds. The 1_SECOND bits are the BCD representation of the number of seconds on the clock. Valid values 
+are 0 to 9. If invalid data is written to 1_SECOND, the clock updates with invalid data in 1_SECOND until the counter rolls 
+over; thereafter, the data in 1_SECOND is valid. Time keeping registers can take up to 1 second to update after the RTC 
+switches from backup power supply to main power supply.
+7.2.2 MINUTES Register (address = 0x01) [reset = 1XXXXXXb]
+Description – Clock minutes
+Figure 7-2. MINUTES Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+OF
+10_MINUTE
+1_MINUTE
+Name
+r/w
+r/w
+r/w
+Read/Write
+1
+X
+X
+X
+X
+X
+X
+X
+Initial
+0
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+Cycle
+OF
+Oscillator fail flag. The OF bit is a latched flag indicating when the 32.768kHz oscillator has dropped at least four 
+consecutive pulses. The OF flag is always set on initial power-up, and the flag can be cleared through the serial interface. 
+When OF is 0, no oscillator failure has been detected. When OF is 1, the oscillator fail detect circuit has detected at least 
+four consecutive dropped pulses.
+0
+No failure detected
+1
+Failure detected
+10_MINUTE
+BCD of tens of minutes. The 10_MINUTE bits are the BCD representation of the number of tens of minutes on the clock. 
+Valid values are 0 to 5. If invalid data is written to 10_MINUTE, the clock updates with invalid data in 10_MINUTE until the 
+counter rolls over; thereafter, the data in 10_MINUTE is valid. Time keeping registers can take up to 1 second to update 
+after the RTC switches from backup power supply to main power supply.
+1_MINUTE
+BCD of minutes. The 1_MINUTE bits are the BCD representation of the number of minutes on the clock. Valid values 
+are 0 to 9. If invalid data is written to 1_MINUTE, the clock updates with invalid data in 1_MINUTE until the counter rolls 
+over; thereafter, the data in 1_MINUTE is valid. Time keeping registers can take up to 1 second to update after the RTC 
+switches from backup power supply to main power supply.
+7.2.3 CENT_HOURS Register (address = 0x02) [reset = XXXXXXXXb]
+Description – Clock hours, century, and CENT_EN bit
+Figure 7-3. CENT_HOURS Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+CENT_EN
+CENT
+10_HOUR
+1_HOUR
+Name
+r/w
+r/w
+r/w
+r/w
+Read/Write
+X
+X
+X
+X
+X
+X
+X
+X
+Initial
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+Cycle
+CENT_EN
+Century enable. The CENT_EN bit enables the century timekeeping feature. If CENT_EN is set to 1, then the clock tracks 
+the century using the CENT bit. If CENT_EN is set to 0, the clock ignores the CENT bit.
+0
+Century disabled
+1
+Century enabled
+CENT
+Century. The CENT bit tracks the century when century timekeeping is enabled. The clock toggles the CENT bit when the 
+year count rolls from 99 to 00. Because the clock compliments the CENT bit, the user can define the meaning of CENT (1 
+for current century and 0 for next century, or 0 for current century and 1 for next century).
+10_HOUR
+BCD of tens of hours (24-hour format). The 10_HOUR bits are the BCD representation of the number of tens of hours on 
+the clock, in 24-hour format. Valid values are 0 to 2. If invalid data is written to 10_HOUR, the clock updates with invalid 
+data in 10_HOUR until the counter rolls over; thereafter, the data in 10_HOUR is valid. Time keeping registers can take up 
+to 1 second to update after the RTC switches from backup power supply to main power supply.
+1_HOUR
+BCD of hours (24-hour format). The 1_HOUR bits are the BCD representation of the number of hours on the clock, 
+in 24-hour format. Valid values are 0 to 9. If invalid data is written to 1_HOUR, the clock updates with invalid data in 
+1_HOUR until the counter rolls over; thereafter, the data in 1_HOUR is valid. Time keeping registers can take up to 1 
+second to update after the RTC switches from backup power supply to main power supply.
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+13
+Product Folder Links: bq32000
+
+
+PDF PAGE 14
+7.2.4 DAY Register (address = 0x03) [reset = 00000XXXb]
+Description – Clock day
+Figure 7-4. DAY Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+RSVD
+DAY
+Name
+r/w
+r/w
+Read/Write
+0
+0
+0
+0
+0
+X
+X
+X
+Initial
+0
+0
+0
+0
+0
+UC
+UC
+UC
+Cycle
+RSVD
+Reserved. The RSVD bits is always written as 0.
+DAY
+BCD of the day of the week. The DAY bits are the BCD representation of the day of the week. Valid values are 1 to 7 and 
+represent the days from Sunday to Saturday. DAY updates if set to 0 until the counter rolls over; thereafter, the data in 
+DAY is valid. Time keeping registers can take up to 1 second to update after the RTC switches from backup power supply 
+to main power supply.
+1
+Sunday
+2
+Monday
+3
+Tuesday
+4
+Wednesday
+5
+Thursday
+6
+Friday
+7
+Saturday
+7.2.5 DATE Register (address = 0x04) [reset = 00XXXXXXb]
+Description – Clock date
+Figure 7-5. DATE Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+RSVD
+10_DATE
+1_DATE
+Name
+r/w
+r/w
+r/w
+Read/Write
+0
+0
+X
+X
+X
+X
+X
+X
+Initial
+0
+0
+UC
+UC
+UC
+UC
+UC
+UC
+Cycle
+RSVD
+Reserved. The RSVD bits is always written as 0.
+10_DATE
+BCD of tens of date. The 10_DATE bits are the BCD representation of the tens of date on the clock. Valid values are 0 
+to 3(1). If invalid data is written to 10_DATE, the clock updates with invalid data in 10_DATE until the counter rolls over; 
+thereafter, the data in 10_DATE is valid. Time keeping registers can take up to 1 second to update after the RTC switches 
+from backup power supply to main power supply.
+1_DATE
+BCD of date. The 1_DATE bits are the BCD representation of the date on the clock. Valid values are 0 to 9(1). If invalid 
+data is written to 1_DATE, the clock updates with invalid data in 1_DATE until the counter rolls over; thereafter, the data 
+in 1_DATE is valid. Time keeping registers can take up to 1 second to update after the RTC switches from backup power 
+supply to main power supply.
+(1)
+10_DATE and 1_DATE must form a valid date, 01 to 31, dependent on month and year.
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+14
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 15
+7.2.6 MONTH Register (address = 0x05) [reset = 000XXXXXb]
+Description – Clock month
+Figure 7-6. MONTH Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+RSVD
+10_MONTH
+1_MONTH
+Name
+r/w
+r/w
+r/w
+Read/Write
+0
+0
+0
+X
+X
+X
+X
+X
+Initial
+0
+0
+0
+UC
+UC
+UC
+UC
+UC
+Cycle
+RSVD
+Reserved. The RSVD bits must always be written as 0.
+10_MONTH
+BCD of tens of month. The 10_MONTH bits are the BCD representation of the tens of month on the clock. Valid values 
+are 0 to 1(1). If invalid data is written to 10_MONTH, the clock updates with invalid data in 10_MONTH until the counter 
+rolls over; thereafter, the data in 10_MONTH is valid.
+1_MONTH
+BCD of month. The 1_MONTH bits are the BCD representation of the month on the clock. Valid values are 0 to 9(1). 
+If invalid data is written to 1_MONTH, the clock updates with invalid data in 1_MONTH until the counter rolls over; 
+thereafter, the data in 1_MONTH is valid.
+(1)
+10_MONTH and 1_MONTH must form a valid date, 01 to 12.
+7.2.7 YEARS Register (address = 0x06) [reset = XXXXXXXXb]
+Description – Clock year
+Figure 7-7. YEARS Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+10_YEAR
+1_YEAR
+Name
+r/w
+r/w
+Read/Write
+X
+X
+X
+X
+X
+X
+X
+X
+Initial
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+Cycle
+10_YEAR
+BCD of tens of years. The 10_YEAR bits are the BCD representation of the tens of years on the clock. Valid values are 
+0 to 9. If invalid data is written to 10_YEAR, the clock updates with invalid data in 10_YEAR until the counter rolls over; 
+thereafter, the data in 10_YEAR is valid. Time keeping registers can take up to 1 second to update after the RTC switches 
+from backup power supply to main power supply.
+1_YEAR
+BCD of year. The 1_YEAR bits are the BCD representation of the years on the clock. Valid values are 0 to 9. If invalid 
+data is written to 1_YEAR, the clock updates with invalid data in 1_YEAR until the counter rolls over; thereafter, the data 
+in 1_YEAR is valid. Time keeping registers can take up to 1 second to update after the RTC switches from backup power 
+supply to main power supply.
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: bq32000
+
+
+PDF PAGE 16
+7.2.8 CAL_CFG1 Register (address = 0x07) [reset = 10000000b]
+Description – Calibration and control
+Figure 7-8. CAL_CFG1 Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+OUT
+FT
+S
+CAL
+Name
+r/w
+r/w
+r/w
+r/w
+Read/Write
+1
+0
+0
+0
+0
+0
+0
+0
+Initial
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+Cycle
+OUT
+Logic output, when FT = 0. When FT is zero, the logic output of IRQ pin reflects the value of OUT.
+0
+IRQ is logic 0
+1
+IRQ is logic 1
+FT
+Frequency test. The FT bit is used to enable the frequency test signal on the IRQ pin. When FT is 1, a square wave is 
+produced on the IRQ pin. The FTF bit in the SFR register determines the frequency of the test signal.
+0
+Disable
+1
+Enable
+S
+Calibration sign. The S bit determines the polarity of the calibration applied to the oscillator. If S is 0, then the calibration 
+slows the RTC. If S is 1, then the calibration speeds the RTC.
+0
+Slowing (+)
+1
+Speeding (–)
+CAL
+Calibration. The CAL bits along with S determine the calibration amount as shown in Table 7-3.
+Table 7-3. Calibration
+CAL (DEC)
+S = 0
+S = 1
+0
++0 ppm
+–0 ppm
+1
++2 ppm
+–4 ppm
+N
++N / 491520 (per minute)
+–N / 245760 (per minute)
+30
++61 ppm
+–122 ppm
+31
++63 ppm
+–126 ppm
+7.2.9 TCH2 Register (address = 0x08) [reset = 10010000b]
+Description – Trickle charge TCH2 control
+Figure 7-9. TCH2 Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+RSVD
+TCH2
+RSVD
+Name
+r/w
+r/w
+r/w
+Read/Write
+1
+0
+0
+1
+0
+0
+0
+0
+Initial
+UC
+0
+0
+1
+UC
+UC
+UC
+UC
+Cycle
+RSVD
+Reserved. The RSVD bits should always be written as 0.
+TCH2
+Trickle charge switch two. The TCH2 bit determines if the internal trickle charge switch is closed or open. All the trickle 
+charge switches must be closed in order for trickle charging to occur. If TCH2 is 0, then the TCH2 switch is open. If TCH2 
+is 1, then the TCH2 switch is closed.
+0
+Open
+1
+Closed
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+16
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 17
+7.2.10 CFG2 Register (address = 0x09) [reset = 10101010b]
+Description – Configuration 2
+Figure 7-10. CFG2 Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+RSVD
+TCFE
+RSVD
+TCHE
+Name
+r/w
+r/w
+r/w
+r/w
+Read/Write
+1
+0
+1
+0
+1
+0
+1
+0
+Initial
+1
+0
+UC
+UC
+1
+0
+1
+0
+Cycle
+RSVD
+Reserved. The RSVD bits is written as 0.
+TCFE
+Trickle charge FET bypass. The TCFE bit is used to enable the trickle charge FET. When TCFE is 0, the FET is off. When 
+TCFE is 1, the FET is on.
+0
+Open
+1
+Closed
+TCHE
+Trickle charge enable. The TCHE bits determine if the trickle charger is active. If TCHE is 0x5, then the trickle charger is 
+active, otherwise, the trickle charger is inactive.
+7.3 Special Function Registers
+7.3.1 SF KEY 1 Register (address = 0x20) [reset = 00000000b]
+Description – Special function key 1
+Figure 7-11. SF KEY 1 Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+SF KEY B1
+Name
+r/w
+Read/Write
+0
+0
+0
+0
+0
+0
+0
+0
+Initial
+0
+0
+0
+0
+0
+0
+0
+0
+Cycle
+SF KEY B1
+Special function access key byte 1. Reads as 0x00, and key is 0x5E.
+The SF KEY 1 and SF KEY 2 registers are used to enable access to the main special function register (SFR). Access to 
+SFR is granted only after the special function keys are written sequentially to SF KEY 1 and SF KEY 2. Each write to the 
+SFR must be preceded by writing the SF keys to the SF key registers, in order, SF KEY 1 then SF KEY 2.
+7.3.2 SF KEY 2 Register (address = 0x21) [reset = 00000000b]
+Description – Special function key 2
+Figure 7-12. SF KEY 2 Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+SF KEY 2
+Name
+r/w
+Read/Write
+0
+0
+0
+0
+0
+0
+0
+0
+Initial
+0
+0
+0
+0
+0
+0
+0
+0
+Cycle
+SF KEY 2
+Special function access key byte 2. Reads as 0x00, and key is 0xC7.
+The SF KEY 1 and SF KEY 2 registers are used to enable access to the main special function register (SFR). Access to 
+SFR is granted only after the special function keys are written sequentially to SF KEY 1 and SF KEY 2. Each write to the 
+SFR must be preceded by writing the SF keys to the SF key registers, in order, SF KEY 1 then SF KEY 2.
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+17
+Product Folder Links: bq32000
+
+
+PDF PAGE 18
+7.3.3 SFR Register (address = 0x22) [reset = 00000000b]
+Description – Special function register 1
+Figure 7-13. SFR Register
+7
+6
+5
+4
+3
+2
+1
+0
+BIT(S)
+RSVD
+FTF
+Name
+r/w
+r/w
+Read/Write
+0
+0
+0
+0
+0
+0
+0
+0
+Initial
+0
+0
+0
+0
+0
+0
+0
+0
+Cycle
+RSVD
+Reserved. The RSVD bits must always be written as 0.
+FTF
+Force calibration to 1Hz. FTF allows the frequency of the calibration output to be changed from 512 Hz to 1Hz. By default, 
+FTF is cleared, and the RTC outputs a 512-Hz calibration signal. Setting FTF forces the calibration signal to 1Hz, and the 
+calibration tracks the internal ppm adjustment. Note: The default 512-Hz calibration signal does not include the effect of 
+the ppm adjustment.
+0
+Normal 512Hz calibration
+1
+1Hz calibration
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+18
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 19
+8 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification, and 
+TI does not warrant the accuracy or completeness. TI’s customers are responsible for determining 
+usability of components for customer purposes. Customers need to validate and test the design 
+implementation to confirm system functionality.
+8.1 Application Information
+The typical application for the BQ32000 is to provide precise time and date to a system. The backup power 
+supply provides additional reliability by automatically switching over from the main supply when the supply drops 
+under the voltage threshold.
+8.2 Typical Application
+The following design is a common application of the BQ32000.
+OSCI
+OSCO
+VBACK
+GND
+VCC
+IRQ
+SCL
+SDA
+VCC
+bq32000
+4.7 kΩ
+4.7 kΩ
+1 µF
+4.7 kΩ
+32.768 kHz
+Figure 8-1. Typical Application Schematic
+8.2.1 Design Requirements
+The design requirement parameters are listed in the following table.
+Table 8-1. Design Parameters
+DESIGN PARAMETER
+REFERENCE
+EXAMPLE VALUE
+Supply Voltage
+VCC
+3.3 V
+Backup Supply
+VBACK
+BR1225
+Crystal Oscillator
+XT
+32.768 kHz
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+19
+Product Folder Links: bq32000
+
+
+PDF PAGE 20
+8.2.2 Detailed Design Procedure
+8.2.2.1 Reading From a Register
+The report details the read-back of the SECONDS register. Figure 8-2 depicts the first condition that is used as 
+a benchmark to compare the values taken from the SECONDS register in the BQ32000, to the oscilloscope’s 
+internal PC time. In this example two modes of operation are demonstrated.
+Condition 1. The main power supply, VCC, is greater than the backup power supply, VBACK, and the internal 
+reference voltage, VREF. In this mode, the device's internal registers are fully operational with READ and WRITE 
+access. Analyzing Figure 8-2, the known register values are compared to the system clock; in this case, the PC 
+clock which is shown at the bottom of the screen capture.
+The BQ32000 during this condition is reading back [101][0010]= [5][2], which corresponds to 52 seconds at PC 
+time of 2:22:43 PM.
+Condition 2. VCC is now lowered to 2V (VBACK > VCC). In this mode, the I2C communications are halted. 
+However, the internal time keeping registers maintain full functional operation and accuracy which is available to 
+be reliably read by the controller 1 second after the RTC switches from VBACK to VCC supply.
+Condition 3. During this final test condition, the RTC is restored to operate from the main power supply and I2C 
+communications are now fully functional.
+Figure 8-3 demonstrates a read-back value from the SECONDS register of [100][0101]= [4][5], or 45 seconds 
+at PC time of 2:23:36 PM. This proves that the BQ32000 managed to accurately maintain the time keeping 
+registers functional while the VCC dropped below VBACK.
+8.2.2.2 Leap Year Compensation
+The BQ32000 classifies a leap year as any year that is evenly divisible by 4. Using this rule allows for reliable 
+leap year compensation until 2100. Years that fall outside this rule needs to be compensated for by the external 
+controller.
+8.2.2.3 Utilizing the Backup Supply
+For the BQ32000 to achieve a low backup supply current as specified in the Section 5.5, the VCC pin must 
+be initialized after every total power loss situation. Initialization Is achieved by powering on VCC with a voltage 
+between 3 to 3.6V for at least 1ms immediately after the backup supply is connected. If the VCC is not powered 
+on while connecting the backup supply, then the expected leakage current from VBACK is much greater than 
+specified.
+For example after installing the supercap or backup battery, provide VCC to the RTC for at least 1ms, then 
+remove the VCC supply. When VCC is applied to the device, the device automatically switches to use the supply 
+from VCC. After removing the VCC supply, the device switches to use backup supply at the current as specified in 
+the Section 5.5.
+8.2.2.4 Calibration Example of Crystal Input
+To calibrate the crystal using the programmable calibration feature follow below steps:
+1.
+Configure the IRQ pin to 1 Hz by setting FTF bit and FT bit to 1 by following the steps indicated in section 
+7.6.2.8
+2.
+Use at least a 12-digit precision frequency counter to measure the 1 Hz output signal 2-
+3.
+Compute the absolute error in ppm by following Equation 1
+1 Absolute   Error   ppm   =  
+  1e6fmeasured   −  1   Hz
+1   Hz
+(1)
+If the frequency is too low, set S = 1 and apply the appropriate CAL bits, by following Equation 2
+CAL =   Absolute   Error
+1e6
+245760
+(2)
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+20
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 21
+If the frequency is too high, clear S = 0 and apply the appropriate CAL bits, by following Equation 3 rounded to 
+the nearest integer.
+CAL =   Absolute   Error
+1e6
+491520
+(3)
+Note
+Because the frequency change is small and infrequent, where error is observed every 8 or 16 minutes 
+depending on the calibration sign.
+The calibration corrects only initial offsets and does not adjust for temperature and aging effects. This 
+can be handled by periodically measuring temperature and using the crystal's characteristic curve to 
+adjust the ppm based on temperature as required.
+IRQ Pin Measured Frequency Below 1Hz
+Assume the measured IRQ output is 0.999933203125Hz. The frequency error is about 66.8 ppm low. To 
+increase the frequency by ~66.8 ppm, S is set to = 1, and CAL is set to 16
+IRQ Pin Measured Frequency Above 1 Hz
+Assume the measured IRQ output is 1.0000244140625Hz. The frequency error is about 24.4 ppm high. To 
+decrease the frequency by ~24.4 ppm, S is cleared to = 0, and CAL is set to 12
+8.2.2.5 Calculating the Super Capacitor Values Example
+Use equation (4), assuming C is constantto solve for the capacuatnace as the minimum back up supply voltage 
+(Vf) is 1.4 V, with the maximum back up supply current Iback is 1.5 uA. Assuming Vback starts at Vi is 3.3 V. For 
+the capacitance (C) at t = one week and t = one month, the capcitor value is 0.447 F for one week and 2.046 F 
+for one month.
+4 Vf   =   Vi   −  I t
+C
+(4)
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+21
+Product Folder Links: bq32000
+
+
+PDF PAGE 22
+8.2.3 Application Curves
+Figure 8-2. leader and follower I2C Communication for the SECONDS Register
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+22
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 23
+Figure 8-3. leader and follower I2C Communication for the SECONDS Register After Recovering From the 
+Backup Supply
+Power Supply Recommendations
+The BQ32000 is designed to operate from an input voltage supply, VCC, range between 3.0 and 3.6 V. The user 
+must place a minimum of 1-µF ceramic bypass capacitor rated for at least the maximum voltage as close as 
+possible to VCC and GND pin.
+8.3 Layout
+8.3.1 Layout Guidelines
+The VCC pin must be bypassed to GND using a low-ESR ceramic bypass capacitor with a minimum 
+recommended value of 1µF. This capacitor must be placed as close to the VCC and GND pins as possible 
+with thick trace or ground plane connection to the device GND pin.
+Locate the 32.768kHz crystal oscillator as close as possible to the OSCI and OSCO pins. This minimizes stray 
+capacitance.
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+23
+Product Folder Links: bq32000
+
+
+PDF PAGE 24
+8.3.2 Layout Example
+OSCI
+OSCO
+VBACK
+GND
+VCC
+SCL
+SDA
+____
+IRQ
+1 µF
+4.7 kΩ
+0.22F
+4.7 kΩ
+4.7 kΩ
+Figure 8-4. Recommended PCB Layout
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+www.ti.com
+24
+Submit Document Feedback
+Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: bq32000
+
+
+PDF PAGE 25
+9 Device and Documentation Support
+9.1 Device Support
+9.2 Community Resources
+9.3 Trademarks
+All trademarks are the property of their respective owners.
+10 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision E (August 2015) to Revision F (January 2026)
+Page
+•
+Updated the document to replace legacy terminology to "Leader" and "Follower"............................................ 1
+Changes from Revision D (November 2011) to Revision E (August 2015)
+Page
+•
+Added ESD Ratings table, Feature Description section, Device Functional Modes, Application and 
+Implementation section, Power Supply Recommendations section, Layout section, Device and 
+Documentation Support section, and Mechanical, Packaging, and Orderable Information section. .................1
+•
+Added Storage Temperature to Absolute Maximum Ratings..............................................................................4
+•
+Changed VCC = 0 to VCC needs a pulse........................................................................................................... 5
+Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most 
+current data available for the designated devices. This data is subject to change without notice and revision of 
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+www.ti.com
+bq32000
+SLUS900F – DECEMBER 2008 – REVISED AUGUST 2026
+Copyright © 2026 Texas Instruments Incorporated
+Submit Document Feedback
+25
+Product Folder Links: bq32000
+
+
+PDF PAGE 26
+PACKAGE OPTION ADDENDUM
+www.ti.com
+12-Jan-2026
+PACKAGING INFORMATION
+Orderable part number
+Status
+(1)
+Material type
+(2)
+Package | Pins
+Package qty | Carrier
+RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C)
+Part marking
+(6)
+BQ32000D
+Active
+Production
+SOIC (D) | 8
+75 | TUBE
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+32000
+BQ32000D.A
+Active
+Production
+SOIC (D) | 8
+75 | TUBE
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+32000
+BQ32000DR
+Active
+Production
+SOIC (D) | 8
+2500 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+32000
+BQ32000DR.A
+Active
+Production
+SOIC (D) | 8
+2500 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+32000
+BQ32000DRG4
+Active
+Production
+SOIC (D) | 8
+2500 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+32000
+BQ32000DRG4.A
+Active
+Production
+SOIC (D) | 8
+2500 | LARGE T&R
+Yes
+NIPDAU
+Level-1-260C-UNLIM
+-40 to 85
+32000
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+Addendum-Page 1
+
+
+PDF PAGE 27
+PACKAGE OPTION ADDENDUM
+www.ti.com
+12-Jan-2026
+ 
+Addendum-Page 2
+
+
+PDF PAGE 28
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0
+B0
+K0
+W
+Dimension designed to accommodate the component length
+Dimension designed to accommodate the component thickness
+Overall width of the carrier tape
+Pitch between successive cavity centers
+Dimension designed to accommodate the component width
+TAPE DIMENSIONS
+K0
+ P1
+B0 W
+A0
+Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket Quadrants
+Sprocket Holes
+Q1
+Q1
+Q2
+Q2
+Q3
+Q3
+Q4
+Q4
+User Direction of Feed
+P1
+Reel
+Diameter
+ 
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+BQ32000DR
+SOIC
+D
+8
+2500
+330.0
+12.4
+6.4
+5.2
+2.1
+8.0
+12.0
+Q1
+BQ32000DRG4
+SOIC
+D
+8
+2500
+330.0
+12.4
+6.4
+5.2
+2.1
+8.0
+12.0
+Q1
+Pack Materials-Page 1
+
+
+PDF PAGE 29
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W
+L
+H
+ 
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+BQ32000DR
+SOIC
+D
+8
+2500
+353.0
+353.0
+32.0
+BQ32000DRG4
+SOIC
+D
+8
+2500
+353.0
+353.0
+32.0
+Pack Materials-Page 2
+
+
+PDF PAGE 30
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+10-Aug-2026
+TUBE
+ 
+ 
+L - Tube length
+T - Tube  
+height
+W - Tube  
+width
+B - Alignment groove width
+ 
+ 
+*All dimensions are nominal
+Device
+Package Name
+Package Type
+Pins
+SPQ
+L (mm)
+W (mm)
+T (µm)
+B (mm)
+BQ32000D
+D
+SOIC
+8
+75
+506.6
+8
+3940
+4.32
+BQ32000D.A
+D
+SOIC
+8
+75
+506.6
+8
+3940
+4.32
+Pack Materials-Page 3
+
+
+PDF PAGE 31
+www.ti.com
+PACKAGE OUTLINE
+C
+.228-.244 TYP
+[5.80-6.19]
+.069 MAX
+[1.75]     
+6X .050
+[1.27]
+8X .012-.020
+     [0.31-0.51]
+2X
+.150
+[3.81]
+.005-.010 TYP
+[0.13-0.25]
+0 - 8
+.004-.010
+[0.11-0.25]
+.010
+[0.25]
+.016-.050
+[0.41-1.27]
+4X (0 -15 )
+A
+.189-.197
+[4.81-5.00]
+NOTE 3
+B
+.150-.157
+[3.81-3.98]
+NOTE 4
+4X (0 -15 )
+(.041)
+[1.04]
+SOIC - 1.75 mm max height
+D0008A
+SMALL OUTLINE INTEGRATED CIRCUIT
+4214825/C   02/2019
+NOTES: 
+ 
+1. Linear dimensions are in inches [millimeters]. Dimensions in parenthesis are for reference only. Controlling dimensions are in inches.
+    Dimensioning and tolerancing per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+    exceed .006 [0.15] per side. 
+4. This dimension does not include interlead flash.
+5. Reference JEDEC registration MS-012, variation AA.
+ 
+1
+8
+.010 [0.25]
+C A B
+5
+4
+PIN 1 ID AREA
+SEATING PLANE
+.004 [0.1] C
+ SEE DETAIL A
+DETAIL A
+TYPICAL
+SCALE  2.800
+
+
+PDF PAGE 32
+www.ti.com
+EXAMPLE BOARD LAYOUT
+.0028 MAX
+[0.07]
+ALL AROUND
+.0028 MIN
+[0.07]
+ALL AROUND
+ 
+(.213)
+[5.4]
+6X (.050 )
+[1.27]
+8X (.061 )
+[1.55]
+8X (.024)
+[0.6]
+(R.002 ) TYP
+[0.05]
+SOIC - 1.75 mm max height
+D0008A
+SMALL OUTLINE INTEGRATED CIRCUIT
+4214825/C   02/2019
+NOTES: (continued)
+ 
+6. Publication IPC-7351 may have alternate designs. 
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+ 
+METAL
+SOLDER MASK
+OPENING
+NON SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+EXPOSED
+METAL
+OPENING
+SOLDER MASK
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+EXPOSED
+METAL
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:8X
+SYMM
+1
+4
+5
+8
+SEE
+DETAILS
+SYMM
+
+
+PDF PAGE 33
+www.ti.com
+EXAMPLE STENCIL DESIGN
+8X (.061 )
+[1.55]
+8X (.024)
+[0.6]
+6X (.050 )
+[1.27]
+(.213)
+[5.4]
+(R.002 ) TYP
+[0.05]
+SOIC - 1.75 mm max height
+D0008A
+SMALL OUTLINE INTEGRATED CIRCUIT
+4214825/C   02/2019
+NOTES: (continued)
+ 
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+    design recommendations.   
+9. Board assembly site may have different recommendations for stencil design.
+ 
+SOLDER PASTE EXAMPLE
+BASED ON .005 INCH [0.125 MM] THICK STENCIL
+SCALE:8X
+SYMM
+SYMM
+1
+4
+5
+8
+
+
+PDF PAGE 34
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

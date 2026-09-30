@@ -1,0 +1,715 @@
+{
+  "placements": [
+    {
+      "ref": "U4",
+      "value": "BQ32000",
+      "before_xy": [
+        209.175101,
+        97.79
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        214.0,
+        99.0
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "fee4aab2-2145-45e4-b657-bc15a74495c9",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "Net-(U4-OSCO)"
+        ],
+        [
+          "3",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "4",
+          "GND"
+        ],
+        [
+          "5",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "6",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "7",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "8",
+          "+3.3V"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "Net-(U4-OSCO)"
+        ],
+        [
+          "3",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "4",
+          "GND"
+        ],
+        [
+          "5",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "6",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "7",
+          "/MCU/RTC_INT"
+        ],
+        [
+          "8",
+          "+3.3V"
+        ]
+      ],
+      "before_bbox": [
+        206.450101,
+        94.065,
+        212.035101,
+        101.515
+      ],
+      "after_bbox": [
+        210.275,
+        96.14,
+        217.725,
+        101.725
+      ]
+    },
+    {
+      "ref": "Y1",
+      "value": "32.768kHz",
+      "before_xy": [
+        233.615101,
+        76.5
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        223.5,
+        97.725
+      ],
+      "after_angle": -90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "4df5b8b2-3508-490b-8cf7-54fb3ae3b155",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "Net-(U4-OSCO)"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U4-OSCI)"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "Net-(U4-OSCO)"
+        ]
+      ],
+      "before_bbox": [
+        230.540101,
+        71.975,
+        236.690101,
+        81.025
+      ],
+      "after_bbox": [
+        218.975,
+        94.65,
+        228.025,
+        100.8
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "1u0",
+      "before_xy": [
+        215.455101,
+        95.0
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        211.5,
+        94.5
+      ],
+      "after_angle": 90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "cafe6e1f-2580-47f1-9382-0d113d5920a9",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        214.970101,
+        94.065,
+        215.940101,
+        95.935
+      ],
+      "after_bbox": [
+        211.015,
+        93.565,
+        211.985,
+        95.435
+      ]
+    },
+    {
+      "ref": "C33",
+      "value": "1F5",
+      "before_xy": [
+        207.975102,
+        82.5
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        207.98,
+        82.5
+      ],
+      "after_angle": 180.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "15bd2310-855b-49b3-bf66-c9f8589b2d1c",
+      "before_pads": [
+        [
+          "1",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "Net-(U4-VBACK)"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        203.715102,
+        71.975,
+        229.500102,
+        93.025
+      ],
+      "after_bbox": [
+        203.72,
+        71.975,
+        229.505,
+        93.025
+      ]
+    },
+    {
+      "ref": "R24",
+      "value": "4k7",
+      "before_xy": [
+        213.435101,
+        95.02
+      ],
+      "before_angle": -90.0,
+      "after_xy": [
+        208.5,
+        97.7
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "RTC BQ32000 + 1F5 süper kapasitör",
+      "uuid": "27cb90b8-adf0-4a55-9c4d-f400fc2726c3",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/RTC_INT"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "/MCU/RTC_INT"
+        ]
+      ],
+      "before_bbox": [
+        212.940101,
+        94.065,
+        213.930101,
+        95.975
+      ],
+      "after_bbox": [
+        207.545,
+        97.205,
+        209.455,
+        98.195
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "U4.1",
+      "a_net": "Net-(U4-OSCI)",
+      "a_xy": [
+        216.475,
+        97.095
+      ],
+      "b": "Y1.1",
+      "b_net": "Net-(U4-OSCI)",
+      "b_xy": [
+        220.75,
+        96.125
+      ],
+      "desc": "OSCI crystal drive input (Net-(U4-OSCI))",
+      "straight_mm": 4.3837
+    },
+    {
+      "a": "U4.2",
+      "a_net": "Net-(U4-OSCO)",
+      "a_xy": [
+        216.475,
+        98.365
+      ],
+      "b": "Y1.4",
+      "b_net": "Net-(U4-OSCO)",
+      "b_xy": [
+        220.75,
+        99.325
+      ],
+      "desc": "OSCO crystal drive output (Net-(U4-OSCO))",
+      "straight_mm": 4.3815
+    },
+    {
+      "a": "U4.8",
+      "a_net": "+3.3V",
+      "a_xy": [
+        211.525,
+        97.095
+      ],
+      "b": "C9.1",
+      "b_net": "+3.3V",
+      "b_xy": [
+        211.5,
+        94.98
+      ],
+      "desc": "+3.3V power supply to C9.1 bypass capacitor",
+      "straight_mm": 2.1151
+    },
+    {
+      "a": "U4.4",
+      "a_net": "GND",
+      "a_xy": [
+        216.475,
+        100.905
+      ],
+      "b": "C9.2",
+      "b_net": "GND",
+      "b_xy": [
+        211.5,
+        94.02
+      ],
+      "desc": "GND return loop from C9.2 to U4.4 (GND)",
+      "straight_mm": 8.4943
+    },
+    {
+      "a": "U4.7",
+      "a_net": "/MCU/RTC_INT",
+      "a_xy": [
+        211.525,
+        98.365
+      ],
+      "b": "R24.2",
+      "b_net": "/MCU/RTC_INT",
+      "b_xy": [
+        209.01,
+        97.7
+      ],
+      "desc": "RTC_INT open-drain IRQ output to R24.2 pull-up",
+      "straight_mm": 2.6014
+    },
+    {
+      "a": "U4.8",
+      "a_net": "+3.3V",
+      "a_xy": [
+        211.525,
+        97.095
+      ],
+      "b": "R24.1",
+      "b_net": "+3.3V",
+      "b_xy": [
+        207.99,
+        97.7
+      ],
+      "desc": "+3.3V rail to R24.1 pull-up supply",
+      "straight_mm": 3.5864
+    },
+    {
+      "a": "U4.3",
+      "a_net": "Net-(U4-VBACK)",
+      "a_xy": [
+        216.475,
+        99.635
+      ],
+      "b": "C33.1",
+      "b_net": "Net-(U4-VBACK)",
+      "b_xy": [
+        207.98,
+        82.5
+      ],
+      "desc": "VBACK backup supply to C33.1 (supercap positive)",
+      "straight_mm": 19.1252
+    },
+    {
+      "a": "C33.2",
+      "a_net": "GND",
+      "a_xy": [
+        227.98,
+        82.5
+      ],
+      "b": "U4.4",
+      "b_net": "GND",
+      "b_xy": [
+        216.475,
+        100.905
+      ],
+      "desc": "GND return from C33.2 (supercap negative) to U4.4",
+      "straight_mm": 21.705
+    },
+    {
+      "a": "Y1.2",
+      "a_net": "GND",
+      "a_xy": [
+        226.25,
+        96.125
+      ],
+      "b": "U4.4",
+      "b_net": "GND",
+      "b_xy": [
+        216.475,
+        100.905
+      ],
+      "desc": "GND crystal shield pad 2 to U4.4 (GND)",
+      "straight_mm": 10.8811
+    },
+    {
+      "a": "Y1.3",
+      "a_net": "GND",
+      "a_xy": [
+        226.25,
+        99.325
+      ],
+      "b": "U4.4",
+      "b_net": "GND",
+      "b_xy": [
+        216.475,
+        100.905
+      ],
+      "desc": "GND crystal shield pad 3 to U4.4 (GND)",
+      "straight_mm": 9.9019
+    }
+  ],
+  "oscillator_symmetry": {
+    "d_osci": 4.3837,
+    "d_osco": 4.3815,
+    "difference_mm": 0.0022,
+    "evaluation": "Near-perfect differential symmetry (difference = 0.003 mm / 3 um) with zero trace crossover"
+  },
+  "clearances": [
+    {
+      "pair": "U4-Y1",
+      "overlap": false,
+      "clearance_mm": 1.25
+    },
+    {
+      "pair": "U4-C9",
+      "overlap": false,
+      "clearance_mm": 0.705
+    },
+    {
+      "pair": "U4-C33",
+      "overlap": false,
+      "clearance_mm": 3.115
+    },
+    {
+      "pair": "U4-R24",
+      "overlap": false,
+      "clearance_mm": 0.82
+    },
+    {
+      "pair": "Y1-C9",
+      "overlap": false,
+      "clearance_mm": 6.99
+    },
+    {
+      "pair": "Y1-C33",
+      "overlap": false,
+      "clearance_mm": 1.625
+    },
+    {
+      "pair": "Y1-R24",
+      "overlap": false,
+      "clearance_mm": 9.52
+    },
+    {
+      "pair": "C9-C33",
+      "overlap": false,
+      "clearance_mm": 0.54
+    },
+    {
+      "pair": "C9-R24",
+      "overlap": false,
+      "clearance_mm": 2.3593
+    },
+    {
+      "pair": "C33-R24",
+      "overlap": false,
+      "clearance_mm": 4.18
+    }
+  ],
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "circuit_summary": {
+    "group": "RTC BQ32000 + 1F5 süper kapasitör",
+    "layer": "B.Cu (all 5 footprints)",
+    "rtc_ic": "BQ32000 (U4) SOIC-8 placed at (214.0, 99.0) rot 180°",
+    "crystal": "ABS25 32.768kHz (Y1) placed directly adjacent at (223.5, 97.725) rot 270°; short parallel tracks (4.38 mm)",
+    "bypass": "C9 (1uF 0402 low-ESR ceramic) placed directly at U4.8 VCC pin (2.12 mm)",
+    "pullup": "R24 (4.7k 0402 IRQ pull-up) placed directly between +3.3V and RTC_INT pin (2.60 mm)",
+    "backup": "C33 (1.5F 5.5V Korchip DCL H-Type coin supercap) on B.Cu at (207.98, 82.50) rot 180°",
+    "thermal_isolation": "Isolated >19.7 mm away from 2W discharge resistor R67 and switching power stages"
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "violations_before_total": 145,
+  "violations_after_total": 145,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

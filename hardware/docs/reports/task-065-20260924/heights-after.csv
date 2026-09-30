@@ -1,0 +1,144 @@
+﻿ref,value,group,side,height_mm,model_zmin_mm,top_projection_mm,model_xy_bbox,lcd_overlap,models,model_status
+C1,100n,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.5,0.0,0,"[62.53, 155.79, 63.53, 156.29]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C10,22u,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,1.25,0.0,0,"[108.1321, 162.38, 109.3821, 164.38]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step'],measured
+C11,100n,INA226 OLCUM + PANEL CIKISI,B.Cu,0.5,0.0,0,"[162.8843, 61.22, 163.8843, 61.72]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C12,4u7,AOZ1284 3.3V BUCK,B.Cu,2.5,0.0,0,"[91.655, 54.31, 94.155, 57.51]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C13,4u7,AOZ1284 3.3V BUCK,B.Cu,2.5,0.0,0,"[87.365, 54.31, 89.865, 57.51]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C14,100n,AOZ1284 3.3V BUCK,B.Cu,0.5,0.0,0,"[94.765, 60.51, 95.265, 61.51]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C15,47u,AOZ1284 3.3V BUCK,B.Cu,5.8,0.0,0,"[79.355, 43.4683, 87.9608, 52.0717]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step'],measured
+C16,47u,AOZ1284 3.3V BUCK,B.Cu,2.5,0.0,0,"[83.075, 54.31, 85.575, 57.51]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C17,100n,AOZ1284 3.3V BUCK,B.Cu,0.5,0.0,0,"[101.585, 63.7, 102.585, 64.2]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C18,10n,AOZ1284 3.3V BUCK,B.Cu,0.5,0.0,0,"[98.675, 63.7, 99.675, 64.2]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C19,15n,AOZ1284 3.3V BUCK,B.Cu,0.5,0.0,0,"[92.755, 60.51, 93.255, 61.51]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C2,100n,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.5,0.0,0,"[57.05, 152.94, 57.55, 153.94]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C20,100n,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,0.5,0.0,0,"[117.2797, 161.89, 118.2797, 162.39]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C21,100n,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,0.5,0.0,0,"[120.1897, 161.89, 121.1897, 162.39]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C23,47n,TPS55340 PRE-BOOST,B.Cu,0.5,0.0,0,"[66.44, 63.68, 67.44, 64.18]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C24,100n,TPS55340 PRE-BOOST,B.Cu,0.5,0.0,0,"[63.53, 63.68, 64.53, 64.18]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C25,4u7,TPS55340 PRE-BOOST,B.Cu,2.5,0.0,0,"[52.87, 52.94, 56.07, 55.44]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C26,100n,TPS55340 PRE-BOOST,B.Cu,0.5,0.0,0,"[60.62, 63.68, 61.62, 64.18]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C27,4u7,TPS55340 PRE-BOOST,B.Cu,2.5,0.0,0,"[69.85, 59.53, 73.05, 62.03]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C28,4u7,TPS55340 PRE-BOOST,B.Cu,2.5,0.0,0,"[64.16, 59.53, 67.36, 62.03]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C29,47u,TPS55340 PRE-BOOST,B.Cu,5.8,0.0,0,"[54.8542, 42.9483, 63.46, 51.5517]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step'],measured
+C3,2u2,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,1.25,0.0,0,"[51.02, 152.885, 53.02, 154.135]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step'],measured
+C30,22n,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.5,0.0,0.5,"[113.44, 63.68, 114.44, 64.18]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C31,220n,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.8,0.0,0.8,"[113.6, 60.41, 115.2, 61.21]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step'],measured
+C32,100n,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.5,0.0,0.5,"[116.35, 63.68, 117.35, 64.18]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C33,1F5,RTC BQ32000 + 1F5 süper kapasitör,B.Cu,6.5,-3.5,1.9,"[207.8751, 73.0, 228.0751, 92.0]",False,['${KIPRJMOD}/libraries/Power_Output_Custom.3dshapes/Korchip_DCL_H-Type_D19.0mm_P20.00mm_Horizontal.step'],measured
+C34,1u0,TFT CONNECTOR J3,F.Cu,0.5,0.0,0.5,"[28.1486, 107.98, 29.1486, 108.48]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C35,100n,INA226 OLCUM + PANEL CIKISI,B.Cu,0.5,0.0,0,"[165.7943, 61.22, 166.7943, 61.72]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C4,1u0,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.5,0.0,0,"[65.44, 155.79, 66.44, 156.29]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C5,22u,ESP32-C6-MINI-1-H4,B.Cu,1.25,0.0,0,"[155.47, 116.645, 157.47, 117.895]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step'],measured
+C6,100n,ESP32-C6-MINI-1-H4,B.Cu,0.5,0.0,0,"[175.89, 116.5, 176.89, 117.0]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C7,1u0,ESP32-C6-MINI-1-H4,B.Cu,0.5,0.0,0,"[173.68, 116.7, 174.18, 117.7]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+C8,4u7,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,2.5,0.0,0,"[50.67, 147.54, 53.17, 150.74]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step'],measured
+C9,1u0,RTC BQ32000 + 1F5 süper kapasitör,B.Cu,0.5,0.0,0,"[215.2051, 94.5, 215.7051, 95.5]",False,['${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step'],measured
+D1,LED,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.5,-0.0,0,"[59.28, 152.75, 60.28, 153.25]",False,['${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.step'],measured
+D10,BZT52C12,CIKIS DESARJI (R59 yerine aktif),F.Cu,1.26,-0.0,1.26,"[186.15, 61.36, 189.95, 62.96]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step'],measured
+D2,SS2060FL,AOZ1284 3.3V BUCK,B.Cu,1.1,0.0,0,"[99.045, 60.45, 102.545, 62.05]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step'],measured
+D3,SMBJ30A,USB-C GIRIS,B.Cu,2.15,-0.0,0,"[28.9, 72.475, 34.2, 76.025]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step'],measured
+D4,SX36,TPS55340 PRE-BOOST,B.Cu,2.22,-0.0,0,"[58.86, 52.99, 63.86, 55.69]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step'],measured
+D5,BAS16H,TPS55340 PRE-BOOST,B.Cu,1.11,-0.0,0,"[62.77, 56.975, 65.27, 58.225]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step'],measured
+D6,BZT52C12,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,1.26,-0.0,1.26,"[107.58, 60.43, 111.38, 62.03]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step'],measured
+D7,SMBJ30A,INA226 OLCUM + PANEL CIKISI,B.Cu,2.15,-0.0,0,"[149.2543, 55.895, 154.5543, 59.445]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step'],measured
+D8,SMF30A,USB-C GIRIS,B.Cu,1.1,0.0,0,"[36.09, 84.08, 39.59, 85.68]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step'],measured
+D9,SMF30A,USB-C GIRIS,B.Cu,1.1,0.0,0,"[30.6, 84.08, 34.1, 85.68]",False,['${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step'],measured
+H1,M3,,F.Cu,0,0,0,"[50.825, 70.005, 57.775, 76.955]",False,[],bare pad / mounting hole
+H2,M3,,F.Cu,0,0,0,"[142.225, 70.005, 149.175, 76.955]",False,[],bare pad / mounting hole
+H3,M3,,F.Cu,0,0,0,"[50.825, 123.045, 57.775, 129.995]",False,[],bare pad / mounting hole
+H4,M3,,F.Cu,0,0,0,"[142.225, 123.045, 149.175, 129.995]",False,[],bare pad / mounting hole
+J3,TFT032B018,,F.Cu,2.0,0.0,2.0,"[93.45, 100.03, 98.75, 118.57]",True,['${KIPRJMOD}/libraries/Connector_FPC_Custom.3dshapes/KLS_L-KLS1-242I-2.0-30_1x30-2MP_P0.50mm_Horizontal.step'],measured
+J4,SolderWire-1.5sqmm,INA226 OLCUM + PANEL CIKISI,B.Cu,10.0,-1.8,0.2,"[153.5443, 48.57, 165.2443, 52.47]",False,['${KIPRJMOD}/libraries/Generic_Custom.3dshapes/SolderWire-1.5sqmm_1x02_P7.8mm_D1.7mm_OD3.9mm.step'],measured
+J7,USB_C_Receptacle_USB2.0_16P,USB-C GIRIS,B.Cu,3.31,-0.95,0,"[36.945, 72.85, 44.725, 81.79]",False,['${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step'],measured
+J8,2-CH UART TO ETH,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,17.5,-6.0,4.4,"[156.4371, 138.34, 213.8371, 160.34]",False,['${KIPRJMOD}/libraries/Module_Custom.3dshapes/Waveshare_2-CH_UART_TO_ETH.step'],measured
+J9,ENCODER CABLE,,F.Cu,10.0,-1.8,10.0,"[57.15, 90.75, 58.85, 109.25]",False,['${KIPRJMOD}/libraries/Generic_Custom.3dshapes/SolderWire-0.25sqmm_1x05_P4.2mm_D0.65mm_OD1.7mm.step'],measured
+L1,22u,AOZ1284 3.3V BUCK,B.Cu,5.0,0.0,0,"[94.945, 44.47, 102.045, 52.27]",False,['${KIPRJMOD}/libraries/Inductor_Custom.3dshapes/L_CoreMaster_FPI0705_7.8x7.0mm_H5.0.step'],measured
+L3,6u8,TPS55340 PRE-BOOST,B.Cu,4.5,0.0,0,"[65.85, 43.95, 73.25, 51.25]",False,['${KIPRJMOD}/libraries/Generic_Custom.3dshapes/L_7.3x7.3_H4.5.step'],measured
+Q1,BSS138P,I2C SEVIYE DONUSTURUCU 5V <-> 3.3V,B.Cu,1.2,0.0,0,"[206.6751, 108.76, 209.6751, 111.26]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step'],measured
+Q2,BSS138P,I2C SEVIYE DONUSTURUCU 5V <-> 3.3V,B.Cu,1.2,0.0,0,"[211.1651, 108.76, 214.1651, 111.26]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step'],measured
+Q3,SQJB60EP,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,1.08,0.0,0,"[56.07, 139.015, 62.22, 143.915]",False,['${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step'],measured
+Q4,BSS138P,CIKIS DESARJI (R59 yerine aktif),B.Cu,1.2,0.0,0,"[189.7, 56.74, 192.7, 59.24]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step'],measured
+Q5,SQJB60EP,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,1.08,0.0,1.08,"[108.055, 51.965, 112.955, 58.115]",False,['${KIPRJMOD}/libraries/Package_SO_Custom.3dshapes/Vishay_PowerPAK_SO-8L_Dual.step'],measured
+Q6,BSS138P,CIKIS DESARJI (R59 yerine aktif),F.Cu,1.2,0.0,1.2,"[181.43, 61.21, 183.93, 64.21]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step'],measured
+Q7,IRLML6344,TFT BACKLIGHT (3.3V + PWM),F.Cu,1.2,0.0,1.2,"[18.8186, 95.95, 21.3186, 98.95]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step'],measured
+Q8,TSM3443CX6,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,1.55,0.0,0,"[103.2371, 161.93, 106.0371, 164.83]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step'],measured
+R1,10k,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[159.48, 116.72, 159.98, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R10,10k,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[161.51, 116.72, 162.01, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R11,5m0,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.6,0.0,0,"[50.65, 138.77, 53.85, 145.07]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step'],measured
+R12,6k2,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[62.23, 152.75, 63.23, 153.25]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R13,100R,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[65.18, 152.75, 66.18, 153.25]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R14,2k2,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[68.13, 152.75, 69.13, 153.25]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R15,22R,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[163.54, 116.72, 164.04, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R16,10k,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[165.57, 116.72, 166.07, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R17,100k,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,0.35,-0.0,0,"[114.3497, 161.9, 115.3497, 162.4]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R2,22R,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[167.6, 116.72, 168.1, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R21,100k,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[71.08, 152.75, 72.08, 153.25]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R24,4k7,RTC BQ32000 + 1F5 süper kapasitör,B.Cu,0.35,-0.0,0,"[213.1851, 94.52, 213.6851, 95.52]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R27,10k,INA226 OLCUM + PANEL CIKISI,B.Cu,0.35,-0.0,0,"[153.6643, 61.44, 154.1643, 62.44]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R28,100R,TFT BACKLIGHT (3.3V + PWM),F.Cu,0.35,-0.0,0.35,"[18.5686, 100.46, 19.5686, 100.96]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R29,100k,TFT BACKLIGHT (3.3V + PWM),F.Cu,0.35,-0.0,0.35,"[21.5186, 100.46, 22.5186, 100.96]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R3,22R,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[169.63, 116.72, 170.13, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R34,10k,ROTARY ENCODER,B.Cu,0.35,-0.0,0,"[40.45, 115.71, 40.95, 116.71]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R35,10k,ROTARY ENCODER,B.Cu,0.35,-0.0,0,"[42.48, 115.71, 42.98, 116.71]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R36,10k,ROTARY ENCODER,B.Cu,0.35,-0.0,0,"[44.51, 115.71, 45.01, 116.71]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R37,10k,ESP32-C6-MINI-1-H4,B.Cu,0.35,-0.0,0,"[171.66, 116.72, 172.16, 117.72]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R38,100k,AOZ1284 3.3V BUCK,B.Cu,0.35,-0.0,0,"[90.025, 60.32, 91.025, 60.82]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R39,10k2,AOZ1284 3.3V BUCK,B.Cu,0.35,-0.0,0,"[87.075, 60.32, 88.075, 60.82]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R4,4k7,I2C SEVIYE DONUSTURUCU 5V <-> 3.3V,B.Cu,0.35,-0.0,0,"[215.6751, 108.51, 216.1751, 109.51]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R40,3k24,AOZ1284 3.3V BUCK,B.Cu,0.35,-0.0,0,"[84.125, 60.32, 85.125, 60.82]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R41,51k,AOZ1284 3.3V BUCK,B.Cu,0.35,-0.0,0,"[96.785, 60.53, 97.285, 61.53]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R43,4k7,AOZ1284 3.3V BUCK,B.Cu,0.6,0.0,0,"[89.375, 44.9, 92.575, 51.2]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step'],measured
+R47,78k7,TPS55340 PRE-BOOST,B.Cu,0.35,-0.0,0,"[56.65, 59.4, 57.65, 59.9]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R48,30k1,TPS55340 PRE-BOOST,B.Cu,0.35,-0.0,0,"[53.7, 59.4, 54.7, 59.9]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R49,9k76,TPS55340 PRE-BOOST,B.Cu,0.35,-0.0,0,"[50.75, 59.4, 51.75, 59.9]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R5,4k7,I2C SEVIYE DONUSTURUCU 5V <-> 3.3V,B.Cu,0.35,-0.0,0,"[206.6951, 113.46, 207.1951, 114.46]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R50,2k87,AOZ1284 3.3V BUCK,B.Cu,0.35,-0.0,0,"[81.175, 60.32, 82.175, 60.82]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R51,9k76,AOZ1284 3.3V BUCK,B.Cu,0.35,-0.0,0,"[78.225, 60.32, 79.225, 60.82]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R52,2k0,TPS55340 PRE-BOOST,B.Cu,0.35,-0.0,0,"[72.32, 63.69, 73.32, 64.19]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R53,100k,TPS55340 PRE-BOOST,B.Cu,0.35,-0.0,0,"[69.37, 63.69, 70.37, 64.19]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R54,1k0,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.35,-0.0,0.35,"[117.4, 60.3, 118.4, 60.8]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R55,237k,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.35,-0.0,0.35,"[120.35, 60.3, 121.35, 60.8]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R56,10k,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.35,-0.0,0.35,"[107.56, 63.69, 108.56, 64.19]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R58,100k,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.35,-0.0,0.35,"[110.51, 63.69, 111.51, 64.19]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R59,100k,INA226 OLCUM + PANEL CIKISI,B.Cu,0.45,-0.0,0,"[156.1543, 61.34, 157.7543, 62.14]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step'],measured
+R6,4k7,I2C SEVIYE DONUSTURUCU 5V <-> 3.3V,B.Cu,0.35,-0.0,0,"[208.7251, 113.46, 209.2251, 114.46]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R60,5R6,TFT BACKLIGHT (3.3V + PWM),F.Cu,0.45,-0.0,0.45,"[23.7686, 96.1, 25.7686, 97.3]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step'],measured
+R61,4k7,INA226 OLCUM + PANEL CIKISI,B.Cu,0.35,-0.0,0,"[159.9543, 61.23, 160.9543, 61.73]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R62,5k1,USB-C GIRIS,B.Cu,0.35,-0.0,0,"[27.63, 83.95, 28.63, 84.45]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R63,5k1,USB-C GIRIS,B.Cu,0.35,-0.0,0,"[43.8, 88.44, 44.8, 88.94]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R64,2k0,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[50.75, 155.8, 51.75, 156.3]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R65,10k,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[53.7, 155.8, 54.7, 156.3]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R66,100k,CIKIS DESARJI (R59 yerine aktif),F.Cu,0.45,-0.0,0.45,"[192.17, 61.34, 193.77, 62.14]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step'],measured
+R67,1k,CIKIS DESARJI (R59 yerine aktif),F.Cu,0.6,0.0,0.6,"[181.43, 56.39, 187.73, 59.59]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step'],measured
+R7,4k7,I2C SEVIYE DONUSTURUCU 5V <-> 3.3V,B.Cu,0.35,-0.0,0,"[210.7551, 113.46, 211.2551, 114.46]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R8,10k,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[56.65, 155.8, 57.65, 156.3]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+R9,10k,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[59.6, 155.8, 60.6, 156.3]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+RShunt1,5m0,INA226 OLCUM + PANEL CIKISI,B.Cu,0.6,0.0,0,"[157.3243, 55.75, 163.6243, 58.95]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step'],measured
+SW1,BOOT / PTS810,ESP32-C6-MINI-1-H4,B.Cu,2.5,-0.0,0,"[187.96, 72.55, 191.16, 77.15]",False,['${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS810.step'],measured
+SW2,RESET / PTS810,ESP32-C6-MINI-1-H4,B.Cu,2.5,-0.0,0,"[192.75, 72.55, 195.95, 77.15]",False,['${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS810.step'],measured
+TH1,10k NTC,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.35,-0.0,0,"[55.03, 152.96, 55.53, 153.96]",False,['${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step'],measured
+TP1,TestPoint,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0,0,0,"[54.5876, 146.8163, 56.6376, 148.8663]",False,[],bare pad / mounting hole
+TP10,TestPoint,ESP32-C6-MINI-1-H4,B.Cu,0,0,0,"[197.2676, 71.9763, 199.3176, 74.0263]",False,[],bare pad / mounting hole
+TP11,TestPoint,TEST NOKTALARI,F.Cu,0,0,0,"[206.4527, 121.4563, 208.5027, 123.5063]",False,[],bare pad / mounting hole
+TP12,TestPoint,TEST NOKTALARI,F.Cu,0,0,0,"[209.5452, 121.4563, 211.5952, 123.5063]",False,[],bare pad / mounting hole
+TP13,TestPoint,TEST NOKTALARI,F.Cu,0,0,0,"[212.6378, 121.4563, 214.6878, 123.5063]",False,[],bare pad / mounting hole
+TP14,TestPoint,ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI,B.Cu,0,0,0,"[110.8047, 161.6563, 112.8547, 163.7063]",False,[],bare pad / mounting hole
+TP2,TestPoint,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0,0,0,"[57.6801, 146.8163, 59.7301, 148.8663]",False,[],bare pad / mounting hole
+TP3,TestPoint,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0,0,0,"[60.7727, 146.8163, 62.8227, 148.8663]",False,[],bare pad / mounting hole
+TP4,TestPoint,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0,0,0,"[63.8652, 146.8163, 65.9152, 148.8663]",False,[],bare pad / mounting hole
+TP5,TestPoint,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0,0,0,"[66.9578, 146.8163, 69.0078, 148.8663]",False,[],bare pad / mounting hole
+TP6,TestPoint,TEST NOKTALARI,B.Cu,0,0,0,"[206.4527, 124.5488, 208.5027, 126.5988]",False,[],bare pad / mounting hole
+TP7,TestPoint,TEST NOKTALARI,B.Cu,0,0,0,"[209.5452, 124.5488, 211.5952, 126.5988]",False,[],bare pad / mounting hole
+TP8,TestPoint,TEST NOKTALARI,B.Cu,0,0,0,"[212.6378, 124.5488, 214.6878, 126.5988]",False,[],bare pad / mounting hole
+TP9,TestPoint,ESP32-C6-MINI-1-H4,B.Cu,0,0,0,"[200.3601, 71.9763, 202.4101, 74.0263]",False,[],bare pad / mounting hole
+U1,AP33772SDKZ-13-FA02,AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR,B.Cu,0.76,0.0,0,"[64.815, 138.72, 68.815, 142.72]",False,['${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step'],measured
+U10,USBLC6-2SC6,USB-C GIRIS,B.Cu,1.55,0.0,0,"[41.78, 83.98, 44.58, 86.88]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step'],measured
+U11,TPS55340PWPR,TPS55340 PRE-BOOST,B.Cu,1.2,-0.0,0,"[66.65, 52.84, 73.05, 57.84]",False,['${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm.step'],measured
+U12,LM74801-Q1,LM74801 CIKIS ANAHTARI + IDEAL DIYOT,F.Cu,0.76,0.0,0.76,"[115.6, 51.415, 118.6, 54.415]",False,['${KIPRJMOD}/libraries/Generic_Custom.3dshapes/WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm.step'],measured
+U13,74LVC1G08,INA226 OLCUM + PANEL CIKISI,B.Cu,1.55,0.0,0,"[148.9043, 61.26, 151.7043, 64.16]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step'],measured
+U2,ESP32-C6-MINI-1-H4,ESP32-C6-MINI-1-H4,B.Cu,2.4,0.0,0,"[155.02, 87.0, 171.62, 100.2]",False,['${KIPRJMOD}/libraries/Generic_Custom.3dshapes/ESP32-C6-MINI-1.step'],measured
+U3,INA226,INA226 OLCUM + PANEL CIKISI,B.Cu,1.1,-0.0,0,"[148.5043, 48.75, 151.5043, 53.65]",False,['${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-10_3x3mm_P0.5mm.step'],measured
+U4,BQ32000,RTC BQ32000 + 1F5 süper kapasitör,B.Cu,1.75,-0.0,0,"[206.7251, 94.79, 211.6251, 100.79]",False,['${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step'],measured
+U5,AOZ1284PI,AOZ1284 3.3V BUCK,B.Cu,1.55,-0.0,0,"[96.295, 53.86, 102.295, 58.76]",False,['${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm.step'],measured
+U6,TLV431BQDBZT,AOZ1284 3.3V BUCK,B.Cu,1.2,0.0,0,"[78.435, 54.29, 81.435, 56.79]",False,['${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step'],measured
+Y1,32.768kHz,RTC BQ32000 + 1F5 süper kapasitör,B.Cu,2.5,0.0,0,"[231.7151, 72.5, 235.5151, 80.5]",False,['${KIPRJMOD}/libraries/Generic_Custom.3dshapes/Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm.step'],measured

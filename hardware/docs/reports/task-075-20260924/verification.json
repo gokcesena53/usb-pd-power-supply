@@ -1,0 +1,1023 @@
+{
+  "placements": [
+    {
+      "ref": "RShunt1",
+      "value": "5m0",
+      "before_xy": [
+        160.474288,
+        57.35
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        157.0,
+        56.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "2d71ff63-b8b7-4e15-ad36-18232092898e",
+      "before_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "OUT_POS"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "OUT_POS"
+        ]
+      ],
+      "before_bbox": [
+        156.619288,
+        55.395,
+        164.329288,
+        59.305
+      ],
+      "after_bbox": [
+        153.145,
+        54.545,
+        160.855,
+        58.455
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "INA226",
+      "before_xy": [
+        150.004288,
+        51.199999
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        157.75,
+        51.0
+      ],
+      "after_angle": -90.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "81402291-de1b-4da7-92dd-b010b70386d8",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "INA_ALERT"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "6",
+          "+3.3V"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "OUT_POS"
+        ],
+        [
+          "9",
+          "OUT_POS"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "10",
+          "/USB_PD_CONTROLLER/SW_OUT"
+        ],
+        [
+          "2",
+          "GND"
+        ],
+        [
+          "3",
+          "INA_ALERT"
+        ],
+        [
+          "4",
+          "PD_I2C_SDA_3V3"
+        ],
+        [
+          "5",
+          "PD_I2C_SCL_3V3"
+        ],
+        [
+          "6",
+          "+3.3V"
+        ],
+        [
+          "7",
+          "GND"
+        ],
+        [
+          "8",
+          "OUT_POS"
+        ],
+        [
+          "9",
+          "OUT_POS"
+        ]
+      ],
+      "before_bbox": [
+        148.229288,
+        48.044999,
+        151.804288,
+        54.354999
+      ],
+      "after_bbox": [
+        155.95,
+        47.845,
+        159.525,
+        54.155
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "100n",
+      "before_xy": [
+        163.384288,
+        61.47
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        162.2,
+        53.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "20535293-6cf0-418f-afc7-2790484e89f2",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        162.449288,
+        60.985,
+        164.319288,
+        61.955
+      ],
+      "after_bbox": [
+        161.265,
+        52.515,
+        163.135,
+        53.485
+      ]
+    },
+    {
+      "ref": "R27",
+      "value": "10k",
+      "before_xy": [
+        153.914288,
+        61.94
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        152.5,
+        48.85
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "a87e6f45-e848-48d8-a5f8-34db53e5fe3e",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ]
+      ],
+      "before_bbox": [
+        153.419288,
+        60.985,
+        154.409288,
+        62.895
+      ],
+      "after_bbox": [
+        151.545,
+        48.355,
+        153.455,
+        49.345
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "SolderWire-1.5sqmm",
+      "before_xy": [
+        163.294288,
+        50.519999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        168.0,
+        51.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "d22c07c5-82be-4e20-8fc1-15906f94bd26",
+      "before_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        152.769288,
+        48.044999,
+        166.019288,
+        52.994999
+      ],
+      "after_bbox": [
+        165.275,
+        49.025,
+        178.525,
+        53.975
+      ]
+    },
+    {
+      "ref": "D7",
+      "value": "SMBJ30A",
+      "before_xy": [
+        151.904288,
+        57.67
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        167.0,
+        57.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "b199094b-a051-495a-bab1-3d1d7b640f82",
+      "before_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        148.229288,
+        55.395,
+        155.624288,
+        59.945
+      ],
+      "after_bbox": [
+        163.28,
+        55.225,
+        170.675,
+        59.775
+      ]
+    },
+    {
+      "ref": "R59",
+      "value": "100k",
+      "before_xy": [
+        156.954288,
+        61.739999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        167.0,
+        62.5
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "0b455597-c18b-4fd3-9dc9-2635a11184ce",
+      "before_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "OUT_POS"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        155.449288,
+        60.984999,
+        158.459288,
+        62.494999
+      ],
+      "after_bbox": [
+        165.495,
+        61.745,
+        168.505,
+        63.255
+      ]
+    },
+    {
+      "ref": "U13",
+      "value": "74LVC1G08",
+      "before_xy": [
+        150.304288,
+        62.709999
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        150.0,
+        62.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "a4465aab-9a4c-47a0-8551-9ed10363d361",
+      "before_pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "INA_ALERT"
+        ],
+        [
+          "3",
+          "GND"
+        ],
+        [
+          "4",
+          "/USB_PD_CONTROLLER/SW_EN"
+        ],
+        [
+          "5",
+          "+3.3V"
+        ]
+      ],
+      "before_bbox": [
+        148.229288,
+        60.809999,
+        152.379288,
+        64.434999
+      ],
+      "after_bbox": [
+        147.925,
+        60.275,
+        152.075,
+        63.9
+      ]
+    },
+    {
+      "ref": "R61",
+      "value": "4k7",
+      "before_xy": [
+        160.454288,
+        61.48
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        146.5,
+        62.95
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "3887163f-49cb-427a-934a-e0e03a42893b",
+      "before_pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "OUT_EN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        159.499288,
+        60.985,
+        161.409288,
+        61.975
+      ],
+      "after_bbox": [
+        145.545,
+        62.455,
+        147.455,
+        63.445
+      ]
+    },
+    {
+      "ref": "C35",
+      "value": "100n",
+      "before_xy": [
+        166.294288,
+        61.47
+      ],
+      "before_angle": 180.0,
+      "after_xy": [
+        153.5,
+        62.95
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "INA226 OLCUM + PANEL CIKISI",
+      "uuid": "2bd2a365-3ba5-477b-a4ff-0d8a23ccd542",
+      "before_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "+3.3V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        165.359288,
+        60.985,
+        167.229288,
+        61.955
+      ],
+      "after_bbox": [
+        152.565,
+        62.465,
+        154.435,
+        63.435
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "desc": "Kelvin IN+ (SW_OUT)",
+      "a": "U3.10",
+      "a_net": "/USB_PD_CONTROLLER/SW_OUT",
+      "a_xy": [
+        156.75,
+        53.15
+      ],
+      "b": "RShunt1.1",
+      "b_net": "/USB_PD_CONTROLLER/SW_OUT",
+      "b_xy": [
+        154.0375,
+        56.5
+      ],
+      "straight_mm": 4.3105
+    },
+    {
+      "desc": "Kelvin IN- (OUT_POS)",
+      "a": "U3.9",
+      "a_net": "OUT_POS",
+      "a_xy": [
+        157.25,
+        53.15
+      ],
+      "b": "RShunt1.2",
+      "b_net": "OUT_POS",
+      "b_xy": [
+        159.9625,
+        56.5
+      ],
+      "straight_mm": 4.3105
+    },
+    {
+      "desc": "VBUS voltage sense (OUT_POS)",
+      "a": "U3.8",
+      "a_net": "OUT_POS",
+      "a_xy": [
+        157.75,
+        53.15
+      ],
+      "b": "RShunt1.2",
+      "b_net": "OUT_POS",
+      "b_xy": [
+        159.9625,
+        56.5
+      ],
+      "straight_mm": 4.0147
+    },
+    {
+      "desc": "U3 VS decoupling (+3.3V)",
+      "a": "U3.6",
+      "a_net": "+3.3V",
+      "a_xy": [
+        158.75,
+        53.15
+      ],
+      "b": "C11.1",
+      "b_net": "+3.3V",
+      "b_xy": [
+        161.72,
+        53.0
+      ],
+      "straight_mm": 2.9738
+    },
+    {
+      "desc": "U3 GND decoupling",
+      "a": "U3.7",
+      "a_net": "GND",
+      "a_xy": [
+        158.25,
+        53.15
+      ],
+      "b": "C11.2",
+      "b_net": "GND",
+      "b_xy": [
+        162.68,
+        53.0
+      ],
+      "straight_mm": 4.4325
+    },
+    {
+      "desc": "U13 VCC decoupling (+3.3V)",
+      "a": "U13.5",
+      "a_net": "+3.3V",
+      "a_xy": [
+        151.1375,
+        62.95
+      ],
+      "b": "C35.1",
+      "b_net": "+3.3V",
+      "b_xy": [
+        153.02,
+        62.95
+      ],
+      "straight_mm": 1.8825
+    },
+    {
+      "desc": "U13 GND decoupling",
+      "a": "U13.3",
+      "a_net": "GND",
+      "a_xy": [
+        148.8625,
+        61.05
+      ],
+      "b": "C35.2",
+      "b_net": "GND",
+      "b_xy": [
+        153.98,
+        62.95
+      ],
+      "straight_mm": 5.4588
+    },
+    {
+      "desc": "ALERT pull-up (INA_ALERT)",
+      "a": "U3.3",
+      "a_net": "INA_ALERT",
+      "a_xy": [
+        157.75,
+        48.85
+      ],
+      "b": "R27.2",
+      "b_net": "INA_ALERT",
+      "b_xy": [
+        153.01,
+        48.85
+      ],
+      "straight_mm": 4.74
+    },
+    {
+      "desc": "ALERT to U13 input",
+      "a": "U3.3",
+      "a_net": "INA_ALERT",
+      "a_xy": [
+        157.75,
+        48.85
+      ],
+      "b": "U13.2",
+      "b_net": "INA_ALERT",
+      "b_xy": [
+        148.8625,
+        62.0
+      ],
+      "straight_mm": 15.8717
+    },
+    {
+      "desc": "OUT_EN pull-down",
+      "a": "U13.1",
+      "a_net": "OUT_EN",
+      "a_xy": [
+        148.8625,
+        62.95
+      ],
+      "b": "R61.1",
+      "b_net": "OUT_EN",
+      "b_xy": [
+        145.99,
+        62.95
+      ],
+      "straight_mm": 2.8725
+    },
+    {
+      "desc": "3A Shunt to J4 Pin 1 (OUT_POS)",
+      "a": "RShunt1.2",
+      "a_net": "OUT_POS",
+      "a_xy": [
+        159.9625,
+        56.5
+      ],
+      "b": "J4.1",
+      "b_net": "OUT_POS",
+      "b_xy": [
+        168.0,
+        51.5
+      ],
+      "straight_mm": 9.4658
+    },
+    {
+      "desc": "TVS D7 cathode to J4 Pin 1 (OUT_POS)",
+      "a": "D7.1",
+      "a_net": "OUT_POS",
+      "a_xy": [
+        164.85,
+        57.5
+      ],
+      "b": "J4.1",
+      "b_net": "OUT_POS",
+      "b_xy": [
+        168.0,
+        51.5
+      ],
+      "straight_mm": 6.7766
+    },
+    {
+      "desc": "TVS D7 anode to J4 Pin 2 (GND)",
+      "a": "D7.2",
+      "a_net": "GND",
+      "a_xy": [
+        169.15,
+        57.5
+      ],
+      "b": "J4.2",
+      "b_net": "GND",
+      "b_xy": [
+        175.8,
+        51.5
+      ],
+      "straight_mm": 8.9567
+    },
+    {
+      "desc": "Passive bleed to OUT_POS",
+      "a": "R59.1",
+      "a_net": "OUT_POS",
+      "a_xy": [
+        166.175,
+        62.5
+      ],
+      "b": "J4.1",
+      "b_net": "OUT_POS",
+      "b_xy": [
+        168.0,
+        51.5
+      ],
+      "straight_mm": 11.1504
+    },
+    {
+      "desc": "Passive bleed to GND",
+      "a": "R59.2",
+      "a_net": "GND",
+      "a_xy": [
+        167.825,
+        62.5
+      ],
+      "b": "J4.2",
+      "b_net": "GND",
+      "b_xy": [
+        175.8,
+        51.5
+      ],
+      "straight_mm": 13.5868
+    }
+  ],
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu"
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu"
+    }
+  },
+  "circuit_summary": {
+    "topology": "INA226 Current/Power Monitor + Output Protection & Front-Panel Banana Jacks",
+    "kelvin_sensing": {
+      "shunt_resistor": "RShunt1 (5m0 2512)",
+      "monitor_ic": "U3 (INA226 TSSOP-10)",
+      "in_plus_distance_mm": 4.3105,
+      "in_minus_distance_mm": 4.3105,
+      "symmetry_verified": true
+    },
+    "power_output": {
+      "connector": "J4 (SolderWire-1.5sqmm_1x02_P7.8mm)",
+      "tvs_protection": "D7 (SMBJ30A SMB 30V TVS)",
+      "passive_bleed": "R59 (100k 0603)",
+      "max_continuous_current": "3.0 A"
+    },
+    "protection_logic": {
+      "and_gate": "U13 (74LVC1G08 SOT-23-5)",
+      "alert_pullup": "R27 (10k 0402)",
+      "enable_pulldown": "R61 (4k7 0402)",
+      "output_signal": "SW_EN"
+    }
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "violations_before_total": 145,
+  "violations_after_total": 145,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

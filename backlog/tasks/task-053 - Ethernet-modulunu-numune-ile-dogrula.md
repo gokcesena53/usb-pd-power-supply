@@ -4,13 +4,16 @@ title: Ethernet modulunu numune ile dogrula
 status: Blocked
 assignee: []
 created_date: '2026-09-23 12:09'
-updated_date: '2026-09-23 19:23'
+updated_date: '2026-09-25 08:09'
 labels:
   - sample-eval
 milestone: m-0
 dependencies:
   - TASK-052
   - TASK-060
+references:
+  - design_decisions/output/ETHERNET_ALTI_ALAN_ANALIZI_20260925.md
+  - design_decisions/output/PORT_HIZASI_ENKODER_DUZELTME_20260925.md
 documentation:
   - design_decisions/output/ETHERNET_MODULU_ANALIZI_20260923.md
   - hardware/datasheets/CH9121DS1.PDF
@@ -41,6 +44,7 @@ Olculen akim analizdeki 0,20 A / 0,66 W varsayiminin yerini alacak. Veri sayfasi
 - [ ] #7 Module_Custom:Waveshare_2-CH_UART_TO_ETH footprint'i numuneyle dogrulanmis: 1:1 cikti uzerine modul oturtulmus; mekanik pin (MP) konumu (tahmin kenardan x 4.00, y 1.35) ve RJ45 lehim cikintisinin modul altindan yuksekligi (tahmin ~2.2 mm, ara parca 2.5 mm) olculmus; pin 1 = DIR1 surekliligi CH9121 pin 51 ile dogrulanmis
 - [ ] #8 Ucdan uca SCPI sorgu-yanit gecikmesi ve jitter'i 921600 baud'da olculmus
 - [ ] #9 Tum olcum sonuclari Implementation Notes'a yazilmis ve analiz belgesindeki varsayimlardan sapma varsa belge guncellenmis
+- [ ] #10 TASK-093 Ethernet altı yerleşimi için modül-anakart gerçek minimum ara mesafesi, yerel alt komponent/lehimin maksimum çıkıntısı, RJ45/header/mekanik pim boyları ve PCB eğrilik farkı en az iki numunede XY bölgeleriyle ölçülmüş; ölçüm belirsizliği ve montaj toleransı dahil kalan hacim haritası TASK-093/088 e devredilmiş.
 <!-- AC:END -->
 
 ## Definition of Done
@@ -53,4 +57,6 @@ Olculen akim analizdeki 0,20 A / 0,66 W varsayiminin yerini alacak. Veri sayfasi
 
 <!-- SECTION:NOTES:BEGIN -->
 2026-09-23: TASK-052 kapandi — tedarikci SAMM Market (MP02965, 634,89 TL + KDV). Bu gorev en az 2 adet numune SAMM'den teslim alinana kadar Blocked kalir.
+
+25.09 port-stack-fix: USB ve RJ45 artik Y=88.500 mm ortak merkezde ust uste. J8=(102.5,79.61), J7=(53.975,88.5). Nominal STEP mesafesi 3.23 mm fakat RJ45 gercek lehim/pin cikintilari modelde yok: USB THT lehimleri ile aralik numunede olculmeli, ikisi ayni anda takili kablo govde acikligi >=2 mm ve mandal erisimi dogrulanmali. J8 ust header uclari LCD altinda <=1.50 mm kalmali. J7/J8 courtyard istisnasi yalniz nominal modele dayanir.
 <!-- SECTION:NOTES:END -->

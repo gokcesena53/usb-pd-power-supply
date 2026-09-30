@@ -51,3 +51,8 @@ __pycache__/
 
 # Yerel klasör
 local/
+.claude/settings.local.json
+
+# Firma ici malzeme talep formati ve ondan uretilen liste (GitHub'a yuklenmez)
+docs/talep_format.xls
+docs/gopo_talep.xls

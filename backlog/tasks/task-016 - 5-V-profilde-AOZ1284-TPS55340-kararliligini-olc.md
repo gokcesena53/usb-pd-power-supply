@@ -12,7 +12,7 @@ dependencies:
   - TASK-015
 references:
   - design_decisions/USB_PD_REV_C_tasarim_kararlari_handoff.md
-ordinal: 122000
+ordinal: 123000
 ---
 
 ## Acceptance Criteria

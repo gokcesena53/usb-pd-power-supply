@@ -1,0 +1,475 @@
+{
+  "task": "TASK-093.01",
+  "timestamp": "2026-09-25T11:36:00+03:00",
+  "pcb_sha256": "69ed95b8746f182aeabd9536ea84b09f141ca606d26917ea6d7ef7adb58fc6d5",
+  "dru_sha256": "9b70d966b2ef43082590d6adeba0ab3e06fdae8573e5b682b099d6f47ccc98f0",
+  "changed_refs": [
+    "C20",
+    "C10",
+    "Q8",
+    "R17",
+    "C21",
+    "TP14"
+  ],
+  "placements": {
+    "C20": {
+      "before": {
+        "xy": [
+          96.5,
+          93.58
+        ],
+        "angle": 90.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_3V3",
+            [
+              96.5,
+              94.06
+            ]
+          ],
+          [
+            "2",
+            "GND",
+            [
+              96.5,
+              93.1
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "xy": [
+          96.5,
+          93.58
+        ],
+        "angle": 90.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_3V3",
+            [
+              96.5,
+              94.06
+            ]
+          ],
+          [
+            "2",
+            "GND",
+            [
+              96.5,
+              93.1
+            ]
+          ]
+        ]
+      }
+    },
+    "C10": {
+      "before": {
+        "xy": [
+          107.0,
+          94.0
+        ],
+        "angle": -90.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_3V3",
+            [
+              107.0,
+              93.05
+            ]
+          ],
+          [
+            "2",
+            "GND",
+            [
+              107.0,
+              94.95
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "xy": [
+          107.0,
+          94.0
+        ],
+        "angle": -90.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_3V3",
+            [
+              107.0,
+              93.05
+            ]
+          ],
+          [
+            "2",
+            "GND",
+            [
+              107.0,
+              94.95
+            ]
+          ]
+        ]
+      }
+    },
+    "Q8": {
+      "before": {
+        "xy": [
+          107.0,
+          88.5
+        ],
+        "angle": 90.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_3V3",
+            [
+              107.95,
+              89.6375
+            ]
+          ],
+          [
+            "2",
+            "/MCU/ETH_3V3",
+            [
+              107.0,
+              89.6375
+            ]
+          ],
+          [
+            "3",
+            "/MCU/ETH_PWR_EN",
+            [
+              106.05,
+              89.6375
+            ]
+          ],
+          [
+            "4",
+            "+3.3V",
+            [
+              106.05,
+              87.3625
+            ]
+          ],
+          [
+            "5",
+            "/MCU/ETH_3V3",
+            [
+              107.0,
+              87.3625
+            ]
+          ],
+          [
+            "6",
+            "/MCU/ETH_3V3",
+            [
+              107.95,
+              87.3625
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "xy": [
+          107.0,
+          88.5
+        ],
+        "angle": 90.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_3V3",
+            [
+              107.95,
+              89.6375
+            ]
+          ],
+          [
+            "2",
+            "/MCU/ETH_3V3",
+            [
+              107.0,
+              89.6375
+            ]
+          ],
+          [
+            "3",
+            "/MCU/ETH_PWR_EN",
+            [
+              106.05,
+              89.6375
+            ]
+          ],
+          [
+            "4",
+            "+3.3V",
+            [
+              106.05,
+              87.3625
+            ]
+          ],
+          [
+            "5",
+            "/MCU/ETH_3V3",
+            [
+              107.0,
+              87.3625
+            ]
+          ],
+          [
+            "6",
+            "/MCU/ETH_3V3",
+            [
+              107.95,
+              87.3625
+            ]
+          ]
+        ]
+      }
+    },
+    "R17": {
+      "before": {
+        "xy": [
+          111.5,
+          87.2
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "+3.3V",
+            [
+              110.99,
+              87.2
+            ]
+          ],
+          [
+            "2",
+            "/MCU/ETH_PWR_EN",
+            [
+              112.01,
+              87.2
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "xy": [
+          111.5,
+          87.2
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "+3.3V",
+            [
+              110.99,
+              87.2
+            ]
+          ],
+          [
+            "2",
+            "/MCU/ETH_PWR_EN",
+            [
+              112.01,
+              87.2
+            ]
+          ]
+        ]
+      }
+    },
+    "C21": {
+      "before": {
+        "xy": [
+          111.5,
+          89.8
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "+3.3V",
+            [
+              111.02,
+              89.8
+            ]
+          ],
+          [
+            "2",
+            "/MCU/ETH_PWR_EN",
+            [
+              111.98,
+              89.8
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "xy": [
+          111.5,
+          89.8
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "+3.3V",
+            [
+              111.02,
+              89.8
+            ]
+          ],
+          [
+            "2",
+            "/MCU/ETH_PWR_EN",
+            [
+              111.98,
+              89.8
+            ]
+          ]
+        ]
+      }
+    },
+    "TP14": {
+      "before": {
+        "xy": [
+          107.0,
+          82.15
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_RUN",
+            [
+              107.0,
+              82.15
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "xy": [
+          107.0,
+          82.15
+        ],
+        "angle": 0.0,
+        "layer": "B.Cu",
+        "pads": [
+          [
+            "1",
+            "/MCU/ETH_RUN",
+            [
+              107.0,
+              82.15
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "pad_net_mapping_preserved": true,
+  "other_footprints_unmodified": true,
+  "drc_metrics": {
+    "baseline_errors": 15,
+    "final_errors": 15,
+    "new_errors": 0,
+    "baseline_warnings": 131,
+    "final_warnings": 129,
+    "schematic_parity_issues": 0,
+    "unconnected_items_before": 360,
+    "unconnected_items_after": 360
+  },
+  "solid_clearances_to_J8": {
+    "C20-J8": {
+      "distance_mm": 1.94,
+      "intersection_volume_mm3": 0.0,
+      "status": "PASSED (no collision)"
+    },
+    "C10-J8": {
+      "distance_mm": 2.3948,
+      "intersection_volume_mm3": 0.0,
+      "status": "PASSED (no collision)"
+    },
+    "Q8-J8": {
+      "distance_mm": 1.6234,
+      "intersection_volume_mm3": 0.0,
+      "status": "PASSED (no collision)"
+    },
+    "R17-J8": {
+      "distance_mm": 6.998,
+      "intersection_volume_mm3": 0.0,
+      "status": "PASSED (no collision)"
+    },
+    "C21-J8": {
+      "distance_mm": 6.9442,
+      "intersection_volume_mm3": 0.0,
+      "status": "PASSED (no collision)"
+    }
+  },
+  "solid_inter_component_pairs": {
+    "C20-C10": {
+      "distance_mm": 9.625,
+      "intersection_volume_mm3": 0.0
+    },
+    "C20-Q8": {
+      "distance_mm": 9.5924,
+      "intersection_volume_mm3": 0.0
+    },
+    "C20-R17": {
+      "distance_mm": 15.3219,
+      "intersection_volume_mm3": 0.0
+    },
+    "C20-C21": {
+      "distance_mm": 14.5686,
+      "intersection_volume_mm3": 0.0
+    },
+    "C10-Q8": {
+      "distance_mm": 3.1,
+      "intersection_volume_mm3": 0.0
+    },
+    "C10-R17": {
+      "distance_mm": 6.4956,
+      "intersection_volume_mm3": 0.0
+    },
+    "C10-C21": {
+      "distance_mm": 4.4825,
+      "intersection_volume_mm3": 0.0
+    },
+    "Q8-R17": {
+      "distance_mm": 2.6088,
+      "intersection_volume_mm3": 0.0
+    },
+    "Q8-C21": {
+      "distance_mm": 2.5867,
+      "intersection_volume_mm3": 0.0
+    },
+    "R17-C21": {
+      "distance_mm": 2.1,
+      "intersection_volume_mm3": 0.0
+    }
+  },
+  "acceptance_criteria_verification": {
+    "AC1": "Passed: Q8, R17, C21, C20, C10, TP14 moved from staging to J8 power/control pins area on B.Cu.",
+    "AC2": "Passed: C20 is 3.6mm from Pin 14/12; C10 is 4.6mm from Pin 13/11; R17/C21 are 2.6mm from Q8 gate/source; all 15 pad-net mappings strictly preserved.",
+    "AC3": "Passed: J7/J8 Y=88.500mm alignment, J9 straight row at X=58.000mm, H1-H4 holes and LCD/FPC area preserved. RJ45 keepout (X in [51.35, 69.85]) completely preserved. TP14 outside module at (107.0, 82.15) for live probe access.",
+    "AC4": "Passed: 0 new DRC errors (15 baseline U2 edge errors preserved), 0 schematic parity issues, 360 unchanged unconnected items, FreeCAD 3D collision check shows 0.0 mm3 intersection volume."
+  }
+}

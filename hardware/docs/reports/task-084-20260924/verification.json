@@ -1,0 +1,843 @@
+{
+  "placements": [
+    {
+      "ref": "TP11",
+      "value": "TestPoint",
+      "before_xy": [
+        207.477654,
+        122.481273
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        207.5,
+        122.0
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "d1369d44-b041-46b0-895f-84f110bda202",
+      "before_pads": [
+        [
+          "1",
+          "/MCU/UART_TX"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/MCU/UART_TX"
+        ]
+      ],
+      "before_bbox": [
+        206.452654,
+        121.456273,
+        208.502654,
+        123.506273
+      ],
+      "after_bbox": [
+        206.475,
+        120.975,
+        208.525,
+        123.025
+      ]
+    },
+    {
+      "ref": "TP12",
+      "value": "TestPoint",
+      "before_xy": [
+        210.570205,
+        122.481273
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        210.04,
+        122.0
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "6ec3984b-ea40-439b-9261-0c47021b381e",
+      "before_pads": [
+        [
+          "1",
+          "/MCU/UART_RX"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "/MCU/UART_RX"
+        ]
+      ],
+      "before_bbox": [
+        209.545205,
+        121.456273,
+        211.595205,
+        123.506273
+      ],
+      "after_bbox": [
+        209.015,
+        120.975,
+        211.065,
+        123.025
+      ]
+    },
+    {
+      "ref": "TP13",
+      "value": "TestPoint",
+      "before_xy": [
+        213.662756,
+        122.481273
+      ],
+      "before_angle": 0.0,
+      "after_xy": [
+        212.58,
+        122.0
+      ],
+      "after_angle": 0.0,
+      "side": "F.Cu",
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "e9b04ec4-e15d-4ae3-b51a-a732bd5be394",
+      "before_pads": [
+        [
+          "1",
+          "GND"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "GND"
+        ]
+      ],
+      "before_bbox": [
+        212.637756,
+        121.456273,
+        214.687756,
+        123.506273
+      ],
+      "after_bbox": [
+        211.555,
+        120.975,
+        213.605,
+        123.025
+      ]
+    },
+    {
+      "ref": "TP6",
+      "value": "TestPoint",
+      "before_xy": [
+        207.477654,
+        125.573818
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        207.5,
+        126.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "8cba68c7-9305-4cf0-96b3-a587c37d21a7",
+      "before_pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_I2C_SCL_3V3"
+        ]
+      ],
+      "before_bbox": [
+        206.452654,
+        124.548818,
+        208.502654,
+        126.598818
+      ],
+      "after_bbox": [
+        206.475,
+        124.975,
+        208.525,
+        127.025
+      ]
+    },
+    {
+      "ref": "TP7",
+      "value": "TestPoint",
+      "before_xy": [
+        210.570205,
+        125.573818
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        210.04,
+        126.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "50b60b44-8c44-4f40-9821-7a59ac60405d",
+      "before_pads": [
+        [
+          "1",
+          "PD_I2C_SDA_3V3"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_I2C_SDA_3V3"
+        ]
+      ],
+      "before_bbox": [
+        209.545205,
+        124.548818,
+        211.595205,
+        126.598818
+      ],
+      "after_bbox": [
+        209.015,
+        124.975,
+        211.065,
+        127.025
+      ]
+    },
+    {
+      "ref": "TP8",
+      "value": "TestPoint",
+      "before_xy": [
+        213.662756,
+        125.573818
+      ],
+      "before_angle": 90.0,
+      "after_xy": [
+        212.58,
+        126.0
+      ],
+      "after_angle": 0.0,
+      "side": "B.Cu",
+      "locked": false,
+      "group": "TEST NOKTALARI",
+      "uuid": "4a2bbf56-112f-41f9-b24b-ca592d005b2c",
+      "before_pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ]
+      ],
+      "after_pads": [
+        [
+          "1",
+          "PD_INT_3V3"
+        ]
+      ],
+      "before_bbox": [
+        212.637756,
+        124.548818,
+        214.687756,
+        126.598818
+      ],
+      "after_bbox": [
+        211.555,
+        124.975,
+        213.605,
+        127.025
+      ]
+    }
+  ],
+  "all_14_test_points": [
+    {
+      "ref": "TP1",
+      "net": "USB_VBUS",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "block": "AP33772S PD KONTROLCU",
+      "purpose": "VBUS raw input voltage monitoring and PD negotiation contract check (5V..20V)",
+      "layer": "B.Cu",
+      "xy": [
+        46.5,
+        140.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP2",
+      "net": "/USB_PD_CONTROLLER/PD_VBUS_SENSED",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "block": "AP33772S PD KONTROLCU",
+      "purpose": "VBUS sense voltage divider feed; UVLO/OVLO trip point calibration",
+      "layer": "B.Cu",
+      "xy": [
+        54.5,
+        135.5
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP3",
+      "net": "PD_VOUT",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "block": "AP33772S PD KONTROLCU",
+      "purpose": "Switched VBUS power rail after Q3 back-to-back FET; input to TPS55340 pre-boost",
+      "layer": "B.Cu",
+      "xy": [
+        69.5,
+        140.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP4",
+      "net": "PD_5V",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "block": "AP33772S PD KONTROLCU",
+      "purpose": "AP33772S internal 5V LDO output and high-side I2C level shifter bias",
+      "layer": "B.Cu",
+      "xy": [
+        52.0,
+        149.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP5",
+      "net": "/USB_PD_CONTROLLER/PD_GATE",
+      "group": "AP33772S PD KONTROLCU + VBUS SONT / ANAHTAR",
+      "block": "AP33772S PD KONTROLCU",
+      "purpose": "AP33772S charge pump gate drive output driving Q3 power switch FETs",
+      "layer": "B.Cu",
+      "xy": [
+        61.0,
+        134.5
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP6",
+      "net": "PD_I2C_SCL_3V3",
+      "group": "TEST NOKTALARI",
+      "block": "TEST NOKTALARI / I2C",
+      "purpose": "I2C bus SCL clock line (3.3V domain); fast-mode 400kHz bus timing analysis",
+      "layer": "B.Cu",
+      "xy": [
+        207.5,
+        126.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP7",
+      "net": "PD_I2C_SDA_3V3",
+      "group": "TEST NOKTALARI",
+      "block": "TEST NOKTALARI / I2C",
+      "purpose": "I2C bus SDA data line (3.3V domain); protocol transaction and ACK/NACK sniffing",
+      "layer": "B.Cu",
+      "xy": [
+        210.04,
+        126.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP8",
+      "net": "PD_INT_3V3",
+      "group": "TEST NOKTALARI",
+      "block": "TEST NOKTALARI / I2C",
+      "purpose": "AP33772S active-low interrupt line to MCU (GPIO10); event alert notification timing",
+      "layer": "B.Cu",
+      "xy": [
+        212.58,
+        126.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP9",
+      "net": "/MCU/ETH_CFG0",
+      "group": "ESP32-C6-MINI-1-H4",
+      "block": "ESP32-C6-MINI-1-H4",
+      "purpose": "Ethernet controller boot configuration strapping (ETH_CFG0 / GPIO0)",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        84.5
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP10",
+      "net": "/MCU/ETH_PWR_EN",
+      "group": "ESP32-C6-MINI-1-H4",
+      "block": "ESP32-C6-MINI-1-H4",
+      "purpose": "Ethernet power switch enable (ETH_PWR_EN / GPIO1) controlling Q8 soft-start",
+      "layer": "B.Cu",
+      "xy": [
+        152.0,
+        105.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP11",
+      "net": "/MCU/UART_TX",
+      "group": "TEST NOKTALARI",
+      "block": "TEST NOKTALARI / UART",
+      "purpose": "ESP32-C6 primary UART0 Transmit (GPIO16 / TXD0); boot log and CLI console output",
+      "layer": "F.Cu",
+      "xy": [
+        207.5,
+        122.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP12",
+      "net": "/MCU/UART_RX",
+      "group": "TEST NOKTALARI",
+      "block": "TEST NOKTALARI / UART",
+      "purpose": "ESP32-C6 primary UART0 Receive (GPIO17 / RXD0); firmware flashing and command input",
+      "layer": "F.Cu",
+      "xy": [
+        210.04,
+        122.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP13",
+      "net": "GND",
+      "group": "TEST NOKTALARI",
+      "block": "TEST NOKTALARI / UART",
+      "purpose": "Digital & power ground reference point; oscilloscope probe spring ground clip",
+      "layer": "F.Cu",
+      "xy": [
+        212.58,
+        122.0
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ref": "TP14",
+      "net": "/MCU/ETH_RUN",
+      "group": "ETHERNET MEZANIN (CH9121) + BESLEME ANAHTARI",
+      "block": "ETHERNET MEZANIN",
+      "purpose": "CH9121 Ethernet controller RUN status indicator / heartbeat",
+      "layer": "B.Cu",
+      "xy": [
+        153.0,
+        155.69
+      ],
+      "rot": 0.0,
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "pad_distances": [
+    {
+      "a": "TP11.1",
+      "a_net": "/MCU/UART_TX",
+      "a_xy": [
+        207.5,
+        122.0
+      ],
+      "b": "TP12.1",
+      "b_net": "/MCU/UART_RX",
+      "b_xy": [
+        210.04,
+        122.0
+      ],
+      "desc": "UART pitch: TP11 (UART_TX) to TP12 (UART_RX) [2.540 mm / 100 mil]",
+      "straight_mm": 2.54
+    },
+    {
+      "a": "TP12.1",
+      "a_net": "/MCU/UART_RX",
+      "a_xy": [
+        210.04,
+        122.0
+      ],
+      "b": "TP13.1",
+      "b_net": "GND",
+      "b_xy": [
+        212.58,
+        122.0
+      ],
+      "desc": "UART pitch: TP12 (UART_RX) to TP13 (GND) [2.540 mm / 100 mil]",
+      "straight_mm": 2.54
+    },
+    {
+      "a": "TP11.1",
+      "a_net": "/MCU/UART_TX",
+      "a_xy": [
+        207.5,
+        122.0
+      ],
+      "b": "TP13.1",
+      "b_net": "GND",
+      "b_xy": [
+        212.58,
+        122.0
+      ],
+      "desc": "UART span: TP11 (UART_TX) to TP13 (GND) [5.080 mm / 200 mil]",
+      "straight_mm": 5.08
+    },
+    {
+      "a": "TP6.1",
+      "a_net": "PD_I2C_SCL_3V3",
+      "a_xy": [
+        207.5,
+        126.0
+      ],
+      "b": "TP7.1",
+      "b_net": "PD_I2C_SDA_3V3",
+      "b_xy": [
+        210.04,
+        126.0
+      ],
+      "desc": "I2C pitch: TP6 (I2C_SCL) to TP7 (I2C_SDA) [2.540 mm / 100 mil]",
+      "straight_mm": 2.54
+    },
+    {
+      "a": "TP7.1",
+      "a_net": "PD_I2C_SDA_3V3",
+      "a_xy": [
+        210.04,
+        126.0
+      ],
+      "b": "TP8.1",
+      "b_net": "PD_INT_3V3",
+      "b_xy": [
+        212.58,
+        126.0
+      ],
+      "desc": "I2C pitch: TP7 (I2C_SDA) to TP8 (PD_INT) [2.540 mm / 100 mil]",
+      "straight_mm": 2.54
+    },
+    {
+      "a": "TP6.1",
+      "a_net": "PD_I2C_SCL_3V3",
+      "a_xy": [
+        207.5,
+        126.0
+      ],
+      "b": "TP8.1",
+      "b_net": "PD_INT_3V3",
+      "b_xy": [
+        212.58,
+        126.0
+      ],
+      "desc": "I2C span: TP6 (I2C_SCL) to TP8 (PD_INT) [5.080 mm / 200 mil]",
+      "straight_mm": 5.08
+    },
+    {
+      "a": "TP11.1",
+      "a_net": "/MCU/UART_TX",
+      "a_xy": [
+        207.5,
+        122.0
+      ],
+      "b": "TP6.1",
+      "b_net": "PD_I2C_SCL_3V3",
+      "b_xy": [
+        207.5,
+        126.0
+      ],
+      "desc": "Cluster vertical separation: TP11 (F.Cu) to TP6 (B.Cu) [4.000 mm]",
+      "straight_mm": 4.0
+    }
+  ],
+  "clearances": [
+    {
+      "pair": "TP11-TP12 (F.Cu)",
+      "overlap": false,
+      "clearance_mm": 0.49
+    },
+    {
+      "pair": "TP11-TP13 (F.Cu)",
+      "overlap": false,
+      "clearance_mm": 3.03
+    },
+    {
+      "pair": "TP12-TP13 (F.Cu)",
+      "overlap": false,
+      "clearance_mm": 0.49
+    },
+    {
+      "pair": "TP6-TP7 (B.Cu)",
+      "overlap": false,
+      "clearance_mm": 0.49
+    },
+    {
+      "pair": "TP6-TP8 (B.Cu)",
+      "overlap": false,
+      "clearance_mm": 3.03
+    },
+    {
+      "pair": "TP7-TP8 (B.Cu)",
+      "overlap": false,
+      "clearance_mm": 0.49
+    }
+  ],
+  "probe_rules": {
+    "pad_diameter_mm": 1.0,
+    "pitch_standard_mm": 2.54,
+    "pitch_standard_mil": 100,
+    "probe_needle_compatibility": "Compatible with 0.5-0.8 mm needle probes, pogo-pins, and oscilloscope spring clips",
+    "gnd_probe_reference": "TP13 dedicated GND pad at 2.54 mm spacing from UART signals; local GND via field for I2C",
+    "forbidden_zones": "No test points on high-di/dt SW nodes (AOZ1284 LX, TPS55340 SW); no test points under RJ45 THT pins or under LCD glass after final assembly"
+  },
+  "anchors": {
+    "J7": {
+      "before_xy": [
+        41.049999,
+        77.32
+      ],
+      "after_xy": [
+        41.049999,
+        77.32
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "after_uuid": "7be2ca75-d69f-45ee-b33f-f8f185402a6d",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu",
+      "locked": false
+    },
+    "J3": {
+      "before_xy": [
+        98.0,
+        109.3
+      ],
+      "after_xy": [
+        98.0,
+        109.3
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "after_uuid": "bcd99db6-11ef-47e3-af4f-1367eb11051a",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu",
+      "locked": true
+    },
+    "J9": {
+      "before_xy": [
+        58.0,
+        91.6
+      ],
+      "after_xy": [
+        58.0,
+        91.6
+      ],
+      "before_angle": -90.0,
+      "after_angle": -90.0,
+      "before_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "after_uuid": "da85d43b-200b-49e1-87ef-79bb37bfffa9",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu",
+      "locked": false
+    },
+    "H1": {
+      "before_xy": [
+        54.3,
+        73.48
+      ],
+      "after_xy": [
+        54.3,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "after_uuid": "681bbab2-38ca-44e6-834b-873929b6ab7b",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu",
+      "locked": true
+    },
+    "H2": {
+      "before_xy": [
+        145.7,
+        73.48
+      ],
+      "after_xy": [
+        145.7,
+        73.48
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "after_uuid": "0961e78d-7ca7-4713-8683-ee461b9c40be",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu",
+      "locked": true
+    },
+    "H3": {
+      "before_xy": [
+        54.3,
+        126.52
+      ],
+      "after_xy": [
+        54.3,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "after_uuid": "ea8ed626-f147-4f50-8c44-1942dcc16329",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu",
+      "locked": true
+    },
+    "H4": {
+      "before_xy": [
+        145.7,
+        126.52
+      ],
+      "after_xy": [
+        145.7,
+        126.52
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "after_uuid": "367213d5-b0a1-4566-bb93-b48b006bfebe",
+      "before_side": "F.Cu",
+      "after_side": "F.Cu",
+      "locked": true
+    },
+    "D5": {
+      "before_xy": [
+        64.019998,
+        57.6
+      ],
+      "after_xy": [
+        64.019998,
+        57.6
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "after_uuid": "2a1afc72-fdf1-4c40-94eb-1e592fe6ed64",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu",
+      "locked": false
+    },
+    "U11": {
+      "before_xy": [
+        69.849998,
+        55.34
+      ],
+      "after_xy": [
+        69.849998,
+        55.34
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "after_uuid": "4d2945b0-98a9-4244-9f8b-dc49e1962438",
+      "before_side": "B.Cu",
+      "after_side": "B.Cu",
+      "locked": false
+    }
+  },
+  "circuit_summary": {
+    "group": "TEST NOKTALARI",
+    "members": [
+      "TP11",
+      "TP12",
+      "TP13",
+      "TP6",
+      "TP7",
+      "TP8"
+    ],
+    "subgroups": {
+      "uart_cluster_fcu": "TP11 (TX), TP12 (RX), TP13 (GND) at y=122.000 mm, pitch=2.540 mm (100 mil)",
+      "i2c_cluster_bcu": "TP6 (SCL), TP7 (SDA), TP8 (INT) at y=126.000 mm, pitch=2.540 mm (100 mil)"
+    },
+    "gnd_reference": "TP13 provides dedicated zero-loop scope spring ground clip reference",
+    "isolation": "Separated by 4.00 mm vertically; completely outside high-current switching and RF keepout zones"
+  },
+  "drc_before": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "drc_after": {
+    "drill_out_of_range": 15,
+    "hole_clearance": 4,
+    "text_height": 63,
+    "text_thickness": 63
+  },
+  "violations_before_total": 145,
+  "violations_after_total": 145,
+  "unconnected_before": 360,
+  "unconnected_after": 360,
+  "parity_before": 0,
+  "parity_after": 0,
+  "tracks_before": 4,
+  "tracks_after": 4,
+  "tracks_unchanged": true
+}

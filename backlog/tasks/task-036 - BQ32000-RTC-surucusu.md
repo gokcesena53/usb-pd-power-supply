@@ -12,7 +12,7 @@ dependencies:
   - TASK-033
 documentation:
   - software/FIRMWARE_GEREKSINIMLERI.md
-ordinal: 142000
+ordinal: 143000
 ---
 
 ## Acceptance Criteria
