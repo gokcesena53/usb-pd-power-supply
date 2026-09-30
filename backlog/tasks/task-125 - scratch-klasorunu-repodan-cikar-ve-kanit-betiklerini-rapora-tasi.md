@@ -1,7 +1,7 @@
 ---
 id: TASK-125
 title: scratch klasorunu repodan cikar ve kanit betiklerini rapora tasi
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-09-30 06:42'
 updated_date: '2026-09-30 06:49'
@@ -31,8 +31,8 @@ ordinal: 211000
 
 ## Definition of Done
 <!-- DOD:BEGIN -->
-- [ ] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
-- [ ] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
+- [x] #1 Kanıt (ERC/netlist/ölçüm/commit) Implementation Notes'a yazıldı
+- [x] #2 Karar değiştiyse design_decisions/ ve CHANGES.TXT güncellendi
 <!-- DOD:END -->
 
 ## Implementation Notes
@@ -46,4 +46,12 @@ Kanit (30.09.2026, rev_c, commit oncesi):
 - 6 betik ast.parse ile gecti; ratsnest_crossing_test.py depo kokunden calisti (guncel PCB: MST 960.70 mm).
 - .gitignore, CLAUDE.md (Nerede ne tutulur: 3 satir), CHANGES.TXT (30.09 kaydi), design_decisions karar dosyasi eklendi.
 Done icin kalan: commit hash.
+
+Commit: 696f3a1 (rev_c) - 313 dosya, +145/-2232270 satir. `git ls-files scratch` = 0.
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+scratch/ klasoru (297 gecici dosya, ~50 MB) git'ten cikarildi ve .gitignore'a eklendi. Raporlarin kanit olarak yol verdigi 7 dosya ve 2 ciktisi hardware/docs/reports/task-{100,105,106,107,108}-20260928/scripts/ altina tasindi; 15 dosyadaki yollar guncellendi. Kural CLAUDE.md, CHANGES.TXT ve design_decisions/output/SCRATCH_KLASORU_DEPO_DISI_TASK125_20260930.md ile belgelendi. Commit 696f3a1.
+<!-- SECTION:FINAL_SUMMARY:END -->
